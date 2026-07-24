@@ -25,13 +25,18 @@ export default function ScrollAnimations(){
     targets.forEach(element=>observer.observe(element));
 
     const header=document.querySelector<HTMLElement>("header");
+    const progress=document.querySelector<HTMLElement>(".scroll-progress");
     let lastY=window.scrollY;
     let ticking=false;
     const updateHeader=()=>{
       const currentY=window.scrollY;
       const movingDown=currentY>lastY;
+      const maxScroll=Math.max(document.documentElement.scrollHeight-window.innerHeight,1);
+      progress?.style.setProperty("transform",`scaleX(${Math.min(currentY/maxScroll,1)})`);
       header?.classList.toggle("scrolling-down",movingDown&&currentY>150);
       header?.classList.toggle("scrolling-up",!movingDown&&currentY>30);
+      document.body.classList.toggle("page-scrolling-down",movingDown&&currentY>80);
+      document.body.classList.toggle("page-scrolling-up",!movingDown&&currentY>80);
       if(currentY<=30)header?.classList.remove("scrolling-down","scrolling-up");
       lastY=currentY;
       ticking=false;
@@ -48,8 +53,9 @@ export default function ScrollAnimations(){
       observer.disconnect();
       window.removeEventListener("scroll",onScroll);
       header?.classList.remove("scrolling-down","scrolling-up");
+      document.body.classList.remove("page-scrolling-down","page-scrolling-up");
       targets.forEach(element=>element.classList.remove("scroll-reveal","is-visible"));
     };
   },[]);
-  return null;
+  return <div className="scroll-progress" aria-hidden="true"/>;
 }
