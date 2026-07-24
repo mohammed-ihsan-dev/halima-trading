@@ -168,11 +168,11 @@
   .feature-actions{grid-template-columns:1.15fr 1.1fr .9fr}
   .feature-actions a:last-child{grid-column:auto}
 }
-.whatsapp-icon{width:20px!important;height:20px!important;object-fit:contain!important;flex:0 0 auto}
+.whatsapp-icon{width:22px!important;height:22px!important;object-fit:contain!important;flex:0 0 auto}
 .floating-actions .wa{padding:0;background:transparent!important;box-shadow:none!important}
-.floating-actions .wa .whatsapp-icon{width:44px!important;height:44px!important}
-.feature-actions .whatsapp-icon,.product-actions .whatsapp-icon{width:18px!important;height:18px!important}
-a[href*="wa.me"]:not(:has(.whatsapp-icon))::before{content:"";width:20px;height:20px;display:inline-block;flex:0 0 auto;background:url("/icons/whatsapp-transparent.png") center/contain no-repeat}
+.floating-actions .wa,.floating-actions .wa .whatsapp-icon{width:52px!important;height:52px!important}
+.feature-actions .whatsapp-icon,.product-actions .whatsapp-icon{width:20px!important;height:20px!important}
+a[href*="wa.me"]:not(:has(.whatsapp-icon))::before{content:"";width:22px;height:22px;display:inline-block;flex:0 0 auto;background:url("/icons/whatsapp-transparent.png") center/contain no-repeat}
 a[href*="wa.me"]>svg{display:none}
 .contact-info>div:nth-child(3)>svg{display:none}
-.contact-info>div:nth-child(3)::before{content:"";width:24px;height:24px;display:block;flex:0 0 auto;background:url("/icons/whatsapp-transparent.png") center/contain no-repeat}
+.contact-info>div:nth-child(3)::before{content:"";width:26px;height:26px;display:block;flex:0 0 auto;background:url("/icons/whatsapp-transparent.png") center/contain no-repeat}
