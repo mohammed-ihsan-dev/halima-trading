@@ -4,6 +4,7 @@ import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import BrandCarousel from "@/components/BrandCarousel";
 import CategorySolutionsSection from "@/components/CategorySolutionsSection";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <div className="actions">
             <Link className="btn primary" href="/shop">Shop products <ArrowRight size={18}/></Link>
             <Link className="btn secondary" href="/quote">Request a quote</Link>
-            <a className="text-link" href="https://wa.me/971565685090?text=Hello%20Halima%20Trading%2C%20I%20would%20like%20help%20choosing%20an%20appliance.">Order on WhatsApp</a>
+            <a className="text-link" href="https://wa.me/971565685090?text=Hello%20Halima%20Trading%2C%20I%20would%20like%20help%20choosing%20an%20appliance."><WhatsAppIcon/>Order on WhatsApp</a>
           </div>
           <div className="trust-row">
             <span><b>1991</b> Established</span><span><b>34+</b> Years of excellence</span><span><b>30+</b> Trusted brands</span>
