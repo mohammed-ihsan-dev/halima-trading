@@ -5,7 +5,7 @@ export default function Footer(){
   return <footer>
     <div className="footer-grid">
       <div>
-        <Link href="/" className="official-logo footer-official-logo" aria-label="Halima Trading home">
+        <Link href="/#hero" className="official-logo footer-official-logo" aria-label="Return to homepage hero">
           <img src="/halima-trading-logo-transparent.png" alt="Halima Trading L.L.C. — Since 1991"/>
         </Link>
         <p>Premium electronics, air conditioning and home appliances for homes, businesses and projects across the UAE.</p>

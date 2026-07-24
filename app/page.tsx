@@ -9,7 +9,7 @@ import WhatsAppIcon from "@/components/WhatsAppIcon";
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero" id="hero">
         <div className="hero-copy">
           <span className="eyebrow">Abu Dhabi · Serving the UAE since 1991</span>
           <h1>Premium appliances.<br/><em>Trusted solutions.</em></h1>
