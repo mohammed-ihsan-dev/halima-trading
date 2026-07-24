@@ -100,3 +100,71 @@
 .featured-product-card .card-image img{width:88%!important;height:92%!important;left:6%!important;top:4%!important;object-fit:contain!important;object-position:center bottom!important;mix-blend-mode:multiply}
 @media(max-width:1100px){.category-solutions-section{padding-inline:24px}.appliance-category-grid{grid-template-columns:repeat(2,1fr)}.category-trust-strip{grid-template-columns:repeat(2,1fr);gap:22px 0}.category-trust-item:nth-child(2){border-right:0}.category-product-image{left:30px}}
 @media(max-width:760px){.category-solutions-section{padding:70px 16px 58px}.category-solutions-head{display:block}.category-solutions-head h2{font-size:36px}.category-solutions-head>div>p{font-size:15px}.category-view-all{margin-top:24px;width:100%}.appliance-category-grid{grid-template-columns:1fr;gap:14px}.appliance-category-card{min-height:380px}.appliance-category-card>a{padding:23px}.appliance-category-card h3{font-size:22px;margin-top:18px}.category-product-image{height:166px;left:12px}.category-trust-strip{grid-template-columns:1fr;padding:8px 20px}.category-trust-item{border-right:0;border-bottom:1px solid #e7e7e7;padding:18px 4px}.category-trust-item:last-child{border-bottom:0}}
+
+/* Mobile storefront refinement */
+@media(max-width:760px){
+  body{overflow-x:hidden}
+  .announcement{min-height:32px;padding:6px 12px;font-size:10px;justify-content:center}
+  .announcement a{border:0;padding:0}
+  header{height:66px;padding:0 12px;gap:8px}
+  header>.official-logo{width:150px;height:48px}
+  .header-actions{gap:5px}
+  .header-actions button{min-width:40px;min-height:40px;display:grid;place-items:center}
+  .mobile-menu{padding:20px 22px 28px;gap:13px;overflow-y:auto}
+  .mobile-menu>button{width:44px;height:44px;display:grid;place-items:center}
+  .mobile-menu>a:not(.btn){font-size:20px;padding:10px 0}
+  .menu-official-logo{width:220px;height:66px;margin:0 0 4px}
+  .hero{min-height:auto;padding:42px 18px 52px;gap:34px}
+  .hero h1{font-size:clamp(40px,12vw,52px);line-height:1.02;margin:14px 0 20px}
+  .hero-copy>p{font-size:15px;line-height:1.65}
+  .hero .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero .actions .text-link{grid-column:1/-1;justify-content:center;min-height:42px}
+  .trust-row{margin-top:34px;padding-top:18px;justify-content:space-between;gap:8px}
+  .trust-row span{font-size:9px}.trust-row b{font-size:15px}
+  .hero-visual{height:auto;min-height:330px}
+  .hero-main{width:100%;height:330px;border-radius:72px 8px 8px;animation:none}
+  .floating-card{padding:11px 13px;font-size:10px}
+  .floating-card.top{right:-2px;top:28px}
+  .floating-card.bottom{left:-2px;bottom:22px}
+  .section{padding:62px 16px}
+  .featured-showcase{padding-top:60px}
+  .featured-heading{margin-bottom:26px}
+  .featured-heading h2{font-size:38px}
+  .featured-heading p{font-size:13px;line-height:1.55}
+  .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .feature-brand{padding:11px 10px 3px}.feature-brand>b{font-size:11px}
+  .feature-image{height:170px;margin:0 8px}
+  .feature-image img{width:92%;height:92%;object-fit:contain;mix-blend-mode:multiply}
+  .feature-card-body{padding:7px 8px 9px}
+  .feature-card-body h3{font-size:12px;min-height:49px;margin-bottom:7px}
+  .feature-specs{display:none}
+  .feature-price{font-size:10px;margin:4px 0 9px}
+  .feature-actions{grid-template-columns:1fr 1fr}
+  .feature-actions button,.feature-actions a{min-height:40px;padding:4px;font-size:8px}
+  .feature-actions a:last-child{grid-column:1/-1}
+  .category-solutions-section{padding:62px 14px 54px}
+  .category-solutions-head h2{font-size:36px}
+  .category-solutions-head>div>p{font-size:14px}
+  .appliance-category-card{min-height:350px;border-radius:16px}
+  .appliance-category-card>a{padding:20px}
+  .category-icon{width:50px;height:50px}
+  .category-product-image,.category-air-conditioning .category-product-image,.category-refrigeration .category-product-image,.category-laundry .category-product-image,.category-kitchen .category-product-image,.category-home-small .category-product-image,.category-televisions .category-product-image,.category-commercial-cooling .category-product-image,.category-water-heating .category-product-image{height:152px;left:18px;right:18px}
+  .solutions{gap:28px}.solution-list>div{padding:19px 4px}.solution-list b{font-size:16px}
+  .about-band{gap:24px}.about-band p{font-size:14px}
+  .cta-band .actions{display:grid;grid-template-columns:1fr}.cta-band .btn{width:100%}
+  .brand-marquee{margin:25px 0 16px}
+  footer{padding:55px 18px 20px}
+}
+@media(max-width:390px){
+  header>.official-logo{width:132px}
+  .hero .actions{grid-template-columns:1fr}
+  .hero .actions .text-link{grid-column:auto}
+  .hero-main{height:300px}
+  .hero-visual{min-height:300px}
+  .featured-grid{grid-template-columns:1fr}
+  .feature-image{height:245px}
+  .feature-card-body h3{min-height:0;font-size:14px}
+  .feature-specs{display:flex;flex-direction:row}
+  .feature-actions{grid-template-columns:1.15fr 1.1fr .9fr}
+  .feature-actions a:last-child{grid-column:auto}
+}
