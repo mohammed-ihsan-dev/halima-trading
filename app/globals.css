@@ -181,7 +181,7 @@ a[href*="wa.me"]>svg{display:none}
 
 /* Direction-aware scroll motion */
 header{transition:transform .24s cubic-bezier(.22,1,.36,1),box-shadow .22s,background-color .22s}
-header.scrolling-down{transform:translateY(-102%);box-shadow:none}
+header.scrolling-down{transform:translateY(0);box-shadow:0 10px 30px #00000010}
 header.scrolling-up{transform:translateY(0);box-shadow:0 10px 30px #00000010}
 .scroll-reveal{opacity:0;transform:translate3d(0,26px,0) scale(.99);transition:opacity .42s ease var(--reveal-delay,0ms),transform .48s cubic-bezier(.22,1,.36,1) var(--reveal-delay,0ms);will-change:opacity,transform}
 .scroll-reveal.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}
