@@ -6,7 +6,7 @@ export default function Footer(){
     <div className="footer-grid">
       <div>
         <Link href="/#hero" className="official-logo footer-official-logo" aria-label="Return to homepage hero">
-          <img src="/halima-trading-logo-transparent.png" alt="Halima Trading L.L.C. — Since 1991"/>
+          <img src="/halima-contact-logo.png" alt="Halima Trading L.L.C. — Since 1991"/>
         </Link>
         <p>Premium electronics, air conditioning and home appliances for homes, businesses and projects across the UAE.</p>
         <div className="socials"><a href="#"><AtSign/></a><a href="#"><Globe/></a><a href="#"><Share2/></a></div>
