@@ -192,3 +192,28 @@ header.scrolling-up{transform:translateY(0);box-shadow:0 10px 30px #00000010}
 .page-scrolling-down .floating-actions{transform:translateY(5px)}
 .page-scrolling-up .floating-actions{transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){header{transition:none}.scroll-reveal,.scroll-reveal.is-visible{opacity:1;transform:none;transition:none}}
+
+.mobile-bottom-nav{display:none}
+@media(max-width:760px){
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+  .mobile-bottom-nav{position:fixed;z-index:80;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));height:62px;padding:5px 8px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;background:#fffffff5;border:1px solid #e7e7e7;border-radius:18px;box-shadow:0 12px 35px #0003;backdrop-filter:blur(18px)}
+  .mobile-bottom-nav a,.mobile-bottom-nav button{position:relative;height:52px;border:0;background:transparent;color:#555;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:9px;font-weight:800}
+  .mobile-bottom-nav svg{width:20px;height:20px}
+  .mobile-bottom-nav .mobile-wa{color:#139b3a}
+  .mobile-bottom-nav .mobile-wa .whatsapp-icon{width:27px!important;height:27px!important}
+  .mobile-bottom-nav i{position:absolute;top:2px;right:calc(50% - 19px);min-width:16px;height:16px;padding:0 4px;border-radius:20px;background:var(--red);color:#fff;font-size:9px;font-style:normal;display:grid;place-items:center}
+  .floating-actions{display:none}
+  footer{padding-bottom:32px}
+}
+@media(max-width:480px){
+  .featured-grid{grid-template-columns:1fr}
+  .feature-image{height:250px}
+  .feature-card-body h3{min-height:0;font-size:15px}
+  .feature-specs{display:flex;flex-direction:row;gap:14px}
+  .feature-actions{grid-template-columns:1.15fr 1.1fr .9fr}
+  .feature-actions a:last-child{grid-column:auto}
+  .feature-actions button,.feature-actions a{font-size:9px}
+  .appliance-category-card{min-height:335px}
+  .category-product-image,.category-air-conditioning .category-product-image,.category-refrigeration .category-product-image,.category-laundry .category-product-image,.category-kitchen .category-product-image,.category-home-small .category-product-image,.category-televisions .category-product-image,.category-commercial-cooling .category-product-image,.category-water-heating .category-product-image{height:142px}
+  .footer-grid{gap:28px}
+}
