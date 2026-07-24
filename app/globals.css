@@ -80,7 +80,7 @@
 .official-logo{display:block;width:220px;height:66px;overflow:visible;flex:0 0 auto}
 .official-logo img{width:100%;height:100%;object-fit:contain;object-position:left center}
 .menu-official-logo{width:270px;height:82px;margin:12px 0 8px}
-.footer-official-logo{width:250px;height:78px;margin-bottom:20px;box-shadow:0 10px 35px #0005}
+.footer-official-logo{width:270px;height:84px;margin-bottom:20px;filter:drop-shadow(0 8px 22px #0008)}
 @media(max-width:760px){header>.official-logo{width:174px;height:54px}.menu-official-logo{width:250px;height:78px}}
 .brand-marquee{margin:30px 0 25px;overflow:hidden;background:#fff;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .brand-marquee-track{display:flex;align-items:center;width:max-content;animation:brand-strip-marquee 42s linear infinite;will-change:transform}
