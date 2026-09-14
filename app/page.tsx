@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { ArrowRight, Building2, CheckCircle2, Headphones, ShieldCheck, Truck } from "lucide-react";
-import { products } from "@/data/products";
+import { getMongoFeaturedProducts } from "@/lib/repositories/products";
 import ProductCard from "@/components/ProductCard";
 import BrandCarousel from "@/components/BrandCarousel";
 import CategorySolutionsSection from "@/components/CategorySolutionsSection";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
-export default function Home() {
+export const revalidate = 3600; // 1 hour ISR
+
+export default async function Home() {
+  const products = await getMongoFeaturedProducts();
+
   return (
     <>
       <section className="hero" id="hero">
@@ -31,13 +35,14 @@ export default function Home() {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             poster="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=85"
             aria-label="Halima Trading premium appliance showcase"
           >
-            <source src="/videos/halima-hero.mp4" type="video/mp4" />
+            <source src="/videos/halima-hero-new.mp4" type="video/mp4" />
             Your browser does not support embedded video.
           </video>
+
           <div className="floating-card top"><span>Commercial & residential</span><b>Cooling solutions</b></div>
           <div className="floating-card bottom"><CheckCircle2 size={19}/><span><b>In stock</b><small>UAE-wide delivery</small></span></div>
         </div>

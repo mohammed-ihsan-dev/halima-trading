@@ -1,6 +1,24 @@
-export type Product={id:string;slug:string;name:string;brand:string;model:string;category:string;subcategory:string;description:string;features:string[];specifications:Record<string,string>;price:number|null;priceLabel:string;images:string[];inStock:boolean;featured:boolean};
+export type Product = {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string;
+  model: string;
+  category: string;
+  subcategory: string;
+  description: string;
+  features: string[];
+  specifications: Record<string, string>;
+  price: number | null;
+  priceLabel: string;
+  images: string[];
+  inStock: boolean;
+  featured: boolean;
+  sku?: string;
+  stockCount?: number;
+};
 
-export const products:Product[]=[
+export const products: Product[] = [
   {id:"ac-hisense-15-window",slug:"hisense-15-ton-window-ac",name:"Hisense 1.5 Ton Window Air Conditioner",brand:"Hisense",model:"Model on request",category:"Air Conditioning",subcategory:"Window Air Conditioners",description:"Powerful window air conditioning for fast, even cooling in UAE homes and offices.",features:["1.5 ton cooling capacity","Four-way air direction","Fast cooling"],specifications:{Capacity:"1.5 Ton / 18,000 BTU",Type:"Window Air Conditioner",Application:"Residential and light commercial"},price:null,priceLabel:"Contact for Price",images:["/featured/hisense-window-ac.png"],inStock:true,featured:true},
   {id:"ac-ogeneral-2-split",slug:"ogeneral-2-ton-split-ac",name:"O General 2 Ton Split Air Conditioner",brand:"O General",model:"Model on request",category:"Air Conditioning",subcategory:"Split Air Conditioners",description:"High-capacity split cooling engineered for dependable performance in demanding UAE temperatures.",features:["2 ton cooling capacity","Wall-mounted split design","Quiet indoor operation"],specifications:{Capacity:"2 Ton / 24,000 BTU",Type:"Wall-mounted Split AC",Application:"Large rooms, offices and retail spaces"},price:null,priceLabel:"Contact for Price",images:["/featured/ogeneral-split-indoor.png","/featured/ogeneral-split-outdoor.png"],inStock:true,featured:true},
   {id:"ac-midea-15-window",slug:"midea-15-ton-window-ac",name:"Midea 1.5 Ton Window Air Conditioner",brand:"Midea",model:"Model on request",category:"Air Conditioning",subcategory:"Window Air Conditioners",description:"A modern, compact window unit offering fast cooling and straightforward installation.",features:["1.5 ton cooling capacity","Flash cooling","Convenient controls"],specifications:{Capacity:"1.5 Ton / 18,000 BTU",Type:"Window Air Conditioner",Installation:"Window-mounted"},price:null,priceLabel:"Contact for Price",images:["/featured/midea-window-ac.png"],inStock:true,featured:true},
@@ -14,4 +32,5 @@ export const products:Product[]=[
   {id:"dispenser-white-floor",slug:"white-floor-standing-water-dispenser",name:"White Floor-Standing Water Dispenser",brand:"Super General",model:"Model on request",category:"Home & Small Appliances",subcategory:"Water Dispensers",description:"A practical floor-standing water dispenser with convenient storage.",features:["Floor-standing design","Hot and cold dispensing","Integrated storage"],specifications:{Type:"Water Dispenser",Installation:"Floor standing",Color:"White"},price:null,priceLabel:"Contact for Price",images:["/featured/white-water-dispenser.png"],inStock:true,featured:true}
 ];
 
-export const getProduct=(slug:string)=>products.find(p=>p.slug===slug);
+export const getProduct = (slug: string) => products.find((p) => p.slug === slug || p.id === slug);
+

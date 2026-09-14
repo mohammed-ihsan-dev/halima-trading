@@ -1,3 +1,50 @@
-"use client";
-import{useMemo,useState}from"react";import{Grid3X3,List,Search,SlidersHorizontal}from"lucide-react";import{products}from"@/data/products";import ProductCard from"@/components/ProductCard";
-export default function Shop(){const[q,setQ]=useState("");const[cat,setCat]=useState("All");const[sort,setSort]=useState("newest");const filtered=useMemo(()=>{let p=products.filter(x=>(cat==="All"||x.category===cat)&&`${x.name} ${x.brand} ${x.model}`.toLowerCase().includes(q.toLowerCase()));return [...p].sort((a,b)=>sort==="az"?a.name.localeCompare(b.name):sort==="low"?(a.price??999999)-(b.price??999999):0)},[q,cat,sort]);return <><section className="page-hero"><span className="eyebrow light">Product catalogue</span><h1>Find the right appliance.</h1><p>Search trusted brands and request current pricing from our Abu Dhabi team.</p></section><section className="shop-layout"><aside className="filters"><h3><SlidersHorizontal/> Filters</h3><label>Search products<div className="search-box"><Search/><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Name, brand or model"/></div></label><label>Category<select value={cat} onChange={e=>setCat(e.target.value)}><option>All</option>{[...new Set(products.map(x=>x.category))].map(x=><option key={x}>{x}</option>)}</select></label><label>Availability<select><option>All products</option><option>In stock</option><option>On request</option></select></label><label>Price range<select><option>Any price</option><option>Under AED 1,000</option><option>AED 1,000–3,000</option><option>Above AED 3,000</option></select></label><button className="text-link" onClick={()=>{setQ("");setCat("All")}}>Clear filters</button></aside><div className="shop-results"><div className="results-bar"><span><b>{filtered.length}</b> products</span><div><Grid3X3/><List/><select value={sort} onChange={e=>setSort(e.target.value)}><option value="newest">Sort: Newest</option><option value="low">Price: Low to high</option><option value="az">Alphabetical</option></select></div></div><div className="product-grid">{filtered.map(p=><ProductCard product={p} key={p.id}/>)}</div></div></section></>}
+import { Metadata } from "next";
+import { Suspense } from "react";
+import { getMongoProducts } from "@/lib/repositories/products";
+import ShopClientView from "@/components/shop/ShopClientView";
+import ProductCardSkeleton from "@/components/ProductCardSkeleton";
+
+export const revalidate = 3600; // 1 hour ISR
+
+export const metadata: Metadata = {
+  title: "Product Catalog | Electronics & Home Appliances",
+  description:
+    "Explore air conditioners, refrigerators, washing machines, kitchen appliances and electronics from trusted global brands in Abu Dhabi & UAE.",
+  alternates: {
+    canonical: "https://halimatrading.ae/shop",
+  },
+  openGraph: {
+    title: "Product Catalog | Halima Trading L.L.C.",
+    description: "Browse premium home appliances and cooling solutions available across the UAE.",
+    url: "https://halimatrading.ae/shop",
+  },
+};
+
+export default async function ShopPage() {
+  const products = await getMongoProducts();
+
+  return (
+    <>
+      <section className="page-hero">
+        <span className="eyebrow light">Product catalogue</span>
+        <h1>Find the right appliance.</h1>
+        <p>Search trusted brands and request current pricing from our Abu Dhabi team.</p>
+      </section>
+      <Suspense
+        fallback={
+          <section className="shop-layout">
+            <div className="shop-results w-full">
+              <div className="product-grid">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <ProductCardSkeleton key={i} />
+                ))}
+              </div>
+            </div>
+          </section>
+        }
+      >
+        <ShopClientView initialProducts={products} />
+      </Suspense>
+    </>
+  );
+}

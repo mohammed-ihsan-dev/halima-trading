@@ -1,0 +1,322 @@
+[
+  {
+    "id": "ac-hisense-15-window",
+    "slug": "hisense-15-ton-window-ac",
+    "name": "Hisense 1.5 Ton Window Air Conditioner",
+    "brand": "Hisense",
+    "model": "Model on request",
+    "category": "Air Conditioning",
+    "subcategory": "Window Air Conditioners",
+    "description": "Powerful window air conditioning for fast, even cooling in UAE homes and offices.",
+    "features": [
+      "1.5 ton cooling capacity",
+      "Four-way air direction",
+      "Fast cooling"
+    ],
+    "specifications": {
+      "Capacity": "1.5 Ton / 18,000 BTU",
+      "Type": "Window Air Conditioner",
+      "Application": "Residential and light commercial"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/hisense-window-ac.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-AI-001",
+    "stockCount": 12
+  },
+  {
+    "id": "ac-ogeneral-2-split",
+    "slug": "ogeneral-2-ton-split-ac",
+    "name": "O General 2 Ton Split Air Conditioner",
+    "brand": "O General",
+    "model": "Model on request",
+    "category": "Air Conditioning",
+    "subcategory": "Split Air Conditioners",
+    "description": "High-capacity split cooling engineered for dependable performance in demanding UAE temperatures.",
+    "features": [
+      "2 ton cooling capacity",
+      "Wall-mounted split design",
+      "Quiet indoor operation"
+    ],
+    "specifications": {
+      "Capacity": "2 Ton / 24,000 BTU",
+      "Type": "Wall-mounted Split AC",
+      "Application": "Large rooms, offices and retail spaces"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/ogeneral-split-indoor.png",
+      "/featured/ogeneral-split-outdoor.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-AI-002",
+    "stockCount": 13
+  },
+  {
+    "id": "ac-midea-15-window",
+    "slug": "midea-15-ton-window-ac",
+    "name": "Midea 1.5 Ton Window Air Conditioner",
+    "brand": "Midea",
+    "model": "Model on request",
+    "category": "Air Conditioning",
+    "subcategory": "Window Air Conditioners",
+    "description": "A modern, compact window unit offering fast cooling and straightforward installation.",
+    "features": [
+      "1.5 ton cooling capacity",
+      "Flash cooling",
+      "Convenient controls"
+    ],
+    "specifications": {
+      "Capacity": "1.5 Ton / 18,000 BTU",
+      "Type": "Window Air Conditioner",
+      "Installation": "Window-mounted"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/midea-window-ac.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-AI-003",
+    "stockCount": 14
+  },
+  {
+    "id": "ac-westpoint-15-window",
+    "slug": "westpoint-15-ton-window-ac",
+    "name": "Westpoint 1.5 Ton Window Air Conditioner",
+    "brand": "Westpoint",
+    "model": "Model on request",
+    "category": "Air Conditioning",
+    "subcategory": "Window Air Conditioners",
+    "description": "Dependable everyday window cooling with practical manual controls.",
+    "features": [
+      "1.5 ton cooling capacity",
+      "Manual controls",
+      "Adjustable louvers"
+    ],
+    "specifications": {
+      "Capacity": "1.5 Ton / 18,000 BTU",
+      "Type": "Window Air Conditioner",
+      "Controls": "Manual rotary controls"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/westpoint-window-ac.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-AI-004",
+    "stockCount": 15
+  },
+  {
+    "id": "washer-super-general-15",
+    "slug": "super-general-15kg-twin-tub",
+    "name": "Super General 15 KG Twin-Tub Washing Machine",
+    "brand": "Super General",
+    "model": "SGW155N",
+    "category": "Laundry Appliances",
+    "subcategory": "Washing Machines",
+    "description": "A spacious twin-tub washer built for convenient, high-volume family laundry.",
+    "features": [
+      "15 kg capacity",
+      "Twin-tub design",
+      "Easy rotary controls"
+    ],
+    "specifications": {
+      "Capacity": "15 kg",
+      "Type": "Twin Tub",
+      "Loading": "Top load"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/super-general-twin-tub.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-LA-005",
+    "stockCount": 16
+  },
+  {
+    "id": "washer-midea-black",
+    "slug": "midea-black-front-load-washer",
+    "name": "Midea Black Front-Load Washing Machine",
+    "brand": "Midea",
+    "model": "Model on request",
+    "category": "Laundry Appliances",
+    "subcategory": "Washing Machines",
+    "description": "A modern black front-load washer with efficient inverter performance.",
+    "features": [
+      "Front-load design",
+      "Inverter motor",
+      "Multiple wash programs"
+    ],
+    "specifications": {
+      "Type": "Front Load",
+      "Color": "Black",
+      "Motor": "Inverter"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/midea-front-load-black.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-LA-006",
+    "stockCount": 12
+  },
+  {
+    "id": "washer-samsung-white",
+    "slug": "samsung-white-front-load-washer",
+    "name": "Samsung White Front-Load Washing Machine",
+    "brand": "Samsung",
+    "model": "Model on request",
+    "category": "Laundry Appliances",
+    "subcategory": "Washing Machines",
+    "description": "Reliable front-load fabric care in a clean white finish.",
+    "features": [
+      "Front-load design",
+      "Digital controls",
+      "Efficient wash cycles"
+    ],
+    "specifications": {
+      "Type": "Front Load",
+      "Color": "White",
+      "Controls": "Digital"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/samsung-front-load-white.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-LA-007",
+    "stockCount": 13
+  },
+  {
+    "id": "washer-compact-twin",
+    "slug": "compact-twin-tub-washer",
+    "name": "Compact Twin-Tub Washing Machine",
+    "brand": "Super General",
+    "model": "Model on request",
+    "category": "Laundry Appliances",
+    "subcategory": "Washing Machines",
+    "description": "A compact top-load twin-tub washer suited to everyday laundry needs.",
+    "features": [
+      "Twin-tub design",
+      "Compact footprint",
+      "Simple controls"
+    ],
+    "specifications": {
+      "Type": "Twin Tub",
+      "Loading": "Top load",
+      "Color": "White"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/compact-twin-tub.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-LA-008",
+    "stockCount": 14
+  },
+  {
+    "id": "cooler-stainless",
+    "slug": "stainless-commercial-water-cooler",
+    "name": "Stainless Steel Commercial Water Cooler",
+    "brand": "Super General",
+    "model": "Model on request",
+    "category": "Commercial Cooling",
+    "subcategory": "Water Coolers",
+    "description": "Durable multi-tap stainless-steel water cooler for busy commercial environments.",
+    "features": [
+      "Stainless-steel cabinet",
+      "Multiple dispensing taps",
+      "Heavy-duty cooling"
+    ],
+    "specifications": {
+      "Type": "Commercial Water Cooler",
+      "Finish": "Stainless Steel",
+      "Installation": "Floor standing"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/stainless-water-cooler.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-CO-009",
+    "stockCount": 15
+  },
+  {
+    "id": "dispenser-black-bottom",
+    "slug": "black-bottom-loading-water-dispenser",
+    "name": "Black Bottom-Loading Water Dispenser",
+    "brand": "Super General",
+    "model": "Model on request",
+    "category": "Home & Small Appliances",
+    "subcategory": "Water Dispensers",
+    "description": "Contemporary bottom-loading dispenser with concealed bottle storage.",
+    "features": [
+      "Bottom-loading design",
+      "Hot and cold dispensing",
+      "Modern black finish"
+    ],
+    "specifications": {
+      "Type": "Water Dispenser",
+      "Loading": "Bottom loading",
+      "Color": "Black"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/black-water-dispenser.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-HO-0010",
+    "stockCount": 16
+  },
+  {
+    "id": "dispenser-white-floor",
+    "slug": "white-floor-standing-water-dispenser",
+    "name": "White Floor-Standing Water Dispenser",
+    "brand": "Super General",
+    "model": "Model on request",
+    "category": "Home & Small Appliances",
+    "subcategory": "Water Dispensers",
+    "description": "A practical floor-standing water dispenser with convenient storage.",
+    "features": [
+      "Floor-standing design",
+      "Hot and cold dispensing",
+      "Integrated storage"
+    ],
+    "specifications": {
+      "Type": "Water Dispenser",
+      "Installation": "Floor standing",
+      "Color": "White"
+    },
+    "price": null,
+    "priceLabel": "Contact for Price",
+    "images": [
+      "/featured/white-water-dispenser.png"
+    ],
+    "inStock": true,
+    "featured": true,
+    "sku": "HT-HO-0011",
+    "stockCount": 12
+  }
+]
