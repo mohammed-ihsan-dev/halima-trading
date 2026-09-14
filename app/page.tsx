@@ -6,7 +6,7 @@ import BrandCarousel from "@/components/BrandCarousel";
 import CategorySolutionsSection from "@/components/CategorySolutionsSection";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
-export const revalidate = 3600; // 1 hour ISR
+export const revalidate = 60; // 60s ISR for responsive homepage updates
 
 export default async function Home() {
   const products = await getMongoFeaturedProducts();

@@ -10,7 +10,7 @@ import { formatCurrency } from "@/lib/currency";
 import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
 
-export const revalidate = 3600; // 1 hour ISR
+export const revalidate = 60; // 60s ISR for responsive product detail updates
 
 interface PageProps {
   params: Promise<{ slug: string }>;

@@ -4,7 +4,7 @@ import { getMongoProducts } from "@/lib/repositories/products";
 import ShopClientView from "@/components/shop/ShopClientView";
 import ProductCardSkeleton from "@/components/ProductCardSkeleton";
 
-export const revalidate = 3600; // 1 hour ISR
+export const revalidate = 60; // 60s ISR for responsive product catalog updates
 
 export const metadata: Metadata = {
   title: "Product Catalog | Electronics & Home Appliances",

@@ -54,7 +54,14 @@ function formatProduct(doc: any): Product {
     specifications: rest.specifications || {},
     price: rest.price ?? null,
     priceLabel: rest.price ? `${rest.price} AED` : rest.priceLabel || "Contact for Price",
-    images: Array.isArray(rest.images) && rest.images.length > 0 ? rest.images : ["/featured/hisense-window-ac.png"],
+    images:
+      Array.isArray(rest.images) && rest.images.length > 0
+        ? rest.images.map((img: string) =>
+            typeof img === "string" && img.startsWith("data:") && img.length > 300000
+              ? "/featured/hisense-window-ac.png"
+              : img
+          )
+        : ["/featured/hisense-window-ac.png"],
     inStock: rest.inStock !== undefined ? Boolean(rest.inStock) : true,
     stockCount: rest.stockCount !== undefined ? Number(rest.stockCount) : 12,
     featured: rest.featured !== undefined ? Boolean(rest.featured) : false,

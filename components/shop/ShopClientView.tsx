@@ -25,10 +25,19 @@ export default function ShopClientView({ initialProducts }: ShopClientViewProps)
     }
   }, [categoryParam]);
 
-  // Keep synced if initialProducts prop updates
+  // Keep synced if initialProducts prop updates, or fetch live products if initialProducts was empty at build time
   useEffect(() => {
     if (initialProducts && initialProducts.length > 0) {
       setProductList(initialProducts);
+    } else {
+      fetch("/api/products")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data && data.success && Array.isArray(data.data)) {
+            setProductList(data.data);
+          }
+        })
+        .catch((err) => console.error("Error fetching live products in ShopClientView:", err));
     }
   }, [initialProducts]);
 

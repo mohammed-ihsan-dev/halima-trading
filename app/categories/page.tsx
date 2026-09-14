@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { categories } from "@/data/categories";
 import { getMongoProducts } from "@/lib/repositories/products";
 
-export const revalidate = 3600; // 1 hour ISR
+export const revalidate = 60; // 60s ISR for responsive category counts
 
 export const metadata = {
   title: "Product Categories | Electronics & Home Appliances",
