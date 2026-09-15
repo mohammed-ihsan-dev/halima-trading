@@ -15,16 +15,16 @@ export function getMongoClientPromise(): Promise<MongoClient> {
     return Promise.reject(new Error("MONGODB_URI environment variable is not configured."));
   }
 
-  if (process.env.NODE_ENV === "development") {
-    if (!global._mongoClientPromise) {
-      const client = new MongoClient(uri, {});
-      global._mongoClientPromise = client.connect();
-    }
-    return global._mongoClientPromise;
+  // Reuse MongoClient connection promise across warm lambdas in both dev and prod
+  if (!global._mongoClientPromise) {
+    const client = new MongoClient(uri, {
+      maxPoolSize: 10,
+      minPoolSize: 2,
+      maxIdleTimeMS: 30000,
+    });
+    global._mongoClientPromise = client.connect();
   }
-
-  const client = new MongoClient(uri, {});
-  return client.connect();
+  return global._mongoClientPromise;
 }
 
 export async function getMongoClient(): Promise<MongoClient> {
@@ -35,6 +35,39 @@ export async function getMongoDb(overrideDbName?: string): Promise<Db> {
   const mongoClient = await getMongoClient();
   const dbName = overrideDbName || process.env.MONGODB_DB || "halima";
   return mongoClient.db(dbName);
+}
+
+let indexesEnsured = false;
+
+export async function ensureMongoIndexes(): Promise<void> {
+  if (indexesEnsured) return;
+  try {
+    const db = await getMongoDb();
+    
+    // Create product collection indexes safely
+    const indexConfigs = [
+      { key: { slug: 1 }, options: { unique: true, background: true } },
+      { key: { sku: 1 }, options: { unique: true, background: true } },
+      { key: { category: 1 }, options: { background: true } },
+      { key: { categorySlug: 1 }, options: { background: true } },
+      { key: { brand: 1 }, options: { background: true } },
+      { key: { featured: 1 }, options: { background: true } },
+      { key: { status: 1 }, options: { background: true } },
+      { key: { createdAt: -1 }, options: { background: true } },
+    ];
+
+    for (const { key, options } of indexConfigs) {
+      try {
+        await db.collection("products").createIndex(key as any, options as any);
+      } catch (err) {
+        // Ignore duplicate spec conflict if index already exists
+      }
+    }
+
+    indexesEnsured = true;
+  } catch (err) {
+    // Silent fallback
+  }
 }
 
 /**
@@ -79,5 +112,6 @@ export async function testMongoConnection(): Promise<{
     };
   }
 }
+
 
 

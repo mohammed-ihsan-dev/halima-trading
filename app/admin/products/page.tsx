@@ -182,9 +182,18 @@ export default function AdminProductsPage() {
 
       {/* Product Cards Grid (12 Items Per Page Max) */}
       {loading ? (
-        <div className="bg-white rounded-2xl border border-slate-200/80 p-12 text-center text-slate-500 space-y-3">
-          <div className="w-10 h-10 rounded-full border-4 border-red-600 border-t-transparent animate-spin mx-auto" />
-          <p className="text-sm font-extrabold text-slate-700">Loading products from MongoDB Atlas...</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 animate-pulse">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div key={i} className="bg-white rounded-2xl border border-slate-200/80 h-72 p-4 flex flex-col justify-between">
+              <div className="w-full h-36 bg-slate-100 rounded-xl" />
+              <div className="space-y-2 pt-2">
+                <div className="h-3 w-1/3 bg-slate-200 rounded-md" />
+                <div className="h-4 w-3/4 bg-slate-200 rounded-md" />
+                <div className="h-3 w-1/2 bg-slate-100 rounded-md" />
+              </div>
+              <div className="h-8 bg-slate-100 rounded-xl w-full mt-2" />
+            </div>
+          ))}
         </div>
       ) : filteredProducts.length === 0 ? (
         <div className="bg-white rounded-2xl border border-slate-200/80 p-12 text-center text-slate-500 space-y-3">

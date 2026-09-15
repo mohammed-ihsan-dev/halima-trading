@@ -14,17 +14,26 @@ import {
 } from "lucide-react";
 import AdminStatCard from "@/components/admin/AdminStatCard";
 import AnimatedFadeIn, { AnimatedStaggerGroup, AnimatedStaggerItem } from "@/components/admin/AnimatedFadeIn";
-import type { Product } from "@/data/products";
-import type { SafeUser as UserAccount } from "@/lib/repositories/users";
-import type { MongoOrderDoc as OrderRecord } from "@/lib/repositories/orders";
-import type { MongoPaymentDoc as PaymentRecord } from "@/lib/repositories/payments";
+import DashboardSkeleton from "@/components/admin/DashboardSkeleton";
+import AdminBarChart from "@/components/admin/charts/AdminBarChart";
+import AdminDonutChart from "@/components/admin/charts/AdminDonutChart";
 
+interface AdminStatsData {
+  totalProducts: number;
+  activeProducts: number;
+  outOfStockProducts: number;
+  totalOrders: number;
+  pendingOrders: number;
+  totalUsers: number;
+  activeUsers: number;
+  suspendedUsers: number;
+  deletedUsers: number;
+  capturedPayments: number;
+  categoryData: Array<{ name: string; inStock: number; outOfStock: number }>;
+}
 
 export default function AdminDashboardPage() {
-  const [productsList, setProductsList] = useState<Product[]>([]);
-  const [usersList, setUsersList] = useState<UserAccount[]>([]);
-  const [ordersList, setOrdersList] = useState<OrderRecord[]>([]);
-  const [paymentsList, setPaymentsList] = useState<PaymentRecord[]>([]);
+  const [stats, setStats] = useState<AdminStatsData | null>(null);
   const [loading, setLoading] = useState(true);
   const [formattedDate, setFormattedDate] = useState("");
   const [dayOfWeek, setDayOfWeek] = useState("");
@@ -41,17 +50,11 @@ export default function AdminDashboardPage() {
     async function loadDashboardData() {
       setLoading(true);
       try {
-        const [prodRes, orderRes, userRes, payRes] = await Promise.all([
-          fetch("/api/admin/products", { cache: "no-store" }).then((r) => r.json()).catch(() => ({ data: [] })),
-          fetch("/api/admin/orders", { cache: "no-store" }).then((r) => r.json()).catch(() => ({ data: [] })),
-          fetch("/api/admin/users", { cache: "no-store" }).then((r) => r.json()).catch(() => ({ data: [] })),
-          fetch("/api/admin/payments", { cache: "no-store" }).then((r) => r.json()).catch(() => ({ data: [] })),
-        ]);
-
-        if (Array.isArray(prodRes.data)) setProductsList(prodRes.data);
-        if (Array.isArray(orderRes.data)) setOrdersList(orderRes.data);
-        if (Array.isArray(userRes.data)) setUsersList(userRes.data);
-        if (Array.isArray(payRes.data)) setPaymentsList(payRes.data);
+        const res = await fetch("/api/admin/stats", { cache: "no-store" });
+        const data = await res.json();
+        if (data && data.success && data.stats) {
+          setStats(data.stats);
+        }
       } catch (err) {
         console.error("Error loading dashboard metrics:", err);
       } finally {
@@ -62,46 +65,23 @@ export default function AdminDashboardPage() {
     loadDashboardData();
   }, []);
 
+  if (loading || !stats) {
+    return <DashboardSkeleton />;
+  }
 
-  const totalProducts = productsList.length;
-  const activeProducts = productsList.filter((p) => p.inStock).length;
-  const outOfStockProducts = productsList.filter((p) => !p.inStock || (p.stockCount !== undefined && p.stockCount <= 0)).length;
-
-  const totalOrders = ordersList.length;
-  const pendingOrders = ordersList.filter((o) => o.orderStatus === "PENDING" || o.orderStatus === "Pending" || (o as any).status === "Pending").length;
-
-
-  const totalUsers = usersList.length;
-  const activeUsers = usersList.filter((u) => u.status === "ACTIVE").length;
-  const suspendedUsers = usersList.filter((u) => u.status === "SUSPENDED").length;
-  const deletedUsers = usersList.filter((u) => u.status === "DELETED").length;
-
-
-  const capturedPayments = paymentsList.filter((p) => p.status === "PAID" || p.status === "Captured").length;
-
-
-  // Build dynamic category distribution from actual products
-  const categoryMap: Record<string, { inStock: number; outOfStock: number }> = {};
-  productsList.forEach((p) => {
-    const cat = p.category || "General";
-    if (!categoryMap[cat]) categoryMap[cat] = { inStock: 0, outOfStock: 0 };
-    if (p.inStock && (p.stockCount === undefined || p.stockCount > 0)) {
-      categoryMap[cat].inStock += 1;
-    } else {
-      categoryMap[cat].outOfStock += 1;
-    }
-  });
-
-  const categoryData = Object.entries(categoryMap).map(([name, counts]) => ({
-    name,
-    inStock: counts.inStock,
-    outOfStock: counts.outOfStock,
-  }));
-
-  const maxCategoryTotal = Math.max(
-    ...categoryData.map((c) => c.inStock + c.outOfStock),
-    1
-  );
+  const {
+    totalProducts,
+    activeProducts,
+    outOfStockProducts,
+    totalOrders,
+    pendingOrders,
+    totalUsers,
+    activeUsers,
+    suspendedUsers,
+    deletedUsers,
+    capturedPayments,
+    categoryData,
+  } = stats;
 
   return (
     <div className="space-y-8">
@@ -119,7 +99,6 @@ export default function AdminDashboardPage() {
           <span>{formattedDate || "Today"}</span>
           {dayOfWeek && <span className="text-slate-400 font-normal">| {dayOfWeek}</span>}
         </div>
-
       </div>
 
       {/* Summary Stat Cards Grid */}
@@ -127,9 +106,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Total Products"
-            value={loading ? "..." : totalProducts}
+            value={totalProducts}
             icon={Package}
-            subtitle={loading ? "Loading MongoDB products..." : `${activeProducts} In Stock • ${outOfStockProducts} Out`}
+            subtitle={`${activeProducts} In Stock • ${outOfStockProducts} Out`}
             iconBgColor="bg-red-50"
             iconColor="text-red-600"
           />
@@ -137,9 +116,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Active Products"
-            value={loading ? "..." : activeProducts}
+            value={activeProducts}
             icon={CheckCircle2}
-            subtitle={loading ? "Loading..." : "In Stock"}
+            subtitle="In Stock"
             iconBgColor="bg-emerald-50"
             iconColor="text-emerald-600"
           />
@@ -147,9 +126,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Out of Stock"
-            value={loading ? "..." : outOfStockProducts}
+            value={outOfStockProducts}
             icon={AlertTriangle}
-            subtitle={loading ? "Loading..." : "Needs restocking"}
+            subtitle="Needs restocking"
             iconBgColor="bg-amber-50"
             iconColor="text-amber-600"
           />
@@ -157,9 +136,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Total Orders"
-            value={loading ? "..." : totalOrders}
+            value={totalOrders}
             icon={ShoppingCart}
-            subtitle={loading ? "Loading..." : `${pendingOrders} Pending fulfillment`}
+            subtitle={`${pendingOrders} Pending fulfillment`}
             iconBgColor="bg-red-50"
             iconColor="text-red-600"
           />
@@ -167,7 +146,7 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Pending Orders"
-            value={loading ? "..." : pendingOrders}
+            value={pendingOrders}
             icon={Clock}
             trend="Needs fulfillment"
             trendDirection="neutral"
@@ -178,9 +157,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Total Users"
-            value={loading ? "..." : totalUsers}
+            value={totalUsers}
             icon={Users}
-            subtitle={loading ? "Loading..." : `${activeUsers} Active accounts`}
+            subtitle={`${activeUsers} Active accounts`}
             iconBgColor="bg-red-50"
             iconColor="text-red-600"
           />
@@ -188,9 +167,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Suspended Users"
-            value={loading ? "..." : suspendedUsers}
+            value={suspendedUsers}
             icon={UserX}
-            subtitle={loading ? "Loading..." : "Suspended"}
+            subtitle="Suspended"
             iconBgColor="bg-rose-50"
             iconColor="text-rose-600"
           />
@@ -198,9 +177,9 @@ export default function AdminDashboardPage() {
         <AnimatedStaggerItem>
           <AdminStatCard
             title="Captured Payments"
-            value={loading ? "..." : capturedPayments}
+            value={capturedPayments}
             icon={CreditCard}
-            subtitle={loading ? "Loading..." : "Processed payments"}
+            subtitle="Processed payments"
             iconBgColor="bg-emerald-50"
             iconColor="text-emerald-600"
           />
@@ -226,44 +205,9 @@ export default function AdminDashboardPage() {
             </div>
           </div>
 
-          {/* Bar Chart Graphics */}
+          {/* Animated Bar Chart */}
           <div className="pt-4 pb-2">
-            {loading ? (
-              <div className="h-52 flex items-center justify-center text-slate-400 font-extrabold text-xs">
-                Loading category chart data...
-              </div>
-            ) : categoryData.length === 0 ? (
-              <div className="h-52 flex items-center justify-center text-slate-400 font-extrabold text-xs">
-                No product categories available.
-              </div>
-            ) : (
-              <div className="h-52 flex items-end justify-between gap-4 border-b border-slate-100 pb-3 px-2">
-                {categoryData.map((cat) => {
-                  const inStockHeight = Math.round((cat.inStock / maxCategoryTotal) * 100);
-                  const outOfStockHeight = Math.round((cat.outOfStock / maxCategoryTotal) * 100);
-
-                  return (
-                    <div key={cat.name} className="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
-                      <div className="w-full flex items-end justify-center gap-1.5 h-full">
-                        <div
-                          className="w-1/2 bg-red-600 rounded-t-md transition-all group-hover:bg-red-700 relative"
-                          style={{ height: `${Math.max(inStockHeight, 6)}%` }}
-                          title={`In Stock: ${cat.inStock}`}
-                        />
-                        <div
-                          className="w-1/2 bg-slate-200 rounded-t-md transition-all group-hover:bg-slate-300 relative"
-                          style={{ height: `${Math.max(outOfStockHeight, 6)}%` }}
-                          title={`Out of Stock: ${cat.outOfStock}`}
-                        />
-                      </div>
-                      <span className="text-xs font-bold text-slate-700 truncate max-w-[80px]" title={cat.name}>
-                        {cat.name}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
+            <AdminBarChart data={categoryData} type="dual" height={200} />
           </div>
         </div>
 
@@ -274,43 +218,16 @@ export default function AdminDashboardPage() {
             <p className="text-xs md:text-sm text-slate-500 font-semibold mt-0.5">User account breakdown</p>
           </div>
 
-          {/* Ring Donut Representation */}
-          <div className="relative flex items-center justify-center my-2">
-            <div className="w-44 h-44 rounded-full border-[16px] border-red-600 border-t-amber-500 border-r-slate-300 flex items-center justify-center shadow-inner">
-              <div className="text-center leading-none">
-                <span className="text-2xl font-black text-slate-900 block">
-                  {loading ? "..." : totalUsers}
-                </span>
-                <span className="text-xs font-bold text-slate-500 block mt-1 uppercase tracking-wider">
-                  Total Users
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Status Breakdown Legend */}
-          <div className="space-y-3 pt-3 border-t border-slate-100 text-xs md:text-sm font-bold text-slate-700">
-            <div className="flex items-center justify-between">
-              <span className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-red-600" /> Active
-              </span>
-              <span>{loading ? "..." : `${activeUsers} (${totalUsers ? Math.round((activeUsers / totalUsers) * 100) : 0}%)`}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-amber-500" /> Suspended
-              </span>
-              <span>{loading ? "..." : `${suspendedUsers} (${totalUsers ? Math.round((suspendedUsers / totalUsers) * 100) : 0}%)`}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-slate-300" /> Deleted
-              </span>
-              <span>{loading ? "..." : `${deletedUsers} (${totalUsers ? Math.round((deletedUsers / totalUsers) * 100) : 0}%)`}</span>
-            </div>
-          </div>
+          {/* Animated Donut Chart */}
+          <AdminDonutChart
+            totalUsers={totalUsers}
+            activeUsers={activeUsers}
+            suspendedUsers={suspendedUsers}
+            deletedUsers={deletedUsers}
+          />
         </div>
       </AnimatedFadeIn>
     </div>
   );
 }
+

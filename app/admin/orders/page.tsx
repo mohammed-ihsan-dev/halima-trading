@@ -157,12 +157,18 @@ export default function AdminOrdersPage() {
             </thead>
             <tbody className="divide-y divide-slate-100 text-sm font-medium text-slate-800">
               {loading ? (
-                <tr>
-                  <td colSpan={8} className="py-12 text-center text-slate-400 font-semibold">
-                    <div className="w-8 h-8 rounded-full border-4 border-red-600 border-t-transparent animate-spin mx-auto mb-2" />
-                    <span>Loading orders...</span>
-                  </td>
-                </tr>
+                Array.from({ length: 6 }).map((_, i) => (
+                  <tr key={i} className="animate-pulse">
+                    <td className="py-4 px-4"><div className="h-4 w-16 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-28 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-12 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-20 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-16 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-16 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-20 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4 text-right"><div className="h-6 w-16 bg-slate-200 rounded-md ml-auto" /></td>
+                  </tr>
+                ))
               ) : paginatedOrders.length === 0 ? (
                 <tr>
                   <td colSpan={8} className="py-12 text-center text-slate-400 font-semibold">

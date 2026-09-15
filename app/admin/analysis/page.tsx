@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { Package, ShoppingBag, Users, CreditCard, CheckCircle2, AlertTriangle, Clock, Truck, ShieldAlert } from "lucide-react";
 import AdminStatCard from "@/components/admin/AdminStatCard";
+import AdminBarChart from "@/components/admin/charts/AdminBarChart";
+import AdminProgressChart from "@/components/admin/charts/AdminProgressChart";
 import type { Product } from "@/data/products";
 import type { SafeUser as UserAccount } from "@/lib/repositories/users";
 import type { MongoOrderDoc as OrderRecord } from "@/lib/repositories/orders";
@@ -62,8 +64,6 @@ export default function AdminAnalysisPage() {
   const failedPayments = payments.filter((p) => p.status === "FAILED" || p.status === "Failed").length;
   const refundedPayments = payments.filter((p) => p.status === "REFUNDED" || p.status === "Refunded").length;
 
-
-
   // Category Distribution computed dynamically from actual products
   const categoryCountMap: Record<string, number> = {};
   products.forEach((p) => {
@@ -76,7 +76,12 @@ export default function AdminAnalysisPage() {
     count,
   }));
 
-  const maxCategoryCount = Math.max(...categoryStats.map((c) => c.count), 1);
+  const orderPipelineItems = [
+    { id: "pending", label: "Pending Orders", count: pendingOrders, total: totalOrders, colorClass: "bg-amber-500", icon: Clock },
+    { id: "paid", label: "Paid Orders", count: paidOrders, total: totalOrders, colorClass: "bg-blue-500", icon: CheckCircle2 },
+    { id: "shipped", label: "Shipped Orders", count: shippedOrders, total: totalOrders, colorClass: "bg-emerald-500", icon: Truck },
+    { id: "cancelled", label: "Cancelled Orders", count: cancelledOrders, total: totalOrders, colorClass: "bg-rose-500", icon: AlertTriangle },
+  ];
 
   return (
     <div className="space-y-8">
@@ -133,63 +138,16 @@ export default function AdminAnalysisPage() {
             <span className="text-xs text-slate-400 font-normal">Real Data</span>
           </h2>
           {loading ? (
-            <div className="py-8 text-center text-slate-400 font-semibold text-xs">
-              Loading orders pipeline data...
+            <div className="py-8 space-y-4 animate-pulse">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="space-y-2">
+                  <div className="h-4 bg-slate-200 rounded-md w-1/3" />
+                  <div className="h-2.5 bg-slate-100 rounded-full w-full" />
+                </div>
+              ))}
             </div>
           ) : (
-            <div className="space-y-4">
-              <div className="flex items-center justify-between text-xs md:text-sm">
-                <span className="flex items-center gap-2 font-bold text-slate-700">
-                  <Clock size={16} className="text-amber-500" /> Pending Orders
-                </span>
-                <span className="font-extrabold text-slate-900">{pendingOrders}</span>
-              </div>
-              <div className="w-full bg-slate-100 rounded-full h-2.5">
-                <div
-                  className="bg-amber-500 h-2.5 rounded-full transition-all"
-                  style={{ width: `${totalOrders ? (pendingOrders / totalOrders) * 100 : 0}%` }}
-                />
-              </div>
-
-              <div className="flex items-center justify-between text-xs md:text-sm pt-1">
-                <span className="flex items-center gap-2 font-bold text-slate-700">
-                  <CheckCircle2 size={16} className="text-blue-500" /> Paid Orders
-                </span>
-                <span className="font-extrabold text-slate-900">{paidOrders}</span>
-              </div>
-              <div className="w-full bg-slate-100 rounded-full h-2.5">
-                <div
-                  className="bg-blue-500 h-2.5 rounded-full transition-all"
-                  style={{ width: `${totalOrders ? (paidOrders / totalOrders) * 100 : 0}%` }}
-                />
-              </div>
-
-              <div className="flex items-center justify-between text-xs md:text-sm pt-1">
-                <span className="flex items-center gap-2 font-bold text-slate-700">
-                  <Truck size={16} className="text-emerald-500" /> Shipped Orders
-                </span>
-                <span className="font-extrabold text-slate-900">{shippedOrders}</span>
-              </div>
-              <div className="w-full bg-slate-100 rounded-full h-2.5">
-                <div
-                  className="bg-emerald-500 h-2.5 rounded-full transition-all"
-                  style={{ width: `${totalOrders ? (shippedOrders / totalOrders) * 100 : 0}%` }}
-                />
-              </div>
-
-              <div className="flex items-center justify-between text-xs md:text-sm pt-1">
-                <span className="flex items-center gap-2 font-bold text-slate-700">
-                  <AlertTriangle size={16} className="text-rose-500" /> Cancelled Orders
-                </span>
-                <span className="font-extrabold text-slate-900">{cancelledOrders}</span>
-              </div>
-              <div className="w-full bg-slate-100 rounded-full h-2.5">
-                <div
-                  className="bg-rose-500 h-2.5 rounded-full transition-all"
-                  style={{ width: `${totalOrders ? (cancelledOrders / totalOrders) * 100 : 0}%` }}
-                />
-              </div>
-            </div>
+            <AdminProgressChart items={orderPipelineItems} />
           )}
         </div>
 
@@ -200,8 +158,10 @@ export default function AdminAnalysisPage() {
             <span className="text-xs text-slate-400 font-normal">Real Data</span>
           </h2>
           {loading ? (
-            <div className="py-8 text-center text-slate-400 font-semibold text-xs">
-              Loading payment metrics...
+            <div className="space-y-4 animate-pulse py-2">
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="p-4 rounded-xl bg-slate-100 h-20" />
+              ))}
             </div>
           ) : (
             <div className="space-y-4">
@@ -239,31 +199,13 @@ export default function AdminAnalysisPage() {
           Products Distribution by Category
         </h2>
         {loading ? (
-          <div className="h-56 flex items-center justify-center text-slate-400 font-semibold text-xs">
-            Loading category distribution...
-          </div>
-        ) : categoryStats.length === 0 ? (
-          <div className="h-56 flex items-center justify-center text-slate-400 font-semibold text-xs">
-            No products found for category distribution.
+          <div className="h-56 flex items-end justify-between gap-4 pt-4 px-2 animate-pulse">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} className="flex-1 bg-slate-100 rounded-t-lg" style={{ height: `${40 + i * 12}%` }} />
+            ))}
           </div>
         ) : (
-          <div className="h-56 flex items-end justify-between gap-4 pt-4 px-2">
-            {categoryStats.map((c) => {
-              const heightPercent = Math.round((c.count / maxCategoryCount) * 100);
-              return (
-                <div key={c.name} className="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
-                  <span className="text-xs md:text-sm font-extrabold text-slate-700">{c.count}</span>
-                  <div
-                    className="w-full bg-red-600 rounded-t-lg transition-all group-hover:bg-red-700"
-                    style={{ height: `${Math.max(heightPercent, 8)}%` }}
-                  />
-                  <span className="text-xs md:text-sm font-bold text-slate-700 truncate mt-1 max-w-[100px]" title={c.name}>
-                    {c.name}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+          <AdminBarChart data={categoryStats} type="single" height={220} />
         )}
       </div>
     </div>

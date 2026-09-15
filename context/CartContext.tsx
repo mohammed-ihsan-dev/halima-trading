@@ -1,13 +1,88 @@
 "use client";
-import {createContext,useContext,useEffect,useState} from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import type { Product } from "@/data/products";
-export type CartLine=Product&{quantity:number};
-type CartValue={items:CartLine[];count:number;total:number;open:boolean;setOpen:(x:boolean)=>void;add:(p:Product,q?:number)=>void;update:(id:string,q:number)=>void;remove:(id:string)=>void;clear:()=>void;toast:string};
-const CartContext=createContext<CartValue|null>(null);
-export function CartProvider({children}:{children:React.ReactNode}){const[items,setItems]=useState<CartLine[]>([]);const[open,setOpen]=useState(false);const[toast,setToast]=useState("");
- useEffect(()=>{try{setItems(JSON.parse(localStorage.getItem("halima-cart")||"[]"))}catch{}},[]);
- useEffect(()=>{localStorage.setItem("halima-cart",JSON.stringify(items))},[items]);
- const add=(p:Product,q=1)=>{setItems(v=>{const found=v.find(x=>x.id===p.id);return found?v.map(x=>x.id===p.id?{...x,quantity:x.quantity+q}:x):[...v,{...p,quantity:q}]});setToast("Product added to cart successfully.");setTimeout(()=>setToast(""),2200)};
- const update=(id:string,q:number)=>setItems(v=>v.map(x=>x.id===id?{...x,quantity:Math.max(1,q)}:x));const remove=(id:string)=>setItems(v=>v.filter(x=>x.id!==id));
- return <CartContext.Provider value={{items,count:items.reduce((s,x)=>s+x.quantity,0),total:items.reduce((s,x)=>s+(x.price||0)*x.quantity,0),open,setOpen,add,update,remove,clear:()=>setItems([]),toast}}>{children}{toast&&<div className="toast">✓ {toast}</div>}</CartContext.Provider>}
-export const useCart=()=>{const c=useContext(CartContext);if(!c)throw Error("CartProvider missing");return c};
+
+export type CartLine = Product & { quantity: number };
+type CartValue = {
+  items: CartLine[];
+  count: number;
+  total: number;
+  open: boolean;
+  setOpen: (x: boolean) => void;
+  add: (p: Product, q?: number) => void;
+  update: (id: string, q: number) => void;
+  remove: (id: string) => void;
+  clear: () => void;
+  toast: string;
+};
+
+const CartContext = createContext<CartValue | null>(null);
+
+export function CartProvider({ children }: { children: React.ReactNode }) {
+  const [items, setItems] = useState<CartLine[]>([]);
+  const [open, setOpen] = useState(false);
+  const [toast, setToast] = useState("");
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("halima-cart");
+      if (saved) {
+        setItems(JSON.parse(saved));
+      }
+    } catch (e) {
+      console.warn("Failed to load cart from localStorage:", e);
+    } finally {
+      setLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (loaded) {
+      localStorage.setItem("halima-cart", JSON.stringify(items));
+    }
+  }, [items, loaded]);
+
+  const add = (p: Product, q = 1) => {
+    setItems((v) => {
+      const found = v.find((x) => x.id === p.id);
+      return found
+        ? v.map((x) => (x.id === p.id ? { ...x, quantity: x.quantity + q } : x))
+        : [...v, { ...p, quantity: q }];
+    });
+    setToast("Product added to cart successfully.");
+    setTimeout(() => setToast(""), 2200);
+  };
+
+  const update = (id: string, q: number) =>
+    setItems((v) => v.map((x) => (x.id === id ? { ...x, quantity: Math.max(1, q) } : x)));
+
+  const remove = (id: string) => setItems((v) => v.filter((x) => x.id !== id));
+
+  return (
+    <CartContext.Provider
+      value={{
+        items,
+        count: items.reduce((s, x) => s + x.quantity, 0),
+        total: items.reduce((s, x) => s + (x.price || 0) * x.quantity, 0),
+        open,
+        setOpen,
+        add,
+        update,
+        remove,
+        clear: () => setItems([]),
+        toast,
+      }}
+    >
+      {children}
+      {toast && <div className="toast">✓ {toast}</div>}
+    </CartContext.Provider>
+  );
+}
+
+export const useCart = () => {
+  const c = useContext(CartContext);
+  if (!c) throw Error("CartProvider missing");
+  return c;
+};
+

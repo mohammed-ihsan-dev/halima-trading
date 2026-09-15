@@ -1,4 +1,4 @@
-import { getMongoDb } from "@/lib/mongodb";
+import { getMongoDb, ensureMongoIndexes } from "@/lib/mongodb";
 import type { Product } from "@/data/products";
 
 export interface MongoProductDoc {
@@ -70,10 +70,33 @@ function formatProduct(doc: any): Product {
 
 export async function getMongoProducts(): Promise<Product[]> {
   try {
+    await ensureMongoIndexes();
     const db = await getMongoDb();
     const docs = await db
       .collection("products")
-      .find({ status: { $ne: "deleted" } })
+      .find(
+        { status: { $ne: "deleted" } },
+        {
+          projection: {
+            id: 1,
+            slug: 1,
+            sku: 1,
+            name: 1,
+            brand: 1,
+            model: 1,
+            category: 1,
+            subcategory: 1,
+            price: 1,
+            priceLabel: 1,
+            images: 1,
+            inStock: 1,
+            stockCount: 1,
+            featured: 1,
+            status: 1,
+            createdAt: 1,
+          },
+        }
+      )
       .sort({ createdAt: -1 })
       .toArray();
     return docs.map(formatProduct);
@@ -85,6 +108,7 @@ export async function getMongoProducts(): Promise<Product[]> {
 
 export async function getMongoProductByIdOrSlug(idOrSlug: string): Promise<Product | null> {
   try {
+    await ensureMongoIndexes();
     const db = await getMongoDb();
     const doc = await db.collection("products").findOne({
       $and: [
@@ -101,10 +125,32 @@ export async function getMongoProductByIdOrSlug(idOrSlug: string): Promise<Produ
 
 export async function getMongoFeaturedProducts(): Promise<Product[]> {
   try {
+    await ensureMongoIndexes();
     const db = await getMongoDb();
     const docs = await db
       .collection("products")
-      .find({ featured: true, status: { $ne: "deleted" } })
+      .find(
+        { featured: true, status: { $ne: "deleted" } },
+        {
+          projection: {
+            id: 1,
+            slug: 1,
+            sku: 1,
+            name: 1,
+            brand: 1,
+            model: 1,
+            category: 1,
+            subcategory: 1,
+            price: 1,
+            priceLabel: 1,
+            images: 1,
+            inStock: 1,
+            stockCount: 1,
+            featured: 1,
+            status: 1,
+          },
+        }
+      )
       .toArray();
     return docs.map(formatProduct);
   } catch (error) {
@@ -115,21 +161,43 @@ export async function getMongoFeaturedProducts(): Promise<Product[]> {
 
 export async function getMongoProductsByCategory(categoryNameOrSlug: string): Promise<Product[]> {
   try {
+    await ensureMongoIndexes();
     const db = await getMongoDb();
     const slug = slugify(categoryNameOrSlug);
     const docs = await db
       .collection("products")
-      .find({
-        $and: [
-          { status: { $ne: "deleted" } },
-          {
-            $or: [
-              { category: { $regex: new RegExp(`^${categoryNameOrSlug}$`, "i") } },
-              { categorySlug: slug },
-            ],
+      .find(
+        {
+          $and: [
+            { status: { $ne: "deleted" } },
+            {
+              $or: [
+                { category: { $regex: new RegExp(`^${categoryNameOrSlug}$`, "i") } },
+                { categorySlug: slug },
+              ],
+            },
+          ],
+        },
+        {
+          projection: {
+            id: 1,
+            slug: 1,
+            sku: 1,
+            name: 1,
+            brand: 1,
+            model: 1,
+            category: 1,
+            subcategory: 1,
+            price: 1,
+            priceLabel: 1,
+            images: 1,
+            inStock: 1,
+            stockCount: 1,
+            featured: 1,
+            status: 1,
           },
-        ],
-      })
+        }
+      )
       .toArray();
     return docs.map(formatProduct);
   } catch (error) {
