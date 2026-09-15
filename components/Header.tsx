@@ -45,7 +45,7 @@ export default function Header(){
       </nav>
       <div className="header-actions">
         <Link href="/shop" aria-label="Search"><Search/></Link>
-        <button onClick={()=>setOpen(true)} aria-label={`Cart with ${count} items`}><ShoppingBag/><i>{count}</i></button>
+        <button id="navbar-cart-btn" className="navbar-cart-btn" onClick={()=>setOpen(true)} aria-label={`Cart with ${count} items`}><ShoppingBag/><i>{count}</i></button>
         <a className="btn primary compact" href="https://wa.me/971565685090"><WhatsAppIcon/>Order on WhatsApp</a>
         <button className="menu-btn" onClick={()=>setMenu(true)} aria-label="Open menu"><Menu/></button>
       </div>

@@ -2,13 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, ShoppingBag, Store } from "lucide-react";
-import { useCart } from "@/context/CartContext";
+import { Home, Store, BookOpen } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function MobileBottomNav() {
   const pathname = usePathname();
-  const { count, setOpen } = useCart();
 
   if (pathname?.startsWith("/admin")) return null;
 
@@ -22,15 +20,20 @@ export default function MobileBottomNav() {
         <Store />
         <span>Shop</span>
       </Link>
-      <a className="mobile-wa" href="https://wa.me/971565685090" aria-label="WhatsApp">
+      <a
+        href="/brochures/HALIMA_TRADING_UPDATED_.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View Halima Trading company brochure"
+      >
+        <BookOpen />
+        <span>Brochure</span>
+      </a>
+      <a className="mobile-wa" href="https://wa.me/971565685090" aria-label="Order on WhatsApp">
         <WhatsAppIcon />
         <span>WhatsApp</span>
       </a>
-      <button onClick={() => setOpen(true)} aria-label={`Cart with ${count} items`}>
-        <ShoppingBag />
-        <span>Cart</span>
-        {count > 0 && <i>{count}</i>}
-      </button>
     </nav>
   );
 }
+

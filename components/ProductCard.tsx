@@ -51,7 +51,7 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
           </div>
           <div className="feature-price">{formatCurrency(product.price)}</div>
           <div className="feature-actions">
-            <button onClick={() => add(product)}>
+            <button onClick={(e) => add(product, 1, e)}>
               <ShoppingBag size={15} /> Add to Cart
             </button>
             <a href={productWhatsAppUrl(product)}>
@@ -104,7 +104,7 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
         <p>{(product.features || []).slice(0, 2).join(" · ")}</p>
         <div className="price">{formatCurrency(product.price)}</div>
         <div className="product-actions">
-          <button onClick={() => add(product)}>
+          <button onClick={(e) => add(product, 1, e)}>
             <ShoppingBag size={15} /> Add to cart
           </button>
           <a href={productWhatsAppUrl(product)} aria-label="Order on WhatsApp">

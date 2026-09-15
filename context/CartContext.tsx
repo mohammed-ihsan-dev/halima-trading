@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 import type { Product } from "@/data/products";
+import { triggerFlyToCartAnimation } from "@/lib/cart-comet-animation";
 
 export type CartLine = Product & { quantity: number };
 type CartValue = {
@@ -9,7 +10,7 @@ type CartValue = {
   total: number;
   open: boolean;
   setOpen: (x: boolean) => void;
-  add: (p: Product, q?: number) => void;
+  add: (p: Product, q?: number, sourceEl?: HTMLElement | React.SyntheticEvent | EventTarget | null) => void;
   update: (id: string, q: number) => void;
   remove: (id: string) => void;
   clear: () => void;
@@ -43,13 +44,37 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     }
   }, [items, loaded]);
 
-  const add = (p: Product, q = 1) => {
+  const add = (p: Product, q = 1, sourceInput?: HTMLElement | React.SyntheticEvent | EventTarget | null) => {
+    // Synchronously resolve real DOM element before React async state batching
+    let targetEl: HTMLElement | Element | null = null;
+    if (sourceInput) {
+      if ("currentTarget" in sourceInput && sourceInput.currentTarget) {
+        targetEl = sourceInput.currentTarget as Element;
+      } else if ("target" in sourceInput && sourceInput.target) {
+        targetEl = sourceInput.target as Element;
+      } else if (sourceInput instanceof Element) {
+        targetEl = sourceInput;
+      }
+    }
+
+    if (!targetEl && typeof document !== "undefined" && document.activeElement) {
+      const active = document.activeElement;
+      if (active && active !== document.body && active.tagName !== "BODY") {
+        targetEl = active;
+      }
+    }
+
+    // Resolve closest button element if click landed on nested icon/text
+    const btnEl = targetEl ? (targetEl.closest("button, a, .btn, [role='button']") || targetEl) : null;
+
     setItems((v) => {
       const found = v.find((x) => x.id === p.id);
       return found
         ? v.map((x) => (x.id === p.id ? { ...x, quantity: x.quantity + q } : x))
         : [...v, { ...p, quantity: q }];
     });
+
+    triggerFlyToCartAnimation(btnEl as HTMLElement, p);
     setToast("Product added to cart successfully.");
     setTimeout(() => setToast(""), 2200);
   };
@@ -85,4 +110,3 @@ export const useCart = () => {
   if (!c) throw Error("CartProvider missing");
   return c;
 };
-

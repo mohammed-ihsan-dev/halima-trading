@@ -49,7 +49,7 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
         <button
           type="button"
           className="btn primary"
-          onClick={() => add(product, quantity)}
+          onClick={(e) => add(product, quantity, e)}
         >
           <ShoppingBag size={18} /> Add to cart
         </button>
