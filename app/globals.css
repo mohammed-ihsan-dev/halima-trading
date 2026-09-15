@@ -3492,3 +3492,58 @@ header.scrolling-up {
 .btn-cart-press {
   animation: btnCartPress 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Added to Cart Button State */
+button.added-in-cart,
+.btn.added-in-cart,
+.product-actions button.added-in-cart,
+.feature-actions button.added-in-cart {
+  background-color: var(--red) !important;
+  color: #ffffff !important;
+  border-color: var(--red) !important;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+}
+
+button.added-in-cart:hover,
+.btn.added-in-cart:hover,
+.product-actions button.added-in-cart:hover,
+.feature-actions button.added-in-cart:hover {
+  background-color: #b91c1c !important;
+  border-color: #b91c1c !important;
+}
+
+/* Feature 3 — Special Cart Catch & Badge Pop Animations */
+@keyframes cartCatch {
+  0% { transform: scale(1); }
+  30% { transform: scale(0.94); }
+  65% { transform: scale(1.10); }
+  100% { transform: scale(1); }
+}
+
+.cart-catch-anim {
+  animation: cartCatch 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes cartCatchRing {
+  0% { transform: scale(0.85); opacity: 0.8; border-color: #d71920; }
+  100% { transform: scale(1.35); opacity: 0; border-color: #d71920; }
+}
+
+.cart-catch-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1.5px solid #d71920;
+  pointer-events: none;
+  animation: cartCatchRing 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes badgePop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.22); }
+  100% { transform: scale(1); }
+}
+
+.badge-pop-anim {
+  animation: badgePop 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Eye, Heart, ShoppingBag, Snowflake } from "lucide-react";
+import { Check, Eye, Heart, ShoppingBag, Snowflake } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 import type { Product } from "@/data/products";
 import { formatCurrency } from "@/lib/currency";
@@ -15,7 +15,8 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, featuredStyle = false }: ProductCardProps) {
-  const { add } = useCart();
+  const { add, isInCart } = useCart();
+  const inCart = isInCart(product.id);
 
   const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     e.currentTarget.src = "/featured/hisense-window-ac.png";
@@ -51,8 +52,19 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
           </div>
           <div className="feature-price">{formatCurrency(product.price)}</div>
           <div className="feature-actions">
-            <button onClick={(e) => add(product, 1, e)}>
-              <ShoppingBag size={15} /> Add to Cart
+            <button
+              className={inCart ? "added-in-cart" : ""}
+              onClick={(e) => add(product, 1, e)}
+            >
+              {inCart ? (
+                <>
+                  <Check size={15} /> Added to Cart
+                </>
+              ) : (
+                <>
+                  <ShoppingBag size={15} /> Add to Cart
+                </>
+              )}
             </button>
             <a href={productWhatsAppUrl(product)}>
               <WhatsAppIcon />
@@ -104,8 +116,19 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
         <p>{(product.features || []).slice(0, 2).join(" · ")}</p>
         <div className="price">{formatCurrency(product.price)}</div>
         <div className="product-actions">
-          <button onClick={(e) => add(product, 1, e)}>
-            <ShoppingBag size={15} /> Add to cart
+          <button
+            className={inCart ? "added-in-cart" : ""}
+            onClick={(e) => add(product, 1, e)}
+          >
+            {inCart ? (
+              <>
+                <Check size={15} /> Added to cart
+              </>
+            ) : (
+              <>
+                <ShoppingBag size={15} /> Add to cart
+              </>
+            )}
           </button>
           <a href={productWhatsAppUrl(product)} aria-label="Order on WhatsApp">
             <WhatsAppIcon />

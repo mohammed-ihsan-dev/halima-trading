@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import {
+  Check,
   ShoppingBag,
   Minus,
   Plus,
@@ -18,7 +19,8 @@ interface ProductClientActionsProps {
 
 export default function ProductClientActions({ product }: ProductClientActionsProps) {
   const [quantity, setQuantity] = useState(1);
-  const { add } = useCart();
+  const { add, isInCart } = useCart();
+  const inCart = isInCart(product.id);
 
   const whatsappMessage = encodeURIComponent(
     `Hello Halima Trading, I would like to order ${quantity} × ${product.name}, model ${product.model || "Standard"}.`
@@ -48,10 +50,18 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
         </div>
         <button
           type="button"
-          className="btn primary"
+          className={inCart ? "btn primary added-in-cart" : "btn primary"}
           onClick={(e) => add(product, quantity, e)}
         >
-          <ShoppingBag size={18} /> Add to cart
+          {inCart ? (
+            <>
+              <Check size={18} /> Added to cart
+            </>
+          ) : (
+            <>
+              <ShoppingBag size={18} /> Add to cart
+            </>
+          )}
         </button>
       </div>
 

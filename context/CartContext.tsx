@@ -14,6 +14,7 @@ type CartValue = {
   update: (id: string, q: number) => void;
   remove: (id: string) => void;
   clear: () => void;
+  isInCart: (id: string) => boolean;
   toast: string;
 };
 
@@ -84,6 +85,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const remove = (id: string) => setItems((v) => v.filter((x) => x.id !== id));
 
+  const isInCart = (id: string) => items.some((x) => x.id === id);
+
   return (
     <CartContext.Provider
       value={{
@@ -96,6 +99,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         update,
         remove,
         clear: () => setItems([]),
+        isInCart,
         toast,
       }}
     >

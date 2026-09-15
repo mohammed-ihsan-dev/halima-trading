@@ -6,11 +6,12 @@ import type { Product } from "@/data/products";
  * Halima Trading Premium "Fly To Cart" Micro-Interaction Utility
  *
  * Implements the 5-step physical product flight interaction:
- * 1. User clicks "Add to Cart"
+ * 1. User clicks "Add to Cart" -> Button state transforms to RED "✓ Added to Cart"
  * 2. Instant subtle button press feedback
  * 3. Small product thumbnail lifts off from the button
  * 4. Smooth, short curved flight path toward top navbar Cart icon
- * 5. Thumbnail merges into Cart icon, cart subtly animates, badge updates
+ * 5. Thumbnail merges into Cart icon, cart performs special CATCH animation (compress -> expand -> settle),
+ *    subtle red accent ring pulses, and badge count pops.
  *
  * Pure GPU-accelerated (transform & opacity), responsive across viewports,
  * with NO glow, NO neon, NO long comet lines, NO flash effects.
@@ -35,15 +36,42 @@ export function triggerFlyToCartAnimation(
     document.querySelector('header button[aria-label*="Cart"]') ||
     document.querySelector('button[aria-label*="Cart"]');
 
-  // Trigger subtle scale-bounce reaction on navbar cart icon
+  // Trigger special cart catch animation + red accent ring + badge pop
   const triggerCartIconReaction = () => {
     if (!targetBtn) return;
-    targetBtn.classList.remove("cart-bounce-subtle");
+
+    // 1. Cart catch animation: compress (0.94) -> expand (1.10) -> settle (1.0)
+    targetBtn.classList.remove("cart-catch-anim", "cart-bounce-subtle");
     void targetBtn.offsetWidth; // Force reflow for rapid re-triggering
-    targetBtn.classList.add("cart-bounce-subtle");
+    targetBtn.classList.add("cart-catch-anim");
+
+    // 2. Badge pop animation
+    const badgeEl = targetBtn.querySelector("i");
+    if (badgeEl) {
+      badgeEl.classList.remove("badge-pop-anim");
+      void badgeEl.offsetWidth;
+      badgeEl.classList.add("badge-pop-anim");
+    }
+
+    // 3. Subtle red Catch Ring accent around cart button
+    let ring = targetBtn.querySelector<HTMLElement>(".cart-catch-ring");
+    if (!ring) {
+      ring = document.createElement("span");
+      ring.className = "cart-catch-ring";
+      targetBtn.appendChild(ring);
+    } else {
+      ring.classList.remove("cart-catch-ring");
+      void ring.offsetWidth;
+      ring.classList.add("cart-catch-ring");
+    }
+
     setTimeout(() => {
-      targetBtn.classList.remove("cart-bounce-subtle");
-    }, 300);
+      targetBtn.classList.remove("cart-catch-anim");
+      if (badgeEl) badgeEl.classList.remove("badge-pop-anim");
+      if (ring && ring.parentNode) {
+        ring.parentNode.removeChild(ring);
+      }
+    }, 420);
   };
 
   if (prefersReducedMotion || !targetBtn) {
@@ -91,7 +119,7 @@ export function triggerFlyToCartAnimation(
     }
   }
 
-  // Step 2: Instant button press feedback if source element exists
+  // Instant button press feedback if source element exists
   if (sourceEl) {
     sourceEl.classList.remove("btn-cart-press");
     void sourceEl.offsetWidth;
@@ -100,7 +128,7 @@ export function triggerFlyToCartAnimation(
       sourceEl?.classList.remove("btn-cart-press");
     }, 200);
   } else {
-    // If still no source element, fallback to viewport center bottom
+    // Fallback to body
     sourceEl = document.body;
   }
 
@@ -197,7 +225,7 @@ export function triggerFlyToCartAnimation(
   const arcHeight = Math.min(85, Math.max(30, Math.abs(dx) * 0.18));
   const controlY = Math.min(startY, endY) - arcHeight;
 
-  const duration = 580; // ms (within 450–700ms requirement)
+  const duration = 580; // ms (within 500–700ms requirement)
   const startTime = performance.now();
   let animationFrameId: number;
   let hasReacted = false;
@@ -217,19 +245,19 @@ export function triggerFlyToCartAnimation(
     const curX = invT * invT * startX + 2 * invT * easedT * controlX + easedT * easedT * endX;
     const curY = invT * invT * startY + 2 * invT * easedT * controlY + easedT * easedT * endY;
 
-    // Step 3 (Lift Off) -> Step 4 (Smooth Flight) -> Step 5 (Merge into Cart)
+    // Sequence: 0-100ms Lift Off -> 100-500ms Smooth Flight -> 500-650ms Settle into Cart
     let scale = 1.0;
     let opacity = 1.0;
 
     if (progress < 0.15) {
-      // Step 3: Lift Off (pop out from button with slight scale boost)
+      // Lift Off (pop out from button with slight scale boost)
       const liftProgress = progress / 0.15;
-      scale = 0.5 + liftProgress * 0.55; // 0.5 -> 1.05
+      scale = 0.5 + liftProgress * 0.58; // 0.5 -> 1.08
       opacity = liftProgress;
     } else if (progress > 0.75) {
-      // Step 5: Merge into Cart (shrink gracefully & fade as item enters cart)
+      // Approach & Settle into Cart (scale down to 0.25 as it enters cart icon)
       const mergeProgress = (progress - 0.75) / 0.25;
-      scale = 1.05 - mergeProgress * 0.8; // 1.05 -> 0.25
+      scale = 1.08 - mergeProgress * 0.83; // 1.08 -> 0.25
       opacity = 1.0 - mergeProgress;
     }
 
@@ -239,7 +267,7 @@ export function triggerFlyToCartAnimation(
     flyEl.style.transform = `translate3d(${transformX}px, ${transformY}px, 0) scale(${scale})`;
     flyEl.style.opacity = `${opacity}`;
 
-    // Step 5: Cart Icon subtle reaction on arrival (progress >= 0.9)
+    // Cart Icon special CATCH reaction as item arrives (progress >= 0.9)
     if (progress >= 0.9 && !hasReacted) {
       hasReacted = true;
       triggerCartIconReaction();
