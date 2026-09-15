@@ -19,6 +19,21 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   // Skip auth check for login page
   const isLoginPage = pathname === "/admin/login";
 
+  // Close mobile sidebar on route change or Escape key press
+  useEffect(() => {
+    setMobileSidebarOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileSidebarOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   useEffect(() => {
     if (isLoginPage) {
       setLoading(false);
