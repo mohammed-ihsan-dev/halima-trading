@@ -3547,3 +3547,25 @@ button.added-in-cart:hover,
 .badge-pop-anim {
   animation: badgePop 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Clear Cart Button Styling */
+.clear-cart-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  background: none !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #64748b !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.clear-cart-btn:hover {
+  background-color: #fef2f2 !important;
+  border-color: #fca5a5 !important;
+  color: #dc2626 !important;
+}
