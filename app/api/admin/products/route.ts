@@ -61,8 +61,20 @@ export async function POST(request: Request) {
 
   try {
     const body = await request.json();
-    if (!body.name) {
+    if (!body.name || typeof body.name !== "string" || !body.name.trim()) {
       return NextResponse.json({ error: "Product name is required" }, { status: 400 });
+    }
+
+    if (body.deliveryRate !== undefined && body.deliveryRate !== null) {
+      const numRate = Number(body.deliveryRate);
+      if (isNaN(numRate) || !isFinite(numRate) || numRate < 0) {
+        return NextResponse.json({ error: "Delivery rate must be a valid non-negative number" }, { status: 400 });
+      }
+      body.deliveryRate = numRate;
+    }
+
+    if (Array.isArray(body.images)) {
+      body.images = body.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
     }
 
     const created = await createMongoProduct(body);
@@ -93,6 +105,18 @@ export async function PUT(request: Request) {
     const { id, ...updates } = body;
     if (!id) {
       return NextResponse.json({ error: "Product ID is required" }, { status: 400 });
+    }
+
+    if (updates.deliveryRate !== undefined && updates.deliveryRate !== null) {
+      const numRate = Number(updates.deliveryRate);
+      if (isNaN(numRate) || !isFinite(numRate) || numRate < 0) {
+        return NextResponse.json({ error: "Delivery rate must be a valid non-negative number" }, { status: 400 });
+      }
+      updates.deliveryRate = numRate;
+    }
+
+    if (Array.isArray(updates.images)) {
+      updates.images = updates.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
     }
 
     const updated = await updateMongoProduct(id, updates);

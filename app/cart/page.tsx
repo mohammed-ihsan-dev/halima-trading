@@ -1,14 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { Minus, Plus, Trash2 } from "lucide-react";
+import { CreditCard, Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/currency";
-import { whatsappUrl } from "@/lib/whatsapp";
 import { emailUrl } from "@/lib/email";
+import CheckoutModal from "@/components/checkout/CheckoutModal";
 
 export default function Cart() {
   const c = useCart();
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   return (
     <>
@@ -69,14 +71,26 @@ export default function Cart() {
                 <span>Total items</span>
                 <b>{c.count}</b>
               </div>
-              <div className="sum-total">
-                <span>Estimated total</span>
+              <div>
+                <span>Items Subtotal</span>
                 <b>{formatCurrency(c.total)}</b>
               </div>
-              <p>Final pricing, delivery and product availability will be confirmed by our team.</p>
-              <a className="btn primary full" href={whatsappUrl(c.items)}>
-                Proceed to WhatsApp
-              </a>
+              <div className="sum-total">
+                <span>Delivery Charge</span>
+                <b className="text-emerald-600 uppercase">
+                  {c.items.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0) === 0
+                    ? "FREE DELIVERY"
+                    : formatCurrency(c.items.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0))}
+                </b>
+              </div>
+              <p>Final pricing and delivery calculation confirmed on secure checkout.</p>
+              <button
+                className="btn primary full flex items-center justify-center gap-2 mb-2"
+                onClick={() => setIsCheckoutOpen(true)}
+              >
+                <CreditCard size={18} />
+                Pay Securely with Card
+              </button>
               <a className="btn secondary full" href={emailUrl(c.items)}>
                 Send order by email
               </a>
@@ -87,6 +101,9 @@ export default function Cart() {
           </>
         )}
       </section>
+
+      <CheckoutModal isOpen={isCheckoutOpen} onClose={() => setIsCheckoutOpen(false)} />
     </>
   );
 }
+

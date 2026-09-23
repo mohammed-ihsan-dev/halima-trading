@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { stripe } from "@/lib/stripe";
 import { updateMongoPaymentStatus } from "@/lib/repositories/payments";
-import { updateMongoOrderPaymentStatus } from "@/lib/repositories/orders";
+import { updateMongoOrderPaymentStatus, restoreMongoOrderStock } from "@/lib/repositories/orders";
+import { isStripeEventProcessed, markStripeEventProcessed } from "@/lib/repositories/stripe-events";
 
 export async function POST(request: Request) {
   if (!stripe) {
@@ -18,6 +19,9 @@ export async function POST(request: Request) {
     if (webhookSecret && signature) {
       event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
     } else {
+      if (process.env.NODE_ENV === "production" || webhookSecret) {
+        return NextResponse.json({ error: "Missing or invalid webhook signature/secret" }, { status: 400 });
+      }
       event = JSON.parse(rawBody);
     }
   } catch (err: any) {
@@ -25,21 +29,92 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: `Webhook Error: ${err.message}` }, { status: 400 });
   }
 
-  try {
-    if (event.type === "checkout.session.completed") {
-      const session = event.data.object;
-      const metadata = session.metadata || {};
-      const orderId = metadata.orderId;
-      const paymentId = metadata.paymentId;
-      const providerPaymentId = session.payment_intent as string;
+  // Idempotency check using MongoDB persistent store
+  if (event.id) {
+    const alreadyProcessed = await isStripeEventProcessed(event.id);
+    if (alreadyProcessed) {
+      console.log(`Stripe event ${event.id} already processed. Skipping.`);
+      return NextResponse.json({ received: true, duplicate: true });
+    }
+  }
 
-      if (paymentId) {
-        await updateMongoPaymentStatus(paymentId, "PAID", providerPaymentId);
+  try {
+    switch (event.type) {
+      case "checkout.session.completed": {
+        const session = event.data.object;
+        const metadata = session.metadata || {};
+        const orderId = metadata.orderId;
+        const paymentId = metadata.paymentId;
+        const providerPaymentId =
+          (typeof session.payment_intent === "string" ? session.payment_intent : session.payment_intent?.id) ||
+          session.id;
+
+        if (paymentId) {
+          await updateMongoPaymentStatus(paymentId, "PAID", providerPaymentId);
+        }
+        if (orderId) {
+          await updateMongoOrderPaymentStatus(orderId, "PAID", paymentId);
+        }
+        console.log(`Webhook checkout.session.completed processed for order: ${orderId}`);
+        break;
       }
-      if (orderId) {
-        await updateMongoOrderPaymentStatus(orderId, "PAID", paymentId);
+
+      case "checkout.session.expired": {
+        const session = event.data.object;
+        const metadata = session.metadata || {};
+        const orderId = metadata.orderId;
+        const paymentId = metadata.paymentId;
+
+        if (paymentId) {
+          await updateMongoPaymentStatus(paymentId, "FAILED");
+        }
+        if (orderId) {
+          await restoreMongoOrderStock(orderId);
+        }
+        console.log(`Webhook checkout.session.expired processed for order: ${orderId}`);
+        break;
       }
-      console.log(`Successfully processed Stripe payment for order ${orderId}`);
+
+      case "payment_intent.payment_failed": {
+        const paymentIntent = event.data.object;
+        const metadata = paymentIntent.metadata || {};
+        const orderId = metadata.orderId;
+        const paymentId = metadata.paymentId;
+
+        if (paymentId) {
+          await updateMongoPaymentStatus(paymentId, "FAILED");
+        }
+        if (orderId) {
+          await updateMongoOrderPaymentStatus(orderId, "FAILED");
+        }
+        console.log(`Webhook payment_intent.payment_failed processed for order: ${orderId}`);
+        break;
+      }
+
+      case "charge.refunded": {
+        const charge = event.data.object;
+        const metadata = charge.metadata || {};
+        const paymentId = metadata.paymentId;
+        const orderId = metadata.orderId;
+
+        const isPartial = charge.amount_refunded > 0 && charge.amount_refunded < charge.amount;
+        const newStatus = isPartial ? "PARTIALLY_REFUNDED" : "REFUNDED";
+
+        if (paymentId) {
+          await updateMongoPaymentStatus(paymentId, newStatus);
+        } else if (orderId) {
+          await updateMongoOrderPaymentStatus(orderId, newStatus);
+        }
+        console.log(`Webhook charge.refunded processed: status ${newStatus}`);
+        break;
+      }
+
+      default:
+        console.log(`Unhandled Stripe event type: ${event.type}`);
+    }
+
+    if (event.id) {
+      await markStripeEventProcessed(event.id, event.type);
     }
 
     return NextResponse.json({ received: true });
@@ -48,3 +123,4 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Webhook processing error" }, { status: 500 });
   }
 }
+

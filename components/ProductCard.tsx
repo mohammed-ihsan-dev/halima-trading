@@ -2,12 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { Check, Eye, Heart, ShoppingBag, Snowflake } from "lucide-react";
-import WhatsAppIcon from "./WhatsAppIcon";
+import { Check, Eye, Heart, ShoppingBag, Snowflake, Zap } from "lucide-react";
 import type { Product } from "@/data/products";
 import { formatCurrency } from "@/lib/currency";
 import { useCart } from "@/context/CartContext";
-import { productWhatsAppUrl } from "@/lib/whatsapp";
 
 interface ProductCardProps {
   product: Product;
@@ -51,14 +49,19 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
             <span>▣ {product.subcategory || product.category}</span>
           </div>
           <div className="feature-price">{formatCurrency(product.price)}</div>
-          <div className="feature-actions">
+          <div className="feature-actions flex flex-wrap items-center gap-2 mt-4">
+            {/* Red Button: Add to Cart */}
             <button
-              className={inCart ? "added-in-cart" : ""}
+              className={`flex-1 min-h-[40px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-white border-0 cursor-pointer ${
+                inCart
+                  ? "bg-zinc-800 dark:bg-zinc-700"
+                  : "bg-red-600 hover:bg-red-700 active:bg-red-800"
+              }`}
               onClick={(e) => add(product, 1, e)}
             >
               {inCart ? (
                 <>
-                  <Check size={15} /> Added to Cart
+                  <Check size={15} /> Added
                 </>
               ) : (
                 <>
@@ -66,21 +69,25 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
                 </>
               )}
             </button>
-            <a href={productWhatsAppUrl(product)}>
-              <WhatsAppIcon />
-              <span>
-                Order on
-                <br />
-                WhatsApp
-              </span>
-            </a>
-            <Link href={`/shop/${product.slug || product.id}`}>
+
+            {/* Green Button: Buy Now */}
+            <Link
+              href={`/checkout/order-details?productId=${product.id}&quantity=1`}
+              className="flex-1 min-h-[40px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
+              aria-label="Buy Now"
+            >
+              <Zap size={15} />
+              <span>Buy Now</span>
+            </Link>
+
+            {/* White/Outlined Button: View Details */}
+            <Link
+              href={`/shop/${product.slug || product.id}`}
+              className="px-3 min-h-[40px] py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all no-underline"
+              aria-label="View Details"
+            >
               <Eye size={15} />
-              <span>
-                View
-                <br />
-                Details
-              </span>
+              <span className="hidden sm:inline">Details</span>
             </Link>
           </div>
         </div>
@@ -115,26 +122,46 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
         <p className="model">Model {product.model}</p>
         <p>{(product.features || []).slice(0, 2).join(" · ")}</p>
         <div className="price">{formatCurrency(product.price)}</div>
-        <div className="product-actions">
+        <div className="product-actions flex flex-wrap items-center gap-2 mt-3">
+          {/* Red Button: Add to Cart */}
           <button
-            className={inCart ? "added-in-cart" : ""}
+            className={`flex-1 min-h-[38px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-white border-0 cursor-pointer ${
+              inCart
+                ? "bg-zinc-800 dark:bg-zinc-700"
+                : "bg-red-600 hover:bg-red-700 active:bg-red-800"
+            }`}
             onClick={(e) => add(product, 1, e)}
           >
             {inCart ? (
               <>
-                <Check size={15} /> Added to cart
+                <Check size={14} /> Added
               </>
             ) : (
               <>
-                <ShoppingBag size={15} /> Add to cart
+                <ShoppingBag size={14} /> Add to Cart
               </>
             )}
           </button>
-          <a href={productWhatsAppUrl(product)} aria-label="Order on WhatsApp">
-            <WhatsAppIcon />
-          </a>
-          <Link href={`/shop/${product.slug || product.id}`} aria-label="Quick view">
-            <Eye size={16} />
+
+          {/* Green Button: Buy Now */}
+          <Link
+            href={`/checkout/order-details?productId=${product.id}&quantity=1`}
+            className="flex-1 min-h-[38px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
+            aria-label="Buy Now"
+            title="Buy Now"
+          >
+            <Zap size={14} />
+            <span>Buy Now</span>
+          </Link>
+
+          {/* White/Outlined Button: View Details */}
+          <Link
+            href={`/shop/${product.slug || product.id}`}
+            className="px-2.5 min-h-[38px] py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all no-underline"
+            aria-label="View Details"
+            title="View Details"
+          >
+            <Eye size={14} />
           </Link>
         </div>
       </div>

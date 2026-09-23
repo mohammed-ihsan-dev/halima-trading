@@ -9,6 +9,7 @@ import {
 import { formatCurrency } from "@/lib/currency";
 import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
+import ProductGallery from "@/components/product/ProductGallery";
 
 export const revalidate = 60; // 60s ISR for responsive product detail updates
 
@@ -138,24 +139,9 @@ export default async function ProductPage({ params }: PageProps) {
       </div>
 
       <section className="product-detail">
-        <div className="gallery">
-          <div className="gallery-main">
-            <img
-              src={product.images?.[0] || "/featured/hisense-window-ac.png"}
-              alt={product.name}
-              loading="eager"
-            />
-          </div>
-          <button className="thumb" aria-label="Product thumbnail">
-            <img
-              src={product.images?.[0] || "/featured/hisense-window-ac.png"}
-              alt={`${product.name} thumbnail`}
-              loading="lazy"
-            />
-          </button>
-        </div>
+        <ProductGallery images={product.images || []} productName={product.name} />
 
-        <div className="detail-copy">
+        <div className="detail-copy min-w-0 w-full max-w-full">
           <span className="stock">
             <Check size={14} /> {product.inStock ? "In stock" : "Available on request"}
           </span>
@@ -174,9 +160,17 @@ export default async function ProductPage({ params }: PageProps) {
               ))}
             </ul>
           )}
-          <div className="detail-price">
-            {formatCurrency(product.price)}
-            <small>Final price and delivery confirmed on enquiry</small>
+          <div className="detail-price flex flex-col items-start gap-1">
+            <span>{formatCurrency(product.price)}</span>
+            {(product.deliveryRate || 0) === 0 ? (
+              <span className="font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-lg text-xs tracking-wide">
+                FREE DELIVERY
+              </span>
+            ) : (
+              <span className="font-bold text-slate-700 text-xs bg-slate-100 border border-slate-200 px-3 py-1 rounded-lg">
+                Delivery: AED {product.deliveryRate?.toFixed(2)}
+              </span>
+            )}
           </div>
 
           {/* Interactive Client Actions */}
@@ -185,8 +179,8 @@ export default async function ProductPage({ params }: PageProps) {
           <div className="service-notes">
             <span>
               <Truck size={18} />
-              <b>UAE delivery</b>
-              <small>Confirmed with your order</small>
+              <b>{(product.deliveryRate || 0) === 0 ? "FREE DELIVERY" : `Delivery: AED ${product.deliveryRate?.toFixed(2)}`}</b>
+              <small>All UAE Emirates</small>
             </span>
             <span>
               <ShieldCheck size={18} />

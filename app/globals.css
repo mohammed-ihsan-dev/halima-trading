@@ -242,10 +242,21 @@ header nav a:hover {
   padding: 75px 5% 70px;
   display: grid;
   grid-template-columns: 1.02fr .98fr;
-  gap: 64px;
+  grid-template-areas: "copy visual" "stats visual";
+  column-gap: 64px;
+  row-gap: 0;
   align-items: center;
+  align-content: center;
   background: linear-gradient(120deg, #fafafa, #fff 48%, #f7f7f7);
   overflow: hidden
+}
+
+.hero-copy {
+  grid-area: copy
+}
+
+.hero>.trust-row {
+  grid-area: stats
 }
 
 .eyebrow {
@@ -313,41 +324,176 @@ header nav a:hover {
   line-height: 1.1
 }
 
+/* ---------- Hero product showcase ---------- */
+
 .hero-visual {
+  grid-area: visual;
+  position: relative;
+  width: 100%;
+  max-width: 540px;
   height: 560px;
-  position: relative;
+  justify-self: center;
   display: grid;
-  place-items: center
+  place-items: center;
+  animation: heroRise .95s cubic-bezier(.22, .61, .36, 1) .18s both
 }
 
-.glow {
-  position: absolute;
-  width: 430px;
-  height: 430px;
-  border-radius: 50%;
-  background: #d7192017;
-  filter: blur(40px)
-}
-
-.hero-main {
-  width: 85%;
-  height: 510px;
-  object-fit: cover;
-  border-radius: 140px 8px 8px;
-  box-shadow: 0 35px 80px #0002;
+/* The arched alcove the products stand in — same silhouette the hero has always used. */
+.hero-stage {
+  --hero-float: -12px;
   position: relative;
-  animation: float 6s ease-in-out infinite
+  width: 100%;
+  height: 100%;
+  border-radius: 168px 12px 12px 12px;
+  background: linear-gradient(168deg, #fff 0%, #fcfcfd 46%, #f2f2f4 100%);
+  border: 1px solid #ededee;
+  box-shadow: 0 34px 70px -34px #16161626, 0 2px 4px #16161608;
+  overflow: hidden;
+  isolation: isolate
+}
+
+.hero-stage-glow {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 80%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #d7192014 0%, #d7192008 46%, #d7192000 70%);
+  pointer-events: none
+}
+
+.hero-stage-floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  background: linear-gradient(180deg, #16161600 0%, #1616160a 100%);
+  pointer-events: none
+}
+
+.hero-stage-floor:before {
+  content: "";
+  position: absolute;
+  left: 13%;
+  right: 13%;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #16161600, #16161624 50%, #16161600)
+}
+
+.hero-stage-layer {
+  position: absolute;
+  inset: 9% 11% 19%;
+  display: grid;
+  place-items: center;
+  will-change: transform, opacity
+}
+
+.hero-stage-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: -4%;
+  width: 62%;
+  height: 26px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  /* Gradient rather than filter: blur() — this element animates every frame,
+     and a blurred layer would have to re-rasterise instead of just compositing. */
+  background: radial-gradient(ellipse at center, #16161636 0%, #16161620 34%, #1616160d 56%, #16161600 76%);
+  animation: heroShadow 7.5s ease-in-out infinite
+}
+
+.hero-stage-float {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  animation: heroFloat 7.5s ease-in-out infinite
+}
+
+.hero-stage-img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  -webkit-user-select: none;
+  user-select: none
+}
+
+.hero-stage.is-paused .hero-stage-float,
+.hero-stage.is-paused .hero-stage-shadow {
+  animation-play-state: paused
+}
+
+@keyframes heroFloat {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0)
+  }
+
+  50% {
+    transform: translate3d(0, var(--hero-float, -12px), 0)
+  }
+}
+
+@keyframes heroShadow {
+
+  0%,
+  100% {
+    opacity: .85;
+    transform: translateX(-50%) scaleX(1)
+  }
+
+  50% {
+    opacity: .55;
+    transform: translateX(-50%) scaleX(.9)
+  }
+}
+
+/* Loop indicator — the single place red is allowed to move. */
+.hero-progress {
+  position: absolute;
+  left: 11%;
+  right: 11%;
+  bottom: 7%;
+  z-index: 3;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 7px
+}
+
+.hero-progress-track {
+  height: 2px;
+  border-radius: 2px;
+  background: #16161614;
+  overflow: hidden
+}
+
+.hero-progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left center
 }
 
 .floating-card {
   position: absolute;
+  z-index: 4;
   background: #fff;
   padding: 16px 20px;
   border-radius: 8px;
   box-shadow: 0 15px 40px #0002;
   display: flex;
+  align-items: center;
   gap: 12px;
-  font-size: 12px
+  font-size: 12px;
+  animation: heroRise .8s cubic-bezier(.22, .61, .36, 1) both
 }
 
 .floating-card span {
@@ -356,13 +502,21 @@ header nav a:hover {
 }
 
 .floating-card.top {
-  right: -12px;
-  top: 75px
+  right: -16px;
+  top: 62px;
+  gap: 18px;
+  animation-delay: .5s
+}
+
+.floating-card.top>span {
+  color: #6f6f6f;
+  font-weight: 600
 }
 
 .floating-card.bottom {
-  left: -10px;
-  bottom: 60px
+  left: -16px;
+  bottom: 54px;
+  animation-delay: .62s
 }
 
 .floating-card svg {
@@ -374,10 +528,108 @@ header nav a:hover {
   margin-top: 3px
 }
 
-@keyframes float {
-  50% {
-    transform: translateY(-10px)
+/* Category label that crossfades with the product, sized so the card never reflows. */
+.hero-card-label {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  font-weight: 800;
+  color: var(--ink)
+}
+
+.hero-card-label i {
+  display: block;
+  font-style: normal;
+  white-space: nowrap;
+  visibility: hidden
+}
+
+.floating-card .hero-card-label span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity .7s cubic-bezier(.22, .61, .36, 1)
+}
+
+.floating-card .hero-card-label span[data-active] {
+  opacity: 1
+}
+
+.floating-card .hero-card-pulse {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 19px;
+  height: 19px
+}
+
+.floating-card .hero-card-pulse:before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+  opacity: 0;
+  animation: heroPulse 3.4s cubic-bezier(.22, .61, .36, 1) infinite
+}
+
+@keyframes heroPulse {
+  0% {
+    transform: scale(.7);
+    opacity: .45
   }
+
+  55%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0
+  }
+}
+
+/* One-shot entrance for the hero copy. CSS only, so it never blocks hydration. */
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+.hero-copy>.eyebrow {
+  display: inline-block
+}
+
+.hero-copy>.eyebrow,
+.hero-copy>h1,
+.hero-copy>p,
+.hero-copy>.actions,
+.hero>.trust-row {
+  animation: heroRise .7s cubic-bezier(.22, .61, .36, 1) both
+}
+
+.hero-copy>h1 {
+  animation-delay: .06s
+}
+
+.hero-copy>p {
+  animation-delay: .14s
+}
+
+.hero-copy>.actions {
+  animation-delay: .22s
+}
+
+.hero>.trust-row {
+  animation-delay: .3s
 }
 
 .section {
@@ -1189,8 +1441,19 @@ footer {
 .product-detail {
   padding: 40px 5% 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 65px
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 65px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-copy {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .gallery-main {
@@ -1202,6 +1465,8 @@ footer {
   padding: 24px;
   border-radius: 16px;
   border: 1px solid var(--border);
+  min-width: 0;
+  max-width: 100%;
 }
 
 .gallery-main img {
@@ -1234,7 +1499,11 @@ footer {
   font-size: 45px;
   letter-spacing: -.04em;
   line-height: 1.1;
-  margin: 13px 0
+  margin: 13px 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .detail-copy>.stock {
@@ -1242,32 +1511,45 @@ footer {
 }
 
 .detail-copy .model {
-  color: #888
+  color: #888;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .detail-copy .lead {
   font-size: 16px;
   line-height: 1.8;
-  color: #666
+  color: #666;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .detail-copy ul {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 9px;
-  font-size: 13px
+  font-size: 13px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .detail-copy li {
   display: flex;
-  gap: 8px
+  gap: 8px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .detail-copy li svg {
   width: 15px;
-  color: var(--red)
+  color: var(--red);
+  shrink: 0;
 }
 
 .detail-price {
@@ -1275,7 +1557,9 @@ footer {
   font-weight: 900;
   margin: 25px 0;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .detail-price small {
@@ -1286,7 +1570,10 @@ footer {
 
 .buy-row {
   display: flex;
-  gap: 12px
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .qty.big {
@@ -1300,9 +1587,12 @@ footer {
 
 .detail-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
-  margin-top: 12px
+  margin-top: 12px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .detail-actions .btn:last-child {
@@ -1648,6 +1938,57 @@ footer {
   .brand-wall {
     grid-template-columns: repeat(4, 1fr)
   }
+
+  /* Hero: keep two columns but shrink the showcase so nothing crowds the copy. */
+  .hero {
+    min-height: 640px;
+    padding: 62px 4% 58px;
+    column-gap: 40px
+  }
+
+  .hero-visual {
+    height: 480px;
+    max-width: 460px
+  }
+
+  .hero-stage {
+    border-radius: 132px 10px 10px 10px
+  }
+
+  .floating-card {
+    padding: 13px 15px;
+    font-size: 11px
+  }
+
+  .floating-card.top {
+    right: -10px;
+    top: 46px;
+    gap: 12px
+  }
+
+  .floating-card.bottom {
+    left: -10px;
+    bottom: 42px
+  }
+}
+
+/* Tablet: stack the hero before the columns get too narrow to read. */
+@media(max-width:1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-areas: "copy" "visual" "stats";
+    min-height: 0
+  }
+
+  .hero-visual {
+    height: 430px;
+    max-width: 470px;
+    margin: 36px auto 0
+  }
+
+  .hero>.trust-row {
+    margin-top: 40px
+  }
 }
 
 @media(max-width:760px) {
@@ -1669,8 +2010,9 @@ footer {
 
   .hero {
     grid-template-columns: 1fr;
+    grid-template-areas: "copy" "visual" "stats";
     padding: 58px 20px 40px;
-    gap: 25px
+    column-gap: 25px
   }
 
   .hero h1 {
@@ -1682,17 +2024,21 @@ footer {
   }
 
   .hero-visual {
-    height: 400px
+    height: 400px;
+    max-width: 420px;
+    margin: 30px auto 0
   }
 
-  .hero-main {
-    height: 370px;
-    width: 100%;
-    border-radius: 90px 6px 6px
+  .hero-stage {
+    border-radius: 112px 10px 10px 10px
   }
 
   .floating-card.top {
     right: 0
+  }
+
+  .floating-card.bottom {
+    left: 0
   }
 
   .trust-row {
@@ -1798,13 +2144,17 @@ footer {
   }
 
   .product-detail {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 15px 18px 60px;
-    gap: 30px
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .gallery-main {
-    height: 420px
+    height: 420px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .detail-copy h1 {
@@ -1812,7 +2162,9 @@ footer {
   }
 
   .detail-actions {
-    grid-template-columns: 1fr
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
   }
 
   .detail-actions .btn:last-child {
@@ -2479,13 +2831,6 @@ footer {
   height: 204px
 }
 
-.hero-video {
-  display: block;
-  background: #eee;
-  object-fit: cover;
-  object-position: center
-}
-
 /* Official Logo System Rules (Supporting new logo elements with old dimensions) */
 .official-logo {
   display: inline-flex;
@@ -2866,7 +3211,7 @@ footer {
   .hero {
     min-height: auto;
     padding: 42px 18px 52px;
-    gap: 34px
+    column-gap: 34px
   }
 
   .hero h1 {
@@ -2908,15 +3253,27 @@ footer {
   }
 
   .hero-visual {
-    height: auto;
-    min-height: 330px
+    height: 360px;
+    max-width: 100%;
+    margin: 26px auto 0
   }
 
-  .hero-main {
-    width: 100%;
-    height: 330px;
-    border-radius: 72px 8px 8px;
-    animation: none
+  .hero-stage {
+    --hero-float: -8px;
+    border-radius: 96px 10px 10px 10px
+  }
+
+  .hero-stage-layer {
+    inset: 8% 13% 20%
+  }
+
+  .hero-stage-shadow {
+    height: 18px
+  }
+
+  .hero-progress {
+    gap: 5px;
+    bottom: 8%
   }
 
   .floating-card {
@@ -2924,14 +3281,18 @@ footer {
     font-size: 10px
   }
 
+  /* Too narrow to sit the qualifier beside the category — stack them instead. */
   .floating-card.top {
     right: -2px;
-    top: 28px
+    top: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px
   }
 
   .floating-card.bottom {
     left: -2px;
-    bottom: 22px
+    bottom: 20px
   }
 
   .section {
@@ -3106,12 +3467,16 @@ footer {
     grid-column: auto
   }
 
-  .hero-main {
-    height: 300px
+  .hero-visual {
+    height: 318px
   }
 
-  .hero-visual {
-    min-height: 300px
+  .hero-stage {
+    border-radius: 84px 10px 10px 10px
+  }
+
+  .floating-card.top {
+    top: 18px
   }
 
   .featured-grid {
@@ -3298,6 +3663,24 @@ header.scrolling-up {
 @media(prefers-reduced-motion:reduce) {
   header {
     transition: none
+  }
+
+  /* The hero becomes a single still product: no entrance, no float, no loop. */
+  .hero-copy>.eyebrow,
+  .hero-copy>h1,
+  .hero-copy>p,
+  .hero-copy>.actions,
+  .hero>.trust-row,
+  .hero-visual,
+  .floating-card,
+  .hero-stage-float,
+  .hero-stage-shadow,
+  .floating-card .hero-card-pulse:before {
+    animation: none
+  }
+
+  .floating-card .hero-card-label span:first-child {
+    opacity: 1
   }
 
   .scroll-reveal,

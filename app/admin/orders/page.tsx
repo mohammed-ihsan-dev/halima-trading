@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Eye, Search } from "lucide-react";
+import { Eye, Search, Plus, Copy, Share2, Check, CreditCard, ShoppingBag } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminPagination from "@/components/admin/AdminPagination";
 import type { MongoOrderDoc as OrderRecord } from "@/lib/repositories/orders";
+import { companyContact } from "@/lib/company-config";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -13,8 +14,10 @@ export default function AdminOrdersPage() {
   const [orders, setOrders] = useState<OrderRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [statusFilter, setStatusFilter] = useState("all");
+  const [sourceFilter, setSourceFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
   const refreshOrders = async () => {
     setLoading(true);
@@ -37,19 +40,22 @@ export default function AdminOrdersPage() {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, statusFilter]);
+  }, [searchQuery, statusFilter, sourceFilter]);
 
   const filteredOrders = orders.filter((o) => {
     const currentStatus = (o.orderStatus || (o as any).status || "").toLowerCase();
+    const currentSource = (o.source || "WEBSITE").toUpperCase();
 
     const matchesStatus =
       statusFilter === "all" || currentStatus === statusFilter.toLowerCase();
+    const matchesSource =
+      sourceFilter === "all" || currentSource === sourceFilter.toUpperCase();
     const matchesSearch =
       o.orderNumber.toLowerCase().includes(searchQuery.toLowerCase()) ||
       o.customerName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       o.customerEmail.toLowerCase().includes(searchQuery.toLowerCase());
 
-    return matchesStatus && matchesSearch;
+    return matchesStatus && matchesSource && matchesSearch;
   });
 
   const totalPages = Math.ceil(filteredOrders.length / ITEMS_PER_PAGE) || 1;
@@ -94,34 +100,97 @@ export default function AdminOrdersPage() {
     }
   };
 
+  const getSourceBadge = (source?: string) => {
+    const src = (source || "WEBSITE").toUpperCase();
+    if (src === "EXTERNAL") {
+      return (
+        <span className="px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-purple-100 text-purple-800 border border-purple-200">
+          EXTERNAL
+        </span>
+      );
+    }
+    return (
+      <span className="px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-slate-100 text-slate-700 border border-slate-200">
+        WEBSITE
+      </span>
+    );
+  };
+
+  const handleCopyPaymentLink = (order: OrderRecord) => {
+    if (!order.stripePaymentLinkUrl) return;
+    navigator.clipboard.writeText(order.stripePaymentLinkUrl);
+    setCopiedId(order.id);
+    setTimeout(() => setCopiedId(null), 2500);
+  };
+
+  const getWhatsAppShareUrl = (order: OrderRecord) => {
+    if (!order.stripePaymentLinkUrl) return "#";
+    const phone = order.customerPhone ? order.customerPhone.replace(/[^\d]/g, "") : "";
+    const msg = `Hello ${order.customerName},
+
+Your ${companyContact.name} order [${order.orderNumber}] has been created.
+
+Order Total: AED ${order.totalAmount.toLocaleString()}
+
+Please complete your payment using this secure Stripe payment link:
+${order.stripePaymentLinkUrl}
+
+Thank you for choosing ${companyContact.shortName}.`;
+
+    return phone ? `https://wa.me/${phone}?text=${encodeURIComponent(msg)}` : `https://wa.me/?text=${encodeURIComponent(msg)}`;
+  };
 
   return (
     <div className="space-y-6">
-      {/* Header */}
+      {/* Header Banner & Actions */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Orders</h1>
           <p className="text-sm font-semibold text-slate-500 mt-1">
-            Track customer order fulfillments, update statuses, and log tracking numbers.
+            Manage website checkouts and admin-created offline/WhatsApp external orders.
           </p>
         </div>
+
+        <Link
+          href="/admin/orders/create"
+          className="btn primary px-5 py-3 rounded-xl font-extrabold text-xs md:text-sm inline-flex items-center gap-2 shadow-md shrink-0"
+        >
+          <Plus size={18} />
+          <span>Create External Order</span>
+        </Link>
       </div>
 
       {/* Filter and Search */}
       <div className="bg-white rounded-2xl border border-slate-200/80 p-4 md:p-5 shadow-2xs flex flex-col md:flex-row items-center gap-4 justify-between">
-        {/* Status Filter Tabs */}
+        {/* Status & Source Filter Tabs */}
         <div className="flex items-center gap-2 flex-wrap w-full md:w-auto">
           {["all", "Pending", "Paid", "Shipped", "Cancelled"].map((status) => (
             <button
               key={status}
               onClick={() => setStatusFilter(status)}
-              className={`px-4 py-2 rounded-xl text-xs md:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
                 statusFilter === status
                   ? "bg-slate-900 text-white shadow-xs"
                   : "bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/80"
               }`}
             >
-              {status === "all" ? "All Orders" : status}
+              {status === "all" ? "All Statuses" : status}
+            </button>
+          ))}
+
+          <div className="h-6 w-px bg-slate-200 mx-1 hidden sm:block" />
+
+          {["all", "WEBSITE", "EXTERNAL"].map((src) => (
+            <button
+              key={src}
+              onClick={() => setSourceFilter(src)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                sourceFilter === src
+                  ? "bg-red-600 text-white shadow-xs"
+                  : "bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/80"
+              }`}
+            >
+              {src === "all" ? "All Sources" : src}
             </button>
           ))}
         </div>
@@ -146,6 +215,7 @@ export default function AdminOrdersPage() {
             <thead>
               <tr className="border-b border-slate-100 text-xs font-extrabold text-slate-500 uppercase tracking-wider bg-slate-50/60">
                 <th className="py-4 px-4">Order ID</th>
+                <th className="py-4 px-4">Source</th>
                 <th className="py-4 px-4">Customer</th>
                 <th className="py-4 px-4">Items</th>
                 <th className="py-4 px-4">Total</th>
@@ -160,6 +230,7 @@ export default function AdminOrdersPage() {
                 Array.from({ length: 6 }).map((_, i) => (
                   <tr key={i} className="animate-pulse">
                     <td className="py-4 px-4"><div className="h-4 w-16 bg-slate-200 rounded-md" /></td>
+                    <td className="py-4 px-4"><div className="h-4 w-14 bg-slate-200 rounded-md" /></td>
                     <td className="py-4 px-4"><div className="h-4 w-28 bg-slate-200 rounded-md" /></td>
                     <td className="py-4 px-4"><div className="h-4 w-12 bg-slate-200 rounded-md" /></td>
                     <td className="py-4 px-4"><div className="h-4 w-20 bg-slate-200 rounded-md" /></td>
@@ -171,7 +242,7 @@ export default function AdminOrdersPage() {
                 ))
               ) : paginatedOrders.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="py-12 text-center text-slate-400 font-semibold">
+                  <td colSpan={9} className="py-12 text-center text-slate-400 font-semibold">
                     No orders found.
                   </td>
                 </tr>
@@ -179,6 +250,7 @@ export default function AdminOrdersPage() {
                 paginatedOrders.map((o) => (
                   <tr key={o.id} className="hover:bg-slate-50/60 transition-colors">
                     <td className="py-4 px-4 font-mono text-xs font-black text-red-600">{o.orderNumber}</td>
+                    <td className="py-4 px-4">{getSourceBadge(o.source)}</td>
                     <td className="py-4 px-4">
                       <div>
                         <span className="font-bold text-slate-900 block">{o.customerName}</span>
@@ -197,12 +269,33 @@ export default function AdminOrdersPage() {
                       {o.createdAt ? new Date(o.createdAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }) : "Recent"}
                     </td>
 
-                    <td className="py-4 px-4 text-right">
+                    <td className="py-4 px-4 text-right space-x-1.5">
+                      {o.stripePaymentLinkUrl && (
+                        <>
+                          <button
+                            onClick={() => handleCopyPaymentLink(o)}
+                            className="inline-flex items-center gap-1 p-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors cursor-pointer"
+                            title="Copy Stripe Payment Link"
+                          >
+                            {copiedId === o.id ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
+                          </button>
+                          <a
+                            href={getWhatsAppShareUrl(o)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 p-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold rounded-xl transition-colors"
+                            title="Send via WhatsApp"
+                          >
+                            <Share2 size={14} />
+                          </a>
+                        </>
+                      )}
+
                       <Link
                         href={`/admin/orders/${o.id}`}
-                        className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs md:text-sm font-bold rounded-xl transition-colors"
+                        className="inline-flex items-center gap-1.5 px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-xl transition-colors"
                       >
-                        <Eye size={16} /> Details
+                        <Eye size={15} /> Details
                       </Link>
                     </td>
                   </tr>

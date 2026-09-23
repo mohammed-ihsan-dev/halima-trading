@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AtSign, Globe, Mail, MapPin, Phone, Share2 } from "lucide-react";
 import Logo from "./Logo";
+import { companyContact } from "@/lib/company-config";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -19,13 +20,13 @@ export default function Footer() {
             projects across the UAE.
           </p>
           <div className="socials">
-            <a href="#">
+            <a href="#" aria-label="Social link">
               <AtSign />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Website link">
               <Globe />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Share link">
               <Share2 />
             </a>
           </div>
@@ -57,22 +58,22 @@ export default function Footer() {
         <div>
           <h4>Visit & contact</h4>
           <p>
-            <MapPin /> Al Hamra Plaza Hotel Building, Electra Street, Abu Dhabi
+            <MapPin /> {companyContact.location}
           </p>
-          <a href="tel:+971565685090">
-            <Phone /> +971 56 568 5090
+          <a href={`tel:${companyContact.phoneRaw}`}>
+            <Phone /> {companyContact.phone}
           </a>
-          <a href="mailto:Halimatradingest@gmail.com">
-            <Mail /> Halimatradingest@gmail.com
+          <a href={`mailto:${companyContact.email}`}>
+            <Mail /> {companyContact.email}
           </a>
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <input aria-label="Email for newsletter" placeholder="Your email address" />
-            <button>Join</button>
+            <button type="submit">Join</button>
           </form>
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Halima Trading L.L.C. All Rights Reserved.</span>
+        <span>© 2026 {companyContact.name}. All Rights Reserved.</span>
         <span>Serving Abu Dhabi and the UAE since 1991.</span>
       </div>
     </footer>

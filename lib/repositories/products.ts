@@ -23,6 +23,7 @@ export interface MongoProductDoc {
   inStock?: boolean;
   stockCount?: number;
   featured?: boolean;
+  deliveryRate?: number;
   status?: "active" | "inactive" | "deleted";
   createdAt?: Date;
   updatedAt?: Date;
@@ -56,15 +57,12 @@ function formatProduct(doc: any): Product {
     priceLabel: rest.price ? `${rest.price} AED` : rest.priceLabel || "Contact for Price",
     images:
       Array.isArray(rest.images) && rest.images.length > 0
-        ? rest.images.map((img: string) =>
-            typeof img === "string" && img.startsWith("data:") && img.length > 300000
-              ? "/featured/hisense-window-ac.png"
-              : img
-          )
+        ? rest.images.filter((img: any) => typeof img === "string" && img.trim() !== "")
         : ["/featured/hisense-window-ac.png"],
     inStock: rest.inStock !== undefined ? Boolean(rest.inStock) : true,
     stockCount: rest.stockCount !== undefined ? Number(rest.stockCount) : 12,
     featured: rest.featured !== undefined ? Boolean(rest.featured) : false,
+    deliveryRate: rest.deliveryRate !== undefined && rest.deliveryRate !== null ? Number(rest.deliveryRate) : 0,
   };
 }
 
@@ -92,6 +90,7 @@ export async function getMongoProducts(): Promise<Product[]> {
             inStock: 1,
             stockCount: 1,
             featured: 1,
+            deliveryRate: 1,
             status: 1,
             createdAt: 1,
           },
@@ -147,6 +146,7 @@ export async function getMongoFeaturedProducts(): Promise<Product[]> {
             inStock: 1,
             stockCount: 1,
             featured: 1,
+            deliveryRate: 1,
             status: 1,
           },
         }
@@ -194,6 +194,7 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
             inStock: 1,
             stockCount: 1,
             featured: 1,
+            deliveryRate: 1,
             status: 1,
           },
         }
@@ -234,6 +235,7 @@ export async function createMongoProduct(data: Partial<Product>): Promise<Produc
     inStock: data.inStock !== undefined ? Boolean(data.inStock) : true,
     stockCount: data.stockCount !== undefined ? Number(data.stockCount) : 12,
     featured: data.featured !== undefined ? Boolean(data.featured) : false,
+    deliveryRate: data.deliveryRate !== undefined && data.deliveryRate !== null ? Math.max(0, Number(data.deliveryRate) || 0) : 0,
     status: "active",
     updatedAt: new Date(),
   };
@@ -271,6 +273,9 @@ export async function updateMongoProduct(idOrSlug: string, updates: Partial<Prod
   }
   if (updates.price !== undefined) {
     updateFields.priceLabel = updates.price ? `${updates.price} AED` : "Contact for Price";
+  }
+  if (updates.deliveryRate !== undefined) {
+    updateFields.deliveryRate = Math.max(0, Number(updates.deliveryRate) || 0);
   }
 
   await db.collection("products").updateOne(

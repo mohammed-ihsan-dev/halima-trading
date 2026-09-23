@@ -23,7 +23,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Customer details and shipping address are required" }, { status: 400 });
     }
 
-    // 1. Create order in MongoDB (validates products and stock server-side)
+    // 1. Create order in MongoDB (validates products and stock server-side using MongoDB prices)
     const order = await createMongoOrder({
       customerName,
       customerEmail,
@@ -45,23 +45,47 @@ export async function POST(request: Request) {
       status: "PENDING",
     });
 
-    const origin = request.headers.get("origin") || "http://localhost:3000";
+    const origin = request.headers.get("origin") || "";
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || origin || "http://localhost:3000";
+    const baseUrl = appUrl.endsWith("/") ? appUrl.slice(0, -1) : appUrl;
 
     // 3. Create Stripe Checkout Session if configured
     if (isStripeConfigured() && stripe) {
-      const lineItems = order.items.map((item) => ({
-        price_data: {
-          currency: "aed",
-          product_data: {
-            name: item.name,
-            images: item.image ? [`${origin}${item.image}`] : [],
-          },
-          unit_amount: Math.round(item.unitPrice * 100), // amount in fills
-        },
-        quantity: item.quantity,
-      }));
+      const lineItems = order.items.map((item) => {
+        let imageUrl: string | undefined = undefined;
+        if (item.image) {
+          imageUrl = item.image.startsWith("http") ? item.image : `${baseUrl}${item.image.startsWith("/") ? "" : "/"}${item.image}`;
+        }
 
-      // Add VAT line item if applicable
+        return {
+          price_data: {
+            currency: "aed",
+            product_data: {
+              name: item.name,
+              images: imageUrl ? [imageUrl] : [],
+            },
+            unit_amount: Math.round(item.unitPrice * 100), // amount in fils
+          },
+          quantity: item.quantity,
+        };
+      });
+
+      // Add Delivery Charge line item if applicable
+      if (order.shipping > 0) {
+        lineItems.push({
+          price_data: {
+            currency: "aed",
+            product_data: {
+              name: "Delivery Charge",
+              images: [],
+            },
+            unit_amount: Math.round(order.shipping * 100),
+          },
+          quantity: 1,
+        });
+      }
+
+      // Add VAT (5%) line item if applicable
       if (order.vat > 0) {
         lineItems.push({
           price_data: {
@@ -80,13 +104,14 @@ export async function POST(request: Request) {
         payment_method_types: ["card"],
         line_items: lineItems,
         mode: "payment",
-        success_url: `${origin}/checkout/success?orderId=${order.id}`,
-        cancel_url: `${origin}/cart`,
+        success_url: `${baseUrl}/checkout/success?session_id={CHECKOUT_SESSION_ID}&orderId=${order.id}`,
+        cancel_url: `${baseUrl}/checkout/cancel?orderId=${order.id}`,
         customer_email: order.customerEmail,
         metadata: {
           orderId: order.id,
           orderNumber: order.orderNumber,
           paymentId: payment.id,
+          paymentNumber: payment.paymentNumber,
         },
       });
 
@@ -98,13 +123,14 @@ export async function POST(request: Request) {
       });
     }
 
-    // Return success response if Stripe live keys are not set yet
+    // Fallback response if Stripe secret key is not configured in local environment
     return NextResponse.json({
       success: true,
       orderId: order.id,
       orderNumber: order.orderNumber,
       totalAmount: order.totalAmount,
-      message: "Order placed successfully in MongoDB (Stripe pending live credentials)",
+      message: "Order created successfully in MongoDB (Stripe keys missing in environment)",
+      url: `${baseUrl}/checkout/success?orderId=${order.id}`,
     });
   } catch (error: any) {
     console.error("Checkout creation error:", error);
@@ -114,3 +140,4 @@ export async function POST(request: Request) {
     );
   }
 }
+

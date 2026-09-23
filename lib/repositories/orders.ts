@@ -1,5 +1,6 @@
 import { getMongoDb } from "@/lib/mongodb";
 import { getMongoProductByIdOrSlug } from "@/lib/repositories/products";
+import { normalizePhoneNumber, extractPhoneDigits } from "@/lib/phone-utils";
 
 export interface MongoOrderItem {
   productId: string;
@@ -40,8 +41,11 @@ export interface MongoOrderDoc {
   totalAmount: number;
   currency: string;
   orderStatus: "PENDING" | "PROCESSING" | "SHIPPED" | "DELIVERED" | "CANCELLED" | "Pending" | "Paid" | "Shipped" | "Cancelled";
-  paymentStatus: "PENDING" | "PAID" | "FAILED" | "REFUNDED" | "UNPAID" | "Captured" | "Failed" | "Refunded" | "Unpaid";
+  paymentStatus: "PENDING" | "PAID" | "FAILED" | "REFUNDED" | "PARTIALLY_REFUNDED" | "UNPAID" | "Captured" | "Failed" | "Refunded" | "Unpaid";
   paymentId?: string;
+  source?: "WEBSITE" | "EXTERNAL";
+  stripePaymentLinkId?: string;
+  stripePaymentLinkUrl?: string;
   customerNotes?: string;
   trackingNumber?: string;
   createdAt: Date;
@@ -69,6 +73,9 @@ function formatOrder(doc: any): MongoOrderDoc {
     currency: rest.currency || "AED",
     orderStatus: rest.orderStatus || rest.status || "PENDING",
     paymentStatus: rest.paymentStatus || "UNPAID",
+    source: rest.source || "WEBSITE",
+    stripePaymentLinkId: rest.stripePaymentLinkId,
+    stripePaymentLinkUrl: rest.stripePaymentLinkUrl,
     createdAt: rest.createdAt ? new Date(rest.createdAt) : new Date(),
     updatedAt: rest.updatedAt ? new Date(rest.updatedAt) : new Date(),
   };
@@ -216,6 +223,7 @@ export async function ensureOrdersSeeded(): Promise<void> {
     if (count === 0) {
       await db.collection("orders").createIndex({ orderNumber: 1 }, { unique: true });
       await db.collection("orders").createIndex({ userId: 1 });
+      await db.collection("orders").createIndex({ customerPhone: 1, createdAt: -1 });
       await db.collection("orders").createIndex({ orderStatus: 1 });
       await db.collection("orders").createIndex({ paymentStatus: 1 });
       await db.collection("orders").createIndex({ createdAt: -1 });
@@ -246,6 +254,66 @@ export async function getMongoOrders(): Promise<MongoOrderDoc[]> {
   }
 }
 
+/**
+ * Fetch orders directly from MongoDB matching verified customer phone number.
+ * Uses MongoDB database query directly without in-memory filtering.
+ */
+export async function getMongoOrdersByPhone(rawPhone: string): Promise<MongoOrderDoc[]> {
+  try {
+    await ensureOrdersSeeded();
+    const norm = normalizePhoneNumber(rawPhone);
+    const digits = extractPhoneDigits(rawPhone);
+    if (!digits) return [];
+
+    const db = await getMongoDb();
+
+    // Anchored regex pattern for exact sequence of digits (allowing optional +, spaces, dashes, dots)
+    const digitPattern = "^\\+?[\\s\\-\\.]*" + digits.split("").join("[\\s\\-\\.]*") + "[\\s\\-\\.]*$";
+
+    const conditions: any[] = [
+      { customerPhone: norm },
+      { customerPhone: rawPhone },
+      { customerPhone: { $regex: digitPattern, $options: "i" } },
+    ];
+
+    if (digits.startsWith("9715") && digits.length === 12) {
+      const localDigits = "0" + digits.slice(3); // e.g. 0501234567
+      const localPattern = "^[\\s\\-\\.]*" + localDigits.split("").join("[\\s\\-\\.]*") + "[\\s\\-\\.]*$";
+      conditions.push({ customerPhone: { $regex: localPattern, $options: "i" } });
+    }
+
+    const docs = await db
+      .collection("orders")
+      .find({ $or: conditions })
+      .sort({ createdAt: -1 })
+      .toArray();
+
+    return docs.map(formatOrder);
+  } catch (error) {
+    console.error(`Error fetching orders for phone (${rawPhone}) from MongoDB:`, error);
+    return [];
+  }
+}
+
+/**
+ * Fetch specific order by ID/OrderNumber strictly verified against customer phone number in MongoDB.
+ */
+export async function getMongoOrderByIdAndPhone(
+  idOrNumber: string,
+  rawPhone: string
+): Promise<MongoOrderDoc | null> {
+  try {
+    const userOrders = await getMongoOrdersByPhone(rawPhone);
+    const matched = userOrders.find(
+      (o) => o.id === idOrNumber || o.orderNumber.toLowerCase() === idOrNumber.toLowerCase()
+    );
+    return matched || null;
+  } catch (error) {
+    console.error(`Error fetching order (${idOrNumber}) for phone (${rawPhone}):`, error);
+    return null;
+  }
+}
+
 export async function getMongoOrderById(idOrNumber: string): Promise<MongoOrderDoc | null> {
   try {
     await ensureOrdersSeeded();
@@ -270,6 +338,9 @@ export async function createMongoOrder(orderInput: {
   billingAddress?: { address: string; city: string; emirate: string; country: string };
   items: { productId: string; quantity: number }[];
   customerNotes?: string;
+  source?: "WEBSITE" | "EXTERNAL";
+  stripePaymentLinkId?: string;
+  stripePaymentLinkUrl?: string;
 }): Promise<MongoOrderDoc> {
   await ensureOrdersSeeded();
   const db = await getMongoDb();
@@ -280,6 +351,7 @@ export async function createMongoOrder(orderInput: {
 
   const processedItems: MongoOrderItem[] = [];
   let calculatedSubtotal = 0;
+  let calculatedShipping = 0;
 
   for (const itemInput of orderInput.items) {
     const product = await getMongoProductByIdOrSlug(itemInput.productId);
@@ -293,6 +365,9 @@ export async function createMongoOrder(orderInput: {
     const unitPrice = product.price || 0;
     const itemTotal = unitPrice * itemInput.quantity;
     calculatedSubtotal += itemTotal;
+
+    const itemDeliveryRate = product.deliveryRate !== undefined && product.deliveryRate !== null ? Number(product.deliveryRate) : 0;
+    calculatedShipping += itemDeliveryRate * itemInput.quantity;
 
     processedItems.push({
       productId: product.id,
@@ -315,7 +390,7 @@ export async function createMongoOrder(orderInput: {
   }
 
   const vat = Math.round(calculatedSubtotal * 0.05 * 100) / 100; // 5% UAE VAT
-  const totalAmount = calculatedSubtotal + vat;
+  const totalAmount = calculatedSubtotal + calculatedShipping + vat;
 
   const count = await db.collection("orders").countDocuments();
   const orderNumber = `HT-${10005 + count}`;
@@ -327,7 +402,7 @@ export async function createMongoOrder(orderInput: {
     userId: orderInput.userId,
     customerName: orderInput.customerName.trim(),
     customerEmail: orderInput.customerEmail.trim(),
-    customerPhone: orderInput.customerPhone.trim(),
+    customerPhone: normalizePhoneNumber(orderInput.customerPhone),
     company: orderInput.company?.trim(),
     shippingAddress: orderInput.shippingAddress,
     billingAddress: orderInput.billingAddress || orderInput.shippingAddress,
@@ -335,11 +410,14 @@ export async function createMongoOrder(orderInput: {
     subtotal: calculatedSubtotal,
     vat,
     taxAmount: vat,
-    shipping: 0,
+    shipping: calculatedShipping,
     totalAmount,
     currency: "AED",
     orderStatus: "PENDING",
     paymentStatus: "UNPAID",
+    source: orderInput.source || "WEBSITE",
+    stripePaymentLinkId: orderInput.stripePaymentLinkId,
+    stripePaymentLinkUrl: orderInput.stripePaymentLinkUrl,
     customerNotes: orderInput.customerNotes,
     createdAt: new Date(),
     updatedAt: new Date(),
@@ -410,5 +488,56 @@ export async function updateMongoOrderPaymentStatus(
   } catch (error) {
     console.error(`Error updating order payment status (${idOrNumber}):`, error);
     return null;
+  }
+}
+
+/**
+ * Idempotently restores stock for an abandoned, expired, or cancelled checkout order.
+ * Ensures stock is never restored twice or restored for paid orders.
+ */
+export async function restoreMongoOrderStock(idOrNumber: string): Promise<boolean> {
+  try {
+    const db = await getMongoDb();
+    const existing = await db.collection("orders").findOne({
+      $or: [{ id: idOrNumber }, { orderNumber: idOrNumber }],
+    });
+
+    if (!existing) return false;
+
+    // Idempotency check: Do not restore if already restored or paid
+    if (existing.stockRestored === true || existing.paymentStatus === "PAID") {
+      return false;
+    }
+
+    if (Array.isArray(existing.items)) {
+      for (const item of existing.items) {
+        if (item.productId && item.quantity > 0) {
+          await db.collection("products").updateOne(
+            { id: item.productId },
+            {
+              $inc: { stockCount: item.quantity },
+              $set: { inStock: true },
+            }
+          );
+        }
+      }
+    }
+
+    await db.collection("orders").updateOne(
+      { _id: existing._id },
+      {
+        $set: {
+          stockRestored: true,
+          orderStatus: "CANCELLED",
+          paymentStatus: "FAILED",
+          updatedAt: new Date(),
+        },
+      }
+    );
+
+    return true;
+  } catch (error) {
+    console.error(`Error restoring stock for order (${idOrNumber}):`, error);
+    return false;
   }
 }

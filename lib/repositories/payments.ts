@@ -201,6 +201,44 @@ export async function updateMongoPaymentStatus(
   }
 }
 
+import { stripe, isStripeConfigured } from "@/lib/stripe";
+
 export async function refundMongoPayment(paymentIdOrNumber: string): Promise<MongoPaymentDoc | null> {
+  const db = await getMongoDb();
+  const existing = await db.collection("payments").findOne({
+    $or: [{ id: paymentIdOrNumber }, { paymentNumber: paymentIdOrNumber }],
+  });
+
+  if (!existing) return null;
+
+  // Execute live Stripe refund via Stripe SDK if provider is stripe
+  if (existing.provider === "stripe" && isStripeConfigured() && stripe) {
+    const providerPaymentId = existing.providerPaymentId || existing.referenceId;
+    if (providerPaymentId) {
+      try {
+        let paymentIntentId = providerPaymentId;
+        if (providerPaymentId.startsWith("cs_")) {
+          const session = await stripe.checkout.sessions.retrieve(providerPaymentId);
+          if (session.payment_intent) {
+            paymentIntentId = typeof session.payment_intent === "string" ? session.payment_intent : session.payment_intent.id;
+          }
+        }
+
+        if (paymentIntentId.startsWith("pi_")) {
+          await stripe.refunds.create({
+            payment_intent: paymentIntentId,
+            metadata: {
+              paymentNumber: existing.paymentNumber,
+              orderNumber: existing.orderNumber,
+            },
+          });
+        }
+      } catch (stripeErr: any) {
+        console.error(`Stripe live refund call failed for payment (${paymentIdOrNumber}):`, stripeErr.message);
+        throw new Error(`Stripe Refund Error: ${stripeErr.message}`);
+      }
+    }
+  }
+
   return await updateMongoPaymentStatus(paymentIdOrNumber, "REFUNDED");
 }

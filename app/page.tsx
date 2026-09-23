@@ -4,6 +4,7 @@ import { getMongoFeaturedProducts } from "@/lib/repositories/products";
 import ProductCard from "@/components/ProductCard";
 import BrandCarousel from "@/components/BrandCarousel";
 import CategorySolutionsSection from "@/components/CategorySolutionsSection";
+import HeroProductShowcase from "@/components/HeroProductShowcase";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export const revalidate = 60; // 60s ISR for responsive homepage updates
@@ -23,28 +24,10 @@ export default async function Home() {
             <Link className="btn secondary" href="/quote">Request a quote</Link>
             <a className="text-link" href="https://wa.me/971565685090?text=Hello%20Halima%20Trading%2C%20I%20would%20like%20help%20choosing%20an%20appliance."><WhatsAppIcon/>Order on WhatsApp</a>
           </div>
-          <div className="trust-row">
-            <span><b>1991</b> Established</span><span><b>34+</b> Years of excellence</span><span><b>30+</b> Trusted brands</span>
-          </div>
         </div>
-        <div className="hero-visual" aria-label="Premium home appliances">
-          <div className="glow"/>
-          <video
-            className="hero-main hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            poster="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=85"
-            aria-label="Halima Trading premium appliance showcase"
-          >
-            <source src="/videos/halima-hero-new.mp4" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
-
-          <div className="floating-card top"><span>Commercial & residential</span><b>Cooling solutions</b></div>
-          <div className="floating-card bottom"><CheckCircle2 size={19}/><span><b>In stock</b><small>UAE-wide delivery</small></span></div>
+        <HeroProductShowcase />
+        <div className="trust-row">
+          <span><b>1991</b> Established</span><span><b>34+</b> Years of excellence</span><span><b>30+</b> Trusted brands</span>
         </div>
       </section>
 

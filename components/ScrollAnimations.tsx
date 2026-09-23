@@ -15,7 +15,9 @@ export default function ScrollAnimations() {
     animationFrameId = requestAnimationFrame(() => {
       const targets = Array.from(
         document.querySelectorAll<HTMLElement>(
-          "main > section, .appliance-category-card, .feature-product-card, .benefit, .category-trust-item"
+          // The hero runs its own one-shot entrance in CSS — revealing it again here
+          // would blank it out for a frame after hydration.
+          "main > section:not(.hero), .appliance-category-card, .feature-product-card, .benefit, .category-trust-item"
         )
       );
 

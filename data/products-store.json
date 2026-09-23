@@ -18,8 +18,8 @@
       "Type": "Window Air Conditioner",
       "Application": "Residential and light commercial"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1490,
+    "priceLabel": "1490 AED",
     "images": [
       "/featured/hisense-window-ac.png"
     ],
@@ -47,8 +47,8 @@
       "Type": "Wall-mounted Split AC",
       "Application": "Large rooms, offices and retail spaces"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 2850,
+    "priceLabel": "2850 AED",
     "images": [
       "/featured/ogeneral-split-indoor.png",
       "/featured/ogeneral-split-outdoor.png"
@@ -77,15 +77,15 @@
       "Type": "Window Air Conditioner",
       "Installation": "Window-mounted"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1350,
+    "priceLabel": "1350 AED",
     "images": [
       "/featured/midea-window-ac.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-AI-003",
-    "stockCount": 14
+    "stockCount": 12
   },
   {
     "id": "ac-westpoint-15-window",
@@ -106,15 +106,15 @@
       "Type": "Window Air Conditioner",
       "Controls": "Manual rotary controls"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1290,
+    "priceLabel": "1290 AED",
     "images": [
       "/featured/westpoint-window-ac.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-AI-004",
-    "stockCount": 15
+    "stockCount": 12
   },
   {
     "id": "washer-super-general-15",
@@ -135,15 +135,15 @@
       "Type": "Twin Tub",
       "Loading": "Top load"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1940,
+    "priceLabel": "1940 AED",
     "images": [
       "/featured/super-general-twin-tub.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-LA-005",
-    "stockCount": 16
+    "stockCount": 12
   },
   {
     "id": "washer-midea-black",
@@ -164,8 +164,8 @@
       "Color": "Black",
       "Motor": "Inverter"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1650,
+    "priceLabel": "1650 AED",
     "images": [
       "/featured/midea-front-load-black.png"
     ],
@@ -193,15 +193,15 @@
       "Color": "White",
       "Controls": "Digital"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 1790,
+    "priceLabel": "1790 AED",
     "images": [
       "/featured/samsung-front-load-white.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-LA-007",
-    "stockCount": 13
+    "stockCount": 12
   },
   {
     "id": "washer-compact-twin",
@@ -222,15 +222,15 @@
       "Loading": "Top load",
       "Color": "White"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 750,
+    "priceLabel": "750 AED",
     "images": [
       "/featured/compact-twin-tub.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-LA-008",
-    "stockCount": 14
+    "stockCount": 12
   },
   {
     "id": "cooler-stainless",
@@ -251,15 +251,15 @@
       "Finish": "Stainless Steel",
       "Installation": "Floor standing"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 2150,
+    "priceLabel": "2150 AED",
     "images": [
       "/featured/stainless-water-cooler.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-CO-009",
-    "stockCount": 15
+    "stockCount": 12
   },
   {
     "id": "dispenser-black-bottom",
@@ -280,15 +280,15 @@
       "Loading": "Bottom loading",
       "Color": "Black"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 450,
+    "priceLabel": "450 AED",
     "images": [
       "/featured/black-water-dispenser.png"
     ],
     "inStock": true,
     "featured": true,
     "sku": "HT-HO-0010",
-    "stockCount": 16
+    "stockCount": 12
   },
   {
     "id": "dispenser-white-floor",
@@ -309,8 +309,8 @@
       "Installation": "Floor standing",
       "Color": "White"
     },
-    "price": null,
-    "priceLabel": "Contact for Price",
+    "price": 380,
+    "priceLabel": "380 AED",
     "images": [
       "/featured/white-water-dispenser.png"
     ],

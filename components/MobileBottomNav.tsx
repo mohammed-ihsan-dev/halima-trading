@@ -29,7 +29,7 @@ export default function MobileBottomNav() {
         <BookOpen />
         <span>Brochure</span>
       </a>
-      <a className="mobile-wa" href="https://wa.me/971565685090" aria-label="Order on WhatsApp">
+      <a className="mobile-wa" href="https://wa.me/971565685090" aria-label="WhatsApp Support">
         <WhatsAppIcon />
         <span>WhatsApp</span>
       </a>
