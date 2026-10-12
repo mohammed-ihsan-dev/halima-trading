@@ -2,10 +2,15 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { Product } from "@/data/products";
 import { triggerFlyToCartAnimation } from "@/lib/cart-comet-animation";
+import { hasSellingPrice } from "@/lib/pricing";
 
 export type CartLine = Product & { quantity: number };
 type CartValue = {
   items: CartLine[];
+  /** Items with a real price — the only ones paid checkout may include. */
+  payableItems: CartLine[];
+  /** "Contact for Price" items (e.g. saved in an older cart) — handled by WhatsApp quotation. */
+  quoteItems: CartLine[];
   count: number;
   total: number;
   open: boolean;
@@ -46,6 +51,12 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }, [items, loaded]);
 
   const add = (p: Product, q = 1, sourceInput?: HTMLElement | React.SyntheticEvent | EventTarget | null) => {
+    // "Contact for Price" products are quotation-only and never enter the paid cart.
+    if (!hasSellingPrice(p)) {
+      setToast("This product is priced on request — use “Request Price on WhatsApp”.");
+      setTimeout(() => setToast(""), 3200);
+      return;
+    }
     // Synchronously resolve real DOM element before React async state batching
     let targetEl: HTMLElement | Element | null = null;
     if (sourceInput) {
@@ -86,13 +97,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const remove = (id: string) => setItems((v) => v.filter((x) => x.id !== id));
 
   const isInCart = (id: string) => items.some((x) => x.id === id);
+  const payableItems = items.filter((x) => hasSellingPrice(x));
+  const quoteItems = items.filter((x) => !hasSellingPrice(x));
 
   return (
     <CartContext.Provider
       value={{
         items,
+        payableItems,
+        quoteItems,
         count: items.reduce((s, x) => s + x.quantity, 0),
-        total: items.reduce((s, x) => s + (x.price || 0) * x.quantity, 0),
+        total: payableItems.reduce((s, x) => s + (x.price as number) * x.quantity, 0),
         open,
         setOpen,
         add,

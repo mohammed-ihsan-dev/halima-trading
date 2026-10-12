@@ -13,15 +13,18 @@
     "start": "next start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "test:catalogue": "node --import ./tests/support/register-ts.mjs --test --test-concurrency=1 tests/admin-auth.*.test.mjs tests/session-keys.unit.test.mjs tests/catalogue-dry-run.*.test.mjs tests/product-import.db.test.mjs tests/import-cli.db.test.mjs tests/product-ci-index.db.test.mjs tests/publication-safety.*.test.mjs tests/quotation.*.test.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "drizzle-orm": "0.45.2",
+    "exceljs": "4.4.0",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.26.0",
     "mongodb": "^7.6.0",
     "next": "16.2.6",
+    "papaparse": "5.7.0",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "react-loading-skeleton": "3.5.0",
@@ -31,6 +34,7 @@
     "@cloudflare/vite-plugin": "1.37.1",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",

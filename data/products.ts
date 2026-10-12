@@ -17,6 +17,8 @@ export type Product = {
   sku?: string;
   stockCount?: number;
   deliveryRate?: number;
+  /** Draft and inactive products are hidden from the shop and checkout. */
+  status?: "active" | "draft" | "inactive" | "deleted";
 };
 
 export const products: Product[] = [

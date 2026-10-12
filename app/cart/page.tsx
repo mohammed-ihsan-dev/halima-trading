@@ -5,6 +5,8 @@ import Link from "next/link";
 import { CreditCard, Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/currency";
+import { displayPrice, hasSellingPrice } from "@/lib/pricing";
+import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 import { emailUrl } from "@/lib/email";
 import CheckoutModal from "@/components/checkout/CheckoutModal";
 
@@ -39,7 +41,7 @@ export default function Cart() {
                     <small>
                       {x.brand} · Model {x.model}
                     </small>
-                    <span>{formatCurrency(x.price)}</span>
+                    <span className={hasSellingPrice(x) ? undefined : "is-quote"}>{displayPrice(x)}</span>
                   </div>
                   <div className="qty big">
                     <button onClick={() => c.update(x.id, x.quantity - 1)}>
@@ -50,7 +52,7 @@ export default function Cart() {
                       <Plus />
                     </button>
                   </div>
-                  <b>{x.price === null ? "On request" : formatCurrency(x.price * x.quantity)}</b>
+                  <b>{hasSellingPrice(x) ? formatCurrency((x.price as number) * x.quantity) : "On request"}</b>
                   <button onClick={() => c.remove(x.id)} title="Remove item">
                     <Trash2 />
                   </button>
@@ -78,18 +80,34 @@ export default function Cart() {
               <div className="sum-total">
                 <span>Delivery Charge</span>
                 <b className="text-emerald-600 uppercase">
-                  {c.items.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0) === 0
+                  {c.payableItems.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0) === 0
                     ? "FREE DELIVERY"
-                    : formatCurrency(c.items.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0))}
+                    : formatCurrency(c.payableItems.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0))}
                 </b>
               </div>
               <p>Final pricing and delivery calculation confirmed on secure checkout.</p>
+
+              {c.quoteItems.length > 0 && (
+                <div className="quote-box" role="note">
+                  <b>Price on request ({c.quoteItems.length})</b>
+                  <small>
+                    {c.quoteItems.map((x) => x.name).join(", ")} {c.quoteItems.length === 1 ? "is" : "are"} priced on request and
+                    not included in card payment.
+                  </small>
+                  <WhatsAppQuoteButton
+                    items={c.quoteItems.map((x) => ({ name: x.name, brand: x.brand, model: x.model, sku: x.sku, slug: x.slug, id: x.id, quantity: x.quantity }))}
+                    label={c.quoteItems.length === 1 ? "Request Price on WhatsApp" : "Request Prices on WhatsApp"}
+                    className="btn secondary full flex items-center justify-center gap-2"
+                  />
+                </div>
+              )}
               <button
                 className="btn primary full flex items-center justify-center gap-2 mb-2"
                 onClick={() => setIsCheckoutOpen(true)}
+                disabled={c.payableItems.length === 0}
               >
                 <CreditCard size={18} />
-                Pay Securely with Card
+                {c.quoteItems.length > 0 && c.payableItems.length > 0 ? "Pay for priced items" : "Pay Securely with Card"}
               </button>
               <a className="btn secondary full" href={emailUrl(c.items)}>
                 Send order by email

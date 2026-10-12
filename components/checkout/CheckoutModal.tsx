@@ -21,7 +21,8 @@ const EMIRATES = [
 ];
 
 export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
-  const { items, total } = useCart();
+  // Paid checkout only ever includes priced items; quotation items are excluded.
+  const { payableItems: items, total } = useCart();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -83,7 +84,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
       return;
     }
     if (items.length === 0) {
-      setErrorMessage("Your shopping cart is empty.");
+      setErrorMessage("There are no priced items in your cart to pay for.");
       return;
     }
 

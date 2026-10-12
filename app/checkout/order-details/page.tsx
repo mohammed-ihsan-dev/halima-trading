@@ -14,6 +14,8 @@ import {
   Lock,
 } from "lucide-react";
 import { formatCurrency } from "@/lib/currency";
+import { hasSellingPrice } from "@/lib/pricing";
+import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 
 const EMIRATES = [
   "Abu Dhabi",
@@ -199,7 +201,30 @@ function OrderDetailsContent() {
     );
   }
 
-  const unitPrice = product.price || 0;
+  // "Contact for Price" products cannot be paid for online (the server refuses them too):
+  // show the WhatsApp quotation action instead of the payment form.
+  if (!hasSellingPrice(product)) {
+    return (
+      <div className="min-h-[60vh] flex flex-col items-center justify-center p-6 text-center bg-white text-zinc-900">
+        <div className="max-w-md w-full bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+          <h1 className="text-xl font-bold text-zinc-900">Contact for Price</h1>
+          <p className="text-sm text-zinc-600">
+            <b>{product.name}</b> is priced on request and cannot be bought online. Send us a WhatsApp message for the
+            current price, availability and delivery details.
+          </p>
+          <WhatsAppQuoteButton
+            items={[{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
+            className="btn primary px-6 py-2.5 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2 w-full"
+          />
+          <Link href={`/shop/${product.slug || product.id}`} className="text-xs font-semibold text-zinc-500 underline">
+            Back to product
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const unitPrice = product.price as number;
   const deliveryRate = product.deliveryRate || 0;
   const subtotal = unitPrice * quantity;
   const shippingTotal = deliveryRate * quantity;

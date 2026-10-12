@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { Check, ShoppingBag, Minus, Plus, Zap, Mail, Download } from "lucide-react";
 import type { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
+import { hasSellingPrice } from "@/lib/pricing";
+import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 
 interface ProductClientActionsProps {
   product: Product;
@@ -23,8 +25,16 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
     router.push(`/checkout/order-details?productId=${encodeURIComponent(product.id)}&quantity=${quantity}`);
   };
 
+  const quoteOnly = !hasSellingPrice(product);
+
   return (
     <>
+      {quoteOnly && (
+        <p className="quote-note text-sm font-semibold text-slate-600 w-full max-w-full" role="note">
+          This product is priced on request. Send us a WhatsApp message and our team will reply with the current
+          price, availability and delivery details.
+        </p>
+      )}
       <div className="buy-row flex flex-wrap items-center gap-3 w-full max-w-full min-w-0">
         {/* Quantity Selector */}
         <div className="qty big shrink-0">
@@ -45,6 +55,13 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
           </button>
         </div>
 
+        {quoteOnly ? (
+          <WhatsAppQuoteButton
+            items={[{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
+            className="flex-1 min-w-0 max-w-full min-h-[48px] py-3 px-4 sm:px-6 rounded-xl font-bold flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
+          />
+        ) : (
+        <>
         {/* Red Button: Add to Cart */}
         <button
           type="button"
@@ -77,6 +94,8 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
           <Zap size={18} className="shrink-0" />
           <span className="truncate">{product.inStock ? "Buy Now" : "Out of Stock"}</span>
         </button>
+        </>
+        )}
       </div>
 
       <div className="detail-actions w-full max-w-full min-w-0">

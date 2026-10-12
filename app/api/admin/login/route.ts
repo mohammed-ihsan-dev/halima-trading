@@ -1,5 +1,11 @@
 import { NextResponse } from "next/server";
-import { authenticateAdminUser, createAdminSessionPayload, ADMIN_COOKIE_NAME } from "@/lib/admin-auth";
+import {
+  authenticateAdminUser,
+  createAdminSessionPayload,
+  ADMIN_COOKIE_NAME,
+  AdminSessionConfigError,
+} from "@/lib/admin-auth";
+import { ADMIN_SESSION_MAX_AGE_SECONDS } from "@/lib/admin-session-token";
 
 export async function POST(request: Request) {
   try {
@@ -40,7 +46,7 @@ export async function POST(request: Request) {
         path: "/",
         sameSite: "lax",
         secure: process.env.NODE_ENV === "production",
-        maxAge: 60 * 60 * 24 * 7, // 7 days
+        maxAge: ADMIN_SESSION_MAX_AGE_SECONDS, // same lifetime as the signed token
       });
 
       return response;
@@ -51,6 +57,13 @@ export async function POST(request: Request) {
       { status: 401 }
     );
   } catch (error) {
+    if (error instanceof AdminSessionConfigError) {
+      console.error("Admin login unavailable:", error.message);
+      return NextResponse.json(
+        { success: false, error: "Admin login is not configured on this server. Set ADMIN_SESSION_SECRET." },
+        { status: 503 }
+      );
+    }
     console.error("Admin login error:", error);
     return NextResponse.json(
       { success: false, error: "An unexpected error occurred during login" },

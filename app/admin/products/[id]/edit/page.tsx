@@ -47,6 +47,7 @@ export default function EditProductPage() {
     deliveryRate: "0",
     stockCount: "",
     inStock: true,
+    status: "active",
     description: "",
     specifications: "",
   });
@@ -164,7 +165,8 @@ export default function EditProductPage() {
 
   useEffect(() => {
     if (!productId) return;
-    fetch(`/api/products?slug=${encodeURIComponent(productId)}`, { cache: "no-store" })
+    // Admin endpoint: also returns draft products, which the public API hides.
+    fetch(`/api/admin/products?id=${encodeURIComponent(productId)}`, { cache: "no-store" })
       .then((res) => res.json())
       .then((res) => {
         if (res.success && res.product) {
@@ -180,6 +182,7 @@ export default function EditProductPage() {
             deliveryRate: existing.deliveryRate !== undefined && existing.deliveryRate !== null ? String(existing.deliveryRate) : "0",
             stockCount: existing.stockCount !== undefined ? String(existing.stockCount) : "12",
             inStock: existing.inStock !== undefined ? existing.inStock : true,
+            status: existing.status === "draft" || existing.status === "inactive" ? existing.status : "active",
             description: existing.description || "",
             specifications: existing.specifications
               ? Object.entries(existing.specifications)
@@ -251,6 +254,7 @@ export default function EditProductPage() {
           description: formData.description,
           specifications: Object.keys(specsObject).length > 0 ? specsObject : undefined,
           images: finalImages,
+          status: formData.status,
         }),
       });
 
@@ -589,6 +593,10 @@ export default function EditProductPage() {
                   className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-900 font-bold focus:outline-hidden focus:border-red-500 cursor-pointer"
                 >
                   <option value="">Select Brand</option>
+                  {/* Keep brands that exist on the product but not in the preset list (manual or imported) selectable. */}
+                  {formData.brand && !brands.includes(formData.brand) && (
+                    <option value={formData.brand}>{formData.brand}</option>
+                  )}
                   {brands.map((b) => {
                     const brandName = typeof b === "string" ? b : (b as any).name || String(b);
                     return (
@@ -600,6 +608,28 @@ export default function EditProductPage() {
                 </select>
               </div>
             </div>
+          </div>
+
+          {/* Publication */}
+          <div className="bg-white rounded-2xl border border-slate-200/80 p-6 md:p-7 shadow-2xs space-y-3">
+            <h2 className="text-sm md:text-base font-extrabold text-slate-900 border-b border-slate-100 pb-3 uppercase tracking-wider">
+              Publication
+            </h2>
+            <label className="block text-xs md:text-sm font-extrabold text-slate-800" htmlFor="product-status">Status</label>
+            <select
+              id="product-status"
+              value={formData.status}
+              onChange={(e) => setFormData({ ...formData, status: e.target.value })}
+              className="w-full md:w-72 bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-900 font-bold focus:outline-hidden focus:border-red-500 cursor-pointer"
+            >
+              <option value="active">Active — visible in the shop</option>
+              <option value="draft">Draft — hidden from the shop</option>
+              <option value="inactive">Inactive — hidden from the shop</option>
+            </select>
+            <p className="text-[11px] md:text-xs text-slate-500 font-medium">
+              Draft and inactive products cannot be seen or bought by customers. Publishing a draft requires a price above
+              AED 0 and at least one product image.
+            </p>
           </div>
 
           {/* Pricing, Stock & Delivery */}

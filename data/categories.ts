@@ -8,5 +8,6 @@ export const categories=[
  {name:"Commercial Cooling",description:"Reliable equipment for professional environments.",count:19,icon:"▦"},
  {name:"Water Heating",description:"Efficient hot water systems for every property.",count:16,icon:"♨"},
  {name:"Cleaning Appliances",description:"Powerful floor and surface care solutions.",count:18,icon:"✦"},
- {name:"Cooking Appliances",description:"Ranges, ovens, hoods and microwaves.",count:33,icon:"◫"}
+ {name:"Cooking Appliances",description:"Ranges, ovens, hoods and microwaves.",count:33,icon:"◫"},
+ {name:"Air Coolers & Fans",description:"Evaporative air coolers and fans for homes and businesses.",icon:"≋"}
 ];

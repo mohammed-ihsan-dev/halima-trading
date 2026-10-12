@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { getWhatsAppChatUrl } from "@/lib/whatsapp";
 import { BookOpen, Mail, Phone, ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import WhatsAppIcon from "./WhatsAppIcon";
@@ -23,7 +24,7 @@ export default function FloatingContacts() {
       >
         <BookOpen />
       </a>
-      <a className="wa" href="https://wa.me/971565685090" aria-label="WhatsApp">
+      <a className="wa" href={getWhatsAppChatUrl() ?? "/contact"} aria-label="WhatsApp">
         <WhatsAppIcon />
       </a>
       <a href="tel:+971565685090" aria-label="Call">

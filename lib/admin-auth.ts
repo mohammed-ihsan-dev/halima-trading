@@ -1,8 +1,8 @@
 import { cookies } from "next/headers";
 import { getMongoUserRawByEmail, verifyPassword } from "@/lib/repositories/users";
+import { getAdminSessionSecret, signAdminSession, verifyAdminSession } from "@/lib/admin-session-token";
 
 export const ADMIN_COOKIE_NAME = "halima_admin_session";
-export const ADMIN_SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || "halima-trading-admin-secret-session-2026";
 
 export interface AdminSession {
   id?: string;
@@ -10,31 +10,33 @@ export interface AdminSession {
   name: string;
   role: string;
   authenticatedAt: string;
+  expiresAt?: string;
 }
 
-export const DEFAULT_ADMIN_CREDENTIALS = {
-  email: "admin@halimatrading.com",
-  password: "HalimaAdmin2026!",
-  name: "Halima Admin",
-  role: "super_admin",
-};
+export class AdminSessionConfigError extends Error {}
+
 
 /**
- * Get current admin session from server cookies
+ * Get the current admin session from the signed session cookie.
+ * Unsigned, tampered, expired or non-admin cookies all yield null.
  */
 export async function getAdminSession(): Promise<AdminSession | null> {
   try {
     const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get(ADMIN_COOKIE_NAME);
-    if (!sessionCookie || !sessionCookie.value) {
-      return null;
-    }
-
-    const decoded = JSON.parse(Buffer.from(sessionCookie.value, "base64").toString("utf-8"));
-    if (decoded && decoded.email && (decoded.role === "super_admin" || decoded.role === "admin")) {
-      return decoded as AdminSession;
-    }
-    return null;
+    const claims = verifyAdminSession(cookieStore.get(ADMIN_COOKIE_NAME)?.value, getAdminSessionSecret());
+    if (!claims) return null;
+    // The signature proves who logged in; the account record decides whether they still may.
+    // Suspending, deleting or demoting an admin therefore takes effect on their next request.
+    const user = await getMongoUserRawByEmail(claims.email);
+    if (!user || user.status !== "ACTIVE" || (user.role !== "admin" && user.role !== "super_admin")) return null;
+    return {
+      id: claims.id ?? user.id,
+      email: claims.email,
+      name: user.name ?? claims.name,
+      role: user.role,
+      authenticatedAt: new Date(claims.iat * 1000).toISOString(),
+      expiresAt: new Date(claims.exp * 1000).toISOString(),
+    };
   } catch {
     return null;
   }
@@ -50,17 +52,15 @@ export async function isAdminAuthenticated(): Promise<boolean> {
 }
 
 /**
- * Create encoded session string
+ * Create the signed session cookie value. Throws AdminSessionConfigError when no
+ * signing secret is configured (production without ADMIN_SESSION_SECRET).
  */
 export function createAdminSessionPayload(email: string, name: string, role = "admin", id?: string): string {
-  const session: AdminSession = {
-    id,
-    email,
-    name,
-    role,
-    authenticatedAt: new Date().toISOString(),
-  };
-  return Buffer.from(JSON.stringify(session)).toString("base64");
+  const secret = getAdminSessionSecret();
+  if (!secret) {
+    throw new AdminSessionConfigError("ADMIN_SESSION_SECRET is not set (32+ characters required in production).");
+  }
+  return signAdminSession({ id, email, name, role }, secret);
 }
 
 /**
@@ -76,17 +76,8 @@ export async function authenticateAdminUser(email: string, pass: string): Promis
     return null;
   }
 
+  // No password on record means no login — there is no built-in fallback password.
   if (!user.passwordHash || !user.salt) {
-    // Check default admin fallback password
-    if (email.toLowerCase() === DEFAULT_ADMIN_CREDENTIALS.email.toLowerCase() && pass === DEFAULT_ADMIN_CREDENTIALS.password) {
-      return {
-        id: user.id,
-        email: user.email,
-        name: user.name,
-        role: user.role,
-        authenticatedAt: new Date().toISOString(),
-      };
-    }
     return null;
   }
 

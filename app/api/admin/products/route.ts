@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { PLACEHOLDER_IMAGE } from "@/lib/repositories/products";
 import {
   getMongoProducts,
+  getMongoProductByIdOrSlug,
+  getProductPublicationFacts,
   createMongoProduct,
   updateMongoProduct,
   deleteMongoProduct,
@@ -24,14 +27,24 @@ function invalidatePublicProductCaches(slug?: string) {
   }
 }
 
-export async function GET() {
+const EDITABLE_STATUSES = new Set(["active", "draft", "inactive"]);
+
+export async function GET(request: Request) {
   const isAuth = await isAdminAuthenticated();
   if (!isAuth) {
     return NextResponse.json({ error: "Unauthorized access" }, { status: 401 });
   }
 
+  // Single product for the Edit page, including drafts the public API hides.
+  const id = new URL(request.url).searchParams.get("id");
+  if (id) {
+    const product = await getMongoProductByIdOrSlug(id, { includeUnpublished: true });
+    if (!product) return NextResponse.json({ success: false, error: "Product not found" }, { status: 404 });
+    return NextResponse.json({ success: true, product }, { headers: { "Cache-Control": "no-store" } });
+  }
+
   try {
-    const productsList = await getMongoProducts();
+    const productsList = await getMongoProducts({ includeUnpublished: true });
     return NextResponse.json(
       {
         success: true,
@@ -117,6 +130,34 @@ export async function PUT(request: Request) {
 
     if (Array.isArray(updates.images)) {
       updates.images = updates.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+    }
+
+    if (updates.status !== undefined) {
+      if (typeof updates.status !== "string" || !EDITABLE_STATUSES.has(updates.status)) {
+        return NextResponse.json({ error: 'Status must be "active", "draft" or "inactive"' }, { status: 400 });
+      }
+      // Publishing (anything → active) needs a real price and a real image. Products that are
+      // already active are not affected, so existing listings keep working as before.
+      if (updates.status === "active") {
+        const facts = await getProductPublicationFacts(id);
+        if (!facts) return NextResponse.json({ error: "Product not found" }, { status: 404 });
+        if (facts.status !== "active") {
+          const price = updates.price !== undefined ? Number(updates.price) : facts.price;
+          const realImages = Array.isArray(updates.images)
+            ? updates.images.filter((i: string) => i !== PLACEHOLDER_IMAGE).length
+            : facts.realImageCount;
+          const missing = [
+            !(typeof price === "number" && price > 0) && "a price above AED 0",
+            !(realImages > 0) && "at least one product image",
+          ].filter(Boolean);
+          if (missing.length) {
+            return NextResponse.json(
+              { error: `This product cannot be published yet. Add ${missing.join(" and ")} first.` },
+              { status: 400 }
+            );
+          }
+        }
+      }
     }
 
     const updated = await updateMongoProduct(id, updates);

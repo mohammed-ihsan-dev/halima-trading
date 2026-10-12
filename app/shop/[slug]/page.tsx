@@ -6,10 +6,13 @@ import {
   getMongoProductByIdOrSlug,
   getMongoProducts,
 } from "@/lib/repositories/products";
-import { formatCurrency } from "@/lib/currency";
+import { displayPrice, hasSellingPrice } from "@/lib/pricing";
 import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
 import ProductGallery from "@/components/product/ProductGallery";
+
+// Product text is admin-entered; escape "<" so a value containing "</script>" cannot end the JSON-LD block.
+const jsonLd = (data: unknown) => JSON.stringify(data).replace(/</g, "\\u003c");
 
 export const revalidate = 60; // 60s ISR for responsive product detail updates
 
@@ -81,16 +84,22 @@ export default async function ProductPage({ params }: PageProps) {
       "@type": "Brand",
       name: product.brand,
     },
-    offers: {
-      "@type": "Offer",
-      url: `https://halimatrading.ae/shop/${product.slug || product.id}`,
-      priceCurrency: "AED",
-      price: product.price || "1899",
-      availability: product.inStock
-        ? "https://schema.org/InStock"
-        : "https://schema.org/LimitedAvailability",
-      itemCondition: "https://schema.org/NewCondition",
-    },
+    // Only advertise an Offer when there is a real price; "Contact for Price" products get none
+    // (previously a made-up AED 1899 was published for them).
+    ...(hasSellingPrice(product)
+      ? {
+          offers: {
+            "@type": "Offer",
+            url: `https://halimatrading.ae/shop/${product.slug || product.id}`,
+            priceCurrency: "AED",
+            price: product.price,
+            availability: product.inStock
+              ? "https://schema.org/InStock"
+              : "https://schema.org/LimitedAvailability",
+            itemCondition: "https://schema.org/NewCondition",
+          },
+        }
+      : {}),
   };
 
   // JSON-LD Breadcrumb Schema
@@ -123,11 +132,11 @@ export default async function ProductPage({ params }: PageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(productJsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbJsonLd) }}
       />
 
       <div className="breadcrumbs">
@@ -161,7 +170,7 @@ export default async function ProductPage({ params }: PageProps) {
             </ul>
           )}
           <div className="detail-price flex flex-col items-start gap-1">
-            <span>{formatCurrency(product.price)}</span>
+            <span className={hasSellingPrice(product) ? undefined : "is-quote"}>{displayPrice(product)}</span>
             {(product.deliveryRate || 0) === 0 ? (
               <span className="font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-lg text-xs tracking-wide">
                 FREE DELIVERY

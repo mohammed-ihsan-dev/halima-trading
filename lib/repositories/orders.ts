@@ -328,6 +328,9 @@ export async function getMongoOrderById(idOrNumber: string): Promise<MongoOrderD
   }
 }
 
+/** A checkout request the customer can fix (unavailable product, price on request, bad quantity). */
+export class CheckoutValidationError extends Error {}
+
 export async function createMongoOrder(orderInput: {
   userId?: string;
   customerName: string;
@@ -349,6 +352,25 @@ export async function createMongoOrder(orderInput: {
     throw new Error("Order must contain at least one item.");
   }
 
+  // Validate every item before any stock is touched, so a rejected item never leaves
+  // earlier items in the cart with their stock already decremented.
+  for (const itemInput of orderInput.items) {
+    // Public lookup: draft, inactive and deleted products cannot be ordered.
+    const product = await getMongoProductByIdOrSlug(itemInput.productId);
+    if (!product) {
+      throw new CheckoutValidationError(`Product with ID ${itemInput.productId} is not available for purchase.`);
+    }
+    // A price of 0 means "Contact for Price" (see priceLabel), never "free": refuse rather than sell for AED 0.
+    if (typeof product.price !== "number" || !(product.price > 0)) {
+      throw new CheckoutValidationError(
+        `"${product.name}" is priced on request and cannot be bought online. Please contact us for a quotation.`
+      );
+    }
+    if (!Number.isInteger(itemInput.quantity) || itemInput.quantity < 1) {
+      throw new CheckoutValidationError(`Invalid quantity for "${product.name}".`);
+    }
+  }
+
   const processedItems: MongoOrderItem[] = [];
   let calculatedSubtotal = 0;
   let calculatedShipping = 0;
@@ -356,7 +378,7 @@ export async function createMongoOrder(orderInput: {
   for (const itemInput of orderInput.items) {
     const product = await getMongoProductByIdOrSlug(itemInput.productId);
     if (!product) {
-      throw new Error(`Product with ID ${itemInput.productId} not found.`);
+      throw new CheckoutValidationError(`Product with ID ${itemInput.productId} is not available for purchase.`);
     }
     if (!product.inStock || (product.stockCount !== undefined && product.stockCount < itemInput.quantity)) {
       throw new Error(`Insufficient stock for product: ${product.name}`);

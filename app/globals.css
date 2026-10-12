@@ -3952,3 +3952,55 @@ button.added-in-cart:hover,
   border-color: #fca5a5 !important;
   color: #dc2626 !important;
 }
+/* "Contact for Price" quotation state — a label, not a price figure */
+.price.is-quote,
+.feature-price.is-quote,
+.detail-price .is-quote,
+.cart-line span.is-quote,
+.cart-row span.is-quote {
+  color: var(--red);
+  font-weight: 800;
+  letter-spacing: .01em
+}
+
+.price.is-quote,
+.feature-price.is-quote {
+  font-size: 15px
+}
+
+.detail-price .is-quote {
+  font-size: 24px
+}
+
+.quote-wa-icon {
+  width: 22px !important;
+  height: 22px !important
+}
+
+.quote-note {
+  margin: 0 0 12px;
+  line-height: 1.6
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 12px;
+  padding: 12px;
+  border: 1px solid #f1c4c6;
+  border-radius: 10px;
+  background: #fff7f7
+}
+
+.quote-box small {
+  color: #666;
+  line-height: 1.5
+}
+
+/* Small screens hide link buttons in product cards (only "Add to Cart" stays);
+   a quote-only card's WhatsApp action is its only action, so keep it visible. */
+.product-actions a.quote-action,
+.feature-actions a.quote-action {
+  display: flex
+}

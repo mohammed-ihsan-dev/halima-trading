@@ -6,6 +6,7 @@ import BrandCarousel from "@/components/BrandCarousel";
 import CategorySolutionsSection from "@/components/CategorySolutionsSection";
 import HeroProductShowcase from "@/components/HeroProductShowcase";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { getGeneralWhatsAppContactUrl } from "@/lib/whatsapp";
 
 export const revalidate = 60; // 60s ISR for responsive homepage updates
 
@@ -22,7 +23,7 @@ export default async function Home() {
           <div className="actions">
             <Link className="btn primary" href="/shop">Shop products <ArrowRight size={18}/></Link>
             <Link className="btn secondary" href="/quote">Request a quote</Link>
-            <a className="text-link" href="https://wa.me/971565685090?text=Hello%20Halima%20Trading%2C%20I%20would%20like%20help%20choosing%20an%20appliance."><WhatsAppIcon/>Order on WhatsApp</a>
+            <a className="text-link" href={getGeneralWhatsAppContactUrl("Hello Halima Trading, I would like help choosing an appliance.") ?? "/contact"}><WhatsAppIcon/>Order on WhatsApp</a>
           </div>
         </div>
         <HeroProductShowcase />

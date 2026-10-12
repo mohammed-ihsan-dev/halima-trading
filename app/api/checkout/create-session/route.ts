@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createMongoOrder } from "@/lib/repositories/orders";
+import { createMongoOrder, CheckoutValidationError } from "@/lib/repositories/orders";
 import { createMongoPayment } from "@/lib/repositories/payments";
 import { stripe, isStripeConfigured } from "@/lib/stripe";
 
@@ -133,6 +133,9 @@ export async function POST(request: Request) {
       url: `${baseUrl}/checkout/success?orderId=${order.id}`,
     });
   } catch (error: any) {
+    if (error instanceof CheckoutValidationError) {
+      return NextResponse.json({ error: error.message }, { status: 400 });
+    }
     console.error("Checkout creation error:", error);
     return NextResponse.json(
       { error: error?.message || "Failed to create checkout session" },

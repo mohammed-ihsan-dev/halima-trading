@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getWhatsAppChatUrl } from "@/lib/whatsapp";
 import { Home, Store, BookOpen } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -29,7 +30,7 @@ export default function MobileBottomNav() {
         <BookOpen />
         <span>Brochure</span>
       </a>
-      <a className="mobile-wa" href="https://wa.me/971565685090" aria-label="WhatsApp Support">
+      <a className="mobile-wa" href={getWhatsAppChatUrl() ?? "/contact"} aria-label="WhatsApp Support">
         <WhatsAppIcon />
         <span>WhatsApp</span>
       </a>

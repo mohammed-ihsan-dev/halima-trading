@@ -2,9 +2,12 @@ import { cookies } from "next/headers";
 import crypto from "crypto";
 import { getMongoDb } from "@/lib/mongodb";
 import { normalizePhoneNumber } from "@/lib/phone-utils";
+import { deriveSigningKey } from "@/lib/admin-session-token";
 
 export const OTP_COOKIE_NAME = "halima_otp_session";
-const SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || "halima-otp-session-secret-key-2026";
+// Derived from ADMIN_SESSION_SECRET; no hard-coded fallback. In production without the
+// secret, OTP sessions can be neither issued nor accepted (fail closed).
+const otpKey = () => deriveSigningKey("otp-session");
 
 export interface OtpSession {
   phone: string;
@@ -42,7 +45,9 @@ export function hashOtp(otp: string): string {
  * Sign session payload with SHA-256 HMAC signature to prevent tampering
  */
 function signPayload(dataStr: string): string {
-  const hmac = crypto.createHmac("sha256", SESSION_SECRET).update(dataStr).digest("hex");
+  const key = otpKey();
+  if (!key) throw new Error("OTP sessions are not configured: set ADMIN_SESSION_SECRET.");
+  const hmac = crypto.createHmac("sha256", key).update(dataStr).digest("hex");
   return `${Buffer.from(dataStr).toString("base64")}.${hmac}`;
 }
 
@@ -53,10 +58,14 @@ function verifyPayload(cookieVal: string): OtpSession | null {
   try {
     const parts = cookieVal.split(".");
     if (parts.length !== 2) return null;
+    const key = otpKey();
+    if (!key) return null;
     const dataStr = Buffer.from(parts[0], "base64").toString("utf-8");
-    const expectedHmac = crypto.createHmac("sha256", SESSION_SECRET).update(dataStr).digest("hex");
-    
-    if (!crypto.timingSafeEqual(Buffer.from(parts[1]), Buffer.from(expectedHmac))) {
+    const expectedHmac = crypto.createHmac("sha256", key).update(dataStr).digest("hex");
+    const given = Buffer.from(parts[1]);
+    const expected = Buffer.from(expectedHmac);
+    // Length check first: timingSafeEqual throws on unequal lengths.
+    if (given.length !== expected.length || !crypto.timingSafeEqual(given, expected)) {
       return null;
     }
 

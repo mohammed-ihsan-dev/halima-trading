@@ -1,3 +1,4 @@
+import { MongoBulkWriteError } from "mongodb";
 import { getMongoDb, ensureMongoIndexes } from "@/lib/mongodb";
 import type { Product } from "@/data/products";
 
@@ -24,12 +25,21 @@ export interface MongoProductDoc {
   stockCount?: number;
   featured?: boolean;
   deliveryRate?: number;
-  status?: "active" | "inactive" | "deleted";
+  status?: "active" | "draft" | "inactive" | "deleted";
   createdAt?: Date;
   updatedAt?: Date;
 }
 
-function slugify(text: string): string {
+/**
+ * Products customers may see or buy. "draft" (e.g. imported, not yet priced or reviewed)
+ * and "inactive" are hidden everywhere public, and so is "deleted". A document with no
+ * status counts as active, exactly as before.
+ */
+export const UNPUBLISHED_STATUSES = ["draft", "inactive", "deleted"] as const;
+const PUBLIC_FILTER = { status: { $nin: [...UNPUBLISHED_STATUSES] } };
+const ADMIN_FILTER = { status: { $ne: "deleted" } };
+
+export function slugify(text: string): string {
   return text
     .toLowerCase()
     .trim()
@@ -66,14 +76,15 @@ function formatProduct(doc: any): Product {
   };
 }
 
-export async function getMongoProducts(): Promise<Product[]> {
+/** Public listing by default; pass includeUnpublished only from authenticated admin code. */
+export async function getMongoProducts(options: { includeUnpublished?: boolean } = {}): Promise<Product[]> {
   try {
     await ensureMongoIndexes();
     const db = await getMongoDb();
     const docs = await db
       .collection("products")
       .find(
-        { status: { $ne: "deleted" } },
+        options.includeUnpublished ? ADMIN_FILTER : PUBLIC_FILTER,
         {
           projection: {
             id: 1,
@@ -105,13 +116,16 @@ export async function getMongoProducts(): Promise<Product[]> {
   }
 }
 
-export async function getMongoProductByIdOrSlug(idOrSlug: string): Promise<Product | null> {
+export async function getMongoProductByIdOrSlug(
+  idOrSlug: string,
+  options: { includeUnpublished?: boolean } = {}
+): Promise<Product | null> {
   try {
     await ensureMongoIndexes();
     const db = await getMongoDb();
     const doc = await db.collection("products").findOne({
       $and: [
-        { status: { $ne: "deleted" } },
+        options.includeUnpublished ? ADMIN_FILTER : PUBLIC_FILTER,
         { $or: [{ id: idOrSlug }, { slug: idOrSlug }, { sku: idOrSlug }] },
       ],
     });
@@ -122,6 +136,29 @@ export async function getMongoProductByIdOrSlug(idOrSlug: string): Promise<Produ
   }
 }
 
+export const PLACEHOLDER_IMAGE = "/featured/hisense-window-ac.png";
+
+/**
+ * Raw publication facts for one product (admin use): the stored status, price and images,
+ * without the display fallbacks formatProduct applies (e.g. the placeholder image).
+ */
+export async function getProductPublicationFacts(
+  idOrSlug: string
+): Promise<{ status: string; price: number | null; realImageCount: number } | null> {
+  const db = await getMongoDb();
+  const doc = await db.collection("products").findOne(
+    { $and: [ADMIN_FILTER, { $or: [{ id: idOrSlug }, { slug: idOrSlug }] }] },
+    { projection: { status: 1, price: 1, images: 1 } }
+  );
+  if (!doc) return null;
+  const images = Array.isArray(doc.images) ? doc.images : [];
+  return {
+    status: typeof doc.status === "string" ? doc.status : "active",
+    price: typeof doc.price === "number" ? doc.price : null,
+    realImageCount: images.filter((i: unknown) => typeof i === "string" && i.trim() && i !== PLACEHOLDER_IMAGE).length,
+  };
+}
+
 export async function getMongoFeaturedProducts(): Promise<Product[]> {
   try {
     await ensureMongoIndexes();
@@ -129,7 +166,7 @@ export async function getMongoFeaturedProducts(): Promise<Product[]> {
     const docs = await db
       .collection("products")
       .find(
-        { featured: true, status: { $ne: "deleted" } },
+        { featured: true, ...PUBLIC_FILTER },
         {
           projection: {
             id: 1,
@@ -169,7 +206,7 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
       .find(
         {
           $and: [
-            { status: { $ne: "deleted" } },
+            PUBLIC_FILTER,
             {
               $or: [
                 { category: { $regex: new RegExp(`^${categoryNameOrSlug}$`, "i") } },
@@ -207,12 +244,15 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
   }
 }
 
-export async function createMongoProduct(data: Partial<Product>): Promise<Product> {
-  const db = await getMongoDb();
+/**
+ * Builds a new product document with the repository's standard defaults and derived
+ * fields (slugs, priceLabel, currency). Shared by Add Product and catalogue imports.
+ */
+export function buildProductDocument(data: Partial<Product>): MongoProductDoc {
   const name = data.name ? data.name.trim() : "Untitled Product";
   const slug = data.slug || slugify(name);
   const id = data.id || `p-${Date.now()}`;
-  const sku = data.sku || `HT-${(data.category || "GEN").substring(0, 2).toUpperCase()}-${Math.floor(100 + Math.random() * 900)}`;
+  const sku = data.sku?.trim() || `HT-${(data.category || "GEN").substring(0, 2).toUpperCase()}-${Math.floor(100 + Math.random() * 900)}`;
 
   const doc: MongoProductDoc = {
     id,
@@ -239,6 +279,12 @@ export async function createMongoProduct(data: Partial<Product>): Promise<Produc
     status: "active",
     updatedAt: new Date(),
   };
+  return doc;
+}
+
+export async function createMongoProduct(data: Partial<Product>): Promise<Product> {
+  const db = await getMongoDb();
+  const doc = buildProductDocument(data);
 
   await db.collection("products").updateOne(
     { slug: doc.slug },
@@ -247,6 +293,52 @@ export async function createMongoProduct(data: Partial<Product>): Promise<Produc
   );
 
   return formatProduct(doc);
+}
+
+export interface InsertWithoutOverwriteResult {
+  inserted: { sku: string; slug: string }[];
+  rejected: { sku: string; slug: string; reason: string }[];
+}
+
+/**
+ * Insert-only write for catalogue imports. Never updates, replaces or upserts: if a
+ * document with the same unique key (sku or slug) already exists — including one
+ * created concurrently — MongoDB rejects that document and it is reported here.
+ */
+export async function insertProductsWithoutOverwrite(
+  docs: MongoProductDoc[]
+): Promise<InsertWithoutOverwriteResult> {
+  const result: InsertWithoutOverwriteResult = { inserted: [], rejected: [] };
+  if (docs.length === 0) return result;
+
+  await ensureMongoIndexes();
+  const db = await getMongoDb();
+  const batch = docs.map((d) => ({ ...d })); // insertMany adds _id to the objects it is given
+  const failed = new Map<number, string>();
+  try {
+    await db.collection("products").insertMany(batch, { ordered: false });
+  } catch (error) {
+    if (!(error instanceof MongoBulkWriteError)) throw error;
+    const writeErrors = Array.isArray(error.writeErrors) ? error.writeErrors : [error.writeErrors];
+    for (const we of writeErrors) {
+      // errmsg names the index: "... index: sku_1 dup key ..." or, once the case-insensitive
+      // migration is applied, "... index: sku_unique_ci dup key ...".
+      const key = we.code === 11000 ? /index: (sku|slug)_/.exec(we.errmsg ?? "")?.[1] : undefined;
+      failed.set(
+        we.index,
+        we.code === 11000
+          ? `Not inserted: a product with this ${key === "sku" ? "SKU" : key ?? "SKU or slug"} already exists (it may have been created by another import moments earlier)`
+          : `Not inserted: ${we.errmsg || "rejected by the database"}`
+      );
+    }
+    if (failed.size === 0) throw error;
+  }
+  docs.forEach((d, i) => {
+    const reason = failed.get(i);
+    if (reason) result.rejected.push({ sku: d.sku, slug: d.slug, reason });
+    else result.inserted.push({ sku: d.sku, slug: d.slug });
+  });
+  return result;
 }
 
 export async function updateMongoProduct(idOrSlug: string, updates: Partial<Product>): Promise<Product | null> {
@@ -264,6 +356,10 @@ export async function updateMongoProduct(idOrSlug: string, updates: Partial<Prod
 
   if (updates.slug) {
     updateFields.slug = slugify(updates.slug);
+  }
+  // Uniqueness treats SKUs case- and space-insensitively; never store surrounding spaces.
+  if (typeof updates.sku === "string") {
+    updateFields.sku = updates.sku.trim();
   }
   if (updates.category) {
     updateFields.categorySlug = slugify(updates.category);

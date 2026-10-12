@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Plus, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
+import { FileUp, Plus, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
@@ -103,12 +103,18 @@ export default function AdminProductsPage() {
             Manage catalog products, inventory SKUs, stock levels, and listings.
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <Link
             href="/admin/products/out-of-stock"
             className="inline-flex items-center gap-2 px-4 py-2.5 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-extrabold text-xs md:text-sm rounded-xl transition-all"
           >
             <AlertTriangle size={16} /> Out of Stock
+          </Link>
+          <Link
+            href="/admin/products/import"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-extrabold text-xs md:text-sm rounded-xl transition-all"
+          >
+            <FileUp size={16} /> Bulk Import
           </Link>
           <Link
             href="/admin/products/add"
@@ -229,6 +235,11 @@ export default function AdminProductsPage() {
                       <span className="uppercase tracking-wider truncate">{p.category}</span>
                       <span className="font-mono text-red-600 font-extrabold shrink-0">{p.sku || "HT-001"}</span>
                     </div>
+                    {(p.status === "draft" || p.status === "inactive") && (
+                      <AdminBadge variant="warning" className="mb-1">
+                        {p.status === "draft" ? "Draft — hidden from shop" : "Inactive — hidden from shop"}
+                      </AdminBadge>
+                    )}
                     <h3 className="font-extrabold text-slate-900 text-sm md:text-base leading-snug line-clamp-2">{p.name}</h3>
                     <div className="flex items-center justify-between mt-1 text-xs">
                       <span className="font-semibold text-slate-500">Brand: {p.brand}</span>

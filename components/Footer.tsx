@@ -44,14 +44,14 @@ export default function Footer() {
         <div>
           <h4>Company</h4>
           {[
-            "About",
-            "Corporate Solutions",
-            "Request a Quote",
-            "Contact",
-            "Shopping Cart",
-          ].map((x) => (
-            <Link href={"/" + x.toLowerCase().replaceAll(" ", "-")} key={x}>
-              {x}
+            ["About", "/about"],
+            ["Corporate Solutions", "/corporate-solutions"],
+            ["Request a Quote", "/quote"], // was /request-a-quote (404)
+            ["Contact", "/contact"],
+            ["Shopping Cart", "/cart"], // was /shopping-cart (404)
+          ].map(([label, href]) => (
+            <Link href={href} key={label}>
+              {label}
             </Link>
           ))}
         </div>
