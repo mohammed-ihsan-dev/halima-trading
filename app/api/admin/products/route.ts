@@ -2,10 +2,13 @@ import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
 import { PLACEHOLDER_IMAGE } from "@/lib/repositories/products";
+import { validateProductImages } from "@/lib/product-images";
+import { isR2UploadConfigured } from "@/lib/r2";
 import {
   getMongoProducts,
   getMongoProductByIdOrSlug,
   getProductPublicationFacts,
+  getStoredProductImages,
   createMongoProduct,
   updateMongoProduct,
   deleteMongoProduct,
@@ -88,6 +91,8 @@ export async function POST(request: Request) {
 
     if (Array.isArray(body.images)) {
       body.images = body.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+      const imageProblem = validateProductImages(body.images, { r2Enabled: isR2UploadConfigured() });
+      if (imageProblem) return NextResponse.json({ error: imageProblem }, { status: 400 });
     }
 
     const created = await createMongoProduct(body);
@@ -130,6 +135,11 @@ export async function PUT(request: Request) {
 
     if (Array.isArray(updates.images)) {
       updates.images = updates.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+      const imageProblem = validateProductImages(updates.images, {
+        r2Enabled: isR2UploadConfigured(),
+        storedImages: await getStoredProductImages(id),
+      });
+      if (imageProblem) return NextResponse.json({ error: imageProblem }, { status: 400 });
     }
 
     if (updates.status !== undefined) {

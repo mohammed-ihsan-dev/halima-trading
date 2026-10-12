@@ -142,6 +142,16 @@ export const PLACEHOLDER_IMAGE = "/featured/hisense-window-ac.png";
  * Raw publication facts for one product (admin use): the stored status, price and images,
  * without the display fallbacks formatProduct applies (e.g. the placeholder image).
  */
+/** The images currently stored on a product (raw, without display fallbacks); [] if not found. */
+export async function getStoredProductImages(idOrSlug: string): Promise<string[]> {
+  const db = await getMongoDb();
+  const doc = await db.collection("products").findOne(
+    { $and: [ADMIN_FILTER, { $or: [{ id: idOrSlug }, { slug: idOrSlug }] }] },
+    { projection: { images: 1 } }
+  );
+  return Array.isArray(doc?.images) ? doc.images.filter((i: unknown): i is string => typeof i === "string") : [];
+}
+
 export async function getProductPublicationFacts(
   idOrSlug: string
 ): Promise<{ status: string; price: number | null; realImageCount: number } | null> {

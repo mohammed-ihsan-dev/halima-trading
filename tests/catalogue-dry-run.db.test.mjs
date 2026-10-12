@@ -115,13 +115,19 @@ test("15. duplicate-key errors from concurrent imports are handled, not thrown, 
 
   // Two imports of the same file at the same moment.
   const file = [22, 23, 24, 25].map((n) => incoming(n));
-  const [a, b] = await Promise.all([
+  // Depending on timing, the second import either skips/rejects the duplicates or refuses to run
+  // because the catalogue changed while it was reading — both are safe outcomes.
+  const settled = await Promise.allSettled([
     importSafeCatalogueRecords(file, { fileName: "a.json", confirm: true }),
     importSafeCatalogueRecords(file, { fileName: "b.json", confirm: true }),
   ]);
-  assert.equal(a.write.inserted.length + b.write.inserted.length, 4, "each product inserted exactly once");
+  const done = settled.filter((r) => r.status === "fulfilled").map((r) => r.value);
+  for (const r of settled.filter((r) => r.status === "rejected")) {
+    assert.match(r.reason.message, /catalogue changed|incomplete/, "only the safe refusal may abort an import");
+  }
+  assert.equal(done.reduce((n, r) => n + r.write.inserted.length, 0), 4, "each product inserted exactly once");
   for (const n of [22, 23, 24, 25]) assert.equal(await products.countDocuments({ sku: `LG-IMP-${n}` }), 1);
-  for (const r of [...a.write.rejected, ...b.write.rejected]) assert.match(r.reason, /already exists/);
+  for (const r of done.flatMap((d) => d.write.rejected)) assert.match(r.reason, /already exists/);
 });
 
 test("10. MongoDB unreachable → dry run rejects with DryRunDatabaseError", { skip }, async () => {

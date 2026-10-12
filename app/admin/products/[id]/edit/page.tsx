@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { fetchUploadConfig, uploadImagesToStorage, type UploadConfig } from "@/lib/admin-image-upload";
 import Link from "next/link";
 import { useRouter, useParams } from "next/navigation";
 import {
@@ -35,6 +36,11 @@ export default function EditProductPage() {
   const [images, setImages] = useState<string[]>([]);
   const [selectedPreviewIndex, setSelectedPreviewIndex] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
+  // R2 image storage, when configured; otherwise the existing embedded-image upload is used.
+  const [storage, setStorage] = useState<UploadConfig | null>(null);
+  useEffect(() => {
+    fetchUploadConfig().then(setStorage);
+  }, []);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -58,6 +64,17 @@ export default function EditProductPage() {
 
     setUploadError("");
     setIsUploading(true);
+
+    if (storage?.enabled) {
+      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage);
+      if (urls.length > 0) {
+        setImages((prev) => [...prev, ...urls.filter((u) => !prev.includes(u))]);
+      }
+      if (errors.length > 0) setUploadError(errors.join(" "));
+      setIsUploading(false);
+      e.target.value = "";
+      return;
+    }
 
     const fileList = Array.from(files);
     const loadedImages: string[] = [];
@@ -484,7 +501,9 @@ export default function EditProductPage() {
                   <Upload size={22} className="text-slate-400" />
                   <span className="text-xs font-bold">Click to Browse & Select Photos</span>
                   <span className="text-[10px] text-slate-400 font-medium">
-                    Supports PNG, JPG, WEBP, SVG · Select 1 or multiple files
+                    {storage?.enabled
+                      ? `Stored in image storage · PNG, JPG, WEBP up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
+                      : "Supports PNG, JPG, WEBP, SVG · Select 1 or multiple files"}
                   </span>
                 </label>
                 <input

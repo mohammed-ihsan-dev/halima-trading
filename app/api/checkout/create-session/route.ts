@@ -52,10 +52,15 @@ export async function POST(request: Request) {
     // 3. Create Stripe Checkout Session if configured
     if (isStripeConfigured() && stripe) {
       const lineItems = order.items.map((item) => {
+        // Stripe only accepts real image URLs: absolute http(s) URLs (e.g. R2) or site paths.
+        // Embedded data: images are skipped rather than sent as a broken URL.
         let imageUrl: string | undefined = undefined;
-        if (item.image) {
-          imageUrl = item.image.startsWith("http") ? item.image : `${baseUrl}${item.image.startsWith("/") ? "" : "/"}${item.image}`;
+        if (item.image && /^https?:\/\//.test(item.image)) {
+          imageUrl = item.image;
+        } else if (item.image && item.image.startsWith("/") && !item.image.startsWith("//")) {
+          imageUrl = `${baseUrl}${item.image}`;
         }
+        if (imageUrl && imageUrl.length > 2048) imageUrl = undefined;
 
         return {
           price_data: {
