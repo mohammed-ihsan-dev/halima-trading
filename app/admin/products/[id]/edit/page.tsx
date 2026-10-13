@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { fetchUploadConfig, uploadImagesToStorage, type UploadConfig } from "@/lib/admin-image-upload";
 import Link from "next/link";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useParams, useSearchParams } from "next/navigation";
+import { safeCatalogueReturnPath } from "@/lib/catalogue-query";
 import {
   ArrowLeft,
   Save,
@@ -23,6 +24,8 @@ import { brands } from "@/data/brands";
 export default function EditProductPage() {
   const router = useRouter();
   const params = useParams();
+  // The product list page this was opened from (validated internal path), so Back/Save return to it.
+  const listHref = safeCatalogueReturnPath(useSearchParams().get("from"), "/admin/products") ?? "/admin/products";
   const productId = params?.id as string;
 
   const [loading, setLoading] = useState(true);
@@ -281,7 +284,7 @@ export default function EditProductPage() {
       if (data.success) {
         setNotification(`Product "${formData.name}" updated successfully in MongoDB!`);
         setTimeout(() => {
-          router.push("/admin/products");
+          router.push(listHref);
         }, 1200);
       } else {
         setNotification(`Error: ${data.error || "Failed to update product"}`);
@@ -308,7 +311,7 @@ export default function EditProductPage() {
         <h2 className="text-xl font-black text-slate-900">Product Not Found</h2>
         <p className="text-sm text-slate-500">The product you are trying to edit could not be found.</p>
         <Link
-          href="/admin/products"
+          href={listHref}
           className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-900 text-white rounded-xl text-xs md:text-sm font-bold"
         >
           <ArrowLeft size={16} /> Back to Products
@@ -325,7 +328,7 @@ export default function EditProductPage() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link
-            href="/admin/products"
+            href={listHref}
             className="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-colors"
           >
             <ArrowLeft size={20} />
@@ -727,7 +730,7 @@ export default function EditProductPage() {
           {/* Action Buttons */}
           <div className="flex items-center justify-end gap-3 pt-2">
             <Link
-              href="/admin/products"
+              href={listHref}
               className="px-6 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs md:text-sm rounded-xl transition-colors"
             >
               Cancel

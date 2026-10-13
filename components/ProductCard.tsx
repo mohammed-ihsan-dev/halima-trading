@@ -4,21 +4,31 @@ import React from "react";
 import Link from "next/link";
 import { Check, Eye, Heart, ShoppingBag, Snowflake, Zap } from "lucide-react";
 import type { Product } from "@/data/products";
-import { displayPrice, hasSellingPrice } from "@/lib/pricing";
+import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 import { useCart } from "@/context/CartContext";
+import { withReturnPath } from "@/lib/catalogue-query";
 
 interface ProductCardProps {
   product: Product;
   featuredStyle?: boolean;
+  /** Shop listing URL to return to from the product page (keeps page, filters and sort). */
+  returnTo?: string;
+  /** Load the image immediately — only for the first, above-the-fold row. */
+  eagerImage?: boolean;
 }
 
-export default function ProductCard({ product, featuredStyle = false }: ProductCardProps) {
+export default function ProductCard({ product, featuredStyle = false, returnTo, eagerImage = false }: ProductCardProps) {
   const { add, isInCart } = useCart();
   const inCart = isInCart(product.id);
   // No selling price ("Contact for Price"): offer a WhatsApp price request instead of cart / Buy Now.
   const quoteOnly = !hasSellingPrice(product);
   const quoteItem = [{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id }];
+
+  const detailHref = withReturnPath(`/shop/${product.slug || product.id}`, returnTo, "/shop");
+  const imgLoading = eagerImage ? "eager" : "lazy";
+  // Same rule as checkout and the shop's Availability filter.
+  const inStock = isInStock(product);
 
   const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     e.currentTarget.src = "/featured/hisense-window-ac.png";
@@ -29,21 +39,21 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
       <article className="feature-product-card">
         <div className="feature-brand">
           <b>{product.brand}</b>
-          <span className={product.inStock ? "feature-stock" : "feature-stock out"}>
-            {product.inStock ? "In Stock" : "On Request"}
+          <span className={inStock ? "feature-stock" : "feature-stock out"}>
+            {inStock ? "In Stock" : "On Request"}
           </span>
         </div>
-        <Link className="feature-image" href={`/shop/${product.slug || product.id}`}>
+        <Link className="feature-image" href={detailHref}>
           <img
             src={product.images?.[0] || "/featured/hisense-window-ac.png"}
             alt={product.name}
-            loading="lazy"
+            loading={imgLoading}
             decoding="async"
             onError={handleImgError}
           />
         </Link>
         <div className="feature-card-body">
-          <Link href={`/shop/${product.slug || product.id}`}>
+          <Link href={detailHref}>
             <h3>{product.name}</h3>
           </Link>
           <div className="feature-specs">
@@ -96,7 +106,7 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
 
             {/* White/Outlined Button: View Details */}
             <Link
-              href={`/shop/${product.slug || product.id}`}
+              href={detailHref}
               className="px-3 min-h-[40px] py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all no-underline"
               aria-label="View Details"
             >
@@ -115,22 +125,22 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
         <img
           src={product.images?.[0] || "/featured/hisense-window-ac.png"}
           alt={product.name}
-          loading="lazy"
+          loading={imgLoading}
           decoding="async"
           onError={handleImgError}
         />
         <button aria-label="Add to wishlist">
           <Heart size={16} />
         </button>
-        <span className={product.inStock ? "stock" : "stock out"}>
-          {product.inStock ? "In stock" : "On request"}
+        <span className={inStock ? "stock" : "stock out"}>
+          {inStock ? "In stock" : "On request"}
         </span>
       </div>
       <div className="product-info">
         <small>
           {product.brand} · {product.category}
         </small>
-        <Link href={`/shop/${product.slug || product.id}`}>
+        <Link href={detailHref}>
           <h3>{product.name}</h3>
         </Link>
         <p className="model">Model {product.model}</p>
@@ -180,7 +190,7 @@ export default function ProductCard({ product, featuredStyle = false }: ProductC
 
           {/* White/Outlined Button: View Details */}
           <Link
-            href={`/shop/${product.slug || product.id}`}
+            href={detailHref}
             className="px-2.5 min-h-[38px] py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all no-underline"
             aria-label="View Details"
             title="View Details"

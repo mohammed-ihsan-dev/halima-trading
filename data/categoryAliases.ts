@@ -13,6 +13,8 @@
 export const categoryAliases: Record<string, string> = {
   "Air Conditioners": "Air Conditioning",
   "Refrigerators & Freezers": "Refrigeration",
+  // Every refrigerator already in the store is filed under Refrigeration.
+  "Refrigerators": "Refrigeration",
   "Washing Machines": "Laundry Appliances",
   "Washer Dryers": "Laundry Appliances",
   "Dryers": "Laundry Appliances",

@@ -1,6 +1,7 @@
 import { MongoBulkWriteError } from "mongodb";
 import { getMongoDb, ensureMongoIndexes } from "@/lib/mongodb";
 import type { Product } from "@/data/products";
+import { PRICE_RANGES, searchTokens, type CatalogueState } from "@/lib/catalogue-query";
 
 export interface MongoProductDoc {
   _id?: any;
@@ -219,7 +220,7 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
             PUBLIC_FILTER,
             {
               $or: [
-                { category: { $regex: new RegExp(`^${categoryNameOrSlug}$`, "i") } },
+                { category: { $regex: new RegExp(`^${escapeRegExp(categoryNameOrSlug)}$`, "i") } },
                 { categorySlug: slug },
               ],
             },
@@ -250,6 +251,133 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
     return docs.map(formatProduct);
   } catch (error) {
     console.error(`Error fetching products by category (${categoryNameOrSlug}):`, error);
+    return [];
+  }
+}
+
+const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Fields a product card or the admin list needs — only the first image, never descriptions or specs. */
+const LISTING_PROJECTION = {
+  _id: 1, id: 1, slug: 1, sku: 1, name: 1, brand: 1, model: 1, category: 1, subcategory: 1, price: 1,
+  priceLabel: 1, images: { $slice: 1 }, inStock: 1, stockCount: 1, featured: 1, deliveryRate: 1, status: 1, createdAt: 1,
+};
+
+export interface ProductPage {
+  products: Product[];
+  currentPage: number;
+  pageSize: number;
+  totalProducts: number;
+  totalPages: number;
+  hasNextPage: boolean;
+  hasPreviousPage: boolean;
+}
+
+/**
+ * One page of the catalogue, paginated in MongoDB. Visibility, category and search are applied
+ * before skip/limit; the sort always ends with _id so pages are stable. A page past the end
+ * returns the last page (currentPage says which). Public by default — pass includeUnpublished
+ * only from authenticated admin code.
+ */
+export async function queryMongoProducts(
+  state: CatalogueState,
+  options: { includeUnpublished?: boolean } = {}
+): Promise<ProductPage> {
+  const db = await getMongoDb();
+  const products = db.collection("products");
+
+  const and: Record<string, unknown>[] = [options.includeUnpublished ? ADMIN_FILTER : PUBLIC_FILTER];
+  // A category name ("Air Conditioning") or its slug ("air-conditioning", used by the home page tiles).
+  if (state.category) {
+    and.push({
+      $or: [
+        { category: { $regex: new RegExp(`^${escapeRegExp(state.category)}$`, "i") } },
+        { categorySlug: slugify(state.category) },
+      ],
+    });
+  }
+  // Each word must appear in the name, brand, model or SKU (the fields the old in-browser search used).
+  for (const token of searchTokens(state.q)) {
+    const re = new RegExp(escapeRegExp(token), "i");
+    and.push({ $or: [{ name: re }, { brand: re }, { model: re }, { sku: re }] });
+  }
+  // Same rule as checkout and isInStock() in lib/pricing.ts, on the values formatProduct produces:
+  // a missing stockCount is no limit (shown as 12), but a stored null counts as 0.
+  if (state.availability === "in-stock") {
+    and.push({ inStock: { $ne: false } }, { $or: [{ stockCount: { $exists: false } }, { stockCount: { $gt: 0 } }] });
+  } else if (state.availability === "on-request") {
+    and.push({ $or: [{ inStock: false }, { stockCount: { $lte: 0 } }, { stockCount: { $type: "null" } }] });
+  }
+  // Numeric comparisons only match numbers, and every range starts above 0, so
+  // "Contact for Price" products (0 or no price) never fall into a price range.
+  if (state.price) {
+    const { label: _label, ...range } = PRICE_RANGES[state.price];
+    void _label;
+    and.push({ price: Object.fromEntries(Object.entries(range).map(([op, v]) => [`$${op}`, v])) });
+  }
+  const filter = { $and: and };
+
+  const fetchPage = (page: number) => {
+    const skip = (page - 1) * state.pageSize;
+    if (state.sort === "low") {
+      // Priced products first, cheapest first; "Contact for Price" (0 or no price) after them.
+      return products
+        .aggregate([
+          { $match: filter },
+          { $addFields: { _unpriced: { $cond: [{ $and: [{ $isNumber: "$price" }, { $gt: ["$price", 0] }] }, 0, 1] } } },
+          { $sort: { _unpriced: 1, price: 1, _id: 1 } },
+          { $skip: skip },
+          { $limit: state.pageSize },
+          // Aggregation spells "first image only" differently from a find() projection.
+          { $project: { ...LISTING_PROJECTION, images: { $slice: [{ $cond: [{ $isArray: "$images" }, "$images", []] }, 1] } } },
+        ])
+        .toArray();
+    }
+    const sort: Record<string, 1 | -1> = state.sort === "az" ? { name: 1, _id: 1 } : { createdAt: -1, _id: -1 };
+    return products
+      .find(filter, { projection: LISTING_PROJECTION, collation: state.sort === "az" ? { locale: "en", strength: 2 } : undefined })
+      .sort(sort)
+      .skip(skip)
+      .limit(state.pageSize)
+      .toArray();
+  };
+
+  const [totalProducts, firstTry] = await Promise.all([products.countDocuments(filter), fetchPage(state.page)]);
+  const totalPages = Math.max(1, Math.ceil(totalProducts / state.pageSize));
+  const currentPage = Math.min(state.page, totalPages);
+  const docs = currentPage === state.page ? firstTry : await fetchPage(currentPage);
+
+  return {
+    products: docs.map(formatProduct),
+    currentPage,
+    pageSize: state.pageSize,
+    totalProducts,
+    totalPages,
+    hasNextPage: currentPage < totalPages,
+    hasPreviousPage: currentPage > 1,
+  };
+}
+
+/** Categories that have at least one public product, for the shop's category filter. */
+export async function getPublicProductCategories(): Promise<string[]> {
+  const db = await getMongoDb();
+  const values = await db.collection("products").distinct("category", PUBLIC_FILTER);
+  return values.filter((v): v is string => typeof v === "string" && v.trim() !== "");
+}
+
+/** The newest public products other than the given one — for "related products" (was: the whole catalogue, then slice). */
+export async function getMongoRelatedProducts(excludeId: string, limit = 4): Promise<Product[]> {
+  try {
+    const db = await getMongoDb();
+    const docs = await db
+      .collection("products")
+      .find({ $and: [PUBLIC_FILTER, { id: { $ne: excludeId } }] }, { projection: LISTING_PROJECTION })
+      .sort({ createdAt: -1, _id: -1 })
+      .limit(limit)
+      .toArray();
+    return docs.map(formatProduct);
+  } catch (error) {
+    console.error("Error fetching related products from MongoDB:", error);
     return [];
   }
 }

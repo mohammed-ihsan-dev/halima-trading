@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { invalidateCatalogueAfterStockChange } from "@/lib/catalogue-cache";
 import { createMongoOrder, CheckoutValidationError } from "@/lib/repositories/orders";
 import { createMongoPayment } from "@/lib/repositories/payments";
 import { stripe, isStripeConfigured } from "@/lib/stripe";
@@ -33,6 +34,7 @@ export async function POST(request: Request) {
       items,
       customerNotes,
     });
+    invalidateCatalogueAfterStockChange(); // the order reserved stock
 
     // 2. Create pending payment record in MongoDB
     const payment = await createMongoPayment({

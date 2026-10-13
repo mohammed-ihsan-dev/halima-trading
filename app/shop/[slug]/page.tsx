@@ -1,15 +1,17 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Suspense, cache } from "react";
 import { notFound } from "next/navigation";
 import { Check, ChevronRight, ShieldCheck, Truck } from "lucide-react";
-import {
-  getMongoProductByIdOrSlug,
-  getMongoProducts,
-} from "@/lib/repositories/products";
-import { displayPrice, hasSellingPrice } from "@/lib/pricing";
+import { getMongoProductByIdOrSlug, getMongoRelatedProducts } from "@/lib/repositories/products";
+import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
 import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
 import ProductGallery from "@/components/product/ProductGallery";
+import BackToCatalogueLink from "@/components/shop/BackToCatalogueLink";
+
+// generateMetadata and the page both need the product: one database read per request.
+const getProduct = cache((slug: string) => getMongoProductByIdOrSlug(slug));
 
 // Product text is admin-entered; escape "<" so a value containing "</script>" cannot end the JSON-LD block.
 const jsonLd = (data: unknown) => JSON.stringify(data).replace(/</g, "\\u003c");
@@ -22,7 +24,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const product = await getMongoProductByIdOrSlug(slug);
+  const product = await getProduct(slug);
 
   if (!product) {
     return {
@@ -62,14 +64,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ProductPage({ params }: PageProps) {
   const { slug } = await params;
-  const product = await getMongoProductByIdOrSlug(slug);
+  const product = await getProduct(slug);
 
   if (!product) {
     notFound();
   }
 
-  const allProducts = await getMongoProducts();
-  const relatedProducts = allProducts.filter((x) => x.id !== product.id).slice(0, 4);
+  const relatedProducts = await getMongoRelatedProducts(product.id, 4);
 
   // JSON-LD Product Schema
   const productJsonLd = {
@@ -93,7 +94,7 @@ export default async function ProductPage({ params }: PageProps) {
             url: `https://halimatrading.ae/shop/${product.slug || product.id}`,
             priceCurrency: "AED",
             price: product.price,
-            availability: product.inStock
+            availability: isInStock(product)
               ? "https://schema.org/InStock"
               : "https://schema.org/LimitedAvailability",
             itemCondition: "https://schema.org/NewCondition",
@@ -142,7 +143,10 @@ export default async function ProductPage({ params }: PageProps) {
       <div className="breadcrumbs">
         <Link href="/">Home</Link>
         <ChevronRight size={14} />
-        <Link href="/shop">Shop</Link>
+        {/* Static fallback for prerendering; the client link restores the originating page and filters. */}
+        <Suspense fallback={<Link href="/shop">Shop</Link>}>
+          <BackToCatalogueLink />
+        </Suspense>
         <ChevronRight size={14} />
         <span>{product.name}</span>
       </div>
@@ -152,7 +156,7 @@ export default async function ProductPage({ params }: PageProps) {
 
         <div className="detail-copy min-w-0 w-full max-w-full">
           <span className="stock">
-            <Check size={14} /> {product.inStock ? "In stock" : "Available on request"}
+            <Check size={14} /> {isInStock(product) ? "In stock" : "Available on request"}
           </span>
           <small>
             {product.brand} · {product.category}

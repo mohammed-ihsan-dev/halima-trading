@@ -7,6 +7,7 @@ import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
 import { Product } from "@/data/products";
+import { adminPriceLabel, hasSellingPrice } from "@/lib/pricing";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -139,9 +140,12 @@ export default function AdminOutOfStockProductsPage() {
                 <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                   <div>
                     <span className="text-[10px] uppercase font-bold text-slate-400 block">Price</span>
-                    <span className="text-base md:text-lg font-black text-slate-900">
-                      {p.price !== null ? `AED ${p.price.toLocaleString()}` : "AED 1,899"}
-                    </span>
+                    <span
+                        className={hasSellingPrice(p) ? "text-base md:text-lg font-black text-slate-900" : "text-sm font-bold text-slate-500"}
+                      >
+                        {/* Never an invented amount: no real price means the quotation state. */}
+                        {adminPriceLabel(p)}
+                      </span>
                   </div>
                   <div className="text-right">
                     <span className="text-[10px] uppercase font-bold text-slate-400 block">Stock Qty</span>

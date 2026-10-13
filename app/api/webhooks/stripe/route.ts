@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { invalidateCatalogueAfterStockChange } from "@/lib/catalogue-cache";
 import { stripe } from "@/lib/stripe";
 import { updateMongoPaymentStatus } from "@/lib/repositories/payments";
 import { updateMongoOrderPaymentStatus, restoreMongoOrderStock } from "@/lib/repositories/orders";
@@ -70,6 +71,7 @@ export async function POST(request: Request) {
         }
         if (orderId) {
           await restoreMongoOrderStock(orderId);
+          invalidateCatalogueAfterStockChange(); // the stock is available again
         }
         console.log(`Webhook checkout.session.expired processed for order: ${orderId}`);
         break;

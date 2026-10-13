@@ -1425,6 +1425,52 @@ footer {
   width: auto
 }
 
+.shop-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 32px 0 8px
+}
+
+.shop-pagination a,
+.shop-pagination span {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none
+}
+
+.shop-pagination a:hover {
+  border-color: var(--ink)
+}
+
+.shop-pagination .is-current {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff
+}
+
+.shop-pagination .is-disabled {
+  opacity: .4
+}
+
+.shop-pagination .gap {
+  border: 0;
+  background: none;
+  min-width: 20px;
+  padding: 0
+}
+
 .breadcrumbs {
   padding: 18px 5%;
   display: flex;
@@ -2141,6 +2187,26 @@ footer {
 
   .results-bar svg {
     display: none
+  }
+
+  .shop-pagination {
+    gap: 4px
+  }
+
+  .shop-pagination a,
+  .shop-pagination span {
+    min-width: 32px;
+    height: 34px;
+    padding: 0 6px
+  }
+
+  /* Count, sort and page size wrap onto two lines on phones instead of overflowing. */
+  .results-bar {
+    height: auto;
+    min-height: 54px;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 10px
   }
 
   .product-detail {

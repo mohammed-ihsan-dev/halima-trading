@@ -12,7 +12,9 @@ import {
   createMongoProduct,
   updateMongoProduct,
   deleteMongoProduct,
+  queryMongoProducts,
 } from "@/lib/repositories/products";
+import { parseCatalogueParams } from "@/lib/catalogue-query";
 
 export const revalidate = 0;
 
@@ -39,7 +41,8 @@ export async function GET(request: Request) {
   }
 
   // Single product for the Edit page, including drafts the public API hides.
-  const id = new URL(request.url).searchParams.get("id");
+  const searchParams = new URL(request.url).searchParams;
+  const id = searchParams.get("id");
   if (id) {
     const product = await getMongoProductByIdOrSlug(id, { includeUnpublished: true });
     if (!product) return NextResponse.json({ success: false, error: "Product not found" }, { status: 404 });
@@ -47,6 +50,15 @@ export async function GET(request: Request) {
   }
 
   try {
+    // ?page=… — one page from MongoDB for the product list. Without it, the full list as before
+    // (still used by other admin screens).
+    if (searchParams.has("page")) {
+      const { products, ...pagination } = await queryMongoProducts(parseCatalogueParams(searchParams), { includeUnpublished: true });
+      return NextResponse.json(
+        { success: true, data: products, total: pagination.totalProducts, pagination },
+        { headers: { "Cache-Control": "no-store, max-age=0, must-revalidate" } }
+      );
+    }
     const productsList = await getMongoProducts({ includeUnpublished: true });
     return NextResponse.json(
       {

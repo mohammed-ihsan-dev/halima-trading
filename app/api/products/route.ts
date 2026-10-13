@@ -4,7 +4,9 @@ import {
   getMongoProductByIdOrSlug,
   getMongoFeaturedProducts,
   getMongoProductsByCategory,
+  queryMongoProducts,
 } from "@/lib/repositories/products";
+import { parseCatalogueParams } from "@/lib/catalogue-query";
 
 export const revalidate = 0;
 
@@ -28,6 +30,15 @@ export async function GET(request: Request) {
             "Cache-Control": "no-store, max-age=0, must-revalidate",
           },
         }
+      );
+    }
+
+    // ?page=… — one page of published products from MongoDB (category, q, sort, limit also apply).
+    if (searchParams.has("page")) {
+      const { products, ...pagination } = await queryMongoProducts(parseCatalogueParams(searchParams));
+      return NextResponse.json(
+        { success: true, data: products, total: pagination.totalProducts, pagination },
+        { headers: { "Cache-Control": "no-store, max-age=0, must-revalidate" } }
       );
     }
 

@@ -1,76 +1,115 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { Suspense, useEffect, useState, useTransition } from "react";
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FileUp, Plus, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
 import { AnimatedStaggerGroup, AnimatedStaggerItem } from "@/components/admin/AnimatedFadeIn";
 import { Product } from "@/data/products";
+import { adminPriceLabel, hasSellingPrice, isInStock } from "@/lib/pricing";
 import { categories } from "@/data/categories";
+import { catalogueHref, catalogueQueryString, parseCatalogueParams, withReturnPath, type CatalogueState } from "@/lib/catalogue-query";
 
 const ITEMS_PER_PAGE = 12;
+const LIST_PATH = "/admin/products";
+const SEARCH_DEBOUNCE_MS = 350;
 
+interface ListResult {
+  key: string;
+  products: Product[];
+  totalProducts: number;
+  totalPages: number;
+  currentPage: number;
+}
+
+// useSearchParams needs a Suspense boundary so the page can still be prerendered.
 export default function AdminProductsPage() {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  return (
+    <Suspense fallback={null}>
+      <AdminProductsList />
+    </Suspense>
+  );
+}
+
+function AdminProductsList() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  // The URL (?page=7&q=…&category=…) is the source of truth, so returning from Edit restores it.
+  const state: CatalogueState = { ...parseCatalogueParams(searchParams), pageSize: ITEMS_PER_PAGE, sort: "newest" };
+  const listHref = catalogueHref(LIST_PATH, state);
+  const queryKey = catalogueQueryString(state);
+
+  const [result, setResult] = useState<ListResult | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
   const [productToDelete, setProductToDelete] = useState<Product | null>(null);
   const [notification, setNotification] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [, startTransition] = useTransition();
 
-  const refreshProducts = async () => {
-    setLoading(true);
-    setErrorMessage("");
-    try {
-      const res = await fetch("/api/admin/products", { cache: "no-store" });
-      const data = await res.json();
-      if (res.ok && data.success && Array.isArray(data.data)) {
-        setProducts(data.data);
-      } else if (Array.isArray(data.data)) {
-        setProducts(data.data);
-      } else {
-        setErrorMessage(data.error || "Failed to load products from MongoDB server.");
-      }
-    } catch (err) {
-      console.error("Failed to load admin products:", err);
-      setErrorMessage("Network error while connecting to MongoDB product API.");
-    } finally {
-      setLoading(false);
-    }
+  const [search, setSearch] = useState(state.q);
+  const [syncedQ, setSyncedQ] = useState(state.q);
+  const [lastSubmittedQ, setLastSubmittedQ] = useState(state.q);
+  if (state.q !== syncedQ) {
+    setSyncedQ(state.q);
+    if (state.q !== lastSubmittedQ) setSearch(state.q);
+  }
+
+  const navigate = (next: Partial<CatalogueState>, mode: "push" | "replace" = "push") => {
+    const href = catalogueHref(LIST_PATH, { ...state, ...next });
+    startTransition(() => (mode === "push" ? router.push(href, { scroll: false }) : router.replace(href, { scroll: false })));
   };
 
+  // One request per page/filter combination; MongoDB returns only that page.
+  const fetchKey = `${queryKey}#${reloadToken}`;
   useEffect(() => {
-    refreshProducts();
-  }, []);
+    const controller = new AbortController();
+    const params = new URLSearchParams(queryKey.slice(1));
+    params.set("page", String(state.page));
+    params.set("limit", String(ITEMS_PER_PAGE));
+    fetch(`/api/admin/products?${params}`, { cache: "no-store", signal: controller.signal })
+      .then(async (res) => {
+        const data = await res.json();
+        if (!res.ok || !data.success || !Array.isArray(data.data)) {
+          setErrorMessage(data.error || "Failed to load products from MongoDB server.");
+          return;
+        }
+        setErrorMessage("");
+        setResult({ key: fetchKey, products: data.data, ...data.pagination });
+        // Past the last page (e.g. after deleting its only product): show the last real page.
+        if (data.pagination.currentPage !== state.page) {
+          router.replace(catalogueHref(LIST_PATH, { ...state, page: data.pagination.currentPage }), { scroll: false });
+        }
+      })
+      .catch((err) => {
+        if (controller.signal.aborted) return;
+        console.error("Failed to load admin products:", err);
+        setErrorMessage("Network error while connecting to MongoDB product API.");
+      });
+    return () => controller.abort();
+    // fetchKey captures everything the request depends on.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fetchKey]);
 
-  // Reset page when search or filter changes
   useEffect(() => {
-    setCurrentPage(1);
-  }, [search, selectedCategory]);
+    const q = search.trim();
+    if (q === state.q) return;
+    const timer = setTimeout(() => {
+      setLastSubmittedQ(q);
+      // A new search starts at page 1; replace so each keystroke is not a history entry.
+      navigate({ q, page: 1 }, "replace");
+    }, SEARCH_DEBOUNCE_MS);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search, queryKey]);
 
-  const filteredProducts = products.filter((p) => {
-    const matchesSearch =
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      (p.sku && p.sku.toLowerCase().includes(search.toLowerCase())) ||
-      (p.model && p.model.toLowerCase().includes(search.toLowerCase())) ||
-      p.brand.toLowerCase().includes(search.toLowerCase());
-
-    const matchesCategory =
-      selectedCategory === "all" || p.category.toLowerCase() === selectedCategory.toLowerCase();
-
-    return matchesSearch && matchesCategory;
-  });
-
-  // Calculate Pagination slice
-  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE) || 1;
-  const paginatedProducts = filteredProducts.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
-  );
+  const refreshProducts = () => setReloadToken((n) => n + 1);
+  const loading = result === null || (result.key !== fetchKey && !errorMessage);
+  const products = result?.products ?? [];
+  const currentPage = result?.currentPage ?? state.page;
+  const totalPages = result?.totalPages ?? 1;
 
   const confirmDeleteProduct = async () => {
     if (!productToDelete) return;
@@ -155,8 +194,8 @@ export default function AdminProductsPage() {
           {/* Category Dropdown Filter */}
           <div className="relative">
             <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
+              value={categories.find((c) => c.name.toLowerCase() === state.category.toLowerCase())?.name ?? (state.category || "all")}
+              onChange={(e) => navigate({ category: e.target.value === "all" ? "" : e.target.value, page: 1 })}
               className="bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm font-bold text-slate-800 focus:outline-hidden focus:border-red-500 cursor-pointer pr-8"
             >
               <option value="all">All Categories</option>
@@ -201,15 +240,15 @@ export default function AdminProductsPage() {
             </div>
           ))}
         </div>
-      ) : filteredProducts.length === 0 ? (
+      ) : products.length === 0 ? (
         <div className="bg-white rounded-2xl border border-slate-200/80 p-12 text-center text-slate-500 space-y-3">
           <Package size={48} className="mx-auto text-slate-300" />
           <h3 className="font-extrabold text-slate-900 text-lg">No products match your search or filter</h3>
           <p className="text-xs md:text-sm text-slate-500">Try adjusting your filters or search query.</p>
         </div>
       ) : (
-        <AnimatedStaggerGroup key={currentPage} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          {paginatedProducts.map((p) => (
+        <AnimatedStaggerGroup key={fetchKey} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {products.map((p) => (
             <AnimatedStaggerItem key={p.id}>
               <div className="bg-white rounded-2xl border border-slate-200/80 shadow-2xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-all group h-full">
                 {/* Product Image Area */}
@@ -217,10 +256,12 @@ export default function AdminProductsPage() {
                   <img
                     src={p.images?.[0] || "/featured/hisense-window-ac.png"}
                     alt={p.name}
+                    loading="lazy"
+                    decoding="async"
                     className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-3 right-3">
-                    {p.inStock ? (
+                    {isInStock(p) ? (
                       <AdminBadge variant="success">In Stock</AdminBadge>
                     ) : (
                       <AdminBadge variant="danger">Out of Stock</AdminBadge>
@@ -257,14 +298,17 @@ export default function AdminProductsPage() {
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                     <div>
                       <span className="text-[10px] uppercase font-bold text-slate-400 block">Price</span>
-                      <span className="text-base md:text-lg font-black text-slate-900">
-                        {p.price !== null ? `AED ${p.price.toLocaleString()}` : "AED 1,899"}
+                      <span
+                        className={hasSellingPrice(p) ? "text-base md:text-lg font-black text-slate-900" : "text-sm font-bold text-slate-500"}
+                      >
+                        {/* Never an invented amount: no real price means the quotation state. */}
+                        {adminPriceLabel(p)}
                       </span>
                     </div>
                     <div className="text-right">
                       <span className="text-[10px] uppercase font-bold text-slate-400 block">Stock Qty</span>
                       <span className="text-xs md:text-sm font-extrabold text-slate-800">
-                        {p.inStock ? `${p.stockCount || 12} units` : "0 units"}
+                        {isInStock(p) ? `${p.stockCount ?? 0} units` : "0 units"}
                       </span>
                     </div>
                   </div>
@@ -273,7 +317,7 @@ export default function AdminProductsPage() {
                 {/* Action Buttons Footer */}
                 <div className="px-5 py-3.5 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between gap-2">
                   <Link
-                    href={`/admin/products/${p.id}/edit`}
+                    href={withReturnPath(`/admin/products/${encodeURIComponent(p.id)}/edit`, listHref, LIST_PATH)}
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs md:text-sm font-bold rounded-xl transition-colors"
                   >
                     <Edit2 size={15} /> Edit
@@ -295,8 +339,8 @@ export default function AdminProductsPage() {
       <AdminPagination
         currentPage={currentPage}
         totalPages={totalPages}
-        onPageChange={(page) => setCurrentPage(page)}
-        totalItems={filteredProducts.length}
+        onPageChange={(page) => navigate({ page })}
+        totalItems={result?.totalProducts ?? 0}
         itemsPerPage={ITEMS_PER_PAGE}
         itemLabel="products"
       />
