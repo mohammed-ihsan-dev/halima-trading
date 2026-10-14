@@ -57,10 +57,11 @@ test("upload routes refuse unauthenticated and forged sessions", { skip }, async
   }
 });
 
-test("without R2 configuration, uploads are disabled and only variable names are reported", { skip }, async () => {
+test("without storage configuration, uploads are disabled and only variable names are reported", { skip }, async () => {
   const config = await (await call(PLAIN, "/api/admin/uploads/config")).json();
   assert.equal(config.enabled, false);
-  assert.deepEqual(config.missing, ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET", "R2_PUBLIC_BASE_URL"]);
+  // Nothing configured: the variables for Supabase Storage (the provider for new uploads) are named.
+  assert.deepEqual(config.missing, ["NEXT_PUBLIC_SUPABASE_URL", "SUPABASE_SECRET_KEY"]);
   const res = await call(PLAIN, "/api/admin/uploads/presign", { method: "POST", body: { files: [{ contentType: "image/png", size: 100 }] } });
   assert.equal(res.status, 503);
 });

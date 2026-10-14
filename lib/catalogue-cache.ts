@@ -14,3 +14,15 @@ export function invalidateCatalogueAfterStockChange(): void {
     console.warn("Catalogue cache revalidation error:", error);
   }
 }
+
+/** A product's images or details changed: clear the cached public pages that show it. */
+export function invalidateProductPages(slug?: string): void {
+  try {
+    revalidatePath("/");
+    revalidatePath("/shop");
+    revalidatePath("/categories");
+    if (slug) revalidatePath(`/shop/${slug}`);
+  } catch (error) {
+    console.warn("Catalogue cache revalidation error:", error);
+  }
+}

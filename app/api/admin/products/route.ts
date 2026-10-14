@@ -3,7 +3,8 @@ import { revalidatePath } from "next/cache";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
 import { PLACEHOLDER_IMAGE } from "@/lib/repositories/products";
 import { validateProductImages } from "@/lib/product-images";
-import { isR2UploadConfigured } from "@/lib/r2";
+import { getImageStorage, imageRuleStorageContext } from "@/lib/image-storage";
+import { releaseUnreferencedImages } from "@/lib/image-storage-cleanup";
 import {
   getMongoProducts,
   getMongoProductByIdOrSlug,
@@ -103,7 +104,7 @@ export async function POST(request: Request) {
 
     if (Array.isArray(body.images)) {
       body.images = body.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
-      const imageProblem = validateProductImages(body.images, { r2Enabled: isR2UploadConfigured() });
+      const imageProblem = validateProductImages(body.images, { ...imageRuleStorageContext() });
       if (imageProblem) return NextResponse.json({ error: imageProblem }, { status: 400 });
     }
 
@@ -145,11 +146,13 @@ export async function PUT(request: Request) {
       updates.deliveryRate = numRate;
     }
 
+    let previousImages: string[] = [];
     if (Array.isArray(updates.images)) {
       updates.images = updates.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+      previousImages = await getStoredProductImages(id);
       const imageProblem = validateProductImages(updates.images, {
-        r2Enabled: isR2UploadConfigured(),
-        storedImages: await getStoredProductImages(id),
+        ...imageRuleStorageContext(),
+        storedImages: previousImages,
       });
       if (imageProblem) return NextResponse.json({ error: imageProblem }, { status: 400 });
     }
@@ -188,6 +191,14 @@ export async function PUT(request: Request) {
     }
 
     invalidatePublicProductCaches(updated.slug);
+
+    // Images removed by this edit: delete their stored objects only now that the product no
+    // longer references them, and only if no other product does either.
+    if (Array.isArray(updates.images)) {
+      const removed = previousImages.filter((url) => !updates.images.includes(url));
+      const configured = getImageStorage();
+      if (removed.length && configured.ok) await releaseUnreferencedImages(removed, configured.storage);
+    }
 
     return NextResponse.json({
       success: true,

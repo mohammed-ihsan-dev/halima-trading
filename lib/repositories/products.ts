@@ -153,6 +153,40 @@ export async function getStoredProductImages(idOrSlug: string): Promise<string[]
   return Array.isArray(doc?.images) ? doc.images.filter((i: unknown): i is string => typeof i === "string") : [];
 }
 
+/**
+ * Sets a product's images only if they are still exactly `expected` — so a bulk upload never
+ * overwrites an edit made meanwhile. Touches nothing but `images` and `updatedAt`. Returns the
+ * product's slug on success, "changed" if its images changed since they were read, or null if
+ * there is no such product.
+ */
+export async function setProductImagesIfUnchanged(
+  id: string,
+  expected: readonly string[],
+  images: readonly string[]
+): Promise<{ slug: string } | "changed" | null> {
+  const db = await getMongoDb();
+  const products = db.collection("products");
+  // "No images" is stored as a missing/empty list but shown to the admin as the placeholder:
+  // both mean the same state, so either expectation matches either form.
+  const noImages = expected.length === 0 || (expected.length === 1 && expected[0] === PLACEHOLDER_IMAGE);
+  const sameImages = noImages
+    ? { $or: [{ images: { $exists: false } }, { images: { $size: 0 } }, { images: { $eq: [PLACEHOLDER_IMAGE] } }] }
+    : { images: { $eq: [...expected] } };
+  const res = await products.findOneAndUpdate(
+    { $and: [ADMIN_FILTER, { id }, sameImages] },
+    { $set: { images: [...images], updatedAt: new Date() } },
+    { projection: { slug: 1 }, returnDocument: "after" }
+  );
+  if (res) return { slug: String(res.slug ?? "") };
+  return (await products.countDocuments({ $and: [ADMIN_FILTER, { id }] })) ? "changed" : null;
+}
+
+/** How many products (any status, including deleted) still reference this image URL. */
+export async function countProductsReferencingImage(url: string): Promise<number> {
+  const db = await getMongoDb();
+  return db.collection("products").countDocuments({ images: url });
+}
+
 export async function getProductPublicationFacts(
   idOrSlug: string
 ): Promise<{ status: string; price: number | null; realImageCount: number } | null> {

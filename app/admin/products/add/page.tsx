@@ -17,6 +17,10 @@ import {
 } from "lucide-react";
 import { categories } from "@/data/categories";
 
+// The generic placeholder only stands in for "no image": a real image replaces it rather than
+// queuing behind it (otherwise the shop would keep showing the placeholder first).
+const withoutPlaceholder = (images: string[]) => images.filter((img) => img !== "/featured/hisense-window-ac.png");
+
 export default function AdminAddProductPage() {
   const router = useRouter();
   const [notification, setNotification] = useState("");
@@ -56,9 +60,9 @@ export default function AdminAddProductPage() {
     setIsUploading(true);
 
     if (storage?.enabled) {
-      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage);
+      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage, formData.model || undefined);
       if (urls.length > 0) {
-        setImages((prev) => [...prev, ...urls.filter((u) => !prev.includes(u))]);
+        setImages((prev) => [...withoutPlaceholder(prev), ...urls.filter((u) => !prev.includes(u))]);
       }
       if (errors.length > 0) setUploadError(errors.join(" "));
       setIsUploading(false);
@@ -126,7 +130,7 @@ export default function AdminAddProductPage() {
 
     if (loadedImages.length > 0) {
       setImages((prev) => {
-        const combined = [...prev];
+        const combined = withoutPlaceholder(prev);
         loadedImages.forEach((img) => {
           if (!combined.includes(img)) combined.push(img);
         });
@@ -145,7 +149,7 @@ export default function AdminAddProductPage() {
       setUploadError("Image URL is already added.");
       return;
     }
-    setImages((prev) => [...prev, trimmed]);
+    setImages((prev) => [...withoutPlaceholder(prev), trimmed]);
     setUrlInput("");
     setUploadError("");
   };
@@ -399,7 +403,7 @@ export default function AdminAddProductPage() {
                   <span className="text-xs font-bold">Click to Browse & Select Photos</span>
                   <span className="text-[10px] text-slate-400 font-medium">
                     {storage?.enabled
-                      ? `Stored in image storage · PNG, JPG, WEBP up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
+                      ? `Stored in image storage · PNG, JPG, WEBP, AVIF up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
                       : "Supports PNG, JPG, WEBP, SVG · Select 1 or multiple files"}
                   </span>
                 </label>
@@ -407,7 +411,7 @@ export default function AdminAddProductPage() {
                   id="photo-file-input"
                   type="file"
                   multiple
-                  accept="image/png, image/jpeg, image/webp, image/svg+xml"
+                  accept={storage?.enabled ? "image/png, image/jpeg, image/webp, image/avif" : "image/png, image/jpeg, image/webp, image/svg+xml"}
                   onChange={handleFileUpload}
                   className="hidden"
                 />

@@ -143,7 +143,7 @@ test("verification never touches keys the app did not generate", async () => {
 
 const DATA_URI = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ==";
 test("product images: https URLs, site paths and R2 URLs are accepted; unsafe values are not", () => {
-  const ctx = { r2Enabled: true };
+  const ctx = { storageEnabled: true };
   assert.equal(validateProductImages(["https://images.example.test/products/2026/10/x.png", "/featured/a.png"], ctx), null);
   for (const bad of [["http://insecure.example/a.png"], ["javascript:alert(1)"], ["//evil.example/a.png"], ["/has space.png"], [""], ["x".repeat(3000)], "not-a-list"]) {
     assert.notEqual(validateProductImages(bad, ctx), null, JSON.stringify(bad).slice(0, 60));
@@ -152,10 +152,10 @@ test("product images: https URLs, site paths and R2 URLs are accepted; unsafe va
 });
 
 test("with R2 configured, new embedded images are refused but already-stored ones are kept", () => {
-  assert.match(validateProductImages([DATA_URI], { r2Enabled: true }), /uploaded to image storage/);
-  assert.equal(validateProductImages([DATA_URI, "https://images.example.test/a.png"], { r2Enabled: true, storedImages: [DATA_URI] }), null);
-  assert.equal(validateProductImages([DATA_URI], { r2Enabled: false }), null, "without R2 the existing behaviour is unchanged");
-  assert.notEqual(validateProductImages(["data:text/html;base64,PHNjcmlwdD4="], { r2Enabled: false }), null);
+  assert.match(validateProductImages([DATA_URI], { storageEnabled: true }), /uploaded to image storage/);
+  assert.equal(validateProductImages([DATA_URI, "https://images.example.test/a.png"], { storageEnabled: true, storedImages: [DATA_URI] }), null);
+  assert.equal(validateProductImages([DATA_URI], { storageEnabled: false }), null, "without R2 the existing behaviour is unchanged");
+  assert.notEqual(validateProductImages(["data:text/html;base64,PHNjcmlwdD4="], { storageEnabled: false }), null);
 });
 
 test("upload rate limit caps files per admin per window", () => {

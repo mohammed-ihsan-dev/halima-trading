@@ -14,12 +14,13 @@
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "test:catalogue": "node --import ./tests/support/register-ts.mjs --test --test-concurrency=1 tests/admin-auth.*.test.mjs tests/session-keys.unit.test.mjs tests/catalogue-dry-run.*.test.mjs tests/product-import.db.test.mjs tests/import-cli.db.test.mjs tests/product-ci-index.db.test.mjs tests/publication-safety.*.test.mjs tests/quotation.*.test.mjs tests/supplier-catalogue.unit.test.mjs tests/catalogue-query.unit.test.mjs tests/catalogue-pagination.db.test.mjs tests/catalogue-pagination.http.test.mjs tests/r2.unit.test.mjs tests/r2.http.test.mjs tests/r2.live.test.mjs"
+    "test:catalogue": "node --import ./tests/support/register-ts.mjs --test --test-concurrency=1 tests/admin-auth.*.test.mjs tests/session-keys.unit.test.mjs tests/catalogue-dry-run.*.test.mjs tests/product-import.db.test.mjs tests/import-cli.db.test.mjs tests/product-ci-index.db.test.mjs tests/publication-safety.*.test.mjs tests/quotation.*.test.mjs tests/supplier-catalogue.unit.test.mjs tests/catalogue-query.unit.test.mjs tests/catalogue-pagination.db.test.mjs tests/catalogue-pagination.http.test.mjs tests/r2.unit.test.mjs tests/r2.http.test.mjs tests/r2.live.test.mjs tests/supabase-storage.unit.test.mjs tests/supabase-storage.http.test.mjs tests/supabase-storage.live.test.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1149.0",
     "@aws-sdk/s3-request-presigner": "^3.1149.0",
     "@emailjs/browser": "^4.4.1",
+    "@supabase/supabase-js": "^2.117.3",
     "drizzle-orm": "0.45.2",
     "exceljs": "4.4.0",
     "framer-motion": "^12.42.2",

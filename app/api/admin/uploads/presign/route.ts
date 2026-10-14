@@ -1,14 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAdminSession } from "@/lib/admin-auth";
-import {
-  IMAGE_UPLOAD,
-  createImageKey,
-  createR2Store,
-  getR2Config,
-  publicUrlForKey,
-  validateUploadRequest,
-  type AllowedImageType,
-} from "@/lib/r2";
+import { IMAGE_UPLOAD, createImageKey, productKeySegment, validateUploadRequest, type AllowedImageType } from "@/lib/r2";
+import { getImageStorage } from "@/lib/image-storage";
 import { takeUploadQuota } from "@/lib/upload-rate-limit";
 
 export const runtime = "nodejs";
@@ -16,22 +9,24 @@ export const dynamic = "force-dynamic";
 const noStore = { "Cache-Control": "no-store" };
 
 /**
- * POST { files: [{ contentType, size }] } → short-lived presigned PUT URLs.
- * The server chooses every object key; the browser never names objects.
+ * POST { files: [{ contentType, size }], productRef? } → short-lived signed upload URLs.
+ * The server chooses every object key (products/<sku-or-id>/<uuid>.<ext> when productRef is a
+ * usable SKU or id); the browser never names objects and cannot overwrite existing ones.
  */
 export async function POST(request: Request) {
   const session = await getAdminSession();
   if (!session) return NextResponse.json({ error: "Unauthorized access" }, { status: 401, headers: noStore });
 
-  const r2 = getR2Config();
-  if (!r2.ok) {
+  const configured = getImageStorage();
+  if (!configured.ok) {
     return NextResponse.json(
-      { error: "Image storage is not configured.", missing: r2.missing, invalid: r2.invalid },
+      { error: "Image storage is not configured.", missing: configured.missing, invalid: configured.invalid },
       { status: 503, headers: noStore }
     );
   }
+  const { storage } = configured;
 
-  let body: { files?: unknown };
+  let body: { files?: unknown; productRef?: unknown };
   try {
     body = await request.json();
   } catch {
@@ -48,29 +43,31 @@ export async function POST(request: Request) {
     const problem = validateUploadRequest(file ?? {});
     if (problem) return NextResponse.json({ error: `File ${i + 1}: ${problem}` }, { status: 400, headers: noStore });
   }
+  if (body.productRef !== undefined && (typeof body.productRef !== "string" || body.productRef.length > 200)) {
+    return NextResponse.json({ error: "productRef must be a product SKU or id." }, { status: 400, headers: noStore });
+  }
+  const productRef = productKeySegment(body.productRef) || undefined;
   if (!takeUploadQuota(session.email, files.length)) {
     return NextResponse.json({ error: "Too many uploads in a short time. Please wait a few minutes." }, { status: 429, headers: noStore });
   }
 
   try {
-    const store = createR2Store(r2.config);
     const uploads = await Promise.all(
       (files as { contentType: AllowedImageType; size: number }[]).map(async (file) => {
-        const key = createImageKey(file.contentType);
+        const key = createImageKey(file.contentType, undefined, undefined, productRef);
         return {
           key,
-          uploadUrl: await store.presignPut(key, file.contentType, file.size),
+          uploadUrl: await storage.store.presignPut(key, file.contentType, file.size),
           method: "PUT",
-          // The browser must send exactly these headers — they are part of the signature.
-          headers: { "Content-Type": file.contentType, "Cache-Control": IMAGE_UPLOAD.cacheControl },
-          publicUrl: publicUrlForKey(r2.config.publicBaseUrl, key),
+          headers: storage.store.uploadHeaders(file.contentType),
+          publicUrl: storage.publicUrlForKey(key),
           expiresInSeconds: IMAGE_UPLOAD.presignExpirySeconds,
         };
       })
     );
     return NextResponse.json({ uploads }, { headers: noStore });
   } catch (error) {
-    console.error("R2 presign failed:", (error as Error).name);
+    console.error(`Image upload signing failed (${storage.provider}):`, (error as Error).name);
     return NextResponse.json({ error: "Could not prepare the upload. Please try again." }, { status: 502, headers: noStore });
   }
 }

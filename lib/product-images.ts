@@ -1,17 +1,20 @@
 /**
  * Server-side rules for the product `images: string[]` field (Add / Edit Product API).
  *
- * Accepted: site paths ("/featured/x.png"), https URLs (including this bucket's public R2 URLs),
- * and — only for backward compatibility — inline data:image URIs. When R2 uploads are configured,
- * NEW data URIs are refused (images should be uploaded to R2), but data URIs already stored on the
- * product are kept as-is so existing products remain editable.
+ * Accepted: site paths ("/featured/x.png"), https URLs (Supabase Storage, R2 or other hosts),
+ * and — only for backward compatibility — inline data:image URIs. When image storage uploads are
+ * configured, NEW data URIs are refused (images should be uploaded to storage), but data URIs
+ * already stored on the product are kept as-is so existing products remain editable.
  */
 export const MAX_PRODUCT_IMAGES = 20;
 const MAX_URL_LENGTH = 2048;
 const DATA_IMAGE = /^data:image\/(jpeg|png|webp|gif|svg\+xml);base64,[A-Za-z0-9+/]+=*$/;
 
 export interface ImageRuleContext {
-  r2Enabled: boolean;
+  /** Image storage uploads (Supabase or R2) are configured. */
+  storageEnabled: boolean;
+  /** Public URL base of the configured image storage (its own URLs are always accepted). */
+  storageBaseUrl?: string;
   /** Images currently stored on the product (empty when creating). */
   storedImages?: readonly string[];
 }
@@ -26,7 +29,7 @@ export function validateProductImages(images: unknown, ctx: ImageRuleContext): s
     if (typeof img !== "string" || !img.trim()) return `${label} is empty.`;
     if (img.startsWith("data:")) {
       if (!DATA_IMAGE.test(img)) return `${label} is not a valid embedded image.`;
-      if (ctx.r2Enabled && !stored.has(img)) return `${label} must be uploaded to image storage, not embedded. Please re-upload it.`;
+      if (ctx.storageEnabled && !stored.has(img)) return `${label} must be uploaded to image storage, not embedded. Please re-upload it.`;
       continue;
     }
     if (img.length > MAX_URL_LENGTH) return `${label} URL is too long.`;
@@ -34,6 +37,8 @@ export function validateProductImages(images: unknown, ctx: ImageRuleContext): s
       if (/\s/.test(img)) return `${label} path contains spaces.`;
       continue;
     }
+    // The configured storage's own URLs (https in production; plain http only for a local test server).
+    if (ctx.storageBaseUrl && img.startsWith(`${ctx.storageBaseUrl}/`)) continue;
     let url: URL;
     try {
       url = new URL(img);

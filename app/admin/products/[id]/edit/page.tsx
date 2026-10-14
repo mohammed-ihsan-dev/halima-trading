@@ -21,6 +21,10 @@ import { Product } from "@/data/products";
 import { categories } from "@/data/categories";
 import { brands } from "@/data/brands";
 
+// The generic placeholder only stands in for "no image": a real image replaces it rather than
+// queuing behind it (otherwise the shop would keep showing the placeholder first).
+const withoutPlaceholder = (images: string[]) => images.filter((img) => img !== "/featured/hisense-window-ac.png");
+
 export default function EditProductPage() {
   const router = useRouter();
   const params = useParams();
@@ -69,9 +73,9 @@ export default function EditProductPage() {
     setIsUploading(true);
 
     if (storage?.enabled) {
-      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage);
+      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage, formData.sku || productId || undefined);
       if (urls.length > 0) {
-        setImages((prev) => [...prev, ...urls.filter((u) => !prev.includes(u))]);
+        setImages((prev) => [...withoutPlaceholder(prev), ...urls.filter((u) => !prev.includes(u))]);
       }
       if (errors.length > 0) setUploadError(errors.join(" "));
       setIsUploading(false);
@@ -139,7 +143,7 @@ export default function EditProductPage() {
 
     if (loadedImages.length > 0) {
       setImages((prev) => {
-        const combined = [...prev];
+        const combined = withoutPlaceholder(prev);
         loadedImages.forEach((img) => {
           if (!combined.includes(img)) combined.push(img);
         });
@@ -158,7 +162,7 @@ export default function EditProductPage() {
       setUploadError("Image URL is already added.");
       return;
     }
-    setImages((prev) => [...prev, trimmed]);
+    setImages((prev) => [...withoutPlaceholder(prev), trimmed]);
     setUrlInput("");
     setUploadError("");
   };
@@ -505,7 +509,7 @@ export default function EditProductPage() {
                   <span className="text-xs font-bold">Click to Browse & Select Photos</span>
                   <span className="text-[10px] text-slate-400 font-medium">
                     {storage?.enabled
-                      ? `Stored in image storage · PNG, JPG, WEBP up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
+                      ? `Stored in image storage · PNG, JPG, WEBP, AVIF up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
                       : "Supports PNG, JPG, WEBP, SVG · Select 1 or multiple files"}
                   </span>
                 </label>
@@ -513,7 +517,7 @@ export default function EditProductPage() {
                   id="photo-file-input-edit"
                   type="file"
                   multiple
-                  accept="image/png, image/jpeg, image/webp, image/svg+xml"
+                  accept={storage?.enabled ? "image/png, image/jpeg, image/webp, image/avif" : "image/png, image/jpeg, image/webp, image/svg+xml"}
                   onChange={handleFileUpload}
                   className="hidden"
                 />
