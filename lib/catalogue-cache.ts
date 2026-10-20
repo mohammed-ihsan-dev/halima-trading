@@ -21,6 +21,7 @@ export function invalidateProductPages(slug?: string): void {
     revalidatePath("/");
     revalidatePath("/shop");
     revalidatePath("/categories");
+    revalidatePath("/brands");
     if (slug) revalidatePath(`/shop/${slug}`);
   } catch (error) {
     console.warn("Catalogue cache revalidation error:", error);

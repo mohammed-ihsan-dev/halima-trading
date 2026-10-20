@@ -1,10 +1,11 @@
 import { Building2, Globe2, Handshake, ShieldCheck } from "lucide-react";
+import { companyContact } from "@/lib/company-config";
 
 export const metadata = {
   title: "About Halima Trading L.L.C. | Abu Dhabi",
   description: "Established in 1991, Halima Trading L.L.C. is a trusted supplier of air conditioning systems, electronics, and home appliances in Abu Dhabi & UAE.",
   alternates: {
-    canonical: "https://halimatrading.ae/about",
+    canonical: `${companyContact.siteUrl}/about`,
   },
 };
 

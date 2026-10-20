@@ -9,7 +9,10 @@ export const companyContact = {
   shortName: "Halima Trading",
   legalName: "HALIMA TRADING EST / L.L.C.",
   tagline: "Premium Electronics & Home Appliances Across the UAE",
-  
+
+  // Public website address (canonical URLs, sitemap, share images). No trailing slash.
+  siteUrl: "https://halimatrading.com",
+
   // Single Source of Truth for Location
   // Update this string when the final client-provided location is received
   location: "Al Hamra Plaza Hotel Building, Electra Street, Abu Dhabi, UAE",

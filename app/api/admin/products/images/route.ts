@@ -4,6 +4,7 @@ import { invalidateProductPages } from "@/lib/catalogue-cache";
 import { getImageStorage, imageRuleStorageContext } from "@/lib/image-storage";
 import { releaseUnreferencedImages } from "@/lib/image-storage-cleanup";
 import { MAX_PRODUCT_IMAGES, validateProductImages } from "@/lib/product-images";
+import { realImages } from "@/lib/admin-gallery";
 import { setProductImagesIfUnchanged } from "@/lib/repositories/products";
 
 export const runtime = "nodejs";
@@ -27,7 +28,9 @@ export async function POST(request: Request) {
   } catch {
     return NextResponse.json({ error: "Send a JSON body: { id, expectedImages, images }." }, { status: 400, headers: noStore });
   }
-  const { id, expectedImages, images } = body;
+  const { id, expectedImages } = body;
+  // "No images" is stored as an empty list — the display placeholder is never saved as a product image.
+  const images = Array.isArray(body.images) ? realImages(body.images) : body.images;
   if (typeof id !== "string" || !id.trim() || id.length > 200) {
     return NextResponse.json({ error: "Product id is required." }, { status: 400, headers: noStore });
   }

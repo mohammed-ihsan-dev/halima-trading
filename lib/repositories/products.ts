@@ -443,7 +443,7 @@ export function buildProductDocument(data: Partial<Product>): MongoProductDoc {
     price: data.price ?? null,
     priceLabel: data.price ? `${data.price} AED` : "Contact for Price",
     currency: "AED",
-    images: data.images && data.images.length > 0 ? data.images : ["/featured/hisense-window-ac.png"],
+    images: data.images && data.images.length > 0 ? data.images : [], // no images: the storefront shows the placeholder
     inStock: data.inStock !== undefined ? Boolean(data.inStock) : true,
     stockCount: data.stockCount !== undefined ? Number(data.stockCount) : 12,
     featured: data.featured !== undefined ? Boolean(data.featured) : false,

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { fetchUploadConfig, uploadImagesToStorage, type UploadConfig } from "@/lib/admin-image-upload";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import ProductGalleryEditor, { type CommitResult } from "@/components/admin/ProductGalleryEditor";
+import { realImages } from "@/lib/admin-gallery";
 import Link from "next/link";
 import { useRouter, useParams, useSearchParams } from "next/navigation";
 import { safeCatalogueReturnPath } from "@/lib/catalogue-query";
@@ -10,20 +11,11 @@ import {
   Save,
   Check,
   X,
-  ImageIcon,
-  Upload,
-  Trash2,
-  Star,
-  AlertCircle,
   Loader2,
 } from "lucide-react";
 import { Product } from "@/data/products";
 import { categories } from "@/data/categories";
 import { brands } from "@/data/brands";
-
-// The generic placeholder only stands in for "no image": a real image replaces it rather than
-// queuing behind it (otherwise the shop would keep showing the placeholder first).
-const withoutPlaceholder = (images: string[]) => images.filter((img) => img !== "/featured/hisense-window-ac.png");
 
 export default function EditProductPage() {
   const router = useRouter();
@@ -35,19 +27,13 @@ export default function EditProductPage() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [notification, setNotification] = useState("");
-  const [uploadError, setUploadError] = useState("");
   const [notFound, setNotFound] = useState(false);
 
-  const [uploadMethod, setUploadMethod] = useState<"file" | "url">("file");
-  const [urlInput, setUrlInput] = useState("");
+  // The product's saved images (real images only — the display placeholder is never a gallery item).
+  // Gallery changes are saved immediately and conditionally: only the images field is written.
   const [images, setImages] = useState<string[]>([]);
-  const [selectedPreviewIndex, setSelectedPreviewIndex] = useState(0);
-  const [isUploading, setIsUploading] = useState(false);
-  // R2 image storage, when configured; otherwise the existing embedded-image upload is used.
-  const [storage, setStorage] = useState<UploadConfig | null>(null);
-  useEffect(() => {
-    fetchUploadConfig().then(setStorage);
-  }, []);
+  const savedImages = useRef<string[]>([]);
+  const [galleryBusy, setGalleryBusy] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -65,127 +51,38 @@ export default function EditProductPage() {
     specifications: "",
   });
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files || files.length === 0) return;
-
-    setUploadError("");
-    setIsUploading(true);
-
-    if (storage?.enabled) {
-      const { urls, errors } = await uploadImagesToStorage(Array.from(files), storage, formData.sku || productId || undefined);
-      if (urls.length > 0) {
-        setImages((prev) => [...withoutPlaceholder(prev), ...urls.filter((u) => !prev.includes(u))]);
-      }
-      if (errors.length > 0) setUploadError(errors.join(" "));
-      setIsUploading(false);
-      e.target.value = "";
-      return;
+  const reloadImages = useCallback(async () => {
+    const res = await fetch(`/api/admin/products?id=${encodeURIComponent(productId)}`, { cache: "no-store" });
+    const data = await res.json().catch(() => ({}));
+    if (data.success && data.product) {
+      savedImages.current = realImages(data.product.images);
+      setImages(savedImages.current);
     }
+  }, [productId]);
 
-    const fileList = Array.from(files);
-    const loadedImages: string[] = [];
-
-    for (const file of fileList) {
-      if (file.size > 15 * 1024 * 1024) {
-        setUploadError(`File ${file.name} exceeds 15MB size limit.`);
-        continue;
-      }
-
-      try {
-        const compressedUrl = await new Promise<string>((resolve) => {
-          const reader = new FileReader();
-          reader.onload = (event) => {
-            const rawUrl = event.target?.result as string;
-            if (!rawUrl || file.type === "image/svg+xml") {
-              resolve(rawUrl || "");
-              return;
-            }
-            const img = new Image();
-            img.onload = () => {
-              const canvas = document.createElement("canvas");
-              let width = img.width;
-              let height = img.height;
-              const maxDim = 1200;
-              if (width > maxDim || height > maxDim) {
-                if (width > height) {
-                  height = Math.round((height * maxDim) / width);
-                  width = maxDim;
-                } else {
-                  width = Math.round((width * maxDim) / height);
-                  height = maxDim;
-                }
-              }
-              canvas.width = width;
-              canvas.height = height;
-              const ctx = canvas.getContext("2d");
-              if (ctx) {
-                ctx.drawImage(img, 0, 0, width, height);
-                resolve(canvas.toDataURL("image/jpeg", 0.85));
-              } else {
-                resolve(rawUrl);
-              }
-            };
-            img.onerror = () => resolve(rawUrl);
-            img.src = rawUrl;
-          };
-          reader.onerror = () => resolve("");
-          reader.readAsDataURL(file);
-        });
-
-        if (compressedUrl) {
-          loadedImages.push(compressedUrl);
-        }
-      } catch (err) {
-        setUploadError(`Failed to process file ${file.name}`);
-      }
-    }
-
-    if (loadedImages.length > 0) {
-      setImages((prev) => {
-        const combined = withoutPlaceholder(prev);
-        loadedImages.forEach((img) => {
-          if (!combined.includes(img)) combined.push(img);
-        });
-        return combined;
+  /** Saves the gallery to the product (only if nobody changed its images meanwhile), then shows the saved list. */
+  const persistImages = useCallback(async (next: string[]): Promise<CommitResult> => {
+    try {
+      const res = await fetch("/api/admin/products/images", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: productId, expectedImages: savedImages.current, images: next }),
       });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.success && Array.isArray(data.images)) {
+        savedImages.current = realImages(data.images);
+        setImages(savedImages.current);
+        return { ok: true, images: savedImages.current };
+      }
+      if (res.status === 409) {
+        await reloadImages();
+        return { ok: false, error: "The images of this product were changed elsewhere. The gallery has been reloaded — please try again." };
+      }
+      return { ok: false, error: data.error || `Could not save the gallery (HTTP ${res.status}). Nothing was lost — try again.` };
+    } catch {
+      return { ok: false, error: "Could not reach the server to save the gallery. Check your connection and try again." };
     }
-
-    setIsUploading(false);
-    e.target.value = "";
-  };
-
-  const handleAddUrl = () => {
-    const trimmed = urlInput.trim();
-    if (!trimmed) return;
-    if (images.includes(trimmed)) {
-      setUploadError("Image URL is already added.");
-      return;
-    }
-    setImages((prev) => [...withoutPlaceholder(prev), trimmed]);
-    setUrlInput("");
-    setUploadError("");
-  };
-
-  const handleSetPrimary = (index: number) => {
-    if (index === 0 || index >= images.length) return;
-    setImages((prev) => {
-      const copy = [...prev];
-      const [promoted] = copy.splice(index, 1);
-      return [promoted, ...copy];
-    });
-    setSelectedPreviewIndex(0);
-  };
-
-  const handleRemoveImage = (index: number) => {
-    setImages((prev) => {
-      const copy = prev.filter((_, i) => i !== index);
-      return copy;
-    });
-    if (selectedPreviewIndex >= images.length - 1) {
-      setSelectedPreviewIndex(Math.max(0, images.length - 2));
-    }
-  };
+  }, [productId, reloadImages]);
 
   useEffect(() => {
     if (!productId) return;
@@ -214,11 +111,8 @@ export default function EditProductPage() {
                   .join("\n")
               : "",
           });
-          if (Array.isArray(existing.images) && existing.images.length > 0) {
-            setImages(existing.images);
-          } else {
-            setImages(["/featured/hisense-window-ac.png"]);
-          }
+          savedImages.current = realImages(existing.images);
+          setImages(savedImages.current);
           setLoading(false);
         } else {
           setNotFound(true);
@@ -257,7 +151,11 @@ export default function EditProductPage() {
       });
     }
 
-    const finalImages = images.length > 0 ? images : ["/featured/hisense-window-ac.png"];
+    if (galleryBusy) {
+      setNotification("Error: Wait until the gallery has finished uploading and saving images.");
+      setSaving(false);
+      return;
+    }
 
     try {
       const res = await fetch("/api/admin/products", {
@@ -277,7 +175,7 @@ export default function EditProductPage() {
           inStock: stockNum > 0,
           description: formData.description,
           specifications: Object.keys(specsObject).length > 0 ? specsObject : undefined,
-          images: finalImages,
+          // images are not sent: the gallery saves them itself, so this form can never overwrite them.
           status: formData.status,
         }),
       });
@@ -324,8 +222,6 @@ export default function EditProductPage() {
     );
   }
 
-  const currentPreviewImage = images[selectedPreviewIndex] || images[0] || null;
-
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -361,189 +257,14 @@ export default function EditProductPage() {
       <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Column: Product Multi-Image Gallery Uploader (4 Cols) */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-2xs space-y-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-xs md:text-sm font-extrabold uppercase tracking-wider text-slate-700">
-                  Product Gallery
-                </h2>
-                <p className="text-[11px] text-slate-400 font-medium">
-                  {images.length} {images.length === 1 ? "image" : "images"} uploaded
-                </p>
-              </div>
-
-              <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg text-[11px] font-bold">
-                <button
-                  type="button"
-                  onClick={() => setUploadMethod("file")}
-                  className={`px-2.5 py-1 rounded-md transition-all ${
-                    uploadMethod === "file" ? "bg-white text-slate-900 shadow-xs" : "text-slate-500"
-                  }`}
-                >
-                  Upload File
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setUploadMethod("url")}
-                  className={`px-2.5 py-1 rounded-md transition-all ${
-                    uploadMethod === "url" ? "bg-white text-slate-900 shadow-xs" : "text-slate-500"
-                  }`}
-                >
-                  URL Path
-                </button>
-              </div>
-            </div>
-
-            {/* Main Preview Box - 1:1 Aspect Ratio Container */}
-            <div className="w-full aspect-square max-h-[320px] rounded-xl bg-slate-50/80 border border-slate-200/80 overflow-hidden flex items-center justify-center p-3 relative group mx-auto">
-              {currentPreviewImage ? (
-                <>
-                  <img
-                    src={currentPreviewImage}
-                    alt="Product Preview"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = "/featured/hisense-window-ac.png";
-                    }}
-                    className="w-full h-full object-contain object-center transition-all duration-200"
-                  />
-
-                  {/* Primary Badge */}
-                  {selectedPreviewIndex === 0 ? (
-                    <div className="absolute top-3 left-3 px-2.5 py-1 bg-amber-500 text-white rounded-lg text-[10px] font-extrabold tracking-wider uppercase flex items-center gap-1 shadow-md">
-                      <Star size={12} fill="white" />
-                      <span>Primary Image</span>
-                    </div>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={() => handleSetPrimary(selectedPreviewIndex)}
-                      className="absolute top-3 left-3 px-2.5 py-1 bg-slate-900/90 hover:bg-amber-600 text-white rounded-lg text-[10px] font-bold flex items-center gap-1 shadow-md transition-all cursor-pointer"
-                    >
-                      <Star size={12} /> Set as Primary
-                    </button>
-                  )}
-
-                  {/* Remove Button */}
-                  <button
-                    type="button"
-                    onClick={() => handleRemoveImage(selectedPreviewIndex)}
-                    className="absolute top-3 right-3 p-2 bg-rose-600 text-white rounded-xl opacity-90 hover:opacity-100 transition-opacity shadow-md hover:bg-rose-700 cursor-pointer"
-                    title="Remove Image"
-                  >
-                    <Trash2 size={16} />
-                  </button>
-                </>
-              ) : (
-                <div className="text-center text-slate-400 space-y-2 p-4">
-                  <ImageIcon size={44} className="mx-auto text-slate-300" />
-                  <span className="text-xs font-semibold block">No images added yet</span>
-                  <span className="text-[10px] text-slate-400 block font-normal">
-                    The first image will automatically become the primary image.
-                  </span>
-                </div>
-              )}
-            </div>
-
-            {/* Thumbnail Strip Grid */}
-            {images.length > 0 && (
-              <div className="space-y-2">
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
-                  Thumbnails ({images.length})
-                </span>
-                <div className="grid grid-cols-4 gap-2">
-                  {images.map((img, idx) => (
-                    <div
-                      key={`${img.slice(0, 30)}-${idx}`}
-                      onClick={() => setSelectedPreviewIndex(idx)}
-                      className={`relative aspect-square rounded-lg border-2 overflow-hidden cursor-pointer bg-slate-50 transition-all p-1 group ${
-                        selectedPreviewIndex === idx
-                          ? "border-red-600 shadow-xs ring-2 ring-red-500/20"
-                          : "border-slate-200/80 hover:border-slate-400"
-                      }`}
-                    >
-                      <img
-                        src={img}
-                        alt={`Thumbnail ${idx + 1}`}
-                        onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).src = "/featured/hisense-window-ac.png";
-                        }}
-                        className="w-full h-full object-contain"
-                      />
-                      {idx === 0 && (
-                        <div className="absolute top-0.5 left-0.5 bg-amber-500 text-white p-0.5 rounded-full shadow-xs">
-                          <Star size={10} fill="white" />
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Upload Errors / Feedback */}
-            {uploadError && (
-              <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold flex items-center gap-2">
-                <AlertCircle size={16} className="shrink-0 text-rose-600" />
-                <span>{uploadError}</span>
-              </div>
-            )}
-
-            {isUploading && (
-              <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 text-xs font-semibold flex items-center gap-2">
-                <Loader2 size={16} className="animate-spin text-red-600 shrink-0" />
-                <span>Uploading product image(s)...</span>
-              </div>
-            )}
-
-            {/* Upload Method Input Controls */}
-            {uploadMethod === "file" ? (
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                  Add Images from Computer
-                </label>
-                <label
-                  htmlFor="photo-file-input-edit"
-                  className="w-full flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 border-dashed border-slate-300 hover:border-red-500 bg-slate-50 hover:bg-red-50/20 text-slate-600 hover:text-red-600 transition-all cursor-pointer text-center"
-                >
-                  <Upload size={22} className="text-slate-400" />
-                  <span className="text-xs font-bold">Click to Browse & Select Photos</span>
-                  <span className="text-[10px] text-slate-400 font-medium">
-                    {storage?.enabled
-                      ? `Stored in image storage · PNG, JPG, WEBP, AVIF up to ${Math.round(storage.maxBytes / 1024 / 1024)} MB · Select 1 or multiple files`
-                      : "Supports PNG, JPG, WEBP, SVG · Select 1 or multiple files"}
-                  </span>
-                </label>
-                <input
-                  id="photo-file-input-edit"
-                  type="file"
-                  multiple
-                  accept={storage?.enabled ? "image/png, image/jpeg, image/webp, image/avif" : "image/png, image/jpeg, image/webp, image/svg+xml"}
-                  onChange={handleFileUpload}
-                  className="hidden"
-                />
-              </div>
-            ) : (
-              <div className="space-y-2">
-                <label className="block text-xs font-bold text-slate-700">Image URL / Asset Path</label>
-                <div className="flex gap-2">
-                  <input
-                    type="text"
-                    value={urlInput}
-                    onChange={(e) => setUrlInput(e.target.value)}
-                    placeholder="e.g. /featured/hisense-window-ac.png"
-                    className="flex-1 bg-slate-50 border border-slate-200/80 rounded-xl px-3.5 py-2 text-xs font-mono text-slate-800 focus:outline-hidden focus:border-red-500 focus:bg-white transition-colors"
-                  />
-                  <button
-                    type="button"
-                    onClick={handleAddUrl}
-                    className="px-3 py-2 bg-slate-900 hover:bg-black text-white text-xs font-bold rounded-xl transition-colors shrink-0 cursor-pointer"
-                  >
-                    + Add
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
+          <ProductGalleryEditor
+            images={images}
+            onCommit={persistImages}
+            productRef={formData.sku || productId}
+            inputId="photo-file-input-edit"
+            autoSave
+            onBusyChange={setGalleryBusy}
+          />
         </div>
 
         {/* Right Column: General Information, Pricing & Delivery (8 Cols) */}

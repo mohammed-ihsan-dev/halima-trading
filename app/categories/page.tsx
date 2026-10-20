@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { categories } from "@/data/categories";
 import { getMongoProducts } from "@/lib/repositories/products";
+import { companyContact } from "@/lib/company-config";
 
 export const revalidate = 60; // 60s ISR for responsive category counts
 
@@ -9,7 +10,7 @@ export const metadata = {
   title: "Product Categories | Electronics & Home Appliances",
   description: "Browse cooling, refrigeration, laundry, kitchen, and home appliance categories from Halima Trading L.L.C.",
   alternates: {
-    canonical: "https://halimatrading.ae/categories",
+    canonical: `${companyContact.siteUrl}/categories`,
   },
 };
 

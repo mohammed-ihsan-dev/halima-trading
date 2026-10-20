@@ -41,3 +41,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Source supplier catalogues (PDFs) — private working material, never served or committed
+/catalogues-source/

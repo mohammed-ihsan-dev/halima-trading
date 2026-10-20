@@ -8,6 +8,7 @@ import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 import { useCart } from "@/context/CartContext";
 import { withReturnPath } from "@/lib/catalogue-query";
+import { customerModel, displayModel } from "@/lib/product-model";
 
 interface ProductCardProps {
   product: Product;
@@ -23,7 +24,7 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
   const inCart = isInCart(product.id);
   // No selling price ("Contact for Price"): offer a WhatsApp price request instead of cart / Buy Now.
   const quoteOnly = !hasSellingPrice(product);
-  const quoteItem = [{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id }];
+  const quoteItem = [{ name: product.name, brand: product.brand, model: customerModel(product) ?? undefined, sku: product.sku, slug: product.slug, id: product.id }];
 
   const detailHref = withReturnPath(`/shop/${product.slug || product.id}`, returnTo, "/shop");
   const imgLoading = eagerImage ? "eager" : "lazy";
@@ -143,7 +144,7 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
         <Link href={detailHref}>
           <h3>{product.name}</h3>
         </Link>
-        <p className="model">Model {product.model}</p>
+        <p className="model">Model: {displayModel(product)}</p>
         <p>{(product.features || []).slice(0, 2).join(" · ")}</p>
         <div className={`price${quoteOnly ? " is-quote" : ""}`}>{displayPrice(product)}</div>
         <div className="product-actions flex flex-wrap items-center gap-2 mt-3">

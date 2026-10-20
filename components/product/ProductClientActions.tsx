@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Check, ShoppingBag, Minus, Plus, Zap, Mail, Download } from "lucide-react";
+import { Check, ShoppingBag, Minus, Plus, Zap, Mail } from "lucide-react";
 import type { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { hasSellingPrice, isInStock } from "@/lib/pricing";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
+import { customerModel } from "@/lib/product-model";
 
 interface ProductClientActionsProps {
   product: Product;
@@ -58,7 +59,7 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
 
         {quoteOnly ? (
           <WhatsAppQuoteButton
-            items={[{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
+            items={[{ name: product.name, brand: product.brand, model: customerModel(product) ?? undefined, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
             className="flex-1 min-w-0 max-w-full min-h-[48px] py-3 px-4 sm:px-6 rounded-xl font-bold flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
           />
         ) : (
@@ -85,11 +86,11 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
           )}
         </button>
 
-        {/* Green Button: Buy Now */}
+        {/* Green Button: Buy Now (own full-width row on phones so neither label is cut off) */}
         <button
           type="button"
           disabled={!inStock}
-          className="flex-1 min-w-0 max-w-full min-h-[48px] py-3 px-4 sm:px-6 rounded-xl font-bold flex items-center justify-center gap-2 cursor-pointer bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all border-0 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 basis-full sm:basis-0 min-w-0 max-w-full min-h-[48px] py-3 px-4 sm:px-6 rounded-xl font-bold flex items-center justify-center gap-2 cursor-pointer bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all border-0 disabled:opacity-50 disabled:cursor-not-allowed"
           onClick={handleBuyNow}
         >
           <Zap size={18} className="shrink-0" />
@@ -106,9 +107,6 @@ export default function ProductClientActions({ product }: ProductClientActionsPr
         >
           <Mail size={18} /> Email enquiry
         </a>
-        <button type="button" className="btn secondary">
-          <Download size={18} /> Specification
-        </button>
       </div>
     </>
   );

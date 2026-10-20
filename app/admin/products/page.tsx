@@ -3,7 +3,7 @@
 import React, { Suspense, useEffect, useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { FileUp, ImagePlus, Plus, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
+import { FileUp, ImagePlus, Plus, ShieldCheck, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
@@ -160,6 +160,12 @@ function AdminProductsList() {
             className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-extrabold text-xs md:text-sm rounded-xl transition-all"
           >
             <ImagePlus size={16} /> Bulk Images
+          </Link>
+          <Link
+            href="/admin/products/image-review"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-extrabold text-xs md:text-sm rounded-xl transition-all"
+          >
+            <ShieldCheck size={16} /> Image Review
           </Link>
           <Link
             href="/admin/products/add"

@@ -9,12 +9,22 @@ import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
 import ProductGallery from "@/components/product/ProductGallery";
 import BackToCatalogueLink from "@/components/shop/BackToCatalogueLink";
+import { companyContact } from "@/lib/company-config";
+import { customerModel, displayModel } from "@/lib/product-model";
 
 // generateMetadata and the page both need the product: one database read per request.
 const getProduct = cache((slug: string) => getMongoProductByIdOrSlug(slug));
 
 // Product text is admin-entered; escape "<" so a value containing "</script>" cannot end the JSON-LD block.
 const jsonLd = (data: unknown) => JSON.stringify(data).replace(/</g, "\\u003c");
+
+const SITE = companyContact.siteUrl;
+const DEFAULT_SHARE_IMAGE = `${SITE}/og.png`;
+/** Product images usable as share / search images: absolute https URLs or site paths (never embedded data URIs). */
+const shareableImages = (images: string[] = []) =>
+  images
+    .filter((img) => typeof img === "string" && (img.startsWith("https://") || (img.startsWith("/") && !img.startsWith("//"))))
+    .map((img) => (img.startsWith("/") ? `${SITE}${img}` : img));
 
 export const revalidate = 60; // 60s ISR for responsive product detail updates
 
@@ -28,17 +38,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!product) {
     return {
-      title: "Product Not Found | Halima Trading L.L.C.",
+      title: "Product Not Found",
       description: "The requested product could not be found in our catalog.",
     };
   }
 
-  const title = `${product.name} | Halima Trading L.L.C.`;
+  // The root layout's title template appends " | Halima Trading"; share cards get the full name.
+  const title = product.name;
+  const shareTitle = `${product.name} | Halima Trading L.L.C.`;
   const description = product.description
     ? product.description.slice(0, 160)
     : `Buy ${product.name} (${product.brand}) in Abu Dhabi & UAE from Halima Trading L.L.C.`;
-  const mainImage = product.images?.[0] || "https://halimatrading.ae/og.png";
-  const canonicalUrl = `https://halimatrading.ae/shop/${product.slug || product.id}`;
+  const mainImage = shareableImages(product.images)[0] || DEFAULT_SHARE_IMAGE;
+  const canonicalUrl = `${SITE}/shop/${product.slug || product.id}`;
 
   return {
     title,
@@ -47,7 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalUrl,
     },
     openGraph: {
-      title,
+      title: shareTitle,
       description,
       url: canonicalUrl,
       type: "website",
@@ -55,7 +67,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: shareTitle,
       description,
       images: [mainImage],
     },
@@ -71,16 +83,20 @@ export default async function ProductPage({ params }: PageProps) {
   }
 
   const relatedProducts = await getMongoRelatedProducts(product.id, 4);
+  const productUrl = `${SITE}/shop/${product.slug || product.id}`;
+  const model = customerModel(product);
+  const images = shareableImages(product.images);
 
   // JSON-LD Product Schema
   const productJsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",
     name: product.name,
-    image: product.images || ["https://halimatrading.ae/og.png"],
+    image: images.length ? images : [DEFAULT_SHARE_IMAGE],
     description: product.description,
     sku: product.sku || product.id,
-    mpn: product.model || product.id,
+    // Only a single, verified model number (records combining two models get none).
+    ...(model ? { mpn: model } : {}),
     brand: {
       "@type": "Brand",
       name: product.brand,
@@ -91,7 +107,7 @@ export default async function ProductPage({ params }: PageProps) {
       ? {
           offers: {
             "@type": "Offer",
-            url: `https://halimatrading.ae/shop/${product.slug || product.id}`,
+            url: productUrl,
             priceCurrency: "AED",
             price: product.price,
             availability: isInStock(product)
@@ -112,19 +128,19 @@ export default async function ProductPage({ params }: PageProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://halimatrading.ae",
+        item: SITE,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Shop",
-        item: "https://halimatrading.ae/shop",
+        item: `${SITE}/shop`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product.name,
-        item: `https://halimatrading.ae/shop/${product.slug || product.id}`,
+        item: productUrl,
       },
     ],
   };
@@ -162,7 +178,7 @@ export default async function ProductPage({ params }: PageProps) {
             {product.brand} · {product.category}
           </small>
           <h1>{product.name}</h1>
-          <p className="model">Model: {product.model}</p>
+          <p className="model">Model: {displayModel(product)}</p>
           <p className="lead">{product.description}</p>
           {product.features && product.features.length > 0 && (
             <ul>
@@ -204,24 +220,16 @@ export default async function ProductPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="detail-tabs section">
-        <h2>Technical specifications</h2>
-        <div className="specs">
-          {product.specifications &&
-            Object.entries(product.specifications).map(([k, v]) => (
-              <div key={k}>
-                <span>{k}</span>
-                <b>{v}</b>
-              </div>
+      {relatedProducts.length > 0 && (
+        <section className="detail-tabs section">
+          <h2>Related products</h2>
+          <div className="product-grid">
+            {relatedProducts.map((x) => (
+              <ProductCard product={x} key={x.id} />
             ))}
-        </div>
-        <h2>Related products</h2>
-        <div className="product-grid">
-          {relatedProducts.map((x) => (
-            <ProductCard product={x} key={x.id} />
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
     </>
   );
 }

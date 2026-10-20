@@ -1,3 +1,4 @@
+import { realImages } from "@/lib/admin-gallery";
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
@@ -103,7 +104,7 @@ export async function POST(request: Request) {
     }
 
     if (Array.isArray(body.images)) {
-      body.images = body.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+      body.images = realImages(body.images); // drops empty entries and the display placeholder
       const imageProblem = validateProductImages(body.images, { ...imageRuleStorageContext() });
       if (imageProblem) return NextResponse.json({ error: imageProblem }, { status: 400 });
     }
@@ -148,7 +149,7 @@ export async function PUT(request: Request) {
 
     let previousImages: string[] = [];
     if (Array.isArray(updates.images)) {
-      updates.images = updates.images.filter((img: any) => typeof img === "string" && img.trim() !== "");
+      updates.images = realImages(updates.images); // drops empty entries and the display placeholder
       previousImages = await getStoredProductImages(id);
       const imageProblem = validateProductImages(updates.images, {
         ...imageRuleStorageContext(),

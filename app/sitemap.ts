@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getMongoProducts } from "@/lib/repositories/products";
 import { categories } from "@/data/categories";
+import { companyContact } from "@/lib/company-config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://halimatrading.ae";
+  const baseUrl = companyContact.siteUrl;
 
   const staticRoutes: MetadataRoute.Sitemap = [
     "",

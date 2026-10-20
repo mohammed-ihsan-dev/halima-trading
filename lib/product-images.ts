@@ -27,6 +27,10 @@ export function validateProductImages(images: unknown, ctx: ImageRuleContext): s
   for (const [i, img] of images.entries()) {
     const label = `Image ${i + 1}`;
     if (typeof img !== "string" || !img.trim()) return `${label} is empty.`;
+    // Browser-only references break after a reload: blob:/file: URLs and "C:\fakepath\…" values from file inputs.
+    if (/^(blob|file|filesystem):/i.test(img) || /fakepath/i.test(img) || /^[a-z]:[\\/]/i.test(img) || img.startsWith("\\\\")) {
+      return `${label} is a temporary or local file reference, not a permanent image URL. Upload the file to image storage instead.`;
+    }
     if (img.startsWith("data:")) {
       if (!DATA_IMAGE.test(img)) return `${label} is not a valid embedded image.`;
       if (ctx.storageEnabled && !stored.has(img)) return `${label} must be uploaded to image storage, not embedded. Please re-upload it.`;

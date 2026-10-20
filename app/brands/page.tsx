@@ -1,4 +1,5 @@
 import { brands } from "@/data/brands";
+import { companyContact } from "@/lib/company-config";
 
 export const revalidate = 3600; // 1 hour ISR
 
@@ -6,7 +7,7 @@ export const metadata = {
   title: "Trusted Global Appliance Brands",
   description: "Explore leading electronics, air conditioning, and home appliance brands available at Halima Trading L.L.C.",
   alternates: {
-    canonical: "https://halimatrading.ae/brands",
+    canonical: `${companyContact.siteUrl}/brands`,
   },
 };
 

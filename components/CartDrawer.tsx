@@ -6,7 +6,8 @@ import { CreditCard, Minus, Plus, Trash2, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { emailUrl } from "@/lib/email";
 import { formatCurrency } from "@/lib/currency";
-import { displayPrice, hasSellingPrice } from "@/lib/pricing";
+import { CONTACT_FOR_PRICE, displayPrice, hasSellingPrice } from "@/lib/pricing";
+import { customerModel, displayModel } from "@/lib/product-model";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 import CheckoutModal from "@/components/checkout/CheckoutModal";
 
@@ -58,7 +59,7 @@ export default function CartDrawer() {
                   <div>
                     <b>{x.name}</b>
                     <small>
-                      {x.brand} · {x.model}
+                      {x.brand} · {displayModel(x)}
                     </small>
                     <span className={hasSellingPrice(x) ? undefined : "is-quote"}>{displayPrice(x)}</span>
                     <div className="qty">
@@ -83,7 +84,7 @@ export default function CartDrawer() {
             <div className="drawer-foot">
               <div>
                 <span>Items Subtotal</span>
-                <b>{formatCurrency(c.total)}</b>
+                <b className={c.payableItems.length ? undefined : "is-quote"}>{c.payableItems.length ? formatCurrency(c.total) : CONTACT_FOR_PRICE}</b>
               </div>
               <div className="flex justify-between text-xs py-1 text-zinc-600 dark:text-zinc-400 font-semibold">
                 <span>Delivery Charge</span>
@@ -103,7 +104,7 @@ export default function CartDrawer() {
                     not included in card payment.
                   </small>
                   <WhatsAppQuoteButton
-                    items={c.quoteItems.map((x) => ({ name: x.name, brand: x.brand, model: x.model, sku: x.sku, slug: x.slug, id: x.id, quantity: x.quantity }))}
+                    items={c.quoteItems.map((x) => ({ name: x.name, brand: x.brand, model: customerModel(x) ?? undefined, sku: x.sku, slug: x.slug, id: x.id, quantity: x.quantity }))}
                     label={c.quoteItems.length === 1 ? "Request Price on WhatsApp" : "Request Prices on WhatsApp"}
                     className="btn secondary full flex items-center justify-center gap-2"
                   />

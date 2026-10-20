@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { formatCurrency } from "@/lib/currency";
 import { hasSellingPrice } from "@/lib/pricing";
+import { customerModel, displayModel } from "@/lib/product-model";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
 
 const EMIRATES = [
@@ -213,7 +214,7 @@ function OrderDetailsContent() {
             current price, availability and delivery details.
           </p>
           <WhatsAppQuoteButton
-            items={[{ name: product.name, brand: product.brand, model: product.model, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
+            items={[{ name: product.name, brand: product.brand, model: customerModel(product) ?? undefined, sku: product.sku, slug: product.slug, id: product.id, quantity }]}
             className="btn primary px-6 py-2.5 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2 w-full"
           />
           <Link href={`/shop/${product.slug || product.id}`} className="text-xs font-semibold text-zinc-500 underline">
@@ -493,7 +494,7 @@ function OrderDetailsContent() {
                     {product.name}
                   </h3>
                   <p className="text-[11px] text-zinc-500 mt-0.5">
-                    {product.brand} · Model {product.model}
+                    {product.brand} · Model: {displayModel(product)}
                   </p>
                   <div className="text-xs font-semibold text-zinc-800 mt-1">
                     {formatCurrency(unitPrice)}{" "}

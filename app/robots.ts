@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { companyContact } from "@/lib/company-config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/admin/"],
       },
     ],
-    sitemap: "https://halimatrading.ae/sitemap.xml",
+    sitemap: `${companyContact.siteUrl}/sitemap.xml`,
   };
 }

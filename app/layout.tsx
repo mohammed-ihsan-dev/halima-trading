@@ -7,10 +7,11 @@ import { CartProvider } from "@/context/CartContext";
 import FloatingContacts from "@/components/FloatingContacts";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import { companyContact } from "@/lib/company-config";
 
 const manrope = Manrope({variable:"--font-manrope",subsets:["latin"]});
 export const metadata: Metadata = {
-  metadataBase: new URL("https://halimatrading.ae"),
+  metadataBase: new URL(companyContact.siteUrl),
   title:{default:"Halima Trading L.L.C. | Electronics & Home Appliances Abu Dhabi",template:"%s | Halima Trading"},
   description:"Shop air conditioners, refrigerators, washing machines, kitchen appliances and electronics from trusted global brands. Serving Abu Dhabi and the UAE since 1991.",
   icons:{icon:"/favicon.jpeg",shortcut:"/favicon.jpeg",apple:"/favicon.jpeg"},

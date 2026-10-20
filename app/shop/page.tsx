@@ -6,6 +6,7 @@ import { getPublicProductCategories, queryMongoProducts, type ProductPage } from
 import { catalogueHref, parseCatalogueParams, type CatalogueState } from "@/lib/catalogue-query";
 import ShopClientView from "@/components/shop/ShopClientView";
 import ProductCardSkeleton from "@/components/ProductCardSkeleton";
+import { companyContact } from "@/lib/company-config";
 
 // Published products only, cached for 60s per page/filter combination (the same freshness the
 // page had as ISR). Admin product changes call revalidatePath("/shop"), which also clears this.
@@ -27,12 +28,12 @@ export const metadata: Metadata = {
   description:
     "Explore air conditioners, refrigerators, washing machines, kitchen appliances and electronics from trusted global brands in Abu Dhabi & UAE.",
   alternates: {
-    canonical: "https://halimatrading.ae/shop",
+    canonical: `${companyContact.siteUrl}/shop`,
   },
   openGraph: {
     title: "Product Catalog | Halima Trading L.L.C.",
     description: "Browse premium home appliances and cooling solutions available across the UAE.",
-    url: "https://halimatrading.ae/shop",
+    url: `${companyContact.siteUrl}/shop`,
   },
 };
 
