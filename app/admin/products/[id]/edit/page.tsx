@@ -1,5 +1,7 @@
 "use client";
 
+import { formatCurrency } from "@/lib/currency";
+import { DELIVERY_FEE_AED } from "@/lib/order-pricing";
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import ProductGalleryEditor, { type CommitResult } from "@/components/admin/ProductGalleryEditor";
 import { realImages } from "@/lib/admin-gallery";
@@ -43,7 +45,6 @@ export default function EditProductPage() {
     category: "",
     subcategory: "",
     price: "",
-    deliveryRate: "0",
     stockCount: "",
     inStock: true,
     status: "active",
@@ -100,7 +101,6 @@ export default function EditProductPage() {
             category: existing.category || "",
             subcategory: existing.subcategory || "",
             price: existing.price !== null ? String(existing.price) : "",
-            deliveryRate: existing.deliveryRate !== undefined && existing.deliveryRate !== null ? String(existing.deliveryRate) : "0",
             stockCount: existing.stockCount !== undefined ? String(existing.stockCount) : "12",
             inStock: existing.inStock !== undefined ? existing.inStock : true,
             status: existing.status === "draft" || existing.status === "inactive" ? existing.status : "active",
@@ -134,12 +134,6 @@ export default function EditProductPage() {
     const priceNum = formData.price ? parseFloat(formData.price) : null;
     const stockNum = formData.stockCount ? parseInt(formData.stockCount, 10) : 0;
 
-    const deliveryRateNum = parseFloat(formData.deliveryRate);
-    if (isNaN(deliveryRateNum) || deliveryRateNum < 0) {
-      setNotification("Error: Delivery rate must be a valid non-negative number.");
-      setSaving(false);
-      return;
-    }
 
     const specsObject: Record<string, string> = {};
     if (formData.specifications.trim()) {
@@ -170,7 +164,6 @@ export default function EditProductPage() {
           category: formData.category,
           subcategory: formData.subcategory,
           price: priceNum,
-          deliveryRate: deliveryRateNum,
           stockCount: stockNum,
           inStock: stockNum > 0,
           description: formData.description,
@@ -236,7 +229,7 @@ export default function EditProductPage() {
           <div>
             <h1 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Edit Product</h1>
             <p className="text-sm font-semibold text-slate-500 mt-1">
-              Update catalog details, gallery images, pricing, and product-specific delivery rates.
+              Update catalog details, gallery images, pricing and stock.
             </p>
           </div>
         </div>
@@ -374,8 +367,8 @@ export default function EditProductPage() {
               <option value="inactive">Inactive — hidden from the shop</option>
             </select>
             <p className="text-[11px] md:text-xs text-slate-500 font-medium">
-              Draft and inactive products cannot be seen or bought by customers. Publishing a draft requires a price above
-              AED 0 and at least one product image.
+              Draft and inactive products cannot be seen or bought by customers. Publishing a draft requires at least one
+              product image; without a price it is shown as &ldquo;Contact for Price&rdquo;.
             </p>
           </div>
 
@@ -411,29 +404,11 @@ export default function EditProductPage() {
                 />
               </div>
 
-              {/* FEATURE 2 — PRODUCT-SPECIFIC DELIVERY RATE */}
               <div>
-                <label className="block text-xs md:text-sm font-extrabold text-slate-800 mb-1.5 flex items-center justify-between">
-                  <span>Delivery Rate (AED) *</span>
-                  {parseFloat(formData.deliveryRate) === 0 && (
-                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">
-                      FREE
-                    </span>
-                  )}
-                </label>
-                <input
-                  type="number"
-                  required
-                  min="0"
-                  step="0.01"
-                  value={formData.deliveryRate}
-                  onChange={(e) => setFormData({ ...formData, deliveryRate: e.target.value })}
-                  placeholder="0 for Free Delivery"
-                  className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-900 font-black focus:outline-hidden focus:border-red-500 focus:bg-white transition-colors"
-                />
-                <span className="text-[10px] text-slate-400 block font-medium mt-1">
-                  Enter 0 for FREE DELIVERY on customer site.
-                </span>
+                <span className="block text-xs md:text-sm font-extrabold text-slate-800 mb-1.5">Delivery</span>
+                <p className="bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-700 font-bold">
+                  Fixed {formatCurrency(DELIVERY_FEE_AED)} per order, added at checkout
+                </p>
               </div>
             </div>
           </div>

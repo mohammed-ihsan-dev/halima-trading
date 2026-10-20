@@ -57,6 +57,9 @@ const initialSeedUsers = [
 ];
 
 export async function ensureUsersSeeded(): Promise<void> {
+  // The seed accounts have well-known demo passwords: never create them in production, where an
+  // empty users collection would otherwise gain a super-admin anyone could sign in as.
+  if (process.env.NODE_ENV === "production") return;
   try {
     const db = await getMongoDb();
     const count = await db.collection("users").countDocuments();

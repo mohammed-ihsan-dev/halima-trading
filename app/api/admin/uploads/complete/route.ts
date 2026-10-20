@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getAdminSession } from "@/lib/admin-auth";
-import { IMAGE_UPLOAD, isValidImageKey, verifyUploadedImage } from "@/lib/r2";
+import { IMAGE_UPLOAD, isValidImageKey, verifyPublicImageUrl, verifyUploadedImage } from "@/lib/r2";
 import { getImageStorage } from "@/lib/image-storage";
 
 export const runtime = "nodejs";
@@ -38,9 +38,16 @@ export async function POST(request: Request) {
     const results = await Promise.all(
       (keys as string[]).map(async (key) => {
         const verdict = await verifyUploadedImage(storage.store, key);
-        return verdict.ok
-          ? { key, ok: true as const, url: storage.publicUrlForKey(key) }
-          : { key, ok: false as const, error: verdict.reason };
+        if (!verdict.ok) return { key, ok: false as const, error: verdict.reason };
+        // The object is valid; now make sure the URL customers' browsers will load really serves it.
+        const url = storage.publicUrlForKey(key);
+        const publicCheck = await verifyPublicImageUrl(url, verdict.contentType);
+        if (!publicCheck.ok) {
+          await storage.store.delete(key).catch(() => undefined); // just uploaded and unreferenced: nothing else uses it
+          console.error(`Uploaded image is not publicly reachable (${storage.provider}): ${publicCheck.reason}`);
+          return { key, ok: false as const, error: `The image was stored, but ${publicCheck.reason}. It was not added to the product.` };
+        }
+        return { key, ok: true as const, url };
       })
     );
     return NextResponse.json({ results }, { headers: noStore });

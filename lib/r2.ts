@@ -206,6 +206,25 @@ export function createR2Store(config: R2Config, client: S3Client = createR2Clien
 export type VerifyResult = { ok: true; contentType: AllowedImageType; size: number } | { ok: false; reason: string };
 
 /**
+ * Confirms the URL browsers will use actually serves the image (status, content type and file signature).
+ * An object can exist in storage while its public URL is refused — e.g. a disabled public bucket URL
+ * answering HTTP 401 — and such an upload must not be reported as successful.
+ */
+export async function verifyPublicImageUrl(url: string, expected: AllowedImageType, fetchImpl: typeof fetch = fetch): Promise<{ ok: true } | { ok: false; reason: string }> {
+  let res: Response;
+  try {
+    res = await fetchImpl(url, { headers: { Range: "bytes=0-15" }, cache: "no-store", signal: AbortSignal.timeout(15_000) });
+  } catch (error) {
+    return { ok: false, reason: `its public URL could not be reached (${(error as Error).name})` };
+  }
+  if (res.status !== 200 && res.status !== 206) return { ok: false, reason: `its public URL answers HTTP ${res.status} instead of the image — check the storage bucket's public access setting` };
+  const type = (res.headers.get("content-type") ?? "").split(";")[0].trim().toLowerCase();
+  const head = new Uint8Array(await res.arrayBuffer()).subarray(0, 16);
+  if (!type.startsWith("image/") || detectImageType(head) !== expected) return { ok: false, reason: `its public URL does not return the image (served as ${type || "unknown"})` };
+  return { ok: true };
+}
+
+/**
  * Confirms an uploaded object is what was approved: present, within the size limit, stored with
  * the expected content type and actually that image format. Anything else is deleted.
  */

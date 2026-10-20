@@ -1,5 +1,6 @@
 "use client";
 
+import AdminProductThumb from "@/components/admin/AdminProductThumb";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft, AlertTriangle, Trash2, Edit2, RefreshCw, CheckCircle2 } from "lucide-react";
@@ -115,11 +116,7 @@ export default function AdminOutOfStockProductsPage() {
             >
               {/* Product Image Area */}
               <div className="relative w-full h-48 bg-slate-50 border-b border-slate-100 p-4 flex items-center justify-center overflow-hidden">
-                <img
-                  src={p.images?.[0] || "/featured/hisense-window-ac.png"}
-                  alt={p.name}
-                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                />
+                <AdminProductThumb images={p.images} alt={p.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute top-3 right-3">
                   <AdminBadge variant="danger">Out of Stock</AdminBadge>
                 </div>

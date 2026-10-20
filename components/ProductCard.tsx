@@ -1,8 +1,9 @@
 "use client";
 
+import { catchFailedBeforeHydration, fallbackToPlaceholder, primaryProductImage } from "@/lib/product-image-display";
 import React from "react";
 import Link from "next/link";
-import { Check, Eye, Heart, ShoppingBag, Snowflake, Zap } from "lucide-react";
+import { Check, Eye, ShoppingBag, Snowflake, Zap } from "lucide-react";
 import type { Product } from "@/data/products";
 import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
@@ -31,9 +32,7 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
   // Same rule as checkout and the shop's Availability filter.
   const inStock = isInStock(product);
 
-  const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.src = "/featured/hisense-window-ac.png";
-  };
+  const handleImgError = fallbackToPlaceholder("product card");
 
   if (featuredStyle) {
     return (
@@ -46,11 +45,12 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
         </div>
         <Link className="feature-image" href={detailHref}>
           <img
-            src={product.images?.[0] || "/featured/hisense-window-ac.png"}
+            src={primaryProductImage(product.images)}
             alt={product.name}
             loading={imgLoading}
             decoding="async"
             onError={handleImgError}
+            ref={catchFailedBeforeHydration(handleImgError)}
           />
         </Link>
         <div className="feature-card-body">
@@ -124,15 +124,13 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
     <article className="product-card">
       <div className="product-img">
         <img
-          src={product.images?.[0] || "/featured/hisense-window-ac.png"}
+          src={primaryProductImage(product.images)}
           alt={product.name}
           loading={imgLoading}
           decoding="async"
           onError={handleImgError}
+          ref={catchFailedBeforeHydration(handleImgError)}
         />
-        <button aria-label="Add to wishlist">
-          <Heart size={16} />
-        </button>
         <span className={inStock ? "stock" : "stock out"}>
           {inStock ? "In stock" : "On request"}
         </span>

@@ -1,5 +1,6 @@
 "use client";
 
+import { fallbackToPlaceholder, primaryProductImage } from "@/lib/product-image-display";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
@@ -14,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import { formatCurrency } from "@/lib/currency";
+import { calculateOrderTotals } from "@/lib/order-pricing";
 import { hasSellingPrice } from "@/lib/pricing";
 import { customerModel, displayModel } from "@/lib/product-model";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
@@ -151,11 +153,10 @@ function OrderDetailsContent() {
       ...formData,
       productId: product.id,
       productName: product.name,
-      productImage: product.images?.[0],
+      productImage: primaryProductImage(product.images),
       productBrand: product.brand,
       productModel: product.model,
       unitPrice: product.price || 0,
-      deliveryRate: product.deliveryRate || 0,
       quantity,
     };
 
@@ -226,11 +227,8 @@ function OrderDetailsContent() {
   }
 
   const unitPrice = product.price as number;
-  const deliveryRate = product.deliveryRate || 0;
-  const subtotal = unitPrice * quantity;
-  const shippingTotal = deliveryRate * quantity;
-  const vat = Math.round(subtotal * 0.05 * 100) / 100;
-  const grandTotal = subtotal + shippingTotal + vat;
+  // Display only — the server recalculates every amount when the order is created.
+  const { subtotal, delivery: shippingTotal, vat, total: grandTotal } = calculateOrderTotals(unitPrice * quantity);
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 py-8 md:py-12">
@@ -254,7 +252,7 @@ function OrderDetailsContent() {
           </div>
 
           {/* Minimal Stepper */}
-          <div className="flex items-center gap-3 bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-200 text-xs font-semibold">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-200 text-xs font-semibold">
             <div className="flex items-center gap-2 text-red-600 font-bold">
               <span className="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center text-[10px]">
                 1
@@ -301,10 +299,10 @@ function OrderDetailsContent() {
 
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                    <label htmlFor="checkout-full-name" className="block text-xs font-semibold text-zinc-700 mb-1">
                       Full Name <span className="text-red-600">*</span>
                     </label>
-                    <input
+                    <input id="checkout-full-name"
                       type="text"
                       name="customerName"
                       required
@@ -317,49 +315,49 @@ function OrderDetailsContent() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                      <label htmlFor="checkout-email-address" className="block text-xs font-semibold text-zinc-700 mb-1">
                         Email Address <span className="text-red-600">*</span>
                       </label>
-                      <input
+                      <input id="checkout-email-address"
                         type="email"
                         name="customerEmail"
                         required
                         value={formData.customerEmail}
                         onChange={handleInputChange}
-                        placeholder="name@company.ae"
+                        placeholder="e.g. name@company.ae"
                         className="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all placeholder:text-zinc-400"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                      <label htmlFor="checkout-phone-number" className="block text-xs font-semibold text-zinc-700 mb-1">
                         Phone Number <span className="text-red-600">*</span>
                       </label>
-                      <input
+                      <input id="checkout-phone-number"
                         type="tel"
                         name="customerPhone"
                         required
                         value={formData.customerPhone}
                         onChange={handleInputChange}
-                        placeholder="+971 50 123 4567"
+                        placeholder="e.g. +971 50 123 4567"
                         className="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all placeholder:text-zinc-400"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                    <label htmlFor="checkout-company-name-optional" className="block text-xs font-semibold text-zinc-700 mb-1">
                       Company Name{" "}
                       <span className="text-zinc-400 font-normal">
                         (Optional)
                       </span>
                     </label>
-                    <input
+                    <input id="checkout-company-name-optional"
                       type="text"
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      placeholder="Halima Trading L.L.C."
+                      placeholder="Your company name, if ordering for a business"
                       className="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 text-sm focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all placeholder:text-zinc-400"
                     />
                   </div>
@@ -377,11 +375,11 @@ function OrderDetailsContent() {
 
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                    <label htmlFor="checkout-street-address-sector" className="block text-xs font-semibold text-zinc-700 mb-1">
                       Street Address / Sector{" "}
                       <span className="text-red-600">*</span>
                     </label>
-                    <input
+                    <input id="checkout-street-address-sector"
                       type="text"
                       name="address"
                       required
@@ -394,10 +392,10 @@ function OrderDetailsContent() {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
-                      <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                      <label htmlFor="checkout-city" className="block text-xs font-semibold text-zinc-700 mb-1">
                         City <span className="text-red-600">*</span>
                       </label>
-                      <input
+                      <input id="checkout-city"
                         type="text"
                         name="city"
                         required
@@ -408,10 +406,10 @@ function OrderDetailsContent() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                      <label htmlFor="checkout-emirate" className="block text-xs font-semibold text-zinc-700 mb-1">
                         Emirate <span className="text-red-600">*</span>
                       </label>
-                      <select
+                      <select id="checkout-emirate"
                         name="emirate"
                         value={formData.emirate}
                         onChange={handleInputChange}
@@ -426,10 +424,10 @@ function OrderDetailsContent() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                      <label htmlFor="checkout-country" className="block text-xs font-semibold text-zinc-700 mb-1">
                         Country
                       </label>
-                      <input
+                      <input id="checkout-country"
                         type="text"
                         name="country"
                         readOnly
@@ -440,13 +438,13 @@ function OrderDetailsContent() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-zinc-700 mb-1">
+                    <label htmlFor="checkout-delivery-notes-optional" className="block text-xs font-semibold text-zinc-700 mb-1">
                       Delivery Notes{" "}
                       <span className="text-zinc-400 font-normal">
                         (Optional)
                       </span>
                     </label>
-                    <textarea
+                    <textarea id="checkout-delivery-notes-optional"
                       name="customerNotes"
                       rows={3}
                       value={formData.customerNotes}
@@ -485,8 +483,9 @@ function OrderDetailsContent() {
               {/* Product Thumbnail Row */}
               <div className="flex items-start gap-3 bg-zinc-50/80 p-3 rounded-xl border border-zinc-200/60">
                 <img
-                  src={product.images?.[0] || "/featured/hisense-window-ac.png"}
+                  src={primaryProductImage(product.images)}
                   alt={product.name}
+                  onError={fallbackToPlaceholder("checkout")}
                   className="w-16 h-16 object-contain rounded-lg border border-zinc-200 bg-white p-1 shrink-0"
                 />
                 <div className="min-w-0 flex-1">
@@ -516,13 +515,7 @@ function OrderDetailsContent() {
                 <div className="flex justify-between text-zinc-600">
                   <span>Delivery Charge</span>
                   <span className="font-semibold text-zinc-900">
-                    {shippingTotal === 0 ? (
-                      <strong className="text-emerald-600 font-bold uppercase">
-                        FREE DELIVERY
-                      </strong>
-                    ) : (
-                      formatCurrency(shippingTotal)
-                    )}
+                    {formatCurrency(shippingTotal)}
                   </span>
                 </div>
                 <div className="flex justify-between text-zinc-600">

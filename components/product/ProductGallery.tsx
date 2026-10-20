@@ -1,5 +1,6 @@
 "use client";
 
+import { catchFailedBeforeHydration, fallbackToPlaceholder, PLACEHOLDER_IMAGE_PATH, productImageList } from "@/lib/product-image-display";
 import React, { useState } from "react";
 
 interface ProductGalleryProps {
@@ -8,7 +9,9 @@ interface ProductGalleryProps {
 }
 
 export default function ProductGallery({ images, productName }: ProductGalleryProps) {
-  const safeImages = images && images.length > 0 ? images : ["/featured/hisense-window-ac.png"];
+  const real = productImageList(images);
+  const safeImages = real.length > 0 ? real : [PLACEHOLDER_IMAGE_PATH];
+  const onImageError = fallbackToPlaceholder("product page gallery");
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const currentImage = safeImages[selectedIndex] || safeImages[0];
@@ -22,9 +25,8 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
           alt={productName}
           loading="eager"
           className="w-full h-full object-contain object-center transition-all duration-300"
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).src = "/featured/hisense-window-ac.png";
-          }}
+          onError={onImageError}
+          ref={catchFailedBeforeHydration(onImageError)}
         />
       </div>
 
@@ -48,9 +50,8 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
                 alt={`${productName} thumbnail ${idx + 1}`}
                 loading="lazy"
                 className="w-full h-full object-contain"
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = "/featured/hisense-window-ac.png";
-                }}
+                onError={onImageError}
+                ref={catchFailedBeforeHydration(onImageError)}
               />
             </button>
           ))}

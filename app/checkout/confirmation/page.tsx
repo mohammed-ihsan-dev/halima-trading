@@ -16,6 +16,7 @@ import {
   User,
 } from "lucide-react";
 import { formatCurrency } from "@/lib/currency";
+import { calculateOrderTotals } from "@/lib/order-pricing";
 
 function ConfirmationContent() {
   const router = useRouter();
@@ -103,12 +104,9 @@ function ConfirmationContent() {
   };
 
   const unitPrice = draft.unitPrice || 0;
-  const deliveryRate = draft.deliveryRate || 0;
   const quantity = draft.quantity || 1;
-  const subtotal = unitPrice * quantity;
-  const shippingTotal = deliveryRate * quantity;
-  const vat = Math.round(subtotal * 0.05 * 100) / 100;
-  const grandTotal = subtotal + shippingTotal + vat;
+  // Display only — the server recalculates every amount when the order is created.
+  const { subtotal, delivery: shippingTotal, vat, total: grandTotal } = calculateOrderTotals(unitPrice * quantity);
 
   const editUrl = `/checkout/order-details?productId=${encodeURIComponent(
     draft.productId || ""
@@ -129,7 +127,7 @@ function ConfirmationContent() {
           </div>
 
           {/* Stepper */}
-          <div className="flex items-center gap-3 bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-200 text-xs font-semibold">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 bg-zinc-50 px-4 py-2 rounded-xl border border-zinc-200 text-xs font-semibold">
             <Link
               href={editUrl}
               className="flex items-center gap-1.5 text-emerald-700 font-bold hover:underline"
@@ -280,13 +278,7 @@ function ConfirmationContent() {
               <div className="flex justify-between text-zinc-600">
                 <span>Delivery Charge</span>
                 <span className="font-semibold text-zinc-900">
-                  {shippingTotal === 0 ? (
-                    <strong className="text-emerald-600 font-bold uppercase">
-                      FREE DELIVERY
-                    </strong>
-                  ) : (
-                    formatCurrency(shippingTotal)
-                  )}
+                  {formatCurrency(shippingTotal)}
                 </span>
               </div>
               <div className="flex justify-between text-zinc-600">

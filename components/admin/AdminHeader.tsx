@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Menu, Search, Bell, ChevronDown } from "lucide-react";
 import AdminProfileModal from "./AdminProfileModal";
 
@@ -10,6 +11,15 @@ interface AdminHeaderProps {
 
 export default function AdminHeader({ onToggleMobileSidebar }: AdminHeaderProps) {
   const [profileOpen, setProfileOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const router = useRouter();
+
+  // The header search opens the product list filtered by name, model, SKU or brand.
+  const search = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = query.trim();
+    router.push(q ? `/admin/products?q=${encodeURIComponent(q)}` : "/admin/products");
+  };
 
   return (
     <>
@@ -24,14 +34,17 @@ export default function AdminHeader({ onToggleMobileSidebar }: AdminHeaderProps)
             <Menu size={20} />
           </button>
 
-          <div className="relative w-full max-w-xs">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+          <form role="search" onSubmit={search} className="relative w-full max-w-xs hidden sm:block">
+            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" aria-hidden="true" />
             <input
-              type="text"
-              placeholder="Search anything..."
+              type="search"
+              aria-label="Search products"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search products"
               className="w-full bg-slate-50 border border-slate-200/80 rounded-xl pl-10 pr-4 py-2 text-xs md:text-sm font-medium text-slate-800 placeholder-slate-400 focus:outline-hidden focus:border-red-500 focus:bg-white transition-colors"
             />
-          </div>
+          </form>
         </div>
 
         {/* Right: Notifications & Clickable Admin Profile */}

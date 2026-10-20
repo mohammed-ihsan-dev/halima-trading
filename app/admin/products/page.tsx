@@ -1,9 +1,10 @@
 "use client";
 
+import AdminProductThumb from "@/components/admin/AdminProductThumb";
 import React, { Suspense, useEffect, useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { FileUp, ImagePlus, Plus, ShieldCheck, Search, Filter, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
+import { FileUp, ImagePlus, Plus, ShieldCheck, Search, Edit2, Trash2, Check, X, AlertTriangle, Package } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
@@ -202,13 +203,14 @@ function AdminProductsList() {
 
       {/* Filter & Search Bar */}
       <div className="bg-white rounded-2xl border border-slate-200/80 p-4 md:p-5 shadow-2xs flex flex-col md:flex-row items-center gap-4 justify-between">
-        <div className="flex items-center gap-3 w-full md:w-auto flex-1">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full md:w-auto flex-1 min-w-0">
           {/* Category Dropdown Filter */}
-          <div className="relative">
+          <div className="relative w-full sm:w-auto">
             <select
+              aria-label="Filter by category"
               value={categories.find((c) => c.name.toLowerCase() === state.category.toLowerCase())?.name ?? (state.category || "all")}
               onChange={(e) => navigate({ category: e.target.value === "all" ? "" : e.target.value, page: 1 })}
-              className="bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm font-bold text-slate-800 focus:outline-hidden focus:border-red-500 cursor-pointer pr-8"
+              className="w-full sm:w-auto bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm font-bold text-slate-800 focus:outline-hidden focus:border-red-500 cursor-pointer pr-8"
             >
               <option value="all">All Categories</option>
               {categories.map((c) => (
@@ -220,10 +222,11 @@ function AdminProductsList() {
           </div>
 
           {/* Search Box */}
-          <div className="relative flex-1 max-w-md">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+          <div className="relative flex-1 min-w-0 w-full sm:max-w-md">
+            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" aria-hidden="true" />
             <input
-              type="text"
+              type="search"
+              aria-label="Search products"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search products by SKU, name, model..."
@@ -231,10 +234,6 @@ function AdminProductsList() {
             />
           </div>
         </div>
-
-        <button className="flex items-center gap-2 px-4 py-2.5 bg-slate-50 border border-slate-200/80 rounded-xl text-xs md:text-sm font-bold text-slate-700 hover:bg-slate-100 transition-colors w-full md:w-auto justify-center">
-          <Filter size={16} /> Filter
-        </button>
       </div>
 
       {/* Product Cards Grid (12 Items Per Page Max) */}
@@ -265,13 +264,7 @@ function AdminProductsList() {
               <div className="bg-white rounded-2xl border border-slate-200/80 shadow-2xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-all group h-full">
                 {/* Product Image Area */}
                 <div className="relative w-full h-48 bg-slate-50 border-b border-slate-100 p-4 flex items-center justify-center overflow-hidden">
-                  <img
-                    src={p.images?.[0] || "/featured/hisense-window-ac.png"}
-                    alt={p.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <AdminProductThumb images={p.images} alt={p.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute top-3 right-3">
                     {isInStock(p) ? (
                       <AdminBadge variant="success">In Stock</AdminBadge>
@@ -296,13 +289,6 @@ function AdminProductsList() {
                     <h3 className="font-extrabold text-slate-900 text-sm md:text-base leading-snug line-clamp-2">{p.name}</h3>
                     <div className="flex items-center justify-between mt-1 text-xs">
                       <span className="font-semibold text-slate-500">Brand: {p.brand}</span>
-                      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                        (p.deliveryRate || 0) === 0
-                          ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                          : "bg-slate-100 text-slate-700"
-                      }`}>
-                        {(p.deliveryRate || 0) === 0 ? "FREE DELIVERY" : `Delivery: AED ${p.deliveryRate}`}
-                      </span>
                     </div>
                   </div>
 

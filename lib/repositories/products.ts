@@ -1,6 +1,8 @@
 import { MongoBulkWriteError } from "mongodb";
+import { PLACEHOLDER_IMAGE_PATH as PLACEHOLDER_IMAGE_PATH_FOR_DISPLAY, realImages } from "@/lib/admin-gallery";
 import { getMongoDb, ensureMongoIndexes } from "@/lib/mongodb";
 import type { Product } from "@/data/products";
+import { isInStock } from "@/lib/pricing";
 import { PRICE_RANGES, searchTokens, type CatalogueState } from "@/lib/catalogue-query";
 
 export interface MongoProductDoc {
@@ -66,15 +68,24 @@ function formatProduct(doc: any): Product {
     specifications: rest.specifications || {},
     price: rest.price ?? null,
     priceLabel: rest.price ? `${rest.price} AED` : rest.priceLabel || "Contact for Price",
-    images:
-      Array.isArray(rest.images) && rest.images.length > 0
-        ? rest.images.filter((img: any) => typeof img === "string" && img.trim() !== "")
-        : ["/featured/hisense-window-ac.png"],
+    // Real images first; the placeholder only when there are none (it is never mixed in with real images).
+    images: realImages(rest.images).length > 0 ? realImages(rest.images) : [PLACEHOLDER_IMAGE_PATH_FOR_DISPLAY],
     inStock: rest.inStock !== undefined ? Boolean(rest.inStock) : true,
     stockCount: rest.stockCount !== undefined ? Number(rest.stockCount) : 12,
     featured: rest.featured !== undefined ? Boolean(rest.featured) : false,
     deliveryRate: rest.deliveryRate !== undefined && rest.deliveryRate !== null ? Number(rest.deliveryRate) : 0,
   };
+}
+
+/**
+ * What customers may see of a product: availability as a yes/no, never the internal stock
+ * quantity (nor the retired per-product delivery rate). Admin and checkout code use the full record.
+ */
+export function toPublicProduct(product: Product): Product {
+  const publicProduct: Product = { ...product, inStock: isInStock(product) };
+  delete publicProduct.stockCount;
+  delete publicProduct.deliveryRate;
+  return publicProduct;
 }
 
 /** Public listing by default; pass includeUnpublished only from authenticated admin code. */
@@ -110,7 +121,8 @@ export async function getMongoProducts(options: { includeUnpublished?: boolean }
       )
       .sort({ createdAt: -1 })
       .toArray();
-    return docs.map(formatProduct);
+    const products = docs.map(formatProduct);
+    return options.includeUnpublished ? products : products.map(toPublicProduct);
   } catch (error) {
     console.error("Error fetching products from MongoDB:", error);
     return [];
@@ -234,7 +246,7 @@ export async function getMongoFeaturedProducts(): Promise<Product[]> {
         }
       )
       .toArray();
-    return docs.map(formatProduct);
+    return docs.map(formatProduct).map(toPublicProduct);
   } catch (error) {
     console.error("Error fetching featured products from MongoDB:", error);
     return [];
@@ -282,7 +294,7 @@ export async function getMongoProductsByCategory(categoryNameOrSlug: string): Pr
         }
       )
       .toArray();
-    return docs.map(formatProduct);
+    return docs.map(formatProduct).map(toPublicProduct);
   } catch (error) {
     console.error(`Error fetching products by category (${categoryNameOrSlug}):`, error);
     return [];
@@ -382,7 +394,7 @@ export async function queryMongoProducts(
   const docs = currentPage === state.page ? firstTry : await fetchPage(currentPage);
 
   return {
-    products: docs.map(formatProduct),
+    products: options.includeUnpublished ? docs.map(formatProduct) : docs.map(formatProduct).map(toPublicProduct),
     currentPage,
     pageSize: state.pageSize,
     totalProducts,
@@ -409,7 +421,7 @@ export async function getMongoRelatedProducts(excludeId: string, limit = 4): Pro
       .sort({ createdAt: -1, _id: -1 })
       .limit(limit)
       .toArray();
-    return docs.map(formatProduct);
+    return docs.map(formatProduct).map(toPublicProduct);
   } catch (error) {
     console.error("Error fetching related products from MongoDB:", error);
     return [];

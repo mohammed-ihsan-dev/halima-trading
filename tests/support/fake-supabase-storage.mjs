@@ -6,7 +6,8 @@
 //   node tests/support/fake-supabase-storage.mjs <port> <secret>      (standalone)
 //   import { startFakeSupabase } from "./support/fake-supabase-storage.mjs"
 //
-// Test controls: GET /__objects (keys), POST /__fail-puts?count=N (next N uploads fail with 500).
+// Test controls: GET /__objects (keys), POST /__fail-puts?count=N (next N uploads fail with 500),
+// POST /__fail-public?count=N (next N public GETs answer 401 HTML, like a disabled public bucket URL).
 import { createServer } from "node:http";
 import { randomUUID } from "node:crypto";
 import { pathToFileURL } from "node:url";
@@ -15,6 +16,7 @@ export function startFakeSupabase({ port = 0, secret }) {
   const objects = new Map(); // "<bucket>/<key>" → { body, contentType, cacheControl, createdAt }
   const tokens = new Map(); // token → "<bucket>/<key>"
   let failPuts = 0;
+  let failPublic = 0;
 
   const cors = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "*", "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS" };
   const send = (res, status, body, headers = {}) => {
@@ -31,6 +33,7 @@ export function startFakeSupabase({ port = 0, secret }) {
     if (req.method === "OPTIONS") return send(res, 204, "");
     if (path === "/__objects") return send(res, 200, [...objects.keys()]);
     if (path === "/__fail-puts") { failPuts = Number(url.searchParams.get("count") ?? 1); return send(res, 200, { failPuts }); }
+    if (path === "/__fail-public") { failPublic = Number(url.searchParams.get("count") ?? 1); return send(res, 200, { failPublic }); }
 
     let m;
     if (req.method === "POST" && (m = path.match(/^\/storage\/v1\/object\/upload\/sign\/([^/]+)\/(.+)$/))) {
@@ -57,6 +60,7 @@ export function startFakeSupabase({ port = 0, secret }) {
       return send(res, 200, { name: m[2], size: o.body.length, content_type: o.contentType, metadata: { size: o.body.length, mimetype: o.contentType } });
     }
     if (req.method === "GET" && (m = path.match(/^\/storage\/v1\/object\/public\/([^/]+)\/(.+)$/))) {
+      if (failPublic > 0) { failPublic--; return send(res, 401, "<html><body>Unauthorized</body></html>", { "Content-Type": "text/html" }); }
       const o = objects.get(`${m[1]}/${m[2]}`);
       if (!o) return storageError(res, 404, "not_found", "Object not found");
       return send(res, 200, o.body, { "Content-Type": o.contentType, "Cache-Control": o.cacheControl });

@@ -69,3 +69,29 @@ test("a product created without images stores an empty list, not the placeholder
   assert.deepEqual(buildProductDocument({ name: "No image", sku: "NI-1" }).images, []);
   assert.deepEqual(buildProductDocument({ name: "With image", sku: "WI-1", images: [a] }).images, [a]);
 });
+
+test("one display resolver: first real image is primary; placeholder only when there is no real image", async () => {
+  const d = await import("@/lib/product-image-display");
+  assert.equal(d.primaryProductImage([a, b]), a);
+  assert.equal(d.primaryProductImage([g.PLACEHOLDER_IMAGE_PATH, a]), a, "a stored placeholder never hides a real image");
+  assert.equal(d.primaryProductImage(["", null, b]), b);
+  assert.equal(d.primaryProductImage([]), g.PLACEHOLDER_IMAGE_PATH);
+  assert.equal(d.primaryProductImage(undefined), g.PLACEHOLDER_IMAGE_PATH);
+  assert.deepEqual(d.productImageList([g.PLACEHOLDER_IMAGE_PATH, a, b]), [a, b]);
+  assert.equal(d.hasRealImage([g.PLACEHOLDER_IMAGE_PATH]), false);
+});
+
+test("public image fallback reports the failure once and never loops on the placeholder", async () => {
+  const d = await import("@/lib/product-image-display");
+  const warn = console.warn; const warnings = []; console.warn = (m) => warnings.push(m);
+  try {
+    const img = { dataset: {}, _src: a, getAttribute() { return this._src; }, set src(v) { this._src = v; }, get src() { return this._src; } };
+    const onError = d.fallbackToPlaceholder("test");
+    onError({ currentTarget: img });
+    assert.equal(img.src, g.PLACEHOLDER_IMAGE_PATH);
+    assert.equal(img.dataset.failed, a);
+    onError({ currentTarget: img }); // the placeholder itself failing must not loop or re-report
+    assert.equal(warnings.length, 1);
+    assert.match(warnings[0], /failed to load in test/);
+  } finally { console.warn = warn; }
+});

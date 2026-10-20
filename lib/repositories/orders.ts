@@ -1,6 +1,9 @@
 import { getMongoDb } from "@/lib/mongodb";
+import { primaryProductImage } from "@/lib/product-image-display";
 import { getMongoProductByIdOrSlug } from "@/lib/repositories/products";
 import { normalizePhoneNumber, extractPhoneDigits } from "@/lib/phone-utils";
+import { calculateOrderTotals } from "@/lib/order-pricing";
+import { randomBytes } from "node:crypto";
 
 export interface MongoOrderItem {
   productId: string;
@@ -328,6 +331,21 @@ export async function getMongoOrderById(idOrNumber: string): Promise<MongoOrderD
   }
 }
 
+/**
+ * The next order number (HT-10005, HT-10006, …), from an atomic counter so simultaneous orders
+ * never share a number. The counter starts above the numbers already issued.
+ */
+async function nextOrderNumber(): Promise<string> {
+  const db = await getMongoDb();
+  const issued = await db.collection("orders").countDocuments();
+  const counter = await db.collection<{ _id: string; seq: number }>("counters").findOneAndUpdate(
+    { _id: "orderNumber" },
+    [{ $set: { seq: { $add: [{ $max: [{ $ifNull: ["$seq", 0] }, 10004 + issued] }, 1] } } }],
+    { upsert: true, returnDocument: "after" }
+  );
+  return `HT-${counter?.seq}`;
+}
+
 /** A checkout request the customer can fix (unavailable product, price on request, bad quantity). */
 export class CheckoutValidationError extends Error {}
 
@@ -373,50 +391,63 @@ export async function createMongoOrder(orderInput: {
 
   const processedItems: MongoOrderItem[] = [];
   let calculatedSubtotal = 0;
-  let calculatedShipping = 0;
-
-  for (const itemInput of orderInput.items) {
-    const product = await getMongoProductByIdOrSlug(itemInput.productId);
-    if (!product) {
-      throw new CheckoutValidationError(`Product with ID ${itemInput.productId} is not available for purchase.`);
-    }
-    if (!product.inStock || (product.stockCount !== undefined && product.stockCount < itemInput.quantity)) {
-      throw new Error(`Insufficient stock for product: ${product.name}`);
-    }
-
-    const unitPrice = product.price || 0;
-    const itemTotal = unitPrice * itemInput.quantity;
-    calculatedSubtotal += itemTotal;
-
-    const itemDeliveryRate = product.deliveryRate !== undefined && product.deliveryRate !== null ? Number(product.deliveryRate) : 0;
-    calculatedShipping += itemDeliveryRate * itemInput.quantity;
-
-    processedItems.push({
-      productId: product.id,
-      sku: product.sku || `HT-${product.category.substring(0, 2).toUpperCase()}-001`,
-      name: product.name,
-      image: product.images?.[0] || "/featured/hisense-window-ac.png",
-      quantity: itemInput.quantity,
-      unitPrice,
-      total: itemTotal,
-    });
-
-    // Inventory safety: atomic decrement stock count
-    await db.collection("products").updateOne(
-      { id: product.id },
-      {
-        $inc: { stockCount: -itemInput.quantity },
-        $set: { inStock: (product.stockCount || 0) - itemInput.quantity > 0 },
-      }
+  const reserved: { id: string; quantity: number }[] = [];
+  const releaseReserved = () =>
+    Promise.all(
+      reserved.map((r) =>
+        db.collection("products").updateOne({ id: r.id }, [
+          { $set: { stockCount: { $add: ["$stockCount", r.quantity] } } },
+          { $set: { inStock: { $gt: ["$stockCount", 0] } } },
+        ])
+      )
     );
+
+  try {
+    for (const itemInput of orderInput.items) {
+      const product = await getMongoProductByIdOrSlug(itemInput.productId);
+      if (!product) {
+        throw new CheckoutValidationError(`Product with ID ${itemInput.productId} is not available for purchase.`);
+      }
+
+      // Reserve stock atomically: the decrement only happens if enough units are left at this
+      // moment, so two simultaneous orders can never both take the last unit.
+      const reservation = await db.collection("products").updateOne(
+        { id: product.id, inStock: { $ne: false }, stockCount: { $gte: itemInput.quantity } },
+        [
+          { $set: { stockCount: { $subtract: ["$stockCount", itemInput.quantity] } } },
+          { $set: { inStock: { $gt: ["$stockCount", 0] } } },
+        ]
+      );
+      if (reservation.modifiedCount !== 1) {
+        throw new CheckoutValidationError(`Sorry, "${product.name}" is not available in the requested quantity.`);
+      }
+      reserved.push({ id: product.id, quantity: itemInput.quantity });
+
+      const unitPrice = product.price || 0;
+      const itemTotal = unitPrice * itemInput.quantity;
+      calculatedSubtotal += itemTotal;
+
+      processedItems.push({
+        productId: product.id,
+        sku: product.sku || `HT-${product.category.substring(0, 2).toUpperCase()}-001`,
+        name: product.name,
+        image: primaryProductImage(product.images),
+        quantity: itemInput.quantity,
+        unitPrice,
+        total: itemTotal,
+      });
+    }
+  } catch (error) {
+    // A later item failed: give back the stock already reserved for earlier items.
+    await releaseReserved();
+    throw error;
   }
 
-  const vat = Math.round(calculatedSubtotal * 0.05 * 100) / 100; // 5% UAE VAT
-  const totalAmount = calculatedSubtotal + calculatedShipping + vat;
+  // One fixed delivery charge per order, computed here — never taken from the browser.
+  const { delivery: calculatedShipping, vat, total: totalAmount } = calculateOrderTotals(calculatedSubtotal);
 
-  const count = await db.collection("orders").countDocuments();
-  const orderNumber = `HT-${10005 + count}`;
-  const id = `ord-${Date.now()}`;
+  const orderNumber = await nextOrderNumber();
+  const id = `ord-${Date.now()}-${randomBytes(3).toString("hex")}`;
 
   const doc: MongoOrderDoc = {
     id,

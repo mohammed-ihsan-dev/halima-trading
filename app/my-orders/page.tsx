@@ -302,15 +302,15 @@ export default function MyOrdersPage() {
 
           <form onSubmit={handleSendOtp} className="space-y-4 pt-2">
             <div>
-              <label className="block text-xs font-extrabold text-zinc-800 mb-1.5">
+              <label htmlFor="lookup-mobile-number" className="block text-xs font-extrabold text-zinc-800 mb-1.5">
                 Mobile Number <span className="text-red-600">*</span>
               </label>
               <div className="relative">
                 <Phone className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400" />
-                <input
+                <input id="lookup-mobile-number"
                   type="tel"
                   required
-                  placeholder="+971 50 123 4567"
+                  placeholder="e.g. +971 50 123 4567"
                   value={phoneInput}
                   onChange={(e) => setPhoneInput(e.target.value)}
                   disabled={sendingOtp}
@@ -382,15 +382,15 @@ export default function MyOrdersPage() {
 
           <form onSubmit={handleVerifyOtp} className="space-y-4 pt-2">
             <div>
-              <label className="block text-xs font-extrabold text-zinc-800 mb-1.5 text-center">
+              <label htmlFor="lookup-otp" className="block text-xs font-extrabold text-zinc-800 mb-1.5 text-center">
                 Enter 6-Digit Verification Code
               </label>
-              <input
+              <input id="lookup-otp"
                 type="text"
                 maxLength={6}
                 required
                 autoFocus
-                placeholder="• • • • • •"
+                placeholder="6-digit code"
                 value={otpInput}
                 onChange={(e) => setOtpInput(e.target.value.replace(/[^\d]/g, ""))}
                 disabled={verifyingOtp}

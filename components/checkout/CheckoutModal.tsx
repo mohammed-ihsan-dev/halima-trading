@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { X, Lock, CreditCard, ShieldCheck, AlertCircle, Loader2 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/currency";
+import { calculateOrderTotals } from "@/lib/order-pricing";
 
 interface CheckoutModalProps {
   isOpen: boolean;
@@ -134,9 +135,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
     }
   };
 
-  const totalDelivery = items.reduce((sum, item) => sum + (item.deliveryRate || 0) * item.quantity, 0);
-  const estimatedVat = Math.round(total * 0.05 * 100) / 100;
-  const grandTotal = total + totalDelivery + estimatedVat;
+  const { delivery: totalDelivery, vat: estimatedVat, total: grandTotal } = calculateOrderTotals(total);
 
   return (
     <div
@@ -191,10 +190,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-full-name" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Full Name <span className="text-red-500">*</span>
                 </label>
-                <input
+                <input id="modal-full-name"
                   type="text"
                   name="customerName"
                   required
@@ -206,40 +205,40 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-email-address" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Email Address <span className="text-red-500">*</span>
                 </label>
-                <input
+                <input id="modal-email-address"
                   type="email"
                   name="customerEmail"
                   required
                   value={formData.customerEmail}
                   onChange={handleInputChange}
-                  placeholder="name@company.ae"
+                  placeholder="e.g. name@company.ae"
                   className="w-full px-3.5 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-phone-number" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Phone Number <span className="text-red-500">*</span>
                 </label>
-                <input
+                <input id="modal-phone-number"
                   type="tel"
                   name="customerPhone"
                   required
                   value={formData.customerPhone}
                   onChange={handleInputChange}
-                  placeholder="+971 50 123 4567"
+                  placeholder="e.g. +971 50 123 4567"
                   className="w-full px-3.5 py-2.5 rounded-lg border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-company-organization-optional" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Company / Organization <span className="text-zinc-400">(Optional)</span>
                 </label>
-                <input
+                <input id="modal-company-organization-optional"
                   type="text"
                   name="company"
                   value={formData.company}
@@ -258,10 +257,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="md:col-span-2">
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-street-address-area" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Street Address / Area <span className="text-red-500">*</span>
                 </label>
-                <input
+                <input id="modal-street-address-area"
                   type="text"
                   name="address"
                   required
@@ -273,10 +272,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-city" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   City <span className="text-red-500">*</span>
                 </label>
-                <input
+                <input id="modal-city"
                   type="text"
                   name="city"
                   required
@@ -288,10 +287,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-emirate" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Emirate <span className="text-red-500">*</span>
                 </label>
-                <select
+                <select id="modal-emirate"
                   name="emirate"
                   value={formData.emirate}
                   onChange={handleInputChange}
@@ -306,10 +305,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-country" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Country
                 </label>
-                <input
+                <input id="modal-country"
                   type="text"
                   name="country"
                   readOnly
@@ -319,10 +318,10 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                <label htmlFor="modal-delivery-notes-optional" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   Delivery Notes <span className="text-zinc-400">(Optional)</span>
                 </label>
-                <input
+                <input id="modal-delivery-notes-optional"
                   type="text"
                   name="customerNotes"
                   value={formData.customerNotes}
@@ -342,15 +341,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
             </div>
             <div className="flex justify-between text-xs text-zinc-600 dark:text-zinc-400">
               <span>Delivery Charge</span>
-              <span>
-                {totalDelivery === 0 ? (
-                  <strong className="text-emerald-600 dark:text-emerald-400 font-bold uppercase">
-                    FREE DELIVERY
-                  </strong>
-                ) : (
-                  formatCurrency(totalDelivery)
-                )}
-              </span>
+              <span>{formatCurrency(totalDelivery)}</span>
             </div>
             <div className="flex justify-between text-xs text-zinc-600 dark:text-zinc-400">
               <span>Estimated UAE VAT (5%)</span>

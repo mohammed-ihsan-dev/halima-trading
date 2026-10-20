@@ -215,6 +215,39 @@ test("the uploaded image renders on the public product page and in the admin pro
   assert.ok(await b.waitFor(`[...document.images].some((i) => i.getAttribute("src") === ${JSON.stringify(url)})`, 60000), "admin list thumbnail uses the stored image");
 });
 
+test("the same primary image URL is used by the Edit gallery, the admin list and the public product page", { skip }, async () => {
+  const [url] = (await doc("e2e-noimage")).images;
+  await openEdit("e2e-noimage");
+  assert.equal((await state()).main.src, url);
+  await b.goto(`${BASE}/admin/products`);
+  assert.ok(await b.waitFor(`[...document.querySelectorAll('img[data-thumb-state="image"]')].some((i) => i.getAttribute("src") === ${JSON.stringify(url)} && i.complete && i.naturalWidth > 0)`, 60000), "admin list shows and loads the same URL");
+  await b.goto(`${BASE}/shop/e2e-noimage`);
+  assert.ok(await b.waitFor(`[...document.images].some((i) => i.getAttribute("src") === ${JSON.stringify(url)} && i.complete && i.naturalWidth > 0)`, 60000), "public page shows and loads the same URL");
+});
+
+test("a stored image URL that does not load is shown as failed to admins (not as the product image) and as the placeholder to customers", { skip }, async () => {
+  const broken = PUBLIC + "products/e2e-broken/11111111-1111-4111-8111-111111111111.jpg"; // no such object → 404
+  await products.updateOne({ id: "e2e-noimage" }, { $set: { images: [broken] } });
+  await b.goto(`${BASE}/admin/products`);
+  assert.ok(await b.waitFor(`[...document.querySelectorAll('[data-thumb-state="failed"]')].some((el) => el.title === ${JSON.stringify(broken)})`, 60000), "admin list marks the URL as failed");
+  await openEdit("e2e-noimage");
+  assert.ok(await b.waitFor(`!!document.querySelector('[data-testid="gallery-main"] [data-image-failed]')`, 15000), "edit gallery marks it as failed");
+  await b.goto(`${BASE}/shop/e2e-noimage`);
+  assert.ok(await b.waitFor(`[...document.images].some((i) => i.dataset.failed === ${JSON.stringify(broken)} && i.getAttribute("src").includes("hisense-window-ac"))`, 60000), "customers see the placeholder; the failure is recorded");
+  await products.updateOne({ id: "e2e-noimage" }, { $set: { images: [] } });
+});
+
+test("an upload whose public URL is refused is not added to the product and shows why", { skip }, async () => {
+  await openEdit("e2e-noimage");
+  const before = (await doc("e2e-noimage")).images, objs = await objects();
+  await fetch(`${FAKE}/__fail-public?count=1`, { method: "POST" });
+  await b.setFiles("[data-gallery] input[type=file]", [files.jpg2]);
+  assert.ok(await b.waitFor(`/public URL answers HTTP 401/.test(document.querySelector('[data-testid="gallery-error"]')?.innerText || "")`, 30000));
+  assert.deepEqual((await doc("e2e-noimage")).images, before, "nothing saved");
+  assert.deepEqual(await objects(), objs, "the unusable object was removed");
+  assert.equal((await state()).placeholderShown, false);
+});
+
 test("Add Product: an uploaded image is saved with the new product, never the placeholder", { skip }, async () => {
   await b.goto(`${BASE}/admin/products/add`);
   assert.ok(await b.waitFor(`!!document.querySelector("[data-gallery] input[type=file]")`, 120000));
@@ -227,7 +260,6 @@ test("Add Product: an uploaded image is saved with the new product, never the pl
     set(byPlaceholder("e.g. AR18TYHYEWKN"), "E2E-ADD-1");
     set(byPlaceholder("e.g. 1899"), "1500");
     set(byPlaceholder("e.g. 12"), "4");
-    set(byPlaceholder("0 for Free Delivery"), "0");
     const category = document.querySelector("select[required]"); set(category, [...category.options].find((o) => o.value).value);
   })()`);
   await b.setFiles("[data-gallery] input[type=file]", [files.jpg]);

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense, cache } from "react";
 import { notFound } from "next/navigation";
 import { Check, ChevronRight, ShieldCheck, Truck } from "lucide-react";
-import { getMongoProductByIdOrSlug, getMongoRelatedProducts } from "@/lib/repositories/products";
+import { getMongoProductByIdOrSlug, getMongoRelatedProducts, toPublicProduct } from "@/lib/repositories/products";
 import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
 import ProductCard from "@/components/ProductCard";
 import ProductClientActions from "@/components/product/ProductClientActions";
@@ -11,6 +11,8 @@ import ProductGallery from "@/components/product/ProductGallery";
 import BackToCatalogueLink from "@/components/shop/BackToCatalogueLink";
 import { companyContact } from "@/lib/company-config";
 import { customerModel, displayModel } from "@/lib/product-model";
+import { formatCurrency } from "@/lib/currency";
+import { DELIVERY_FEE_AED } from "@/lib/order-pricing";
 
 // generateMetadata and the page both need the product: one database read per request.
 const getProduct = cache((slug: string) => getMongoProductByIdOrSlug(slug));
@@ -191,24 +193,18 @@ export default async function ProductPage({ params }: PageProps) {
           )}
           <div className="detail-price flex flex-col items-start gap-1">
             <span className={hasSellingPrice(product) ? undefined : "is-quote"}>{displayPrice(product)}</span>
-            {(product.deliveryRate || 0) === 0 ? (
-              <span className="font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-lg text-xs tracking-wide">
-                FREE DELIVERY
-              </span>
-            ) : (
-              <span className="font-bold text-slate-700 text-xs bg-slate-100 border border-slate-200 px-3 py-1 rounded-lg">
-                Delivery: AED {product.deliveryRate?.toFixed(2)}
-              </span>
-            )}
+            <span className="font-bold text-slate-700 text-xs bg-slate-100 border border-slate-200 px-3 py-1 rounded-lg">
+              Delivery: {formatCurrency(DELIVERY_FEE_AED)} per order
+            </span>
           </div>
 
           {/* Interactive Client Actions */}
-          <ProductClientActions product={product} />
+          <ProductClientActions product={toPublicProduct(product)} />
 
           <div className="service-notes">
             <span>
               <Truck size={18} />
-              <b>{(product.deliveryRate || 0) === 0 ? "FREE DELIVERY" : `Delivery: AED ${product.deliveryRate?.toFixed(2)}`}</b>
+              <b>Delivery: {formatCurrency(DELIVERY_FEE_AED)} per order</b>
               <small>All UAE Emirates</small>
             </span>
             <span>

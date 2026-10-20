@@ -1,5 +1,7 @@
 "use client";
 
+import { formatCurrency } from "@/lib/currency";
+import { DELIVERY_FEE_AED } from "@/lib/order-pricing";
 import React, { useState, useCallback } from "react";
 import ProductGalleryEditor, { type CommitResult } from "@/components/admin/ProductGalleryEditor";
 import { realImages } from "@/lib/admin-gallery";
@@ -25,7 +27,6 @@ export default function AdminAddProductPage() {
     brand: "",
     model: "",
     price: "",
-    deliveryRate: "0",
     currency: "AED",
     stockQuantity: "",
     description: "",
@@ -46,11 +47,6 @@ export default function AdminAddProductPage() {
     e.preventDefault();
     if (!formData.name.trim()) return;
 
-    const deliveryRateNum = parseFloat(formData.deliveryRate);
-    if (isNaN(deliveryRateNum) || deliveryRateNum < 0) {
-      setNotification("Error: Delivery rate must be a valid non-negative number.");
-      return;
-    }
 
     const stockNum = formData.stockQuantity ? parseInt(formData.stockQuantity, 10) : 0;
     if (galleryBusy) {
@@ -72,7 +68,6 @@ export default function AdminAddProductPage() {
           brand: formData.brand.trim() || "Halima Trading",
           model: formData.model.trim() || "N/A",
           price: formData.price ? parseFloat(formData.price) : 0,
-          deliveryRate: deliveryRateNum,
           currency: formData.currency || "AED",
           inStock: stockNum > 0,
           stockCount: stockNum,
@@ -255,31 +250,11 @@ export default function AdminAddProductPage() {
                 />
               </div>
 
-              {/* FEATURE 2 — PRODUCT-SPECIFIC DELIVERY RATE */}
               <div>
-                <label className="block text-xs md:text-sm font-extrabold text-slate-800 mb-1.5 flex items-center justify-between">
-                  <span>Delivery Rate (AED) *</span>
-                  {parseFloat(formData.deliveryRate) === 0 && (
-                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">
-                      FREE
-                    </span>
-                  )}
-                </label>
-                <div className="relative">
-                  <input
-                    type="number"
-                    required
-                    min="0"
-                    step="0.01"
-                    value={formData.deliveryRate}
-                    onChange={(e) => setFormData({ ...formData, deliveryRate: e.target.value })}
-                    placeholder="0 for Free Delivery"
-                    className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-900 font-black focus:outline-hidden focus:border-red-500 focus:bg-white transition-colors"
-                  />
-                </div>
-                <span className="text-[10px] text-slate-400 block font-medium mt-1">
-                  Enter 0 for FREE DELIVERY on customer site.
-                </span>
+                <span className="block text-xs md:text-sm font-extrabold text-slate-800 mb-1.5">Delivery</span>
+                <p className="bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-2.5 text-xs md:text-sm text-slate-700 font-bold">
+                  Fixed {formatCurrency(DELIVERY_FEE_AED)} per order, added at checkout
+                </p>
               </div>
             </div>
 

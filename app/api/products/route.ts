@@ -5,6 +5,7 @@ import {
   getMongoFeaturedProducts,
   getMongoProductsByCategory,
   queryMongoProducts,
+  toPublicProduct,
 } from "@/lib/repositories/products";
 import { parseCatalogueParams } from "@/lib/catalogue-query";
 
@@ -24,7 +25,7 @@ export async function GET(request: Request) {
         return NextResponse.json({ error: "Product not found" }, { status: 404 });
       }
       return NextResponse.json(
-        { success: true, product },
+        { success: true, product: toPublicProduct(product) },
         {
           headers: {
             "Cache-Control": "no-store, max-age=0, must-revalidate",

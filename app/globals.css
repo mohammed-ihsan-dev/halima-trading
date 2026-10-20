@@ -217,6 +217,34 @@ header nav a:hover {
   font-size: 13px
 }
 
+/* Header labels never wrap onto two lines; the full navigation needs about 1280px. */
+header nav a,
+.header-actions a,
+.header-actions .btn {
+  white-space: nowrap
+}
+
+@media(max-width:1279px) {
+  header nav {
+    display: none
+  }
+
+  .menu-btn {
+    display: block
+  }
+}
+
+@media(min-width:1280px) and (max-width:1439px) {
+  header nav {
+    gap: 18px
+  }
+
+  /* "My Orders" is already in the navigation: show only its icon here. */
+  .header-actions>a[aria-label="My Orders"] span {
+    display: none
+  }
+}
+
 .btn.full {
   width: 100%;
   margin-top: 10px
@@ -761,23 +789,6 @@ header nav a:hover {
 
 .product-card:hover .product-img img {
   transform: scale(1.04)
-}
-
-.product-img>button {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  border: 0;
-  background: #fff;
-  width: 36px;
-  height: 36px;
-  border-radius: 99px;
-  display: grid;
-  place-items: center
-}
-
-.product-img>button svg {
-  width: 17px
 }
 
 .stock {
@@ -1707,6 +1718,10 @@ footer {
   gap: 45px
 }
 
+.cart-page>* {
+  min-width: 0
+}
+
 .cart-row {
   display: grid;
   grid-template-columns: 100px 1fr 130px 120px 30px;
@@ -1960,6 +1975,11 @@ footer {
 }
 
 @media(max-width:1100px) {
+  /* Item rows and the 380px summary do not fit side by side below ~1100px: stack the summary. */
+  .cart-page {
+    grid-template-columns: 1fr
+  }
+
   header nav {
     display: none
   }

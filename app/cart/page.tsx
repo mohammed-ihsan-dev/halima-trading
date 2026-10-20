@@ -1,10 +1,12 @@
 "use client";
 
+import { fallbackToPlaceholder, primaryProductImage } from "@/lib/product-image-display";
 import { useState } from "react";
 import Link from "next/link";
 import { CreditCard, Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/currency";
+import { calculateOrderTotals } from "@/lib/order-pricing";
 import { CONTACT_FOR_PRICE, displayPrice, hasSellingPrice } from "@/lib/pricing";
 import { customerModel, displayModel } from "@/lib/product-model";
 import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
@@ -36,7 +38,7 @@ export default function Cart() {
             <div className="cart-table">
               {c.items.map((x) => (
                 <div className="cart-row" key={x.id}>
-                  <img src={x.images[0]} alt={x.name} />
+                  <img src={primaryProductImage(x.images)} alt={x.name} onError={fallbackToPlaceholder("cart")} />
                   <div>
                     <h3>{x.name}</h3>
                     <small>
@@ -80,11 +82,7 @@ export default function Cart() {
               </div>
               <div className="sum-total">
                 <span>Delivery Charge</span>
-                <b className="text-emerald-600 uppercase">
-                  {c.payableItems.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0) === 0
-                    ? "FREE DELIVERY"
-                    : formatCurrency(c.payableItems.reduce((sum, x) => sum + (x.deliveryRate || 0) * x.quantity, 0))}
-                </b>
+                <b>{c.payableItems.length ? formatCurrency(calculateOrderTotals(c.total).delivery) : "—"}</b>
               </div>
               <p>Final pricing and delivery calculation confirmed on secure checkout.</p>
 

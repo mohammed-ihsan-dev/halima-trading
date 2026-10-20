@@ -143,3 +143,14 @@ test("discard (upload compensation) never deletes a referenced image or anything
   const orphan = (await upload("SBT-1")).result.url;
   assert.deepEqual((await (await api("/api/admin/uploads/discard", { urls: [orphan] })).json()).deleted, [orphan]);
 });
+
+test("an upload whose public URL is refused (e.g. HTTP 401) is reported as failed, removed, and never returned as a URL", { skip }, async () => {
+  await fetch(`${FAKE}/__fail-public?count=1`, { method: "POST" });
+  const { key, result } = await upload("SBT-1");
+  assert.equal(result.ok, false);
+  assert.equal(result.url, undefined, "no URL is handed out");
+  assert.match(result.error, /public URL answers HTTP 401/);
+  assert.ok(!(await objects()).includes(key), "the unusable object was removed");
+  const ok = (await upload("SBT-1")).result;
+  assert.equal(ok.ok, true, "a normal upload afterwards still succeeds");
+});

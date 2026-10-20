@@ -1,5 +1,6 @@
 "use client";
 
+import { realImages } from "@/lib/admin-gallery";
 import type { Product } from "@/data/products";
 
 /**
@@ -108,8 +109,9 @@ export function triggerFlyToCartAnimation(
 
   // Fallback 2: locate product image or card on page matching product
   if (!sourceEl && product && typeof document !== "undefined") {
-    if (product.images?.[0]) {
-      const filename = product.images[0].split("/").pop();
+    const primary = realImages(product.images)[0];
+    if (primary) {
+      const filename = primary.split("/").pop();
       if (filename) {
         const imgEl = document.querySelector(`img[src*="${filename}"]`);
         if (imgEl) {
@@ -182,7 +184,7 @@ export function triggerFlyToCartAnimation(
   flyEl.style.justifyContent = "center";
 
   // Product Image or Fallback Red Product Shape
-  const imageUrl = product?.images?.[0];
+  const imageUrl = realImages(product?.images)[0];
   if (imageUrl) {
     const img = document.createElement("img");
     img.src = imageUrl;

@@ -47,18 +47,29 @@ test("the Edit page's admin lookup returns a draft that the public API hides", {
   assert.equal(admin.product.status, "draft");
 });
 
-test("a draft cannot be published without a price and a real image", { skip }, async () => {
+test("a draft needs a real image to be published; without a price it goes live as Contact for Price", { skip }, async () => {
   let res = await put({ id: "pub-draft", status: "active" });
   assert.equal(res.status, 400);
-  assert.match((await res.json()).error, /price above AED 0 and at least one product image/);
+  assert.match((await res.json()).error, /at least one product image/);
 
-  res = await put({ id: "pub-draft", status: "active", price: 1200, images: ["/featured/hisense-window-ac.png"] });
+  res = await put({ id: "pub-draft", status: "active", images: ["/featured/hisense-window-ac.png"] });
   assert.equal(res.status, 400, "the placeholder image does not count");
   assert.match((await res.json()).error, /image/);
+  assert.equal((await db.collection("products").findOne({ sku: "PUB-DRAFT" })).status, "draft", "a refused publish changes nothing");
 
-  res = await put({ id: "pub-draft", status: "active", price: 1200, images: ["https://cdn.example.com/fridge.jpg"] });
+  // A real image and still no price: published, priced on request, never given an invented price.
+  res = await put({ id: "pub-draft", status: "active", images: ["https://cdn.example.com/fridge.jpg"] });
   assert.equal(res.status, 200);
-  assert.equal((await db.collection("products").findOne({ sku: "PUB-DRAFT" })).status, "active");
+  const doc = await db.collection("products").findOne({ sku: "PUB-DRAFT" });
+  assert.equal(doc.status, "active");
+  assert.equal(doc.price, 0);
+  const pub = await (await fetch(`${BASE}/api/products?slug=pub-draft`)).json();
+  assert.equal(pub.product.price, 0);
+  assert.match((await (await fetch(`${BASE}/shop/pub-draft`)).text()).replaceAll("<!-- -->", ""), /Contact for Price/i);
+  const buy = await fetch(`${BASE}/api/checkout/create-session`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({
+    items: [{ productId: "pub-draft", quantity: 1 }], customerName: "T", customerEmail: "t@example.com", customerPhone: "+971501234567",
+    shippingAddress: { address: "x", city: "Abu Dhabi", emirate: "Abu Dhabi", country: "UAE" } }) });
+  assert.equal(buy.status, 400, "a price-on-request product cannot be bought online");
 });
 
 test("existing active products keep working: editing one with price 0 is not blocked", { skip }, async () => {

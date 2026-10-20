@@ -145,7 +145,7 @@ export default function AdminCategoriesPage() {
               required
               value={categorySlug}
               onChange={(e) => setCategorySlug(e.target.value)}
-              placeholder="air-conditioning"
+              placeholder="e.g. air-conditioning (lowercase, hyphens)"
               className="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono text-slate-700 focus:outline-hidden focus:border-red-500"
             />
           </div>

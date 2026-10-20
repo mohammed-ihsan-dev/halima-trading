@@ -275,7 +275,7 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
             <span className="text-xs font-bold">Click to Browse &amp; Select Photos</span>
             <span className="text-[10px] text-slate-400 font-medium">
               {config === null ? "Checking image storage…" : config.enabled
-                ? `Stored in image storage · JPG, PNG, WEBP, AVIF up to ${Math.round(config.maxBytes / 1024 / 1024)} MB · ${autoSave ? "saved to the product automatically" : "saved when you create the product"}`
+                ? `Stored in ${config.provider === "r2" ? "Cloudflare R2" : "Supabase Storage"} · JPG, PNG, WEBP, AVIF up to ${Math.round(config.maxBytes / 1024 / 1024)} MB · ${autoSave ? "saved to the product automatically" : "saved when you create the product"}`
                 : config.reason}
             </span>
           </label>
@@ -285,7 +285,7 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
         <div className="space-y-2">
           <label className="block text-xs font-bold text-slate-700">Image URL / Asset Path</label>
           <div className="flex gap-2">
-            <input type="text" value={urlInput} onChange={(e) => setUrlInput(e.target.value)} placeholder="https://… or /featured/…"
+            <input type="text" value={urlInput} onChange={(e) => setUrlInput(e.target.value)} placeholder="Paste an image URL (https://…)"
               className="flex-1 bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2 text-xs md:text-sm text-slate-900 font-medium focus:outline-hidden focus:border-red-500" />
             <button type="button" onClick={handleAddUrl} disabled={disabled || !urlInput.trim()} className="px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold disabled:opacity-50">Add</button>
           </div>

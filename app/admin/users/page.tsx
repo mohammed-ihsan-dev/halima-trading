@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Search, Filter, Eye, UserX, Trash2, Check, X, ShieldAlert, AlertTriangle } from "lucide-react";
+import { Search, Eye, UserX, Trash2, Check, X, ShieldAlert, AlertTriangle } from "lucide-react";
 import AdminBadge from "@/components/admin/AdminBadge";
 import AdminModal from "@/components/admin/AdminModal";
 import AdminPagination from "@/components/admin/AdminPagination";
@@ -156,10 +156,6 @@ export default function AdminUsersPage() {
             <option value="deleted">Deleted</option>
           </select>
         </div>
-
-        <button className="flex items-center gap-2 px-4 py-2.5 bg-slate-50 border border-slate-200/80 rounded-xl text-xs md:text-sm font-bold text-slate-700 hover:bg-slate-100 transition-colors w-full md:w-auto justify-center">
-          <Filter size={16} /> Filter
-        </button>
       </div>
 
       {/* Users Table */}

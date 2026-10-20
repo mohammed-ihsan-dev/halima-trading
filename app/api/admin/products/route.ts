@@ -162,23 +162,19 @@ export async function PUT(request: Request) {
       if (typeof updates.status !== "string" || !EDITABLE_STATUSES.has(updates.status)) {
         return NextResponse.json({ error: 'Status must be "active", "draft" or "inactive"' }, { status: 400 });
       }
-      // Publishing (anything → active) needs a real price and a real image. Products that are
-      // already active are not affected, so existing listings keep working as before.
+      // Publishing (anything → active) needs a real image. A product without a price is published
+      // as "Contact for Price": customers can request a quote, and checkout refuses it. Products that
+      // are already active are not affected, so existing listings keep working as before.
       if (updates.status === "active") {
         const facts = await getProductPublicationFacts(id);
         if (!facts) return NextResponse.json({ error: "Product not found" }, { status: 404 });
         if (facts.status !== "active") {
-          const price = updates.price !== undefined ? Number(updates.price) : facts.price;
           const realImages = Array.isArray(updates.images)
             ? updates.images.filter((i: string) => i !== PLACEHOLDER_IMAGE).length
             : facts.realImageCount;
-          const missing = [
-            !(typeof price === "number" && price > 0) && "a price above AED 0",
-            !(realImages > 0) && "at least one product image",
-          ].filter(Boolean);
-          if (missing.length) {
+          if (!(realImages > 0)) {
             return NextResponse.json(
-              { error: `This product cannot be published yet. Add ${missing.join(" and ")} first.` },
+              { error: "This product cannot be published yet. Add at least one product image first." },
               { status: 400 }
             );
           }
