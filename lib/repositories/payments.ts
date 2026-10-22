@@ -1,3 +1,4 @@
+import { randomBytes } from "node:crypto";
 import { getMongoDb } from "@/lib/mongodb";
 import { updateMongoOrderPaymentStatus } from "@/lib/repositories/orders";
 
@@ -122,6 +123,21 @@ export async function getMongoPayments(): Promise<MongoPaymentDoc[]> {
   }
 }
 
+/**
+ * The next payment number (PAY-2026-0090, …), from an atomic counter so simultaneous checkouts never
+ * collide on the unique paymentNumber index. The counter starts above the numbers already issued.
+ */
+async function nextPaymentNumber(): Promise<string> {
+  const db = await getMongoDb();
+  const issued = await db.collection("payments").countDocuments();
+  const counter = await db.collection<{ _id: string; seq: number }>("counters").findOneAndUpdate(
+    { _id: "paymentNumber" },
+    [{ $set: { seq: { $add: [{ $max: [{ $ifNull: ["$seq", 0] }, 89 + issued] }, 1] } } }],
+    { upsert: true, returnDocument: "after" }
+  );
+  return `PAY-2026-${String(counter?.seq).padStart(4, "0")}`;
+}
+
 export async function createMongoPayment(data: {
   orderId: string;
   orderNumber: string;
@@ -137,9 +153,8 @@ export async function createMongoPayment(data: {
   await ensurePaymentsSeeded();
   const db = await getMongoDb();
 
-  const count = await db.collection("payments").countDocuments();
-  const paymentNumber = `PAY-2026-${String(90 + count).padStart(4, "0")}`;
-  const id = `pay-${Date.now()}`;
+  const paymentNumber = await nextPaymentNumber();
+  const id = `pay-${Date.now()}-${randomBytes(3).toString("hex")}`;
 
   const doc: MongoPaymentDoc = {
     id,
