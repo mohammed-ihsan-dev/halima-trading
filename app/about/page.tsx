@@ -33,7 +33,7 @@ export default function About() {
       <section className="stats">
         {[
           ["1991", "Established"],
-          ["34+", "Years of excellence"],
+          ["35+", "Years of excellence"],
           ["30+", "Trusted brands"],
           ["UAE-wide", "Product solutions"],
         ].map((x) => (

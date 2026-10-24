@@ -27,5 +27,5 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
       <link rel="apple-touch-icon" href="/favicon.jpeg" />
     </head>
     <body className={manrope.variable}><CartProvider><Header/><main>{children}</main><Footer/><FloatingContacts/><MobileBottomNav/><ScrollAnimations/></CartProvider>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness","name":"Halima Trading L.L.C.","foundingDate":"1991","telephone":"+971 56 568 5090","email":"Halimatradingest@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Al Hamra Plaza Hotel Building, Electra Street","addressLocality":"Abu Dhabi","addressCountry":"AE"}})}}/></body></html>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness","name":"Halima Trading L.L.C.","foundingDate":"1991","telephone":"+971 56 568 5090","email":"Halimatradingest@gmail.com","address":{"@type":"PostalAddress","streetAddress":`${companyContact.building}, ${companyContact.street}`,"addressLocality":companyContact.city,"addressCountry":"AE"}})}}/></body></html>
 }

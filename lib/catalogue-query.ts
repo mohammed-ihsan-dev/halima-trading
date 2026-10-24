@@ -110,6 +110,57 @@ export function withReturnPath(href: string, returnPath: string | null | undefin
 /** Splits a search query into lower-cased words; every word must match some listing field. */
 export const searchTokens = (q: string) => q.toLowerCase().split(/\s+/).filter(Boolean).slice(0, 8);
 
+// Punctuation and spacing that may appear inside a stored word: "HW80-BP12929", "hw80bp12929" and
+// "HW80 BP12929" all match, as do "supergeneral" / "Super General" and "8kg" / "8 Kg".
+const SEPARATORS = "[\\s\\-/._(),+&'’:]*";
+const escapeRegExpChar = (c: string) => c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const loosePattern = (word: string) => [...word].map(escapeRegExpChar).join(SEPARATORS);
+/** Only letters and digits count; everything else in a query word is ignored. */
+const coreOf = (word: string) => word.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+
+/** Everyday words customers use for what product names call something else. */
+const SYNONYMS: Record<string, string[]> = {
+  fridge: ["fridge", "refrigerator"],
+  refrigerator: ["refrigerator", "fridge"],
+  ac: ["ac", "aircondition", "aircon"],
+  aircon: ["aircondition", "aircon"],
+  tv: ["tv", "television"],
+  television: ["television", "tv"],
+  washer: ["washer", "washingmachine"],
+};
+
+/**
+ * One regular-expression source per query word (at most 8); a product matches when every word
+ * matches one of its listing fields. Plurals match the singular ("machines" → "machine"), a few
+ * synonyms are understood, and one- or two-letter words ("ac", "lg") match whole words only,
+ * so "ac" does not match "black". Case-insensitive matching is up to the caller.
+ */
+export function searchWordPatterns(q: string): string[] {
+  const patterns: string[] = [];
+  for (const token of q.split(/\s+/)) {
+    let core = coreOf(token);
+    if (!core) continue;
+    const alphabetic = /^\p{L}+$/u.test(core);
+    if (alphabetic && core.length > 3 && core.endsWith("s") && !core.endsWith("ss")) core = core.slice(0, -1);
+    const alternatives = (alphabetic && SYNONYMS[core]) || [core];
+    const sources = alternatives.map((word) =>
+      alphabetic && word.length <= 2 ? `(^|[^a-z0-9])${loosePattern(word)}([^a-z0-9]|$)` : loosePattern(word)
+    );
+    patterns.push(sources.length === 1 ? sources[0] : `(${sources.join("|")})`);
+    if (patterns.length === 8) break;
+  }
+  return patterns;
+}
+
+/**
+ * The whole query as one loose pattern, used to rank exact model/SKU matches first
+ * ("hw80bp12929" ranks HW80-BP12929 above HW80-BP12929S6). Null for very short queries.
+ */
+export function searchRankPattern(q: string): string | null {
+  const core = coreOf(q);
+  return core.length >= 3 ? loosePattern(core) : null;
+}
+
 /** Page numbers with gaps, e.g. 1 … 6 7 8 … 31 — the same pattern as the admin pagination. */
 export function pageNumbers(currentPage: number, totalPages: number): (number | "gap")[] {
   if (totalPages <= 7) return Array.from({ length: totalPages }, (_, i) => i + 1);

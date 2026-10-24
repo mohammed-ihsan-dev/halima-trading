@@ -40,17 +40,26 @@ export default function ShopClientView({ page, state, categoryOptions }: ShopCli
     startTransition(() => router.push(href, { scroll: false }));
   };
 
-  useEffect(() => {
-    const q = qInput.trim();
+  const submitSearch = (value: string) => {
+    const q = value.trim();
     if (q === state.q) return;
-    const timer = setTimeout(() => {
-      setLastSubmittedQ(q);
-      // A new search starts at page 1; replace, so each keystroke is not a history entry.
-      const href = catalogueHref("/shop", { ...state, q, page: 1 });
-      startTransition(() => router.replace(href, { scroll: false }));
-    }, SEARCH_DEBOUNCE_MS);
+    setLastSubmittedQ(q);
+    // A new search starts at page 1; replace, so each keystroke is not a history entry.
+    const href = catalogueHref("/shop", { ...state, q, page: 1 });
+    startTransition(() => router.replace(href, { scroll: false }));
+  };
+
+  useEffect(() => {
+    if (qInput.trim() === state.q) return;
+    const timer = setTimeout(() => submitSearch(qInput), SEARCH_DEBOUNCE_MS);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- submitSearch only reads the same state and router
   }, [qInput, state, router]);
+
+  // The header's search icon links to /shop#shop-search: put the cursor in the search box.
+  useEffect(() => {
+    if (window.location.hash === "#shop-search") document.getElementById("shop-search")?.focus();
+  }, []);
 
   const clearFilters = () => {
     setQInput("");
@@ -75,8 +84,14 @@ export default function ShopClientView({ page, state, categoryOptions }: ShopCli
           <div className="search-box">
             <Search size={16} />
             <input
+              id="shop-search"
+              type="search"
+              enterKeyHint="search"
+              autoComplete="off"
               value={qInput}
               onChange={(e) => setQInput(e.target.value)}
+              // Enter (or the phone keyboard's Search key) searches at once instead of after the pause.
+              onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); submitSearch(qInput); } }}
               placeholder="Name, brand, model or SKU"
               maxLength={100}
             />

@@ -32,7 +32,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     }));
 
-    const categoryRoutes: MetadataRoute.Sitemap = categories.map((c) => ({
+    const withProducts = new Set(products.map((p) => p.category.toLowerCase()));
+    const categoryRoutes: MetadataRoute.Sitemap = categories.filter((c) => withProducts.has(c.name.toLowerCase())).map((c) => ({
       url: `${baseUrl}/shop?category=${encodeURIComponent(c.name)}`,
       lastModified: new Date(),
       changeFrequency: "weekly",

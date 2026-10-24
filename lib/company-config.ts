@@ -15,16 +15,18 @@ export const companyContact = {
 
   // Single Source of Truth for Location
   // Update this string when the final client-provided location is received
-  location: "Al Hamra Plaza Hotel Building, Electra Street, Abu Dhabi, UAE",
-  building: "Al Hamra Plaza Hotel Building",
-  street: "Electra Street",
+  location: "Zayed 2nd Street (Electra Road), Al Danah - Zone 1, Abu Dhabi, United Arab Emirates",
+  building: "Zayed 2nd Street (Electra Road)",
+  street: "Al Danah - Zone 1",
   city: "Abu Dhabi",
-  country: "UAE",
-  googleMapsUrl: "https://maps.google.com/?q=Al+Hamra+Plaza+Hotel+Building+Electra+Street+Abu+Dhabi",
+  country: "United Arab Emirates",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Zayed+2nd+Street+Electra+Road+Al+Danah+Zone+1+Abu+Dhabi",
 
   // Communication Details
   phone: "+971 56 568 5090",
   phoneRaw: "+971565685090",
+  landline: "+971 2 672 5299",
+  landlineRaw: "+97126725299",
   whatsapp: "+971 56 568 5090",
   whatsappRaw: "971565685090",
   email: "Halimatradingest@gmail.com",

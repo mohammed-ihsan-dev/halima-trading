@@ -28,7 +28,7 @@ export default async function Home() {
         </div>
         <HeroProductShowcase />
         <div className="trust-row">
-          <span><b>1991</b> Established</span><span><b>34+</b> Years of excellence</span><span><b>30+</b> Trusted brands</span>
+          <span><b>1991</b> Established</span><span><b>35+</b> Years of excellence</span><span><b>30+</b> Trusted brands</span>
         </div>
       </section>
 
@@ -61,7 +61,7 @@ export default async function Home() {
       <section className="section">
         <div className="section-head"><div><span className="eyebrow">Why Halima</span><h2>Confidence with every order</h2></div></div>
         <div className="benefit-grid">
-          {[[ShieldCheck,"34+ years of experience"],[CheckCircle2,"Premium global brands"],[Building2,"Corporate & bulk supply"],[Truck,"Reliable UAE delivery"],[Headphones,"Dedicated after-sales support"]].map(([Icon,label]:any)=><div className="benefit" key={label}><Icon/><b>{label}</b><p>Professional guidance and responsive support from enquiry to delivery.</p></div>)}
+          {[[ShieldCheck,"35+ years of experience"],[CheckCircle2,"Premium global brands"],[Building2,"Corporate & bulk supply"],[Truck,"Reliable UAE delivery"],[Headphones,"Dedicated after-sales support"]].map(([Icon,label]:any)=><div className="benefit" key={label}><Icon/><b>{label}</b><p>Professional guidance and responsive support from enquiry to delivery.</p></div>)}
         </div>
       </section>
 

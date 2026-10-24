@@ -26,14 +26,14 @@ export default async function Categories() {
       </section>
       <section className="section">
         <div className="category-grid large-grid">
-          {categories.map((c, i) => {
-            const countToDisplay = products.filter(
-              (p) => p.category.toLowerCase() === c.name.toLowerCase()
-            ).length;
-
+          {categories
+            .map((c) => ({ ...c, countToDisplay: products.filter((p) => p.category.toLowerCase() === c.name.toLowerCase()).length }))
+            // Categories without published products are not shown; they appear once products are added.
+            .filter((c) => c.countToDisplay > 0)
+            .map(({ countToDisplay, ...c }, i) => {
             return (
-              <Link className="category-card" href={`/shop?category=${c.name}`} key={c.name}>
-                <span className="cat-num">0{i + 1}</span>
+              <Link className="category-card" href={`/shop?category=${encodeURIComponent(c.name)}`} key={c.name}>
+                <span className="cat-num">{String(i + 1).padStart(2, "0")}</span>
                 <div className="cat-icon">{c.icon}</div>
                 <h3>{c.name}</h3>
                 <p>{c.description}</p>

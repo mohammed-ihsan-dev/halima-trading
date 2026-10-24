@@ -3,7 +3,7 @@ import { PLACEHOLDER_IMAGE_PATH as PLACEHOLDER_IMAGE_PATH_FOR_DISPLAY, realImage
 import { getMongoDb, ensureMongoIndexes } from "@/lib/mongodb";
 import type { Product } from "@/data/products";
 import { isInStock } from "@/lib/pricing";
-import { PRICE_RANGES, searchTokens, type CatalogueState } from "@/lib/catalogue-query";
+import { PRICE_RANGES, searchRankPattern, searchWordPatterns, type CatalogueState } from "@/lib/catalogue-query";
 
 export interface MongoProductDoc {
   _id?: any;
@@ -342,11 +342,15 @@ export async function queryMongoProducts(
       ],
     });
   }
-  // Each word must appear in the name, brand, model or SKU (the fields the old in-browser search used).
-  for (const token of searchTokens(state.q)) {
-    const re = new RegExp(escapeRegExp(token), "i");
-    and.push({ $or: [{ name: re }, { brand: re }, { model: re }, { sku: re }] });
+  // Each word must appear in the name, brand, model, SKU, category or subcategory. Matching ignores
+  // punctuation and spacing inside words and understands plurals and a few synonyms (searchWordPatterns).
+  const wordPatterns = searchWordPatterns(state.q);
+  for (const pattern of wordPatterns) {
+    const re = new RegExp(pattern, "i");
+    and.push({ $or: ["name", "brand", "model", "sku", "category", "subcategory"].map((field) => ({ [field]: re })) });
   }
+  // A search made only of punctuation ("(", "\\") has nothing to match: no results, not the whole catalogue.
+  if (state.q.trim() && wordPatterns.length === 0) and.push({ _id: { $exists: false } });
   // Same rule as checkout and isInStock() in lib/pricing.ts, on the values formatProduct produces:
   // a missing stockCount is no limit (shown as 12), but a stored null counts as 0.
   if (state.availability === "in-stock") {
@@ -363,8 +367,36 @@ export async function queryMongoProducts(
   }
   const filter = { $and: and };
 
+  // A search in the default order lists exact model/SKU matches first, then models starting with the query.
+  const rankPattern = state.sort === "newest" ? searchRankPattern(state.q) : null;
+  const matches = (field: string, regex: string) => ({ $regexMatch: { input: { $toString: { $ifNull: [`$${field}`, ""] } }, regex, options: "i" } });
+
   const fetchPage = (page: number) => {
     const skip = (page - 1) * state.pageSize;
+    if (rankPattern) {
+      return products
+        .aggregate([
+          { $match: filter },
+          {
+            $addFields: {
+              _rank: {
+                $switch: {
+                  branches: [
+                    { case: { $or: [matches("model", `^${rankPattern}$`), matches("sku", `^${rankPattern}$`)] }, then: 2 },
+                    { case: { $or: [matches("model", `^${rankPattern}`), matches("sku", `^${rankPattern}`)] }, then: 1 },
+                  ],
+                  default: 0,
+                },
+              },
+            },
+          },
+          { $sort: { _rank: -1, createdAt: -1, _id: -1 } },
+          { $skip: skip },
+          { $limit: state.pageSize },
+          { $project: { ...LISTING_PROJECTION, images: { $slice: [{ $cond: [{ $isArray: "$images" }, "$images", []] }, 1] } } },
+        ])
+        .toArray();
+    }
     if (state.sort === "low") {
       // Priced products first, cheapest first; "Contact for Price" (0 or no price) after them.
       return products

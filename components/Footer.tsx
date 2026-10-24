@@ -33,9 +33,9 @@ export default function Footer() {
         </div>
         <div>
           <h4>Products</h4>
-          {["Air Conditioning", "Refrigeration", "Laundry", "Kitchen Appliances", "Televisions"].map(
+          {["Air Conditioning", "Refrigeration", "Laundry Appliances", "Kitchen Appliances", "Cooking Appliances"].map(
             (x) => (
-              <Link href="/shop" key={x}>
+              <Link href={`/shop?category=${encodeURIComponent(x)}`} key={x}>
                 {x}
               </Link>
             )
@@ -62,6 +62,9 @@ export default function Footer() {
           </p>
           <a href={`tel:${companyContact.phoneRaw}`}>
             <Phone /> {companyContact.phone}
+          </a>
+          <a href={`tel:${companyContact.landlineRaw}`}>
+            <Phone /> {companyContact.landline}
           </a>
           <a href={`mailto:${companyContact.email}`}>
             <Mail /> {companyContact.email}

@@ -68,6 +68,13 @@ main {
   opacity: .8
 }
 
+/* The landline sits next to the mobile number; on narrow phones only the mobile number fits. */
+@media(max-width:450px) {
+  .announce-landline {
+    display: none
+  }
+}
+
 header {
   height: 100px;
   padding: 0 5%;

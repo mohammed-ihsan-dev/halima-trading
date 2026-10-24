@@ -98,3 +98,38 @@ test("stock rule matches checkout; admin price text never invents an amount", as
   assert.equal(adminPriceLabel({ price: 1499.5 }), "AED 1,499.5");
   for (const price of [0, null, undefined, -5, Number.NaN]) assert.equal(adminPriceLabel({ price }), "Contact for Price", String(price));
 });
+
+// A product matches when every query word matches one of its fields (here: one joined string).
+const finds = (query, text) => q.searchWordPatterns(query).every((p) => new RegExp(p, "i").test(text));
+
+test("model numbers match with or without hyphens, slashes and spaces", () => {
+  for (const query of ["HW80-BP12929", "HW80BP12929", "hw80 bp12929", "hw80bp12929("]) assert.ok(finds(query, "Haier 8kg Front Load Washing Machine HW80-BP12929"), query);
+  assert.ok(finds("HSU18", "Haier LPB Series HSU-18/24LPB03"));
+  assert.ok(finds("MFOMG36LESS", "Midea Gas Cooker MFO-MG36LE-SS"));
+  assert.ok(finds("GRI4PRO24C3", "Gree High Wall Split AC GR-I4 Pro-24C3-IND"));
+  assert.ok(finds("supergeneral", "Super General Chest Freezer"));
+  assert.ok(finds("lg 8kg", "LG 8 Kg Front Load Washer"));
+  assert.ok(!finds("HW80BP12930", "Haier HW80-BP12929"), "a different model does not match");
+});
+
+test("plurals, synonyms and whole-word short terms", () => {
+  assert.ok(finds("washing machines", "Haier 8kg Front Load Washing Machine"));
+  assert.ok(finds("chest freezers", "Midea 418L Chest Freezer"));
+  assert.ok(finds("midea fridge", "Midea 346L Top Mount Refrigerator"));
+  assert.ok(finds("refrigerators", "Haier 42L Single Door Mini Fridge"));
+  assert.ok(finds("ac", "Gree Split AC GR-I4"));
+  assert.ok(finds("aircon", "Super General Split Air Conditioner"));
+  assert.ok(finds("haier washer", "Haier 12kg Top Load Washing Machine"));
+  assert.ok(!finds("ac", "LG Black Refrigerator"), '"ac" must not match inside "black"');
+  assert.ok(finds("lg", "LG Washer") && !finds("lg", "Bulgarian Oven"), "two-letter brand names match whole words only");
+  assert.ok(finds("glass", "Black Glass T-Door Refrigerator"), "words ending in ss are not shortened");
+});
+
+test("search patterns are bounded and ignore punctuation-only words", () => {
+  assert.equal(q.searchWordPatterns("a b c d e f g h i j").length, 8);
+  assert.deepEqual(q.searchWordPatterns("  [  (  "), []);
+  assert.ok(q.searchWordPatterns("(.*)+ ^$").length <= 2, "regex characters never reach the pattern unescaped");
+  assert.equal(q.searchRankPattern("ac"), null);
+  assert.ok(new RegExp(`^${q.searchRankPattern("hw80bp12929")}$`, "i").test("HW80-BP12929"));
+  assert.ok(!new RegExp(`^${q.searchRankPattern("hw80bp12929")}$`, "i").test("HW80-BP12929S6"));
+});

@@ -149,6 +149,23 @@ test("customers see availability but never a stock quantity; delivery is AED 75 
   assert.doesNotMatch(await b.evaluate("document.body.innerText"), /FREE DELIVERY|stock\s*:?\s*\d/i);
 });
 
+test("shop search finds a model typed without punctuation, on Enter, and the header icon focuses the box", { skip }, async () => {
+  await setWidth(1280);
+  await settle(`${BASE}/shop`);
+  // Product 1's SKU is "<RUN>-1"; typed without the hyphen. (Unique per run, so the shop's cache never answers.)
+  await b.evaluate(`(() => { const i = document.querySelector("#shop-search");
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value").set.call(i, "${RUN}1");
+    i.dispatchEvent(new Event("input", { bubbles: true }));
+    i.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", bubbles: true })); })()`);
+  assert.ok(await b.waitFor(`location.search.includes("q=${RUN}1")`, 5000), "Enter searches without waiting for the pause");
+  assert.ok(await b.waitFor(`[...document.querySelectorAll("article")].some((a) => a.innerText.includes(${JSON.stringify(LONG.slice(0, 40))}))`, 20000), "the product is found");
+  assert.ok(await b.evaluate(`!!document.querySelector('.product-grid a[href*="/shop/${RUN}-1"]')`), "it is this run's product");
+  // The header search icon opens the shop with the cursor in the search box.
+  await settle(`${BASE}/`);
+  await b.evaluate(`document.querySelector('header a[aria-label="Search products"]').click()`);
+  assert.ok(await b.waitFor(`location.pathname === "/shop" && document.activeElement?.id === "shop-search"`, 20000));
+});
+
 test("product cards have no dead wishlist control", { skip }, async () => {
   for (const width of [375, 1280]) {
     await setWidth(width);

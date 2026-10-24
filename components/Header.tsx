@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import CartDrawer from "./CartDrawer";
 import Logo from "./Logo";
+import { companyContact } from "@/lib/company-config";
 
 const navItems = ["Home", "Shop", "Categories", "Brands", "My Orders", "About", "Contact", "Brochure"];
 const navHref = (item: string) =>
@@ -27,7 +28,8 @@ export default function Header() {
     <>
       <div className="announcement">
         <span>Premium Electronics & Home Appliances Across the UAE</span>
-        <a href="tel:+971565685090">Call: +971 56 568 5090</a>
+        <a href={`tel:${companyContact.phoneRaw}`}>Call: {companyContact.phone}</a>
+        <a href={`tel:${companyContact.landlineRaw}`} className="announce-landline">Tel: {companyContact.landline}</a>
         <span className="announce-alt">Bulk Orders, Corporate Supply & Hospitality Solutions Available</span>
       </div>
       <header>
@@ -54,7 +56,7 @@ export default function Header() {
           )}
         </nav>
         <div className="header-actions">
-          <Link href="/shop" aria-label="Search">
+          <Link href="/shop#shop-search" aria-label="Search products">
             <Search />
           </Link>
           <Link href="/my-orders" aria-label="My Orders" title="My Orders" className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 border border-zinc-300 dark:border-zinc-700 rounded-lg hover:border-zinc-400">

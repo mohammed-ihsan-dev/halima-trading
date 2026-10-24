@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { companyContact } from "@/lib/company-config";
 import { FileText, Eye, Printer, Download } from "lucide-react";
 import AdminTable, { Column } from "@/components/admin/AdminTable";
 import AdminBadge from "@/components/admin/AdminBadge";
@@ -168,8 +169,8 @@ export default function AdminInvoicesPage() {
                     HT
                   </div>
                   <h2 className="font-extrabold text-base text-slate-900">Halima Trading L.L.C.</h2>
-                  <p className="text-xs text-slate-500">Al Hamra Plaza Hotel Building, Electra Street</p>
-                  <p className="text-xs text-slate-500">Abu Dhabi, United Arab Emirates</p>
+                  <p className="text-xs text-slate-500">{companyContact.building}, {companyContact.street}</p>
+                  <p className="text-xs text-slate-500">{companyContact.city}, {companyContact.country}</p>
                   <p className="text-[11px] font-mono text-slate-400 mt-1">TRN / VAT: 100293848100003</p>
                 </div>
                 <div className="text-right">

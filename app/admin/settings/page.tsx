@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import { companyContact } from "@/lib/company-config";
 import { Settings, ShieldCheck, Database, Save, Check, KeyRound, Globe, Building2 } from "lucide-react";
 
 export default function AdminSettingsPage() {
   const [companyName, setCompanyName] = useState("Halima Trading L.L.C.");
-  const [address, setAddress] = useState("Al Hamra Plaza Hotel Building, Electra Street, Abu Dhabi, UAE");
+  const [address, setAddress] = useState(companyContact.location);
   const [phone, setPhone] = useState("+971 56 568 5090");
   const [email, setEmail] = useState("Halimatradingest@gmail.com");
   const [trn, setTrn] = useState("100293848100003");
