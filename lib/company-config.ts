@@ -25,7 +25,7 @@ export const companyContact = {
   // Communication Details
   phone: "+971 56 568 5090",
   phoneRaw: "+971565685090",
-  landline: "+971 2 672 5299",
+  landline: "026725299", // shown as written locally; landlineRaw keeps the dialable international form
   landlineRaw: "+97126725299",
   whatsapp: "+971 56 568 5090",
   whatsappRaw: "971565685090",
