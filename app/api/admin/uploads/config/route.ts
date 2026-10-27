@@ -15,7 +15,9 @@ export async function GET() {
   return NextResponse.json(
     {
       enabled: storage.ok,
-      ...(storage.ok ? { provider: storage.storage.provider } : {}),
+      // The public base URL is not a secret (it is part of every stored image URL); the gallery uses it to tell
+      // storage images from external links.
+      ...(storage.ok ? { provider: storage.storage.provider, publicBaseUrl: storage.storage.publicBaseUrl } : {}),
       maxBytes: IMAGE_UPLOAD.maxBytes,
       maxFilesPerRequest: IMAGE_UPLOAD.maxFilesPerRequest,
       allowedTypes: Object.keys(ALLOWED_IMAGE_TYPES),

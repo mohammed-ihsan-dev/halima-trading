@@ -9,6 +9,8 @@ export interface UploadConfig {
   maxBytes: number;
   allowedTypes: string[];
   provider?: "supabase" | "r2";
+  /** Public base URL of the image storage (not a secret): images under it are already stored. */
+  publicBaseUrl?: string;
   /** Why uploads are unavailable (shown to the admin) — variable names only, never values. */
   reason?: string;
 }
@@ -32,6 +34,7 @@ export async function fetchUploadConfig(): Promise<UploadConfig> {
     const invalid = Array.isArray(data.invalid) && data.invalid.length ? ` (invalid: ${data.invalid.join(", ")})` : "";
     return {
       enabled, maxBytes: data.maxBytes ?? 0, allowedTypes: data.allowedTypes ?? [], provider: data.provider,
+      publicBaseUrl: typeof data.publicBaseUrl === "string" ? data.publicBaseUrl : undefined,
       ...(enabled ? {} : { reason: `Image storage is not configured on this server${missing}${invalid}.` }),
     };
   } catch {
@@ -172,4 +175,26 @@ export async function uploadImagesToStorage(
     for (const u of uploaded) results[u.index].error = `${files[u.index].name}: ${(error as Error).message}`;
   }
   return finish();
+}
+
+export type ImportResult = { ok: true; url: string; reused: boolean; converted: boolean } | { ok: false; error: string };
+
+/**
+ * Asks the server to import an external image into image storage. The server downloads it (never the browser), so
+ * no credentials are involved here. Nothing is saved to the product by this call.
+ */
+export async function importImageFromUrl(url: string, productRef: string | undefined): Promise<ImportResult> {
+  try {
+    const res = await fetch("/api/admin/uploads/import-url", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url, productRef }),
+      signal: AbortSignal.timeout(UPLOAD_TIMEOUT_MS + 30_000),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.ok && typeof data.url === "string") return { ok: true, url: data.url, reused: !!data.reused, converted: !!data.converted };
+    return { ok: false, error: data.error || `The import failed (HTTP ${res.status}). Nothing was changed.` };
+  } catch {
+    return { ok: false, error: "Could not reach the server to import the image. Nothing was changed." };
+  }
 }

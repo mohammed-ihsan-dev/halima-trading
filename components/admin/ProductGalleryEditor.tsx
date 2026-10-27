@@ -2,7 +2,7 @@
 
 /**
  * Product gallery for Add / Edit Product: upload from the computer to image storage (Supabase or R2),
- * add by URL, set the primary image and remove images.
+ * import an external image URL into image storage (or add it as a plain link), set the primary image and remove images.
  *
  * `images` is the product's committed `images: string[]` (permanent URLs only — the display placeholder is
  * never an item). Every change goes through `onCommit`, which the Edit page persists immediately and the
@@ -11,9 +11,9 @@
  * "Retry saving" action, so it is never uploaded twice.
  */
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { AlertCircle, ImageIcon, Loader2, RefreshCw, Star, Trash2, Upload, X } from "lucide-react";
-import { checkImageFile, fetchUploadConfig, uploadImagesToStorage, type UploadConfig } from "@/lib/admin-image-upload";
-import { appendImages, makePrimary, permanentImageProblem, realImages, removeImage } from "@/lib/admin-gallery";
+import { AlertCircle, CheckCircle2, ImageIcon, Loader2, RefreshCw, Star, Trash2, Upload, X } from "lucide-react";
+import { checkImageFile, fetchUploadConfig, importImageFromUrl, uploadImagesToStorage, type UploadConfig } from "@/lib/admin-image-upload";
+import { appendImages, isExternalImage, makePrimary, permanentImageProblem, realImages, removeImage, replaceImageInPlace } from "@/lib/admin-gallery";
 
 export type CommitResult = { ok: true; images: string[] } | { ok: false; error: string };
 
@@ -54,8 +54,9 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
   const [pending, setPending] = useState<Pending[]>([]);
   const [unsaved, setUnsaved] = useState<string[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
-  const [busy, setBusy] = useState<"" | "uploading" | "saving">("");
+  const [busy, setBusy] = useState<"" | "uploading" | "importing" | "saving">("");
   const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
   const [uploadMethod, setUploadMethod] = useState<"file" | "url">("file");
   const [urlInput, setUrlInput] = useState("");
   const previews = useRef<string[]>([]);
@@ -143,11 +144,46 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
     if (await commit(next, url)) setUrlInput("");
   };
 
+  const discardUpload = (url: string) =>
+    fetch("/api/admin/uploads/discard", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ urls: [url] }) }).catch(() => undefined);
+
+  /** Server-side import into image storage. Returns null (with an error shown) when it fails; nothing is saved here. */
+  const runImport = async (src: string) => {
+    if (!config?.enabled) { setError(config?.reason ?? "Image storage is not available."); return null; }
+    setBusy("importing"); setError(""); setNotice("");
+    const result = await importImageFromUrl(src, productRef);
+    setBusy("");
+    if (!result.ok) { setError(`${result.error} The product was not changed.`); return null; }
+    return result;
+  };
+
+  const handleImportUrl = async () => {
+    const url = urlInput.trim();
+    if (!/^https:\/\//i.test(url)) { setError("Only https:// image URLs can be imported. Use \u201cAdd link only\u201d for site paths."); return; }
+    const result = await runImport(url);
+    if (!result) return;
+    if (images.includes(result.url)) { setUrlInput(""); setNotice("This image is already in the gallery (stored in Supabase)."); return; }
+    const { images: next } = appendImages(images, [result.url]);
+    if (await commit(next, result.url)) {
+      setUrlInput("");
+      setNotice(`Imported to Supabase${result.converted ? " (converted to JPEG)" : ""}${result.reused ? " (reused an identical stored copy)" : ""} and ${autoSave ? "saved to the product" : "added to the gallery"}.`);
+    } else if (!result.reused) discardUpload(result.url); // never linked: removed only if no product references it
+  };
+
+  /** Swaps a saved external image for a stored copy in the same position. The external link stays unless the save succeeds. */
+  const handleReplaceWithStored = async (src: string) => {
+    const result = await runImport(src);
+    if (!result) return;
+    const next = replaceImageInPlace(images, src, result.url);
+    if (await commit(next, result.url)) setNotice(`Replaced with the Supabase copy${autoSave ? " and saved" : ""}. The external link is no longer used.`);
+    else if (!result.reused) discardUpload(result.url);
+  };
+
   const handleRemove = async (item: Item) => {
     if (item.kind === "pending") { dropPending([item.key]); setError(""); return; }
     if (item.kind === "unsaved") {
       setUnsaved((prev) => prev.filter((u) => u !== item.src));
-      fetch("/api/admin/uploads/discard", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ urls: [item.src] }) }).catch(() => undefined);
+      discardUpload(item.src);
       return;
     }
     if (autoSave && !window.confirm("Remove this image from the product? This is saved immediately.")) return;
@@ -210,6 +246,13 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
                 <Star size={12} /> Set as Primary
               </button>
             ))}
+            {current.kind === "saved" && config?.enabled && isExternalImage(current.src, config.publicBaseUrl) && (
+              <button type="button" disabled={disabled} onClick={() => handleReplaceWithStored(current.src)} data-testid="gallery-replace-stored"
+                title="Download this external image on the server, store it in Supabase and use the stored copy instead"
+                className="absolute bottom-3 left-3 px-2.5 py-1 bg-slate-900/90 hover:bg-emerald-700 text-white rounded-lg text-[10px] font-bold flex items-center gap-1 shadow-md transition-all cursor-pointer disabled:opacity-50">
+                <Upload size={12} /> Replace with Supabase copy
+              </button>
+            )}
             {!(current.kind === "pending" && !current.error) && (
               <button type="button" disabled={disabled && current.kind === "saved"} onClick={() => handleRemove(current)} title={current.kind === "pending" ? "Dismiss" : "Remove Image"}
                 className="absolute top-3 right-3 p-2 bg-rose-600 text-white rounded-xl opacity-90 hover:opacity-100 transition-opacity shadow-md hover:bg-rose-700 cursor-pointer disabled:opacity-50">
@@ -258,10 +301,17 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
           <button type="button" onClick={() => setError("")} className="text-rose-500"><X size={14} /></button>
         </div>
       )}
+      {notice && !error && (
+        <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-start gap-2" data-testid="gallery-notice">
+          <CheckCircle2 size={16} className="shrink-0 text-emerald-600" />
+          <span className="flex-1">{notice}</span>
+          <button type="button" onClick={() => setNotice("")} className="text-emerald-600"><X size={14} /></button>
+        </div>
+      )}
       {busy && (
         <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 text-xs font-semibold flex items-center gap-2" data-testid="gallery-busy">
           <Loader2 size={16} className="animate-spin text-red-600 shrink-0" />
-          <span>{busy === "uploading" ? "Uploading product image(s) to storage…" : autoSave ? "Saving gallery to the product…" : "Updating gallery…"}</span>
+          <span>{busy === "uploading" ? "Uploading product image(s) to storage…" : busy === "importing" ? "Importing the image into Supabase Storage (downloading and checking it on the server)…" : autoSave ? "Saving gallery to the product…" : "Updating gallery…"}</span>
         </div>
       )}
 
@@ -287,8 +337,19 @@ export default function ProductGalleryEditor({ images: committed, onCommit, prod
           <div className="flex gap-2">
             <input type="text" value={urlInput} onChange={(e) => setUrlInput(e.target.value)} placeholder="Paste an image URL (https://…)"
               className="flex-1 bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2 text-xs md:text-sm text-slate-900 font-medium focus:outline-hidden focus:border-red-500" />
-            <button type="button" onClick={handleAddUrl} disabled={disabled || !urlInput.trim()} className="px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold disabled:opacity-50">Add</button>
           </div>
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={handleImportUrl} data-testid="gallery-import"
+              disabled={disabled || !urlInput.trim() || !config?.enabled || !/^https:\/\//i.test(urlInput.trim())}
+              className="px-4 py-2 bg-red-600 text-white rounded-xl text-xs font-bold disabled:opacity-50 flex items-center gap-1">
+              {busy === "importing" ? <Loader2 size={14} className="animate-spin" /> : <Upload size={14} />} Import to Supabase
+            </button>
+            <button type="button" onClick={handleAddUrl} disabled={disabled || !urlInput.trim()} className="px-4 py-2 bg-white border border-slate-300 text-slate-700 rounded-xl text-xs font-bold disabled:opacity-50">Add link only</button>
+          </div>
+          <p className="text-[10px] text-slate-400">
+            Import downloads the image on the server, checks it and stores it in Supabase, so the website no longer depends on the other site.
+            {" "}&ldquo;Add link only&rdquo; keeps pointing at the external website.
+          </p>
         </div>
       )}
     </div>

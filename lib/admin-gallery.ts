@@ -48,3 +48,21 @@ export function removeImage(current: readonly string[], url: string): { images: 
   const next = images.filter((img) => img !== url);
   return { images: next, select: next[Math.min(Math.max(at, 0), next.length - 1)] ?? null };
 }
+
+/**
+ * Replaces one image with another IN PLACE (same position, so a primary image stays primary). Every other image is
+ * kept. If `newUrl` is already in the gallery, the old entry is dropped instead of creating a duplicate. Unknown
+ * `oldUrl` → the list is returned unchanged.
+ */
+export function replaceImageInPlace(current: readonly string[], oldUrl: string, newUrl: string): string[] {
+  const images = realImages(current);
+  if (!images.includes(oldUrl) || oldUrl === newUrl) return images;
+  if (images.includes(newUrl)) return images.filter((img) => img !== oldUrl);
+  return images.map((img) => (img === oldUrl ? newUrl : img));
+}
+
+/** An https image hosted outside the configured image storage (a candidate for "Import to storage"). */
+export function isExternalImage(url: string, storageBaseUrl: string | null | undefined): boolean {
+  if (!/^https:\/\//i.test(url)) return false;
+  return !(storageBaseUrl && url.startsWith(`${storageBaseUrl}/`));
+}
