@@ -1,0 +1,84 @@
+{
+ "generatedAt": "2026-10-26T17:27:02.869Z",
+ "from": "reports/product-image-pilot/pilot-manifest.json",
+ "products": {
+  "p-1791540971000": [
+   {
+    "file": "catalogues-source/GRA820U-X(BS).jpg",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GRA820U-X(BS).jpg",
+    "matchEvidence": "filename equals model GRA820UXBS"
+   },
+   {
+    "file": "catalogues-source/Toshiba 750L Double Door Refrigerator GRA820U-X(BS) .jpg",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/Toshiba 750L Double Door Refrigerator GRA820U-X(BS) .jpg",
+    "matchEvidence": "filename contains model GRA820UXBS"
+   }
+  ],
+  "gree-gr-i2-pro-24c3-ind-gree": [
+   {
+    "file": "catalogues-source/GR-I2-PRO-24C3-IND-GREE.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GR-I2-PRO-24C3-IND-GREE.png",
+    "matchEvidence": "filename equals SKU GRI2PRO24C3INDGREE"
+   }
+  ],
+  "gree-gr-i2-pro-36c3-ind-gree": [
+   {
+    "file": "catalogues-source/Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter.png",
+    "matchEvidence": "filename contains model GRI2PRO36C3IND"
+   }
+  ],
+  "gree-gr-i4-pro-18c3-ind-gree": [
+   {
+    "file": "catalogues-source/GR-I4-PRO-18C3-IND-GREE.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GR-I4-PRO-18C3-IND-GREE.png",
+    "matchEvidence": "filename equals SKU GRI4PRO18C3INDGREE"
+   }
+  ],
+  "mazaya-gl-24wtc": [
+   {
+    "file": "catalogues-source/GL-24WTC.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GL-24WTC.png",
+    "matchEvidence": "filename equals SKU GL24WTC"
+   }
+  ],
+  "mazaya-gl-36wtc": [
+   {
+    "file": "catalogues-source/GL-36WTC.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GL-36WTC.png",
+    "matchEvidence": "filename equals SKU GL36WTC"
+   }
+  ],
+  "p-1791608233015": [
+   {
+    "file": "catalogues-source/HSU-18:24LPA03.jpeg",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/HSU-18:24LPA03.jpeg",
+    "matchEvidence": "filename equals model HSU1824LPA03; product record combines two models (shown as 'Model on request')"
+   }
+  ],
+  "gree-t4-matic-i60c3": [
+   {
+    "file": "catalogues-source/Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240:1:50.webp",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240:1:50.webp",
+    "matchEvidence": "filename contains SKU T4MATICI60C3"
+   }
+  ],
+  "gree-gr-isave-plus-p30h3-indgree": [
+   {
+    "file": "catalogues-source/Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter.png",
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter.png",
+    "matchEvidence": "filename contains model GRISAVEPLUSP30H3IND"
+   }
+  ]
+ }
+}

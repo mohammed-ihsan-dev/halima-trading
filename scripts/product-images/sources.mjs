@@ -1,3 +1,4 @@
+import path from "node:path";
 // Candidate-image sources. Each adapter looks a product up by its exact model on ONE known
 // official site (brand store / manufacturer site) and returns the source's own product record —
 // never search-engine results or thumbnails. A candidate is only produced when the source record
@@ -170,7 +171,13 @@ function icecatAdapter() {
 export const ICECAT = icecatAdapter();
 
 /* ------------------------------------------------------------------ Earlier reviewed work (local manifests) */
-export function localManifestCandidates(root) {
+/**
+ * Earlier reviewed manifests, supplier/brand catalogue extractions and operator-supplied local files.
+ * stateDir: the pipeline state directory (PIPELINE_STATE_DIR in rehearsals). localCandidatesFile: optional JSON
+ * { products: { <productId>: [{ file, sourceType?, sourcePage?, matchEvidence? }] } } of local image files to review;
+ * defaults to <stateDir>/local-candidates.json. Files are paths relative to the project root.
+ */
+export function localManifestCandidates(root, { stateDir = `${root}/work/product-image-pipeline`, localCandidatesFile = null } = {}) {
   const read = (p) => (existsSync(`${root}/${p}`) ? JSON.parse(readFileSync(`${root}/${p}`, "utf8")) : []);
   const map = new Map();
   const add = (id, c) => id && (map.get(id) ?? map.set(id, []).get(id)).push(c);
@@ -191,8 +198,8 @@ export function localManifestCandidates(root) {
   for (const r of read("work/catalogue-images/manifest.json"))
     if (r.decision === "REVIEW_REQUIRED") add(r.id, { adapter: "reviewed-manifest", official: false, sourceType: "supplier catalogue PDF", sourcePage: `${r.source} p.${r.page}`, matchEvidence: `REVIEW_REQUIRED: ${r.note || r.method || ""}`, decision: r.decision, images: [{ file: local(r.prepared) }] });
   // Exact-model pages in supplier catalogue PDFs (extracted image + visual review in supplier-review.json).
-  const sup = existsSync(`${root}/work/product-image-pipeline/supplier-candidates.json`) ? JSON.parse(readFileSync(`${root}/work/product-image-pipeline/supplier-candidates.json`, "utf8")) : {};
-  const rev = existsSync(`${root}/work/product-image-pipeline/supplier-review.json`) ? JSON.parse(readFileSync(`${root}/work/product-image-pipeline/supplier-review.json`, "utf8")) : {};
+  const sup = existsSync(`${stateDir}/supplier-candidates.json`) ? JSON.parse(readFileSync(`${stateDir}/supplier-candidates.json`, "utf8")) : {};
+  const rev = existsSync(`${stateDir}/supplier-review.json`) ? JSON.parse(readFileSync(`${stateDir}/supplier-review.json`, "utf8")) : {};
   for (const [id, x] of Object.entries(sup)) {
     if (!x.file) continue;
     const r = rev[id];
@@ -202,7 +209,7 @@ export function localManifestCandidates(root) {
       reviewNote: r?.note ?? null, images: [{ file: `${root}/${x.file}` }] });
   }
   // Brand catalogue PDFs processed by `pipeline.mjs catalogue` (exact model heading + layout association).
-  const catFile = `${root}/work/product-image-pipeline/catalogue-candidates.json`;
+  const catFile = `${stateDir}/catalogue-candidates.json`;
   const cat = existsSync(catFile) ? JSON.parse(readFileSync(catFile, "utf8")) : null;
   for (const [id, list] of Object.entries(cat?.products ?? {})) for (const x of list) {
     add(id, { adapter: "catalogue-pdf", official: false, sourceType: "brand catalogue PDF", sourcePage: `${cat.pdf} p.${x.page}`,
@@ -210,7 +217,15 @@ export function localManifestCandidates(root) {
       exactModel: x.identity === "EXACT_UNAMBIGUOUS", decision: x.identity === "SHARED_IMAGE" ? "FAMILY_IMAGE" : "PENDING_REVIEW", reviewNote: x.issues.join("; ") || null,
       catalogue: { pdf: cat.pdf, page: x.page, cropBox: x.cropBox, cropSource: x.cropSource, evidenceText: x.evidence.text, matchLevel: x.evidence.level, identity: x.identity, quality: x.quality,
         issues: x.issues, rowModels: x.rowModels, preview: x.preview, highlight: x.highlight, previewSha256: x.previewSha256, sourceSha256: x.sourceSha256, nativeLongestPx: x.nativeLongestPx },
-      images: [{ file: `${root}/work/product-image-pipeline/${x.extracted}` }] });
+      images: [{ file: `${stateDir}/${x.extracted}` }] });
+  }
+  // Operator-supplied local files (e.g. a reviewed pilot manifest). Never trusted beyond "a person must look at this".
+  const lcFile = localCandidatesFile ?? `${stateDir}/local-candidates.json`;
+  const lc = existsSync(lcFile) ? JSON.parse(readFileSync(lcFile, "utf8")) : null;
+  for (const [id, list] of Object.entries(lc?.products ?? {})) for (const x of list) {
+    if (!x?.file || typeof x.file !== "string") continue;
+    add(id, { adapter: "local-file", official: false, sourceType: x.sourceType ?? "local file", sourcePage: x.sourcePage ?? x.file,
+      matchEvidence: x.matchEvidence ?? "operator-supplied local file", decision: "PENDING_REVIEW", images: [{ file: path.resolve(root, x.file) }] });
   }
   return map;
 }

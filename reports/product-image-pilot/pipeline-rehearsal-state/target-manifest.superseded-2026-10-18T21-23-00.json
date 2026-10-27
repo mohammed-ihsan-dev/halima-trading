@@ -1,0 +1,805 @@
+{
+ "createdAt": "2026-10-18T21:18:57.630Z",
+ "auditedAt": "2026-10-18T20:35:08.950Z",
+ "count": 88,
+ "byClass": {
+  "NO_IMAGE": 77,
+  "PLACEHOLDER": 10,
+  "BROKEN": 1
+ },
+ "note": "Only these products may be searched with the image search provider.",
+ "products": [
+  {
+   "id": "p-1791532040999",
+   "brand": "AKAI",
+   "model": "ACMA-A24FSN",
+   "sku": "HT-AI-929",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791532324809",
+   "brand": "AKAI",
+   "model": "ACMA-M12T3R4 / ACMA-M18T3R4",
+   "sku": "HT-AI-412",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791539276164",
+   "brand": "Toshiba",
+   "model": "TD-T25BS110HWM(MG)",
+   "sku": "HT-LA-238",
+   "category": "Laundry Appliances",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791539983521",
+   "brand": "Toshiba",
+   "model": "MM-EG34P(BK)",
+   "sku": "HT-KI-409",
+   "category": "Kitchen Appliances",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791540971000",
+   "brand": "Toshiba",
+   "model": "GRA820U-X(BS)",
+   "sku": "HT-RE-199",
+   "category": "Refrigeration",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791607856183",
+   "brand": "Haier",
+   "model": "HSU-18LPA03/T2(T3&T4)",
+   "sku": "HT-AI-532",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791607987897",
+   "brand": "Haier",
+   "model": "HSU-18LPB03/R2(T3&T4)",
+   "sku": "HT-AI-488",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791608233015",
+   "brand": "Haier",
+   "model": "HSU-18/24LPA03",
+   "sku": "HT-AI-804",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "p-1791608314749",
+   "brand": "Haier",
+   "model": "HSU-18/24LPB03",
+   "sku": "HT-AI-253",
+   "category": "Air Conditioning",
+   "imageClass": "PLACEHOLDER",
+   "status": "active"
+  },
+  {
+   "id": "gree-t4-matic-i60c3",
+   "brand": "Gree",
+   "model": "T4 MATIC-i60C3",
+   "sku": "T4-MATIC-I60C3",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-t4-matic-t36c3",
+   "brand": "Gree",
+   "model": "T4 MATIC-T36C3",
+   "sku": "T4-MATIC-T36C3",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-t4-matic-t48c3",
+   "brand": "Gree",
+   "model": "T4 MATIC-T48C3",
+   "sku": "T4-MATIC-T48C3",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "indesit-ib-65b60ne",
+   "brand": "Indesit",
+   "model": "IB-65B60NE",
+   "sku": "IB-65B60NE",
+   "category": "Cooking Appliances",
+   "imageClass": "BROKEN",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-f4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-F4 MATIC-18C3-IND",
+   "sku": "GR-F4-MATIC-18C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i-airy32-12c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I Airy32-12C3-IND",
+   "sku": "GR-I-AIRY32-12C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i-airy32-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I Airy32-18C3-IND",
+   "sku": "GR-I-AIRY32-18C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i-airy32-24c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I Airy32-24C3-IND",
+   "sku": "GR-I-AIRY32-24C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i-airy32-30c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I Airy32-30C3-IND",
+   "sku": "GR-I-AIRY32-30C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i2-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-12C3-IND",
+   "sku": "GR-I2-PRO-12C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i2-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-18C3-IND",
+   "sku": "GR-I2-PRO-18C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i2-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-24C3-IND",
+   "sku": "GR-I2-PRO-24C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i2-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-30C3-IND",
+   "sku": "GR-I2-PRO-30C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i2-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-36C3-IND",
+   "sku": "GR-I2-PRO-36C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i4-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-12C3-IND",
+   "sku": "GR-I4-PRO-12C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i4-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-18C3-IND",
+   "sku": "GR-I4-PRO-18C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i4-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-24C3-IND",
+   "sku": "GR-I4-PRO-24C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i4-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-30C3-IND",
+   "sku": "GR-I4-PRO-30C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-i4-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-36C3-IND",
+   "sku": "GR-I4-PRO-36C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-isave-plus-p30h3-indgree",
+   "brand": "Gree",
+   "model": "GR-ISAVE PLUS-P30H3-IND",
+   "sku": "GR-ISAVE-PLUS-P30H3-INDGREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-p4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-P4 MATIC-18C3-IND",
+   "sku": "GR-P4-MATIC-18C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-p4-matic-24c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-P4 MATIC-24C3-IND",
+   "sku": "GR-P4-MATIC-24C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-p4-matic-30c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-P4 MATIC-30C3-IND",
+   "sku": "GR-P4-MATIC-30C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-t4-matic-i36c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-T4'matic-I36C3-IND",
+   "sku": "GR-T4MATIC-I36C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-t4-matic-i48c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-T4'matic-I48C3-IND",
+   "sku": "GR-T4MATIC-I48C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "gree-gr-t4-matic-n60c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-T4'matic-N60C3-IND",
+   "sku": "GR-T4MATIC-N60C3-IND-GREE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-1200ddswdlx",
+   "brand": "Mazaya",
+   "model": "GL-1200DDSWDLX",
+   "sku": "GL-1200DDSWDLX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-1400ddswdlx",
+   "brand": "Mazaya",
+   "model": "GL-1400DDSWDLX",
+   "sku": "GL-1400DDSWDLX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf350cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF350CGQ",
+   "sku": "GL-ICF350CGQ",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf350fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350FDC",
+   "sku": "GL-ICF350FDC",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf350sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350SDC",
+   "sku": "GL-ICF350SDC",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf360cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF360CGX",
+   "sku": "GL-ICF360CGX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf380fdx",
+   "brand": "Mazaya",
+   "model": "GL-ICF380FDX",
+   "sku": "GL-ICF380FDX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf400cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF400CGX",
+   "sku": "GL-ICF400CGX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf450cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF450CGQ",
+   "sku": "GL-ICF450CGQ",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf450cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF450CGX",
+   "sku": "GL-ICF450CGX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf450sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF450SDC",
+   "sku": "GL-ICF450SDC",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf460cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF460CGX",
+   "sku": "GL-ICF460CGX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf500fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF500FDC",
+   "sku": "GL-ICF500FDC",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-icf560fdx",
+   "brand": "Mazaya",
+   "model": "GL-ICF560FDX",
+   "sku": "GL-ICF560FDX",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-24wtc",
+   "brand": "Mazaya",
+   "model": "GL-24WTC",
+   "sku": "GL-24WTC",
+   "category": "Commercial Cooling",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-36wtc",
+   "brand": "Mazaya",
+   "model": "GL-36WTC",
+   "sku": "GL-36WTC",
+   "category": "Commercial Cooling",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "mazaya-gl-60wtc",
+   "brand": "Mazaya",
+   "model": "GL-60WTC",
+   "sku": "GL-60WTC",
+   "category": "Commercial Cooling",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "phoenix-ph1019",
+   "brand": "Phoenix",
+   "model": "PH1019",
+   "sku": "PH1019",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "phoenix-ph2019",
+   "brand": "Phoenix",
+   "model": "PH2019",
+   "sku": "PH2019",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "pro-general-prg18wac",
+   "brand": "Pro General",
+   "model": "PRG18WAC",
+   "sku": "PRG18WAC",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "pro-general-prg24wac",
+   "brand": "Pro General",
+   "model": "PRG24WAC",
+   "sku": "PRG24WAC",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "pro-general-prg18sac",
+   "brand": "Pro General",
+   "model": "PRG18SAC",
+   "sku": "PRG18SAC",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "pro-general-prg24sac",
+   "brand": "Pro General",
+   "model": "PRG24SAC",
+   "sku": "PRG24SAC",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dgc-665bsf",
+   "brand": "Daewoo",
+   "model": "DW-DGC-665BSF",
+   "sku": "DWDGC665BSF",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dgc-s965hdfp",
+   "brand": "Daewoo",
+   "model": "DW-DGC-S965HDFP",
+   "sku": "DWDGCS965HDFP",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dcc-s664hf",
+   "brand": "Daewoo",
+   "model": "DW-DCC-S664HF",
+   "sku": "DWDCCS664HF",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dcd-8s15p",
+   "brand": "Daewoo",
+   "model": "DW-DCD-8S15P",
+   "sku": "DWDCD8S15P",
+   "category": "Kitchen Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dcf-151d",
+   "brand": "Daewoo",
+   "model": "DW-DCF-151D",
+   "sku": "DWDCF151D",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dcf-221d",
+   "brand": "Daewoo",
+   "model": "DW-DCF-221D",
+   "sku": "DWDCF221D",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dw-t131wd",
+   "brand": "Daewoo",
+   "model": "DW-DW-T131WD",
+   "sku": "DWDWT131WD",
+   "category": "Laundry Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-dw-t201wd",
+   "brand": "Daewoo",
+   "model": "DW-DW-T201WD",
+   "sku": "DWDWT201WD",
+   "category": "Laundry Appliances",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-250vsn",
+   "brand": "Daewoo",
+   "model": "DW-FR-250VSN",
+   "sku": "DWFR250VSN",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-343s",
+   "brand": "Daewoo",
+   "model": "DW-FR-343S",
+   "sku": "DWFR343S",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-380vsn",
+   "brand": "Daewoo",
+   "model": "DW-FR-380VSN",
+   "sku": "DWFR380VSN",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-559vsin",
+   "brand": "Daewoo",
+   "model": "DW-FR-559VSIN",
+   "sku": "DWFR559VSIN",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-624vsin",
+   "brand": "Daewoo",
+   "model": "DW-FR-624VSIN",
+   "sku": "DWFR624VSIN",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "daewoo-dw-fr-902vsin",
+   "brand": "Daewoo",
+   "model": "DW-FR-902VSIN",
+   "sku": "DWFR902VSIN",
+   "category": "Refrigeration",
+   "imageClass": "PLACEHOLDER",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sga18ae",
+   "brand": "Super General",
+   "model": "SGA18AE",
+   "sku": "SGA18AE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sga24ae",
+   "brand": "Super General",
+   "model": "SGA24AE",
+   "sku": "SGA24AE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sga121ae",
+   "brand": "Super General",
+   "model": "SGA121AE",
+   "sku": "SGA121AE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs195fe",
+   "brand": "Super General",
+   "model": "SGS195FE",
+   "sku": "SGS195FE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs245fe",
+   "brand": "Super General",
+   "model": "SGS245FE",
+   "sku": "SGS245FE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs366ae",
+   "brand": "Super General",
+   "model": "SGS366AE",
+   "sku": "SGS366AE",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs191cn",
+   "brand": "Super General",
+   "model": "SGS191CN",
+   "sku": "SGS191CN",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs260cn",
+   "brand": "Super General",
+   "model": "SGS260CN",
+   "sku": "SGS260CN",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgs370cn",
+   "brand": "Super General",
+   "model": "SGS370CN",
+   "sku": "SGS370CN",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgp124t3",
+   "brand": "Super General",
+   "model": "SGP124T3",
+   "sku": "SGP124T3",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgp184t3",
+   "brand": "Super General",
+   "model": "SGP184T3",
+   "sku": "SGP184T3",
+   "category": "Air Conditioning",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgr365ie",
+   "brand": "Super General",
+   "model": "SGR365IE",
+   "sku": "SGR365IE",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgr515ie",
+   "brand": "Super General",
+   "model": "SGR515IE",
+   "sku": "SGR515IE",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgf644he",
+   "brand": "Super General",
+   "model": "SGF644HE",
+   "sku": "SGF644HE",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgf444he",
+   "brand": "Super General",
+   "model": "SGF444HE",
+   "sku": "SGF444HE",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  },
+  {
+   "id": "super-general-sgf444hmei",
+   "brand": "Super General",
+   "model": "SGF444HMEI",
+   "sku": "SGF444HMEI",
+   "category": "Refrigeration",
+   "imageClass": "NO_IMAGE",
+   "status": "draft"
+  }
+ ]
+}

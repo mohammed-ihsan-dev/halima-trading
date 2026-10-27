@@ -20,6 +20,11 @@
  *   cleanup   list (or with --execute delete) uploaded objects that no product references
  *   report    summary of every stage and what is left
  *
+ * Replacement review (opt-in): --include-classes=EXTERNAL_NEEDS_VERIFICATION,SUPABASE_UNREVIEWED,VALID_VERIFIED with --only=… or
+ * --pilot lets explicitly named products whose only usable images are Google thumbnails or undersized enter pilot,
+ * discover, catalogue, review-import and dry-run. An admin-approved replacement removes exactly those references
+ * (recorded on the review candidate as `replaces`) in the same conditional write that adds the new image.
+ *
  * Discovery sources (--source=local,brand,icecat,search): reviewed manifests, official-site adapters, Open Icecat
  * and a configurable image search provider (IMAGE_SEARCH_PROVIDER / SERPAPI_API_KEY). Search results are leads only.
  * An image is uploaded only after an admin approved it in the review queue (exact model + recorded authorization)
@@ -43,6 +48,7 @@ import { findSearchCandidates, searchConfig, SOURCE_PRIORITY } from "./search.mj
 import { assessmentFlags, createVisionProvider } from "./vision.mjs";
 import { budgetDecision, checkAccount, openCache, openLedger, requestLimit } from "./serpapi-budget.mjs";
 import { matchCatalogue } from "./catalogue-match.mjs";
+import { parseIncludeClasses, replacedImages, replacementEligibility, REPLACEABLE_CLASSES } from "./replacement.mjs";
 import { execFileSync } from "node:child_process";
 import { robotsAllowed } from "./http.mjs";
 
@@ -72,6 +78,10 @@ if (argv.includes("--pilot") && cmd !== "pilot") {
   if (!existsSync(pilotFile)) throw new Error("run `pilot` first");
   ONLY.push(...JSON.parse(readFileSync(pilotFile, "utf8")).ids);
 }
+// --include-classes: replacement review for explicitly selected products only (see replacement.mjs). Default: none.
+const INCLUDE = parseIncludeClasses(arg("include-classes"), ONLY);
+/** A product the discovery/review stages work on: the default target classes, or an explicitly included replacement. */
+const isTarget = (p) => TARGET_CLASSES.has(p.imageClass) || (INCLUDE.has(p.imageClass) && ONLY.includes(p.id) && replacementEligibility(p).eligible);
 // --source=local,brand,icecat,search (comma-separated) limits discovery to those sources; default: all.
 const ALL_SOURCES = ["local", "brand", "icecat", "search"];
 const SOURCES = new Set((arg("source") || ALL_SOURCES.join(",")).split(","));
@@ -192,13 +202,13 @@ const TARGET = TARGET_CLASSES;
 async function discover() {
   const a = load("audit.json", null);
   if (!a) throw new Error("run audit first");
-  const local = localManifestCandidates(ROOT);
+  const local = localManifestCandidates(ROOT, { stateDir: STATE, localCandidatesFile: arg("local-candidates") ? path.resolve(ROOT, arg("local-candidates")) : null });
   const register = load("permissions.json", { holders: {} });
   if (argv.includes("--requested")) { // products an admin sent back with "request more candidates" (read-only query)
     const ids = await withDb((_, db) => db.collection(REVIEW_COLLECTION).distinct("productId", { moreCandidatesRequestedAt: { $type: "string" } }));
     ONLY.push(...(ids.length ? ids : ["(none requested)"]));
   }
-  const targets = a.products.filter((p) => TARGET.has(p.imageClass) && (!ONLY.length || ONLY.includes(p.id)));
+  const targets = a.products.filter((p) => isTarget(p) && (!ONLY.length || ONLY.includes(p.id)));
   // A full run starts fresh so products that gained an image since the last run drop out; --only keeps the rest.
   const partial = !ALL_SOURCES.every((x) => SOURCES.has(x));
   const old = load("candidates.json", {});
@@ -451,6 +461,9 @@ async function verify() {
         confidence = "UNCERTAIN"; // a person must still compare the photo with the product; the catalogue is not permission
         reasons.push(c.exactModel ? `exact model, unambiguous catalogue layout (p.${c.catalogue.page}) — awaiting admin visual review` : `catalogue match needs review: ${c.reviewNote}`);
       }
+      else if (c.adapter === "local-file") { // operator-supplied file: never HIGH, a person must compare it with the product
+        confidence = "UNCERTAIN"; reasons.push(`local file (${c.sourceType ?? "supplied file"}) — awaiting admin visual review`);
+      }
       else if (c.adapter === "supplier-catalogue") {
         if (c.decision === "VERIFIED") { confidence = "HIGH"; reasons.push(`exact model on its own catalogue page; visual review: ${c.reviewNote}`); }
         else { confidence = "UNCERTAIN"; reasons.push("supplier catalogue image awaiting visual review"); }
@@ -470,7 +483,9 @@ async function verify() {
         for (const flag of assessmentFlags(aiAssessment)) reasons.push(flag);
         if (aiAssessment?.score != null) reasons.push(`AI score ${aiAssessment.score}/100 (advisory)`);
       }
-      results.push({ ...c, image: img, inspection: info, cacheFile: cacheFile ? path.relative(ROOT, cacheFile) : null, confidence, reasons, aiAssessment });
+      // Local files have no URL the admin queue can show: write the optimised preview where the preview route serves it.
+      const localPreview = info.ok && img.file && !img.url && !c.catalogue ? await writeLocalPreview(got.buf) : null;
+      results.push({ ...c, image: img, inspection: info, cacheFile: cacheFile ? path.relative(ROOT, cacheFile) : null, confidence, reasons, aiAssessment, ...(localPreview ? { localPreview } : {}) });
       if (info.sha256) (usedBy.get(info.sha256) ?? usedBy.set(info.sha256, new Set()).get(info.sha256)).add(rec.id);
     }
     out[rec.id] = { id: rec.id, brand: rec.brand, model: rec.model, verifiedAt: now(), results };
@@ -506,6 +521,16 @@ async function verify() {
   const t = (c) => Object.values(out).filter((v) => v.confidence === c).length;
   console.log(JSON.stringify({ HIGH: t("HIGH"), UNCERTAIN: t("UNCERTAIN"), REJECT: t("REJECT"), highVisuallyApproved: Object.values(out).filter((v) => v.confidence === "HIGH" && v.visuallyReviewed).length }));
   await contactSheet(out);
+}
+
+/** Optimised 800×800 preview of a local file under catalogue/local/previews/ (the only paths the admin preview route serves). */
+export async function writeLocalPreview(buf, stateDir = STATE) {
+  const opt = await optimise(buf);
+  const rel = `catalogue/local/previews/${opt.sha256.slice(0, 24)}.webp`;
+  const abs = path.join(stateDir, rel);
+  mkdirSync(path.dirname(abs), { recursive: true });
+  if (!existsSync(abs)) writeFileSync(abs, opt.buffer);
+  return rel;
 }
 
 /** Rules first (confidence, official source, source priority); the advisory AI score only breaks ties. */
@@ -557,7 +582,7 @@ async function catalogue() {
   const a = load("audit.json", null);
   if (!a) throw new Error("run audit first");
   const products = await withDb((P) => P.find({ brand: new RegExp(`^${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`, "i") }, { projection: { _id: 0, id: 1, name: 1, brand: 1, model: 1, sku: 1, category: 1, status: 1, images: 1 } }).toArray()); // read-only
-  const targets = new Set(a.products.filter((p) => TARGET.has(p.imageClass)).map((p) => p.id));
+  const targets = new Set(a.products.filter(isTarget).map((p) => p.id));
   const result = matchCatalogue(index, products, targets);
 
   // Crops: page renders for every candidate (provenance + fallback); embedded assets used where the photo is one masked image.
@@ -659,7 +684,7 @@ async function pilot() {
   const a = load("audit.json", null);
   if (!a) throw new Error("run audit first");
   const size = Math.min(20, Math.max(10, Number(arg("size")) || 15));
-  const pool_ = a.products.filter((p) => TARGET.has(p.imageClass) && p.singleModel && (!ONLY.length || ONLY.includes(p.id)));
+  const pool_ = a.products.filter((p) => isTarget(p) && p.singleModel && (!ONLY.length || ONLY.includes(p.id)));
   const picked = pickPilot(pool_, size);
   save("pilot.json", { createdAt: now(), auditedAt: a.auditedAt, size: picked.length, ids: picked.map((p) => p.id), products: picked.map((p) => ({ id: p.id, brand: p.brand, model: p.model, category: p.category, status: p.status, imageClass: p.imageClass })) });
   console.log(JSON.stringify({ pilot: picked.length, brands: new Set(picked.map((p) => p.brand)).size, categories: new Set(picked.map((p) => p.category)).size, products: picked.map((p) => `${p.brand} ${p.model} [${p.category}] ${p.imageClass}`) }, null, 1));
@@ -672,6 +697,9 @@ export function buildReviewRecords({ targets, candidates, verified, register, pe
   for (const p of targets) {
     const product = { name: p.name, brand: p.brand, model: p.model, sku: p.sku, category: p.category ?? undefined, status: p.status ?? null, images: p.images ?? [] };
     const base = { productId: p.id, product, version: 1, history: [] };
+    // Replacement review: the exact unsuitable references an approval would remove (shown to the reviewer in checks).
+    const rep = REPLACEABLE_CLASSES.has(p.imageClass) ? replacementEligibility(p) : null;
+    const replaces = rep?.eligible ? { refs: rep.removeRefs, reasons: rep.reasons } : undefined;
     const found = candidates[p.id]?.candidates ?? [];
     const v = verified[p.id];
     if (found.length && !v) {
@@ -697,8 +725,11 @@ export function buildReviewRecords({ targets, candidates, verified, register, pe
         modelEvidence: exact ? r.matchEvidence : null, aiAssessment: r.aiAssessment ?? null,
         permissionStatus: perm.status, permissionReason: perm.reason,
         licenceEvidence: (perm.evidence ?? []).slice(0, 5).map((e) => ({ url: e.url, document: e.document, quote: e.quote?.slice(0, 300), finding: e.finding })),
-        cacheFile: r.cacheFile ?? null, checks: [...(r.reasons ?? []), ...(!url && !r.catalogue ? [`local file only (${r.image?.file ? path.relative(root, r.image.file) : "unknown"}) — cannot be shown or approved in the admin queue`] : [])],
-        ...(r.catalogue ? { catalogue: r.catalogue, localPreview: r.catalogue.preview, pagePreview: r.catalogue.highlight } : {}),
+        cacheFile: r.cacheFile ?? null, checks: [...(r.reasons ?? []), ...(!url && !r.catalogue && !r.localPreview ? [`local file only (${r.image?.file ? path.relative(root, r.image.file) : "unknown"}) — cannot be shown or approved in the admin queue`] : []),
+          ...(r.localPreview ? [`local file ${r.image?.file ? path.relative(root, r.image.file) : ""} (preview generated by the pipeline)`] : []),
+          ...(replaces ? [`REPLACEMENT: approving this image replaces ${replaces.refs.length} unsuitable image(s) — ${replaces.reasons.join("; ")}`] : [])],
+        ...(r.catalogue ? { catalogue: r.catalogue, localPreview: r.catalogue.preview, pagePreview: r.catalogue.highlight } : r.localPreview ? { localPreview: r.localPreview } : {}),
+        ...(replaces ? { replaces } : {}),
       };
       records.push({ ...base, reviewId: `${p.id}:${sha256(url ?? r.cacheFile ?? r.sourcePage ?? String(i)).slice(0, 24)}`, state: initialState(candidate), rank: i, candidate,
         history: [{ at, by: "pipeline", from: "discovered", to: initialState(candidate), note: r.confidence }] });
@@ -710,7 +741,7 @@ export function buildReviewRecords({ targets, candidates, verified, register, pe
 async function reviewImport() {
   const a = load("audit.json", null);
   if (!a) throw new Error("run audit first");
-  const targets = a.products.filter((p) => TARGET.has(p.imageClass) && (!ONLY.length || ONLY.includes(p.id)));
+  const targets = a.products.filter((p) => isTarget(p) && (!ONLY.length || ONLY.includes(p.id)));
   const records = buildReviewRecords({ targets, candidates: load("candidates.json", {}), verified: load("verify.json", {}), register: load("permissions.json", { holders: {} }), perProduct: searchConfig().perProduct });
   const byState = {};
   for (const r of records) byState[r.state] = (byState[r.state] ?? 0) + 1;
@@ -748,7 +779,7 @@ async function dryRun() {
   if (!v) throw new Error("run verify first");
   const config = supabaseConfig();
   const register = load("permissions.json", { holders: {} });
-  const pendingNow = new Set(load("audit.json").products.filter((p) => TARGET.has(p.imageClass)).map((p) => p.id));
+  const pendingNow = new Set(load("audit.json").products.filter(isTarget).map((p) => p.id));
   // Admin-approved reviews (exact model + recorded authorization) — one per product per run, best rank first. Read-only.
   const approvedAll = await withDb((_, db) => db.collection(REVIEW_COLLECTION).find({ state: "approved", ...(ONLY.length ? { productId: { $in: ONLY } } : {}) }, { projection: { _id: 0 } }).sort({ productId: 1, rank: 1 }).toArray());
   const approvedFirst = new Map(); for (const r of approvedAll) if (!approvedFirst.has(r.productId)) approvedFirst.set(r.productId, r);
@@ -772,6 +803,8 @@ async function dryRun() {
     const url = `${config.publicBaseUrl}/${key}`;
     const broken = before.filter((i) => i !== PLACEHOLDER); // kept (never removed): broken references stay after the new image
     const after = [url, ...broken];
+    // A replacement removes images, so it is planned only from an admin-approved review (exact model + recorded authorization).
+    if (REPLACEABLE_CLASSES.has(a?.imageClass)) { plan.push({ ...item, action: "SKIP", why: "replacement candidates are planned only from an admin-approved review" }); continue; }
     const action = !x.visuallyReviewed ? "AWAITING_VISUAL_REVIEW"
       : permission.status === "confirmed" ? "UPLOAD_AND_SET"
       : permission.status === "permission_denied" ? "EXCLUDED_PERMISSION_DENIED" : "HELD_PERMISSION_PENDING";
@@ -783,7 +816,7 @@ async function dryRun() {
   const usage = await storageUsage();
   const adding = plan.filter((p) => p.action === "UPLOAD_AND_SET").reduce((s, p) => s + p.optimised.bytes, 0);
   const auditNow = load("audit.json");
-  const targets = auditNow.products.filter((p) => TARGET.has(p.imageClass));
+  const targets = auditNow.products.filter(isTarget);
   const vAll = Object.values(v);
   const summary = {
     eligibleForUpload: plan.filter((p) => p.action === "UPLOAD_AND_SET" || p.action === "LINK_EXISTING").map((p) => p.id),
@@ -798,7 +831,7 @@ async function dryRun() {
     noCandidate: targets.filter((t) => !vAll.some((x) => x.id === t.id)).length,
   };
   save("plan.json", { plannedAt: now(), storageBefore: usage, bytesToAdd: adding, summary, items: plan });
-  writeCsv("plan.csv", plan.map((p) => ({ action: p.action, id: p.id, brand: p.brand, model: p.model, status: p.status ?? "", permissionStatus: p.permission.status, permissionHolder: p.permission.holder ?? "", permissionReason: p.permission.reason, permissionEvidence: p.permission.evidence.map((e) => `${e.url ?? e.document ?? ""}${e.quote ? ` — "${e.quote.slice(0, 160)}"` : e.finding ? ` — ${e.finding}` : ""}`), sourcePage: p.sourcePage, sourceImage: p.sourceImage, matchEvidence: p.matchEvidence, sourceFormat: p.source?.kind ?? "", sourceDims: p.source ? `${p.source.width}x${p.source.height}` : "", optimisedFormat: p.optimised?.contentType ?? "", optimisedDims: p.optimised ? `${p.optimised.width}x${p.optimised.height}` : "", optimisedBytes: p.optimised?.bytes ?? "", key: p.key ?? "", before: p.before ?? "", after: p.after ?? "", why: p.why ?? "" })));
+  writeCsv("plan.csv", plan.map((p) => ({ action: p.action, id: p.id, brand: p.brand, model: p.model, status: p.status ?? "", permissionStatus: p.permission.status, permissionHolder: p.permission.holder ?? "", permissionReason: p.permission.reason, permissionEvidence: p.permission.evidence.map((e) => `${e.url ?? e.document ?? ""}${e.quote ? ` — "${e.quote.slice(0, 160)}"` : e.finding ? ` — ${e.finding}` : ""}`), sourcePage: p.sourcePage, sourceImage: p.sourceImage, matchEvidence: p.matchEvidence, sourceFormat: p.source?.kind ?? "", sourceDims: p.source ? `${p.source.width}x${p.source.height}` : "", optimisedFormat: p.optimised?.contentType ?? "", optimisedDims: p.optimised ? `${p.optimised.width}x${p.optimised.height}` : "", optimisedBytes: p.optimised?.bytes ?? "", key: p.key ?? "", before: p.before ?? "", after: p.after ?? "", replaces: p.replacement?.removeRefs ?? "", why: p.why ?? "" })));
   console.log(JSON.stringify({ planned: plan.length, uploadAndSet: plan.filter((p) => p.action === "UPLOAD_AND_SET").length, awaitingVisualReview: plan.filter((p) => p.action === "AWAITING_VISUAL_REVIEW").length, heldPermissionPending: summary.heldForPermission.length, excludedPermissionDenied: summary.excludedPermissionDenied.length, heldModelVerification: summary.heldForModelVerification.length, skipped: plan.filter((p) => p.action === "SKIP").length, bytesToAdd: adding, storageBefore: usage, databaseWrites: 0, storageWrites: 0 }));
 }
 
@@ -816,12 +849,16 @@ async function planApprovedReview(r, p, config, register, waiting) {
   if (problem) return { ...item, action: "APPROVAL_INVALID", why: problem };
   if (!p) return { ...item, action: "SKIP", why: "product no longer exists" };
   const before = p.images ?? [];
-  const keep = before.filter((i) => i !== PLACEHOLDER); // existing images are never removed
+  const keep = before.filter((i) => i !== PLACEHOLDER); // existing images are never removed (except an approved replacement)
+  const removeRefs = c.replaces?.refs ?? [];
+  const afterFor = (url) => (removeRefs.length ? replacedImages(before, url, removeRefs) : [url, ...keep]);
+  if (removeRefs.length && removeRefs.some((ref) => !before.includes(ref))) return { ...item, action: "SKIP", why: "an image the approval would replace is no longer on the product — re-review" };
+  if (removeRefs.length) item.replacement = { removeRefs, reasons: c.replaces.reasons ?? [] };
   if (c.storageUrl) {
     const key = c.storageUrl.startsWith(`${config.publicBaseUrl}/`) ? c.storageUrl.slice(config.publicBaseUrl.length + 1) : null;
     if (!key || !isValidImageKey(key)) return { ...item, action: "SKIP", why: "client image is not an object of the configured storage" };
     if (before.includes(c.storageUrl)) return { ...item, action: "SKIP", why: "image already linked" };
-    return { ...item, action: "LINK_EXISTING", status: p.status, updatedAt: p.updatedAt, before, after: [c.storageUrl, ...keep], key, url: c.storageUrl, source: null, optimised: { bytes: 0 } };
+    return { ...item, action: "LINK_EXISTING", status: p.status, updatedAt: p.updatedAt, before, after: afterFor(c.storageUrl), key, url: c.storageUrl, source: null, optimised: { bytes: 0 } };
   }
   if (!c.cacheFile || !existsSync(path.resolve(ROOT, c.cacheFile))) return { ...item, action: "SKIP", why: "verified source file missing from the cache — re-run verify" };
   const buf = readFileSync(path.resolve(ROOT, c.cacheFile));
@@ -830,7 +867,7 @@ async function planApprovedReview(r, p, config, register, waiting) {
   const key = `products/${productKeySegment(p.sku) || productKeySegment(p.id)}/${deterministicUuid(p.id, opt.sha256)}.${opt.ext}`;
   const url = `${config.publicBaseUrl}/${key}`;
   if (before.includes(url)) return { ...item, action: "SKIP", why: "image already linked" };
-  return { ...item, action: "UPLOAD_AND_SET", status: p.status, updatedAt: p.updatedAt, before, after: [url, ...keep], key, url,
+  return { ...item, action: "UPLOAD_AND_SET", status: p.status, updatedAt: p.updatedAt, before, after: afterFor(url), key, url,
     source: { width: c.width, height: c.height, kind: c.format, sha256: c.sha256, cacheFile: c.cacheFile },
     optimised: { width: opt.width, height: opt.height, bytes: opt.bytes, contentType: opt.contentType, sha256: opt.sha256 } };
 }

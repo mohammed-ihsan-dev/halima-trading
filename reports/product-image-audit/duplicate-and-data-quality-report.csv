@@ -1,0 +1,540 @@
+type,certainty,key,productIds,detail
+duplicate-name,suspected,s.g. refrigerator,6acdf1597a4c8a2cb51006c8 | 6acdf1597a4c8a2cb51006c4 | 6acdf1597a4c8a2cb51006cd | 6acdf1597a4c8a2cb51006bb | 6acdf1597a4c8a2cb51006cf | 6acdf1597a4c8a2cb51006bc,SGR175HE (super-general-sgr175he) || SGR255E (super-general-sgr255e) || SGR415IE (super-general-sgr415ie) || SGR615IE (super-general-sgr615ie) || SGR260NE (super-general-sgr260ne) || SGR186E (super-general-sgr186e)
+duplicate-name,suspected,s.g. air curtain,6acdf1597a4c8a2cb51006c9 | 6acdf1597a4c8a2cb51006ca | 6acdf1597a4c8a2cb51006cb,SGCT N90H (super-general-sgct-n90h) || SGCT N120H (super-general-sgct-n120h) || SGCT N150H (super-general-sgct-n150h)
+duplicate-name,suspected,s.g. washing machine tl,6acdf1597a4c8a2cb51006d0 | 6acdf1597a4c8a2cb51006c2,SGW755 (super-general-sgw755) || SGW1252S (super-general-sgw1252s)
+duplicate-name,suspected,water dispenser,6acdf1597a4c8a2cb51006c3 | 6ad07f2b0880c5d000649171,SGL 1171 (super-general-sgl-1171) || SDM-WD3531BG (panasonic-sdm-wd3531bg)
+duplicate-name,suspected,1.5 ton window air conditioner,6ad064ddd12826b12170f41c | 6ad064ddd12826b12170f418 | 6ad064ddd12826b12170f41d | 6ad07fd4f9be311bced6d53f,GACW18015SU (geepas-1-5-ton-window-air-conditioner-gacw18015su) || GACW1878CU (geepas-1-5-ton-window-air-conditioner-gacw1878cu) || GACW1878TCU (geepas-1-5-ton-window-air-conditioner-gacw1878tcu) || PRG18WAC (pro-general-prg18wac)
+duplicate-name,suspected,"18,000 btu piston window air conditioner",6ad07fd5f9be311bced6d54c | 6ad07fd5f9be311bced6d54d,KR-AWP18ET3 (krome-kr-awp18et3) || KR-AWP18EZTT3 (krome-kr-awp18eztt3)
+duplicate-name,suspected,3 ton wall mounted air conditioner,6ad07fd5f9be311bced6d554 | 6ad07fd5f9be311bced6d555,MS-GS30/MU-GS30 (mitsubishi-ms-gs30-mu-gs30) || MS-GS36/MU-GS36 (mitsubishi-ms-gs36-mu-gs36)
+duplicate-name,suspected,3 ton wall mounted inverter air conditioner,6ad07fd5f9be311bced6d559 | 6ad07fd5f9be311bced6d55a,MSY-GT30VF/MUY-GT30VF (mitsubishi-msy-gt30vf-muy-gt30vf) || MSY-GT36VF/MUY-GT36VF (mitsubishi-msy-gt36vf-muy-gt36vf)
+duplicate-name,suspected,dishwasher,6ad07fd6f9be311bced6d563 | 6ad07fd6f9be311bced6d564 | 6ad07fd6f9be311bced6d565 | 6ad07fd6f9be311bced6d566,DW-DGC-665BSF (daewoo-dw-dgc-665bsf) || DW-DGC-S965HDFP (daewoo-dw-dgc-s965hdfp) || DW-DCC-S664HF (daewoo-dw-dcc-s664hf) || DW-DCD-8S15P (daewoo-dw-dcd-8s15p)
+duplicate-name,suspected,chest freezer,6ad07fd6f9be311bced6d567 | 6ad07fd6f9be311bced6d568,DW-DCF-151D (daewoo-dw-dcf-151d) || DW-DCF-221D (daewoo-dw-dcf-221d)
+duplicate-name,suspected,washing machine,6ad07fd6f9be311bced6d569 | 6ad07fd6f9be311bced6d56a,DW-DW-T131WD (daewoo-dw-dw-t131wd) || DW-DW-T201WD (daewoo-dw-dw-t201wd)
+duplicate-name,suspected,refrigerator,6ad07fd6f9be311bced6d56b | 6ad07fd6f9be311bced6d56c | 6ad07fd6f9be311bced6d56d | 6ad07fd6f9be311bced6d56e | 6ad07fd6f9be311bced6d56f | 6ad07fd6f9be311bced6d570 | 6ad07fd6f9be311bced6d571,DW-FR-250VSN (daewoo-dw-fr-250vsn) || DW-FR-343S (daewoo-dw-fr-343s) || DW-FR-380VSN (daewoo-dw-fr-380vsn) || DW-FR-559VSIN (daewoo-dw-fr-559vsin) || DW-FR-624VSIN (daewoo-dw-fr-624vsin) || DW-FR-902VSIN (daewoo-dw-fr-902vsin) || DW-FRS-721VSIN (daewoo-dw-frs-721vsin)
+duplicate-name,suspected,650l double door refrigerator,6ad07fd7f9be311bced6d57f | 6ad07fd7f9be311bced6d582 | 6ad07fd7f9be311bced6d583,NR-BC833MSAE (panasonic-nr-bc833msae) || NR-BC535VSAE (panasonic-nr-bc535vsae) || NR-BC641VSAE (panasonic-nr-bc641vsae)
+duplicate-name,suspected,15-place dishwasher,6ad07fd7f9be311bced6d584 | 6ad07fd7f9be311bced6d585,NP-FMK16XEAE (panasonic-np-fmk16xeae) || NP-FVK16XEAE (panasonic-np-fvk16xeae)
+duplicate-name,suspected,7kg front load washing machine,6ad07fd7f9be311bced6d586 | 6ad07fd7f9be311bced6d587,NA-14MG1WAE (panasonic-na-14mg1wae) || NA-14MG1LAE (panasonic-na-14mg1lae)
+duplicate-name,suspected,8kg front load washing machine,6ad07fd7f9be311bced6d588 | 6ad07fd7f9be311bced6d589,NA-16MG1LAE (panasonic-na-16mg1lae) || NA-16MG1WAE (panasonic-na-16mg1wae)
+duplicate-name,suspected,9kg front load washing machine,6ad07fd7f9be311bced6d58a | 6ad07fd7f9be311bced6d58b,NA-18MG1LAE (panasonic-na-18mg1lae) || NA-18MG1WAE (panasonic-na-18mg1wae)
+duplicate-name,suspected,o general r32 inverter ducted air conditioner,6ad541642377620e38bcb3f8 | 6ad541642377620e38bcb3f9 | 6ad541642377620e38bcb3fa,ARGG18CLTA-UZ (o-general-argg18clta-uz) || ARGG24CLTA-UZ (o-general-argg24clta-uz) || ARGG30CLTA-UZ (o-general-argg30clta-uz)
+duplicate-name,suspected,o general r32 standard ducted inverter air conditioner,6ad541642377620e38bcb3fb | 6ad541642377620e38bcb3fc,ARGH18CMTA-UZ (o-general-argh18cmta-uz) || ARGH24CMTA-UZ (o-general-argh24cmta-uz)
+duplicate-name,suspected,o general r32 inverter cassette air conditioner,6ad541642377620e38bcb3f6 | 6ad541642377620e38bcb3f5 | 6ad541642377620e38bcb3f7,AUGG24CRTA-UZ (o-general-augg24crta-uz) || AUGG18CRTA-UZ (o-general-augg18crta-uz) || AUGG30CRTA-UZ (o-general-augg30crta-uz)
+brand-spelling-or-slug-variants,exact,OGENERAL,6ab12491b0983429839949a5 | 6ab12709b0983429839949ec | 6ab12769b0983429839949f8 | 6ab12812b098342983994a0d | 6ab1298fb098342983994a4e | 6ab12a04b098342983994a8e | 6ab12a99b098342983994b4e | 6ab12b12b098342983994b7a | 6ab12b7bb098342983994b85 | 6ab12bdab098342983994b99 | 6ab12ee5b098342983994c05 | 6ab13806b098342983994e1a | 6ad541642377620e38bcb3f8 | 6ad541642377620e38bcb3f9 | 6ad541642377620e38bcb3fb | 6ad541642377620e38bcb3f6 | 6ad541642377620e38bcb3fa | 6ad541642377620e38bcb3fc | 6ad541642377620e38bcb3f5 | 6ad541642377620e38bcb3f7 | 6adcf010920b77a44c518bc7 | 6adcf010920b77a44c518bc8 | 6adcf010920b77a44c518bc9 | 6adcf010920b77a44c518bca | 6adcf010920b77a44c518bcb | 6adcf010920b77a44c518bcc | 6adcf010920b77a44c518bcd | 6adcf010920b77a44c518bce | 6adcf010920b77a44c518bcf | 6adcf010920b77a44c518bd0 | 6adcf010920b77a44c518bd1 | 6adcf010920b77a44c518bd2 | 6adcf010920b77a44c518bd3 | 6adcf010920b77a44c518bd4 | 6adcf010920b77a44c518bd5 | 6adcf010920b77a44c518bd6 | 6adcf010920b77a44c518bd7 | 6adcf010920b77a44c518bd8 | 6adcf010920b77a44c518bd9 | 6adcf010920b77a44c518bda,O General|o-general || O GENERAL|o-general
+brand-spelling-or-slug-variants,exact,BOSCH,6ac88ec2d467feb0e4adf148 | 6ac89064d467feb0e4adf287 | 6ac890efd467feb0e4adf295 | 6ac8920ad467feb0e4adf2b4 | 6ac89284d467feb0e4adf2be | 6ac89438d467feb0e4adf2e6 | 6ac894aed467feb0e4adf2ef | 6ac89546d467feb0e4adf2ff,BOSCH|bosch || Bosch|bosch
+image-stored-as-base64-in-mongodb,exact,p-1789994128355,6ab12491b0983429839949a5,"data:image/jpeg;base64,… (84513 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789994760960,6ab12709b0983429839949ec,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789994855475,6ab12769b0983429839949f8,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995024698,6ab12812b098342983994a0d,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995405587,6ab1298fb098342983994a4e,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995522333,6ab12a04b098342983994a8e,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995672150,6ab12a99b098342983994b4e,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995792646,6ab12b12b098342983994b7a,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995898054,6ab12b7bb098342983994b85,"data:image/webp;base64,… (43590 bytes)"
+image-stored-as-base64-in-mongodb,exact,p-1789995993094,6ab12bdab098342983994b99,"data:image/webp;base64,… (43590 bytes)"
+generic-subcategory,suspected,p-1789996773550,6ab12ee5b098342983994c05,General
+image-stored-as-base64-in-mongodb,exact,p-1789996773550,6ab12ee5b098342983994c05,"data:image/jpeg;base64,… (39685 bytes)"
+generic-subcategory,suspected,p-1789999109952,6ab13806b098342983994e1a,General
+image-stored-as-base64-in-mongodb,exact,p-1789999109952,6ab13806b098342983994e1a,"data:image/jpeg;base64,… (39685 bytes)"
+generic-subcategory,suspected,p-1791528642241,6ac88ec2d467feb0e4adf148,General
+generic-subcategory,suspected,p-1791529059413,6ac89064d467feb0e4adf287,General
+generic-subcategory,suspected,p-1791529198378,6ac890efd467feb0e4adf295,General
+generic-subcategory,suspected,p-1791529481782,6ac8920ad467feb0e4adf2b4,General
+generic-subcategory,suspected,p-1791529603234,6ac89284d467feb0e4adf2be,General
+generic-subcategory,suspected,p-1791530623651,6ac89438d467feb0e4adf2e6,General
+generic-subcategory,suspected,p-1791530157014,6ac894aed467feb0e4adf2ef,General
+generic-subcategory,suspected,p-1791530309657,6ac89546d467feb0e4adf2ff,General
+generic-subcategory,suspected,p-1791532040999,6ac89c09d467feb0e4adf395,General
+generic-subcategory,suspected,p-1791532324809,6ac89d25d467feb0e4adf3e1,General
+generic-subcategory,suspected,p-1791607856183,6ac9c430d467feb0e4ae48ab,General
+generic-subcategory,suspected,p-1791607987897,6ac9c4b5d467feb0e4ae48b8,General
+generic-subcategory,suspected,p-1791608233015,6ac9c5aad467feb0e4ae48cf,General
+generic-subcategory,suspected,p-1791608314749,6ac9c5fbd467feb0e4ae48d8,General
+generic-subcategory,suspected,aftron-af-w-30030b-c,6aca2e64df911910339b3d45,General
+generic-subcategory,suspected,blue-star-ccb52030305,6aca2e64df911910339b3d56,General
+generic-subcategory,suspected,indesit-ib-65b60ne,6aca2e64df911910339b3d76,General
+generic-subcategory,suspected,indesit-bde-964ssv-gcc,6aca2e64df911910339b3d9a,General
+generic-subcategory,suspected,lg-dfc513fw,6aca2e64df911910339b3da9,General
+generic-subcategory,suspected,gree-gr-p4-matic-24c3-ind-gree,6aca2e64df911910339b3dc1,General
+generic-subcategory,suspected,lg-i27tcp-uuae2,6aca2e64df911910339b3dcb,General
+generic-subcategory,suspected,lg-gr-f411eldm,6aca2e64df911910339b3dfa,General
+generic-subcategory,suspected,lg-f4v5elylp,6aca2e64df911910339b3e0f,General
+generic-subcategory,suspected,lg-w4w8bvpkwhm,6aca2e64df911910339b3e1a,General
+generic-subcategory,suspected,mazaya-gl-1100dddlxb,6aca2e64df911910339b3e25,General
+generic-subcategory,suspected,mazaya-tsb-2cf-27,6aca2e64df911910339b3e3e,General
+generic-subcategory,suspected,mazaya-me-125t5,6aca2e64df911910339b3e49,General
+generic-subcategory,suspected,mazaya-me-25t2,6aca2e64df911910339b3e4c,General
+generic-subcategory,suspected,samsung-ar24trhqkwkxgu,6aca2e64df911910339b3e53,General
+generic-subcategory,suspected,samsung-ar12brhqkwk-gu,6aca2e64df911910339b3e57,General
+generic-subcategory,suspected,symphony-100xl-movicool,6aca2e64df911910339b3e5e,General
+category-not-in-categories-collection,suspected,symphony-100xl-movicool,6aca2e64df911910339b3e5e,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-i125l-movicool,6aca2e64df911910339b3e67,General
+category-not-in-categories-collection,suspected,symphony-i125l-movicool,6aca2e64df911910339b3e67,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-xl-70storm,6aca2e64df911910339b3e6c,General
+category-not-in-categories-collection,suspected,symphony-xl-70storm,6aca2e64df911910339b3e6c,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,blue-star-ccb52030307,6aca2e64df911910339b3d57,General
+generic-subcategory,suspected,blue-star-ccb52010102,6aca2e64df911910339b3d65,General
+generic-subcategory,suspected,blue-star-ccb52030216,6aca2e64df911910339b3d6c,General
+generic-subcategory,suspected,indesit-iggsm-533g3,6aca2e64df911910339b3d79,General
+generic-subcategory,suspected,indesit-ihbs-6-5lmx,6aca2e64df911910339b3d7a,General
+generic-subcategory,suspected,indesit-dfe-1b19uk,6aca2e64df911910339b3d87,General
+image-filename-names-another-model,suspected,indesit-dfe-1b19uk,6aca2e64df911910339b3d87,dfe-1b19-x-uk-dishwashers.webp → DFE1B19XUK
+generic-subcategory,suspected,indesit-mwi-5213ixuk,6aca2e64df911910339b3d8e,General
+generic-subcategory,suspected,indesit-tinf-836353xme,6aca2e64df911910339b3d98,General
+generic-subcategory,suspected,gree-gr-f4-matic-18c3-ind-gree,6aca2e64df911910339b3db0,General
+generic-subcategory,suspected,gree-gr-i2-pro-12c3-ind-gree,6aca2e64df911910339b3db5,General
+generic-subcategory,suspected,gree-gr-i2-pro-24c3-ind-gree,6aca2e64df911910339b3db7,General
+generic-subcategory,suspected,gree-gr-i4-pro-24c3-ind-gree,6aca2e64df911910339b3dbc,General
+generic-subcategory,suspected,lg-gr-b652pffq,6aca2e64df911910339b3df6,General
+generic-subcategory,suspected,lg-fh2j3hdyl02,6aca2e64df911910339b3e10,General
+generic-subcategory,suspected,lg-t1785nehte,6aca2e64df911910339b3e16,General
+generic-subcategory,suspected,mazaya-gl-1300ddswdlx,6aca2e64df911910339b3e28,General
+generic-subcategory,suspected,mazaya-gl-icf350sdc,6aca2e64df911910339b3e2f,General
+generic-subcategory,suspected,mazaya-gl-inf520fr,6aca2e64df911910339b3e3b,General
+generic-subcategory,suspected,mazaya-gl-36wtc,6aca2e64df911910339b3e46,General
+generic-subcategory,suspected,mazaya-me-150t5,6aca2e64df911910339b3e4a,General
+generic-subcategory,suspected,aftron-af-w-30065be-ce-s21,6aca2e64df911910339b3d46,General
+generic-subcategory,suspected,blue-star-ccb52030300,6aca2e64df911910339b3d55,General
+generic-subcategory,suspected,blue-star-ccb52030328,6aca2e64df911910339b3d5e,General
+generic-subcategory,suspected,indesit-is-19q30ne,6aca2e64df911910339b3d7e,General
+generic-subcategory,suspected,indesit-biinf695403me,6aca2e64df911910339b3d90,General
+generic-subcategory,suspected,indesit-tinf-601351xme,6aca2e64df911910339b3d96,General
+generic-subcategory,suspected,lg-dfb512fp,6aca2e64df911910339b3da5,General
+generic-subcategory,suspected,gree-gr-quies-24c3-gree,6aca2e64df911910339b3dc4,General
+generic-subcategory,suspected,lg-t36zca-uuae,6aca2e64df911910339b3dd8,General
+generic-subcategory,suspected,lg-gn-r702sfah,6aca2e64df911910339b3ded,General
+generic-subcategory,suspected,lg-gr-c629hqcl,6aca2e64df911910339b3df9,General
+generic-subcategory,suspected,lg-grfb587pqam,6aca2e64df911910339b3e01,General
+generic-subcategory,suspected,mazaya-gl-1400ddswdlx,6aca2e64df911910339b3e29,General
+generic-subcategory,suspected,mazaya-gl-icf380fdx,6aca2e64df911910339b3e31,General
+generic-subcategory,suspected,mazaya-gl-icf450cgx,6aca2e64df911910339b3e34,General
+generic-subcategory,suspected,mazaya-tsb-1cf-13,6aca2e64df911910339b3e3c,General
+generic-subcategory,suspected,mazaya-me-100t5,6aca2e64df911910339b3e48,General
+generic-subcategory,suspected,mazaya-me-85t4,6aca2e64df911910339b3e51,General
+generic-subcategory,suspected,samsung-rt75k6000s8,6aca2e64df911910339b3e54,General
+generic-subcategory,suspected,blue-star-ccb52030320,6aca2e64df911910339b3d5d,General
+generic-subcategory,suspected,blue-star-ccb52030325,6aca2e64df911910339b3d61,General
+generic-subcategory,suspected,blue-star-ccb52030326,6aca2e64df911910339b3d62,General
+generic-subcategory,suspected,gree-g4-matic-r25c3,6aca2e64df911910339b3d6e,General
+generic-subcategory,suspected,gree-t4-matic-t48c3,6aca2e64df911910339b3d72,General
+generic-subcategory,suspected,indesit-thp-641wixi,6aca2e64df911910339b3d86,General
+generic-subcategory,suspected,indesit-os-420htex,6aca2e64df911910339b3d94,General
+generic-subcategory,suspected,indesit-os-600htex,6aca2e64df911910339b3d95,General
+generic-subcategory,suspected,indesit-bwe-1014xwsvgcc,6aca2e64df911910339b3d9f,General
+generic-subcategory,suspected,lg-f2y1vyp6j,6aca2e64df911910339b3dac,General
+generic-subcategory,suspected,gree-gr-i2-pro-18c3-ind-gree,6aca2e64df911910339b3db6,General
+generic-subcategory,suspected,lg-t30zca,6aca2e64df911910339b3dd5,General
+generic-subcategory,suspected,lg-fa415rma,6aca2e64df911910339b3ddb,General
+generic-subcategory,suspected,lg-ma3882qc,6aca2e64df911910339b3de1,General
+generic-subcategory,suspected,lg-mh8265cis,6aca2e64df911910339b3de3,General
+generic-subcategory,suspected,lg-gr-l267lsrl,6aca2e64df911910339b3dfe,General
+generic-subcategory,suspected,lg-gr-x29ftqel,6aca2e64df911910339b3dff,General
+generic-subcategory,suspected,lg-p2061nt,6aca2e64df911910339b3e12,General
+generic-subcategory,suspected,lg-t1785neht,6aca2e64df911910339b3e15,General
+generic-subcategory,suspected,lg-t18v1ndhtcc,6aca2e64df911910339b3e18,General
+generic-subcategory,suspected,mazaya-gl-icf360cgx,6aca2e64df911910339b3e30,General
+generic-subcategory,suspected,symphony-i200xl-movicool,6aca2e64df911910339b3e69,General
+category-not-in-categories-collection,suspected,symphony-i200xl-movicool,6aca2e64df911910339b3e69,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-36065b-c-s21,6aca2e64df911910339b3d49,General
+generic-subcategory,suspected,aftron-af-w-3660b-c,6aca2e64df911910339b3d4a,General
+generic-subcategory,suspected,blue-star-ccb52030314,6aca2e64df911910339b3d5a,General
+generic-subcategory,suspected,blue-star-ccb52030257,6aca2e64df911910339b3d60,General
+generic-subcategory,suspected,blue-star-ccb52010104,6aca2e64df911910339b3d67,General
+generic-subcategory,suspected,gree-t4-matic-i60c3,6aca2e64df911910339b3d70,General
+generic-subcategory,suspected,indesit-rin9-ggf23125xme,6aca2e64df911910339b3d8c,General
+generic-subcategory,suspected,lg-a23tnc,6aca2e64df911910339b3da0,General
+generic-subcategory,suspected,lg-a23tnc-uuae2,6aca2e64df911910339b3da1,General
+generic-subcategory,suspected,lg-dfb512fw,6aca2e64df911910339b3da6,General
+generic-subcategory,suspected,lg-dfc612fv,6aca2e64df911910339b3daa,General
+generic-subcategory,suspected,lg-f4r3vyg6p,6aca2e64df911910339b3dad,General
+generic-subcategory,suspected,gree-gr-i-airy32-12c3-ind-gree,6aca2e64df911910339b3db1,General
+generic-subcategory,suspected,gree-gr-i4-pro-30c3-ind-gree,6aca2e64df911910339b3dbd,General
+generic-subcategory,suspected,gree-gr-p4-matic-30c3-ind-gree,6aca2e64df911910339b3dc2,General
+generic-subcategory,suspected,lg-i38tcf,6aca2e64df911910339b3dce,General
+generic-subcategory,suspected,lg-t18zca-uuae1,6aca2e64df911910339b3dd2,General
+generic-subcategory,suspected,lg-gr-b267jqyl,6aca2e64df911910339b3def,General
+generic-subcategory,suspected,mazaya-me-22000ac,6aca2e64df911910339b3e24,General
+category-not-in-categories-collection,suspected,mazaya-me-22000ac,6aca2e64df911910339b3e24,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,mazaya-gl-icf450cgq,6aca2e64df911910339b3e33,General
+generic-subcategory,suspected,mazaya-gl-24wtc,6aca2e64df911910339b3e45,General
+generic-subcategory,suspected,samsung-rt38cg6404s9ae-rt50cg6404s9ae,6aca2e64df911910339b3e5a,General
+generic-subcategory,suspected,aftron-af-w-2595be-ce,6aca2e64df911910339b3d44,General
+generic-subcategory,suspected,blue-star-ccb52030293,6aca2e64df911910339b3d51,General
+generic-subcategory,suspected,blue-star-ccb52030294,6aca2e64df911910339b3d52,General
+generic-subcategory,suspected,blue-star-ccb52030329,6aca2e64df911910339b3d5f,General
+generic-subcategory,suspected,blue-star-ccb52030327,6aca2e64df911910339b3d63,General
+generic-subcategory,suspected,indesit-ing-61s-bk,6aca2e64df911910339b3d7c,General
+generic-subcategory,suspected,lg-t24zca,6aca2e64df911910339b3dd3,General
+generic-subcategory,suspected,lg-t30zca-uuae,6aca2e64df911910339b3dd6,General
+generic-subcategory,suspected,lg-f20l2crv2e2,6aca2e64df911910339b3e06,General
+generic-subcategory,suspected,lg-w1s1cvk2ehm,6aca2e64df911910339b3e08,General
+generic-subcategory,suspected,lg-f0z8dypk4,6aca2e64df911910339b3e09,General
+generic-subcategory,suspected,lg-f4j3tyg6j,6aca2e64df911910339b3e0b,General
+generic-subcategory,suspected,lg-t18v1ndht2c,6aca2e64df911910339b3e17,General
+generic-subcategory,suspected,mazaya-gl-150eo,6aca2e64df911910339b3e1f,General
+generic-subcategory,suspected,mazaya-gl-icf350fdc,6aca2e64df911910339b3e2e,General
+generic-subcategory,suspected,samsung-dv90cgc2a0abgu,6aca2e64df911910339b3e55,General
+generic-subcategory,suspected,symphony-200l-movicool,6aca2e64df911910339b3e61,General
+category-not-in-categories-collection,suspected,symphony-200l-movicool,6aca2e64df911910339b3e61,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-u25vc-venticool,6aca2e64df911910339b3e6b,General
+category-not-in-categories-collection,suspected,symphony-u25vc-venticool,6aca2e64df911910339b3e6b,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-xl-80winter,6aca2e64df911910339b3e6d,General
+category-not-in-categories-collection,suspected,symphony-xl-80winter,6aca2e64df911910339b3e6d,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-18095be-ce-s21,6aca2e64df911910339b3d3c,General
+generic-subcategory,suspected,indesit-ict-64lss,6aca2e64df911910339b3d77,General
+generic-subcategory,suspected,indesit-ihgc-6-4amx,6aca2e64df911910339b3d7b,General
+generic-subcategory,suspected,indesit-dfg-1581-kuk,6aca2e64df911910339b3d89,General
+generic-subcategory,suspected,indesit-xwde-751480xsuk,6aca2e64df911910339b3d9d,General
+generic-subcategory,suspected,lg-i23tcp-uuae2,6aca2e64df911910339b3dc9,General
+generic-subcategory,suspected,lg-t18zca,6aca2e64df911910339b3dd1,General
+generic-subcategory,suspected,lg-ms2032gas,6aca2e64df911910339b3ddc,General
+generic-subcategory,suspected,lg-rh80t2sp7rm,6aca2e64df911910339b3de0,General
+generic-subcategory,suspected,lg-ma3884vc,6aca2e64df911910339b3de2,General
+generic-subcategory,suspected,lg-gn-b432pqgb,6aca2e64df911910339b3de7,General
+generic-subcategory,suspected,lg-gr-b267dbm3,6aca2e64df911910339b3dee,General
+generic-subcategory,suspected,lg-gr-f589blcm,6aca2e64df911910339b3dfb,General
+generic-subcategory,suspected,lg-t1369nehtf,6aca2e64df911910339b3e13,General
+generic-subcategory,suspected,mazaya-gl-480vnff,6aca2e64df911910339b3e1c,General
+generic-subcategory,suspected,mazaya-gl-120eo,6aca2e64df911910339b3e1e,General
+generic-subcategory,suspected,mazaya-gl-gc9060fs,6aca2e64df911910339b3e20,General
+generic-subcategory,suspected,mazaya-gl-1200ddswdlx,6aca2e64df911910339b3e27,General
+generic-subcategory,suspected,mazaya-tsb-1cf-13prmb,6aca2e64df911910339b3e3d,General
+generic-subcategory,suspected,mazaya-gl-60wtc,6aca2e64df911910339b3e47,General
+generic-subcategory,suspected,samsung-ar24trhqkwk-gu,6aca2e64df911910339b3e58,General
+generic-subcategory,suspected,samsung-mg402madxbb-sg,6aca2e64df911910339b3e5c,General
+generic-subcategory,suspected,symphony-200xl-movicool,6aca2e64df911910339b3e62,General
+category-not-in-categories-collection,suspected,symphony-200xl-movicool,6aca2e64df911910339b3e62,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-1969b-c-inv,6aca2e64df911910339b3d3f,General
+generic-subcategory,suspected,blue-star-ccb52030311,6aca2e64df911910339b3d58,General
+generic-subcategory,suspected,blue-star-ccb52030318,6aca2e64df911910339b3d5b,General
+image-filename-names-another-model,suspected,blue-star-ccb52030318,6aca2e64df911910339b3d5b,HW24CXYFB3-01.jpg → HW24CXYFB301
+generic-subcategory,suspected,indesit-rin9-ev820205xme,6aca2e64df911910339b3d84,General
+generic-subcategory,suspected,gree-gr-i-airy32-18c3-ind-gree,6aca2e64df911910339b3db2,General
+generic-subcategory,suspected,gree-gr-isave-plus-p30h3-indgree,6aca2e64df911910339b3dbf,General
+generic-subcategory,suspected,lg-i34tcf,6aca2e64df911910339b3dcc,General
+generic-subcategory,suspected,lg-i34tcf-uuae,6aca2e64df911910339b3dcd,General
+generic-subcategory,suspected,lg-t24zca-uuae1,6aca2e64df911910339b3dd4,General
+generic-subcategory,suspected,lg-rh18u8evcw,6aca2e64df911910339b3ddf,General
+generic-subcategory,suspected,lg-gn-f782hfhl,6aca2e64df911910339b3dec,General
+generic-subcategory,suspected,lg-ltb852pfbq,6aca2e64df911910339b3e02,General
+generic-subcategory,suspected,lg-f4j3tmg5p,6aca2e64df911910339b3e07,General
+generic-subcategory,suspected,lg-f18l2crv2t2,6aca2e64df911910339b3e0a,General
+generic-subcategory,suspected,lg-f4j3vyg6j,6aca2e64df911910339b3e0d,General
+generic-subcategory,suspected,mazaya-me-35t3,6aca2e64df911910339b3e4d,General
+generic-subcategory,suspected,symphony-125l-movicool,6aca2e64df911910339b3e60,General
+category-not-in-categories-collection,suspected,symphony-125l-movicool,6aca2e64df911910339b3e60,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,blue-star-ccb52030313,6aca2e64df911910339b3d59,General
+generic-subcategory,suspected,gree-g4-matic-r32c3,6aca2e64df911910339b3d6f,General
+generic-subcategory,suspected,indesit-dfe-1b19xuk,6aca2e64df911910339b3d88,General
+generic-subcategory,suspected,indesit-mwi-125gxuk,6aca2e64df911910339b3d8d,General
+generic-subcategory,suspected,lg-dfc513fv,6aca2e64df911910339b3da8,General
+generic-subcategory,suspected,gree-gr-i4-pro-18c3-ind-gree,6aca2e64df911910339b3dbb,General
+generic-subcategory,suspected,gree-gr-i4-pro-36c3-ind-gree,6aca2e64df911910339b3dbe,General
+generic-subcategory,suspected,gree-gr-t4-matic-n60c3-ind-gree,6aca2e64df911910339b3dc7,General
+generic-subcategory,suspected,lg-i23tcp,6aca2e64df911910339b3dc8,General
+generic-subcategory,suspected,lg-gn-c782sggl,6aca2e64df911910339b3deb,General
+generic-subcategory,suspected,lg-gr-b29ftlvb,6aca2e64df911910339b3df1,General
+generic-subcategory,suspected,lg-gr-b479fmnw,6aca2e64df911910339b3df4,General
+generic-subcategory,suspected,lg-f15l9dgd,6aca2e64df911910339b3e05,General
+generic-subcategory,suspected,mazaya-gl-1200vnff,6aca2e64df911910339b3e1b,General
+generic-subcategory,suspected,mazaya-gl-gc9060ss,6aca2e64df911910339b3e21,General
+generic-subcategory,suspected,mazaya-me-10000ac,6aca2e64df911910339b3e22,General
+category-not-in-categories-collection,suspected,mazaya-me-10000ac,6aca2e64df911910339b3e22,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,mazaya-me-20000ac,6aca2e64df911910339b3e23,General
+category-not-in-categories-collection,suspected,mazaya-me-20000ac,6aca2e64df911910339b3e23,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,mazaya-gl-420sddlx,6aca2e64df911910339b3e2b,General
+generic-subcategory,suspected,symphony-i-20d3-diet,6aca2e64df911910339b3e63,General
+category-not-in-categories-collection,suspected,symphony-i-20d3-diet,6aca2e64df911910339b3e63,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-xli100c-storm,6aca2e64df911910339b3e6e,General
+category-not-in-categories-collection,suspected,symphony-xli100c-storm,6aca2e64df911910339b3e6e,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-24020b-c,6aca2e64df911910339b3d40,General
+generic-subcategory,suspected,aftron-af-w-3060b-c,6aca2e64df911910339b3d47,General
+generic-subcategory,suspected,aftron-af-w-3669b-c-inv,6aca2e64df911910339b3d4b,General
+generic-subcategory,suspected,blue-star-ccb52030205,6aca2e64df911910339b3d6a,General
+generic-subcategory,suspected,indesit-mtwe-81483wsgcc,6aca2e64df911910339b3d82,General
+generic-subcategory,suspected,indesit-rin6-ggg23121xme,6aca2e64df911910339b3d83,General
+generic-subcategory,suspected,indesit-biins541281me,6aca2e64df911910339b3d91,General
+generic-subcategory,suspected,gree-gr-i-airy32-30c3-ind-gree,6aca2e64df911910339b3db4,General
+generic-subcategory,suspected,gree-gr-t4-matic-i36c3-ind-gree,6aca2e64df911910339b3dc5,General
+generic-subcategory,suspected,lg-mh8265dis,6aca2e64df911910339b3de4,General
+generic-subcategory,suspected,lg-gn-b512pqgb,6aca2e64df911910339b3de8,General
+generic-subcategory,suspected,mazaya-gl-icf500fdc,6aca2e64df911910339b3e37,General
+generic-subcategory,suspected,mazaya-tsb-2cf-29,6aca2e64df911910339b3e41,General
+generic-subcategory,suspected,mazaya-xls-410sd,6aca2e64df911910339b3e44,General
+generic-subcategory,suspected,mazaya-me-45t3,6aca2e64df911910339b3e4e,General
+generic-subcategory,suspected,mazaya-me-65t3,6aca2e64df911910339b3e50,General
+generic-subcategory,suspected,samsung-ww70t3020ww-gu,6aca2e64df911910339b3e59,General
+generic-subcategory,suspected,samsung-dw60m6040fs-gu,6aca2e64df911910339b3e5b,General
+generic-subcategory,suspected,aftron-af-w-24095be-ce-s21,6aca2e64df911910339b3d41,General
+generic-subcategory,suspected,aftron-af-w-3069b-c-inv,6aca2e64df911910339b3d48,General
+generic-subcategory,suspected,blue-star-ccb52030296,6aca2e64df911910339b3d53,General
+generic-subcategory,suspected,gree-g4-matic-r20c3,6aca2e64df911910339b3d6d,General
+generic-subcategory,suspected,indesit-ing-922s-bk,6aca2e64df911910339b3d7d,General
+generic-subcategory,suspected,gree-gr-i2-pro-36c3-ind-gree,6aca2e64df911910339b3db9,General
+generic-subcategory,suspected,lg-i38tcf-uuae,6aca2e64df911910339b3dcf,General
+generic-subcategory,suspected,lg-fa211rma,6aca2e64df911910339b3dda,General
+generic-subcategory,suspected,lg-ms5696hit,6aca2e64df911910339b3dde,General
+generic-subcategory,suspected,lg-ms3032jas,6aca2e64df911910339b3de5,General
+generic-subcategory,suspected,lg-gr-b355plmb,6aca2e64df911910339b3df2,General
+generic-subcategory,suspected,lg-gr-b414elfm,6aca2e64df911910339b3df3,General
+generic-subcategory,suspected,lg-f4j3tyl3w,6aca2e64df911910339b3e0c,General
+generic-subcategory,suspected,lg-fh2j3odngop,6aca2e64df911910339b3e11,General
+generic-subcategory,suspected,symphony-i-40d3-diet,6aca2e64df911910339b3e65,General
+category-not-in-categories-collection,suspected,symphony-i-40d3-diet,6aca2e64df911910339b3e65,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-1269b-c-inv,6aca2e64df911910339b3d3b,General
+generic-subcategory,suspected,aftron-afw20600x,6aca2e64df911910339b3d4f,General
+generic-subcategory,suspected,blue-star-ccb52030299,6aca2e64df911910339b3d54,General
+generic-subcategory,suspected,indesit-dp-2gsix,6aca2e64df911910339b3d73,General
+generic-subcategory,suspected,indesit-ui6-f1tsuk1,6aca2e64df911910339b3d99,General
+generic-subcategory,suspected,gree-gr-i-airy32-24c3-ind-gree,6aca2e64df911910339b3db3,General
+generic-subcategory,suspected,gree-gr-p4-matic-18c3-ind-gree,6aca2e64df911910339b3dc0,General
+generic-subcategory,suspected,lg-gr-c345slbb,6aca2e64df911910339b3df7,General
+generic-subcategory,suspected,lg-gr-l267klkw,6aca2e64df911910339b3dfd,General
+generic-subcategory,suspected,lg-ltc752hqcm,6aca2e64df911910339b3e03,General
+generic-subcategory,suspected,lg-ltc752sggm,6aca2e64df911910339b3e04,General
+generic-subcategory,suspected,lg-f4r5vyg2p,6aca2e64df911910339b3e0e,General
+generic-subcategory,suspected,mazaya-gl-1600tdswdlx,6aca2e64df911910339b3e2a,General
+generic-subcategory,suspected,mazaya-gl-430vnff,6aca2e64df911910339b3e2c,General
+generic-subcategory,suspected,mazaya-gl-icf400cgx,6aca2e64df911910339b3e32,General
+generic-subcategory,suspected,mazaya-gl-icf460cgx,6aca2e64df911910339b3e36,General
+generic-subcategory,suspected,mazaya-gl-in681nfr,6aca2e64df911910339b3e39,General
+generic-subcategory,suspected,mazaya-gl-in861nfr,6aca2e64df911910339b3e3a,General
+generic-subcategory,suspected,mazaya-tst-3cf-57,6aca2e64df911910339b3e43,General
+generic-subcategory,suspected,mazaya-me-45t3-ro,6aca2e64df911910339b3e4f,General
+generic-subcategory,suspected,blue-star-ccb52010103,6aca2e64df911910339b3d66,General
+generic-subcategory,suspected,blue-star-ccb52030212,6aca2e64df911910339b3d6b,General
+generic-subcategory,suspected,gree-t4-matic-t36c3,6aca2e64df911910339b3d71,General
+generic-subcategory,suspected,indesit-islk-96lsx,6aca2e64df911910339b3d80,General
+generic-subcategory,suspected,indesit-biinf545282me,6aca2e64df911910339b3d8f,General
+generic-subcategory,suspected,indesit-bde-964wsv-gcc,6aca2e64df911910339b3d9b,General
+generic-subcategory,suspected,gree-gr-c-matic-s12c1-gree,6aca2e64df911910339b3dae,General
+generic-subcategory,suspected,gree-gr-c-matic-s18c1-gree,6aca2e64df911910339b3daf,General
+generic-subcategory,suspected,gree-gr-i2-pro-30c3-ind-gree,6aca2e64df911910339b3db8,General
+generic-subcategory,suspected,gree-gr-i4-pro-12c3-ind-gree,6aca2e64df911910339b3dba,General
+generic-subcategory,suspected,lg-i27tcp,6aca2e64df911910339b3dca,General
+generic-subcategory,suspected,lg-gn-b522plgb,6aca2e64df911910339b3de9,General
+generic-subcategory,suspected,lg-gr-b479num,6aca2e64df911910339b3df5,General
+generic-subcategory,suspected,lg-gr-h832hnl,6aca2e64df911910339b3dfc,General
+generic-subcategory,suspected,lg-gr-x39fmhkl,6aca2e64df911910339b3e00,General
+generic-subcategory,suspected,mazaya-tsb-2cf-27prmw,6aca2e64df911910339b3e40,General
+generic-subcategory,suspected,mazaya-tsb-2cf-37,6aca2e64df911910339b3e42,General
+generic-subcategory,suspected,mazaya-me-250t5,6aca2e64df911910339b3e4b,General
+generic-subcategory,suspected,samsung-ww90ta046ae-gu,6aca2e64df911910339b3e5d,General
+generic-subcategory,suspected,symphony-i-30d3-diet,6aca2e64df911910339b3e64,General
+category-not-in-categories-collection,suspected,symphony-i-30d3-diet,6aca2e64df911910339b3e64,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-i200l-movicool,6aca2e64df911910339b3e68,General
+category-not-in-categories-collection,suspected,symphony-i200l-movicool,6aca2e64df911910339b3e68,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-2460bx-cx,6aca2e64df911910339b3d42,General
+generic-subcategory,suspected,aftron-af-w-2569b-c-inv,6aca2e64df911910339b3d43,General
+generic-subcategory,suspected,aftron-afw14600x,6aca2e64df911910339b3d4e,General
+generic-subcategory,suspected,indesit-inbuf011,6aca2e64df911910339b3d92,General
+generic-subcategory,suspected,indesit-tinf-701452xme,6aca2e64df911910339b3d97,General
+generic-subcategory,suspected,lg-f2y1typ3w,6aca2e64df911910339b3dab,General
+generic-subcategory,suspected,lg-ms2042db,6aca2e64df911910339b3ddd,General
+generic-subcategory,suspected,mazaya-gl-1100dddlxw,6aca2e64df911910339b3e26,General
+generic-subcategory,suspected,samsung-ar18trhqkwkngu,6aca2e64df911910339b3e52,General
+generic-subcategory,suspected,aftron-afw66100x,6aca2e64df911910339b3d50,General
+generic-subcategory,suspected,blue-star-ccb52010105,6aca2e64df911910339b3d68,General
+generic-subcategory,suspected,indesit-h-461ix-1,6aca2e64df911910339b3d74,General
+generic-subcategory,suspected,indesit-rin9-ggf23128xme,6aca2e64df911910339b3d85,General
+generic-subcategory,suspected,indesit-die-2b19uk,6aca2e64df911910339b3d8a,General
+generic-subcategory,suspected,indesit-dsio-3t224ezuk,6aca2e64df911910339b3d8b,General
+generic-subcategory,suspected,indesit-li8-sn1exuk,6aca2e64df911910339b3d93,General
+generic-subcategory,suspected,indesit-biwdil-75125mea,6aca2e64df911910339b3d9c,General
+generic-subcategory,suspected,indesit-xwde-961480xwssgcc,6aca2e64df911910339b3d9e,General
+generic-subcategory,suspected,lg-a27tnc,6aca2e64df911910339b3da2,General
+generic-subcategory,suspected,lg-a27tnc-uuae2,6aca2e64df911910339b3da3,General
+generic-subcategory,suspected,lg-dfb325hm,6aca2e64df911910339b3da4,General
+generic-subcategory,suspected,lg-dfc435fp,6aca2e64df911910339b3da7,General
+generic-subcategory,suspected,lg-p961ron5l,6aca2e64df911910339b3dd0,General
+generic-subcategory,suspected,lg-f4v5eylyp,6aca2e64df911910339b3dd9,General
+generic-subcategory,suspected,lg-gn-c782hqcl,6aca2e64df911910339b3dea,General
+generic-subcategory,suspected,lg-gr-c619hlcl,6aca2e64df911910339b3df8,General
+generic-subcategory,suspected,lg-t9586ndkvh,6aca2e64df911910339b3e19,General
+generic-subcategory,suspected,mazaya-gl-100eo,6aca2e64df911910339b3e1d,General
+generic-subcategory,suspected,mazaya-gl-icf450sdc,6aca2e64df911910339b3e35,General
+generic-subcategory,suspected,symphony-i-55d3-diet,6aca2e64df911910339b3e66,General
+category-not-in-categories-collection,suspected,symphony-i-55d3-diet,6aca2e64df911910339b3e66,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,aftron-af-w-1860bx-cx,6aca2e64df911910339b3d3d,General
+generic-subcategory,suspected,aftron-af-w-1959be-ce,6aca2e64df911910339b3d3e,General
+generic-subcategory,suspected,aftron-af1995e,6aca2e64df911910339b3d4c,General
+generic-subcategory,suspected,aftron-af2595e,6aca2e64df911910339b3d4d,General
+generic-subcategory,suspected,blue-star-ccb52030319,6aca2e64df911910339b3d5c,General
+generic-subcategory,suspected,blue-star-ccb52010079,6aca2e64df911910339b3d64,General
+image-filename-names-another-model,suspected,blue-star-ccb52010079,6aca2e64df911910339b3d64,BSWC65-3T_540x2x_89741847-b3ad-450b-833c-81c2290f0c8d.png → BSWC653T
+generic-subcategory,suspected,blue-star-ccb52010106,6aca2e64df911910339b3d69,General
+generic-subcategory,suspected,indesit-h-491ix,6aca2e64df911910339b3d75,General
+generic-subcategory,suspected,indesit-ifw-5844cix,6aca2e64df911910339b3d78,General
+generic-subcategory,suspected,indesit-is67g1pcx-mea,6aca2e64df911910339b3d7f,General
+generic-subcategory,suspected,indesit-mtwe-81483sgcc,6aca2e64df911910339b3d81,General
+generic-subcategory,suspected,gree-gr-quies-18c3-gree,6aca2e64df911910339b3dc3,General
+generic-subcategory,suspected,gree-gr-t4-matic-i48c3-ind-gree,6aca2e64df911910339b3dc6,General
+generic-subcategory,suspected,lg-t36zca,6aca2e64df911910339b3dd7,General
+generic-subcategory,suspected,lg-f4y2vrpyj,6aca2e64df911910339b3de6,General
+generic-subcategory,suspected,lg-gr-b267kljw,6aca2e64df911910339b3df0,General
+generic-subcategory,suspected,lg-t15h7ehhtp,6aca2e64df911910339b3e14,General
+generic-subcategory,suspected,mazaya-gl-icf350cgq,6aca2e64df911910339b3e2d,General
+generic-subcategory,suspected,mazaya-gl-icf560fdx,6aca2e64df911910339b3e38,General
+generic-subcategory,suspected,mazaya-tsb-2cf-27prmb,6aca2e64df911910339b3e3f,General
+generic-subcategory,suspected,samsung-ww11bb944dgbgu,6aca2e64df911910339b3e56,General
+generic-subcategory,suspected,symphony-125dd-movicool,6aca2e64df911910339b3e5f,General
+category-not-in-categories-collection,suspected,symphony-125dd-movicool,6aca2e64df911910339b3e5f,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+generic-subcategory,suspected,symphony-u20vc-venticool,6aca2e64df911910339b3e6a,General
+category-not-in-categories-collection,suspected,symphony-u20vc-venticool,6aca2e64df911910339b3e6a,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+category-not-in-categories-collection,suspected,geepas-digital-air-cooler-45l-gac9433,6ad064ddd12826b12170f419,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+image-filename-names-another-model,suspected,geepas-1-5-ton-window-air-conditioner-gacw1878cu,6ad064ddd12826b12170f418,GACW1878TCU1.jpg → GACW1878TCU
+image-filename-names-another-model,suspected,mitsubishi-ms-gs36-mu-gs36,6ad07fd5f9be311bced6d555,MS-gs-30.png → MSGS30
+category-not-in-categories-collection,suspected,general-line-me-5000ac,6addbfeb9c9bba1c0c20e3a1,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+category-not-in-categories-collection,suspected,general-line-me-7000ac,6addbfeb9c9bba1c0c20e3a2,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+category-not-in-categories-collection,suspected,kenwood-ifp55-a0si,6addc278e4af14c576406593,Air Coolers & Fans / air-coolers-fans (may be configured in code)
+same-image-url-on-several-products,exact,data-uri,6ab12709b0983429839949ec | 6ab12769b0983429839949f8 | 6ab12812b098342983994a0d | 6ab1298fb098342983994a4e | 6ab12a04b098342983994a8e | 6ab12a99b098342983994b4e | 6ab12b12b098342983994b7a | 6ab12b7bb098342983994b85 | 6ab12bdab098342983994b99,p-1789994760960 || p-1789994855475 || p-1789995024698 || p-1789995405587 || p-1789995522333 || p-1789995672150 || p-1789995792646 || p-1789995898054 || p-1789995993094
+same-image-url-on-several-products,exact,data-uri,6ab12ee5b098342983994c05 | 6ab13806b098342983994e1a,p-1789996773550 || p-1789999109952
+same-image-url-on-several-products,exact,https://images.seeklogo.com/logo-png/14/2/toshiba-logo-png_seeklogo-141172.png,6ac8b84cd467feb0e4adf9fd | 6ac8bb0fd467feb0e4adfa3e,p-1791539276164 || p-1791539983521
+same-image-url-on-several-products,exact,https://www.alrayanservices.com/uploads/images/202403/img_1920x_65ec6eba002358-79227310-33684425.jpg,6aca2e64df911910339b3d56 | 6aca2e64df911910339b3d5f,blue-star-ccb52030305 || blue-star-ccb52030329
+same-image-url-on-several-products,exact,https://symphonylimited.com/wp-content/uploads/2022/01/16.-Movicool-L125.png,6aca2e64df911910339b3e67 | 6aca2e64df911910339b3e60,symphony-i125l-movicool || symphony-125l-movicool
+same-image-url-on-several-products,exact,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1RaPk8rpgLPs94zGvr_-OgEg5e68Id5mxHEp5--AMN9Uw1EP9UjTbV1i&s=10,6aca2e64df911910339b3db0 | 6aca2e64df911910339b3db5 | 6aca2e64df911910339b3db7 | 6aca2e64df911910339b3db6 | 6aca2e64df911910339b3db2,gree-gr-f4-matic-18c3-ind-gree || gree-gr-i2-pro-12c3-ind-gree || gree-gr-i2-pro-24c3-ind-gree || gree-gr-i2-pro-18c3-ind-gree || gree-gr-i-airy32-18c3-ind-gree
+same-image-url-on-several-products,exact,https://play-lh.googleusercontent.com/2SxnnDi-1X5TN8xVUylvdl8HChG1LE4tTdGspgLg-KxxcQ6zfGBtIi9bNpuEdgomE1JGkxMuef9TrZZC1MMdtw,6aca2e64df911910339b3e46 | 6aca2e64df911910339b3e45,mazaya-gl-36wtc || mazaya-gl-24wtc
+same-image-url-on-several-products,exact,https://symphonylimited.com/wp-content/uploads/2022/01/movicoll-200-xl.png,6aca2e64df911910339b3e69 | 6aca2e64df911910339b3e62,symphony-i200xl-movicool || symphony-200xl-movicool
+same-image-url-on-several-products,exact,https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png,6aca2e64df911910339b3d70 | 6aca2e64df911910339b3dbf | 6aca2e64df911910339b3dbb | 6aca2e64df911910339b3db9 | 6aca2e64df911910339b3db8 | 6aca2e64df911910339b3dba,gree-t4-matic-i60c3 || gree-gr-isave-plus-p30h3-indgree || gree-gr-i4-pro-18c3-ind-gree || gree-gr-i2-pro-36c3-ind-gree || gree-gr-i2-pro-30c3-ind-gree || gree-gr-i4-pro-12c3-ind-gree
+same-image-url-on-several-products,exact,https://rattanelect.com/wp-content/uploads/2024/01/1-29.jpg,6aca2e64df911910339b3d44 | 6aca2e64df911910339b3d4d,aftron-af-w-2595be-ce || aftron-af2595e
+same-image-url-on-several-products,exact,https://symphonylimited.com/wp-content/uploads/2022/01/Movicool-L-200i-LH-G-1.png,6aca2e64df911910339b3e61 | 6aca2e64df911910339b3e68,symphony-200l-movicool || symphony-i200l-movicool
+same-image-url-on-several-products,exact,https://rattanelect.com/wp-content/uploads/2024/02/1-222.jpg,6aca2e64df911910339b3d40 | 6aca2e64df911910339b3d42,aftron-af-w-24020b-c || aftron-af-w-2460bx-cx
+same-image-url-on-several-products,exact,https://m.media-amazon.com/images/I/61Sz7KiPX8L.jpg,6aca2e64df911910339b3d68 | 6aca2e64df911910339b3d69,blue-star-ccb52010105 || blue-star-ccb52010106
+same-image-url-on-several-products,exact,https://cdn.vectorstock.com/i/1000v/12/00/phoenix-lettering-logo-concept-vector-46531200.jpg,6ace0ae7c20e09f0d82e773b | 6ace0ae7c20e09f0d82e773c,phoenix-ph1019 || phoenix-ph2019
+same-image-url-on-several-products,exact,https://catalogue.geepas.com/assets/images/products/orginal/GACW1878TCU1.jpg,6ad064ddd12826b12170f418 | 6ad064ddd12826b12170f41d,geepas-1-5-ton-window-air-conditioner-gacw1878cu || geepas-1-5-ton-window-air-conditioner-gacw1878tcu
+same-image-url-on-several-products,exact,https://5.imimg.com/data5/SELLER/Default/2026/1/574583072/QD/OV/YU/21170595/floor-standing-tower-air-conditioner.jpg,6ad07fd4f9be311bced6d536 | 6ad07fd5f9be311bced6d550,nikai-nfac60132cp9 || krome-kr-fac603pr-in-od
+same-image-url-on-several-products,exact,https://gratusworld.com/public/uploads/products/20c991b2054aeb52063f458b.png,6ad07fd4f9be311bced6d53c | 6ad07fd4f9be311bced6d53e,nikai-nsac24410k || nikai-nsac36410k
+same-image-url-on-several-products,exact,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHATip5jW4WGR7k_QGAytLZIA_Cn-GWLkA8pcw1CGMK20Gg1GBHmsKgz8&s=10,6ad07fd5f9be311bced6d544 | 6ad07fd5f9be311bced6d545,krome-kr-ar24mt3 || krome-kr-ar30mt3
+same-image-url-on-several-products,exact,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVe5YPu7alTBkEBZ448iMRB7APHRYL5kNY7TmJsSFaSWMQ1RHUPjgQtPn&s=10,6ad07fd6f9be311bced6d563 | 6ad07fd6f9be311bced6d564 | 6ad07fd6f9be311bced6d565 | 6ad07fd6f9be311bced6d566 | 6ad07fd6f9be311bced6d567,daewoo-dw-dgc-665bsf || daewoo-dw-dgc-s965hdfp || daewoo-dw-dcc-s664hf || daewoo-dw-dcd-8s15p || daewoo-dw-dcf-151d
+same-image-url-on-several-products,exact,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMZxeQS9C8QoQikbS5Q_iPJL2yt6FRF-PDAPv39ihnKIzFMu8JT-bPWI&s=10,6ad07fd6f9be311bced6d568 | 6ad07fd6f9be311bced6d569 | 6ad07fd6f9be311bced6d56a | 6ad07fd6f9be311bced6d56b | 6ad07fd6f9be311bced6d56d | 6ad07fd6f9be311bced6d56e | 6ad07fd6f9be311bced6d56f,daewoo-dw-dcf-221d || daewoo-dw-dw-t131wd || daewoo-dw-dw-t201wd || daewoo-dw-fr-250vsn || daewoo-dw-fr-380vsn || daewoo-dw-fr-559vsin || daewoo-dw-fr-624vsin
+same-image-url-on-several-products,exact,https://m.media-amazon.com/images/I/51OI311I5cL.jpg,6ad07fd6f9be311bced6d572 | 6ad07fd6f9be311bced6d573,panasonic-cs-cu-fs18akf-5 || panasonic-cs-cu-fs24akf-5
+same-image-url-on-several-products,exact,https://m.media-amazon.com/images/I/51vTRH3wjnL.jpg,6ad07fd6f9be311bced6d574 | 6ad07fd7f9be311bced6d575 | 6ad07fd7f9be311bced6d577,panasonic-cs-cu-pn18ykf-5 || panasonic-cs-cu-pn24ykf-5 || panasonic-cs-cu-pn36ykf-5
+same-image-url-on-several-products,exact,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AezQbaY2a8KHGIZTefvN3waeAQD8fuA7MmPLVqxiOWisqLRXziY42ag&s=10,6ad07fd7f9be311bced6d57f | 6ad07fd7f9be311bced6d582,panasonic-nr-bc833msae || panasonic-nr-bc535vsae
+byte-identical-supabase-images-on-several-products,exact,0e152bfa34dcb810c2c8e6061e7b3155ebbc36478d43aa4d11a78f9af7172651,6aca2e64df911910339b3e2f | 6aca2e64df911910339b3e35,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350sdc/7319dcd0-8bc2-4e11-ada3-ed1e24be14bd.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450sdc/c614d141-38ed-47b2-94eb-756300d5b8f2.png
+byte-identical-supabase-images-on-several-products,exact,d4075eab4775c8e899a0b16dd2a5237ab463f8e95331ce5361f2623e14227133,6aca2e64df911910339b3dc4 | 6aca2e64df911910339b3dc3,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-quies-24c3-gree/df636cae-f86c-40ae-8771-ac24d208c977.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-quies-18c3-gree/2223d547-9865-4bf9-981f-eef87fddddef.png
+byte-identical-supabase-images-on-several-products,exact,9ec025327acbf7de87366fe2866886b162bf211f76005ba1d1b192bfcf70f2f8,6aca2e64df911910339b3e29 | 6aca2e64df911910339b3e27,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-1400ddswdlx/f7712bcd-893d-4413-a68d-405aed6b7fbc.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-1200ddswdlx/9cb3c60a-b4a6-4c79-884a-993c93191b5b.png
+byte-identical-supabase-images-on-several-products,exact,731b3de14f10d499817826d53279111f4199d4c5a0669e643f1e92e16968b3a9,6aca2e64df911910339b3e34 | 6aca2e64df911910339b3e32,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgx/be843147-c569-42b4-9206-895df1a77878.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf400cgx/3a7e46b6-cdb4-4308-a75a-46a602016aec.png
+byte-identical-supabase-images-on-several-products,exact,8ee47de4ffd3f9118bb3c36178c1273ce244c6f71574b526d2745339759c5f36,6aca2e64df911910339b3d6e | 6aca2e64df911910339b3d6f | 6aca2e64df911910339b3d6d,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/g4-matic-r25c3/60e4f701-2aaf-4966-941a-9f259aa93064.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/g4-matic-r32c3/54731c17-16ad-4497-8a9f-705c7f37b333.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/g4-matic-r20c3/e958fb54-cabd-44e5-8f7b-b798501d8738.png
+byte-identical-supabase-images-on-several-products,exact,049aebe98864dada28459b8d8f4d15f9c3d61c19f58a74e1f34c0552a6909a36,6aca2e64df911910339b3dd5 | 6aca2e64df911910339b3dd3 | 6aca2e64df911910339b3dd1,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/t30zca/1ff3aff2-4972-4f26-ae64-86980a3c5c9c.jpg || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/t24zca/d917fa94-c928-4104-bf00-269611015e8c.jpg || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/t18zca/831b214f-cde5-4401-9db4-1b9448feb4f0.jpg
+byte-identical-supabase-images-on-several-products,exact,b629f2b54b2618bb427fcaa44a684fd3a4a48377ddb2403a85249bdf0d26bc8b,6aca2e64df911910339b3e30 | 6aca2e64df911910339b3e36,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf360cgx/1f540f0e-ef63-4cc6-9b04-429ef042ceeb.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf460cgx/6495e5c9-bb5a-4c21-b01b-c200a7294086.png
+byte-identical-supabase-images-on-several-products,exact,ceb5e8a17cc7bcd939cf6daa8a89111cb795fd8be622eee2005bea8736188a54,6aca2e64df911910339b3da0 | 6aca2e64df911910339b3da2,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/a23tnc/edbf2c67-bfd2-4d7f-bbf8-c9350c294d16.jpg || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/a27tnc/529cec73-9dcb-4eea-95c6-df743761a6b2.jpg
+byte-identical-supabase-images-on-several-products,exact,2480ece466b3db7c39ae80080bcf378a037fb724f8f9b00966e7e01b98747538,6aca2e64df911910339b3dce | 6aca2e64df911910339b3dcc,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i38tcf/ab89b5ce-48ad-41a1-9013-a0a57c13c9aa.jpg || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i34tcf/535cc724-1be7-4fc7-9952-c1fae315981f.jpg
+byte-identical-supabase-images-on-several-products,exact,8a4d9396e4eb5aa1eccbe4249a0c7fff6dfaaa9c1024f3fea6b6821a5e943c8d,6aca2e64df911910339b3e33 | 6aca2e64df911910339b3e2d,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgq/beb8f49f-317b-44b6-b4ea-66078011b353.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350cgq/e8411516-6b17-403b-82c8-6bb8a7082cbf.png
+byte-identical-supabase-images-on-several-products,exact,80551b60fa62219d620259a5384c461deb41640d9f262df903db9fde180cad1e,6aca2e64df911910339b3dae | 6aca2e64df911910339b3daf,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-cmatic-s12c1-gree/e419a8c1-5368-4f19-b036-ae5984b1513d.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-cmatic-s18c1-gree/d66b9970-6922-4923-8ac1-094ff6c06490.png
+byte-identical-supabase-images-on-several-products,exact,42bd4da216f9b357401dc7024c664ec186008a7ecd3ee039b7186df83a1e4f94,6ad07fd4f9be311bced6d53f | 6ad07fd4f9be311bced6d540 | 6ad07fd4f9be311bced6d541 | 6ad07fd4f9be311bced6d542,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/prg18wac/b4b0805b-877a-4cb2-83a5-a9fc55924a49.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/prg24wac/2c77c012-abd6-4a53-96b0-5cf10ffb1857.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/prg18sac/0d67a8b4-7e24-496c-807c-54f7654c2f3d.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/prg24sac/58588db5-0520-47b7-99d2-2b289591278b.png
+byte-identical-supabase-images-on-several-products,exact,0b8047e5f521f4648df360d17cac1b83bbfedf45dcfa5aca6f4f3295722c1030,6ad541642377620e38bcb3f8 | 6ad541642377620e38bcb3f9,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/argg18clta-uz/737ee09f-f6c7-4a64-95b9-9adbde08b21e.png || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/argg24clta-uz/99c4f89b-4711-4bb0-97c8-581c839264aa.png
+byte-identical-supabase-images-on-several-products,exact,17de482803ca7aa8e24a908a6f4f50e7d7bc597db387c703e9ceac504dcae85f,6ad541642377620e38bcb3f6 | 6ad541642377620e38bcb3f7,https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/augg24crta-uz/88d29d46-a485-4181-8e0b-6f619ad04918.webp || https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/augg30crta-uz/15d6874b-c65b-453b-af21-ee26f30790ba.webp
+identical-local-files,exact,163f9a06e696faf3a6e26be6e328301e44c03a4167f7c878f3c9e642b5bb07d0,,public/favicon.ico || public/favicon.jpeg || public/halimalogo.jpeg
+identical-local-files,exact,0b8047e5f521f4648df360d17cac1b83bbfedf45dcfa5aca6f4f3295722c1030,,catalogues-source/ARGG18CLTA-UZ.png || catalogues-source/ARGG24CLTA-UZ.png
+identical-local-files,exact,17de482803ca7aa8e24a908a6f4f50e7d7bc597db387c703e9ceac504dcae85f,,catalogues-source/AUGG24CRTA-UZ.webp || catalogues-source/AUGG30CRTA-UZ.webp
+identical-local-files,exact,1230a5bf922ef22f9e19085b87ad5aa5e7c4e64b26190e30c173c7f025adb1b2,,catalogues-source/DW-FR-343S.webp || catalogues-source/Refrigerator DW-FR-343S Daewoo.webp
+identical-local-files,exact,f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c,,catalogues-source/GL-24WTC.png || catalogues-source/GL-36WTC.png || work/product-image-pipeline/cache/f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c.png
+identical-local-files,exact,efdbb7bcc7bcf8009435f9fba1fc9dc66e4cd6253d4d8c192b3c7ce021ee69e2,,"catalogues-source/GR-I2-PRO-24C3-IND-GREE.png || catalogues-source/Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter.png"
+identical-local-files,exact,83a4f3ebf80bfac9f9a014ba1b482672959ef6ac2beec7e830bb48b59ebbd32a,,"catalogues-source/GR-I4-PRO-18C3-IND-GREE.png || catalogues-source/Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter.png"
+identical-local-files,exact,8663fce57d7b6c2c3fd3a39e47aefc6dc94a88cead6c0fa8b279a1d8e8d09c2c,,"catalogues-source/GR-T4MATIC-T48C3-IND-GREE.webp || catalogues-source/Gree Floor Standing AC GR-T4'matic-N60C3-IND – Freestanding, 5.0 Ton.webp || catalogues-source/Gree Floor Standing AC T4 MATIC-T36C3 – 3.0 Ton — Freestanding — Inverter — R410a — 240:1:50.webp || catalogues-source/Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240:1:50.webp"
+identical-local-files,exact,1ce5168da538be6e25f3167e076684b2c90d1d54de89404108f1b37ab3a04f9b,,catalogues-source/HSU-18:24LPA03.jpeg || catalogues-source/HSU-18:24LPB03.jpeg
+identical-local-files,exact,909fad065b53d9c833495f548c0cdb5820341b69e11288f3e9c20415e520106e,,work/catalogue-images/audit/external-images/current-ar18trhqkwkngu.jpeg || work/catalogue-images/audit/external-images/current-ar24trhqkwkxgu.jpeg
+identical-local-files,exact,a723c83720c4f1f2d44ae34a5c104c6e0d29aa7adfb600cb9db36eaf153fbf1c,,work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg || work/product-image-pipeline/cache/a723c83720c4f1f2d44ae34a5c104c6e0d29aa7adfb600cb9db36eaf153fbf1c.jpeg
+identical-local-files,exact,d3841278357b3fcb39ca8db8d266400abebd9baf3253071948f0581e6c0505e7,,work/catalogue-images/batch4/samsung/p14-x43.jpeg || work/catalogue-images/batch4/samsung/p15-x46.jpeg
+identical-local-files,exact,5c32306d3fffda74b70cfc334870aed483a923a23bf31ce640d1beabf4a8b248,,work/catalogue-images/lg/lg-p63-x2905.jpeg || work/catalogue-images/lg/lg-p64-x2905.jpeg || work/catalogue-images/lg/lg-p65-x2905.jpeg
+identical-local-files,exact,e1fd7b61a1cd39fe1a3cb9708862ecffde174a138b7c1bde246401bf90b37ee6,,work/catalogue-images/lg/lg-p69-x3173.jpeg || work/catalogue-images/lg/lg-p70-x3173.jpeg
+identical-local-files,exact,ec02c0d0171ce0d85ba592493910b0b4e2183fe6c8edab4c185b45fab2396330,,work/catalogue-images/lg/lg-p71-x3269.jpeg || work/catalogue-images/lg/lg-p72-x3269.jpeg
+identical-local-files,exact,294e5965fe4e5cc7da1162ade1cd65674091dfd85682c7d9c3d6e24be3cace0c,,work/catalogue-images/mazaya/mz-x1020.png || work/catalogue-images/prepared/gl-1600tdswdlx.png
+identical-local-files,exact,9c212c74532f212012c1631dbf8a1df287ce1fe40dc98336b665ba2bc7d9bf4d,,work/catalogue-images/mazaya/mz-x1024.png || work/catalogue-images/prepared/gl-1300ddswdlx.png
+identical-local-files,exact,7885fbe1fb9e51e55e5d3203eac0cfab14588b1885147918d2b517e0844d9611,,work/catalogue-images/mazaya/mz-x1125.png || work/catalogue-images/prepared/gl-in681nfr.png
+identical-local-files,exact,5e43a8cebf01f2fb6839d90184bea2194f44cb69873a78f94c31b984448db1e8,,work/catalogue-images/mazaya/mz-x1133.png || work/catalogue-images/prepared/gl-in861nfr.png
+identical-local-files,exact,0458b2b5f47cca9d91f83f34af2dc686d739e6128dcca09ef3de9d23936299ac,,work/catalogue-images/mazaya/mz-x1145.png || work/catalogue-images/prepared/gl-inf520fr-2.png
+identical-local-files,exact,74235cda87ae0e6aeef00e9c5a226614828c0b98091ac8161544e36e6dc8069c,,work/catalogue-images/mazaya/mz-x1509.png || work/catalogue-images/prepared/gl-gc9060ss.png
+identical-local-files,exact,ed76e686bb0885ef86a3a190bd2fa8062a0128b52052a5376b3b6f914887a9f9,,work/catalogue-images/mazaya/mz-x1511.png || work/catalogue-images/prepared/gl-gc9060fs.png
+identical-local-files,exact,ca835550b9156bf6539dd2c97bec0b624476737d98c7c5278196af22c5f030df,,work/catalogue-images/mazaya/mz-x2331.png || work/catalogue-images/prepared/me-22000ac.png
+identical-local-files,exact,5e96b504cab95d50e54d90de0ee34c569ccf1d992c498755f610ed05836e9701,,work/catalogue-images/mazaya/mz-x2335.png || work/catalogue-images/prepared/me-20000ac.png
+identical-local-files,exact,3e9ba8c891efdde2cb571f525fbee4d88aa236ca297d0664e909ae6e1a003a1a,,work/catalogue-images/mazaya/mz-x2339.png || work/catalogue-images/prepared/me-10000ac.png
+identical-local-files,exact,338fd63a15e2ada05bfa4bd39ede63c1728c6c8cdd3c86aaeeb6f1b45cb40b58,,work/catalogue-images/mazaya/mz-x2939.png || work/catalogue-images/prepared/gl-icf400cgx.png || work/catalogue-images/prepared/gl-icf450cgx.png || work/product-image-pipeline/cache/338fd63a15e2ada05bfa4bd39ede63c1728c6c8cdd3c86aaeeb6f1b45cb40b58.png
+identical-local-files,exact,976e7af8e23239a666a2b926a096c0b954b18358f2dec4d273cffb61c776d583,,work/catalogue-images/mazaya/mz-x2943.png || work/catalogue-images/prepared/gl-icf360cgx.png || work/catalogue-images/prepared/gl-icf460cgx.png || work/product-image-pipeline/cache/976e7af8e23239a666a2b926a096c0b954b18358f2dec4d273cffb61c776d583.png
+identical-local-files,exact,4fb0d40b9d40f99ee8e9da55712695b77471697ddba688bca683c1ac459874a6,,work/catalogue-images/mazaya/mz-x2947.png || work/catalogue-images/prepared/gl-icf380fdx.png || work/catalogue-images/prepared/gl-icf560fdx.png || work/product-image-pipeline/cache/4fb0d40b9d40f99ee8e9da55712695b77471697ddba688bca683c1ac459874a6.png
+identical-local-files,exact,61bd12b6c291ff3220a7235b35820c6092ba3ae54f4fcfd0c391a8e264ad3059,,work/catalogue-images/mazaya/mz-x3075.png || work/catalogue-images/prepared/gl-icf350cgq.png || work/catalogue-images/prepared/gl-icf450cgq.png || work/product-image-pipeline/cache/61bd12b6c291ff3220a7235b35820c6092ba3ae54f4fcfd0c391a8e264ad3059.png
+identical-local-files,exact,870d6ac37ff908a85e07864cd00efd43a6fb8668703541e07bd5f50d89f410ed,,work/catalogue-images/mazaya/mz-x3079.png || work/catalogue-images/prepared/gl-icf350fdc.png || work/catalogue-images/prepared/gl-icf500fdc.png || work/product-image-pipeline/cache/870d6ac37ff908a85e07864cd00efd43a6fb8668703541e07bd5f50d89f410ed.png
+identical-local-files,exact,846e5f1b287899e632aedc6c4915254f669b8c39557523eb529b03e827b07c1f,,work/catalogue-images/mazaya/mz-x3083.png || work/catalogue-images/prepared/gl-icf350sdc.png || work/catalogue-images/prepared/gl-icf450sdc.png || work/product-image-pipeline/cache/846e5f1b287899e632aedc6c4915254f669b8c39557523eb529b03e827b07c1f.png
+identical-local-files,exact,16fb2c7f27db249d5ed660c79756b49e6a0554529b7dca888115e59dff2839be,,work/catalogue-images/mazaya/mz-x3152.png || work/catalogue-images/prepared/gl-430vnff.png
+identical-local-files,exact,4aeee40692cbc322b97ed9ec616c8b79ec8caafe7cc84e76a74fe4e629ae6961,,work/catalogue-images/mazaya/mz-x3160.png || work/catalogue-images/prepared/gl-1200vnff.png
+identical-local-files,exact,c515cbbed272b65a03bd0a39eec819bf67ac7359e8b6f2ac847de7dfdffafe4a,,work/catalogue-images/mazaya/mz-x515.png || work/catalogue-images/prepared/me-25t2.png
+identical-local-files,exact,411ad6a8937413e1f37d580b0c93b968d1d6e1854196f0595f2b01a9cb786368,,work/catalogue-images/mazaya/mz-x519.png || work/catalogue-images/prepared/me-35t3.png
+identical-local-files,exact,2b371295b760e6393240c072523da4d9014aaa209afc816ff375d1439ddc3690,,work/catalogue-images/mazaya/mz-x523.png || work/catalogue-images/prepared/me-65t3.png
+identical-local-files,exact,81b203d5d8818d3f2f6c3358ac14bfe0e02b5e90b11e40ee7163dac6f5f02a6d,,work/catalogue-images/mazaya/mz-x527.png || work/catalogue-images/prepared/me-45t3.png
+identical-local-files,exact,67cd081dca1882d1222336496c5cd4fbccf273f2e779b06ae977e03a866912a2,,work/catalogue-images/mazaya/mz-x603.png || work/catalogue-images/prepared/me-100t5.png
+identical-local-files,exact,04a678447694f90c98d50203aa46ebfc3887481e96a25dc42ac3af7f1bef6753,,work/catalogue-images/mazaya/mz-x607.png || work/catalogue-images/prepared/me-125t5.png
+identical-local-files,exact,925d2b8cf75cc9543d8608318003571bbc7d4832f4e7af6f9fa6e252137db4c0,,work/catalogue-images/mazaya/mz-x611.png || work/catalogue-images/prepared/me-85t4.png
+identical-local-files,exact,90dabd28727c8b55c8718ff84c241203bcd02b92a949da029d058f848f7ce1bd,,work/catalogue-images/mazaya/mz-x688.png || work/catalogue-images/prepared/me-150t5.png
+identical-local-files,exact,23276600d2a62479ae0c4a89de40bccf34701381f071d15d2d04035f90c28265,,work/catalogue-images/mazaya/mz-x750.png || work/catalogue-images/prepared/tsb-2cf-27prmb.png
+identical-local-files,exact,63cec8a9e41628f4aed6cc8db70d5ac721c66eb1e23b77e0598ebdcb88f66579,,work/catalogue-images/mazaya/mz-x754.png || work/catalogue-images/prepared/tsb-1cf-13prmb.png
+identical-local-files,exact,daf0104f8dfb90d59d8614f5006e5cf85094454e6feb5657f450b38429754fae,,work/catalogue-images/mazaya/mz-x758.png || work/catalogue-images/prepared/tsb-2cf-27prmw.png
+identical-local-files,exact,7b29a2ada7044ab8ce1ae6f891e8d0da27394a859279061d4e8bd9fb67dd0c7a,,work/catalogue-images/mazaya/mz-x812.png || work/catalogue-images/prepared/tsb-2cf-29.png
+identical-local-files,exact,4915d331473caebfe6a4e0056b165bc9956f10b37486f37b91a81260e71c2830,,work/catalogue-images/mazaya/mz-x871.png || work/catalogue-images/prepared/tsb-2cf-37.png
+identical-local-files,exact,ef62a67c5650288f0910f7b0c4e7a76ed047811b93e3d781bdef61ed76284f30,,work/catalogue-images/mazaya/mz-x947.png || work/catalogue-images/prepared/gl-1100dddlxw.png
+identical-local-files,exact,a8ac5c016f67212e8c975645b45bfbf6e958a3bde0447c7e384020704821bb5c,,work/catalogue-images/mazaya/mz-x955.png || work/catalogue-images/prepared/xls-410sd.png
+identical-local-files,exact,ceb5e8a17cc7bcd939cf6daa8a89111cb795fd8be622eee2005bea8736188a54,,work/catalogue-images/prepared/a23tnc-uuae2.jpg || work/catalogue-images/prepared/a23tnc.jpg || work/catalogue-images/prepared/a27tnc-uuae2.jpg || work/catalogue-images/prepared/a27tnc.jpg
+identical-local-files,exact,8ee47de4ffd3f9118bb3c36178c1273ce244c6f71574b526d2745339759c5f36,,work/catalogue-images/prepared/g4-matic-r20c3.png || work/catalogue-images/prepared/g4-matic-r25c3.png || work/catalogue-images/prepared/g4-matic-r32c3.png
+identical-local-files,exact,aa5d38de3a3a756d16225a407d0a81b6155bbdf12400c6737f809185ebc822b9,,work/catalogue-images/prepared/gl-1200ddswdlx.png || work/catalogue-images/prepared/gl-1400ddswdlx.png || work/product-image-pipeline/cache/aa5d38de3a3a756d16225a407d0a81b6155bbdf12400c6737f809185ebc822b9.png
+identical-local-files,exact,80551b60fa62219d620259a5384c461deb41640d9f262df903db9fde180cad1e,,work/catalogue-images/prepared/gr-c-matic-s12c1.png || work/catalogue-images/prepared/gr-c-matic-s18c1.png
+identical-local-files,exact,d2b2349757b831b1596154c00972f086dd587cc7899efc171adc60e65a3694ec,,work/catalogue-images/prepared/gr-i-airy32-12c3-ind.png || work/catalogue-images/prepared/gr-i-airy32-18c3-ind.png || work/catalogue-images/prepared/gr-i-airy32-24c3-ind.png || work/catalogue-images/prepared/gr-i-airy32-30c3-ind.png || work/product-image-pipeline/cache/d2b2349757b831b1596154c00972f086dd587cc7899efc171adc60e65a3694ec.png
+identical-local-files,exact,b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a,,work/catalogue-images/prepared/gr-i2-pro-12c3-ind.png || work/catalogue-images/prepared/gr-i2-pro-18c3-ind.png || work/catalogue-images/prepared/gr-i2-pro-24c3-ind.png || work/catalogue-images/prepared/gr-i2-pro-30c3-ind.png || work/catalogue-images/prepared/gr-i2-pro-36c3-ind.png || work/product-image-pipeline/cache/b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a.png
+identical-local-files,exact,32b97d2fca44ebf3114b35cfb26988ef4dd0d6155174bf3cbea7a2498d56c092,,work/catalogue-images/prepared/gr-i4-pro-12c3-ind.png || work/catalogue-images/prepared/gr-i4-pro-18c3-ind.png || work/catalogue-images/prepared/gr-i4-pro-24c3-ind.png || work/catalogue-images/prepared/gr-i4-pro-30c3-ind.png || work/catalogue-images/prepared/gr-i4-pro-36c3-ind.png || work/product-image-pipeline/cache/32b97d2fca44ebf3114b35cfb26988ef4dd0d6155174bf3cbea7a2498d56c092.png
+identical-local-files,exact,4beaeea1bbd4b5fd7ab9ceb8429fcbaabc6584e2d69f195554ff5409b917cada,,work/catalogue-images/prepared/gr-p4-matic-18c3-ind.png || work/catalogue-images/prepared/gr-p4-matic-24c3-ind.png || work/catalogue-images/prepared/gr-p4-matic-30c3-ind.png || work/product-image-pipeline/cache/4beaeea1bbd4b5fd7ab9ceb8429fcbaabc6584e2d69f195554ff5409b917cada.png
+identical-local-files,exact,d4075eab4775c8e899a0b16dd2a5237ab463f8e95331ce5361f2623e14227133,,work/catalogue-images/prepared/gr-quies-18c3.png || work/catalogue-images/prepared/gr-quies-24c3.png
+identical-local-files,exact,67e70db67e62448bab31a994ce63c03f236a8955ada767aca26cdd8870b674f8,,work/catalogue-images/prepared/gr-t4-matic-i36c3-ind.png || work/catalogue-images/prepared/gr-t4-matic-i48c3-ind.png || work/catalogue-images/prepared/gr-t4-matic-n60c3-ind.png || work/product-image-pipeline/cache/67e70db67e62448bab31a994ce63c03f236a8955ada767aca26cdd8870b674f8.png
+identical-local-files,exact,48590ecefaa85ed1c4ecc116b6ab47ddb6195387aad7a2b04ea68ce197cc310a,,work/catalogue-images/prepared/i23tcp-uuae2.jpg || work/catalogue-images/prepared/i23tcp.jpg
+identical-local-files,exact,98fe78a94a02981d5eb7961701222f04da1e2f798b039ae5042b931bfa83048d,,work/catalogue-images/prepared/i27tcp-uuae2.jpg || work/catalogue-images/prepared/i27tcp.jpg
+identical-local-files,exact,2480ece466b3db7c39ae80080bcf378a037fb724f8f9b00966e7e01b98747538,,work/catalogue-images/prepared/i34tcf-uuae.jpg || work/catalogue-images/prepared/i34tcf.jpg || work/catalogue-images/prepared/i38tcf-uuae.jpg || work/catalogue-images/prepared/i38tcf.jpg
+identical-local-files,exact,049aebe98864dada28459b8d8f4d15f9c3d61c19f58a74e1f34c0552a6909a36,,work/catalogue-images/prepared/t18zca-uuae1.jpg || work/catalogue-images/prepared/t18zca.jpg || work/catalogue-images/prepared/t24zca-uuae1.jpg || work/catalogue-images/prepared/t24zca.jpg || work/catalogue-images/prepared/t30zca-uuae.jpg || work/catalogue-images/prepared/t30zca.jpg
+identical-local-files,exact,7e83d39d3ffff5e69f379eae6819f7d3ef38181107ef2939b807d099a239a048,,work/catalogue-images/prepared/t36zca-uuae.jpg || work/catalogue-images/prepared/t36zca.jpg
+identical-local-files,exact,60c3b49a18687613020bac364d0c6c723ebc6112a7cbf786d8de5c1dea080a39,,work/catalogue-images/symphony-official/Movicool-DD125.png || work/product-image-pipeline/cache/60c3b49a18687613020bac364d0c6c723ebc6112a7cbf786d8de5c1dea080a39.png
+identical-local-files,exact,1debe934e3ac15d3223eb6c2ab7f9672ae2183b59de20ce739b8d23b8d956350,,work/catalogue-images/symphony-official/Movicool-L-125.png || work/product-image-pipeline/cache/1debe934e3ac15d3223eb6c2ab7f9672ae2183b59de20ce739b8d23b8d956350.png
+identical-local-files,exact,e7163be76f79a755edfe30ff7740f0d0ad0250736e86fe844e6b44f5ee07c869,,work/catalogue-images/symphony-official/Movicool-L200i.png || work/product-image-pipeline/cache/e7163be76f79a755edfe30ff7740f0d0ad0250736e86fe844e6b44f5ee07c869.png
+identical-local-files,exact,cd94a101e405f81cee5e50f7048220eb948199685355f77180c95ccebc4a0cd0,,work/catalogue-images/symphony-official/Movicool-XL-100-G.png || work/product-image-pipeline/cache/cd94a101e405f81cee5e50f7048220eb948199685355f77180c95ccebc4a0cd0.png
+identical-local-files,exact,7f6d1596a3f78b6dc3465195fd4a88270bde3fa34f2bc94374d6a228b57c4c4f,,work/catalogue-images/symphony-official/Movicool-XL-200-G.png || work/product-image-pipeline/cache/7f6d1596a3f78b6dc3465195fd4a88270bde3fa34f2bc94374d6a228b57c4c4f.png
+identical-local-files,exact,e73c5492bcbe8c6411f036a7ef76a24b5ee4ba405897471b28be312f4122f125,,work/catalogue-images/symphony-official/Movicool-XL-200i.png || work/product-image-pipeline/cache/e73c5492bcbe8c6411f036a7ef76a24b5ee4ba405897471b28be312f4122f125.png
+identical-local-files,exact,37f451eb96cbdf9c7eabf675fa45275ac5337843ed76151a287339f60d9a5f16,,work/catalogue-images/symphony-official/diet-3d-40i.png || work/product-image-pipeline/cache/37f451eb96cbdf9c7eabf675fa45275ac5337843ed76151a287339f60d9a5f16.png
+identical-local-files,exact,84247d53542ff698235ca5470c9f0d289ade3737fe0238c38453478b0d4c087b,,work/catalogue-images/symphony-official/diet-3d-55i-.png || work/product-image-pipeline/cache/84247d53542ff698235ca5470c9f0d289ade3737fe0238c38453478b0d4c087b.png
+identical-local-files,exact,dab2a0050c0eede45f30c9ffee2635a5226fdc10b92bf302bf18a90730a1ceba,,work/catalogue-images/symphony-official/movicool-dd-125.png || work/catalogue-images/symphony-official/symphony-movicool-dd-125-doublel-decker-air-cooler-125-llitr.png
+identical-local-files,exact,8aae0d7e86a61047a3dd269f0f00567cf8834e3fed246a6316f9c145d3ded1c8,,work/catalogue-images/symphony-official/movicool-l-200-air-cooler.png || work/catalogue-images/symphony-official/movicool-l200.png
+identical-local-files,exact,466f1ec8125a77c4d6339274431aac6c5be41fa473f58ea663c718f17dcdbbbc,,work/catalogue-images/symphony-official/movicool-l125.png || work/catalogue-images/symphony-official/symphony-movicool-l-125-large-space-cooler-125-litres.png
+identical-local-files,exact,8c5c73f15051b52951cddde18c94850d438343613032e2edea008389d2e97d6f,,work/catalogue-images/symphony-official/storm-70-xl-gallery4.png || work/product-image-pipeline/cache/8c5c73f15051b52951cddde18c94850d438343613032e2edea008389d2e97d6f.png
+identical-local-files,exact,d4cb9ee95aa575c30a0e8e4e21cf08d70c8502b37d183f8e44986640e6d581b4,,work/catalogue-images/symphony-official/storm-c-100xl.png || work/product-image-pipeline/cache/d4cb9ee95aa575c30a0e8e4e21cf08d70c8502b37d183f8e44986640e6d581b4.png
+identical-local-files,exact,04a513c15d829dffa1e9665e75377e1548737ab2edb4543f3239585a81e50710,,work/product-image-pipeline/cache/04a513c15d829dffa1e9665e75377e1548737ab2edb4543f3239585a81e50710.png || work/product-image-pipeline/supplier-candidates/04a513c15d829dff.png
+identical-local-files,exact,0b83773ff76474d2d7f81fc31e9978ff5b9924e4c95a0755cf90404b8ae7d8d0,,work/product-image-pipeline/cache/0b83773ff76474d2d7f81fc31e9978ff5b9924e4c95a0755cf90404b8ae7d8d0.png || work/product-image-pipeline/supplier-candidates/0b83773ff76474d2.png
+identical-local-files,exact,1ecef2abf8afe212ec0b5c84f3d3573556044053fffedcb87c9737194b6daf34,,work/product-image-pipeline/cache/1ecef2abf8afe212ec0b5c84f3d3573556044053fffedcb87c9737194b6daf34.png || work/product-image-pipeline/catalogue/super-general/crops/4e0e6c1826817460ea86.png || work/product-image-pipeline/catalogue/super-general/previews/1ecef2abf8afe212ec0b5c84.source.png
+identical-local-files,exact,1f60f7908152f32209ddae91ee8ce678c32814691b73a49710b0b696e95452f5,,work/product-image-pipeline/cache/1f60f7908152f32209ddae91ee8ce678c32814691b73a49710b0b696e95452f5.png || work/product-image-pipeline/supplier-candidates/1f60f7908152f322.png
+identical-local-files,exact,2ea63187820959c3c96dab23f44539295889d442e0316a2e556371f7b0252de6,,work/product-image-pipeline/cache/2ea63187820959c3c96dab23f44539295889d442e0316a2e556371f7b0252de6.png || work/product-image-pipeline/catalogue/super-general/crops/dcb50ca17667071e3a6b.png || work/product-image-pipeline/catalogue/super-general/previews/2ea63187820959c3c96dab23.source.png
+identical-local-files,exact,37104dae1b1fe14bfd4b7e202ae2a7af44594ee328aadb66086e6349f5b61b18,,work/product-image-pipeline/cache/37104dae1b1fe14bfd4b7e202ae2a7af44594ee328aadb66086e6349f5b61b18.png || work/product-image-pipeline/catalogue/super-general/previews/37104dae1b1fe14bfd4b7e20.source.png
+identical-local-files,exact,53574f0c2269dda83243eeee5197f892917e00bdc3d3f0f61539ef1a33aeea98,,work/product-image-pipeline/cache/53574f0c2269dda83243eeee5197f892917e00bdc3d3f0f61539ef1a33aeea98.png || work/product-image-pipeline/supplier-candidates/53574f0c2269dda8.png
+identical-local-files,exact,7ea11ff331573c7994097d5eb118987a574fa89b79b8ec2748312f819aab56b1,,work/product-image-pipeline/cache/7ea11ff331573c7994097d5eb118987a574fa89b79b8ec2748312f819aab56b1.png || work/product-image-pipeline/catalogue/super-general/crops/144a657dae7ad57cde0b.png || work/product-image-pipeline/catalogue/super-general/previews/7ea11ff331573c7994097d5e.source.png
+identical-local-files,exact,806922acb49a76faf5ef70ecb7f5b2955f165e20b4be995437cd257aed91e923,,work/product-image-pipeline/cache/806922acb49a76faf5ef70ecb7f5b2955f165e20b4be995437cd257aed91e923.png || work/product-image-pipeline/supplier-candidates/806922acb49a76fa.png
+identical-local-files,exact,815d6edb0dafe86f192e1ce215634dd1e8085a0f2c86b06b9aae98eff6fb96f4,,work/product-image-pipeline/cache/815d6edb0dafe86f192e1ce215634dd1e8085a0f2c86b06b9aae98eff6fb96f4.png || work/product-image-pipeline/supplier-candidates/815d6edb0dafe86f.png
+identical-local-files,exact,8a22c58cf01bac3b58e073c483a8cd86ad41dc1d7c5d0ff5971cef85e4a07318,,work/product-image-pipeline/cache/8a22c58cf01bac3b58e073c483a8cd86ad41dc1d7c5d0ff5971cef85e4a07318.png || work/product-image-pipeline/supplier-candidates/8a22c58cf01bac3b.png
+identical-local-files,exact,94345b511098c4274604731ca323fbe0fe5e61f2db4176619a899071c60fd0da,,work/product-image-pipeline/cache/94345b511098c4274604731ca323fbe0fe5e61f2db4176619a899071c60fd0da.png || work/product-image-pipeline/catalogue/super-general/crops/aec2401b15a33ede7565.png || work/product-image-pipeline/catalogue/super-general/previews/94345b511098c4274604731c.source.png
+identical-local-files,exact,96aaecd9c550a29b87bbe70df7f19ccf1d07c507fbc1143e24706d46231ff412,,work/product-image-pipeline/cache/96aaecd9c550a29b87bbe70df7f19ccf1d07c507fbc1143e24706d46231ff412.png || work/product-image-pipeline/supplier-candidates/96aaecd9c550a29b.png
+identical-local-files,exact,9a2c8a0891898a3dcecfa38bf3739d263d6ab7183d210121e21c1d0937609407,,work/product-image-pipeline/cache/9a2c8a0891898a3dcecfa38bf3739d263d6ab7183d210121e21c1d0937609407.png || work/product-image-pipeline/catalogue/super-general/previews/9a2c8a0891898a3dcecfa38b.source.png
+identical-local-files,exact,a7beaf92fa8717e93c517513b4631638a7240dda9c7bd32db40bf54fe9fe651f,,work/product-image-pipeline/cache/a7beaf92fa8717e93c517513b4631638a7240dda9c7bd32db40bf54fe9fe651f.png || work/product-image-pipeline/catalogue/super-general/crops/dd6039e2e006c8382568.png || work/product-image-pipeline/catalogue/super-general/previews/a7beaf92fa8717e93c517513.source.png
+identical-local-files,exact,ae818fb15a11efe1517b0099147dd5bf1db840a4759bb30bdd9539f041559c87,,work/product-image-pipeline/cache/ae818fb15a11efe1517b0099147dd5bf1db840a4759bb30bdd9539f041559c87.png || work/product-image-pipeline/catalogue/super-general/previews/ae818fb15a11efe1517b0099.source.png
+identical-local-files,exact,baf9dda0cd00b443530951c4b323e6c9eb3c5a1a1f97e8762c0cfc92013ad8d9,,work/product-image-pipeline/cache/baf9dda0cd00b443530951c4b323e6c9eb3c5a1a1f97e8762c0cfc92013ad8d9.png || work/product-image-pipeline/supplier-candidates/baf9dda0cd00b443.png
+identical-local-files,exact,bde5d7b1b26bca02e367ae00189531f9f58369d3214e8174fb5f64bcfa26f5fa,,work/product-image-pipeline/cache/bde5d7b1b26bca02e367ae00189531f9f58369d3214e8174fb5f64bcfa26f5fa.png || work/product-image-pipeline/catalogue/super-general/crops/232d101768120a8f934b.png || work/product-image-pipeline/catalogue/super-general/previews/bde5d7b1b26bca02e367ae00.source.png
+identical-local-files,exact,cb8e0b6f048bc2ffa91d18dd204a75a6b4c9d8e6d642fcf43104bba26469f410,,work/product-image-pipeline/cache/cb8e0b6f048bc2ffa91d18dd204a75a6b4c9d8e6d642fcf43104bba26469f410.png || work/product-image-pipeline/supplier-candidates/cb8e0b6f048bc2ff.png
+identical-local-files,exact,d0336dc627b0a701c4610389f7a5908dbdca5fb8ac224b6004709f87904fe538,,work/product-image-pipeline/cache/d0336dc627b0a701c4610389f7a5908dbdca5fb8ac224b6004709f87904fe538.png || work/product-image-pipeline/supplier-candidates/d0336dc627b0a701.png
+identical-local-files,exact,028f5bbddf11e40238ce8162eaeac863258447389328f85d1bcd9a7155a1f785,,work/product-image-pipeline/catalogue/super-general/crops/1ddb4089cefa0a873259.png || work/product-image-pipeline/catalogue/super-general/previews/028f5bbddf11e40238ce8162.source.png
+identical-local-files,exact,4284b61910e46387b2e52eff9c9638361359ce88bfbb6aeba3db3e4dcda24e97,,work/product-image-pipeline/catalogue/super-general/crops/32b6f70cc82b43509ba4.png || work/product-image-pipeline/catalogue/super-general/previews/4284b61910e46387b2e52eff.source.png
+identical-local-files,exact,11bf4311ae7ae1b100540d5aa887f6c1eb99122a5044e6606c056ae06417fbca,,work/product-image-pipeline/catalogue/super-general/crops/4699562463cf29dba1ed.png || work/product-image-pipeline/catalogue/super-general/previews/11bf4311ae7ae1b100540d5a.source.png
+identical-local-files,exact,aa17d409ce39346cca5aff9470260fc25e2aefac327a02f5ab3ade9d9b329742,,work/product-image-pipeline/catalogue/super-general/crops/4da4a2d78267804a5d68.png || work/product-image-pipeline/catalogue/super-general/previews/aa17d409ce39346cca5aff94.source.png
+identical-local-files,exact,2fd3ffac65d482790d0c42f58965f932620ac73c97650f2f645e0df2ecec434f,,work/product-image-pipeline/catalogue/super-general/crops/96e51b439d796a3c1b68.png || work/product-image-pipeline/catalogue/super-general/previews/2fd3ffac65d482790d0c42f5.source.png
+identical-local-files,exact,6f372b6f1e67bce031469171bd17d4f4f08637a8b5dba81d1a97bb3fb4762db0,,work/product-image-pipeline/catalogue/super-general/crops/b918eec14e04f36eb3d3.png || work/product-image-pipeline/catalogue/super-general/previews/6f372b6f1e67bce031469171.source.png
+identical-local-files,exact,d5088cdf54a09f34992d410f3c511a60248e25791419710569eb4e06082377fc,,work/product-image-pipeline/catalogue/super-general/crops/e0a7abacf98cc51693de.png || work/product-image-pipeline/catalogue/super-general/previews/d5088cdf54a09f34992d410f.source.png
+identical-local-files,exact,b4f6f9ce82345f351f628479c5469452c2f9c6e67e4c90509c0957152447370b,,work/product-image-pipeline/catalogue/super-general/crops/ee46638c6ffe98ef1184.png || work/product-image-pipeline/catalogue/super-general/previews/b4f6f9ce82345f351f628479.source.png
+identical-local-files,exact,72e020aef40c138044810ea1487907548eb9190159d56e0c2c3c09a9b8807661,,work/product-image-pipeline/catalogue/super-general/highlights/001540c945c8c4fb5ef2.jpg || work/product-image-pipeline/catalogue/super-general/highlights/a33af852262f00a8d925.jpg
+identical-local-files,exact,383047cafd96a57e3243c4241a35fff20a8a780f982e583b3c5c833884df84df,,work/product-image-pipeline/catalogue/super-general/highlights/0c90d7896e0274b8621d.jpg || work/product-image-pipeline/catalogue/super-general/highlights/393f0a993eff248be4b8.jpg
+identical-local-files,exact,9a8cd814b8b13b49093d97c39249524f9c27bf193ed21e6d14a70be81969b4c4,,work/product-image-pipeline/catalogue/super-general/highlights/17f55c250af980022d3a.jpg || work/product-image-pipeline/catalogue/super-general/highlights/f223964c39a9bc90803a.jpg
+identical-local-files,exact,d4a6257a488e64f01601d6090888502d9687fbc0d8a4e184f7d2bba4b14f548c,,work/product-image-pipeline/catalogue/super-general/highlights/30cde71040fde27f25a6.jpg || work/product-image-pipeline/catalogue/super-general/highlights/3221c2d50f1b7e657c57.jpg
+identical-local-files,exact,e2785e51c7dd7b34b6f939ec6649e488fcaecb5808bf76655cc5d79f7875420b,,work/product-image-pipeline/catalogue/super-general/highlights/31c2eb7ee2f0446b3ede.jpg || work/product-image-pipeline/catalogue/super-general/highlights/39581234c03111bd68bd.jpg
+identical-local-files,exact,584a83cda812cbc891d9f9d3658ae26eb2a968736fa7197120a693bf0a98f4f8,,work/product-image-pipeline/catalogue/super-general/highlights/327251cbe80ab18aa358.jpg || work/product-image-pipeline/catalogue/super-general/highlights/d9690a3dbfcc659afaa3.jpg
+identical-local-files,exact,90f84c35370b742ae545b7d22c56eaf1112e25bf33f73cc4d02ddef494901c6c,,work/product-image-pipeline/catalogue/super-general/highlights/360ddae949fb6c324ce9.jpg || work/product-image-pipeline/catalogue/super-general/highlights/a1f09e252420b19bb71c.jpg
+identical-local-files,exact,75f4d51c241e7aae43d38190c3cde6470dfe1ec7e7b2d3b8160dc858ca8141e1,,work/product-image-pipeline/catalogue/super-general/highlights/51f845c453b16c257b25.jpg || work/product-image-pipeline/catalogue/super-general/highlights/a9006efcaf28766a57a4.jpg
+identical-local-files,exact,bd47736fed4ca4fd69808ce9805d97516d879259570a72d773eab0716a3d08b1,,work/product-image-pipeline/catalogue/super-general/highlights/7101762e14c6fc913099.jpg || work/product-image-pipeline/catalogue/super-general/highlights/b91a34f68ba4b40bbe1a.jpg
+identical-local-files,exact,961f4da77a469ba88b1e66002ed7b5107979e6c5407dfdc9009bd39277b5909e,,work/product-image-pipeline/catalogue/super-general/highlights/b84857480bdb0fac7b39.jpg || work/product-image-pipeline/catalogue/super-general/highlights/bc5b2e08164e25925997.jpg
+identical-local-files,exact,37b4ea76ae99cda360e22afadb8950659eb899c7f305c779c54a3df685999412,,work/product-image-pipeline/catalogue/super-general/pages/p002.jpg || work/product-image-pipeline/catalogue/super-general/pages/p115.jpg

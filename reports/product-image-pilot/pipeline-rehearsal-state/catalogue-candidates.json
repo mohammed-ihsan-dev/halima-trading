@@ -1,0 +1,185 @@
+{
+ "generatedAt": "2026-10-26T17:38:46.429Z",
+ "pdf": "superGeneral.pdf",
+ "pdfSha256": "dd9c84909090166e3a9f44080669dfb9f88e8b9bd4a5b3f3e8a9ec783b4cee73",
+ "brand": "Super General",
+ "pages": 116,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": "Super General",
+  "reason": "\"COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted.",
+  "evidence": [
+   {
+    "url": "https://www.supergeneral.com/product/10kg-twin-tub-washing-machine-sgw1056n",
+    "quote": "COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED"
+   },
+   {
+    "url": "https://www.supergeneral.com/terms-and-conditions",
+    "finding": "HTTP 404 (also /terms-conditions, /terms-of-use, /privacy-policy); sitemap lists no terms page."
+   },
+   {
+    "url": "https://www.supergeneral.com/robots.txt",
+    "finding": "User-agent: * Allow: / (robots is not a reuse licence)."
+   },
+   {
+    "url": "catalogues-source/superGeneral.pdf",
+    "finding": "Official Super General product catalogue (116 pages, modified 2024-11-14). No licence, usage or image-reuse terms found in its text; being an official catalogue does not grant commercial reuse rights (checked 2026-10-19)."
+   }
+  ]
+ },
+ "products": {
+  "super-general-sg-cl-50t3": [
+   {
+    "productId": "super-general-sg-cl-50t3",
+    "model": "SG CL 50T3",
+    "pdf": "superGeneral.pdf",
+    "page": 89,
+    "evidence": {
+     "page": 89,
+     "text": "SGCL50T3",
+     "box": [
+      281.57,
+      480.4,
+      329.79,
+      496.68
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "CASE_SPACE"
+    },
+    "rowModels": [
+     "SGCL50T3"
+    ],
+    "regionId": "p89r2",
+    "regionImages": [
+     {
+      "xref": 5424,
+      "box": [
+       131.12,
+       494.16,
+       214.32,
+       626.52
+      ],
+      "asset": "assets/89997c615340e5640ddc48c0.png",
+      "assetSha256": "89997c615340e5640ddc48c00589dc1a10d884c586beb20cecf40fa76dd0ec24"
+     }
+    ],
+    "cropBox": [
+     129.41,
+     491.67,
+     215.32,
+     630.45
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 193,
+    "cropSource": "embedded-asset",
+    "asset": "assets/89997c615340e5640ddc48c0.png",
+    "assetSha256": "89997c615340e5640ddc48c00589dc1a10d884c586beb20cecf40fa76dd0ec24",
+    "issues": [
+     "low resolution: about 193 px on the longest side (minimum 400)"
+    ],
+    "identity": "EXACT_UNAMBIGUOUS",
+    "quality": "LOW_RESOLUTION",
+    "status": "EXACT_LOW_RESOLUTION",
+    "eligible": false,
+    "cropId": "d83d4eca11e5306ca620",
+    "pageRender": "catalogue/super-general/crops/d83d4eca11e5306ca620.png",
+    "sourceSha256": "a2bc1ccc4a48004d7bf3ef81dfd7ccd9d095d19e9b5c531810102f36a8251615",
+    "extracted": "catalogue/super-general/previews/a2bc1ccc4a48004d7bf3ef81.source.png",
+    "preview": "catalogue/super-general/previews/55f042f12be20845cbcdead2.webp",
+    "previewSha256": "55f042f12be20845cbcdead2887509e8cae2af3d2c5fe560dbd6c0a96c5fc384",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     113,
+     182
+    ],
+    "highlight": "catalogue/super-general/highlights/40d29be9ac206c148c9d.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Super General",
+     "reason": "\"COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted."
+    }
+   }
+  ],
+  "super-general-sg-aa-110t5": [
+   {
+    "productId": "super-general-sg-aa-110t5",
+    "model": "SG AA 110T5",
+    "pdf": "superGeneral.pdf",
+    "page": 91,
+    "evidence": {
+     "page": 91,
+     "text": "SGAA110T5",
+     "box": [
+      299.32,
+      627.66,
+      353.56,
+      643.95
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "CASE_SPACE"
+    },
+    "rowModels": [
+     "SGAA110T5"
+    ],
+    "regionId": "p91r4",
+    "regionImages": [
+     {
+      "xref": 5464,
+      "box": [
+       89.05,
+       637.7,
+       208.06,
+       761.7
+      ],
+      "asset": "assets/144c7cd3731e8152da126dbc.png",
+      "assetSha256": "144c7cd3731e8152da126dbcd6a39f91927f9fd3d386628c53f9f8b525579c32"
+     }
+    ],
+    "cropBox": [
+     87.74,
+     636.22,
+     210.08,
+     764.61
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 179,
+    "cropSource": "embedded-asset",
+    "asset": "assets/144c7cd3731e8152da126dbc.png",
+    "assetSha256": "144c7cd3731e8152da126dbcd6a39f91927f9fd3d386628c53f9f8b525579c32",
+    "issues": [
+     "low resolution: about 179 px on the longest side (minimum 400)"
+    ],
+    "identity": "EXACT_UNAMBIGUOUS",
+    "quality": "LOW_RESOLUTION",
+    "status": "EXACT_LOW_RESOLUTION",
+    "eligible": false,
+    "cropId": "6bbf20236ccb884c54a9",
+    "pageRender": "catalogue/super-general/crops/6bbf20236ccb884c54a9.png",
+    "sourceSha256": "6ade34e23a484ab0c9af758e785f229fca5fd3e16936e0763c47e7d51e0f26be",
+    "extracted": "catalogue/super-general/previews/6ade34e23a484ab0c9af758e.source.png",
+    "preview": "catalogue/super-general/previews/e77181d9282285e5101b99ab.webp",
+    "previewSha256": "e77181d9282285e5101b99ab1fee5f8a8d165d079e7a035ad8277078336078b7",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     161,
+     169
+    ],
+    "highlight": "catalogue/super-general/highlights/35691f0b8abeaff53cfe.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Super General",
+     "reason": "\"COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted."
+    }
+   }
+  ]
+ }
+}

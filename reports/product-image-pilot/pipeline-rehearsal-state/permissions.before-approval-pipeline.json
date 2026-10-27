@@ -1,0 +1,207 @@
+{
+ "policy": "An image is eligible for upload only with a 'confirmed' record backed by a saved written grant (grant.grantedBy, grant.date, grant.document = path to the saved email/letter/licence). Public availability or an official-website source is never treated as permission. Applied identically to every brand.",
+ "checkedAt": "2026-10-15",
+ "howToConfirm": "Save the written permission (e.g. an email from the brand or its UAE distributor granting Halima Trading the right to use its product images on halimatrading.com) under work/product-image-pipeline/permission-evidence/, then set status to 'confirmed' and fill grant { grantedBy, date, document } for that holder.",
+ "holders": {
+  "Mazaya": {
+   "domains": [
+    "mazayauae.com"
+   ],
+   "status": "permission_pending",
+   "summary": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies \u2014 no reuse licence granted.",
+   "evidence": [
+    {
+     "url": "https://mazayauae.com/",
+     "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+    },
+    {
+     "url": "https://mazayauae.com/page-sitemap.xml",
+     "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you \u2014 no terms, licence or media page."
+    },
+    {
+     "url": "https://mazayauae.com/robots.txt",
+     "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+    }
+   ]
+  },
+  "Super General": {
+   "domains": [
+    "supergeneral.com"
+   ],
+   "status": "permission_pending",
+   "summary": "\"COPYRIGHT \u00a9 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted.",
+   "evidence": [
+    {
+     "url": "https://www.supergeneral.com/product/10kg-twin-tub-washing-machine-sgw1056n",
+     "quote": "COPYRIGHT \u00a9 2026 SUPER GENERAL. ALL RIGHTS RESERVED"
+    },
+    {
+     "url": "https://www.supergeneral.com/terms-and-conditions",
+     "finding": "HTTP 404 (also /terms-conditions, /terms-of-use, /privacy-policy); sitemap lists no terms page."
+    },
+    {
+     "url": "https://www.supergeneral.com/robots.txt",
+     "finding": "User-agent: * Allow: / (robots is not a reuse licence)."
+    }
+   ]
+  },
+  "Geepas (Western International Group)": {
+   "domains": [
+    "geepas.com",
+    "uae.geepas.com",
+    "cdn.shopify.com/s/files/1/0720/0879/4350"
+   ],
+   "status": "permission_denied",
+   "summary": "Terms reserve all rights in all site content including images, allow reproduction for personal use only, prohibit duplicating/reproducing the site, and prohibit automated access (scripts/crawlers).",
+   "evidence": [
+    {
+     "url": "https://geepas.com/pages/terms-of-website-use",
+     "quote": "All content included on the Site, such as text, graphics, logos, images, audio clips, video, data, music, software, and other material (collectively \"Content\") is owned or licensed property of Geepas.com or its suppliers or licensors and is protected by copyright, trademark, patent, or other proprietary rights. We and our suppliers and licensors expressly reserve all intellectual property rights in all Content."
+    },
+    {
+     "url": "https://geepas.com/pages/terms-of-website-use",
+     "quote": "You also permit any other User to access, view, and store or reproduce the content for that Users personal use."
+    },
+    {
+     "url": "https://geepas.com/pages/terms-of-website-use",
+     "quote": "Duplicate, reproduce, copy, sell, trade or resell the Site for any purpose."
+    },
+    {
+     "url": "https://geepas.com/pages/terms-conditions",
+     "quote": "You specifically agree not to: Access or attempt to access the Site, or any portion thereof, through any automated means, including but not limited to the use of scripts or web crawlers."
+    }
+   ]
+  },
+  "Symphony Limited": {
+   "domains": [
+    "symphonylimited.com",
+    "shop.symphonylimited.com",
+    "movicool.symphonylimited.com",
+    "cdn.shopify.com/s/files/1/0567/7534/4185"
+   ],
+   "status": "permission_denied",
+   "summary": "Terms prohibit reproducing or exploiting site content without express written permission and prohibit spidering/crawling/scraping; all IP reserved. The public Media Kit contains only six logo files and no product photographs or usage terms.",
+   "evidence": [
+    {
+     "url": "https://shop.symphonylimited.com/pages/terms-of-use",
+     "quote": "You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us."
+    },
+    {
+     "url": "https://shop.symphonylimited.com/pages/terms-of-use",
+     "quote": "COPYRIGHT & TRADEMARK & IPR Symphony Limited reserves all intellectual property rights and know how in all text, programs, products, processes, technology, content and other materials, which appear on this Website."
+    },
+    {
+     "url": "https://shop.symphonylimited.com/pages/terms-of-use",
+     "quote": "\u2026 to spam, phish, pharm, pretext, spider, crawl, or scrape \u2026"
+    },
+    {
+     "url": "https://movicool.symphonylimited.com",
+     "quote": "Copyright \u00a9 2020, Symphony Limited. All rights reserved."
+    },
+    {
+     "url": "https://symphonylimited.com/wp-content/themes/customcode/assest/pdf/Symphony_Limited_Media_Kit.zip",
+     "finding": "Public media kit: 6 logo PNGs (27 C world, LSV, Thinking Of Tomorrow); no product images, no licence text."
+    }
+   ]
+  },
+  "Nikai (supplier catalogue)": {
+   "domains": [],
+   "documents": [
+    "Nikai Cataloge 2025 26-03-25.pdf"
+   ],
+   "status": "permission_pending",
+   "summary": "Nikai catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission.",
+   "evidence": [
+    {
+     "url": "catalogues-source/Nikai Cataloge 2025 26-03-25.pdf",
+     "finding": "Full-text scan for copyright / rights reserved / reproduction / permission / licence / usage statements: none found (scan 2026-10-15)."
+    }
+   ]
+  },
+  "Krome (supplier catalogue)": {
+   "domains": [],
+   "documents": [
+    "KROME CATALOG 25-26.pdf"
+   ],
+   "status": "permission_pending",
+   "summary": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission.",
+   "evidence": [
+    {
+     "url": "catalogues-source/KROME CATALOG 25-26.pdf",
+     "finding": "Full-text scan for copyright / rights reserved / reproduction / permission / licence / usage statements: none found (scan 2026-10-15)."
+    }
+   ]
+  },
+  "Open Icecat (Open Content License)": {
+   "domains": [
+    "images.icecat.biz",
+    "live.icecat.biz",
+    "icecat.biz"
+   ],
+   "status": "licensed",
+   "licence": "Icecat Open Content License (OPL) v1.4, 11 Feb 2026",
+   "conditionsMet": false,
+   "conditions": [
+    "show the notice \"Database Right data-sheet 2026 Icecat. All rights reserved.\" with Icecat content (OPL \u00a71)",
+    "include the Open Icecat \"AS IS\" disclaimer (OPL \u00a75; Fair Use Policy)",
+    "mark modified copies \u2014 resized/WebP images need a 'changed' notice, or store exact replicas (OPL \u00a72a)",
+    "delete a brand's data on request and provide a request mechanism (Terms \u00a77)",
+    "no use in advertising creative without the brand's consent; no AI/ML training (Terms \u00a77; OPL \u00a710)",
+    "add robots.txt rules excluding systematic crawler download (Fair Use Policy)"
+   ],
+   "summary": "Open Icecat content is licensed for copying and distribution under the OPL; Icecat's Terms grant automated API access and 'all rights necessary to use the \u2026 data \u2026 you receive'. Reuse is allowed once the licence conditions are implemented on halimatrading.com.",
+   "evidence": [
+    {
+     "url": "https://iceclog.com/open-content-license-opl/",
+     "quote": "You may copy and distribute exact replicas of the OIC as you receive it, in any medium"
+    },
+    {
+     "url": "https://iceclog.com/open-content-license-opl/",
+     "quote": "Database Right data-sheet [Year] Icecat. All rights reserved."
+    },
+    {
+     "url": "https://iceclog.com/open-content-license-opl/",
+     "finding": "Modified copies must carry prominent notices stating that you changed them (\u00a72a); not for machine-learning training (\u00a710); free Open Icecat account required (\u00a77)."
+    },
+    {
+     "url": "https://icecat.at/en/menu/service",
+     "quote": "Permission for automated access to the free Open Icecat content via its documented APIs is granted."
+    },
+    {
+     "url": "https://icecat.at/en/menu/service",
+     "quote": "sharing content as open content (Open Icecat) without any limitation"
+    },
+    {
+     "url": "https://icecat.at/en/menu/service",
+     "quote": "We give you all rights necessary to use the code, APIs, data, and tools you receive from us."
+    },
+    {
+     "url": "https://icecat.at/en/menu/service",
+     "quote": "You will delete all data you receive from us concerning a brand if the brand asks you to do so, and will provide a mechanism for brands to make such a request."
+    },
+    {
+     "url": "https://iceclog.com/open-icecat-fair-use-policy/amp",
+     "quote": "include explicitly the Open Icecat \u201cAS IS\u201d disclaimer"
+    }
+   ]
+  }
+ },
+ "products": {},
+ "openLicenceSearch": {
+  "checkedAt": "2026-10-15",
+  "result": "No usable openly licensed images found",
+  "sources": [
+   {
+    "source": "Wikimedia Commons (licence per file, API allowed)",
+    "queries": 369,
+    "relevantHits": 0,
+    "file": "work/product-image-pipeline/open-source-sweep.json"
+   },
+   {
+    "source": "Open Products Facts (CC BY-SA images)",
+    "barcodeLookups": 6,
+    "found": 0
+   }
+  ]
+ }
+}

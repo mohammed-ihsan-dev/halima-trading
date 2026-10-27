@@ -1,0 +1,27 @@
+{
+ "batchAt": "2026-10-19T11:13:23.431Z",
+ "rows": 249,
+ "byGroup": {
+  "P1": 9,
+  "P2": 92,
+  "P3": 72,
+  "P4": 76
+ },
+ "byResult": {
+  "HELD – needs written permission + your visual approval": 1,
+  "NO AUTHORIZED SOURCE FOUND": 53,
+  "HELD – needs written permission": 7,
+  "LEAD – exact-model page found; image NOT downloaded (no authorization)": 1,
+  "NO USABLE SOURCE – only series/shared photos": 33,
+  "NO USABLE SOURCE – only low-resolution catalogue image": 6,
+  "HELD – needs written permission (replacement candidate ready)": 1,
+  "REVIEW – resolve probable duplicate first": 3,
+  "NO AUTHORIZED REPLACEMENT FOUND": 68,
+  "REVIEW ONLY – no change proposed": 76
+ },
+ "readyToExecute": 0,
+ "withProposedPath": 9,
+ "keysAlreadyExisting": 0,
+ "storageObjects": 128,
+ "reviewGroups": 50
+}

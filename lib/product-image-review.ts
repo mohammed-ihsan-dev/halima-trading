@@ -59,7 +59,9 @@ export interface CandidateImage {
     pdf: string; page: number; cropBox: number[]; cropSource: string; evidenceText: string; matchLevel: string;
     identity: string; quality: string; issues: string[]; rowModels: string[]; preview: string; highlight: string; nativeLongestPx?: number;
   };
-  localPreview?: string; // extracted image preview, relative to the pipeline state directory
+  localPreview?: string; // extracted or local-file preview, relative to the pipeline state directory
+  /** Replacement review only: the unsuitable references (Google thumbnails / undersized) an approval would remove. */
+  replaces?: { refs: string[]; reasons: string[] };
   pagePreview?: string; // page render with the crop outlined
 }
 

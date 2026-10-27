@@ -1,0 +1,2750 @@
+{
+ "generatedAt": "2026-10-26T17:09:39.340Z",
+ "source": "reports/product-image-audit/next-steps.md + candidate-image-matches.csv",
+ "reconciledWithMongoDB": "read-only find by _id",
+ "products": [
+  {
+   "pilotNumber": 1,
+   "productId": "6ac8beebd467feb0e4adfa9d",
+   "pipelineProductId": "p-1791540971000",
+   "sku": "HT-RE-199",
+   "brand": "Toshiba",
+   "model": "GRA820U-X(BS)",
+   "name": "Toshiba 750L Double Door Refrigerator",
+   "status": "active",
+   "category": "Refrigeration",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHrP65mDalKyO44Ha3mY_SSu7w4LLg5BT5uZFOqMs6Q&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "two different supplied photos for this model contradict each other"
+   ],
+   "productHistory": [],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/GRA820U-X(BS).jpg",
+   "auditConfidence": "high",
+   "bestCandidateId": "p-1791540971000:dd921958f426",
+   "candidates": [
+    {
+     "candidateId": "p-1791540971000:dd921958f426",
+     "kind": "local-file",
+     "path": "catalogues-source/GRA820U-X(BS).jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRA820UXBS",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Small silver fridge on grey; contradicts the other GRA820U-X(BS) file (dark glass) — which is correct?"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Small silver fridge on grey; contradicts the other GRA820U-X(BS) file (dark glass) — which is correct?"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 1600,
+     "height": 1994,
+     "bytes": 81561,
+     "sha256": "651c814a8a0aeb3f89c5e22b6ff03fdff8f2a449f7825ad6adcb5b7a38974906",
+     "plannedUpload": {
+      "key": "products/ht-re-199/04c38d25-ebbe-46ec-ab27-1eaeefa9613d.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-re-199/04c38d25-ebbe-46ec-ab27-1eaeefa9613d.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 3354,
+      "fitted": "642x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/p_1791540971000_dd921958f426.jpg"
+    },
+    {
+     "candidateId": "p-1791540971000:fb4a31e0d671",
+     "kind": "local-file",
+     "path": "catalogues-source/Toshiba 750L Double Door Refrigerator GRA820U-X(BS) .jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains model GRA820UXBS",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Dark glass two-door fridge; contradicts the other GRA820U-X(BS) file (silver) — which is correct?"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Dark glass two-door fridge; contradicts the other GRA820U-X(BS) file (silver) — which is correct?"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 1389,
+     "height": 2560,
+     "bytes": 156266,
+     "sha256": "78a780377d1b4f4f5ee0ad327a1df7d92a83e467e2ea9cb5ea20570c15148f12",
+     "plannedUpload": {
+      "key": "products/ht-re-199/dbc0e32b-1bff-41fe-abb5-e81fc1eeb4e4.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-re-199/dbc0e32b-1bff-41fe-abb5-e81fc1eeb4e4.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 4818,
+      "fitted": "434x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/p_1791540971000_fb4a31e0d671.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 2,
+   "productId": "6aca2e64df911910339b3db2",
+   "pipelineProductId": "gree-gr-i-airy32-18c3-ind-gree",
+   "sku": "GR-I-AIRY32-18C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I Airy32-18C3-IND",
+   "name": "Gree High Wall Split AC GR-I Airy32-18C3-IND – High Wall, 1.5 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1RaPk8rpgLPs94zGvr_-OgEg5e68Id5mxHEp5--AMN9Uw1EP9UjTbV1i&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one i Airy32 photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i-airy32-18c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i-airy32-18c3-ind-gree:b4583454e6c7",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i-airy32-18c3-ind-gree:b4583454e6c7",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i-airy32-18c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRIAIRY3218C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.16): REVIEW_REQUIRED — one i Airy32 photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.16): REVIEW_REQUIRED — one i Airy32 photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2440,
+     "height": 1373,
+     "bytes": 384574,
+     "sha256": "d2b2349757b831b1596154c00972f086dd587cc7899efc171adc60e65a3694ec",
+     "plannedUpload": {
+      "key": "products/gr-i-airy32-18c3-ind-gree/c6a735c8-10e4-4ad5-a814-74f9b36a6bc4.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i-airy32-18c3-ind-gree/c6a735c8-10e4-4ad5-a814-74f9b36a6bc4.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2744,
+      "fitted": "800x450"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i_airy32_18c3_ind_gree_b4583454e6c7.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 3,
+   "productId": "6aca2e64df911910339b3db5",
+   "pipelineProductId": "gree-gr-i2-pro-12c3-ind-gree",
+   "sku": "GR-I2-PRO-12C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-12C3-IND",
+   "name": "Gree High Wall Split AC GR-I2 Pro-12C3-IND – High Wall, 1.0 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1RaPk8rpgLPs94zGvr_-OgEg5e68Id5mxHEp5--AMN9Uw1EP9UjTbV1i&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i2-pro-12c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i2-pro-12c3-ind-gree:7af023d8b036",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i2-pro-12c3-ind-gree:7af023d8b036",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i2-pro-12c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI2PRO12C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO18C3IND, GRI2PRO24C3IND, GRI2PRO30C3IND, GRI2PRO36C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2229,
+     "height": 1060,
+     "bytes": 368037,
+     "sha256": "b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-12c3-ind-gree/7ae009fb-4b94-4580-a024-16b64ae21786.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-12c3-ind-gree/7ae009fb-4b94-4580-a024-16b64ae21786.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2768,
+      "fitted": "800x380"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_12c3_ind_gree_7af023d8b036.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 4,
+   "productId": "6aca2e64df911910339b3db6",
+   "pipelineProductId": "gree-gr-i2-pro-18c3-ind-gree",
+   "sku": "GR-I2-PRO-18C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-18C3-IND",
+   "name": "Gree High Wall Split AC GR-I2 Pro-18C3-IND – High Wall, 1.5 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1RaPk8rpgLPs94zGvr_-OgEg5e68Id5mxHEp5--AMN9Uw1EP9UjTbV1i&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i2-pro-18c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i2-pro-18c3-ind-gree:16652e7a646b",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i2-pro-18c3-ind-gree:16652e7a646b",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i2-pro-18c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI2PRO18C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO12C3IND, GRI2PRO24C3IND, GRI2PRO30C3IND, GRI2PRO36C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2229,
+     "height": 1060,
+     "bytes": 368037,
+     "sha256": "b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-18c3-ind-gree/12e9479c-bf6b-43f1-88f1-33ebd4236f59.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-18c3-ind-gree/12e9479c-bf6b-43f1-88f1-33ebd4236f59.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2768,
+      "fitted": "800x380"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_18c3_ind_gree_16652e7a646b.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 5,
+   "productId": "6aca2e64df911910339b3db7",
+   "pipelineProductId": "gree-gr-i2-pro-24c3-ind-gree",
+   "sku": "GR-I2-PRO-24C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-24C3-IND",
+   "name": "Gree High Wall Split AC GR-I2 Pro-24C3-IND – High Wall, 2.0 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1RaPk8rpgLPs94zGvr_-OgEg5e68Id5mxHEp5--AMN9Uw1EP9UjTbV1i&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/GR-I2-PRO-24C3-IND-GREE.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i2-pro-24c3-ind-gree:caa43ee56cbf",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i2-pro-24c3-ind-gree:caa43ee56cbf",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i2-pro-24c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI2PRO24C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO12C3IND, GRI2PRO18C3IND, GRI2PRO30C3IND, GRI2PRO36C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2229,
+     "height": 1060,
+     "bytes": 368037,
+     "sha256": "b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-24c3-ind-gree/c2e42d5c-db09-49e4-b7c9-949f985b1324.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-24c3-ind-gree/c2e42d5c-db09-49e4-b7c9-949f985b1324.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2768,
+      "fitted": "800x380"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_24c3_ind_gree_caa43ee56cbf.jpg"
+    },
+    {
+     "candidateId": "gree-gr-i2-pro-24c3-ind-gree:e4fda58768c2",
+     "kind": "local-file",
+     "path": "catalogues-source/GR-I2-PRO-24C3-IND-GREE.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU GRI2PRO24C3INDGREE",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO36C3IND)",
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I2 Pro-36C3 file — different capacity"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I2 Pro-36C3 file — different capacity"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1980,
+     "height": 1980,
+     "bytes": 213044,
+     "sha256": "efdbb7bcc7bcf8009435f9fba1fc9dc66e4cd6253d4d8c192b3c7ce021ee69e2",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-24c3-ind-gree/fda99458-5af3-4fb8-999a-f5da65e81889.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-24c3-ind-gree/fda99458-5af3-4fb8-999a-f5da65e81889.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 4706,
+      "fitted": "800x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_24c3_ind_gree_e4fda58768c2.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 6,
+   "productId": "6aca2e64df911910339b3db8",
+   "pipelineProductId": "gree-gr-i2-pro-30c3-ind-gree",
+   "sku": "GR-I2-PRO-30C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-30C3-IND",
+   "name": "Gree High Wall Split AC GR-I2 Pro-30C3-IND – High Wall, 2.5 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i2-pro-30c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i2-pro-30c3-ind-gree:b364c1aa76a4",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i2-pro-30c3-ind-gree:b364c1aa76a4",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i2-pro-30c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI2PRO30C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO12C3IND, GRI2PRO18C3IND, GRI2PRO24C3IND, GRI2PRO36C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2229,
+     "height": 1060,
+     "bytes": 368037,
+     "sha256": "b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-30c3-ind-gree/85bead32-6e3e-4572-b34c-d8fb5aad580a.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-30c3-ind-gree/85bead32-6e3e-4572-b34c-d8fb5aad580a.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2768,
+      "fitted": "800x380"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_30c3_ind_gree_b364c1aa76a4.jpg"
+    },
+    {
+     "candidateId": "gree-gr-i2-pro-30c3-ind-gree:d4fbdb5afa35",
+     "kind": "local-file",
+     "path": "catalogues-source/Gree High Wall Split AC GR-I2 Pro-30C3-IND – High Wall, 2.5 Ton, Inverter.jpeg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains model GRI2PRO30C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Picture shows a DUCTED unit but the product is a high-wall split; also only 300×300 px"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Picture shows a DUCTED unit but the product is a high-wall split; also only 300×300 px"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "too-small",
+     "validationReason": "too small (300x300)",
+     "format": "jpeg",
+     "width": 300,
+     "height": 300,
+     "bytes": 4513,
+     "sha256": "4f24306aee442210be98e188385b5c31f49e02aaa42c8059bd354a59e9d37aee",
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "no-suitable-candidate",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_30c3_ind_gree_d4fbdb5afa35.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 7,
+   "productId": "6aca2e64df911910339b3db9",
+   "pipelineProductId": "gree-gr-i2-pro-36c3-ind-gree",
+   "sku": "GR-I2-PRO-36C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I2 Pro-36C3-IND",
+   "name": "Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I2`Pro-36C3: 'Product appearance may vary' — the range photo may not show this model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i2-pro-36c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i2-pro-36c3-ind-gree:bde1e78f1a54",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i2-pro-36c3-ind-gree:bde1e78f1a54",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i2-pro-36c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI2PRO36C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO12C3IND, GRI2PRO18C3IND, GRI2PRO24C3IND, GRI2PRO30C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I2`Pro-36C3: 'Product appearance may vary' — the range photo may not show this model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.20): REVIEW_REQUIRED — one I2`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I2`Pro-36C3: 'Product appearance may vary' — the range photo may not show this model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2229,
+     "height": 1060,
+     "bytes": 368037,
+     "sha256": "b9aa51d4b22066b362d3cdb40ee159f18d5389fc469de4b21500dc5ac6880c6a",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-36c3-ind-gree/efc289de-b88f-4d9d-8855-0a80b340108d.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-36c3-ind-gree/efc289de-b88f-4d9d-8855-0a80b340108d.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2768,
+      "fitted": "800x380"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_36c3_ind_gree_bde1e78f1a54.jpg"
+    },
+    {
+     "candidateId": "gree-gr-i2-pro-36c3-ind-gree:320114279446",
+     "kind": "local-file",
+     "path": "catalogues-source/Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains model GRI2PRO36C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI2PRO24C3IND)",
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I2-PRO-24C3 file — different capacity"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I2-PRO-24C3 file — different capacity"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1980,
+     "height": 1980,
+     "bytes": 213044,
+     "sha256": "efdbb7bcc7bcf8009435f9fba1fc9dc66e4cd6253d4d8c192b3c7ce021ee69e2",
+     "plannedUpload": {
+      "key": "products/gr-i2-pro-36c3-ind-gree/ea858ee4-2fcd-402a-8a92-c5f20214e3ad.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i2-pro-36c3-ind-gree/ea858ee4-2fcd-402a-8a92-c5f20214e3ad.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 4706,
+      "fitted": "800x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i2_pro_36c3_ind_gree_320114279446.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 8,
+   "productId": "6aca2e64df911910339b3dba",
+   "pipelineProductId": "gree-gr-i4-pro-12c3-ind-gree",
+   "sku": "GR-I4-PRO-12C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-12C3-IND",
+   "name": "Gree High Wall Split AC GR-I4 Pro-12C3-IND – High Wall, 1.0 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/gr-i4-pro-12c3-ind.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i4-pro-12c3-ind-gree:55ac63b8b5c5",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i4-pro-12c3-ind-gree:55ac63b8b5c5",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i4-pro-12c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI4PRO12C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI4PRO18C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.18): REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.18): REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (MEDIUM) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2180,
+     "height": 933,
+     "bytes": 145250,
+     "sha256": "32b97d2fca44ebf3114b35cfb26988ef4dd0d6155174bf3cbea7a2498d56c092",
+     "plannedUpload": {
+      "key": "products/gr-i4-pro-12c3-ind-gree/fba0f9e5-dae7-4620-8e73-dece40cff719.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i4-pro-12c3-ind-gree/fba0f9e5-dae7-4620-8e73-dece40cff719.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2674,
+      "fitted": "800x342"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i4_pro_12c3_ind_gree_55ac63b8b5c5.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 9,
+   "productId": "6aca2e64df911910339b3dbb",
+   "pipelineProductId": "gree-gr-i4-pro-18c3-ind-gree",
+   "sku": "GR-I4-PRO-18C3-IND-GREE",
+   "brand": "Gree",
+   "model": "GR-I4 Pro-18C3-IND",
+   "name": "Gree High Wall Split AC GR-I4 Pro-18C3-IND – High Wall, 1.5 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+    "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-18C3: 'Product appearance may vary' — the range photo may not show this model"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/GR-I4-PRO-18C3-IND-GREE.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "gree-gr-i4-pro-18c3-ind-gree:8c135494a885",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-i4-pro-18c3-ind-gree:8c135494a885",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/gr-i4-pro-18c3-ind.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model GRI4PRO18C3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI4PRO12C3IND)",
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.18): REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-18C3: 'Product appearance may vary' — the range photo may not show this model"
+     ],
+     "priorNotes": [
+      "catalogue manifest (Gree-Catalogue-2025-IR.pdf p.18): REVIEW_REQUIRED — one I4`Pro photo represents every size in the series",
+      "Gree/Symphony PDF review: PENDING_REVIEW (LOW) — database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-18C3: 'Product appearance may vary' — the range photo may not show this model"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 2180,
+     "height": 933,
+     "bytes": 145250,
+     "sha256": "32b97d2fca44ebf3114b35cfb26988ef4dd0d6155174bf3cbea7a2498d56c092",
+     "plannedUpload": {
+      "key": "products/gr-i4-pro-18c3-ind-gree/24131c9e-88da-4f1c-a51f-3ae30fe2ab3f.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i4-pro-18c3-ind-gree/24131c9e-88da-4f1c-a51f-3ae30fe2ab3f.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2674,
+      "fitted": "800x342"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i4_pro_18c3_ind_gree_8c135494a885.jpg"
+    },
+    {
+     "candidateId": "gree-gr-i4-pro-18c3-ind-gree:d7d9f7151eaf",
+     "kind": "local-file",
+     "path": "catalogues-source/GR-I4-PRO-18C3-IND-GREE.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU GRI4PRO18C3INDGREE",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRISAVEPLUSP30H3IND)",
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-ISAVE PLUS-P30H3 file — different series"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-ISAVE PLUS-P30H3 file — different series"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 550,
+     "height": 550,
+     "bytes": 29928,
+     "sha256": "83a4f3ebf80bfac9f9a014ba1b482672959ef6ac2beec7e830bb48b59ebbd32a",
+     "plannedUpload": {
+      "key": "products/gr-i4-pro-18c3-ind-gree/d11bf495-d480-4a7f-82bb-b228ec884dd8.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-i4-pro-18c3-ind-gree/d11bf495-d480-4a7f-82bb-b228ec884dd8.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 3400,
+      "fitted": "550x550"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_i4_pro_18c3_ind_gree_d7d9f7151eaf.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 10,
+   "productId": "6aca2e64df911910339b3dc9",
+   "pipelineProductId": "lg-i23tcp-uuae2",
+   "sku": "I23TCPUUAE2",
+   "brand": "LG",
+   "model": "I23TCP.UUAE2",
+   "name": "LG Split AC I23TCP.UUAE2 – 1.5 TON - Dual Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUeYS0oV-Go4xPvL37NYNBr8nP0BXs_5IuR4JiClZREeNewkI0XvwOe_Cl&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "possible duplicate product record(s): lg-i23tcp (I23TCP, active, 1 image(s))"
+   ],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+    "LG catalogue match: REVIEW_REQUIRED — base model on slide (product has regional suffix .UUAE) (likely duplicate of the product listed without the suffix)"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/i23tcp-uuae2.jpg",
+   "auditConfidence": "high",
+   "bestCandidateId": "lg-i23tcp-uuae2:bed51a8bfb25",
+   "candidates": [
+    {
+     "candidateId": "lg-i23tcp-uuae2:bed51a8bfb25",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/i23tcp-uuae2.jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU I23TCPUUAE2",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.67): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+      "a separate product record for the base model exists"
+     ],
+     "priorNotes": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.67): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 1100,
+     "height": 730,
+     "bytes": 22493,
+     "sha256": "48590ecefaa85ed1c4ecc116b6ab47ddb6195387aad7a2b04ea68ce197cc310a",
+     "plannedUpload": {
+      "key": "products/i23tcpuuae2/60ff82cf-e353-4064-ad5d-115ae453b767.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i23tcpuuae2/60ff82cf-e353-4064-ad5d-115ae453b767.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 3438,
+      "fitted": "800x531"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/lg_i23tcp_uuae2_bed51a8bfb25.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 11,
+   "productId": "6aca2e64df911910339b3dcf",
+   "pipelineProductId": "lg-i38tcf-uuae",
+   "sku": "I38TCFUUAE",
+   "brand": "LG",
+   "model": "I38TCF.UUAE",
+   "name": "LG Split AC I38TCF.UUAE – 3.0 TON - Dual Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJ_Tcv24rUbJSXOZnMQ8oqy87mIoImyIt7mIiYYiFmsUk0FtkNF8X30cZ&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "possible duplicate product record(s): lg-i38tcf (I38TCF, active, 1 image(s))"
+   ],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+    "LG catalogue match: REVIEW_REQUIRED — base model on slide (product has regional suffix .UUAE) (likely duplicate of the product listed without the suffix)"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/i38tcf-uuae.jpg",
+   "auditConfidence": "high",
+   "bestCandidateId": "lg-i38tcf-uuae:c4baa4de68a7",
+   "candidates": [
+    {
+     "candidateId": "lg-i38tcf-uuae:c4baa4de68a7",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/i38tcf-uuae.jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU I38TCFUUAE",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.70): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+      "a separate product record for the base model exists"
+     ],
+     "priorNotes": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.70): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 927,
+     "height": 586,
+     "bytes": 16841,
+     "sha256": "2480ece466b3db7c39ae80080bcf378a037fb724f8f9b00966e7e01b98747538",
+     "plannedUpload": {
+      "key": "products/i38tcfuuae/9732f793-91bd-45e2-a2da-8456eb14b1cb.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i38tcfuuae/9732f793-91bd-45e2-a2da-8456eb14b1cb.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 3316,
+      "fitted": "800x506"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/lg_i38tcf_uuae_c4baa4de68a7.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 12,
+   "productId": "6aca2e64df911910339b3dd8",
+   "pipelineProductId": "lg-t36zca-uuae",
+   "sku": "T36ZCAUUAE",
+   "brand": "LG",
+   "model": "T36ZCA.UUAE",
+   "name": "LG Split AC T36ZCA.UUAE – 3.0 TON - on/off model",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6a2XiuxVMZvGq9rU1RcXUkCQinXYsesmZE1FVyEElZVM6iGRoYbCkmMY&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "possible duplicate product record(s): lg-t36zca (T36ZCA, active, 1 image(s))"
+   ],
+   "productHistory": [
+    "catalogue manifest: REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+    "LG catalogue match: REVIEW_REQUIRED — base model on slide (product has regional suffix .UUAE) (likely duplicate of the product listed without the suffix)"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "work/catalogue-images/prepared/t36zca-uuae.jpg",
+   "auditConfidence": "high",
+   "bestCandidateId": "lg-t36zca-uuae:d4e6ae0ab8c1",
+   "candidates": [
+    {
+     "candidateId": "lg-t36zca-uuae:d4e6ae0ab8c1",
+     "kind": "local-file",
+     "path": "work/catalogue-images/prepared/t36zca-uuae.jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU T36ZCAUUAE",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.66): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix",
+      "a separate product record for the base model exists"
+     ],
+     "priorNotes": [
+      "catalogue manifest (LG HA & RAC (PS)PPT.pdf p.66): REVIEW_REQUIRED — likely duplicate of the product listed without the suffix"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 1100,
+     "height": 730,
+     "bytes": 20528,
+     "sha256": "7e83d39d3ffff5e69f379eae6819f7d3ef38181107ef2939b807d099a239a048",
+     "plannedUpload": {
+      "key": "products/t36zcauuae/76d18ded-51f3-46c9-9587-ab674a3daf2b.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/t36zcauuae/76d18ded-51f3-46c9-9587-ab674a3daf2b.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2556,
+      "fitted": "800x531"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/lg_t36zca_uuae_d4e6ae0ab8c1.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 13,
+   "productId": "6aca2e64df911910339b3e45",
+   "pipelineProductId": "mazaya-gl-24wtc",
+   "sku": "GL-24WTC",
+   "brand": "Mazaya",
+   "model": "GL-24WTC",
+   "name": "Mazaya Domestic Water Tank Chiller GL-24WTC – Tank capacity to be cooled: 800–1000 Gallon",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://play-lh.googleusercontent.com/2SxnnDi-1X5TN8xVUylvdl8HChG1LE4tTdGspgLg-KxxcQ6zfGBtIi9bNpuEdgomE1JGkxMuef9TrZZC1MMdtw"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: NOT_FOUND — tank chillers are shown only as an unlabelled group photo — no per-model image"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/GL-24WTC.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "mazaya-gl-24wtc:ec1d63da5514",
+   "candidates": [
+    {
+     "candidateId": "mazaya-gl-24wtc:ec1d63da5514",
+     "kind": "local-file",
+     "path": "catalogues-source/GL-24WTC.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU GL24WTC",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GL36WTC)",
+      "2026-10-20 matching run held for manual review: Byte-identical to GL-36WTC.png — same picture used for two capacities"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to GL-36WTC.png — same picture used for two capacities"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1045,
+     "height": 1080,
+     "bytes": 324498,
+     "sha256": "f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c",
+     "plannedUpload": {
+      "key": "products/gl-24wtc/4d51d8ea-5038-431f-a2b8-664ff4748693.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-24wtc/4d51d8ea-5038-431f-a2b8-664ff4748693.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 15612,
+      "fitted": "774x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_24wtc_ec1d63da5514.jpg"
+    },
+    {
+     "candidateId": "mazaya-gl-24wtc:0bc4db245730",
+     "kind": "local-file",
+     "path": "work/product-image-pipeline/cache/f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c.png",
+     "url": "https://mazayauae.com/wp-content/uploads/2025/04/water-tank-chiller.png",
+     "catalogue": null,
+     "provenance": "pipeline candidates.json (mazayauae.com)",
+     "sourcePage": "https://mazayauae.com/product/gl-24wtc/",
+     "evidence": "exact model in source title \"Domestic Water Tank Chiller GL-24WTC - 800 Gallon Capacity\"",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GL36WTC)"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": "REJECT",
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1045,
+     "height": 1080,
+     "bytes": 324498,
+     "sha256": "f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c",
+     "plannedUpload": {
+      "key": "products/gl-24wtc/4d51d8ea-5038-431f-a2b8-664ff4748693.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-24wtc/4d51d8ea-5038-431f-a2b8-664ff4748693.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 15612,
+      "fitted": "774x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Mazaya",
+      "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_24wtc_0bc4db245730.jpg"
+    },
+    {
+     "candidateId": "mazaya-gl-24wtc:d5e02910cf39",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 3,
+      "embeddedImagesOnPage": 13,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "GL24WTC",
+       "GL36WTC",
+       "GL60WTC"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text GL24WTC on page; 13 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 2 other model code(s) of the same family: GL36WTC, GL60WTC"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_24wtc_d5e02910cf39.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 14,
+   "productId": "6aca2e64df911910339b3e46",
+   "pipelineProductId": "mazaya-gl-36wtc",
+   "sku": "GL-36WTC",
+   "brand": "Mazaya",
+   "model": "GL-36WTC",
+   "name": "Mazaya Domestic Water Tank Chiller GL-36WTC – Tank capacity to be cooled: 1200–1500 Gallon",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://play-lh.googleusercontent.com/2SxnnDi-1X5TN8xVUylvdl8HChG1LE4tTdGspgLg-KxxcQ6zfGBtIi9bNpuEdgomE1JGkxMuef9TrZZC1MMdtw"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: NOT_FOUND — tank chillers are shown only as an unlabelled group photo — no per-model image"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/GL-36WTC.png",
+   "auditConfidence": "high",
+   "bestCandidateId": "mazaya-gl-36wtc:6625dfe1266e",
+   "candidates": [
+    {
+     "candidateId": "mazaya-gl-36wtc:6625dfe1266e",
+     "kind": "local-file",
+     "path": "catalogues-source/GL-36WTC.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU GL36WTC",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GL24WTC)",
+      "2026-10-20 matching run held for manual review: Byte-identical to GL-24WTC.png — same picture used for two capacities"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to GL-24WTC.png — same picture used for two capacities"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1045,
+     "height": 1080,
+     "bytes": 324498,
+     "sha256": "f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c",
+     "plannedUpload": {
+      "key": "products/gl-36wtc/810ae264-4360-4def-9b00-e13138c82b72.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-36wtc/810ae264-4360-4def-9b00-e13138c82b72.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 15612,
+      "fitted": "774x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_36wtc_6625dfe1266e.jpg"
+    },
+    {
+     "candidateId": "mazaya-gl-36wtc:0bc4db245730",
+     "kind": "local-file",
+     "path": "work/product-image-pipeline/cache/f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c.png",
+     "url": "https://mazayauae.com/wp-content/uploads/2025/04/water-tank-chiller.png",
+     "catalogue": null,
+     "provenance": "pipeline candidates.json (mazayauae.com)",
+     "sourcePage": "https://mazayauae.com/product/gl-36wtc/",
+     "evidence": "exact model in source title \"GL-36WTC Domestic Water Tank Chiller\"",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GL24WTC)"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": "REJECT",
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 1045,
+     "height": 1080,
+     "bytes": 324498,
+     "sha256": "f551403af2ab894b6830749259b2676fd2f5621d53bba0ed7c9482a61a790c1c",
+     "plannedUpload": {
+      "key": "products/gl-36wtc/810ae264-4360-4def-9b00-e13138c82b72.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-36wtc/810ae264-4360-4def-9b00-e13138c82b72.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 15612,
+      "fitted": "774x800"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Mazaya",
+      "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_36wtc_0bc4db245730.jpg"
+    },
+    {
+     "candidateId": "mazaya-gl-36wtc:d5e02910cf39",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 3,
+      "embeddedImagesOnPage": 13,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "GL24WTC",
+       "GL36WTC",
+       "GL60WTC"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text GL36WTC on page; 13 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 2 other model code(s) of the same family: GL24WTC, GL60WTC"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_gl_36wtc_d5e02910cf39.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 15,
+   "productId": "6ad07fd6f9be311bced6d56d",
+   "pipelineProductId": "daewoo-dw-fr-380vsn",
+   "sku": "DWFR380VSN",
+   "brand": "Daewoo",
+   "model": "DW-FR-380VSN",
+   "name": "Refrigerator",
+   "status": "active",
+   "category": "Refrigeration",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMZxeQS9C8QoQikbS5Q_iPJL2yt6FRF-PDAPv39ihnKIzFMu8JT-bPWI&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "invalid-image",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/DW-FR-380VSN.avif",
+   "auditConfidence": "high",
+   "bestCandidateId": "daewoo-dw-fr-380vsn:1fdcb97a3fdf",
+   "candidates": [
+    {
+     "candidateId": "daewoo-dw-fr-380vsn:1fdcb97a3fdf",
+     "kind": "local-file",
+     "path": "catalogues-source/DW-FR-380VSN.avif",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals SKU DWFR380VSN",
+     "matchAssessment": "exact model",
+     "matchReasons": [],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Only 376×376 px (and AVIF, would be converted to JPEG)"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "too-small",
+     "validationReason": "too small (376x376)",
+     "format": "avif",
+     "width": 376,
+     "height": 376,
+     "bytes": 912,
+     "sha256": "7b36e467824dcb04188d7250672d23c05885e1e37c87f3d8da190430c9a79e27",
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "invalid-image",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/daewoo_dw_fr_380vsn_1fdcb97a3fdf.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 16,
+   "productId": "6ac89d25d467feb0e4adf3e1",
+   "pipelineProductId": "p-1791532324809",
+   "sku": "HT-AI-412",
+   "brand": "AKAI",
+   "model": "ACMA-M12T3R4 / ACMA-M18T3R4",
+   "name": "Split Air Conditioner",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://logos-world.net/wp-content/uploads/2023/03/Akai-Logo.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "product record combines two models (customer sees 'Model on request')"
+   ],
+   "productHistory": [
+    "AKAI datasheet review: VERIFIED (work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg)"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/ACMA-M12T3R4 : ACMA-M18T3R4.jpg (combined two-model record)",
+   "auditConfidence": "medium",
+   "bestCandidateId": "p-1791532324809:00894ae55809",
+   "candidates": [
+    {
+     "candidateId": "p-1791532324809:00894ae55809",
+     "kind": "local-file",
+     "path": "work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains model ACMAM12T3R4; matched only part of the model field; product record combines two models (shown as 'Model on request')",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "combined two-model product record"
+     ],
+     "priorNotes": [
+      "AKAI datasheet review (AKAI-ACMA-M12T3R4,M18T3R4.pdf p.1): VERIFIED"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 897,
+     "height": 277,
+     "bytes": 39762,
+     "sha256": "a723c83720c4f1f2d44ae34a5c104c6e0d29aa7adfb600cb9db36eaf153fbf1c",
+     "plannedUpload": {
+      "key": "products/ht-ai-412/9b82bbf6-eb18-484a-87c1-85f3d5b69e75.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-ai-412/9b82bbf6-eb18-484a-87c1-85f3d5b69e75.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 8724,
+      "fitted": "800x247"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/p_1791532324809_00894ae55809.jpg"
+    },
+    {
+     "candidateId": "p-1791532324809:7e34f0366363",
+     "kind": "local-file",
+     "path": "catalogues-source/ACMA-M12T3R4 : ACMA-M18T3R4.jpg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model ACMAM12T3R4ACMAM18T3R4; product record combines two models (shown as 'Model on request')",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Only 300×300 px; record combines two capacities (12k/18k)",
+      "combined two-model product record"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Only 300×300 px; record combines two capacities (12k/18k)"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "too-small",
+     "validationReason": "too small (300x300)",
+     "format": "jpeg",
+     "width": 300,
+     "height": 300,
+     "bytes": 3084,
+     "sha256": "84b254c3f0dbebc19be2cdfe4321f0872582701336b6e0c0ad5a3de03de46178",
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/p_1791532324809_7e34f0366363.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 17,
+   "productId": "6ac9c5aad467feb0e4ae48cf",
+   "pipelineProductId": "p-1791608233015",
+   "sku": "HT-AI-804",
+   "brand": "Haier",
+   "model": "HSU-18/24LPA03",
+   "name": "Haier LPA Series Split Air Conditioners",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/haier-logo-png_seeklogo-64685.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [
+    "product record combines two models (customer sees 'Model on request')"
+   ],
+   "productHistory": [],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/HSU-18:24LPA03.jpeg (combined two-model record)",
+   "auditConfidence": "medium",
+   "bestCandidateId": "p-1791608233015:9cb713c3197d",
+   "candidates": [
+    {
+     "candidateId": "p-1791608233015:9cb713c3197d",
+     "kind": "local-file",
+     "path": "catalogues-source/HSU-18:24LPA03.jpeg",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename equals model HSU1824LPA03; product record combines two models (shown as 'Model on request')",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Byte-identical to HSU-18/24LPB03.jpeg — LPA vs LPB series",
+      "combined two-model product record"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to HSU-18/24LPB03.jpeg — LPA vs LPB series"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "jpeg",
+     "width": 554,
+     "height": 554,
+     "bytes": 5348,
+     "sha256": "1ce5168da538be6e25f3167e076684b2c90d1d54de89404108f1b37ab3a04f9b",
+     "plannedUpload": {
+      "key": "products/ht-ai-804/6b105cdd-9976-4504-bf51-242043b55e7c.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-ai-804/6b105cdd-9976-4504-bf51-242043b55e7c.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 2364,
+      "fitted": "554x554"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/p_1791608233015_9cb713c3197d.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 18,
+   "productId": "6aca2e64df911910339b3d70",
+   "pipelineProductId": "gree-t4-matic-i60c3",
+   "sku": "T4-MATIC-I60C3",
+   "brand": "Gree",
+   "model": "T4 MATIC-i60C3",
+   "name": "Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240/1/50",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: NOT_FOUND — model not in the NIA/Gree 2025 catalogue (core T4MATICI60C3)",
+    "Gree/Symphony PDF review: NO_SUITABLE_SOURCE_FOUND (HIGH) — needs another official source"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton … .webp",
+   "auditConfidence": "medium",
+   "bestCandidateId": "gree-t4-matic-i60c3:64d3bd405b30",
+   "candidates": [
+    {
+     "candidateId": "gree-t4-matic-i60c3:64d3bd405b30",
+     "kind": "local-file",
+     "path": "catalogues-source/Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240:1:50.webp",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains SKU T4MATICI60C3",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "2026-10-20 matching run held for manual review: Byte-identical to files named for T36C3, T48C3 and N60C3 — shared across 4 models"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to files named for T36C3, T48C3 and N60C3 — shared across 4 models"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "webp",
+     "width": 700,
+     "height": 700,
+     "bytes": 8096,
+     "sha256": "8663fce57d7b6c2c3fd3a39e47aefc6dc94a88cead6c0fa8b279a1d8e8d09c2c",
+     "plannedUpload": {
+      "key": "products/t4-matic-i60c3/055e0e8e-6505-4b7a-9604-feed067c9c6a.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/t4-matic-i60c3/055e0e8e-6505-4b7a-9604-feed067c9c6a.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 4890,
+      "fitted": "700x700"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_t4_matic_i60c3_64d3bd405b30.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 19,
+   "productId": "6aca2e64df911910339b3dbf",
+   "pipelineProductId": "gree-gr-isave-plus-p30h3-indgree",
+   "sku": "GR-ISAVE-PLUS-P30H3-INDGREE",
+   "brand": "Gree",
+   "model": "GR-ISAVE PLUS-P30H3-IND",
+   "name": "Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://images.seeklogo.com/logo-png/6/1/gree-logo-png_seeklogo-63105.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "logo-or-stock-image-site; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: NOT_FOUND — model not in the NIA/Gree 2025 catalogue (core ISAVEPLUSP30H3)",
+    "Gree/Symphony PDF review: NO_SUITABLE_SOURCE_FOUND (HIGH) — needs another official source"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "catalogues-source/Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND … .png",
+   "auditConfidence": "medium",
+   "bestCandidateId": "gree-gr-isave-plus-p30h3-indgree:03edf907aa17",
+   "candidates": [
+    {
+     "candidateId": "gree-gr-isave-plus-p30h3-indgree:03edf907aa17",
+     "kind": "local-file",
+     "path": "catalogues-source/Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter.png",
+     "url": null,
+     "catalogue": null,
+     "provenance": "audit filename match",
+     "sourcePage": null,
+     "evidence": "filename contains model GRISAVEPLUSP30H3IND",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "identical file offered for other models (GRI4PRO18C3IND)",
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I4-PRO-18C3 file — different series"
+     ],
+     "priorNotes": [
+      "2026-10-20 matching run held for manual review: Byte-identical to the GR-I4-PRO-18C3 file — different series"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 550,
+     "height": 550,
+     "bytes": 29928,
+     "sha256": "83a4f3ebf80bfac9f9a014ba1b482672959ef6ac2beec7e830bb48b59ebbd32a",
+     "plannedUpload": {
+      "key": "products/gr-isave-plus-p30h3-indgree/2d307561-2d47-48c0-b6da-9bef418fa0b9.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gr-isave-plus-p30h3-indgree/2d307561-2d47-48c0-b6da-9bef418fa0b9.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 3400,
+      "fitted": "550x550"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/gree_gr_isave_plus_p30h3_indgree_03edf907aa17.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 20,
+   "productId": "6aca2e64df911910339b3e4c",
+   "pipelineProductId": "mazaya-me-25t2",
+   "sku": "ME-25T2",
+   "brand": "Mazaya",
+   "model": "ME-25T2",
+   "name": "Mazaya Water Cooler ME-25T2 – 25 US Gallons",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/me-25t2/f8dc5108-6485-4e93-81d5-d8eab2dc9a83.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "SUPABASE_UNREVIEWED",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: VERIFIED"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "MAZAYA CATALOGUE 2025.pdf p.5",
+   "auditConfidence": "medium",
+   "bestCandidateId": "mazaya-me-25t2:1ad774092900",
+   "candidates": [
+    {
+     "candidateId": "mazaya-me-25t2:1ad774092900",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 5,
+      "embeddedImagesOnPage": 6,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME25T2",
+       "ME35T3",
+       "ME45T3",
+       "ME65T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME25T2 on page; 6 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: ME35T3, ME45T3, ME65T3"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_25t2_1ad774092900.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 21,
+   "productId": "6aca2e64df911910339b3e4d",
+   "pipelineProductId": "mazaya-me-35t3",
+   "sku": "ME-35T3",
+   "brand": "Mazaya",
+   "model": "ME-35T3",
+   "name": "Mazaya Water Cooler ME-35T3 – 35 US Gallons",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/me-35t3/5585b4be-7c8d-4dae-a9c3-aa10052aed74.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "SUPABASE_UNREVIEWED",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: VERIFIED"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "MAZAYA CATALOGUE 2025.pdf p.5",
+   "auditConfidence": "medium",
+   "bestCandidateId": "mazaya-me-35t3:1ad774092900",
+   "candidates": [
+    {
+     "candidateId": "mazaya-me-35t3:1ad774092900",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 5,
+      "embeddedImagesOnPage": 6,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME25T2",
+       "ME35T3",
+       "ME45T3",
+       "ME65T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME35T3 on page; 6 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: ME25T2, ME45T3, ME65T3"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_35t3_1ad774092900.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 22,
+   "productId": "6aca2e64df911910339b3e4e",
+   "pipelineProductId": "mazaya-me-45t3",
+   "sku": "ME-45T3",
+   "brand": "Mazaya",
+   "model": "ME-45T3",
+   "name": "Mazaya Water Cooler ME-45T3 – 45 US Gallons",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/me-45t3/6e5ead54-697f-496c-8fdc-dded5b8a9c8d.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "SUPABASE_UNREVIEWED",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ready-for-human-visual-review",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: VERIFIED"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "MAZAYA CATALOGUE 2025.pdf p.4",
+   "auditConfidence": "medium",
+   "bestCandidateId": "mazaya-me-45t3:8eb97149a9a6",
+   "candidates": [
+    {
+     "candidateId": "mazaya-me-45t3:8eb97149a9a6",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 4,
+      "embeddedImagesOnPage": 5,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME45T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME45T3 on page; 5 embedded image(s) on page",
+     "matchAssessment": "exact model",
+     "matchReasons": [],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ready-for-human-visual-review",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_45t3_8eb97149a9a6.jpg"
+    },
+    {
+     "candidateId": "mazaya-me-45t3:1ad774092900",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 5,
+      "embeddedImagesOnPage": 6,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME25T2",
+       "ME35T3",
+       "ME45T3",
+       "ME65T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME45T3 on page; 6 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: ME25T2, ME35T3, ME65T3"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_45t3_1ad774092900.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 23,
+   "productId": "6aca2e64df911910339b3e50",
+   "pipelineProductId": "mazaya-me-65t3",
+   "sku": "ME-65T3",
+   "brand": "Mazaya",
+   "model": "ME-65T3",
+   "name": "Mazaya Water Cooler ME-65T3 – 65 US Gallons",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/me-65t3/a4c6488c-bb7b-4630-be23-fc7a1dcce581.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "SUPABASE_UNREVIEWED",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: VERIFIED"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "MAZAYA CATALOGUE 2025.pdf p.5",
+   "auditConfidence": "medium",
+   "bestCandidateId": "mazaya-me-65t3:1ad774092900",
+   "candidates": [
+    {
+     "candidateId": "mazaya-me-65t3:1ad774092900",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 5,
+      "embeddedImagesOnPage": 6,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME25T2",
+       "ME35T3",
+       "ME45T3",
+       "ME65T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME65T3 on page; 6 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: ME25T2, ME35T3, ME45T3"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_65t3_1ad774092900.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 24,
+   "productId": "6aca2e64df911910339b3e51",
+   "pipelineProductId": "mazaya-me-85t4",
+   "sku": "ME-85T4",
+   "brand": "Mazaya",
+   "model": "ME-85T4",
+   "name": "Mazaya Heavy Duty Water Cooler ME-85T4 – 85 US Gallons",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/me-85t4/b1a6c1d9-d924-4b40-838b-3660cf4f6691.png"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "SUPABASE_UNREVIEWED",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [
+    "catalogue manifest: VERIFIED"
+   ],
+   "assistantCheck": null,
+   "auditPilotCandidate": "MAZAYA CATALOGUE 2025.pdf p.6",
+   "auditConfidence": "medium",
+   "bestCandidateId": "mazaya-me-85t4:2e68ede39f5d",
+   "candidates": [
+    {
+     "candidateId": "mazaya-me-85t4:2e68ede39f5d",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+      "page": 6,
+      "embeddedImagesOnPage": 8,
+      "largestEmbeddedImage": "830x1173",
+      "modelCodesOnPage": [
+       "ME100T5",
+       "ME125T5",
+       "ME85T4"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text ME85T4 on page; 8 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 2 other model code(s) of the same family: ME100T5, ME125T5"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": null,
+      "reason": "no permission record for this source"
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/mazaya_me_85t4_2e68ede39f5d.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 25,
+   "productId": "6acdf1597a4c8a2cb51006bf",
+   "pipelineProductId": "super-general-sg-aa-110t5",
+   "sku": "SGAA110T5",
+   "brand": "Super General",
+   "model": "SG AA 110T5",
+   "name": "SG AA 110T5 — S.G. WATER COOLER",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY9IO4daV38wxA_osNqmLdRC9PUW68rk3W3pEHZ3phGr5hi6R02uaFZd4&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": {
+    "decision": "approve",
+    "note": "visual check: correct product type and design for the model on the official product page",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "Claude (contact sheet review)"
+   },
+   "auditPilotCandidate": "superGeneral.pdf p.91",
+   "auditConfidence": "medium",
+   "bestCandidateId": "super-general-sg-aa-110t5:3b62e8c3f68a",
+   "candidates": [
+    {
+     "candidateId": "super-general-sg-aa-110t5:3b62e8c3f68a",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/superGeneral.pdf",
+      "page": 91,
+      "embeddedImagesOnPage": 5,
+      "largestEmbeddedImage": "1824x1223",
+      "modelCodesOnPage": [
+       "SGAA110T5",
+       "SGAA33T2",
+       "SGAA52T3",
+       "SGAA92T4"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text SGAA110T5 on page; 5 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: SGAA33T2, SGAA52T3, SGAA92T4"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Super General",
+      "reason": "\"COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/super_general_sg_aa_110t5_3b62e8c3f68a.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 26,
+   "productId": "6acdf1597a4c8a2cb51006c5",
+   "pipelineProductId": "super-general-sg-cl-50t3",
+   "sku": "SGCL50T3",
+   "brand": "Super General",
+   "model": "SG CL 50T3",
+   "name": "S.S. WATER COOLER",
+   "status": "active",
+   "category": "Commercial Cooling",
+   "currentImages": [
+    "https://5.imimg.com/data5/CL/QP/OM/SELLER-3566160/water-cooler--250x250.jpeg"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "low-resolution",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ambiguous-model-match",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": {
+    "decision": "approve",
+    "note": "visual check: correct product type and design for the model on the official product page",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "Claude (contact sheet review)"
+   },
+   "auditPilotCandidate": "superGeneral.pdf p.89",
+   "auditConfidence": "medium",
+   "bestCandidateId": "super-general-sg-cl-50t3:cb8f73c3335d",
+   "candidates": [
+    {
+     "candidateId": "super-general-sg-cl-50t3:cb8f73c3335d",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/superGeneral.pdf",
+      "page": 89,
+      "embeddedImagesOnPage": 5,
+      "largestEmbeddedImage": "1824x1223",
+      "modelCodesOnPage": [
+       "SGCL25T2",
+       "SGCL32T2",
+       "SGCL50T3",
+       "SGCL80T3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text SGCL50T3 on page; 5 embedded image(s) on page",
+     "matchAssessment": "ambiguous",
+     "matchReasons": [
+      "page also lists 3 other model code(s) of the same family: SGCL25T2, SGCL32T2, SGCL80T3"
+     ],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Super General",
+      "reason": "\"COPYRIGHT © 2026 SUPER GENERAL. ALL RIGHTS RESERVED\"; no terms of use or media licence found. No reuse licence granted."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ambiguous-model-match",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/super_general_sg_cl_50t3_cb8f73c3335d.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 27,
+   "productId": "6ad07fd5f9be311bced6d544",
+   "pipelineProductId": "krome-kr-ar24mt3",
+   "sku": "KRAR24MT3",
+   "brand": "Krome",
+   "model": "KR-AR24MT3",
+   "name": "24,000 BTU Split Rotary Air Conditioner",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHATip5jW4WGR7k_QGAytLZIA_Cn-GWLkA8pcw1CGMK20Gg1GBHmsKgz8&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ready-for-human-visual-review",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": null,
+   "auditPilotCandidate": "KROME CATALOG 25-26.pdf p.9",
+   "auditConfidence": "medium",
+   "bestCandidateId": "krome-kr-ar24mt3:9142ea1f7220",
+   "candidates": [
+    {
+     "candidateId": "krome-kr-ar24mt3:9142ea1f7220",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/KROME CATALOG 25-26.pdf",
+      "page": 9,
+      "embeddedImagesOnPage": 2,
+      "largestEmbeddedImage": "551x181",
+      "modelCodesOnPage": [
+       "KRAR24MT3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text KRAR24MT3 on page; 2 embedded image(s) on page",
+     "matchAssessment": "exact model",
+     "matchReasons": [],
+     "priorNotes": [
+      "earlier supplier-catalogue extraction of p.9: no product-sized image on the page"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Krome (supplier catalogue)",
+      "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ready-for-human-visual-review",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/krome_kr_ar24mt3_9142ea1f7220.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 28,
+   "productId": "6ad07fd5f9be311bced6d545",
+   "pipelineProductId": "krome-kr-ar30mt3",
+   "sku": "KRAR30MT3",
+   "brand": "Krome",
+   "model": "KR-AR30MT3",
+   "name": "30,000 BTU Split Rotary Air Conditioner",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHATip5jW4WGR7k_QGAytLZIA_Cn-GWLkA8pcw1CGMK20Gg1GBHmsKgz8&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail; image shared with other product(s)",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ready-for-human-visual-review",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": null,
+   "auditPilotCandidate": "KROME CATALOG 25-26.pdf p.10",
+   "auditConfidence": "medium",
+   "bestCandidateId": "krome-kr-ar30mt3:3bd5b1555279",
+   "candidates": [
+    {
+     "candidateId": "krome-kr-ar30mt3:3bd5b1555279",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/KROME CATALOG 25-26.pdf",
+      "page": 10,
+      "embeddedImagesOnPage": 2,
+      "largestEmbeddedImage": "551x181",
+      "modelCodesOnPage": [
+       "KRAR30MT3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text KRAR30MT3 on page; 2 embedded image(s) on page",
+     "matchAssessment": "exact model",
+     "matchReasons": [],
+     "priorNotes": [
+      "earlier supplier-catalogue extraction of p.10: no product-sized image on the page"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Krome (supplier catalogue)",
+      "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ready-for-human-visual-review",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/krome_kr_ar30mt3_3bd5b1555279.jpg"
+    }
+   ]
+  },
+  {
+   "pilotNumber": 29,
+   "productId": "6ad07fd5f9be311bced6d54c",
+   "pipelineProductId": "krome-kr-awp18et3",
+   "sku": "KRAWP18ET3",
+   "brand": "Krome",
+   "model": "KR-AWP18ET3",
+   "name": "18,000 BTU Piston Window Air Conditioner",
+   "status": "active",
+   "category": "Air Conditioning",
+   "currentImages": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_s1VAynp9laZE4yLlxrWIkPi5Ff9e8VB4brQZm6s_ED5MDIE2sD79wcH7&s=10"
+   ],
+   "auditImageStatus": "accessible-but-questionable",
+   "auditNotes": "google-search-thumbnail",
+   "unchangedSinceAudit": true,
+   "existingPipelineClass": "EXTERNAL_NEEDS_VERIFICATION",
+   "existingPipelineWouldTarget": false,
+   "pilotBucket": "ready-for-human-visual-review",
+   "permissionConfirmed": false,
+   "productIssues": [],
+   "productHistory": [],
+   "assistantCheck": {
+    "decision": "approve",
+    "note": "single model on the catalogue page; front view of the window unit",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "Claude (contact sheet review)"
+   },
+   "auditPilotCandidate": "KROME CATALOG 25-26.pdf p.18",
+   "auditConfidence": "medium",
+   "bestCandidateId": "krome-kr-awp18et3:d7baadfa15f1",
+   "candidates": [
+    {
+     "candidateId": "krome-kr-awp18et3:d7baadfa15f1",
+     "kind": "local-file",
+     "path": "work/product-image-pipeline/supplier-candidates/1f60f7908152f322.png",
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/KROME CATALOG 25-26.pdf",
+      "page": 18,
+      "embeddedImagesOnPage": null,
+      "largestEmbeddedImage": null,
+      "modelCodesOnPage": [],
+      "modelTextFound": 0
+     },
+     "provenance": "pipeline supplier-candidates.json (catalogue extract)",
+     "sourcePage": "KROME CATALOG 25-26.pdf p.18",
+     "evidence": "exact model printed on catalogue page 18",
+     "matchAssessment": "probable",
+     "matchReasons": [],
+     "priorNotes": [
+      "supplier contact-sheet check by Claude (contact sheet review): EXACT — single model on the catalogue page; front view of the window unit"
+     ],
+     "priorPipelineConfidence": null,
+     "validation": "valid",
+     "validationReason": null,
+     "format": "png",
+     "width": 524,
+     "height": 329,
+     "bytes": 147012,
+     "sha256": "1f60f7908152f32209ddae91ee8ce678c32814691b73a49710b0b696e95452f5",
+     "plannedUpload": {
+      "key": "products/krawp18et3/86d6d21c-bd90-4bd1-aef2-00731a247be2.webp",
+      "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/krawp18et3/86d6d21c-bd90-4bd1-aef2-00731a247be2.webp",
+      "contentType": "image/webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 14802,
+      "fitted": "524x329"
+     },
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Krome (supplier catalogue)",
+      "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ready-for-human-visual-review",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/krome_kr_awp18et3_d7baadfa15f1.jpg"
+    },
+    {
+     "candidateId": "krome-kr-awp18et3:77dac6a3fe3f",
+     "kind": "catalogue-page",
+     "path": null,
+     "url": null,
+     "catalogue": {
+      "pdf": "catalogues-source/KROME CATALOG 25-26.pdf",
+      "page": 18,
+      "embeddedImagesOnPage": 2,
+      "largestEmbeddedImage": "524x329",
+      "modelCodesOnPage": [
+       "KRAWP18ET3"
+      ],
+      "modelTextFound": 1
+     },
+     "provenance": "audit catalogue text match",
+     "sourcePage": null,
+     "evidence": "exact model text KRAWP18ET3 on page; 2 embedded image(s) on page",
+     "matchAssessment": "exact model",
+     "matchReasons": [],
+     "priorNotes": [],
+     "priorPipelineConfidence": null,
+     "validation": "needs-crop",
+     "validationReason": null,
+     "format": null,
+     "width": null,
+     "height": null,
+     "bytes": null,
+     "sha256": null,
+     "plannedUpload": null,
+     "permission": {
+      "status": "permission_pending",
+      "holder": "Krome (supplier catalogue)",
+      "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+     },
+     "permissionConfirmed": false,
+     "reviewBucket": "ready-for-human-visual-review",
+     "reviewStatus": "not reviewed",
+     "approved": false,
+     "preview": "previews/krome_kr_awp18et3_77dac6a3fe3f.jpg"
+    }
+   ]
+  }
+ ]
+}

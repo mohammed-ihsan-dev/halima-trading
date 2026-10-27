@@ -110,6 +110,11 @@ function CandidateCard({ review, onAction, busy }: { review: ReviewRecord; onAct
               {(ai.issues ?? []).length > 0 && <span className="text-amber-700"> · {(ai.issues ?? []).join("; ")}</span>}
             </div>
           )}
+          {c.replaces && c.replaces.refs.length > 0 && (
+            <div className="text-amber-800 bg-amber-50 border border-amber-200 rounded px-2 py-1 break-all">
+              <b>Replacement:</b> approving removes {c.replaces.refs.length} unsuitable image(s) from the product once the new image is uploaded — {c.replaces.reasons.join("; ")}
+            </div>
+          )}
           {(c.checks ?? []).map((x, i) => <div key={i} className="text-slate-500">· {x}</div>)}
           {review.authorization && review.state !== "pending_review" && (
             <div className="text-emerald-800"><ShieldCheck size={12} className="inline" /> {AUTH_LABELS[review.authorization.type]} — {review.authorization.grantedBy} ({review.authorization.reference})</div>

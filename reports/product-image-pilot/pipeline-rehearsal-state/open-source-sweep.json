@@ -1,0 +1,2265 @@
+{
+ "at": "2026-10-15T11:02:39.686Z",
+ "commons": [
+  {
+   "id": "p-1791532040999",
+   "brand": "AKAI",
+   "term": "ACMA-A24FSN",
+   "hits": []
+  },
+  {
+   "id": "p-1791532324809",
+   "brand": "AKAI",
+   "term": "ACMA-M12T3R4 / ACMA-M18T3R4",
+   "hits": []
+  },
+  {
+   "id": "p-1791539276164",
+   "brand": "Toshiba",
+   "term": "TD-T25BS110HWM(MG)",
+   "hits": []
+  },
+  {
+   "id": "p-1791539983521",
+   "brand": "Toshiba",
+   "term": "MM-EG34P(BK)",
+   "hits": []
+  },
+  {
+   "id": "p-1791540269217",
+   "brand": "Toshiba",
+   "term": "GR-RT559WE-PME",
+   "hits": []
+  },
+  {
+   "id": "p-1791540467161",
+   "brand": "Toshiba",
+   "term": "GRRT624WE-PM",
+   "hits": []
+  },
+  {
+   "id": "p-1791540561653",
+   "brand": "Toshiba",
+   "term": "AW-J800DUPA",
+   "hits": []
+  },
+  {
+   "id": "p-1791540971000",
+   "brand": "Toshiba",
+   "term": "GRA820U-X(BS)",
+   "hits": []
+  },
+  {
+   "id": "p-1791607856183",
+   "brand": "Haier",
+   "term": "HSU-18LPA03/T2(T3&T4)",
+   "hits": []
+  },
+  {
+   "id": "p-1791607987897",
+   "brand": "Haier",
+   "term": "HSU-18LPB03/R2(T3&T4)",
+   "hits": []
+  },
+  {
+   "id": "p-1791608233015",
+   "brand": "Haier",
+   "term": "HSU-18/24LPA03",
+   "hits": []
+  },
+  {
+   "id": "p-1791608314749",
+   "brand": "Haier",
+   "term": "HSU-18/24LPB03",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030293",
+   "brand": "Blue Star",
+   "term": "VC60CSFA3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030293",
+   "brand": "Blue Star",
+   "term": "CCB52030293",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030294",
+   "brand": "Blue Star",
+   "term": "HW18CYRFA3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030294",
+   "brand": "Blue Star",
+   "term": "CCB52030294",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030296",
+   "brand": "Blue Star",
+   "term": "HW30CYRFA3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030296",
+   "brand": "Blue Star",
+   "term": "CCB52030296",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030299",
+   "brand": "Blue Star",
+   "term": "HW18CXYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030299",
+   "brand": "Blue Star",
+   "term": "CCB52030299",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030300",
+   "brand": "Blue Star",
+   "term": "HW24CXYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030300",
+   "brand": "Blue Star",
+   "term": "CCB52030300",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030305",
+   "brand": "Blue Star",
+   "term": "HW18HOYFBN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030305",
+   "brand": "Blue Star",
+   "term": "CCB52030305",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030307",
+   "brand": "Blue Star",
+   "term": "HW30CXYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030307",
+   "brand": "Blue Star",
+   "term": "CCB52030307",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030311",
+   "brand": "Blue Star",
+   "term": "HW30HOYFBN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030311",
+   "brand": "Blue Star",
+   "term": "CCB52030311",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030313",
+   "brand": "Blue Star",
+   "term": "WM18CLYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030313",
+   "brand": "Blue Star",
+   "term": "CCB52030313",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030314",
+   "brand": "Blue Star",
+   "term": "WM18CVRRB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030314",
+   "brand": "Blue Star",
+   "term": "CCB52030314",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030318",
+   "brand": "Blue Star",
+   "term": "HW24CYRFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030318",
+   "brand": "Blue Star",
+   "term": "CCB52030318",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030319",
+   "brand": "Blue Star",
+   "term": "WM24CLYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030319",
+   "brand": "Blue Star",
+   "term": "CCB52030319",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030320",
+   "brand": "Blue Star",
+   "term": "HW36CXYFB3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030320",
+   "brand": "Blue Star",
+   "term": "CCB52030320",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030328",
+   "brand": "Blue Star",
+   "term": "HW30HQYFBN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030328",
+   "brand": "Blue Star",
+   "term": "CCB52030328",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030329",
+   "brand": "Blue Star",
+   "term": "HW18HQYFBN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030329",
+   "brand": "Blue Star",
+   "term": "CCB52030329",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030257",
+   "brand": "Blue Star",
+   "term": "HW24HOYFAN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030257",
+   "brand": "Blue Star",
+   "term": "CCB52030257",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030325",
+   "brand": "Blue Star",
+   "term": "HW18CCYFAN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030325",
+   "brand": "Blue Star",
+   "term": "CCB52030325",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030326",
+   "brand": "Blue Star",
+   "term": "HW24CCYFAN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030326",
+   "brand": "Blue Star",
+   "term": "CCB52030326",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030327",
+   "brand": "Blue Star",
+   "term": "HW24HQYFAN3-01",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030327",
+   "brand": "Blue Star",
+   "term": "CCB52030327",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010079",
+   "brand": "Blue Star",
+   "term": "PN - 165 4T",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010079",
+   "brand": "Blue Star",
+   "term": "CCB52010079",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010102",
+   "brand": "Blue Star",
+   "term": "BSWC 30 2T",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010102",
+   "brand": "Blue Star",
+   "term": "CCB52010102",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010103",
+   "brand": "Blue Star",
+   "term": "BSWC 50 3T",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010103",
+   "brand": "Blue Star",
+   "term": "CCB52010103",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010106",
+   "brand": "Blue Star",
+   "term": "BSWC 90 4T",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52010106",
+   "brand": "Blue Star",
+   "term": "CCB52010106",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030212",
+   "brand": "Blue Star",
+   "term": "BWTC1 07Y1R3B",
+   "hits": []
+  },
+  {
+   "id": "blue-star-ccb52030212",
+   "brand": "Blue Star",
+   "term": "CCB52030212",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-i60c3",
+   "brand": "Gree",
+   "term": "T4 MATIC-i60C3",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-i60c3",
+   "brand": "Gree",
+   "term": "T4-MATIC-I60C3",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-t36c3",
+   "brand": "Gree",
+   "term": "T4 MATIC-T36C3",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-t36c3",
+   "brand": "Gree",
+   "term": "T4-MATIC-T36C3",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-t48c3",
+   "brand": "Gree",
+   "term": "T4 MATIC-T48C3",
+   "hits": []
+  },
+  {
+   "id": "gree-t4-matic-t48c3",
+   "brand": "Gree",
+   "term": "T4-MATIC-T48C3",
+   "hits": []
+  },
+  {
+   "id": "indesit-dp-2gsix",
+   "brand": "Indesit",
+   "term": "DP-2GSIX",
+   "hits": []
+  },
+  {
+   "id": "indesit-h-461ix-1",
+   "brand": "Indesit",
+   "term": "H-461IX.1",
+   "hits": []
+  },
+  {
+   "id": "indesit-h-461ix-1",
+   "brand": "Indesit",
+   "term": "H-461IX1",
+   "hits": []
+  },
+  {
+   "id": "indesit-h-491ix",
+   "brand": "Indesit",
+   "term": "H-491IX",
+   "hits": []
+  },
+  {
+   "id": "indesit-ib-65b60ne",
+   "brand": "Indesit",
+   "term": "IB-65B60NE",
+   "hits": []
+  },
+  {
+   "id": "indesit-ict-64lss",
+   "brand": "Indesit",
+   "term": "ICT-64LSS",
+   "hits": []
+  },
+  {
+   "id": "indesit-ifw-5844cix",
+   "brand": "Indesit",
+   "term": "IFW-5844CIX",
+   "hits": []
+  },
+  {
+   "id": "indesit-iggsm-533g3",
+   "brand": "Indesit",
+   "term": "IGGSM-533G3",
+   "hits": []
+  },
+  {
+   "id": "indesit-ihbs-6-5lmx",
+   "brand": "Indesit",
+   "term": "IHBS-6.5LMX",
+   "hits": []
+  },
+  {
+   "id": "indesit-ihbs-6-5lmx",
+   "brand": "Indesit",
+   "term": "IHBS-65LMX",
+   "hits": []
+  },
+  {
+   "id": "indesit-ihgc-6-4amx",
+   "brand": "Indesit",
+   "term": "IHGC-6.4AMX",
+   "hits": []
+  },
+  {
+   "id": "indesit-ihgc-6-4amx",
+   "brand": "Indesit",
+   "term": "IHGC-64AMX",
+   "hits": []
+  },
+  {
+   "id": "indesit-ing-61s-bk",
+   "brand": "Indesit",
+   "term": "ING-61S/BK",
+   "hits": []
+  },
+  {
+   "id": "indesit-ing-61s-bk",
+   "brand": "Indesit",
+   "term": "ING-61SBK",
+   "hits": []
+  },
+  {
+   "id": "indesit-ing-922s-bk",
+   "brand": "Indesit",
+   "term": "ING-922S/BK",
+   "hits": []
+  },
+  {
+   "id": "indesit-ing-922s-bk",
+   "brand": "Indesit",
+   "term": "ING-922SBK",
+   "hits": []
+  },
+  {
+   "id": "indesit-is-19q30ne",
+   "brand": "Indesit",
+   "term": "IS-19Q30NE",
+   "hits": []
+  },
+  {
+   "id": "indesit-is67g1pcx-mea",
+   "brand": "Indesit",
+   "term": "IS67G1PCX/MEA",
+   "hits": []
+  },
+  {
+   "id": "indesit-is67g1pcx-mea",
+   "brand": "Indesit",
+   "term": "IS67G1PCXMEA",
+   "hits": []
+  },
+  {
+   "id": "indesit-islk-96lsx",
+   "brand": "Indesit",
+   "term": "ISLK-96LSX",
+   "hits": []
+  },
+  {
+   "id": "indesit-mtwe-81483sgcc",
+   "brand": "Indesit",
+   "term": "MTWE-81483SGCC",
+   "hits": []
+  },
+  {
+   "id": "indesit-mtwe-81483wsgcc",
+   "brand": "Indesit",
+   "term": "MTWE-81483WSGCC",
+   "hits": []
+  },
+  {
+   "id": "indesit-rin6-ggg23121xme",
+   "brand": "Indesit",
+   "term": "RIN6-GGG23121XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-rin9-ev820205xme",
+   "brand": "Indesit",
+   "term": "RIN9-EV820205XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-rin9-ggf23128xme",
+   "brand": "Indesit",
+   "term": "RIN9-GGF23128XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-thp-641wixi",
+   "brand": "Indesit",
+   "term": "THP-641WIXI",
+   "hits": []
+  },
+  {
+   "id": "indesit-dfe-1b19uk",
+   "brand": "Indesit",
+   "term": "DFE-1B19UK",
+   "hits": []
+  },
+  {
+   "id": "indesit-dfe-1b19xuk",
+   "brand": "Indesit",
+   "term": "DFE-1B19XUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-dfg-1581-kuk",
+   "brand": "Indesit",
+   "term": "DFG-1581-KUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-die-2b19uk",
+   "brand": "Indesit",
+   "term": "DIE-2B19UK",
+   "hits": []
+  },
+  {
+   "id": "indesit-dsio-3t224ezuk",
+   "brand": "Indesit",
+   "term": "DSIO-3T224EZUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-rin9-ggf23125xme",
+   "brand": "Indesit",
+   "term": "RIN9-GGF23125XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-mwi-125gxuk",
+   "brand": "Indesit",
+   "term": "MWI-125GXUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-mwi-5213ixuk",
+   "brand": "Indesit",
+   "term": "MWI-5213IXUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-biinf545282me",
+   "brand": "Indesit",
+   "term": "BIINF545282ME",
+   "hits": []
+  },
+  {
+   "id": "indesit-biinf695403me",
+   "brand": "Indesit",
+   "term": "BIINF695403ME",
+   "hits": []
+  },
+  {
+   "id": "indesit-biins541281me",
+   "brand": "Indesit",
+   "term": "BIINS541281ME",
+   "hits": []
+  },
+  {
+   "id": "indesit-inbuf011",
+   "brand": "Indesit",
+   "term": "INBUF011",
+   "hits": []
+  },
+  {
+   "id": "indesit-li8-sn1exuk",
+   "brand": "Indesit",
+   "term": "LI8-SN1EXUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-os-420htex",
+   "brand": "Indesit",
+   "term": "OS-420HTEX",
+   "hits": []
+  },
+  {
+   "id": "indesit-os-600htex",
+   "brand": "Indesit",
+   "term": "OS-600HTEX",
+   "hits": []
+  },
+  {
+   "id": "indesit-tinf-601351xme",
+   "brand": "Indesit",
+   "term": "TINF-601351XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-tinf-701452xme",
+   "brand": "Indesit",
+   "term": "TINF-701452XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-tinf-836353xme",
+   "brand": "Indesit",
+   "term": "TINF-836353XME",
+   "hits": []
+  },
+  {
+   "id": "indesit-ui6-f1tsuk1",
+   "brand": "Indesit",
+   "term": "UI6-F1TSUK1",
+   "hits": []
+  },
+  {
+   "id": "indesit-bde-964ssv-gcc",
+   "brand": "Indesit",
+   "term": "BDE-964SSV-GCC",
+   "hits": []
+  },
+  {
+   "id": "indesit-bde-964wsv-gcc",
+   "brand": "Indesit",
+   "term": "BDE-964WSV-GCC",
+   "hits": []
+  },
+  {
+   "id": "indesit-biwdil-75125mea",
+   "brand": "Indesit",
+   "term": "BIWDIL-75125MEA",
+   "hits": []
+  },
+  {
+   "id": "indesit-xwde-751480xsuk",
+   "brand": "Indesit",
+   "term": "XWDE-751480XSUK",
+   "hits": []
+  },
+  {
+   "id": "indesit-xwde-961480xwssgcc",
+   "brand": "Indesit",
+   "term": "XWDE-961480XWSSGCC",
+   "hits": []
+  },
+  {
+   "id": "indesit-bwe-1014xwsvgcc",
+   "brand": "Indesit",
+   "term": "BWE-1014XWSVGCC",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-f4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-F4 MATIC-18C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-f4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-F4-MATIC-18C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I Airy32-12C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I-AIRY32-12C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I Airy32-18C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I-AIRY32-18C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I Airy32-24C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I-AIRY32-24C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I Airy32-30C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i-airy32-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I-AIRY32-30C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2 Pro-12C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2-PRO-12C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2 Pro-18C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2-PRO-18C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2 Pro-24C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2-PRO-24C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2 Pro-30C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2-PRO-30C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2 Pro-36C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i2-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I2-PRO-36C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4 Pro-12C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-12c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4-PRO-12C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4 Pro-18C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4-PRO-18C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4 Pro-24C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4-PRO-24C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4 Pro-30C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4-PRO-30C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4 Pro-36C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-i4-pro-36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-I4-PRO-36C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-isave-plus-p30h3-indgree",
+   "brand": "Gree",
+   "term": "GR-ISAVE PLUS-P30H3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-isave-plus-p30h3-indgree",
+   "brand": "Gree",
+   "term": "GR-ISAVE-PLUS-P30H3-INDGREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4 MATIC-18C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4-MATIC-18C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4 MATIC-24C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-24c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4-MATIC-24C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4 MATIC-30C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-p4-matic-30c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-P4-MATIC-30C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-i36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4'matic-I36C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-i36c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4MATIC-I36C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-i48c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4'matic-I48C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-i48c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4MATIC-I48C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-n60c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4'matic-N60C3-IND",
+   "hits": []
+  },
+  {
+   "id": "gree-gr-t4-matic-n60c3-ind-gree",
+   "brand": "Gree",
+   "term": "GR-T4MATIC-N60C3-IND-GREE",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-1200ddswdlx",
+   "brand": "Mazaya",
+   "term": "GL-1200DDSWDLX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-1400ddswdlx",
+   "brand": "Mazaya",
+   "term": "GL-1400DDSWDLX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf350cgq",
+   "brand": "Mazaya",
+   "term": "GL-ICF350CGQ",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf350fdc",
+   "brand": "Mazaya",
+   "term": "GL-ICF350FDC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf350sdc",
+   "brand": "Mazaya",
+   "term": "GL-ICF350SDC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf360cgx",
+   "brand": "Mazaya",
+   "term": "GL-ICF360CGX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf380fdx",
+   "brand": "Mazaya",
+   "term": "GL-ICF380FDX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf400cgx",
+   "brand": "Mazaya",
+   "term": "GL-ICF400CGX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf450cgq",
+   "brand": "Mazaya",
+   "term": "GL-ICF450CGQ",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf450cgx",
+   "brand": "Mazaya",
+   "term": "GL-ICF450CGX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf450sdc",
+   "brand": "Mazaya",
+   "term": "GL-ICF450SDC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf460cgx",
+   "brand": "Mazaya",
+   "term": "GL-ICF460CGX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf500fdc",
+   "brand": "Mazaya",
+   "term": "GL-ICF500FDC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-icf560fdx",
+   "brand": "Mazaya",
+   "term": "GL-ICF560FDX",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-24wtc",
+   "brand": "Mazaya",
+   "term": "GL-24WTC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-36wtc",
+   "brand": "Mazaya",
+   "term": "GL-36WTC",
+   "hits": []
+  },
+  {
+   "id": "mazaya-gl-60wtc",
+   "brand": "Mazaya",
+   "term": "GL-60WTC",
+   "hits": []
+  },
+  {
+   "id": "symphony-100xl-movicool",
+   "brand": "Symphony",
+   "term": "100XL-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-125dd-movicool",
+   "brand": "Symphony",
+   "term": "125DD-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-125l-movicool",
+   "brand": "Symphony",
+   "term": "125L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-200l-movicool",
+   "brand": "Symphony",
+   "term": "200L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-200xl-movicool",
+   "brand": "Symphony",
+   "term": "200XL-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-20d3-diet",
+   "brand": "Symphony",
+   "term": "i-20D3 DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-20d3-diet",
+   "brand": "Symphony",
+   "term": "I-20D3-DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-30d3-diet",
+   "brand": "Symphony",
+   "term": "i-30D3 DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-30d3-diet",
+   "brand": "Symphony",
+   "term": "I-30D3-DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-40d3-diet",
+   "brand": "Symphony",
+   "term": "i-40D3 DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-40d3-diet",
+   "brand": "Symphony",
+   "term": "I-40D3-DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-55d3-diet",
+   "brand": "Symphony",
+   "term": "i-55D3 DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i-55d3-diet",
+   "brand": "Symphony",
+   "term": "I-55D3-DIET",
+   "hits": []
+  },
+  {
+   "id": "symphony-i125l-movicool",
+   "brand": "Symphony",
+   "term": "i125L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i125l-movicool",
+   "brand": "Symphony",
+   "term": "I125L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i200l-movicool",
+   "brand": "Symphony",
+   "term": "i200L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i200l-movicool",
+   "brand": "Symphony",
+   "term": "I200L-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i200xl-movicool",
+   "brand": "Symphony",
+   "term": "i200XL-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-i200xl-movicool",
+   "brand": "Symphony",
+   "term": "I200XL-MOVICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-u20vc-venticool",
+   "brand": "Symphony",
+   "term": "U20VC-VENTICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-u25vc-venticool",
+   "brand": "Symphony",
+   "term": "U25VC-VENTICOOL",
+   "hits": []
+  },
+  {
+   "id": "symphony-xl-70storm",
+   "brand": "Symphony",
+   "term": "XL-70STORM",
+   "hits": []
+  },
+  {
+   "id": "symphony-xl-80winter",
+   "brand": "Symphony",
+   "term": "XL-80WINTER",
+   "hits": []
+  },
+  {
+   "id": "symphony-xli100c-storm",
+   "brand": "Symphony",
+   "term": "XLi100C-STORM",
+   "hits": []
+  },
+  {
+   "id": "symphony-xli100c-storm",
+   "brand": "Symphony",
+   "term": "XLI100C-STORM",
+   "hits": []
+  },
+  {
+   "id": "phoenix-ph1019",
+   "brand": "Phoenix",
+   "term": "PH1019",
+   "hits": [
+    "File:Parc de Bagatelle, bois de Boulogne, 16ème arrondissement, Paris. PH1019.jpg",
+    "File:Akira Nagatsuma 20091019 2.jpg",
+    "File:Akira Nagatsuma 20091019 1.jpg",
+    "File:Akira Nagatsuma 20091019 4.jpg",
+    "File:Akira Nagatsuma, Ritsuo Hosokawa and Kazunori Yamanoi 20091019 1.jpg"
+   ]
+  },
+  {
+   "id": "phoenix-ph2019",
+   "brand": "Phoenix",
+   "term": "PH2019",
+   "hits": [
+    "File:Ballon sur une place à Turin. PH2019.jpg"
+   ]
+  },
+  {
+   "id": "geepas-1-5-ton-window-air-conditioner-gacw1878cu",
+   "brand": "Geepas",
+   "term": "GACW1878CU",
+   "hits": []
+  },
+  {
+   "id": "geepas-digital-air-cooler-45l-gac9433",
+   "brand": "Geepas",
+   "term": "GAC9433",
+   "hits": []
+  },
+  {
+   "id": "geepas-2-ton-split-air-conditioner-24000-btu-gacs2426pcue",
+   "brand": "Geepas",
+   "term": "GACS2426PCUE",
+   "hits": []
+  },
+  {
+   "id": "geepas-split-type-air-conditioner-18000-btu-gacsp188ca",
+   "brand": "Geepas",
+   "term": "GACSP188CA",
+   "hits": []
+  },
+  {
+   "id": "geepas-1-5-ton-window-air-conditioner-gacw18015su",
+   "brand": "Geepas",
+   "term": "GACW18015SU",
+   "hits": []
+  },
+  {
+   "id": "geepas-1-5-ton-window-air-conditioner-gacw1878tcu",
+   "brand": "Geepas",
+   "term": "GACW1878TCU",
+   "hits": []
+  },
+  {
+   "id": "toshiba-ml-ec42s-bs",
+   "brand": "Toshiba",
+   "term": "ML-EC42S(BS)",
+   "hits": []
+  },
+  {
+   "id": "panasonic-na-w14xg1brn",
+   "brand": "Panasonic",
+   "term": "NA-W14XG1BRN",
+   "hits": []
+  },
+  {
+   "id": "panasonic-na-w14xg1brn",
+   "brand": "Panasonic",
+   "term": "NAW14XG1BRN",
+   "hits": []
+  },
+  {
+   "id": "panasonic-na-fd13x3brn",
+   "brand": "Panasonic",
+   "term": "NA-FD13X3BRN",
+   "hits": []
+  },
+  {
+   "id": "panasonic-na-fd13x3brn",
+   "brand": "Panasonic",
+   "term": "NAFD13X3BRN",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3438bg",
+   "brand": "Panasonic",
+   "term": "SDM-WD3438BG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3438bg",
+   "brand": "Panasonic",
+   "term": "SDMWD3438BG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3128tg",
+   "brand": "Panasonic",
+   "term": "SDM-WD3128TG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3128tg",
+   "brand": "Panasonic",
+   "term": "SDMWD3128TG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd4534bg",
+   "brand": "Panasonic",
+   "term": "SDM-WD4534BG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd4534bg",
+   "brand": "Panasonic",
+   "term": "SDMWD4534BG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3531bg",
+   "brand": "Panasonic",
+   "term": "SDM-WD3531BG",
+   "hits": []
+  },
+  {
+   "id": "panasonic-sdm-wd3531bg",
+   "brand": "Panasonic",
+   "term": "SDMWD3531BG",
+   "hits": []
+  },
+  {
+   "id": "nikai-npac12512a5",
+   "brand": "Nikai",
+   "term": "NPAC12512A5",
+   "hits": []
+  },
+  {
+   "id": "nikai-npac15512a5",
+   "brand": "Nikai",
+   "term": "NPAC15512A5",
+   "hits": []
+  },
+  {
+   "id": "nikai-nwac12000cgu",
+   "brand": "Nikai",
+   "term": "NWAC12000CGU",
+   "hits": []
+  },
+  {
+   "id": "nikai-nwac18031n23",
+   "brand": "Nikai",
+   "term": "NWAC18031N23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nwac24031n23",
+   "brand": "Nikai",
+   "term": "NWAC24031N23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nwac18038e5",
+   "brand": "Nikai",
+   "term": "NWAC18038E5",
+   "hits": []
+  },
+  {
+   "id": "nikai-nwac24041e5",
+   "brand": "Nikai",
+   "term": "NWAC24041E5",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac12131n24a",
+   "brand": "Nikai",
+   "term": "NSAC12131N24A",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac18131n24a",
+   "brand": "Nikai",
+   "term": "NSAC18131N24A",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac24131n24a",
+   "brand": "Nikai",
+   "term": "NSAC24131N24A",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac30131n24a",
+   "brand": "Nikai",
+   "term": "NSAC30131N24A",
+   "hits": []
+  },
+  {
+   "id": "nikai-nfac48156hci24",
+   "brand": "Nikai",
+   "term": "NFAC48156HCI24",
+   "hits": []
+  },
+  {
+   "id": "nikai-nfac60132cp9",
+   "brand": "Nikai",
+   "term": "NFAC60132CP9",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac09432cp23",
+   "brand": "Nikai",
+   "term": "NSAC09432CP23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac12432cp23",
+   "brand": "Nikai",
+   "term": "NSAC12432CP23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac18432cp23",
+   "brand": "Nikai",
+   "term": "NSAC18432CP23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac24432cp23",
+   "brand": "Nikai",
+   "term": "NSAC24432CP23",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac18410k",
+   "brand": "Nikai",
+   "term": "NSAC18410K",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac24410k",
+   "brand": "Nikai",
+   "term": "NSAC24410K",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac30410k",
+   "brand": "Nikai",
+   "term": "NSAC30410K",
+   "hits": []
+  },
+  {
+   "id": "nikai-nsac36410k",
+   "brand": "Nikai",
+   "term": "NSAC36410K",
+   "hits": []
+  },
+  {
+   "id": "pro-general-prg18wac",
+   "brand": "Pro General",
+   "term": "PRG18WAC",
+   "hits": []
+  },
+  {
+   "id": "pro-general-prg24wac",
+   "brand": "Pro General",
+   "term": "PRG24WAC",
+   "hits": []
+  },
+  {
+   "id": "pro-general-prg18sac",
+   "brand": "Pro General",
+   "term": "PRG18SAC",
+   "hits": []
+  },
+  {
+   "id": "pro-general-prg24sac",
+   "brand": "Pro General",
+   "term": "PRG24SAC",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar18mt3",
+   "brand": "Krome",
+   "term": "KR-AR18MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar18mt3",
+   "brand": "Krome",
+   "term": "KRAR18MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar24mt3",
+   "brand": "Krome",
+   "term": "KR-AR24MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar24mt3",
+   "brand": "Krome",
+   "term": "KRAR24MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar30mt3",
+   "brand": "Krome",
+   "term": "KR-AR30MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-ar30mt3",
+   "brand": "Krome",
+   "term": "KRAR30MT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sac18im",
+   "brand": "Krome",
+   "term": "KR-SAC18IM",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sac18im",
+   "brand": "Krome",
+   "term": "KRSAC18IM",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sac24im",
+   "brand": "Krome",
+   "term": "KR-SAC24IM",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sac24im",
+   "brand": "Krome",
+   "term": "KRSAC24IM",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sap18ezt3",
+   "brand": "Krome",
+   "term": "KR-SAP18EZT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sap18ezt3",
+   "brand": "Krome",
+   "term": "KRSAP18EZT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sap24ezt3",
+   "brand": "Krome",
+   "term": "KR-SAP24EZT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-sap24ezt3",
+   "brand": "Krome",
+   "term": "KRSAP24EZT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awr18st3",
+   "brand": "Krome",
+   "term": "KR-AWR18ST3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awr18st3",
+   "brand": "Krome",
+   "term": "KRAWR18ST3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awr24st3",
+   "brand": "Krome",
+   "term": "KR-AWR24ST3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awr24st3",
+   "brand": "Krome",
+   "term": "KRAWR24ST3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp18et3",
+   "brand": "Krome",
+   "term": "KR-AWP18ET3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp18et3",
+   "brand": "Krome",
+   "term": "KRAWP18ET3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp18eztt3",
+   "brand": "Krome",
+   "term": "KR-AWP18EZTT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp18eztt3",
+   "brand": "Krome",
+   "term": "KRAWP18EZTT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp24eztt3",
+   "brand": "Krome",
+   "term": "KR-AWP24EZTT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-awp24eztt3",
+   "brand": "Krome",
+   "term": "KRAWP24EZTT3",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-fac483pr-in-od",
+   "brand": "Krome",
+   "term": "KR-FAC483PR-IN+OD",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-fac483pr-in-od",
+   "brand": "Krome",
+   "term": "KRFAC483PRINOD",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-fac603pr-in-od",
+   "brand": "Krome",
+   "term": "KR-FAC603PR-IN+OD",
+   "hits": []
+  },
+  {
+   "id": "krome-kr-fac603pr-in-od",
+   "brand": "Krome",
+   "term": "KRFAC603PRINOD",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs13-mu-gs13",
+   "brand": "Mitsubishi Electric",
+   "term": "MS-GS13/MU-GS13",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs13-mu-gs13",
+   "brand": "Mitsubishi Electric",
+   "term": "MSGS13MUGS13",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs18-mu-gs18",
+   "brand": "Mitsubishi Electric",
+   "term": "MS-GS18/MU-GS18",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs18-mu-gs18",
+   "brand": "Mitsubishi Electric",
+   "term": "MSGS18MUGS18",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs24-mu-gs24",
+   "brand": "Mitsubishi Electric",
+   "term": "MS-GS24/MU-GS24",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs24-mu-gs24",
+   "brand": "Mitsubishi Electric",
+   "term": "MSGS24MUGS24",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs30-mu-gs30",
+   "brand": "Mitsubishi Electric",
+   "term": "MS-GS30/MU-GS30",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs30-mu-gs30",
+   "brand": "Mitsubishi Electric",
+   "term": "MSGS30MUGS30",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs36-mu-gs36",
+   "brand": "Mitsubishi Electric",
+   "term": "MS-GS36/MU-GS36",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-ms-gs36-mu-gs36",
+   "brand": "Mitsubishi Electric",
+   "term": "MSGS36MUGS36",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt13vf-muy-gt13vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSY-GT13VF/MUY-GT13VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt13vf-muy-gt13vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSYGT13VFMUYGT13VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt18vf-muy-gt18vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSY-GT18VF/MUY-GT18VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt18vf-muy-gt18vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSYGT18VFMUYGT18VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt24vf-muy-gt24vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSY-GT24VF/MUY-GT24VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt24vf-muy-gt24vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSYGT24VFMUYGT24VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt30vf-muy-gt30vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSY-GT30VF/MUY-GT30VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt30vf-muy-gt30vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSYGT30VFMUYGT30VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt36vf-muy-gt36vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSY-GT36VF/MUY-GT36VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-msy-gt36vf-muy-gt36vf",
+   "brand": "Mitsubishi Electric",
+   "term": "MSYGT36VFMUYGT36VF",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm18jag-suy-zm18va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM18JAG / SUY-ZM18VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm18jag-suy-zm18va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM18JAGSUYZM18VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm24jag-suy-zm24va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM24JAG / SUY-ZM24VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm24jag-suy-zm24va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM24JAGSUYZM24VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm30jag-suy-zm30va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM30JAG / SUY-ZM30VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm30jag-suy-zm30va",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM30JAGSUYZM30VA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm36jag-puy-zm36vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM36JAG / PUY-ZM36VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm36jag-puy-zm36vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM36JAGPUYZM36VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm45jag-puy-zm45vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM45JAG / PUY-ZM45VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm45jag-puy-zm45vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM45JAGPUYZM45VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm60jag-puy-zm60vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEY-ZM60JAG / PUY-ZM60VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pey-zm60jag-puy-zm60vka",
+   "brand": "Mitsubishi Electric",
+   "term": "PEYZM60JAGPUYZM60VKA",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pev-p200-puv-p200",
+   "brand": "Mitsubishi Electric",
+   "term": "PEV-P200/PUV-P200",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pev-p200-puv-p200",
+   "brand": "Mitsubishi Electric",
+   "term": "PEVP200PUVP200",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pev-p250-puv-p250",
+   "brand": "Mitsubishi Electric",
+   "term": "PEV-P250/PUV-P250",
+   "hits": []
+  },
+  {
+   "id": "mitsubishi-pev-p250-puv-p250",
+   "brand": "Mitsubishi Electric",
+   "term": "PEVP250PUVP250",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dgc-665bsf",
+   "brand": "Daewoo",
+   "term": "DW-DGC-665BSF",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dgc-665bsf",
+   "brand": "Daewoo",
+   "term": "DWDGC665BSF",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dgc-s965hdfp",
+   "brand": "Daewoo",
+   "term": "DW-DGC-S965HDFP",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dgc-s965hdfp",
+   "brand": "Daewoo",
+   "term": "DWDGCS965HDFP",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcc-s664hf",
+   "brand": "Daewoo",
+   "term": "DW-DCC-S664HF",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcc-s664hf",
+   "brand": "Daewoo",
+   "term": "DWDCCS664HF",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcd-8s15p",
+   "brand": "Daewoo",
+   "term": "DW-DCD-8S15P",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcd-8s15p",
+   "brand": "Daewoo",
+   "term": "DWDCD8S15P",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcf-151d",
+   "brand": "Daewoo",
+   "term": "DW-DCF-151D",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcf-151d",
+   "brand": "Daewoo",
+   "term": "DWDCF151D",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcf-221d",
+   "brand": "Daewoo",
+   "term": "DW-DCF-221D",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dcf-221d",
+   "brand": "Daewoo",
+   "term": "DWDCF221D",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dw-t131wd",
+   "brand": "Daewoo",
+   "term": "DW-DW-T131WD",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dw-t131wd",
+   "brand": "Daewoo",
+   "term": "DWDWT131WD",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dw-t201wd",
+   "brand": "Daewoo",
+   "term": "DW-DW-T201WD",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-dw-t201wd",
+   "brand": "Daewoo",
+   "term": "DWDWT201WD",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-250vsn",
+   "brand": "Daewoo",
+   "term": "DW-FR-250VSN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-250vsn",
+   "brand": "Daewoo",
+   "term": "DWFR250VSN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-343s",
+   "brand": "Daewoo",
+   "term": "DW-FR-343S",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-343s",
+   "brand": "Daewoo",
+   "term": "DWFR343S",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-380vsn",
+   "brand": "Daewoo",
+   "term": "DW-FR-380VSN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-380vsn",
+   "brand": "Daewoo",
+   "term": "DWFR380VSN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-559vsin",
+   "brand": "Daewoo",
+   "term": "DW-FR-559VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-559vsin",
+   "brand": "Daewoo",
+   "term": "DWFR559VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-624vsin",
+   "brand": "Daewoo",
+   "term": "DW-FR-624VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-624vsin",
+   "brand": "Daewoo",
+   "term": "DWFR624VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-902vsin",
+   "brand": "Daewoo",
+   "term": "DW-FR-902VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-fr-902vsin",
+   "brand": "Daewoo",
+   "term": "DWFR902VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-frs-721vsin",
+   "brand": "Daewoo",
+   "term": "DW-FRS-721VSIN",
+   "hits": []
+  },
+  {
+   "id": "daewoo-dw-frs-721vsin",
+   "brand": "Daewoo",
+   "term": "DWFRS721VSIN",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-fs18akf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-FS18AKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-fs18akf-5",
+   "brand": "Panasonic",
+   "term": "CSCUFS18AKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-fs24akf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-FS24AKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-fs24akf-5",
+   "brand": "Panasonic",
+   "term": "CSCUFS24AKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn18ykf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-PN18YKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn18ykf-5",
+   "brand": "Panasonic",
+   "term": "CSCUPN18YKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn24ykf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-PN24YKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn24ykf-5",
+   "brand": "Panasonic",
+   "term": "CSCUPN24YKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn30ykf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-PN30YKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn30ykf-5",
+   "brand": "Panasonic",
+   "term": "CSCUPN30YKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn36ykf-5",
+   "brand": "Panasonic",
+   "term": "CS/CU-PN36YKF-5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-cs-cu-pn36ykf-5",
+   "brand": "Panasonic",
+   "term": "CSCUPN36YKF5",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bs80dmkae",
+   "brand": "Panasonic",
+   "term": "NR-BS80DMKAE",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bs80dmkae",
+   "brand": "Panasonic",
+   "term": "NRBS80DMKAE",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bs780msae",
+   "brand": "Panasonic",
+   "term": "NR-BS780MSAE",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bs780msae",
+   "brand": "Panasonic",
+   "term": "NRBS780MSAE",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-tg353busu",
+   "brand": "Panasonic",
+   "term": "NR-TG353BUSU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-tg353busu",
+   "brand": "Panasonic",
+   "term": "NRTG353BUSU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bc361vgmu",
+   "brand": "Panasonic",
+   "term": "NR-BC361VGMU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bc361vgmu",
+   "brand": "Panasonic",
+   "term": "NRBC361VGMU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bk468bqku",
+   "brand": "Panasonic",
+   "term": "NR-BK468BQKU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-bk468bqku",
+   "brand": "Panasonic",
+   "term": "NRBK468BQKU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-wy720zmmu",
+   "brand": "Panasonic",
+   "term": "NR-WY720ZMMU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-wy720zmmu",
+   "brand": "Panasonic",
+   "term": "NRWY720ZMMU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-xy680ymmu",
+   "brand": "Panasonic",
+   "term": "NR-XY680YMMU",
+   "hits": []
+  },
+  {
+   "id": "panasonic-nr-xy680ymmu",
+   "brand": "Panasonic",
+   "term": "NRXY680YMMU",
+   "hits": []
+  }
+ ],
+ "opfBarcodes": [
+  {
+   "id": "p-1791539983521",
+   "code": "6944271651292",
+   "status": "product not found",
+   "name": null
+  },
+  {
+   "id": "p-1791540269217",
+   "code": "6954903810515",
+   "status": "product not found",
+   "name": null
+  },
+  {
+   "id": "p-1791540467161",
+   "code": "6954903810539",
+   "status": "product not found",
+   "name": null
+  },
+  {
+   "id": "p-1791540561653",
+   "code": "8858730310553",
+   "status": "product not found",
+   "name": null
+  },
+  {
+   "id": "p-1791540971000",
+   "code": "8858730383854",
+   "status": "product not found",
+   "name": null
+  },
+  {
+   "id": "toshiba-ml-ec42s-bs",
+   "code": "6944271653388",
+   "status": "product not found",
+   "name": null
+  }
+ ]
+}

@@ -1,0 +1,5276 @@
+{
+ "p-1791532324809": {
+  "id": "p-1791532324809",
+  "brand": "AKAI",
+  "model": "ACMA-M12T3R4 / ACMA-M18T3R4",
+  "discoveredAt": "2026-10-19T11:05:26.656Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier datasheet PDF",
+    "sourcePage": "AKAI-ACMA-M12T3R4,M18T3R4.pdf p.1",
+    "matchEvidence": "manual review: VERIFIED",
+    "decision": "VERIFIED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "record combines several models — no single model to search for (see UI audit)"
+  ],
+  "needsManualSource": false
+ },
+ "p-1791539276164": {
+  "id": "p-1791539276164",
+  "brand": "Toshiba",
+  "model": "TD-T25BS110HWM(MG)",
+  "discoveredAt": "2026-10-19T11:05:26.656Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "p-1791532040999": {
+  "id": "p-1791532040999",
+  "brand": "AKAI",
+  "model": "ACMA-A24FSN",
+  "discoveredAt": "2026-10-19T11:05:26.655Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for AKAI"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "p-1791607856183": {
+  "id": "p-1791607856183",
+  "brand": "Haier",
+  "model": "HSU-18LPA03/T2(T3&T4)",
+  "discoveredAt": "2026-10-19T11:05:27.656Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Haier — haier.com/ae timed out"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "p-1791540971000": {
+  "id": "p-1791540971000",
+  "brand": "Toshiba",
+  "model": "GRA820U-X(BS)",
+  "discoveredAt": "2026-10-26T17:37:34.670Z",
+  "candidates": [
+   {
+    "adapter": "local-file",
+    "official": false,
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GRA820U-X(BS).jpg",
+    "matchEvidence": "filename equals model GRA820UXBS",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./catalogues-source/GRA820U-X(BS).jpg"
+     }
+    ]
+   },
+   {
+    "adapter": "local-file",
+    "official": false,
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/Toshiba 750L Double Door Refrigerator GRA820U-X(BS) .jpg",
+    "matchEvidence": "filename contains model GRA820UXBS",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./catalogues-source/Toshiba 750L Double Door Refrigerator GRA820U-X(BS) .jpg"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database; invalid or unknown GTIN",
+   "no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "GTIN",
+     "http": 400,
+     "code": 16,
+     "message": "invalid or unknown GTIN",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database; invalid or unknown GTIN"
+  },
+  "needsManualSource": false
+ },
+ "p-1791608233015": {
+  "id": "p-1791608233015",
+  "brand": "Haier",
+  "model": "HSU-18/24LPA03",
+  "discoveredAt": "2026-10-19T11:05:29.560Z",
+  "candidates": [],
+  "searched": [],
+  "notes": [
+   "record combines several models — no single model to search for (see UI audit)"
+  ],
+  "needsManualSource": true
+ },
+ "p-1791608314749": {
+  "id": "p-1791608314749",
+  "brand": "Haier",
+  "model": "HSU-18/24LPB03",
+  "discoveredAt": "2026-10-19T11:05:29.560Z",
+  "candidates": [],
+  "searched": [],
+  "notes": [
+   "record combines several models — no single model to search for (see UI audit)"
+  ],
+  "needsManualSource": true
+ },
+ "p-1791539983521": {
+  "id": "p-1791539983521",
+  "brand": "Toshiba",
+  "model": "MM-EG34P(BK)",
+  "discoveredAt": "2026-10-19T11:05:26.696Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat GTIN"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database; invalid or unknown GTIN",
+   "no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "GTIN",
+     "http": 400,
+     "code": 16,
+     "message": "invalid or unknown GTIN",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database; invalid or unknown GTIN"
+  },
+  "needsManualSource": true
+ },
+ "p-1791607987897": {
+  "id": "p-1791607987897",
+  "brand": "Haier",
+  "model": "HSU-18LPB03/R2(T3&T4)",
+  "discoveredAt": "2026-10-19T11:05:29.207Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Haier — haier.com/ae timed out"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-t4-matic-i60c3": {
+  "id": "gree-t4-matic-i60c3",
+  "brand": "Gree",
+  "model": "T4 MATIC-i60C3",
+  "discoveredAt": "2026-10-19T11:05:29.560Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-t4-matic-t36c3": {
+  "id": "gree-t4-matic-t36c3",
+  "brand": "Gree",
+  "model": "T4 MATIC-T36C3",
+  "discoveredAt": "2026-10-19T11:05:30.015Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-t4-matic-t48c3": {
+  "id": "gree-t4-matic-t48c3",
+  "brand": "Gree",
+  "model": "T4 MATIC-T48C3",
+  "discoveredAt": "2026-10-19T11:05:30.360Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "indesit-ib-65b60ne": {
+  "id": "indesit-ib-65b60ne",
+  "brand": "Indesit",
+  "model": "IB-65B60NE",
+  "discoveredAt": "2026-10-19T11:05:31.691Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Indesit — indesit.com search returns HTTP 500; UAE models not addressable"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-gr-f4-matic-18c3-ind-gree": {
+  "id": "gree-gr-f4-matic-18c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-F4 MATIC-18C3-IND",
+  "discoveredAt": "2026-10-19T11:05:32.059Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-gr-i-airy32-12c3-ind-gree": {
+  "id": "gree-gr-i-airy32-12c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I Airy32-12C3-IND",
+  "discoveredAt": "2026-10-19T11:05:32.358Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16 (photo) / 17 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-12c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16",
+    "matchEvidence": "REVIEW_REQUIRED: one i Airy32 photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-12c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i-airy32-18c3-ind-gree": {
+  "id": "gree-gr-i-airy32-18c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I Airy32-18C3-IND",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16 (photo) / 17 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-18c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16",
+    "matchEvidence": "REVIEW_REQUIRED: one i Airy32 photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-18c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i-airy32-30c3-ind-gree": {
+  "id": "gree-gr-i-airy32-30c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I Airy32-30C3-IND",
+  "discoveredAt": "2026-10-19T11:05:34.462Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16 (photo) / 17 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-30c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16",
+    "matchEvidence": "REVIEW_REQUIRED: one i Airy32 photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-30c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i-airy32-24c3-ind-gree": {
+  "id": "gree-gr-i-airy32-24c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I Airy32-24C3-IND",
+  "discoveredAt": "2026-10-19T11:05:34.109Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16 (photo) / 17 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-24c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.16",
+    "matchEvidence": "REVIEW_REQUIRED: one i Airy32 photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i-airy32-24c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i2-pro-12c3-ind-gree": {
+  "id": "gree-gr-i2-pro-12c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I2 Pro-12C3-IND",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20 (photo) / 21 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-12c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20",
+    "matchEvidence": "REVIEW_REQUIRED: one I2`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-12c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i2-pro-18c3-ind-gree": {
+  "id": "gree-gr-i2-pro-18c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I2 Pro-18C3-IND",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20 (photo) / 21 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-18c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20",
+    "matchEvidence": "REVIEW_REQUIRED: one I2`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-18c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i2-pro-24c3-ind-gree": {
+  "id": "gree-gr-i2-pro-24c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I2 Pro-24C3-IND",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20 (photo) / 21 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-24c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20",
+    "matchEvidence": "REVIEW_REQUIRED: one I2`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-24c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "local-file",
+    "official": false,
+    "sourceType": "supplied product photo (catalogues-source)",
+    "sourcePage": "catalogues-source/GR-I2-PRO-24C3-IND-GREE.png",
+    "matchEvidence": "filename equals SKU GRI2PRO24C3INDGREE",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./catalogues-source/GR-I2-PRO-24C3-IND-GREE.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i2-pro-30c3-ind-gree": {
+  "id": "gree-gr-i2-pro-30c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I2 Pro-30C3-IND",
+  "discoveredAt": "2026-10-19T11:05:37.320Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20 (photo) / 21 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-30c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20",
+    "matchEvidence": "REVIEW_REQUIRED: one I2`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-30c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i2-pro-36c3-ind-gree": {
+  "id": "gree-gr-i2-pro-36c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I2 Pro-36C3-IND",
+  "discoveredAt": "2026-10-19T11:05:38.002Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20 (photo) / 21 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I2`Pro-36C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-36c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.20",
+    "matchEvidence": "REVIEW_REQUIRED: one I2`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i2-pro-36c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i4-pro-12c3-ind-gree": {
+  "id": "gree-gr-i4-pro-12c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I4 Pro-12C3-IND",
+  "discoveredAt": "2026-10-19T11:05:38.689Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18 (photo) / 19 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-12c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18",
+    "matchEvidence": "REVIEW_REQUIRED: one I4`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-12c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i4-pro-18c3-ind-gree": {
+  "id": "gree-gr-i4-pro-18c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I4 Pro-18C3-IND",
+  "discoveredAt": "2026-10-19T11:05:39.663Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18 (photo) / 19 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-18C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-18c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18",
+    "matchEvidence": "REVIEW_REQUIRED: one I4`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-18c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i4-pro-24c3-ind-gree": {
+  "id": "gree-gr-i4-pro-24c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I4 Pro-24C3-IND",
+  "discoveredAt": "2026-10-19T11:05:40.058Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18 (photo) / 19 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-24C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-24c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18",
+    "matchEvidence": "REVIEW_REQUIRED: one I4`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-24c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i4-pro-30c3-ind-gree": {
+  "id": "gree-gr-i4-pro-30c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I4 Pro-30C3-IND",
+  "discoveredAt": "2026-10-19T11:05:40.761Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18 (photo) / 19 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-30C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-30c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18",
+    "matchEvidence": "REVIEW_REQUIRED: one I4`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-30c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-i4-pro-36c3-ind-gree": {
+  "id": "gree-gr-i4-pro-36c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-I4 Pro-36C3-IND",
+  "discoveredAt": "2026-10-19T11:05:41.466Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18 (photo) / 19 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on I4`Pro-36C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-36c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.18",
+    "matchEvidence": "REVIEW_REQUIRED: one I4`Pro photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-i4-pro-36c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-isave-plus-p30h3-indgree": {
+  "id": "gree-gr-isave-plus-p30h3-indgree",
+  "brand": "Gree",
+  "model": "GR-ISAVE PLUS-P30H3-IND",
+  "discoveredAt": "2026-10-19T11:05:42.200Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "gree-gr-p4-matic-18c3-ind-gree": {
+  "id": "gree-gr-p4-matic-18c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-P4 MATIC-18C3-IND",
+  "discoveredAt": "2026-10-19T11:05:42.844Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22 (photo) / 23 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-18c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: one P4`matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-18c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-t4-matic-i36c3-ind-gree": {
+  "id": "gree-gr-t4-matic-i36c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-T4'matic-I36C3-IND",
+  "discoveredAt": "2026-10-19T11:05:44.614Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26 (photo) / 27 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-i36c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26",
+    "matchEvidence": "REVIEW_REQUIRED: one T4`Matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-i36c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-p4-matic-24c3-ind-gree": {
+  "id": "gree-gr-p4-matic-24c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-P4 MATIC-24C3-IND",
+  "discoveredAt": "2026-10-19T11:05:43.942Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22 (photo) / 23 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-24c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: one P4`matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-24c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-p4-matic-30c3-ind-gree": {
+  "id": "gree-gr-p4-matic-30c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-P4 MATIC-30C3-IND",
+  "discoveredAt": "2026-10-19T11:05:44.260Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22 (photo) / 23 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-30c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: one P4`matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-p4-matic-30c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-t4-matic-i48c3-ind-gree": {
+  "id": "gree-gr-t4-matic-i48c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-T4'matic-I48C3-IND",
+  "discoveredAt": "2026-10-19T11:05:45.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26 (photo) / 27 (model table)",
+    "matchEvidence": "PENDING_REVIEW (MEDIUM): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-i48c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26",
+    "matchEvidence": "REVIEW_REQUIRED: one T4`Matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-i48c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "gree-gr-t4-matic-n60c3-ind-gree": {
+  "id": "gree-gr-t4-matic-n60c3-ind-gree",
+  "brand": "Gree",
+  "model": "GR-T4'matic-N60C3-IND",
+  "discoveredAt": "2026-10-19T11:05:46.014Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "distributor catalogue (NIA, Gree UAE)",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26 (photo) / 27 (model table)",
+    "matchEvidence": "PENDING_REVIEW (LOW): database model ends in '-IND', which never appears in the catalogue — confirm it is the same model; catalogue footnote on T4`matic-N60C3: 'Product appearance may vary' — the range photo may not show this model",
+    "decision": "PENDING_REVIEW",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-n60c3-ind.png"
+     }
+    ]
+   },
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "Gree-Catalogue-2025-IR.pdf p.26",
+    "matchEvidence": "REVIEW_REQUIRED: one T4`Matic photo represents every size in the series",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gr-t4-matic-n60c3-ind.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Gree"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf350cgq": {
+  "id": "mazaya-gl-icf350cgq",
+  "brand": "Mazaya",
+  "model": "GL-ICF350CGQ",
+  "discoveredAt": "2026-10-19T11:05:47.116Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF350CGQ, GL-ICF450CGQ",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf350cgq.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf350cgq/",
+    "sourceTitle": "GL-ICF350CGQ",
+    "matchEvidence": "exact model in source title \"GL-ICF350CGQ\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350CGQ.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF350CGQ"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-1200ddswdlx": {
+  "id": "mazaya-gl-1200ddswdlx",
+  "brand": "Mazaya",
+  "model": "GL-1200DDSWDLX",
+  "discoveredAt": "2026-10-19T11:05:46.399Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.12",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-1200DDSWDLX, GL-1400DDSWDLX; catalogue page is branded General Line, product is stored as brand Mazaya",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-1200ddswdlx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-1200ddswdlx/",
+    "sourceTitle": "GL-1200DDSWDLX Glass Door Refrigerator",
+    "matchEvidence": "exact model in source title \"GL-1200DDSWDLX Glass Door Refrigerator\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-1200DDSWDLX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-1200DDSWDLX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-1400ddswdlx": {
+  "id": "mazaya-gl-1400ddswdlx",
+  "brand": "Mazaya",
+  "model": "GL-1400DDSWDLX",
+  "discoveredAt": "2026-10-19T11:05:46.736Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.12",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-1400DDSWDLX, GL-1200DDSWDLX; catalogue page is branded General Line, product is stored as brand Mazaya",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-1400ddswdlx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-1400ddswdlx/",
+    "sourceTitle": "GL-1400DDSWDLX Glass Door Refrigerator",
+    "matchEvidence": "exact model in source title \"GL-1400DDSWDLX Glass Door Refrigerator\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-1200DDSWDLX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-1400DDSWDLX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf350fdc": {
+  "id": "mazaya-gl-icf350fdc",
+  "brand": "Mazaya",
+  "model": "GL-ICF350FDC",
+  "discoveredAt": "2026-10-19T11:05:50.089Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF350FDC, GL-ICF500FDC",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf350fdc.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf350fdc/",
+    "sourceTitle": "GL-ICF350FDC",
+    "matchEvidence": "exact model in source title \"GL-ICF350FDC\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350FDC.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF350FDC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf350sdc": {
+  "id": "mazaya-gl-icf350sdc",
+  "brand": "Mazaya",
+  "model": "GL-ICF350SDC",
+  "discoveredAt": "2026-10-19T11:05:50.102Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF350SDC, GL-ICF450SDC",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf350sdc.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf350sdc/",
+    "sourceTitle": "GL-ICF350SDC",
+    "matchEvidence": "exact model in source title \"GL-ICF350SDC\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350SDC.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF350SDC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf360cgx": {
+  "id": "mazaya-gl-icf360cgx",
+  "brand": "Mazaya",
+  "model": "GL-ICF360CGX",
+  "discoveredAt": "2026-10-19T11:05:51.131Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF360CGX, GL-ICF460CGX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf360cgx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf360cgx/",
+    "sourceTitle": "GL-ICF360CGX",
+    "matchEvidence": "exact model in source title \"GL-ICF360CGX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF360CGX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF360CGX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf380fdx": {
+  "id": "mazaya-gl-icf380fdx",
+  "brand": "Mazaya",
+  "model": "GL-ICF380FDX",
+  "discoveredAt": "2026-10-19T11:05:51.625Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF380FDX, GL-ICF560FDX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf380fdx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf380fdx/",
+    "sourceTitle": "GL-ICF380FDX",
+    "matchEvidence": "exact model in source title \"GL-ICF380FDX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF380FDX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF380FDX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf400cgx": {
+  "id": "mazaya-gl-icf400cgx",
+  "brand": "Mazaya",
+  "model": "GL-ICF400CGX",
+  "discoveredAt": "2026-10-19T11:05:52.270Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF400CGX, GL-ICF450CGX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf400cgx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf400cgx/",
+    "sourceTitle": "GL-ICF400CGX",
+    "matchEvidence": "exact model in source title \"GL-ICF400CGX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF400CGX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF400CGX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf450cgq": {
+  "id": "mazaya-gl-icf450cgq",
+  "brand": "Mazaya",
+  "model": "GL-ICF450CGQ",
+  "discoveredAt": "2026-10-19T11:05:52.596Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF450CGQ, GL-ICF350CGQ",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf450cgq.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf450cgq/",
+    "sourceTitle": "GL-ICF450CGQ",
+    "matchEvidence": "exact model in source title \"GL-ICF450CGQ\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450CGQ.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF450CGQ"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf450cgx": {
+  "id": "mazaya-gl-icf450cgx",
+  "brand": "Mazaya",
+  "model": "GL-ICF450CGX",
+  "discoveredAt": "2026-10-19T11:05:53.197Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF450CGX, GL-ICF400CGX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf450cgx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf450cgx/",
+    "sourceTitle": "GL-ICF450CGX",
+    "matchEvidence": "exact model in source title \"GL-ICF450CGX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF360CGX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF450CGX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf450sdc": {
+  "id": "mazaya-gl-icf450sdc",
+  "brand": "Mazaya",
+  "model": "GL-ICF450SDC",
+  "discoveredAt": "2026-10-19T11:05:53.559Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF450SDC, GL-ICF350SDC",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf450sdc.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf450sdc/",
+    "sourceTitle": "GL-ICF450SDC",
+    "matchEvidence": "exact model in source title \"GL-ICF450SDC\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450SDC.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF450SDC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf460cgx": {
+  "id": "mazaya-gl-icf460cgx",
+  "brand": "Mazaya",
+  "model": "GL-ICF460CGX",
+  "discoveredAt": "2026-10-19T11:05:54.212Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF460CGX, GL-ICF360CGX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf460cgx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf460cgx/",
+    "sourceTitle": "GL-ICF460CGX",
+    "matchEvidence": "exact model in source title \"GL-ICF460CGX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF360CGX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF460CGX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf500fdc": {
+  "id": "mazaya-gl-icf500fdc",
+  "brand": "Mazaya",
+  "model": "GL-ICF500FDC",
+  "discoveredAt": "2026-10-19T11:05:54.504Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.22",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF500FDC, GL-ICF350FDC",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf500fdc.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf500fdc/",
+    "sourceTitle": "GL-ICF500FDC",
+    "matchEvidence": "exact model in source title \"GL-ICF500FDC\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF500FDC.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF500FDC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-icf560fdx": {
+  "id": "mazaya-gl-icf560fdx",
+  "brand": "Mazaya",
+  "model": "GL-ICF560FDX",
+  "discoveredAt": "2026-10-19T11:05:55.306Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.21",
+    "matchEvidence": "REVIEW_REQUIRED: catalogue uses one photo for 2 sizes: GL-ICF560FDX, GL-ICF380FDX",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/gl-icf560fdx.png"
+     }
+    ]
+   },
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-icf560fdx/",
+    "sourceTitle": "GL-ICF560FDX",
+    "matchEvidence": "exact model in source title \"GL-ICF560FDX\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF380FDX.jpg",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-ICF560FDX"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-24wtc": {
+  "id": "mazaya-gl-24wtc",
+  "brand": "Mazaya",
+  "model": "GL-24WTC",
+  "discoveredAt": "2026-10-19T11:05:55.616Z",
+  "candidates": [
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-24wtc/",
+    "sourceTitle": "Domestic Water Tank Chiller GL-24WTC - 800 Gallon Capacity",
+    "matchEvidence": "exact model in source title \"Domestic Water Tank Chiller GL-24WTC - 800 Gallon Capacity\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/04/water-tank-chiller.png",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-24WTC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "mazaya-gl-36wtc": {
+  "id": "mazaya-gl-36wtc",
+  "brand": "Mazaya",
+  "model": "GL-36WTC",
+  "discoveredAt": "2026-10-19T11:05:56.346Z",
+  "candidates": [
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-36wtc/",
+    "sourceTitle": "GL-36WTC Domestic Water Tank Chiller",
+    "matchEvidence": "exact model in source title \"GL-36WTC Domestic Water Tank Chiller\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/04/water-tank-chiller.png",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-36WTC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "phoenix-ph1019": {
+  "id": "phoenix-ph1019",
+  "brand": "Phoenix",
+  "model": "PH1019",
+  "discoveredAt": "2026-10-19T11:05:57.508Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "phoenix-ph2019": {
+  "id": "phoenix-ph2019",
+  "brand": "Phoenix",
+  "model": "PH2019",
+  "discoveredAt": "2026-10-19T11:05:57.724Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "pro-general-prg18wac": {
+  "id": "pro-general-prg18wac",
+  "brand": "Pro General",
+  "model": "PRG18WAC",
+  "discoveredAt": "2026-10-19T11:05:57.726Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Pro General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "mazaya-gl-60wtc": {
+  "id": "mazaya-gl-60wtc",
+  "brand": "Mazaya",
+  "model": "GL-60WTC",
+  "discoveredAt": "2026-10-19T11:05:56.740Z",
+  "candidates": [
+   {
+    "adapter": "mazayauae.com",
+    "official": true,
+    "sourcePage": "https://mazayauae.com/product/gl-60wtc/",
+    "sourceTitle": "GL-60WTC Domestic Water Tank Chiller",
+    "matchEvidence": "exact model in source title \"GL-60WTC Domestic Water Tank Chiller\"",
+    "images": [
+     {
+      "url": "https://mazayauae.com/wp-content/uploads/2025/04/water-tank-chiller.png",
+      "position": 1,
+      "alt": ""
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://mazayauae.com/wp-json/wc/store/v1/products?search=GL-60WTC"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "pro-general-prg24wac": {
+  "id": "pro-general-prg24wac",
+  "brand": "Pro General",
+  "model": "PRG24WAC",
+  "discoveredAt": "2026-10-19T11:05:58.078Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Pro General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "pro-general-prg18sac": {
+  "id": "pro-general-prg18sac",
+  "brand": "Pro General",
+  "model": "PRG18SAC",
+  "discoveredAt": "2026-10-19T11:05:58.483Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Pro General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "pro-general-prg24sac": {
+  "id": "pro-general-prg24sac",
+  "brand": "Pro General",
+  "model": "PRG24SAC",
+  "discoveredAt": "2026-10-19T11:05:58.505Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Pro General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dgc-665bsf": {
+  "id": "daewoo-dw-dgc-665bsf",
+  "brand": "Daewoo",
+  "model": "DW-DGC-665BSF",
+  "discoveredAt": "2026-10-19T11:05:58.777Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dgc-s965hdfp": {
+  "id": "daewoo-dw-dgc-s965hdfp",
+  "brand": "Daewoo",
+  "model": "DW-DGC-S965HDFP",
+  "discoveredAt": "2026-10-19T11:05:59.126Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dcc-s664hf": {
+  "id": "daewoo-dw-dcc-s664hf",
+  "brand": "Daewoo",
+  "model": "DW-DCC-S664HF",
+  "discoveredAt": "2026-10-19T11:05:59.507Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dcd-8s15p": {
+  "id": "daewoo-dw-dcd-8s15p",
+  "brand": "Daewoo",
+  "model": "DW-DCD-8S15P",
+  "discoveredAt": "2026-10-19T11:05:59.828Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dcf-151d": {
+  "id": "daewoo-dw-dcf-151d",
+  "brand": "Daewoo",
+  "model": "DW-DCF-151D",
+  "discoveredAt": "2026-10-19T11:06:00.178Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dcf-221d": {
+  "id": "daewoo-dw-dcf-221d",
+  "brand": "Daewoo",
+  "model": "DW-DCF-221D",
+  "discoveredAt": "2026-10-19T11:06:00.527Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dw-t131wd": {
+  "id": "daewoo-dw-dw-t131wd",
+  "brand": "Daewoo",
+  "model": "DW-DW-T131WD",
+  "discoveredAt": "2026-10-19T11:06:00.875Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-dw-t201wd": {
+  "id": "daewoo-dw-dw-t201wd",
+  "brand": "Daewoo",
+  "model": "DW-DW-T201WD",
+  "discoveredAt": "2026-10-19T11:06:01.247Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-250vsn": {
+  "id": "daewoo-dw-fr-250vsn",
+  "brand": "Daewoo",
+  "model": "DW-FR-250VSN",
+  "discoveredAt": "2026-10-19T11:06:01.579Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-343s": {
+  "id": "daewoo-dw-fr-343s",
+  "brand": "Daewoo",
+  "model": "DW-FR-343S",
+  "discoveredAt": "2026-10-19T11:06:01.964Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-380vsn": {
+  "id": "daewoo-dw-fr-380vsn",
+  "brand": "Daewoo",
+  "model": "DW-FR-380VSN",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [],
+  "searched": [],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-559vsin": {
+  "id": "daewoo-dw-fr-559vsin",
+  "brand": "Daewoo",
+  "model": "DW-FR-559VSIN",
+  "discoveredAt": "2026-10-19T11:06:02.626Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-624vsin": {
+  "id": "daewoo-dw-fr-624vsin",
+  "brand": "Daewoo",
+  "model": "DW-FR-624VSIN",
+  "discoveredAt": "2026-10-19T11:06:02.988Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "daewoo-dw-fr-902vsin": {
+  "id": "daewoo-dw-fr-902vsin",
+  "brand": "Daewoo",
+  "model": "DW-FR-902VSIN",
+  "discoveredAt": "2026-10-19T11:06:03.398Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sga18ae": {
+  "id": "super-general-sga18ae",
+  "brand": "Super General",
+  "model": "SGA18AE",
+  "discoveredAt": "2026-10-19T11:06:03.704Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.22",
+    "matchEvidence": "exact model printed as a heading on catalogue page 22 (\"SGA18AE\", ocr confidence 1, IDENTICAL)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 329 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 22,
+     "cropBox": [
+      7.03,
+      289.18,
+      244.01,
+      437.73
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGA18AE",
+     "matchLevel": "IDENTICAL",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 329 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGA18AE"
+     ],
+     "preview": "catalogue/super-general/previews/ca88bc2df7d55ba094b7fd07.webp",
+     "highlight": "catalogue/super-general/highlights/39581234c03111bd68bd.jpg",
+     "previewSha256": "ca88bc2df7d55ba094b7fd07ce3baa9a0acb727da7b05c30b841d25621bc69bf",
+     "sourceSha256": "94345b511098c4274604731ca323fbe0fe5e61f2db4176619a899071c60fd0da",
+     "nativeLongestPx": 329
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/94345b511098c4274604731c.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGA18AE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgs195fe": {
+  "id": "super-general-sgs195fe",
+  "brand": "Super General",
+  "model": "SGS195FE",
+  "discoveredAt": "2026-10-19T11:06:06.228Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS195FE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sga121ae": {
+  "id": "super-general-sga121ae",
+  "brand": "Super General",
+  "model": "SGA121AE",
+  "discoveredAt": "2026-10-19T11:06:04.802Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGA121AE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sga24ae": {
+  "id": "super-general-sga24ae",
+  "brand": "Super General",
+  "model": "SGA24AE",
+  "discoveredAt": "2026-10-19T11:06:04.266Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGA24AE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgs245fe": {
+  "id": "super-general-sgs245fe",
+  "brand": "Super General",
+  "model": "SGS245FE",
+  "discoveredAt": "2026-10-19T11:06:06.447Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS245FE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgs366ae": {
+  "id": "super-general-sgs366ae",
+  "brand": "Super General",
+  "model": "SGS366AE",
+  "discoveredAt": "2026-10-19T11:06:06.485Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS366AE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgs191cn": {
+  "id": "super-general-sgs191cn",
+  "brand": "Super General",
+  "model": "SGS191CN",
+  "discoveredAt": "2026-10-19T11:06:06.618Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.11",
+    "matchEvidence": "exact model printed as a heading on catalogue page 11 (\"SGS191CN\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGS260CN, SGS191CN; crop contains layout text: Weight (Outdoor - Net/Gross Kg)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 11,
+     "cropBox": [
+      192.79,
+      412.32,
+      551.51,
+      646.55
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGS191CN",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "shared series photo: one photo for SGS260CN, SGS191CN",
+      "crop contains layout text: Weight (Outdoor - Net/Gross Kg)"
+     ],
+     "rowModels": [
+      "SGS260CN",
+      "SGS191CN"
+     ],
+     "preview": "catalogue/super-general/previews/9036e626655fc5f46686f2ed.webp",
+     "highlight": "catalogue/super-general/highlights/393f0a993eff248be4b8.jpg",
+     "previewSha256": "9036e626655fc5f46686f2ed1e550e031b98bdb1d9cae4086ca98d81e8d8698f",
+     "sourceSha256": "a7beaf92fa8717e93c517513b4631638a7240dda9c7bd32db40bf54fe9fe651f",
+     "nativeLongestPx": 499
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/a7beaf92fa8717e93c517513.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS191CN)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgs260cn": {
+  "id": "super-general-sgs260cn",
+  "brand": "Super General",
+  "model": "SGS260CN",
+  "discoveredAt": "2026-10-19T11:06:06.797Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.11",
+    "matchEvidence": "exact model printed as a heading on catalogue page 11 (\"SGS260CN\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGS260CN, SGS191CN; crop contains layout text: Weight (Outdoor - Net/Gross Kg)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 11,
+     "cropBox": [
+      192.79,
+      412.32,
+      551.51,
+      646.55
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGS260CN",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "shared series photo: one photo for SGS260CN, SGS191CN",
+      "crop contains layout text: Weight (Outdoor - Net/Gross Kg)"
+     ],
+     "rowModels": [
+      "SGS260CN",
+      "SGS191CN"
+     ],
+     "preview": "catalogue/super-general/previews/9036e626655fc5f46686f2ed.webp",
+     "highlight": "catalogue/super-general/highlights/b91a34f68ba4b40bbe1a.jpg",
+     "previewSha256": "9036e626655fc5f46686f2ed1e550e031b98bdb1d9cae4086ca98d81e8d8698f",
+     "sourceSha256": "a7beaf92fa8717e93c517513b4631638a7240dda9c7bd32db40bf54fe9fe651f",
+     "nativeLongestPx": 499
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/a7beaf92fa8717e93c517513.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS260CN)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgs370cn": {
+  "id": "super-general-sgs370cn",
+  "brand": "Super General",
+  "model": "SGS370CN",
+  "discoveredAt": "2026-10-19T11:06:07.149Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.11",
+    "matchEvidence": "exact model printed as a heading on catalogue page 11 (\"SGS370CN\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGS370CN, SGS320CN; crop contains layout text: Key Features",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 11,
+     "cropBox": [
+      25.18,
+      64.25,
+      468.53,
+      274.55
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGS370CN",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "shared series photo: one photo for SGS370CN, SGS320CN",
+      "crop contains layout text: Key Features"
+     ],
+     "rowModels": [
+      "SGS370CN",
+      "SGS320CN"
+     ],
+     "preview": "catalogue/super-general/previews/881083ba18f70470efc4d6f7.webp",
+     "highlight": "catalogue/super-general/highlights/17f55c250af980022d3a.jpg",
+     "previewSha256": "881083ba18f70470efc4d6f76bfd6b63b958779e81668744a212eae02a803945",
+     "sourceSha256": "1ecef2abf8afe212ec0b5c84f3d3573556044053fffedcb87c9737194b6daf34",
+     "nativeLongestPx": 617
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/1ecef2abf8afe212ec0b5c84.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGS370CN)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgp124t3": {
+  "id": "super-general-sgp124t3",
+  "brand": "Super General",
+  "model": "SGP124T3",
+  "discoveredAt": "2026-10-19T11:06:07.598Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.25",
+    "matchEvidence": "exact model printed as a heading on catalogue page 25 (\"SGP124T3\", ocr confidence 1, IDENTICAL)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 361 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 25,
+     "cropBox": [
+      60.22,
+      530.58,
+      181.06,
+      789.66
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "SGP124T3",
+     "matchLevel": "IDENTICAL",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 361 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGP124T3"
+     ],
+     "preview": "catalogue/super-general/previews/001e9a3f872ece9b9781ec10.webp",
+     "highlight": "catalogue/super-general/highlights/327251cbe80ab18aa358.jpg",
+     "previewSha256": "001e9a3f872ece9b9781ec10472520a7b181b92ec9d6ea44817471712b92b818",
+     "sourceSha256": "37104dae1b1fe14bfd4b7e202ae2a7af44594ee328aadb66086e6349f5b61b18",
+     "nativeLongestPx": 361
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/37104dae1b1fe14bfd4b7e20.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGP124T3)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgp184t3": {
+  "id": "super-general-sgp184t3",
+  "brand": "Super General",
+  "model": "SGP184T3",
+  "discoveredAt": "2026-10-19T11:06:07.850Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.25",
+    "matchEvidence": "exact model printed as a heading on catalogue page 25 (\"SGP184T3\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGP204T3, SGP184T3; low resolution: about 349 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 25,
+     "cropBox": [
+      30.06,
+      86.99,
+      280.81,
+      337.74
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGP184T3",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "shared series photo: one photo for SGP204T3, SGP184T3",
+      "low resolution: about 349 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGP204T3",
+      "SGP184T3"
+     ],
+     "preview": "catalogue/super-general/previews/3e60bc9485d30d9dbf899941.webp",
+     "highlight": "catalogue/super-general/highlights/b84857480bdb0fac7b39.jpg",
+     "previewSha256": "3e60bc9485d30d9dbf899941e5fa5e19b71eebc0ee4036e0b8751c13a455f850",
+     "sourceSha256": "7ea11ff331573c7994097d5eb118987a574fa89b79b8ec2748312f819aab56b1",
+     "nativeLongestPx": 349
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/7ea11ff331573c7994097d5e.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGP184T3)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgr365ie": {
+  "id": "super-general-sgr365ie",
+  "brand": "Super General",
+  "model": "SGR365IE",
+  "discoveredAt": "2026-10-19T11:06:08.199Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGR365IE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgr515ie": {
+  "id": "super-general-sgr515ie",
+  "brand": "Super General",
+  "model": "SGR515IE",
+  "discoveredAt": "2026-10-19T11:06:08.550Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGR515IE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgf644he": {
+  "id": "super-general-sgf644he",
+  "brand": "Super General",
+  "model": "SGF644HE",
+  "discoveredAt": "2026-10-19T11:06:08.901Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGF644HE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgf444he": {
+  "id": "super-general-sgf444he",
+  "brand": "Super General",
+  "model": "SGF444HE",
+  "discoveredAt": "2026-10-19T11:06:09.338Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGF444HE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgf444hmei": {
+  "id": "super-general-sgf444hmei",
+  "brand": "Super General",
+  "model": "SGF444HMEI",
+  "discoveredAt": "2026-10-19T11:06:09.603Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGF444HMEI)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgsc137": {
+  "id": "super-general-sgsc137",
+  "brand": "Super General",
+  "model": "SGSC137",
+  "discoveredAt": "2026-10-19T11:06:10.297Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.54",
+    "matchEvidence": "exact model printed as a heading on catalogue page 54 (\"SGSC137 / SGSC138\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGSC137, SGSC138; low resolution: about 211 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 54,
+     "cropBox": [
+      118.96,
+      465.08,
+      224.95,
+      617.13
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "SGSC137 / SGSC138",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "shared series photo: one photo for SGSC137, SGSC138",
+      "low resolution: about 211 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGSC137",
+      "SGSC138"
+     ],
+     "preview": "catalogue/super-general/previews/f6f58a918dfb96f1766fa42f.webp",
+     "highlight": "catalogue/super-general/highlights/30cde71040fde27f25a6.jpg",
+     "previewSha256": "f6f58a918dfb96f1766fa42f56d783a09e1dbeedbffc1a85727df46ad4185672",
+     "sourceSha256": "ae818fb15a11efe1517b0099147dd5bf1db840a4759bb30bdd9539f041559c87",
+     "nativeLongestPx": 211
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/ae818fb15a11efe1517b0099.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGSC137)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgb-02-ss": {
+  "id": "super-general-sgb-02-ss",
+  "brand": "Super General",
+  "model": "SGB 02 SS",
+  "discoveredAt": "2026-10-19T11:06:10.076Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "icecat brand+model (no spaces)",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGB 02 SS)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    },
+    {
+     "how": "brand+model (no spaces)",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "super-general-sgsc74": {
+  "id": "super-general-sgsc74",
+  "brand": "Super General",
+  "model": "SGSC74",
+  "discoveredAt": "2026-10-19T11:06:11.385Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.54",
+    "matchEvidence": "exact model printed as a heading on catalogue page 54 (\"SGSC74\", ocr confidence 1, IDENTICAL)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 198 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 54,
+     "cropBox": [
+      100.53,
+      659.91,
+      242.82,
+      790.51
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGSC74",
+     "matchLevel": "IDENTICAL",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 198 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGSC74"
+     ],
+     "preview": "catalogue/super-general/previews/b17531f4113384c477f50c9c.webp",
+     "highlight": "catalogue/super-general/highlights/360ddae949fb6c324ce9.jpg",
+     "previewSha256": "b17531f4113384c477f50c9c8f3b672dafeee385fa91bdfbdef0aa6013a6e0a3",
+     "sourceSha256": "bde5d7b1b26bca02e367ae00189531f9f58369d3214e8174fb5f64bcfa26f5fa",
+     "nativeLongestPx": 198
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/bde5d7b1b26bca02e367ae00.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGSC74)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgmm921nhw": {
+  "id": "super-general-sgmm921nhw",
+  "brand": "Super General",
+  "model": "SGMM921NHW",
+  "discoveredAt": "2026-10-19T11:06:10.652Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.94",
+    "matchEvidence": "exact model printed as a heading on catalogue page 94 (\"SGMM921NHW\", ocr confidence 1, IDENTICAL)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 283 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 94,
+     "cropBox": [
+      79.02,
+      277.14,
+      282.15,
+      406.46
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "SGMM921NHW",
+     "matchLevel": "IDENTICAL",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 283 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGMM921NHW"
+     ],
+     "preview": "catalogue/super-general/previews/a545331e8d3972612fc1d7a5.webp",
+     "highlight": "catalogue/super-general/highlights/001540c945c8c4fb5ef2.jpg",
+     "previewSha256": "a545331e8d3972612fc1d7a53d06c88a79156fb310115946d388321a687d88e1",
+     "sourceSha256": "2ea63187820959c3c96dab23f44539295889d442e0316a2e556371f7b0252de6",
+     "nativeLongestPx": 283
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/2ea63187820959c3c96dab23.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "supergeneral.com",
+    "official": true,
+    "sourcePage": "https://www.supergeneral.com/product/20l-microwave-oven-sgmm921nhw",
+    "sourceTitle": "Buy Super General 20L Microwave Oven",
+    "matchEvidence": "exact model in product URL and page title \"Buy Super General 20L Microwave Oven\"",
+    "images": [
+     {
+      "url": "https://www.supergeneral.com/media/products/629/1687186860-sgmm921nhw-1.webp",
+      "position": 1
+     },
+     {
+      "url": "https://www.supergeneral.com/media/products/629/1687186860-sgmm921nhw.webp",
+      "position": 2
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGMM921NHW)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgfs36ae": {
+  "id": "super-general-sgfs36ae",
+  "brand": "Super General",
+  "model": "SGFS36AE",
+  "discoveredAt": "2026-10-19T11:06:12.048Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.24",
+    "matchEvidence": "exact model printed as a heading on catalogue page 24 (\"SGFS36AE\", ocr confidence 1, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "shared series photo: one photo for SGFS60AE, SGFS36AE, SGFS48AE; low resolution: about 340 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 24,
+     "cropBox": [
+      87.16,
+      104.78,
+      169.82,
+      347.9
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "SGFS36AE",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "shared series photo: one photo for SGFS60AE, SGFS36AE, SGFS48AE",
+      "low resolution: about 340 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGFS60AE",
+      "SGFS36AE",
+      "SGFS48AE"
+     ],
+     "preview": "catalogue/super-general/previews/1691d06bf1ca7406d1cb6e67.webp",
+     "highlight": "catalogue/super-general/highlights/51f845c453b16c257b25.jpg",
+     "previewSha256": "1691d06bf1ca7406d1cb6e67cdaafa09d2d991207d25be941aec101d03d65571",
+     "sourceSha256": "9a2c8a0891898a3dcecfa38bf3739d263d6ab7183d210121e21c1d0937609407",
+     "nativeLongestPx": 340
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/catalogue/super-general/previews/9a2c8a0891898a3dcecfa38b.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGFS36AE)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": false
+ },
+ "super-general-sgsc717cg": {
+  "id": "super-general-sgsc717cg",
+  "brand": "Super General",
+  "model": "SGSC717CG",
+  "discoveredAt": "2026-10-19T11:06:12.409Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model",
+   "https://www.supergeneral.com/sitemap.xml (product URLs ending in SGSC717CG)"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "supergeneral.com: exact model not found"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-augg18crta-uz": {
+  "id": "o-general-augg18crta-uz",
+  "brand": "O General",
+  "model": "AUGG18CRTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:12.703Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-augg24crta-uz": {
+  "id": "o-general-augg24crta-uz",
+  "brand": "O General",
+  "model": "AUGG24CRTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:12.752Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-augg30crta-uz": {
+  "id": "o-general-augg30crta-uz",
+  "brand": "O General",
+  "model": "AUGG30CRTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:13.098Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-argg18clta-uz": {
+  "id": "o-general-argg18clta-uz",
+  "brand": "O General",
+  "model": "ARGG18CLTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:13.454Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-argg24clta-uz": {
+  "id": "o-general-argg24clta-uz",
+  "brand": "O General",
+  "model": "ARGG24CLTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:13.924Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-argg30clta-uz": {
+  "id": "o-general-argg30clta-uz",
+  "brand": "O General",
+  "model": "ARGG30CLTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:14.147Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-argh18cmta-uz": {
+  "id": "o-general-argh18cmta-uz",
+  "brand": "O General",
+  "model": "ARGH18CMTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:14.499Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "o-general-argh24cmta-uz": {
+  "id": "o-general-argh24cmta-uz",
+  "brand": "O General",
+  "model": "ARGH24CMTA-UZ",
+  "discoveredAt": "2026-10-19T11:06:14.849Z",
+  "candidates": [],
+  "searched": [
+   "icecat brand+model"
+  ],
+  "notes": [
+   "icecat: not in the Icecat database",
+   "no automated official source for O General"
+  ],
+  "icecat": {
+   "attempts": [
+    {
+     "how": "brand+model",
+     "http": 404,
+     "code": 8,
+     "message": "not in the Icecat database",
+     "rateLimited": false
+    }
+   ],
+   "found": false,
+   "reason": "not in the Icecat database"
+  },
+  "needsManualSource": true
+ },
+ "mazaya-me-25t2": {
+  "id": "mazaya-me-25t2",
+  "brand": "Mazaya",
+  "model": "ME-25T2",
+  "discoveredAt": "2026-10-26T17:37:44.828Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.5",
+    "matchEvidence": "exact model printed as a heading on catalogue page 5 (\"ME-25T2\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "3 photos in this block — confirm which shows the product; low resolution: about 295 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 5,
+     "cropBox": [
+      117.15,
+      113.55,
+      231.01,
+      324.92
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "ME-25T2",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "3 photos in this block — confirm which shows the product",
+      "low resolution: about 295 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "ME-25T2"
+     ],
+     "preview": "catalogue/mazaya/previews/1359d2db5d2f68f107962daa.webp",
+     "highlight": "catalogue/mazaya/highlights/82d64e41892cbffb1ef2.jpg",
+     "previewSha256": "1359d2db5d2f68f107962daa7be58b40dc571bc98840d91e010438a2e28a183f",
+     "sourceSha256": "01b300118bb350c50c699ebcc918d9c277f05f4f862f1b1ae67f0bc3f1c9f8c6",
+     "nativeLongestPx": 295
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/01b300118bb350c50c699ebc.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.5",
+    "matchEvidence": "exact model printed as a heading on catalogue page 5 (\"ME-25T2\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "3 photos in this block — confirm which shows the product; low resolution: about 303 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 5,
+     "cropBox": [
+      373.5,
+      145.49,
+      495.21,
+      362.79
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "ME-25T2",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "3 photos in this block — confirm which shows the product",
+      "low resolution: about 303 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "ME-25T2"
+     ],
+     "preview": "catalogue/mazaya/previews/997b61d03e350b950caf0b62.webp",
+     "highlight": "catalogue/mazaya/highlights/8336db67633d3c06acd0.jpg",
+     "previewSha256": "997b61d03e350b950caf0b62926d0545cb3282076fb7db88dfe2a131a29a75ba",
+     "sourceSha256": "08cef4203af1f029248c32d62a7a08094a7118552e25ce2119a17e5cb0ab39ee",
+     "nativeLongestPx": 303
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/08cef4203af1f029248c32d6.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.5",
+    "matchEvidence": "exact model printed as a heading on catalogue page 5 (\"ME-25T2\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "3 photos in this block — confirm which shows the product; low resolution: about 194 px on the longest side (minimum 400); same image used for ME-85T4, ME-150T5",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 5,
+     "cropBox": [
+      412.06,
+      64.84,
+      551.49,
+      132.52
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "ME-25T2",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "3 photos in this block — confirm which shows the product",
+      "low resolution: about 194 px on the longest side (minimum 400)",
+      "same image used for ME-85T4, ME-150T5"
+     ],
+     "rowModels": [
+      "ME-25T2"
+     ],
+     "preview": "catalogue/mazaya/previews/3f80998b7b2fcfedd7401b9b.webp",
+     "highlight": "catalogue/mazaya/highlights/46925efc45390757ae5f.jpg",
+     "previewSha256": "3f80998b7b2fcfedd7401b9ba28a5bb4cf4384d9e9d21680d0ecab0747e2795d",
+     "sourceSha256": "7502488fa47ff6ec532a8c312e655907d931cf0630f77db8fc23855ed6939d7d",
+     "nativeLongestPx": 194
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/7502488fa47ff6ec532a8c31.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "lg-t36zca-uuae": {
+  "id": "lg-t36zca-uuae",
+  "brand": "LG",
+  "model": "T36ZCA.UUAE",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "LG HA & RAC (PS)PPT.pdf p.66",
+    "matchEvidence": "REVIEW_REQUIRED: likely duplicate of the product listed without the suffix",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/t36zca-uuae.jpg"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "mazaya-me-85t4": {
+  "id": "mazaya-me-85t4",
+  "brand": "Mazaya",
+  "model": "ME-85T4",
+  "discoveredAt": "2026-10-26T17:37:44.829Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.6",
+    "matchEvidence": "exact model printed as a heading on catalogue page 6 (\"ME-85T4\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "same image used for ME-25T2, ME-150T5",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 6,
+     "cropBox": [
+      13.66,
+      0,
+      595.28,
+      379.1
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "ME-85T4",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "same image used for ME-25T2, ME-150T5"
+     ],
+     "rowModels": [
+      "ME-85T4"
+     ],
+     "preview": "catalogue/mazaya/previews/1923d3c006af902b8a43e8e6.webp",
+     "highlight": "catalogue/mazaya/highlights/dffee7f9ebf6e60abb41.jpg",
+     "previewSha256": "1923d3c006af902b8a43e8e6c2cee13c4f6be559409d22c3a4315bfda3649a82",
+     "sourceSha256": "b33aab67419cb5e231953c4bb21d0171f6442e0e124ded3604e66e2ba686f9e9",
+     "nativeLongestPx": 1085
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/b33aab67419cb5e231953c4b.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "lg-i23tcp-uuae2": {
+  "id": "lg-i23tcp-uuae2",
+  "brand": "LG",
+  "model": "I23TCP.UUAE2",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "LG HA & RAC (PS)PPT.pdf p.67",
+    "matchEvidence": "REVIEW_REQUIRED: likely duplicate of the product listed without the suffix",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/i23tcp-uuae2.jpg"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "mazaya-me-35t3": {
+  "id": "mazaya-me-35t3",
+  "brand": "Mazaya",
+  "model": "ME-35T3",
+  "discoveredAt": "2026-10-26T17:37:44.829Z",
+  "candidates": [],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": true
+ },
+ "mazaya-me-45t3": {
+  "id": "mazaya-me-45t3",
+  "brand": "Mazaya",
+  "model": "ME-45T3",
+  "discoveredAt": "2026-10-26T17:37:44.829Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.5",
+    "matchEvidence": "exact model printed as a heading on catalogue page 5 (\"ME-45T3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "2 photos in this block — confirm which shows the product; crop contains layout text: ME-65T3; low resolution: about 302 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 5,
+     "cropBox": [
+      359.46,
+      483.74,
+      506.93,
+      700.34
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "ME-45T3",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "crop contains layout text: ME-65T3",
+      "low resolution: about 302 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "ME-45T3"
+     ],
+     "preview": "catalogue/mazaya/previews/76c5628b8e708b033f387683.webp",
+     "highlight": "catalogue/mazaya/highlights/76f9a51eb0521cbd4b5b.jpg",
+     "previewSha256": "76c5628b8e708b033f3876836bc0d2f677eee8a3aa9c77b54e7f5a97551feb86",
+     "sourceSha256": "55ba827fc50bd3a5f2312b96961a0375fad6ef1286f2ccc3800c2ac07d118437",
+     "nativeLongestPx": 302
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/55ba827fc50bd3a5f2312b96.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "MAZAYA CATALOGUE 2025.pdf p.5",
+    "matchEvidence": "exact model printed as a heading on catalogue page 5 (\"ME-45T3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "2 photos in this block — confirm which shows the product; low resolution: about 303 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "MAZAYA CATALOGUE 2025.pdf",
+     "page": 5,
+     "cropBox": [
+      113.46,
+      426.29,
+      247.51,
+      644.36
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "ME-45T3",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "low resolution: about 303 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "ME-45T3"
+     ],
+     "preview": "catalogue/mazaya/previews/140daa7f1f3412909b0097d8.webp",
+     "highlight": "catalogue/mazaya/highlights/f5a5363bde11730bef39.jpg",
+     "previewSha256": "140daa7f1f3412909b0097d830977f71d45cea2420fa1d8d2770757bf90e9a52",
+     "sourceSha256": "590f6e218f790fbf7ccf8a3519cbdef0ad6b2120bc01f6c227bc58d47fe4590e",
+     "nativeLongestPx": 303
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/mazaya/previews/590f6e218f790fbf7ccf8a35.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "mazaya-me-65t3": {
+  "id": "mazaya-me-65t3",
+  "brand": "Mazaya",
+  "model": "ME-65T3",
+  "discoveredAt": "2026-10-26T17:37:44.829Z",
+  "candidates": [],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": true
+ },
+ "lg-i38tcf-uuae": {
+  "id": "lg-i38tcf-uuae",
+  "brand": "LG",
+  "model": "I38TCF.UUAE",
+  "discoveredAt": "2026-10-26T17:37:34.671Z",
+  "candidates": [
+   {
+    "adapter": "reviewed-manifest",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "LG HA & RAC (PS)PPT.pdf p.70",
+    "matchEvidence": "REVIEW_REQUIRED: likely duplicate of the product listed without the suffix",
+    "decision": "REVIEW_REQUIRED",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/catalogue-images/prepared/i38tcf-uuae.jpg"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "super-general-sg-cl-50t3": {
+  "id": "super-general-sg-cl-50t3",
+  "brand": "Super General",
+  "model": "SG CL 50T3",
+  "discoveredAt": "2026-10-26T17:38:46.854Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.89",
+    "matchEvidence": "exact model printed as a heading on catalogue page 89 (\"SGCL50T3\", native, CASE_SPACE)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 193 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 89,
+     "cropBox": [
+      129.41,
+      491.67,
+      215.32,
+      630.45
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "SGCL50T3",
+     "matchLevel": "CASE_SPACE",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 193 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGCL50T3"
+     ],
+     "preview": "catalogue/super-general/previews/55f042f12be20845cbcdead2.webp",
+     "highlight": "catalogue/super-general/highlights/40d29be9ac206c148c9d.jpg",
+     "previewSha256": "55f042f12be20845cbcdead2887509e8cae2af3d2c5fe560dbd6c0a96c5fc384",
+     "sourceSha256": "a2bc1ccc4a48004d7bf3ef81dfd7ccd9d095d19e9b5c531810102f36a8251615",
+     "nativeLongestPx": 193
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/super-general/previews/a2bc1ccc4a48004d7bf3ef81.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "super-general-sg-aa-110t5": {
+  "id": "super-general-sg-aa-110t5",
+  "brand": "Super General",
+  "model": "SG AA 110T5",
+  "discoveredAt": "2026-10-26T17:38:46.855Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "superGeneral.pdf p.91",
+    "matchEvidence": "exact model printed as a heading on catalogue page 91 (\"SGAA110T5\", native, CASE_SPACE)",
+    "exactModel": true,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "low resolution: about 179 px on the longest side (minimum 400)",
+    "catalogue": {
+     "pdf": "superGeneral.pdf",
+     "page": 91,
+     "cropBox": [
+      87.74,
+      636.22,
+      210.08,
+      764.61
+     ],
+     "cropSource": "embedded-asset",
+     "evidenceText": "SGAA110T5",
+     "matchLevel": "CASE_SPACE",
+     "identity": "EXACT_UNAMBIGUOUS",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "low resolution: about 179 px on the longest side (minimum 400)"
+     ],
+     "rowModels": [
+      "SGAA110T5"
+     ],
+     "preview": "catalogue/super-general/previews/e77181d9282285e5101b99ab.webp",
+     "highlight": "catalogue/super-general/highlights/35691f0b8abeaff53cfe.jpg",
+     "previewSha256": "e77181d9282285e5101b99ab1fee5f8a8d165d079e7a035ad8277078336078b7",
+     "sourceSha256": "6ade34e23a484ab0c9af758e785f229fca5fd3e16936e0763c47e7d51e0f26be",
+     "nativeLongestPx": 179
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/super-general/previews/6ade34e23a484ab0c9af758e.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "krome-kr-ar24mt3": {
+  "id": "krome-kr-ar24mt3",
+  "brand": "Krome",
+  "model": "KR-AR24MT3",
+  "discoveredAt": "2026-10-26T17:38:05.753Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.9",
+    "matchEvidence": "exact model printed as a heading on catalogue page 9 (\"KR-AR24MT3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "2 photos in this block — confirm which shows the product; low resolution: about 313 px on the longest side (minimum 400); same image used for KR-AR18MT3, KR-AR30MT3",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 9,
+     "cropBox": [
+      203.99,
+      332.09,
+      438.24,
+      506.5
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AR24MT3",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "low resolution: about 313 px on the longest side (minimum 400)",
+      "same image used for KR-AR18MT3, KR-AR30MT3"
+     ],
+     "rowModels": [
+      "KR-AR24MT3"
+     ],
+     "preview": "catalogue/krome/previews/fb19d06186f3434031489ebf.webp",
+     "highlight": "catalogue/krome/highlights/46f272add5e77bd217b1.jpg",
+     "previewSha256": "fb19d06186f3434031489ebf99839209dcc95a0f6fdf05040c682f953e3264ef",
+     "sourceSha256": "352caf69ea62d09527efddc5fcf9302a287283ff6c9dddb6e18dc3d1f33b16db",
+     "nativeLongestPx": 313
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/352caf69ea62d09527efddc5.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.9",
+    "matchEvidence": "exact model printed as a heading on catalogue page 9 (\"KR-AR24MT3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "2 photos in this block — confirm which shows the product; same image used for KR-AR18MT3, KR-AR30MT3",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 9,
+     "cropBox": [
+      103.21,
+      167.81,
+      540.5,
+      311.03
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AR24MT3",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "same image used for KR-AR18MT3, KR-AR30MT3"
+     ],
+     "rowModels": [
+      "KR-AR24MT3"
+     ],
+     "preview": "catalogue/krome/previews/a145f365b98f0bd9c3b257d7.webp",
+     "highlight": "catalogue/krome/highlights/ca7c7825830b627731b1.jpg",
+     "previewSha256": "a145f365b98f0bd9c3b257d72145b6edd62e87bafeee1781826614b6a0fd1ef2",
+     "sourceSha256": "dbc82f05ae848254ab0628a366211ffbcded4a618a8e4b502693bc9a8c31b268",
+     "nativeLongestPx": 584
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/dbc82f05ae848254ab0628a3.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "krome-kr-ar30mt3": {
+  "id": "krome-kr-ar30mt3",
+  "brand": "Krome",
+  "model": "KR-AR30MT3",
+  "discoveredAt": "2026-10-26T17:38:05.754Z",
+  "candidates": [
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.10",
+    "matchEvidence": "exact model printed as a heading on catalogue page 10 (\"KR-AR30MT3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "2 photos in this block — confirm which shows the product; low resolution: about 313 px on the longest side (minimum 400); same image used for KR-AR18MT3, KR-AR24MT3",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 10,
+     "cropBox": [
+      203.99,
+      332.09,
+      438.24,
+      506.5
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AR30MT3",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "LOW_RESOLUTION",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "low resolution: about 313 px on the longest side (minimum 400)",
+      "same image used for KR-AR18MT3, KR-AR24MT3"
+     ],
+     "rowModels": [
+      "KR-AR30MT3"
+     ],
+     "preview": "catalogue/krome/previews/fb19d06186f3434031489ebf.webp",
+     "highlight": "catalogue/krome/highlights/252a2c87846a39d81044.jpg",
+     "previewSha256": "fb19d06186f3434031489ebf99839209dcc95a0f6fdf05040c682f953e3264ef",
+     "sourceSha256": "352caf69ea62d09527efddc5fcf9302a287283ff6c9dddb6e18dc3d1f33b16db",
+     "nativeLongestPx": 313
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/352caf69ea62d09527efddc5.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.10",
+    "matchEvidence": "exact model printed as a heading on catalogue page 10 (\"KR-AR30MT3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "FAMILY_IMAGE",
+    "reviewNote": "2 photos in this block — confirm which shows the product; same image used for KR-AR18MT3, KR-AR24MT3",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 10,
+     "cropBox": [
+      102.5,
+      167.81,
+      539.79,
+      311.03
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AR30MT3",
+     "matchLevel": "IDENTICAL",
+     "identity": "SHARED_IMAGE",
+     "quality": "OK",
+     "issues": [
+      "2 photos in this block — confirm which shows the product",
+      "same image used for KR-AR18MT3, KR-AR24MT3"
+     ],
+     "rowModels": [
+      "KR-AR30MT3"
+     ],
+     "preview": "catalogue/krome/previews/a145f365b98f0bd9c3b257d7.webp",
+     "highlight": "catalogue/krome/highlights/ca1390b3f776940cfc34.jpg",
+     "previewSha256": "a145f365b98f0bd9c3b257d72145b6edd62e87bafeee1781826614b6a0fd1ef2",
+     "sourceSha256": "dbc82f05ae848254ab0628a366211ffbcded4a618a8e4b502693bc9a8c31b268",
+     "nativeLongestPx": 584
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/dbc82f05ae848254ab0628a3.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ },
+ "krome-kr-awp18et3": {
+  "id": "krome-kr-awp18et3",
+  "brand": "Krome",
+  "model": "KR-AWP18ET3",
+  "discoveredAt": "2026-10-26T17:38:05.754Z",
+  "candidates": [
+   {
+    "adapter": "supplier-catalogue",
+    "official": false,
+    "sourceType": "supplier catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.18",
+    "matchEvidence": "exact model printed on catalogue page 18 (1 catalogue model on that page)",
+    "decision": "VERIFIED",
+    "reviewNote": "single model on the catalogue page; front view of the window unit",
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./work/product-image-pipeline/supplier-candidates/1f60f7908152f322.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.18",
+    "matchEvidence": "exact model printed as a heading on catalogue page 18 (\"KR-AWP18ET3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "2 photos in this block — confirm which shows the product",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 18,
+     "cropBox": [
+      113.38,
+      199.22,
+      529.16,
+      460.48
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AWP18ET3",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "OK",
+     "issues": [
+      "2 photos in this block — confirm which shows the product"
+     ],
+     "rowModels": [
+      "KR-AWP18ET3"
+     ],
+     "preview": "catalogue/krome/previews/e6bda1d5d3360c4430dcd676.webp",
+     "highlight": "catalogue/krome/highlights/76920abca7ce3a9fa94a.jpg",
+     "previewSha256": "e6bda1d5d3360c4430dcd676f3d79d08be329e7e3654e760fe708ca666258e35",
+     "sourceSha256": "2f96e0623f9fe628faff13dc0e3e3fa19562ef3f9167b0724a5e3b3f51c35565",
+     "nativeLongestPx": 555
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/2f96e0623f9fe628faff13dc.source.png"
+     }
+    ]
+   },
+   {
+    "adapter": "catalogue-pdf",
+    "official": false,
+    "sourceType": "brand catalogue PDF",
+    "sourcePage": "KROME CATALOG 25-26.pdf p.18",
+    "matchEvidence": "exact model printed as a heading on catalogue page 18 (\"KR-AWP18ET3\", native, IDENTICAL)",
+    "exactModel": false,
+    "decision": "PENDING_REVIEW",
+    "reviewNote": "2 photos in this block — confirm which shows the product",
+    "catalogue": {
+     "pdf": "KROME CATALOG 25-26.pdf",
+     "page": 18,
+     "cropBox": [
+      617.43,
+      0,
+      628.76,
+      888.9
+     ],
+     "cropSource": "page-render",
+     "evidenceText": "KR-AWP18ET3",
+     "matchLevel": "IDENTICAL",
+     "identity": "NEEDS_REVIEW",
+     "quality": "OK",
+     "issues": [
+      "2 photos in this block — confirm which shows the product"
+     ],
+     "rowModels": [
+      "KR-AWP18ET3"
+     ],
+     "preview": "catalogue/krome/previews/d13bc5611f8ee48cbb527666.webp",
+     "highlight": "catalogue/krome/highlights/ffe1ddb2426bc3bad2b7.jpg",
+     "previewSha256": "d13bc5611f8ee48cbb5276661f9110aa655dab95e8e6e98845a2b55cf4daf8a3",
+     "sourceSha256": "f41eb5a21910d69f9100e9c5624538047a1616142e6f780ed9bd88075d1cf287",
+     "nativeLongestPx": 1247
+    },
+    "images": [
+     {
+      "file": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-pilot/pipeline-rehearsal-state/catalogue/krome/previews/f41eb5a21910d69f9100e9c5.source.png"
+     }
+    ]
+   }
+  ],
+  "searched": [],
+  "notes": [],
+  "needsManualSource": false
+ }
+}

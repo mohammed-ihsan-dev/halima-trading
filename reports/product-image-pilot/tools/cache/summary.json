@@ -1,0 +1,31 @@
+{
+ "generatedAt": "2026-10-26T17:09:39.340Z",
+ "products": 29,
+ "foundInMongo": 29,
+ "unchangedSinceAudit": 29,
+ "byPilotBucket": {
+  "ambiguous-model-match": 24,
+  "invalid-image": 1,
+  "ready-for-human-visual-review": 4
+ },
+ "permissionConfirmed": 0,
+ "existingPipelineClasses": {
+  "EXTERNAL_NEEDS_VERIFICATION": 24,
+  "SUPABASE_UNREVIEWED": 5
+ },
+ "candidates": 41,
+ "candidatesByBucket": {
+  "ambiguous-model-match": 34,
+  "no-suitable-candidate": 1,
+  "invalid-image": 1,
+  "ready-for-human-visual-review": 5
+ },
+ "candidatesByValidation": {
+  "valid": 25,
+  "too-small": 3,
+  "needs-crop": 13
+ },
+ "contactSheetPages": 2,
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

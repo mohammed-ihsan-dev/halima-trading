@@ -1,0 +1,21 @@
+{
+ "at": "2026-10-18T20:48:41.647Z",
+ "runs": [
+  {
+   "command": "unit + db tests (TEST_MONGODB_URI=local)",
+   "result": "157/157 passed (6 approval db tests incl. review-import initialization; run 3x stable)"
+  },
+  {
+   "command": "npx tsc --noEmit",
+   "result": "clean"
+  },
+  {
+   "command": "eslint (changed files)",
+   "result": "clean"
+  },
+  {
+   "command": "next build (isolated clone)",
+   "result": "succeeded; admin review API returns 401 without a valid admin session"
+  }
+ ]
+}

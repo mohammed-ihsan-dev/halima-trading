@@ -1,0 +1,55 @@
+== audit (read-only)
+ "EMBEDDED_PRESERVED": 12,
+ "EXTERNAL_NEEDS_VERIFICATION": 315,
+ "BROKEN": 8,
+ "PLACEHOLDER": 0,
+ "NO_IMAGE": 357,
+ "crossProductDuplicates": 107,
+ "storage": {
+  "objects": 199,
+  "bytes": 20862465,
+  "measuredAt": "2026-10-26T17:37:34.149Z"
+ }
+}
+== discover: local files
+{"targets":19,"productsWithCandidates":53,"candidates":90}
+== catalogue: Mazaya
+page 1/24page 2/24page 3/24page 4/24page 5/24page 6/24page 7/24page 8/24page 9/24page 10/24page 11/24page 12/24page 13/24page 14/24page 15/24page 16/24page 17/24page 18/24page 19/24page 20/24page 21/24page 22/24page 23/24page 24/24
+ "targetProducts": 5,
+ "candidates": 6,
+ "exactUnambiguousIdentity": 0,
+ "sharedImage": 2,
+ "needsReview": 4,
+ "databaseWrites": 0,
+ "storageWrites": 0
+== discover: Mazaya
+{"targets":5,"productsWithCandidates":56,"candidates":96}
+== catalogue: Krome
+page 1/136page 2/136page 3/136page 4/136page 5/136page 6/136page 7/136page 8/136page 9/136page 10/136page 11/136page 12/136page 13/136page 14/136page 15/136page 16/136page 17/136page 18/136page 19/136page 20/136page 21/136page 22/136page 23/136page 24/136page 25/136page 26/136page 27/136page 28/136page 29/136page 30/136page 31/136page 32/136page 33/136page 34/136page 35/136page 36/136page 37/136page 38/136page 39/136page 40/136page 41/136page 42/136page 43/136page 44/136page 45/136page 46/136page 47/136page 48/136page 49/136page 50/136page 51/136page 52/136page 53/136page 54/136page 55/136page 56/136page 57/136page 58/136page 59/136page 60/136page 61/136page 62/136page 63/136page 64/136page 65/136page 66/136page 67/136page 68/136page 69/136page 70/136page 71/136page 72/136page 73/136page 74/136page 75/136page 76/136page 77/136page 78/136page 79/136page 80/136page 81/136page 82/136page 83/136page 84/136page 85/136page 86/136page 87/136page 88/136page 89/136page 90/136page 91/136page 92/136page 93/136page 94/136page 95/136page 96/136page 97/136page 98/136page 99/136page 100/136page 101/136page 102/136page 103/136page 104/136page 105/136page 106/136page 107/136page 108/136page 109/136page 110/136page 111/136page 112/136page 113/136page 114/136page 115/136page 116/136page 117/136page 118/136page 119/136page 120/136page 121/136page 122/136page 123/136page 124/136page 125/136page 126/136page 127/136page 128/136page 129/136page 130/136page 131/136page 132/136page 133/136page 134/136page 135/136page 136/136
+ "targetProducts": 3,
+ "candidates": 6,
+ "exactUnambiguousIdentity": 0,
+ "sharedImage": 4,
+ "needsReview": 2,
+ "databaseWrites": 0,
+ "storageWrites": 0
+== discover: Krome
+{"targets":3,"productsWithCandidates":58,"candidates":102}
+== catalogue: Super General
+page 1/116page 2/116page 3/116page 4/116page 5/116page 6/116page 7/116page 8/116page 9/116page 10/116page 11/116page 12/116page 13/116page 14/116page 15/116page 16/116page 17/116page 18/116page 19/116page 20/116page 21/116page 22/116page 23/116page 24/116page 25/116page 26/116page 27/116page 28/116page 29/116page 30/116page 31/116page 32/116page 33/116page 34/116page 35/116page 36/116page 37/116page 38/116page 39/116page 40/116page 41/116page 42/116page 43/116page 44/116page 45/116page 46/116page 47/116page 48/116page 49/116page 50/116page 51/116page 52/116page 53/116page 54/116page 55/116page 56/116page 57/116page 58/116page 59/116page 60/116page 61/116page 62/116page 63/116page 64/116page 65/116page 66/116page 67/116page 68/116page 69/116page 70/116page 71/116page 72/116page 73/116page 74/116page 75/116page 76/116page 77/116page 78/116page 79/116page 80/116page 81/116page 82/116page 83/116page 84/116page 85/116page 86/116page 87/116page 88/116page 89/116page 90/116page 91/116page 92/116page 93/116page 94/116page 95/116page 96/116page 97/116page 98/116page 99/116page 100/116page 101/116page 102/116page 103/116page 104/116page 105/116page 106/116page 107/116page 108/116page 109/116page 110/116page 111/116page 112/116page 113/116page 114/116page 115/116page 116/116
+ "targetProducts": 3,
+ "candidates": 2,
+ "exactUnambiguousIdentity": 2,
+ "sharedImage": 0,
+ "needsReview": 0,
+ "databaseWrites": 0,
+ "storageWrites": 0
+== discover: Super General
+{"targets":2,"productsWithCandidates":60,"candidates":104}
+== verify (no download, no AI)
+verify: 23 products with candidates · AI ranking: off (--no-vision)
+{"HIGH":9,"UNCERTAIN":6,"REJECT":45,"highVisuallyApproved":8}
+== review-import (preview)
+{"preview":"reviews-preview.json","products":19,"records":22,"byState":{"needs_manual_verification":6,"needs_manual_source":13,"pending_review":3},"auditAgeHours":0,"databaseWrites":0}
+== dry-run
+{"planned":1,"uploadAndSet":0,"awaitingVisualReview":0,"heldPermissionPending":0,"excludedPermissionDenied":0,"heldModelVerification":6,"skipped":1,"bytesToAdd":0,"storageBefore":{"objects":199,"bytes":20862465,"measuredAt":"2026-10-26T17:39:32.298Z"},"databaseWrites":0,"storageWrites":0}
