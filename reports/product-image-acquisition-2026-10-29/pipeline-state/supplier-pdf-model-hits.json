@@ -1,0 +1,315 @@
+{
+ "nikai-npac12512a5": {
+  "brand": "Nikai",
+  "model": "NPAC12512A5",
+  "pages": [
+   [
+    94,
+    1,
+    2
+   ]
+  ]
+ },
+ "nikai-npac15512a5": {
+  "brand": "Nikai",
+  "model": "NPAC15512A5",
+  "pages": [
+   [
+    94,
+    1,
+    2
+   ]
+  ]
+ },
+ "nikai-nwac12000cgu": {
+  "brand": "Nikai",
+  "model": "NWAC12000CGU",
+  "pages": []
+ },
+ "nikai-nwac18031n23": {
+  "brand": "Nikai",
+  "model": "NWAC18031N23",
+  "pages": [
+   [
+    85,
+    1,
+    2
+   ]
+  ]
+ },
+ "nikai-nwac24031n23": {
+  "brand": "Nikai",
+  "model": "NWAC24031N23",
+  "pages": [
+   [
+    85,
+    1,
+    2
+   ]
+  ]
+ },
+ "nikai-nwac18038e5": {
+  "brand": "Nikai",
+  "model": "NWAC18038E5",
+  "pages": [
+   [
+    89,
+    12,
+    1
+   ]
+  ]
+ },
+ "nikai-nwac24041e5": {
+  "brand": "Nikai",
+  "model": "NWAC24041E5",
+  "pages": []
+ },
+ "nikai-nsac12131n24a": {
+  "brand": "Nikai",
+  "model": "NSAC12131N24A",
+  "pages": [
+   [
+    84,
+    2,
+    4
+   ]
+  ]
+ },
+ "nikai-nsac18131n24a": {
+  "brand": "Nikai",
+  "model": "NSAC18131N24A",
+  "pages": [
+   [
+    84,
+    2,
+    4
+   ]
+  ]
+ },
+ "nikai-nsac24131n24a": {
+  "brand": "Nikai",
+  "model": "NSAC24131N24A",
+  "pages": [
+   [
+    84,
+    2,
+    4
+   ]
+  ]
+ },
+ "nikai-nsac30131n24a": {
+  "brand": "Nikai",
+  "model": "NSAC30131N24A",
+  "pages": [
+   [
+    84,
+    2,
+    4
+   ]
+  ]
+ },
+ "nikai-nfac48156hci24": {
+  "brand": "Nikai",
+  "model": "NFAC48156HCI24",
+  "pages": []
+ },
+ "nikai-nfac60132cp9": {
+  "brand": "Nikai",
+  "model": "NFAC60132CP9",
+  "pages": [
+   [
+    92,
+    2,
+    1
+   ]
+  ]
+ },
+ "nikai-nsac09432cp23": {
+  "brand": "Nikai",
+  "model": "NSAC09432CP23",
+  "pages": [
+   [
+    90,
+    2,
+    3
+   ]
+  ]
+ },
+ "nikai-nsac12432cp23": {
+  "brand": "Nikai",
+  "model": "NSAC12432CP23",
+  "pages": [
+   [
+    90,
+    2,
+    3
+   ]
+  ]
+ },
+ "nikai-nsac18432cp23": {
+  "brand": "Nikai",
+  "model": "NSAC18432CP23",
+  "pages": [
+   [
+    90,
+    2,
+    3
+   ]
+  ]
+ },
+ "nikai-nsac24432cp23": {
+  "brand": "Nikai",
+  "model": "NSAC24432CP23",
+  "pages": []
+ },
+ "nikai-nsac18410k": {
+  "brand": "Nikai",
+  "model": "NSAC18410K",
+  "pages": []
+ },
+ "nikai-nsac24410k": {
+  "brand": "Nikai",
+  "model": "NSAC24410K",
+  "pages": []
+ },
+ "nikai-nsac30410k": {
+  "brand": "Nikai",
+  "model": "NSAC30410K",
+  "pages": []
+ },
+ "nikai-nsac36410k": {
+  "brand": "Nikai",
+  "model": "NSAC36410K",
+  "pages": []
+ },
+ "krome-kr-ar18mt3": {
+  "brand": "Krome",
+  "model": "KR-AR18MT3",
+  "pages": [
+   [
+    8,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-ar24mt3": {
+  "brand": "Krome",
+  "model": "KR-AR24MT3",
+  "pages": [
+   [
+    9,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-ar30mt3": {
+  "brand": "Krome",
+  "model": "KR-AR30MT3",
+  "pages": [
+   [
+    10,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-sac18im": {
+  "brand": "Krome",
+  "model": "KR-SAC18IM",
+  "pages": []
+ },
+ "krome-kr-sac24im": {
+  "brand": "Krome",
+  "model": "KR-SAC24IM",
+  "pages": []
+ },
+ "krome-kr-sap18ezt3": {
+  "brand": "Krome",
+  "model": "KR-SAP18EZT3",
+  "pages": [
+   [
+    7,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-sap24ezt3": {
+  "brand": "Krome",
+  "model": "KR-SAP24EZT3",
+  "pages": [
+   [
+    11,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-awr18st3": {
+  "brand": "Krome",
+  "model": "KR-AWR18ST3",
+  "pages": [
+   [
+    14,
+    1,
+    1
+   ]
+  ]
+ },
+ "krome-kr-awr24st3": {
+  "brand": "Krome",
+  "model": "KR-AWR24ST3",
+  "pages": [
+   [
+    15,
+    1,
+    1
+   ]
+  ]
+ },
+ "krome-kr-awp18et3": {
+  "brand": "Krome",
+  "model": "KR-AWP18ET3",
+  "pages": [
+   [
+    18,
+    2,
+    1
+   ]
+  ]
+ },
+ "krome-kr-awp18eztt3": {
+  "brand": "Krome",
+  "model": "KR-AWP18EZTT3",
+  "pages": [
+   [
+    16,
+    1,
+    1
+   ]
+  ]
+ },
+ "krome-kr-awp24eztt3": {
+  "brand": "Krome",
+  "model": "KR-AWP24EZTT3",
+  "pages": [
+   [
+    17,
+    1,
+    1
+   ]
+  ]
+ },
+ "krome-kr-fac483pr-in-od": {
+  "brand": "Krome",
+  "model": "KR-FAC483PR-IN+OD",
+  "pages": []
+ },
+ "krome-kr-fac603pr-in-od": {
+  "brand": "Krome",
+  "model": "KR-FAC603PR-IN+OD",
+  "pages": []
+ }
+}

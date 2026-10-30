@@ -1,0 +1,15 @@
+{
+ "generatedAt": "2026-10-29T14:12:55.727Z",
+ "pdf": "AKAI-ACMA-M12T3R4,M18T3R4.pdf",
+ "pdfSha256": "daba99e90033a505d3e8c9c8355bdf260bae86c1480a012d8ea16ec4f987eaec",
+ "brand": "AKAI",
+ "pages": 1,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {}
+}

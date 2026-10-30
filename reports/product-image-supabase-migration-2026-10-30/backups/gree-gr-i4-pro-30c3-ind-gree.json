@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:56.602Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dbd",
+  "id": "gree-gr-i4-pro-30c3-ind-gree",
+  "slug": "high-wall-2-5-ton-inverter-gr-i4-pro-30c3-ind-gree",
+  "sku": "GR-I4-PRO-30C3-IND-GREE",
+  "name": "Gree High Wall Split AC GR-I4 Pro-30C3-IND – High Wall, 2.5 Ton, Inverter",
+  "brand": "Gree",
+  "brandSlug": "gree",
+  "model": "GR-I4 Pro-30C3-IND",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "High Wall, 2.5 Ton, Inverter",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.optimusgeneral.ae/wp-content/uploads/2023/08/SplitAc_3810a5d8-bf4a-4245-a8f5-7badd48761a9_1800x.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:46.531Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

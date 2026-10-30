@@ -1,0 +1,116 @@
+{
+ "nikai-npac12512a5": {
+  "decision": "FAMILY",
+  "note": "series photo showing two units for NPAC12512A5/NPAC15512A5 (1 and 1.25 ton)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-npac15512a5": {
+  "decision": "FAMILY",
+  "note": "series photo showing two units for NPAC12512A5/NPAC15512A5 (1 and 1.25 ton)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nwac18031n23": {
+  "decision": "FAMILY",
+  "note": "series photo shared by NWAC18031N23 and NWAC24031N23 (1.5 and 2 ton); promotional badges",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nwac24031n23": {
+  "decision": "FAMILY",
+  "note": "series photo shared by NWAC18031N23 and NWAC24031N23 (1.5 and 2 ton); promotional badges",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nwac18038e5": {
+  "decision": "REJECT",
+  "note": "two different window units side by side \u2014 cannot tell which is NWAC18038E5",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac12131n24a": {
+  "decision": "FAMILY",
+  "note": "series photo (indoor + outdoor) shared by 4 capacities NSAC12/18/24/30131N24A",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac18131n24a": {
+  "decision": "FAMILY",
+  "note": "series photo (indoor + outdoor) shared by 4 capacities NSAC12/18/24/30131N24A",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac24131n24a": {
+  "decision": "FAMILY",
+  "note": "series photo (indoor + outdoor) shared by 4 capacities NSAC12/18/24/30131N24A",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac30131n24a": {
+  "decision": "FAMILY",
+  "note": "series photo (indoor + outdoor) shared by 4 capacities NSAC12/18/24/30131N24A",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nfac60132cp9": {
+  "decision": "EXACT",
+  "note": "single model on the catalogue page; floor-standing indoor + outdoor unit",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac09432cp23": {
+  "decision": "FAMILY",
+  "note": "series photo shared by NSAC09/12/18432CP23 (0.75/1/1.5 ton)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac12432cp23": {
+  "decision": "FAMILY",
+  "note": "series photo shared by NSAC09/12/18432CP23 (0.75/1/1.5 ton)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "nikai-nsac18432cp23": {
+  "decision": "FAMILY",
+  "note": "series photo shared by NSAC09/12/18432CP23 (0.75/1/1.5 ton)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-sap18ezt3": {
+  "decision": "REJECT",
+  "note": "room/lifestyle scene with a very small product \u2014 unsuitable as a product photo",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-awr18st3": {
+  "decision": "FAMILY",
+  "note": "series photo shared by KR-AWR18ST3 and KR-AWR24ST3",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-awr24st3": {
+  "decision": "FAMILY",
+  "note": "series photo shared by KR-AWR18ST3 and KR-AWR24ST3",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-awp18et3": {
+  "decision": "EXACT",
+  "note": "single model on the catalogue page; front view of the window unit",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-awp18eztt3": {
+  "decision": "EXACT",
+  "note": "single model on the catalogue page; 3/4 view of the window unit",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ },
+ "krome-kr-awp24eztt3": {
+  "decision": "EXACT",
+  "note": "single model on the catalogue page; 3/4 view (same design as KR-AWP18EZTT3)",
+  "reviewedAt": "2026-10-15",
+  "reviewer": "Claude (contact sheet review)"
+ }
+}

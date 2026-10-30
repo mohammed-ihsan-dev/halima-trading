@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:45.732Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d581",
+  "id": "panasonic-nr-bc24vssae",
+  "slug": "201l-double-door-refrigerator-nr-bc24vssae",
+  "sku": "NRBC24VSSAE",
+  "name": "201L Double Door Refrigerator",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NR-BC24VSSAE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Double-door refrigerator with 201 litres net capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S500941118_1?1791822078"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:58.038Z"
+ }
+}

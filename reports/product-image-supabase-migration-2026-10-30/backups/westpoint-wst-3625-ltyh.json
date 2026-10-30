@@ -1,0 +1,61 @@
+{
+ "takenAt": "2026-10-30T11:53:23.152Z",
+ "document": {
+  "_id": "6adcf50bea7a040ed2fac0f1",
+  "id": "westpoint-wst-3625-ltyh",
+  "slug": "westpoint-wst-3625-ltyh",
+  "sku": "WST-3625.LTYH",
+  "name": "Westpoint 3 Ton Split Air Conditioner Cool Only 32,000 BTU R410a WST-3625.LTYH",
+  "brand": "Westpoint",
+  "brandSlug": "westpoint",
+  "model": "WST-3625.LTYH",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "Westpoint cool-only split air conditioner, 32,000 BTU (T1), with T3 tropical rotary compressor, R410a refrigerant and I FEEL function.",
+  "features": [
+   "T3 tropical rotary compressor",
+   "Gold fins",
+   "Auto restart",
+   "I FEEL function",
+   "LED display",
+   "24-hour timer"
+  ],
+  "specifications": {
+   "Model": "WST-3625.LTYH",
+   "Type": "Split air conditioner, cool only",
+   "Capacity (Tonnage)": "3 Ton",
+   "Cooling Capacity T1": "32000 BTU/h",
+   "Input Power Cooling": "3052 W",
+   "Running Current": "13.7 A",
+   "Air Flow (High)": "1800 m³/h",
+   "Refrigerant": "R410a",
+   "Refrigerant Charge": "2100 g",
+   "EER": "3.52 W/W",
+   "Compressor": "Rotary",
+   "Climate": "T3",
+   "Power Supply": "220-240 V, 1 Ph, 50 Hz",
+   "Indoor Unit Dimensions (W x H x D)": "1460 x 349 x 285 mm",
+   "Indoor Unit Net Weight": "24 kg",
+   "Indoor Sound Pressure (High)": "51 dB(A)",
+   "Outdoor Unit Dimensions (W x H x D)": "976 x 804 x 421 mm",
+   "Outdoor Unit Net Weight": "58 kg",
+   "Outdoor Noise Level": "59 dB(A)",
+   "Max Power Input": "3850 W",
+   "Timer": "24 h",
+   "Standards": "CB, IEC, RoHS"
+  },
+  "images": [
+   "https://gecouae.com/wp-content/uploads/2022/12/WESTPOINT-SPLIT-AC-3ton-36000-BTU-R410-ROTARY-4.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 10,
+  "featured": false,
+  "status": "active",
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "createdAt": "2026-10-24T18:12:26.425Z",
+  "updatedAt": "2026-10-27T14:54:30.760Z"
+ }
+}

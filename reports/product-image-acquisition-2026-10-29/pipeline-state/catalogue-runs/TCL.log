@@ -1,0 +1,26 @@
+page 1/36page 2/36page 3/36page 4/36page 5/36page 6/36page 7/36page 8/36page 9/36page 10/36page 11/36page 12/36page 13/36page 14/36page 15/36page 16/36page 17/36page 18/36page 19/36page 20/36page 21/36page 22/36page 23/36page 24/36page 25/36page 26/36page 27/36page 28/36page 29/36page 30/36page 31/36page 32/36page 33/36page 34/36page 35/36page 36/36
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/tcl/index.json", "pages": 36, "cached": false, "ocr": false}
+{
+ "pdf": "TCL-UAE_AC Catalogue-2025.pdf",
+ "pagesProcessed": 36,
+ "pagesWithNativeText": 11,
+ "pagesNeedingOcr": 25,
+ "catalogueModelsIdentified": 42,
+ "brandProducts": 20,
+ "targetProducts": 20,
+ "targetsWithExactModelMatch": 2,
+ "candidates": 2,
+ "exactUnambiguousIdentity": 0,
+ "lowResolution": 2,
+ "eligible": 0,
+ "sharedImage": 2,
+ "needsReview": 0,
+ "embeddedAssets": 2,
+ "pageRenders": 0,
+ "flags": 0,
+ "targetsNotInCatalogue": 18,
+ "catalogueModelsNotInDatabase": 40,
+ "authorization": "permission_pending",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

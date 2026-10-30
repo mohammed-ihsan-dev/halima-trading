@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:25.867Z",
+ "document": {
+  "_id": "6ad064ddd12826b12170f419",
+  "id": "geepas-digital-air-cooler-45l-gac9433",
+  "slug": "geepas-digital-air-cooler-45l-gac9433",
+  "sku": "HT-GP-GAC9433",
+  "name": "Digital Air Cooler 45L",
+  "brand": "Geepas",
+  "brandSlug": "geepas",
+  "model": "GAC9433",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "Air Coolers",
+  "description": "Digital air cooler with 45-litre water tank, ice box technology, three wind speeds, 7.5-hour timer, manual up/down adjustment, automatic left/right swing, and remote control. Power supply: AC 220–240 V, 50/60 Hz; power: 150 W. The image also indicates a 2-year warranty.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://catalogue.geepas.com/assets/images/products/orginal/GAC94331.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:46.080Z",
+  "createdAt": "2026-10-15T05:30:05.258Z"
+ }
+}

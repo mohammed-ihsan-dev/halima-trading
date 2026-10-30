@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:31.139Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d99",
+  "id": "indesit-ui6-f1tsuk1",
+  "slug": "1670-x-595-x-646-ind-upright-freezer-245l-f104390-silvr-ui6-f1tsuk1",
+  "sku": "UI6-F1TSUK1",
+  "name": "Indesit UI6-F1TSUK1 – IND UPRIGHT FREEZER 245L F104390 SILVR - 6 DRAWER N/F",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "UI6-F1TSUK1",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "IND UPRIGHT FREEZER 245L F104390 SILVR - 6 DRAWER N/F; Size: 1670 x 595 x 646; Origin: TURKEY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://digitalassets-cdn.thron.com/delivery/public/thumbnail/digitalassets/pi-1d896ac6-7b90-44ce-bd93-20b6a5bc1bbc/oolnjd/std/600x600/ui6-f1t-w-uk-1-freezers.webp?fill=zoom&fillcolor=rgba:255,255,255"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.586Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

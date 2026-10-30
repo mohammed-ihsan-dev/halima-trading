@@ -1,0 +1,40 @@
+brand,products,active,suitableImage,needsImage,noImageAtAll,brokenOrUnsuitable,thumbnailImports,supabaseHosted,externalHosted,verifiedExactCandidates,likelyCandidates,noCandidate,officialSource,officialStatus
+AFRA,2,2,1,1,0,1,0,0,2,0,0,1,not researched,
+AKAI,2,2,1,1,0,1,0,1,1,0,0,0,not researched,
+Aftron,22,22,18,4,0,4,0,0,22,0,0,4,aftron.com,not researched this run
+BOSCH,1,1,1,0,0,0,0,1,0,0,0,0,not researched,
+Black+Decker,6,6,5,1,0,1,0,6,0,0,0,1,not researched,
+Blue Star,28,28,19,9,0,9,0,0,28,0,0,9,bluestarindia.com (India range),no matching models
+Bosch,7,7,7,0,0,0,0,7,0,0,0,0,not researched,
+Clivet,21,21,0,21,21,0,0,0,0,0,0,21,clivet.com (EU) / Clivet UAE PDF (info@clivet.ae),no exact models
+Daewoo,15,15,2,13,0,13,0,2,13,0,1,12,daewooelectronics.com (UK range),no source
+Fagor,1,1,1,0,0,0,0,0,1,0,0,0,not researched,
+Geepas,17,17,9,8,5,3,1,6,6,0,0,8,geepas.com,excluded
+General Line,10,10,0,10,0,10,0,0,10,0,0,10,genralline.com,blocked / logo only
+Gree,32,32,21,11,0,11,0,20,12,0,8,1,gree.com / NIA Gree catalogue PDF,catalogue only; -IND suffix never printed
+Haier,46,41,24,22,13,3,7,31,2,15,0,6,haier.com/ae,usable — exact model pages
+Indesit,45,45,28,17,0,17,0,3,42,0,0,17,indesit.com (search HTTP 500; indesit.ae sitemap HTML),no addressable UAE models
+Kenwood,7,7,5,2,0,2,1,5,2,0,0,1,kenwoodworld.com,not researched this run
+Krome,14,14,10,4,0,4,0,0,14,0,1,0,none found,catalogue only
+LG,97,97,82,15,0,15,0,58,39,9,4,2,lg.com/ae,usable — model pages (regional suffix differs)
+Mazaya,55,55,37,18,0,18,0,53,2,0,9,5,mazayauae.com (pipeline adapter exists),adapter exists; catalogue crops are series photos
+Midea,137,130,46,91,56,8,29,81,0,0,0,91,"midea.com/ae (sitemap returns HTML, no product locs)",no model pages found
+Mitsubishi Electric,18,18,9,9,0,9,0,0,18,0,0,9,mitsubishielectric.com/ae (sitemap 404),no machine-readable source
+Nest,1,1,1,0,0,0,0,1,0,0,0,0,not researched,
+Nikai,21,21,19,2,0,2,0,0,21,0,0,2,nikai.com,no product search; catalogue
+O GENERAL,1,1,1,0,0,0,0,0,0,0,0,0,not researched,
+O General,39,39,31,8,0,2,8,28,0,0,0,8,ogeneralac.com,site reachable; models not in sitemap
+Ogera,1,1,1,0,0,0,0,0,1,0,0,0,not researched,
+Panasonic,38,38,25,13,0,13,0,0,38,0,0,13,panasonic.com/mea,blocked
+Phoenix,2,2,0,2,0,2,0,0,2,0,0,2,phoenix-uae.com,blocked
+Pro General,4,4,4,0,0,0,0,4,0,0,0,0,not researched,
+Samsung,12,12,6,6,0,6,0,8,4,4,0,2,samsung.com/ae,usable — model pages
+Simfer,8,8,4,4,0,3,1,6,2,0,0,4,simfer.com.tr,site reachable; models not in sitemap
+Skill Tech,1,1,1,0,0,0,0,0,1,0,0,0,not researched,
+Super General,48,48,42,6,0,6,0,20,28,0,0,3,supergeneral.com (pipeline adapter exists),adapter + catalogue
+Symphony,17,17,17,0,0,0,0,0,17,0,0,0,symphonylimited.com,excluded
+TCL,20,20,0,20,20,0,0,0,0,0,0,18,tcl.com/ae (sitemap 404),no machine-readable source
+Toshiba,10,10,4,6,0,5,1,3,7,0,1,5,toshiba-lifestyle.com/ae,unavailable
+Westpoint,75,75,36,39,27,5,8,46,2,0,0,39,none (westpointuae.com is an unrelated software company),no official source
+Whirlpool,3,3,0,3,2,0,1,1,0,0,0,3,whirlpool.ae,blocked
+Yorker,1,1,1,0,0,0,0,0,1,0,0,0,not researched,

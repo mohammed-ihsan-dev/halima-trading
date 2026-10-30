@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:27.945Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3deb",
+  "id": "lg-gn-c782sggl",
+  "slug": "net-capacity-506-gn-c782sggl",
+  "sku": "GN-C782SGGL",
+  "name": "LG Top Mount Refrigerator GN-C782SGGL – NET CAPACITY: 506",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GN-C782SGGL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 506",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51lrQ4SmLAL._AC_UF1000,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.707Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

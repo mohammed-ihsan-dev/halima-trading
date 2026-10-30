@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:16.905Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e5f",
+  "id": "symphony-125dd-movicool",
+  "slug": "symphony-air-cooler-125dd-movicool-125dd-movicool",
+  "sku": "125DD-MOVICOOL",
+  "name": "Symphony Outdoor Commercial Air Cooler 125DD-MOVICOOL",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "125DD-MOVICOOL",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Symphony Double Decker Commercial Air Cooler; Water Tank Capacity: 125 L; Power: 435 W; Max Air Throw: 8,500 + 8,500 m³/hr; 3 Fan Speeds; 3-Sided Honey Comb; 3-Sided Dust Filter; Engineered Plastic Body with UV Coating; Made in India; Dimensions: 870 W × 440 D × 2100 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2022/01/Movicool-DD125-RH-G-1.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.140Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:55.925Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d5a",
+  "id": "blue-star-ccb52030314",
+  "slug": "wm18cvrrb3-01-window-ac-1-5-tr-recip-r22-ccb52030314",
+  "sku": "CCB52030314",
+  "name": "Blue Star Window AC 1.5 TR Recip R22 – WM18CVRRB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "WM18CVRRB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Window AC 1.5 TR Recip R22",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://electronicparadise.in/cdn/shop/files/1_f49bacbc-dfd3-4f93-9e75-9b7e5b910043.jpg?v=1778224722&width=1500"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.559Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

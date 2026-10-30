@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:05.341Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3de2",
+  "id": "lg-ma3884vc",
+  "slug": "solardom-m-w-oven-38-liter-900-watts-steel-ma3884vc",
+  "sku": "MA3884VC",
+  "name": "LG Microwave Oven MA3884VC – Solardom M/W oven - 38 Liter - 900 Watts-STEEL",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "MA3884VC",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "Solardom M/W oven - 38 Liter - 900 Watts-STEEL",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrdzBweW2bX9zaFsikIKmogTlwU3mkqQPwW8QTKdgEtT5ruR-OPDo2fM&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:52.120Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

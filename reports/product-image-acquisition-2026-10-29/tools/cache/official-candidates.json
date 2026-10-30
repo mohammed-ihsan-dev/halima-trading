@@ -1,0 +1,1469 @@
+{
+ "generatedAt": "2026-10-29T14:20:42.384Z",
+ "results": [
+  {
+   "productId": "6ac9c5aad467feb0e4ae48cf",
+   "id": "p-1791608233015",
+   "brand": "Haier",
+   "model": "HSU-18/24LPA03",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd0",
+   "id": "haier-hw70-bp12929a",
+   "brand": "Haier",
+   "model": "HW70-BP12929A",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw70-bp12929a.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW70-BP12929A-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020241210488503824518_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw70-bp12929a.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW70-BP12929A-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020241210488503824518_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd8",
+   "id": "haier-hwd110-bd14397su1",
+   "brand": "Haier",
+   "model": "HWD110-BD14397SU1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hwd110-bd14397su1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HWD110-BD14397SU1-X11 SERIES WASHER AND DRYER -Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020260309649902765769_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hwd110-bd14397su1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HWD110-BD14397SU1-X11 SERIES WASHER AND DRYER -Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020260309649902765769_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd6",
+   "id": "haier-hw90-b14979s8u1",
+   "brand": "Haier",
+   "model": "HW90-B14979S8U1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw90-b14979s8u1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW90-B14979S8U1-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814608895180179_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw90-b14979s8u1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW90-B14979S8U1-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814608895180179_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd9",
+   "id": "haier-hd100-a5979s8u1",
+   "brand": "Haier",
+   "model": "HD100-A5979S8U1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd2",
+   "id": "haier-hw80-bp12929s6",
+   "brand": "Haier",
+   "model": "HW80-BP12929S6",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw80-bp12929s6.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW80-BP12929S6-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814612050963883_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw80-bp12929s6.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW80-BP12929S6-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814612050963883_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835ddc",
+   "id": "haier-hcf-200s",
+   "brand": "Haier",
+   "model": "HCF-200S",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dcb",
+   "id": "haier-hcr9060gt1",
+   "brand": "Haier",
+   "model": "HCR9060GT1",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/cooktops/hcr9060gt1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HCR9060GT1-Freestanding Cooker-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/cooktops/W020230518707682448051_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/cooktops/hcr9060gt1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HCR9060GT1-Freestanding Cooker-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/cooktops/W020230518707682448051_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd1",
+   "id": "haier-hw80-bp12929",
+   "brand": "Haier",
+   "model": "HW80-BP12929",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 2,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw80-bp12929.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW80-BP12929-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814610980765403_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    },
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw80-bp12929s6.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW80-BP12929S6-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814612050963883_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw80-bp12929.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW80-BP12929-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020230814610980765403_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dcd",
+   "id": "haier-hcr6060et1",
+   "brand": "Haier",
+   "model": "HCR6060ET1",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/cooktops/hcr6060et1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HCR6060ET1-Freestanding Cooker-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/cooktops/W020250407517600574261_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/cooktops/hcr6060et1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HCR6060ET1-Freestanding Cooker-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/cooktops/W020250407517600574261_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dda",
+   "id": "haier-hwm120-b1678s8",
+   "brand": "Haier",
+   "model": "HWM120-B1678S8",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hwm120-b1678s8.shtml",
+     "httpStatus": 200,
+     "title": "Haier HWM120-B1678S8-Top Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020241210583769937938_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hwm120-b1678s8.shtml",
+    "httpStatus": 200,
+    "title": "Haier HWM120-B1678S8-Top Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020241210583769937938_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835ddb",
+   "id": "haier-hwm215-1128s-n",
+   "brand": "Haier",
+   "model": "HWM215-1128S-N",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hwm215-1128s-n.shtml",
+     "httpStatus": 200,
+     "title": "Haier HWM215-1128S-N-Twin Tub-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020230301707909590703_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hwm215-1128s-n.shtml",
+    "httpStatus": 200,
+    "title": "Haier HWM215-1128S-N-Twin Tub-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020230301707909590703_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835ddf",
+   "id": "haier-hcf-590s",
+   "brand": "Haier",
+   "model": "HCF-590S",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dcf",
+   "id": "haier-hw75-bp12337s",
+   "brand": "Haier",
+   "model": "HW75-BP12337S",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw75-bp12337s.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW75-BP12337S-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020260901690641798659_1200_p1911.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw75-bp12337s.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW75-BP12337S-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020260901690641798659_1200_p1911.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dc2",
+   "id": "haier-hrf-700ts",
+   "brand": "Haier",
+   "model": "HRF-700TS",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/refrigerators/hrf-700ts.shtml",
+     "httpStatus": 200,
+     "title": "Haier HRF-700TS-T-Door-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/refrigerators/W020250318586928402981_1200_p1911.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/refrigerators/hrf-700ts.shtml",
+    "httpStatus": 200,
+    "title": "Haier HRF-700TS-T-Door-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/refrigerators/W020250318586928402981_1200_p1911.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd7",
+   "id": "haier-hwd90-bp14929s6",
+   "brand": "Haier",
+   "model": "HWD90-BP14929S6",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hwd90-bp14929s6.shtml",
+     "httpStatus": 200,
+     "title": "Haier HWD90-BP14929S6-Front Loading-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020231229561742486786_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hwd90-bp14929s6.shtml",
+    "httpStatus": 200,
+    "title": "Haier HWD90-BP14929S6-Front Loading-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020231229561742486786_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dc1",
+   "id": "haier-hrf-525ss",
+   "brand": "Haier",
+   "model": "HRF-525SS",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/refrigerators/hrf-525ss.shtml",
+     "httpStatus": 200,
+     "title": "Haier HRF-525SS-T-Door-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/refrigerators/W020240402744574843066_1200_p1911.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/refrigerators/hrf-525ss.shtml",
+    "httpStatus": 200,
+    "title": "Haier HRF-525SS-T-Door-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/refrigerators/W020240402744574843066_1200_p1911.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dc5",
+   "id": "haier-hcr6060gc2",
+   "brand": "Haier",
+   "model": "HCR6060GC2",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835ddd",
+   "id": "haier-hcf-280s",
+   "brand": "Haier",
+   "model": "HCF-280S",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd3",
+   "id": "haier-hw90-bp14357su1",
+   "brand": "Haier",
+   "model": "HW90-BP14357SU1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd4",
+   "id": "haier-hw110-bd14387su1",
+   "brand": "Haier",
+   "model": "HW110-BD14387SU1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw110-bd14387su1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW110-BD14387SU1-X9 SERIES 11.5KG WAHSER-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020260311513582605912_1200_p1911.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw110-bd14387su1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW110-BD14387SU1-X9 SERIES 11.5KG WAHSER-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020260311513582605912_1200_p1911.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adb4feb12e90be677835dd5",
+   "id": "haier-hw110-bd14697gnu1",
+   "brand": "Haier",
+   "model": "HW110-BD14697GNU1",
+   "reason": "no suitable image (no-image-reference)",
+   "site": "haier.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.haier.com/ae/washing-machines/hw110-bd14697gnu1.shtml",
+     "httpStatus": 200,
+     "title": "Haier HW110-BD14697GNU1-Multiwash-Haier The United Arab Emirates",
+     "imageUrl": "https://image.haier.com/ae/washing-machines/W020260206562362258888_1200_p1911.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 1200,
+     "height": 628,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.haier.com/ae/washing-machines/hw110-bd14697gnu1.shtml",
+    "httpStatus": 200,
+    "title": "Haier HW110-BD14697GNU1-Multiwash-Haier The United Arab Emirates",
+    "imageUrl": "https://image.haier.com/ae/washing-machines/W020260206562362258888_1200_p1911.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 1200,
+    "height": 628,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3da3",
+   "id": "lg-a27tnc-uuae2",
+   "brand": "LG",
+   "model": "A27TNC.UUAE2",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-a27tnc",
+     "httpStatus": 200,
+     "title": "24000 BTU ARTCOOL Inverter AC  - A27TNC | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07593365/gallery/1100-1.jpg",
+     "evidence": "base model A27TNC printed on the page (product record carries a regional suffix)",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "likely match (regional suffix)"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-a27tnc",
+    "httpStatus": 200,
+    "title": "24000 BTU ARTCOOL Inverter AC  - A27TNC | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07593365/gallery/1100-1.jpg",
+    "evidence": "base model A27TNC printed on the page (product record carries a regional suffix)",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "likely match (regional suffix)"
+   },
+   "classification": "likely match (regional suffix)"
+  },
+  {
+   "productId": "6aca2e64df911910339b3da6",
+   "id": "lg-dfb512fw",
+   "brand": "LG",
+   "model": "DFB512FW",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/dishwashers/lg-dfb512fw-uae",
+     "httpStatus": 200,
+     "title": "LG QuadWash™ White Dishwasher with ThinQ™ | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/dishwashers/md06017656/gallery/DFB512FW-gallery-1100.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/dishwashers/lg-dfb512fw-uae",
+    "httpStatus": 200,
+    "title": "LG QuadWash™ White Dishwasher with ThinQ™ | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/dishwashers/md06017656/gallery/DFB512FW-gallery-1100.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3dc9",
+   "id": "lg-i23tcp-uuae2",
+   "brand": "LG",
+   "model": "I23TCP.UUAE2",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 2,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-i23tcp-uae",
+     "httpStatus": 200,
+     "title": "LG Air Conditioner 1.5 Ton - Split DUALCOOL AC | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/split-air-conditioners/md06078257/gallery/medium01.jpg",
+     "evidence": "base model I23TCP printed on the page (product record carries a regional suffix)",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "likely match (regional suffix)"
+    },
+    {
+     "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-i23tcp-2024",
+     "httpStatus": 200,
+     "title": "1.5 Ton LG 2024 Air Conditioner - I23TCP | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07597686/gallery/medium01v.jpg",
+     "evidence": "base model I23TCP printed on the page (product record carries a regional suffix)",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "likely match (regional suffix)"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-i23tcp-uae",
+    "httpStatus": 200,
+    "title": "LG Air Conditioner 1.5 Ton - Split DUALCOOL AC | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/split-air-conditioners/md06078257/gallery/medium01.jpg",
+    "evidence": "base model I23TCP printed on the page (product record carries a regional suffix)",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "likely match (regional suffix)"
+   },
+   "classification": "likely match (regional suffix)"
+  },
+  {
+   "productId": "6aca2e64df911910339b3dcf",
+   "id": "lg-i38tcf-uuae",
+   "brand": "LG",
+   "model": "I38TCF.UUAE",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-i38tcf",
+     "httpStatus": 200,
+     "title": "LG DUALCOOL Inverter 3 Ton Energy Saving Wall AC | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07569766/gallery/medium01.jpg",
+     "evidence": "base model I38TCF printed on the page (product record carries a regional suffix)",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "likely match (regional suffix)"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-i38tcf",
+    "httpStatus": 200,
+    "title": "LG DUALCOOL Inverter 3 Ton Energy Saving Wall AC | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07569766/gallery/medium01.jpg",
+    "evidence": "base model I38TCF printed on the page (product record carries a regional suffix)",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "likely match (regional suffix)"
+   },
+   "classification": "likely match (regional suffix)"
+  },
+  {
+   "productId": "6aca2e64df911910339b3dd8",
+   "id": "lg-t36zca-uuae",
+   "brand": "LG",
+   "model": "T36ZCA.UUAE",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-t36zca",
+     "httpStatus": 200,
+     "title": "LG 3 Ton Split Air Conditioner, Rotary | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07593524/New/D-01.jpg",
+     "evidence": "base model T36ZCA printed on the page (product record carries a regional suffix)",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "likely match (regional suffix)"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/tropical-split-air-conditioners/lg-t36zca",
+    "httpStatus": 200,
+    "title": "LG 3 Ton Split Air Conditioner, Rotary | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07593524/New/D-01.jpg",
+    "evidence": "base model T36ZCA printed on the page (product record carries a regional suffix)",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "likely match (regional suffix)"
+   },
+   "classification": "likely match (regional suffix)"
+  },
+  {
+   "productId": "6aca2e64df911910339b3dde",
+   "id": "lg-ms5696hit",
+   "brand": "LG",
+   "model": "MS5696HIT",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/cooking-appliances/lg-ms5696hit",
+     "httpStatus": 200,
+     "title": "LG Large Microwave, Smart Inverter, 56L | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/cooking-appliances/md06076736/gallery/MS5696HIT-d-1.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/cooking-appliances/lg-ms5696hit",
+    "httpStatus": 200,
+    "title": "LG Large Microwave, Smart Inverter, 56L | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/cooking-appliances/md06076736/gallery/MS5696HIT-d-1.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3de1",
+   "id": "lg-ma3882qc",
+   "brand": "LG",
+   "model": "MA3882QC",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6aca2e64df911910339b3de2",
+   "id": "lg-ma3884vc",
+   "brand": "LG",
+   "model": "MA3884VC",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/cooking-appliances/lg-MA3884VC-uae",
+     "httpStatus": 200,
+     "title": "LG MA3884VC : 38L SolarDOM Microwave Oven | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/cooking-appliances/md05151763/gallery/D-1.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/cooking-appliances/lg-MA3884VC-uae",
+    "httpStatus": 200,
+    "title": "LG MA3884VC : 38L SolarDOM Microwave Oven | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/cooking-appliances/md05151763/gallery/D-1.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3de7",
+   "id": "lg-gn-b432pqgb",
+   "brand": "LG",
+   "model": "GN-B432PQGB",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gn-b432pqgb-uae",
+     "httpStatus": 200,
+     "title": "315L Top Mount Fridge with Smart Inverter Tech │ LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07553242/gallery/medium01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gn-b432pqgb-uae",
+    "httpStatus": 200,
+    "title": "315L Top Mount Fridge with Smart Inverter Tech │ LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07553242/gallery/medium01.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3dec",
+   "id": "lg-gn-f782hfhl",
+   "brand": "LG",
+   "model": "GN-F782HFHL",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6aca2e64df911910339b3def",
+   "id": "lg-gr-b267jqyl",
+   "brand": "LG",
+   "model": "GR-B267JQYL",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-b267jqyl-uae",
+     "httpStatus": 200,
+     "title": "LG Double Door Fridge 643L, Dark Graphite | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07551287/gallery/medium01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-b267jqyl-uae",
+    "httpStatus": 200,
+    "title": "LG Double Door Fridge 643L, Dark Graphite | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07551287/gallery/medium01.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3df7",
+   "id": "lg-gr-c345slbb",
+   "brand": "LG",
+   "model": "GR-C345SLBB",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-c345slbb-uae",
+     "httpStatus": 200,
+     "title": "LG Top Mount Fridge, 234L, Platinum Silver | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07544029/gallery/GR-C342SLBB-D-1V.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-c345slbb-uae",
+    "httpStatus": 200,
+    "title": "LG Top Mount Fridge, 234L, Platinum Silver | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07544029/gallery/GR-C342SLBB-D-1V.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3df9",
+   "id": "lg-gr-c629hqcl",
+   "brand": "LG",
+   "model": "GR-C629HQCL",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-c629hqcl",
+     "httpStatus": 200,
+     "title": "LG Top Fridge, Smart Inverter, 438L | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07577392/gallery/D-01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/refrigerators/lg-gr-c629hqcl",
+    "httpStatus": 200,
+    "title": "LG Top Fridge, Smart Inverter, 438L | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/refrigerators/md07577392/gallery/D-01.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e0d",
+   "id": "lg-f4j3vyg6j",
+   "brand": "LG",
+   "model": "F4J3VYG6J",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/washing-machines/lg-f4j3vyg6j-uae",
+     "httpStatus": 200,
+     "title": "LG 9kg Front Load Washing Machine, Black | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/washing-machines/md07579665/gallery/D-01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/washing-machines/lg-f4j3vyg6j-uae",
+    "httpStatus": 200,
+    "title": "LG 9kg Front Load Washing Machine, Black | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/washing-machines/md07579665/gallery/D-01.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e16",
+   "id": "lg-t1785nehte",
+   "brand": "LG",
+   "model": "T1785NEHTE",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "lg.com/ae",
+   "sitemapMatches": 2,
+   "candidates": [
+    {
+     "pageUrl": "https://www.lg.com/ae/washing-machines/lg-t1785nehte",
+     "httpStatus": 200,
+     "title": "LG 17kg Top Load Washing Machine, Smart Inverter | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/washing-machines/md07600156/gallery/D01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    },
+    {
+     "pageUrl": "https://www.lg.com/ae/washing-machines/lg-t1785nehte-uae",
+     "httpStatus": 200,
+     "title": "LG 12kg Top Load Washing Machine, Smart Inverter | LG UAE",
+     "imageUrl": "https://www.lg.com/ae/images/washing-machines/md07572131/gallery/D01.jpg",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/jpeg",
+     "width": 1100,
+     "height": 730,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.lg.com/ae/washing-machines/lg-t1785nehte",
+    "httpStatus": 200,
+    "title": "LG 17kg Top Load Washing Machine, Smart Inverter | LG UAE",
+    "imageUrl": "https://www.lg.com/ae/images/washing-machines/md07600156/gallery/D01.jpg",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/jpeg",
+    "width": 1100,
+    "height": 730,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e55",
+   "id": "samsung-dv90cgc2a0abgu",
+   "brand": "Samsung",
+   "model": "DV90CGC2A0ABGU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/dryers/dv5000c-dryer-a-energy-efficiency-hygiene-care-smartthings-9kg-black-dv90cgc2a0abgu/",
+     "httpStatus": 200,
+     "title": "Dryer with A+++ Energy Efficiency and Hygiene Care - 9KG, Black | Samsung Gulf",
+     "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 500,
+     "height": 500,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/dryers/dv5000c-dryer-a-energy-efficiency-hygiene-care-smartthings-9kg-black-dv90cgc2a0abgu/",
+    "httpStatus": 200,
+    "title": "Dryer with A+++ Energy Efficiency and Hygiene Care - 9KG, Black | Samsung Gulf",
+    "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 500,
+    "height": 500,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e56",
+   "id": "samsung-ww11bb944dgbgu",
+   "brand": "Samsung",
+   "model": "WW11BB944DGBGU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww9400b-front-loading-ai-ecobubble-ai-wash-bespoke-design-with-space-max-11-5kg-black-ww11bb944dgbgu/",
+     "httpStatus": 200,
+     "title": "Front load Washing Machine with AI Ecobubble™ | Samsung Gulf",
+     "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 500,
+     "height": 500,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww9400b-front-loading-ai-ecobubble-ai-wash-bespoke-design-with-space-max-11-5kg-black-ww11bb944dgbgu/",
+    "httpStatus": 200,
+    "title": "Front load Washing Machine with AI Ecobubble™ | Samsung Gulf",
+    "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 500,
+    "height": 500,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e57",
+   "id": "samsung-ar12brhqkwk-gu",
+   "brand": "Samsung",
+   "model": "AR12BRHQKWK / GU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e58",
+   "id": "samsung-ar24trhqkwk-gu",
+   "brand": "Samsung",
+   "model": "AR24TRHQKWK / GU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e59",
+   "id": "samsung-ww70t3020ww-gu",
+   "brand": "Samsung",
+   "model": "WW70T3020WW / GU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww3000tm-front-loading-digital-inverter-technology-quick-wash-drum-clean-7kg-white-ww70t3020ww-gu/",
+     "httpStatus": 200,
+     "title": "Front Load Washer with Digital Inverter Technology - 7KG, White | Samsung Gulf",
+     "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 500,
+     "height": 500,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww3000tm-front-loading-digital-inverter-technology-quick-wash-drum-clean-7kg-white-ww70t3020ww-gu/",
+    "httpStatus": 200,
+    "title": "Front Load Washer with Digital Inverter Technology - 7KG, White | Samsung Gulf",
+    "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 500,
+    "height": 500,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6aca2e64df911910339b3e5d",
+   "id": "samsung-ww90ta046ae-gu",
+   "brand": "Samsung",
+   "model": "WW90TA046AE / GU",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "samsung.com/ae",
+   "sitemapMatches": 1,
+   "candidates": [
+    {
+     "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww5000t-front-loading-eco-bubble-hygiene-steam-dit-9kg-white-ww90ta046ae-gu/",
+     "httpStatus": 200,
+     "title": "Front Load Washer with Hygiene Steam &amp; Eco Bubble™ - 9KG, White | Samsung Gulf",
+     "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+     "evidence": "exact model printed on the official page",
+     "imageStatus": 206,
+     "imageType": "image/png",
+     "width": 500,
+     "height": 500,
+     "classification": "verified exact match"
+    }
+   ],
+   "best": {
+    "pageUrl": "https://www.samsung.com/ae/washers-and-dryers/washing-machines/ww5000t-front-loading-eco-bubble-hygiene-steam-dit-9kg-white-ww90ta046ae-gu/",
+    "httpStatus": 200,
+    "title": "Front Load Washer with Hygiene Steam &amp; Eco Bubble™ - 9KG, White | Samsung Gulf",
+    "imageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+    "evidence": "exact model printed on the official page",
+    "imageStatus": 206,
+    "imageType": "image/png",
+    "width": 500,
+    "height": 500,
+    "classification": "verified exact match"
+   },
+   "classification": "verified exact match"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bcb",
+   "id": "o-general-rauga45",
+   "brand": "O General",
+   "model": "RAUGA45",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bd9",
+   "id": "o-general-arga45fmtd-u",
+   "brand": "O General",
+   "model": "ARGA45FMTD-U",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bcd",
+   "id": "o-general-augg36crta-uz",
+   "brand": "O General",
+   "model": "AUGG36CRTA-UZ",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bcc",
+   "id": "o-general-rauga54",
+   "brand": "O General",
+   "model": "RAUGA54",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bc9",
+   "id": "o-general-rauga30",
+   "brand": "O General",
+   "model": "RAUGA30",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bda",
+   "id": "o-general-arga60fhtb-u",
+   "brand": "O General",
+   "model": "ARGA60FHTB-U",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bca",
+   "id": "o-general-rauga36",
+   "brand": "O General",
+   "model": "RAUGA36",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcf010920b77a44c518bcf",
+   "id": "o-general-augg54crta-uz",
+   "brand": "O General",
+   "model": "AUGG54CRTA-UZ",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "ogeneralac.com",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcec31f6af679ae79ec07b",
+   "id": "simfer-smf7501-60s",
+   "brand": "Simfer",
+   "model": "SMF7501-60S",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "simfer.com.tr",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcec31f6af679ae79ec074",
+   "id": "simfer-smf603bog-dt",
+   "brand": "Simfer",
+   "model": "SMF603BOG-DT",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "simfer.com.tr",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcec31f6af679ae79ec075",
+   "id": "simfer-smf603bog-dt-bl",
+   "brand": "Simfer",
+   "model": "SMF603BOG-DT-BL",
+   "reason": "no suitable image (accessible-but-questionable)",
+   "site": "simfer.com.tr",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  },
+  {
+   "productId": "6adcec31f6af679ae79ec077",
+   "id": "simfer-smf909bh-sc",
+   "brand": "Simfer",
+   "model": "SMF909BH-SC",
+   "reason": "stored image came from a thumbnail/logo import",
+   "site": "simfer.com.tr",
+   "sitemapMatches": 0,
+   "candidates": [],
+   "best": null,
+   "classification": "no official page found"
+  }
+ ]
+}

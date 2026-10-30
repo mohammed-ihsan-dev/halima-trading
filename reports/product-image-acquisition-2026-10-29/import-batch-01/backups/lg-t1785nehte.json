@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:39.264Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e16",
+  "id": "lg-t1785nehte",
+  "slug": "12-kg-silver-color-thailand-t1785nehte",
+  "sku": "T1785NEHTE",
+  "name": "LG Top Load Washer T1785NEHTE – 12 KG - Silver color-THAILAND",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "T1785NEHTE",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "12 KG - Silver color-THAILAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaBaALjBs17ArwJF2ZbCmWbJjw346PA6uedCqUEaChBub2GmjAfaC84-k&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:52.677Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

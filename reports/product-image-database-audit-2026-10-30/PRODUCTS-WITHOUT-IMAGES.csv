@@ -1,0 +1,11 @@
+productId,id,name,brand,model,sku,category,status
+6adb49c3f14e578547c9f9f2,midea-hs186cn,Midea Chest Freezer HS186CN,Midea,HS186CN,HS186CN,Refrigeration,active
+6adb49c3f14e578547c9fa07,midea-wqp83802fs,Midea 8 Place Setting Countertop Dishwasher WQP83802FS,Midea,WQP83802FS,WQP83802FS,Kitchen Appliances,active
+6adb49c3f14e578547c9fa06,midea-wqp15-wu7633gur-bs-gcc,"Midea 15 Place Setting Freestanding Smart Dishwasher with Touch Screen, Black Steel WQP15-WU7633GUR(BS)-GCC",Midea,WQP15-WU7633GUR(BS)-GCC,WQP15-WU7633GURBS-GCC,Kitchen Appliances,active
+6adb49c3f14e578547c9f9ee,midea-mdre353fge01ae,"Midea Built-in Integrated Bottom-Freezer Refrigerator, No Frost MDRE353FGE01AE",Midea,MDRE353FGE01AE,MDRE353FGE01AE,Refrigeration,active
+6adb49c3f14e578547c9fa03,midea-wqp13-5233c-s-gcc,"Midea 13 Place Setting Freestanding Dishwasher, Silver WQP13-5233C-S-GCC",Midea,WQP13-5233C-S-GCC,WQP13-5233C-S-GCC,Kitchen Appliances,draft
+6adb49c3f14e578547c9f9f3,midea-mdrc698fze01ae,"Midea 690L Chest Freezer, White MDRC698FZE01AE",Midea,MDRC698FZE01AE,MDRC698FZE01AE,Refrigeration,active
+6adb49c3f14e578547c9fa04,midea-wqp14-w5233c-s-gcc,Midea 14 Place Setting Freestanding Smart Dishwasher with Auto Open Door WQP14-W5233C(S)-GCC,Midea,WQP14-W5233C(S)-GCC,WQP14-W5233CS-GCC,Kitchen Appliances,active
+6adb49c3f14e578547c9fa05,midea-wqp15-w7633d-ss-gcc,"Midea 15 Place Setting Freestanding Smart Dishwasher, Stainless Steel WQP15-W7633D(SS)-GCC",Midea,WQP15-W7633D(SS)-GCC,WQP15-W7633DSS-GCC,Kitchen Appliances,active
+6adcc9b840ab94ff07b227db,whirlpool-wfd-646cih-xme,"Whirlpool 14 Place Setting Freestanding Dishwasher, Inox WFD 646CIH XME",Whirlpool,WFD 646CIH XME,WFD646CIHXME,Kitchen Appliances,active
+6adcc9b840ab94ff07b227da,whirlpool-wfd-656ddi3-mme,"Whirlpool 15 Place Setting Freestanding Dishwasher, Inox WFD 656DDI3 MME",Whirlpool,WFD 656DDI3 MME,WFD656DDI3MME,Kitchen Appliances,active

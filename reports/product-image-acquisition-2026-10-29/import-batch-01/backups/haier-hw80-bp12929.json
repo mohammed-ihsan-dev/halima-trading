@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-29T14:37:01.986Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd1",
+  "id": "haier-hw80-bp12929",
+  "slug": "haier-hw80-bp12929",
+  "sku": "HW80-BP12929",
+  "name": "Haier 8kg Front Load Washing Machine, White HW80-BP12929",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HW80-BP12929",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier 8kg Front Load Washing Machine, White, model HW80-BP12929.",
+  "features": [
+   "Capacity: 8 kg",
+   "Color: White"
+  ],
+  "specifications": {
+   "Model": "HW80-BP12929",
+   "Type": "Front load washing machine",
+   "Capacity": "8 kg",
+   "Color": "White"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": true,
+  "stockCount": 10,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

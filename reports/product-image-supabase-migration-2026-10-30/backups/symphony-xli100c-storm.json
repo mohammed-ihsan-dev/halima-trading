@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:03.623Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e6e",
+  "id": "symphony-xli100c-storm",
+  "slug": "symphony-air-cooler-xli100c-storm-xli100c-storm",
+  "sku": "XLI100C-STORM",
+  "name": "Symphony Outdoor Residential Air Cooler XLi100C-STORM",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "XLi100C-STORM",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 95 L; Power: 210 W; Max Air Throw: 4,200 m³/hr; Room Size: 45 sq. m; 3 Fan Speeds; 3-Sided Honey Comb; Remote Control; Engineered Plastic Body; Made in India; Dimensions: 635 W × 500 D × 1290 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2023/05/Storm-C100XL.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.739Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

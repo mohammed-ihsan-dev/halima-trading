@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:19.333Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3ddb",
+  "id": "lg-fa415rma",
+  "slug": "gas-cooker-90-x-60-china-fa415rma",
+  "sku": "FA415RMA",
+  "name": "LG Gas Cooker FA415RMA – Gas cooker - 90 x 60-CHINA",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "FA415RMA",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "Gas cooker - 90 x 60-CHINA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/africa/images/cooking-appliances/md07546845/gallery/Z1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.400Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

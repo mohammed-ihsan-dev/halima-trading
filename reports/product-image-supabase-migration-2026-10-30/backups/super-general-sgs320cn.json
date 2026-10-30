@@ -1,0 +1,59 @@
+{
+ "takenAt": "2026-10-30T11:50:52.596Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006cc",
+  "id": "super-general-sgs320cn",
+  "slug": "super-general-sgs320cn",
+  "sku": "SGS320CN",
+  "name": "Super General Piston Split Air Conditioner SGS320CN",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGS320CN",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "The Super General SGS320CN Piston Split Air Conditioner is intended for practical cooling applications where a split-system configuration is suitable.",
+  "features": [
+   "4 Way Swing",
+   "Auto Leakage Detection",
+   "Auto Restart",
+   "Follow Me",
+   "Gold Fin",
+   "High Density Filter",
+   "Memory Function",
+   "Night Display Off Function",
+   "On/Off Timer",
+   "Self Clean",
+   "Sleep Mode",
+   "Jet Cooling",
+   "Hidden Display",
+   "Super Efficiency",
+   "High T3 Capacity"
+  ],
+  "specifications": {
+   "Type": "Split Air Conditioner",
+   "Rated T1 capacity (Btu/h)": "32500",
+   "Rated T3 Capacity (Btu/h)": "26000",
+   "Compressor Type / Climate Type": "Reciprocating / T3",
+   "Refrigerant Type": "R410a",
+   "Voltage (V, Hz, Ph)": "220-240V,1Ph,50Hz",
+   "Dimension (Indoor - Prod / Pack WxDxH)": "1350x272x365 / 1475x460x380",
+   "Dimension (Outdoor - Prod / Pack WxDxH)": "946x410x810 / 1090x500x885",
+   "Weight (Indoor - Net/Gross Kg)": "20.6/26.8",
+   "Weight (Outdoor - Net/Gross Kg)": "77.5/82"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/709/1732197296-mb1%C2%A0sgs320cn-sgs370cn.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.614Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "generatedAt": "2026-10-29T14:11:27.891Z",
+ "pdf": "Gree-Catalogue-2025-IR.pdf",
+ "pdfSha256": "f99130e6d83f23dd747049882eed313d189c3e89f9fe62cbf2ef3704f0f709cb",
+ "brand": "Gree",
+ "pages": 36,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {}
+}

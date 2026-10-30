@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:04.162Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d8a",
+  "id": "indesit-die-2b19uk",
+  "slug": "standard-indesit-bin-d-w-13pl-11l-dig-wht-f158710-italy-die-2b19uk",
+  "sku": "DIE-2B19UK",
+  "name": "Indesit DIE-2B19UK – INDESIT BIN D/W 13PL 11L DIG WHT F158710",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "DIE-2B19UK",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "General",
+  "description": "INDESIT BIN D/W 13PL 11L DIG WHT F158710; Size: STANDARD; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://digitalassets-cdn.thron.com/delivery/public/thumbnail/digitalassets/pi-0b620b20-5c9b-4f6c-a68a-83d815389bd5/oolnjd/std/600x600/die-2b19-uk-dishwashers.webp?fill=zoom&fillcolor=rgba:255,255,255"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.384Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

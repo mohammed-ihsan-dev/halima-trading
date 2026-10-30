@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:38.254Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d77",
+  "id": "indesit-ict-64lss",
+  "slug": "60cm-ind-b-in-60cm-under-cabinet-hood-f155671-poland-ict-64lss",
+  "sku": "ICT-64LSS",
+  "name": "Indesit ICT-64LSS – IND B-IN 60CM UNDER CABINET HOOD F155671",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "ICT-64LSS",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "IND B-IN 60CM UNDER CABINET HOOD F155671; Size: 60cm; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/41UUw1BpNvL._AC_UF1000,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.581Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

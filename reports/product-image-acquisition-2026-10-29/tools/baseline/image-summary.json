@@ -1,0 +1,263 @@
+{
+ "generatedAt": "2026-10-29T14:02:31.176Z",
+ "database": "MongoDB (read-only find), collection products",
+ "totalProductsAudited": 885,
+ "productStatus": {
+  "active": 873,
+  "draft": 12
+ },
+ "products": {
+  "withValidImage": {
+   "count": 568,
+   "pct": 64.2
+  },
+  "accessibleButQuestionable": {
+   "count": 167,
+   "pct": 18.9,
+   "meaning": "image loads but every accessible image is a Google search thumbnail, logo/stock-site image or under 300 px"
+  },
+  "noImageReference": {
+   "count": 144,
+   "pct": 16.3
+  },
+  "brokenImage": {
+   "count": 6,
+   "pct": 0.7
+  },
+  "unverified": {
+   "count": 0,
+   "pct": 0
+  },
+  "invalidFormat": {
+   "count": 0,
+   "pct": 0
+  },
+  "needingManualReview": {
+   "count": 172,
+   "pct": 19.4
+  },
+  "withMultipleImages": {
+   "count": 8,
+   "pct": 0.9
+  },
+  "withDuplicateImageReferences": {
+   "count": 156,
+   "pct": 17.6
+  },
+  "withoutValidImage": {
+   "count": 317,
+   "pct": 35.8
+  },
+  "byStatusActive": {
+   "valid-image": 559,
+   "accessible-but-questionable": 167,
+   "no-image-reference": 141,
+   "broken-image": 6,
+   "unverified-needs-review": 0,
+   "invalid-format": 0
+  },
+  "byStorageType": {
+   "supabase": 391,
+   "external-url": 338,
+   "mongodb-base64": 12,
+   "relative-public-path": 0,
+   "local-project-path": 0,
+   "other-r2": 0,
+   "other": 0,
+   "unknown-invalid": 0
+  }
+ },
+ "imageReferences": {
+  "total": 749,
+  "supabase": 398,
+  "externalUrl": 339,
+  "mongodbBase64": 12,
+  "relativePublicPath": 0,
+  "localProjectPath": 0,
+  "r2": 0,
+  "otherOrUnknown": 0,
+  "placeholderStoredInImages": 0,
+  "uniqueUrls": 693,
+  "results": {
+   "accessible": 743,
+   "http-403": 6
+  },
+  "flags": {
+   "inline-base64-in-mongodb": 12,
+   "logo-or-stock-image-site": 15,
+   "logo-icon-or-placeholder": 15,
+   "low-resolution": 82,
+   "google-search-thumbnail": 95
+  },
+  "externalHosts": {
+   "encrypted-tbn0.gstatic.com": 95,
+   "m.media-amazon.com": 33,
+   "pimcdn.sharafdg.com": 21,
+   "www.lg.com": 18,
+   "symphonylimited.com": 16,
+   "5.imimg.com": 12,
+   "www.supergeneral.com": 12,
+   "images.seeklogo.com": 10,
+   "bf1af2.akinoncloudcdn.com": 10,
+   "tiimg.tistatic.com": 9,
+   "rattanelect.com": 8,
+   "www.alrayanservices.com": 7,
+   "digitalassets-cdn.thron.com": 7,
+   "genralline.com": 6,
+   "panasonic.scene7.com": 5,
+   "images-eu.ssl-images-amazon.com": 3,
+   "gecouae.com": 3,
+   "cdn.prod.website-files.com": 3,
+   "catalogue.geepas.com": 3,
+   "cpimg.tistatic.com": 3,
+   "www.fajtradingllc.com": 3,
+   "electronicparadise.in": 2,
+   "cdn-tp1.euw1.kibocommerce.com": 2,
+   "cdn.media.amplience.net": 2,
+   "play-lh.googleusercontent.com": 2,
+   "cdn.vectorstock.com": 2,
+   "gratusworld.com": 2,
+   "www.simferglobal.com": 2,
+   "logos-world.net": 1,
+   "mannaihome.com": 1,
+   "rukminim2.flixcart.com": 1,
+   "admin.safarimallonline.com": 1,
+   "vivastore.qa": 1,
+   "images.snoonu.com": 1,
+   "devr.fadalelect.com": 1,
+   "d91ztqmtx7u1k.cloudfront.net": 1,
+   "anbisolutions.com": 1,
+   "media-ik.croma.com": 1,
+   "rukminim3.flixcart.com": 1,
+   "alemadigroup.store": 1,
+   "www.globalbluestar.com": 1,
+   "indesituk.vtexassets.com": 1,
+   "www.appliancesdirect.co.uk": 1,
+   "urbancucine.com": 1,
+   "abulawi.com": 1,
+   "www.optimusgeneral.ae": 1,
+   "images.samsung.com": 1,
+   "www.icecubeuae.com": 1,
+   "gkvjw0ooc9bgy90a.public.blob.vercel-storage.com": 1,
+   "z.nooncdn.com": 1,
+   "f.nooncdn.com": 1,
+   "static.jazp.com": 1,
+   "cdn.sheeel.com": 1,
+   "kariakoomall.co.tz": 1,
+   "skilltechonline.com": 1,
+   "uae.geepas.com": 1,
+   "www.bzaaarz.com": 1,
+   "cdn11.bigcommerce.com": 1,
+   "coolersonline.ae": 1,
+   "sbtraders.ae": 1,
+   "brewinggadgets.in": 1,
+   "www.unitco.ae": 1,
+   "dasintergroup.com": 1,
+   "www.acmartuae.com": 1,
+   "toongheng.com": 1,
+   "tamigstore.com": 1
+  }
+ },
+ "byBrandWithoutValidImage": {
+  "Midea": 64,
+  "Westpoint": 32,
+  "Clivet": 21,
+  "TCL": 20,
+  "Mazaya": 18,
+  "Indesit": 17,
+  "Haier": 16,
+  "LG": 15,
+  "Panasonic": 13,
+  "Daewoo": 13,
+  "Gree": 11,
+  "General Line": 10,
+  "Blue Star": 9,
+  "Mitsubishi Electric": 9,
+  "Geepas": 8,
+  "Samsung": 6,
+  "Super General": 6,
+  "Toshiba": 5,
+  "Aftron": 4,
+  "Krome": 4,
+  "Simfer": 3,
+  "Kenwood": 2,
+  "Phoenix": 2,
+  "Nikai": 2,
+  "Whirlpool": 2,
+  "O General": 2,
+  "AKAI": 1,
+  "AFRA": 1,
+  "Black+Decker": 1
+ },
+ "byCategoryWithoutValidImage": {
+  "Air Conditioning": 162,
+  "Refrigeration": 49,
+  "Laundry Appliances": 47,
+  "Cooking Appliances": 20,
+  "Kitchen Appliances": 19,
+  "Commercial Cooling": 13,
+  "Air Coolers & Fans": 4,
+  "Home & Small Appliances": 3
+ },
+ "localAssets": {
+  "total": 1639,
+  "byKind": {
+   "logo": 17,
+   "website-ui": 47,
+   "product-image-candidate": 256,
+   "unclassified": 8,
+   "pipeline-working-file": 1311
+  },
+  "byArea": {
+   "public/brands": 6,
+   "public": 17,
+   "public/featured": 12,
+   "public/icons": 1,
+   "public/images/categories": 16,
+   "public/images/hero": 10,
+   "public/product-images": 1,
+   "public/products": 4,
+   "catalogues-source": 81,
+   "work/catalogue-images": 463,
+   "work/image-pilot": 3,
+   "work/product-image-pipeline": 1025
+  },
+  "identicalFileGroups": 115,
+  "alreadyUploadedCopies": 219
+ },
+ "catalogues": {
+  "pdfs": 25,
+  "productCatalogues": 19,
+  "totalPages": 970,
+  "unreadable": 0
+ },
+ "matchability": {
+  "productsWithoutValidImage": 317,
+  "withHighConfidenceLocalOrCatalogueCandidate": 16,
+  "withMediumOrBetterCandidate": 44,
+  "withAnyCandidate": 144,
+  "likelyNeedingExternalSourcing": 273,
+  "note": "Candidates are leads only: none were assigned; each needs visual confirmation and documented usage rights."
+ },
+ "candidatesTotal": 982,
+ "dataQualityIssues": {
+  "duplicate-name": 20,
+  "brand-spelling-or-slug-variants": 2,
+  "image-stored-as-base64-in-mongodb": 12,
+  "generic-subcategory": 324,
+  "image-filename-names-another-model": 5,
+  "category-not-in-categories-collection": 24,
+  "same-image-url-on-several-products": 27,
+  "byte-identical-supabase-images-on-several-products": 30,
+  "identical-local-files": 115
+ },
+ "validationLimitations": [
+  "External URLs were checked with one ranged GET (first 64 KB, 12 s timeout, one retry for timeouts/network errors); HEAD was not relied on. A failure is a strong signal, not proof — some hosts block automated requests or hot-linking.",
+  "Supabase URLs were downloaded in full (≤15 MB) to hash and measure them; external images were not fully downloaded, so cross-host byte duplicates are not detected.",
+  "The audit machine's DNS filters some hosts; URLs failing with ENOTFOUND were re-fetched using addresses from public resolvers (1.1.1.1 / 8.8.8.8) and are marked via=public-dns.",
+  "An expired / invalid TLS certificate is counted as broken: browsers refuse to load such images.",
+  "Image dimensions come from the downloaded bytes; when they could not be read, the content-type header decided whether the response is an image.",
+  "'Questionable' is a heuristic (Google search thumbnails, logo/stock/app-icon/placeholder sources, < 400 px); it does not judge whether the picture shows the right model.",
+  "Usage rights of existing external images were not assessed."
+ ]
+}

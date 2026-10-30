@@ -1,0 +1,39 @@
+{
+ "takenAt": "2026-10-30T11:51:15.934Z",
+ "document": {
+  "_id": "6ace0ae7c20e09f0d82e773a",
+  "id": "yorker-y1123st",
+  "slug": "yorker-y1123st",
+  "sku": "Y1123ST",
+  "name": "Yorker Electric Catering Tea Urn 20L",
+  "brand": "Yorker",
+  "brandSlug": "yorker",
+  "model": "Y1123ST",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "Tea Urns",
+  "description": "Yorker Electric Catering Tea Urn, 20-litre capacity.",
+  "features": [
+   "Electric catering tea urn",
+   "20L capacity"
+  ],
+  "specifications": {
+   "Capacity": "20L",
+   "Power Type": "Electric",
+   "Model Number": "Y1123ST"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://kariakoomall.co.tz/wp-content/uploads/2025/04/42-1.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.778Z",
+  "createdAt": "2026-10-13T10:41:43.020Z"
+ }
+}

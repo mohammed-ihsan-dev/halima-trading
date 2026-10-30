@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-30T11:51:06.779Z",
+ "document": {
+  "_id": "6ace0ae7c20e09f0d82e7735",
+  "id": "afra-af-3000cbk",
+  "slug": "afra-af-3000cbk",
+  "sku": "AF3000CBK",
+  "name": "AFRA Double Infrared Cooker 3000W",
+  "brand": "AFRA",
+  "brandSlug": "afra",
+  "model": "AF-3000CBK",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "Cookers",
+  "description": "AFRA Double Infrared Cooker 3000W, Stainless Steel/Black.",
+  "features": [
+   "Double infrared cooker",
+   "3000W power",
+   "Stainless steel/black finish"
+  ],
+  "specifications": {
+   "Power": "3000W",
+   "Cooker Type": "Double Infrared",
+   "Colour": "Stainless Steel/Black",
+   "Model Number": "AF-3000CBK"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://static.jazp.com/uploads/202209/5c98e4e35b6d7b4b9ac2e3e3b0da147a.jpeg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:43.855Z",
+  "createdAt": "2026-10-13T10:41:43.020Z"
+ }
+}

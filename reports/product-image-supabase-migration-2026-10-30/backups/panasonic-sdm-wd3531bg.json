@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:38.889Z",
+ "document": {
+  "_id": "6ad07f2b0880c5d000649171",
+  "id": "panasonic-sdm-wd3531bg",
+  "slug": "water-dispenser-sdm-wd3531bg",
+  "sku": "SDMWD3531BG",
+  "name": "Water Dispenser",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "SDM-WD3531BG",
+  "category": "Home & Small Appliances",
+  "categorySlug": "home-small-appliances",
+  "subcategory": "Water Dispensers",
+  "description": "Water dispenser. Loading type and additional specifications are not provided in the source.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn11.bigcommerce.com/s-sp9oc95xrw/images/stencil/1280x1280/products/33729/98480/pn8-2__06362.1754907597.png?c=2?imbypass=on"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:22:18.681Z",
+  "updatedAt": "2026-10-20T19:16:58.557Z"
+ }
+}

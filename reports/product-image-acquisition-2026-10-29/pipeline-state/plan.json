@@ -1,0 +1,520 @@
+{
+ "plannedAt": "2026-10-19T11:07:47.488Z",
+ "storageBefore": {
+  "objects": 128,
+  "bytes": 11331666,
+  "measuredAt": "2026-10-19T11:07:47.477Z"
+ },
+ "bytesToAdd": 0,
+ "summary": {
+  "eligibleForUpload": [],
+  "fromApprovedReviews": [],
+  "approvalNoLongerValid": [],
+  "heldForPermission": [
+   "mazaya-gl-icf350cgq",
+   "mazaya-gl-icf350fdc",
+   "mazaya-gl-icf350sdc",
+   "mazaya-gl-icf400cgx",
+   "mazaya-gl-icf450cgq",
+   "mazaya-gl-icf450sdc",
+   "mazaya-gl-icf500fdc"
+  ],
+  "excludedPermissionDenied": [],
+  "heldForModelVerification": [
+   "super-general-sgmm921nhw"
+  ],
+  "awaitingVisualReview": [
+   "p-1791532324809"
+  ],
+  "rejected": [
+   "gree-gr-i-airy32-12c3-ind-gree",
+   "gree-gr-i-airy32-18c3-ind-gree",
+   "gree-gr-i-airy32-30c3-ind-gree",
+   "gree-gr-i2-pro-18c3-ind-gree",
+   "gree-gr-i2-pro-12c3-ind-gree",
+   "gree-gr-i-airy32-24c3-ind-gree",
+   "gree-gr-i2-pro-30c3-ind-gree",
+   "gree-gr-i2-pro-24c3-ind-gree",
+   "gree-gr-i2-pro-36c3-ind-gree",
+   "gree-gr-i4-pro-18c3-ind-gree",
+   "gree-gr-i4-pro-12c3-ind-gree",
+   "gree-gr-i4-pro-24c3-ind-gree",
+   "gree-gr-i4-pro-30c3-ind-gree",
+   "gree-gr-i4-pro-36c3-ind-gree",
+   "gree-gr-p4-matic-18c3-ind-gree",
+   "gree-gr-t4-matic-i36c3-ind-gree",
+   "gree-gr-p4-matic-24c3-ind-gree",
+   "gree-gr-p4-matic-30c3-ind-gree",
+   "gree-gr-t4-matic-i48c3-ind-gree",
+   "gree-gr-t4-matic-n60c3-ind-gree",
+   "mazaya-gl-1200ddswdlx",
+   "mazaya-gl-1400ddswdlx",
+   "mazaya-gl-icf360cgx",
+   "mazaya-gl-icf380fdx",
+   "mazaya-gl-icf450cgx",
+   "mazaya-gl-icf460cgx",
+   "mazaya-gl-icf560fdx",
+   "mazaya-gl-24wtc",
+   "mazaya-gl-36wtc",
+   "super-general-sga18ae",
+   "super-general-sgs191cn",
+   "mazaya-gl-60wtc",
+   "super-general-sgs260cn",
+   "super-general-sgp124t3",
+   "super-general-sgs370cn",
+   "super-general-sgp184t3",
+   "super-general-sgsc137",
+   "super-general-sgsc74",
+   "super-general-sgfs36ae"
+  ],
+  "alreadyHandledOrNoLongerNeeded": [],
+  "noCandidate": 54
+ },
+ "items": [
+  {
+   "id": "p-1791532324809",
+   "brand": "AKAI",
+   "model": "ACMA-M12T3R4 / ACMA-M18T3R4",
+   "sourcePage": "AKAI-ACMA-M12T3R4,M18T3R4.pdf p.1",
+   "sourceImage": "work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg",
+   "localSourceFile": "work/catalogue-images/batch4/akai/crop-acma-m12t3r4.jpg",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (supplier datasheet PDF)"
+   ],
+   "visuallyReviewed": false,
+   "visualReviewNote": null,
+   "permission": {
+    "status": "permission_pending",
+    "holder": null,
+    "reason": "no permission record for this source",
+    "evidence": []
+   },
+   "action": "AWAITING_VISUAL_REVIEW",
+   "status": "active",
+   "updatedAt": "2026-10-09T07:52:04.809Z",
+   "before": [
+    "/featured/hisense-window-ac.png"
+   ],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-ai-412/9b82bbf6-eb18-484a-87c1-85f3d5b69e75.webp"
+   ],
+   "key": "products/ht-ai-412/9b82bbf6-eb18-484a-87c1-85f3d5b69e75.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-ai-412/9b82bbf6-eb18-484a-87c1-85f3d5b69e75.webp",
+   "source": {
+    "width": 897,
+    "height": 277,
+    "bytes": 39762,
+    "kind": "jpeg",
+    "sha256": "a723c83720c4f1f2d44ae34a5c104c6e0d29aa7adfb600cb9db36eaf153fbf1c",
+    "cacheFile": "work/product-image-pipeline/cache/a723c83720c4f1f2d44ae34a5c104c6e0d29aa7adfb600cb9db36eaf153fbf1c.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 8724,
+    "contentType": "image/webp",
+    "sha256": "6a534589d14ffc197c9a903a944c69f1730ce703127fc6c0d076fac0ab278f65"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf350cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF350CGQ",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350cgq/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350CGQ.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF350CGQ\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350CGQ\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350cgq/56209acb-e452-47de-a61a-712e6d10826c.webp"
+   ],
+   "key": "products/gl-icf350cgq/56209acb-e452-47de-a61a-712e6d10826c.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350cgq/56209acb-e452-47de-a61a-712e6d10826c.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 76961,
+    "kind": "jpeg",
+    "sha256": "e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f",
+    "cacheFile": "work/product-image-pipeline/cache/e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 20524,
+    "contentType": "image/webp",
+    "sha256": "c532e266e8855317cbbe3f1d36b320e2ccfc92f370da857a080f24cf024aef9f"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf350fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350FDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350fdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350FDC.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF350FDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350FDC\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350fdc/c05c18ba-9fc5-4ca3-af2a-76031c998e35.webp"
+   ],
+   "key": "products/gl-icf350fdc/c05c18ba-9fc5-4ca3-af2a-76031c998e35.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350fdc/c05c18ba-9fc5-4ca3-af2a-76031c998e35.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 78217,
+    "kind": "jpeg",
+    "sha256": "0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd",
+    "cacheFile": "work/product-image-pipeline/cache/0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 14852,
+    "contentType": "image/webp",
+    "sha256": "63a1eb5cdd0c746af1a150c7417bdebe63d7c962b26c80af804f7259f76ef5f1"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf350sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350SDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350sdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350SDC.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF350SDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350SDC\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350sdc/0ab586eb-5c9f-4c7c-9841-a21f08ff6aac.webp"
+   ],
+   "key": "products/gl-icf350sdc/0ab586eb-5c9f-4c7c-9841-a21f08ff6aac.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350sdc/0ab586eb-5c9f-4c7c-9841-a21f08ff6aac.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 71026,
+    "kind": "jpeg",
+    "sha256": "5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953",
+    "cacheFile": "work/product-image-pipeline/cache/5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 16180,
+    "contentType": "image/webp",
+    "sha256": "bf4bcfed20769915c0dfc344e796e801385df16a78ef4d7145f547a59e249df4"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf400cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF400CGX",
+   "sourcePage": "https://mazayauae.com/product/gl-icf400cgx/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF400CGX.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF400CGX\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF400CGX\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf400cgx/3e1e43f3-618d-4ec1-9ecb-5f272882443a.webp"
+   ],
+   "key": "products/gl-icf400cgx/3e1e43f3-618d-4ec1-9ecb-5f272882443a.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf400cgx/3e1e43f3-618d-4ec1-9ecb-5f272882443a.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 73191,
+    "kind": "jpeg",
+    "sha256": "e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba",
+    "cacheFile": "work/product-image-pipeline/cache/e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 18234,
+    "contentType": "image/webp",
+    "sha256": "5bbe30e129c575554d6560821e75cabca8588edd8fa9d96b23066b840d4df882"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf450cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF450CGQ",
+   "sourcePage": "https://mazayauae.com/product/gl-icf450cgq/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450CGQ.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF450CGQ\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF450CGQ\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgq/8782dd91-909c-4dbf-a8b5-f5fface35da8.webp"
+   ],
+   "key": "products/gl-icf450cgq/8782dd91-909c-4dbf-a8b5-f5fface35da8.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgq/8782dd91-909c-4dbf-a8b5-f5fface35da8.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 124887,
+    "kind": "jpeg",
+    "sha256": "2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1",
+    "cacheFile": "work/product-image-pipeline/cache/2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 20532,
+    "contentType": "image/webp",
+    "sha256": "76728dae18f72de933755bda3f8125a3f38ea13a8fe1ead11a137443e749ad2f"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf450sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF450SDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf450sdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450SDC.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF450SDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF450SDC\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450sdc/24af9f99-d84c-42e2-a47a-cbbf58a221f6.webp"
+   ],
+   "key": "products/gl-icf450sdc/24af9f99-d84c-42e2-a47a-cbbf58a221f6.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450sdc/24af9f99-d84c-42e2-a47a-cbbf58a221f6.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 112809,
+    "kind": "jpeg",
+    "sha256": "bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a",
+    "cacheFile": "work/product-image-pipeline/cache/bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 16174,
+    "contentType": "image/webp",
+    "sha256": "1f827a8299e7fddf4c389d15a121a6f7e3797b2a727cc8f4ea6d41a0bde1acdb"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf500fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF500FDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf500fdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF500FDC.jpg",
+   "localSourceFile": null,
+   "matchEvidence": "exact model in source title \"GL-ICF500FDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF500FDC\""
+   ],
+   "visuallyReviewed": true,
+   "visualReviewNote": "visual check: correct product type and design for the model on the official product page",
+   "permission": {
+    "status": "permission_pending",
+    "holder": "Mazaya",
+    "reason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "evidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ]
+   },
+   "action": "HELD_PERMISSION_PENDING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf500fdc/48047444-b46d-4ee7-b82b-7cf28b6cbd94.webp"
+   ],
+   "key": "products/gl-icf500fdc/48047444-b46d-4ee7-b82b-7cf28b6cbd94.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf500fdc/48047444-b46d-4ee7-b82b-7cf28b6cbd94.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 121929,
+    "kind": "jpeg",
+    "sha256": "641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b",
+    "cacheFile": "work/product-image-pipeline/cache/641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b.jpeg"
+   },
+   "optimised": {
+    "width": 800,
+    "height": 800,
+    "bytes": 14812,
+    "contentType": "image/webp",
+    "sha256": "4adba6f73bb88500a6dda0ffeb5377b4be4520936253ea2b17ba885b9cf069c4"
+   }
+  }
+ ]
+}

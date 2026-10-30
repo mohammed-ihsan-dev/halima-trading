@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:07.770Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d8b",
+  "id": "indesit-dsio-3t224ezuk",
+  "slug": "slim-ind-b-in-slimline-d-w-45cm-wht-f155488-italy-dsio-3t224ezuk",
+  "sku": "DSIO-3T224EZUK",
+  "name": "Indesit DSIO-3T224EZUK – IND B-IN SLIMLINE D/W 45CM WHT F155488",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "DSIO-3T224EZUK",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "General",
+  "description": "IND B-IN SLIMLINE D/W 45CM WHT F155488; Size: SLIM; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://gecouae.com/wp-content/uploads/2025/06/DG201971589-scaled.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:37.528Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

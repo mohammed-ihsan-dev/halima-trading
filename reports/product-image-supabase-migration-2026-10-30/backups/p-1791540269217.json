@@ -1,0 +1,51 @@
+{
+ "takenAt": "2026-10-30T11:35:18.189Z",
+ "document": {
+  "_id": "6ac8bc2ed467feb0e4adfa56",
+  "slug": "toshiba-559l-double-door-refrigerator",
+  "brand": "Toshiba",
+  "brandSlug": "toshiba",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "createdAt": "2026-10-09T10:04:29.217Z",
+  "currency": "AED",
+  "deliveryRate": 0,
+  "description": "Double door refrigerator in Satin Grey color with a total capacity of 411L, featuring a 107L freezer and a 304L refrigerator compartment. It is equipped with an Inverter Compressor, Air Fall Cooling, Humidity Control, and an Eco Mode. Dimensions are width 700 mm, depth 680 mm, and height 1723 mm",
+  "featured": false,
+  "features": [
+   "Inverter compressor",
+   "Air fall cooling",
+   "Humidity control",
+   "Eco mode",
+   "Satin grey finish"
+  ],
+  "id": "p-1791540269217",
+  "images": [
+   "https://mannaihome.com/cdn/shop/files/GR-RT559WE-PME_49_01.jpg?v=1762768800&width=1500"
+  ],
+  "inStock": true,
+  "model": "GR-RT559WE-PME",
+  "name": "Toshiba 559L Double Door Refrigerator",
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "sku": "HT-RE-433",
+  "specifications": {
+   "Advertised Capacity": "559L",
+   "Total Capacity": "411L",
+   "Freezer Capacity": "107L",
+   "Refrigerator Capacity": "304L",
+   "Type": "Double Door Refrigerator",
+   "Compressor": "Inverter Compressor",
+   "Cooling System": "Air Fall Cooling",
+   "Color": "Satin Grey",
+   "Country of Origin": "China",
+   "Barcode": "6954903810515",
+   "Item Code": "1810080",
+   "Dimensions": "700 × 680 × 1723mm"
+  },
+  "status": "active",
+  "stockCount": 1,
+  "subcategory": "Refrigerators",
+  "updatedAt": "2026-10-16T10:24:53.076Z"
+ }
+}

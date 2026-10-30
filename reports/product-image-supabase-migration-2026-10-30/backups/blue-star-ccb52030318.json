@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:59.883Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d5b",
+  "id": "blue-star-ccb52030318",
+  "slug": "hw24cyrfb3-01-split-ac-2-0-tr-recip-r410a-ccb52030318",
+  "sku": "CCB52030318",
+  "name": "Blue Star Split AC 2.0 TR Recip R410A – HW24CYRFB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW24CYRFB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 2.0 TR Recip R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://rattanelect.com/wp-content/uploads/2023/07/HW24CXYFB3-01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.598Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

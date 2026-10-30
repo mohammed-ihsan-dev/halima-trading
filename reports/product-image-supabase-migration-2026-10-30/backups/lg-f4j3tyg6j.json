@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:48.234Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e0b",
+  "id": "lg-f4j3tyg6j",
+  "slug": "8-kg-middle-black-egypt-f4j3tyg6j",
+  "sku": "F4J3TYG6J",
+  "name": "LG Front Load Washer F4J3TYG6J – 8-KG MIDDLE BLACK-EGYPT",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "F4J3TYG6J",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "8-KG MIDDLE BLACK-EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/eastafrica/images/washing-machines/md07579937/gallery/D-01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.041Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

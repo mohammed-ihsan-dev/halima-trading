@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:30.865Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d4b",
+  "id": "aftron-af-w-3669b-c-inv",
+  "slug": "aftron-3-ton-split-ac-inverter-af-w-3669b-c-inv",
+  "sku": "AF-W-3669BC-INV",
+  "name": "AFTRON 3 TON SPLIT AC, INVERTER (AF-W-3669B/C-INV)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-3669B/C-INV",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 3 TON SPLIT AC, INVERTER",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://vivastore.qa/wp-content/uploads/2023/06/Screenshot-2023-06-23-180327.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.495Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

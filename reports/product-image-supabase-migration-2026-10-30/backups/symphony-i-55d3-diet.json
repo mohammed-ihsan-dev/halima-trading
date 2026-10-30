@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:41.256Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e66",
+  "id": "symphony-i-55d3-diet",
+  "slug": "symphony-air-cooler-i-55d3-diet-i-55d3-diet",
+  "sku": "I-55D3-DIET",
+  "name": "Symphony Indoor Residential Air Cooler i-55D3 DIET",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "i-55D3 DIET",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 55 L; Power: 110 W; Room Size: 16 sq. m; 3 Blower Speeds; 3-Sided Honey Comb; Automatic Pop-Up Touch Screen; Magnetic Remote; Plastic Body; Made in India; Dimensions: 450 W × 390 D × 1340 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2023/05/Diet-3D-55i.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.420Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

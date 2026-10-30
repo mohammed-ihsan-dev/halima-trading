@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:34.566Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d73",
+  "id": "indesit-dp-2gsix",
+  "slug": "29x51-indesit-built-in-domino-gas-hob-with-cast-iron-grids-dp-2gsix",
+  "sku": "DP-2GSIX",
+  "name": "Indesit DP-2GSIX – INDESIT Built in DOMINO GAS HOB WITH CAST IRON GRIDS",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "DP-2GSIX",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "INDESIT Built in DOMINO GAS HOB WITH CAST IRON GRIDS; Size: 29x51; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S400903163_1?1791205387"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.424Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

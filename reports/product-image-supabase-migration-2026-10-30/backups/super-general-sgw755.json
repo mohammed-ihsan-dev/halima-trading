@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:02.829Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006d0",
+  "id": "super-general-sgw755",
+  "slug": "super-general-sgw755",
+  "sku": "SGW755",
+  "name": "S.G. WASHING MACHINE TL",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGW755",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "S.G. WASHING MACHINE TL",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/765/1773754644-sgw655_01-317x347.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.968Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

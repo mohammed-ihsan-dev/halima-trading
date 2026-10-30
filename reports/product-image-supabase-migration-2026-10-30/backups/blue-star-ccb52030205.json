@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:24.223Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d6a",
+  "id": "blue-star-ccb52030205",
+  "slug": "bwtc1-05y1r3b-ccb52030205",
+  "sku": "CCB52030205",
+  "name": "Blue Star Overhead Tank Water Chiller BWTC1 05Y1R3B",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "BWTC1 05Y1R3B",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "General",
+  "description": "",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.globalbluestar.com/_next/image?url=https%3A%2F%2Fd2yl60g2l1q3h6.cloudfront.net%2Fdata%2Fbwtc_series_37beb28c70.jpg&w=3840&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.164Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

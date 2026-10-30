@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:22.076Z",
+ "document": {
+  "_id": "6ad515d87d4ed4b0b9840543",
+  "id": "super-general-sgs195fe",
+  "slug": "super-general-sgs195fe",
+  "sku": "SGS195FE",
+  "name": "Super General Split Air Conditioner SGS195FE",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGS195FE",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "The Super General SGS195FE Split Air Conditioner provides a practical approach to indoor climate control. Its split-system configuration is designed for convenient everyday cooling in suitable residential or commercial settings.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51+6farW4RL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-18T18:54:15.949Z",
+  "updatedAt": "2026-10-20T19:17:00.416Z"
+ }
+}

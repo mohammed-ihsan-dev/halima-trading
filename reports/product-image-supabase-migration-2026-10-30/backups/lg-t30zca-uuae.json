@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:12.309Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dd6",
+  "id": "lg-t30zca-uuae",
+  "slug": "2-5-ton-on-off-model-t30zca-uuae",
+  "sku": "T30ZCAUUAE",
+  "name": "LG Split AC T30ZCA.UUAE – 2.5 TON - on/off model",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "T30ZCA.UUAE",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "2.5 TON - on/off model",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07593447/gallery/D-1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:52.992Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

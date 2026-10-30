@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:19.993Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e60",
+  "id": "symphony-125l-movicool",
+  "slug": "symphony-air-cooler-125l-movicool-125l-movicool",
+  "sku": "125L-MOVICOOL",
+  "name": "Symphony Outdoor Commercial Air Cooler 125L-MOVICOOL",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "125L-MOVICOOL",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 125 L; Power: 245 W; Capacity: 8,500 m³/hr; Max Air Throw: 25 m; 3 Fan Speeds; 3-Sided Dust Filter; Manual Control; Engineered Plastic Body with UV Coating; Made in India; Dimensions: 870 W × 440 D × 1400 H mm Symphony",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2022/01/16.-Movicool-L125.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.180Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

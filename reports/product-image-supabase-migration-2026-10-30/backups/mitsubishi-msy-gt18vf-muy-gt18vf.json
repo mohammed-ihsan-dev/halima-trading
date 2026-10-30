@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-30T11:51:56.723Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d557",
+  "id": "mitsubishi-msy-gt18vf-muy-gt18vf",
+  "slug": "2-ton-wall-mounted-inverter-air-conditioner-msy-gt18vf-muy-gt18vf",
+  "sku": "MSYGT18VFMUYGT18VF",
+  "name": "2 Ton Wall Mounted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "MSY-GT18VF/MUY-GT18VF",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "Wall-mounted inverter air conditioner with 2-ton cooling capacity.",
+  "features": [
+   "2 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "2 Ton"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://5.imimg.com/data5/SELLER/Default/2024/2/394832350/SW/LS/ID/10540141/mitsubishi-msy-muy-gr18vf-da1-split-air-conditioner.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:55.608Z"
+ }
+}

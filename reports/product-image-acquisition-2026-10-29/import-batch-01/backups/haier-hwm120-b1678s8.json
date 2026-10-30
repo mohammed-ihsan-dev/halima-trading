@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-29T14:37:08.734Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dda",
+  "id": "haier-hwm120-b1678s8",
+  "slug": "haier-hwm120-b1678s8",
+  "sku": "HWM120-B1678S8",
+  "name": "Haier 12kg Top Load Washing Machine with DD Motor HWM120-B1678S8",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HWM120-B1678S8",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier 12kg Top Load Washing Machine with DD Motor, model HWM120-B1678S8.",
+  "features": [
+   "Capacity: 12 kg",
+   "Max Spin Speed: 1200 RPM",
+   "Motor: Direct drive (DD)",
+   "Color: Dark jade silver"
+  ],
+  "specifications": {
+   "Model": "HWM120-B1678S8",
+   "Type": "Top load washing machine",
+   "Capacity": "12 kg",
+   "Max Spin Speed": "1200 RPM",
+   "Motor": "Direct drive (DD)",
+   "Color": "Dark jade silver"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-24T11:36:02.557Z"
+ }
+}

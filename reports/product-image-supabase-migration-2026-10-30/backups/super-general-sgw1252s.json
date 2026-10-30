@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:27.034Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c2",
+  "id": "super-general-sgw1252s",
+  "slug": "super-general-sgw1252s",
+  "sku": "SGW1252S",
+  "name": "S.G. WASHING MACHINE TL",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGW1252S",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "S.G. WASHING MACHINE TL",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/768/1773756239-sgw852s-317x347.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.888Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:28.486Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d96",
+  "id": "indesit-tinf-601351xme",
+  "slug": "400-l-indesit-400l-tnf-refrigerator-60cm-silver-tinf-601351xme",
+  "sku": "TINF-601351XME",
+  "name": "Indesit TINF-601351XME – INDESIT 400L TNF REFRIGERATOR 60CM SILVER",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "TINF-601351XME",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT 400L TNF REFRIGERATOR 60CM SILVER; Size: 400 L; Origin: TURKEY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S600970969_1?1791205943"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.466Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

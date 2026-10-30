@@ -1,0 +1,15 @@
+{
+ "generatedAt": "2026-10-29T14:12:54.053Z",
+ "pdf": "19147 midea-catalogue-2026-R3.pdf",
+ "pdfSha256": "741b382aba5810c356cb1c2cc404cb7f5f383dc28ce9b8b7dd725fdba227a9cc",
+ "brand": "Midea",
+ "pages": 94,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {}
+}

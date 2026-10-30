@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:35:54.159Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3da6",
+  "id": "lg-dfb512fw",
+  "slug": "quad-wash-2-rack-14-place-set-46-db-9-ltr-dfb512fw",
+  "sku": "DFB512FW",
+  "name": "LG Dishwasher DFB512FW – Quad Wash - 2 Rack - 14 Place set - 46 DB - 9 LTR",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "DFB512FW",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "General",
+  "description": "Quad Wash - 2 Rack - 14 Place set - 46 DB - 9 LTR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lSYnubapUWINyhJ8iiTyzfvOCINMTo6npPZygfj5GUMQFLoFm1zQ9Zkk&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:49.567Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-30T11:52:02.000Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d559",
+  "id": "mitsubishi-msy-gt30vf-muy-gt30vf",
+  "slug": "3-ton-wall-mounted-inverter-air-conditioner-msy-gt30vf-muy-gt30vf",
+  "sku": "MSYGT30VFMUYGT30VF",
+  "name": "3 Ton Wall Mounted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "MSY-GT30VF/MUY-GT30VF",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "Wall-mounted inverter air conditioner with 3-ton cooling capacity.",
+  "features": [
+   "3 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "3 Ton"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://5.imimg.com/data5/SELLER/Default/2025/4/500446081/WD/RA/ZA/76836104/mitsubishi-3-ton-3-star-inverter-muy-msy-jr36vf-500x500.jpeg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:55.688Z"
+ }
+}

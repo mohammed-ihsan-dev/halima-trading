@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:35.636Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d9a",
+  "id": "indesit-bde-964ssv-gcc",
+  "slug": "9-5-indesit-washer-dryer-9w-6d-kg-1400rpm-sil-bde-964ssv-gcc",
+  "sku": "BDE-964SSV-GCC",
+  "name": "Indesit BDE-964SSV-GCC – INDESIT WASHER-DRYER 9W+6D KG, 1400RPM, SIL, DIGI",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "BDE-964SSV-GCC",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "INDESIT WASHER-DRYER 9W+6D KG, 1400RPM, SIL, DIGI; Size: 9+5; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://abulawi.com/wp-content/uploads/2025/06/pi-551b29ba-ff76-4cb3-b971-7494b76aeb80.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:36.688Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "takenAt": "2026-10-30T11:52:22.216Z",
+ "document": {
+  "_id": "6ad07fd6f9be311bced6d573",
+  "id": "panasonic-cs-cu-fs24akf-5",
+  "slug": "2-ton-inverter-split-air-conditioner-cs-cu-fs24akf-5",
+  "sku": "CSCUFS24AKF5",
+  "name": "2 Ton Inverter Split Air Conditioner",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "CS/CU-FS24AKF-5",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "2-ton rotary inverter split AC with TriProtect filter, four-way swing, Insta Cool, shower cooling, preset air supply, i-Feel, Eco Mode, Crystal Clean, self-diagnosis, and Gen-Mode amp control. Made in China; 2-star rating.",
+  "features": [
+   "2 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "2 Ton",
+   "Type": "Split Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51OI311I5cL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.240Z"
+ }
+}

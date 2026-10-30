@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:41.116Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c8",
+  "id": "super-general-sgr175he",
+  "slug": "super-general-sgr175he",
+  "sku": "SGR175HE",
+  "name": "S.G. REFRIGERATOR",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGR175HE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "S.G. REFRIGERATOR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/456/1690871940-sg-48-1000-1200-sgr175h_.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.023Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

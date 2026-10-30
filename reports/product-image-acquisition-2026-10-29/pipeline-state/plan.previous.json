@@ -1,0 +1,793 @@
+{
+ "plannedAt": "2026-10-15T10:12:03.846Z",
+ "storageBefore": {
+  "objects": 128,
+  "bytes": 11331666,
+  "measuredAt": "2026-10-15T10:12:03.844Z"
+ },
+ "bytesToAdd": 566688,
+ "items": [
+  {
+   "id": "mazaya-gl-icf350cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF350CGQ",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350cgq/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350CGQ.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF350CGQ\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350CGQ\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350cgq/df244e8b-6108-4c03-8f04-131efc5bcadf.webp"
+   ],
+   "key": "products/gl-icf350cgq/df244e8b-6108-4c03-8f04-131efc5bcadf.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350cgq/df244e8b-6108-4c03-8f04-131efc5bcadf.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 76961,
+    "kind": "jpeg",
+    "sha256": "e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f",
+    "cacheFile": "work/product-image-pipeline/cache/e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 36016,
+    "contentType": "image/webp",
+    "sha256": "91cb352301f34d64c6ae7876bb528d69969862761e42163d02d49b9270e04c79"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf350fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350FDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350fdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350FDC.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF350FDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350FDC\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350fdc/99f021f1-b03c-441b-90b3-749335113f37.webp"
+   ],
+   "key": "products/gl-icf350fdc/99f021f1-b03c-441b-90b3-749335113f37.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350fdc/99f021f1-b03c-441b-90b3-749335113f37.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 78217,
+    "kind": "jpeg",
+    "sha256": "0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd",
+    "cacheFile": "work/product-image-pipeline/cache/0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 27210,
+    "contentType": "image/webp",
+    "sha256": "99369673667e7d1b71aef82ccdbd8dc8c16e81983a3ee157e91573a705da5c84"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf350sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF350SDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf350sdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350SDC.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF350SDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF350SDC\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350sdc/8cf95d66-efec-4583-9ba2-0f360d4b0d74.webp"
+   ],
+   "key": "products/gl-icf350sdc/8cf95d66-efec-4583-9ba2-0f360d4b0d74.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf350sdc/8cf95d66-efec-4583-9ba2-0f360d4b0d74.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 71026,
+    "kind": "jpeg",
+    "sha256": "5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953",
+    "cacheFile": "work/product-image-pipeline/cache/5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 28168,
+    "contentType": "image/webp",
+    "sha256": "1a77e6a82225b739c5ea2d173fb236dbac2fd9120beccc4ccd0896ef7eaa6a37"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf400cgx",
+   "brand": "Mazaya",
+   "model": "GL-ICF400CGX",
+   "sourcePage": "https://mazayauae.com/product/gl-icf400cgx/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF400CGX.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF400CGX\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF400CGX\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf400cgx/6cdf8088-0f40-4def-8b12-c799497d2c74.webp"
+   ],
+   "key": "products/gl-icf400cgx/6cdf8088-0f40-4def-8b12-c799497d2c74.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf400cgx/6cdf8088-0f40-4def-8b12-c799497d2c74.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 73191,
+    "kind": "jpeg",
+    "sha256": "e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba",
+    "cacheFile": "work/product-image-pipeline/cache/e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 31082,
+    "contentType": "image/webp",
+    "sha256": "e6e5936e038470a8b4631d47f23d897d161d5d8d6784d456af8550fa95b5bde7"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf450cgq",
+   "brand": "Mazaya",
+   "model": "GL-ICF450CGQ",
+   "sourcePage": "https://mazayauae.com/product/gl-icf450cgq/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450CGQ.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF450CGQ\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF450CGQ\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgq/293aa6cf-8414-4b5b-a0c1-25d6691cbe0c.webp"
+   ],
+   "key": "products/gl-icf450cgq/293aa6cf-8414-4b5b-a0c1-25d6691cbe0c.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450cgq/293aa6cf-8414-4b5b-a0c1-25d6691cbe0c.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 124887,
+    "kind": "jpeg",
+    "sha256": "2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1",
+    "cacheFile": "work/product-image-pipeline/cache/2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 36592,
+    "contentType": "image/webp",
+    "sha256": "5eec92e736f5378722f1cb3b8face0b2123478c4bb4bfe4035a834bc1f7e881f"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf450sdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF450SDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf450sdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450SDC.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF450SDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF450SDC\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450sdc/631f561e-8489-4dc5-bd70-e380a8ca94e6.webp"
+   ],
+   "key": "products/gl-icf450sdc/631f561e-8489-4dc5-bd70-e380a8ca94e6.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf450sdc/631f561e-8489-4dc5-bd70-e380a8ca94e6.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 112809,
+    "kind": "jpeg",
+    "sha256": "bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a",
+    "cacheFile": "work/product-image-pipeline/cache/bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 28210,
+    "contentType": "image/webp",
+    "sha256": "b18d4f8fee0cf28f467fac6b8c9a0ab7d6d2b74fca6e4868cb8b5e477821ad6a"
+   }
+  },
+  {
+   "id": "mazaya-gl-icf500fdc",
+   "brand": "Mazaya",
+   "model": "GL-ICF500FDC",
+   "sourcePage": "https://mazayauae.com/product/gl-icf500fdc/",
+   "sourceImage": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF500FDC.jpg",
+   "matchEvidence": "exact model in source title \"GL-ICF500FDC\"",
+   "reasons": [
+    "official mazayauae.com: exact model in source title \"GL-ICF500FDC\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf500fdc/ff040f5a-a71a-494b-bbf8-b4570560476c.webp"
+   ],
+   "key": "products/gl-icf500fdc/ff040f5a-a71a-494b-bbf8-b4570560476c.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/gl-icf500fdc/ff040f5a-a71a-494b-bbf8-b4570560476c.webp",
+   "source": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 121929,
+    "kind": "jpeg",
+    "sha256": "641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b",
+    "cacheFile": "work/product-image-pipeline/cache/641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b.jpeg"
+   },
+   "optimised": {
+    "width": 1181,
+    "height": 1181,
+    "bytes": 27200,
+    "contentType": "image/webp",
+    "sha256": "30fb3a2f4b14c05c86efcc1555b09f04e85c06d1b8d0d89768a3ed0d91cd0d70"
+   }
+  },
+  {
+   "id": "symphony-125dd-movicool",
+   "brand": "Symphony",
+   "model": "125DD-MOVICOOL",
+   "sourcePage": "Symphony-2026-Rev(F).pdf (thumbnail, rejected)",
+   "sourceImage": "work/catalogue-images/symphony-official/Movicool-DD125.png",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (Symphony manufacturer website)"
+   ],
+   "licensing": "manufacturer image; reseller permission not confirmed",
+   "visuallyReviewed": true,
+   "action": "HELD_LICENSING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/125dd-movicool/54c7df2b-8fea-4fe1-809e-47118507f9fd.webp"
+   ],
+   "key": "products/125dd-movicool/54c7df2b-8fea-4fe1-809e-47118507f9fd.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/125dd-movicool/54c7df2b-8fea-4fe1-809e-47118507f9fd.webp",
+   "source": {
+    "width": 362,
+    "height": 621,
+    "bytes": 93869,
+    "kind": "png",
+    "sha256": "60c3b49a18687613020bac364d0c6c723ebc6112a7cbf786d8de5c1dea080a39",
+    "cacheFile": "work/product-image-pipeline/cache/60c3b49a18687613020bac364d0c6c723ebc6112a7cbf786d8de5c1dea080a39.png"
+   },
+   "optimised": {
+    "width": 362,
+    "height": 621,
+    "bytes": 24698,
+    "contentType": "image/webp",
+    "sha256": "fb8e6fb122f4fbcf2fbd457d638b1d9a07426790d015239c468ef01ff57e08d7"
+   }
+  },
+  {
+   "id": "symphony-125l-movicool",
+   "brand": "Symphony",
+   "model": "125L-MOVICOOL",
+   "sourcePage": "Symphony-2026-Rev(F).pdf (thumbnail, rejected)",
+   "sourceImage": "work/catalogue-images/symphony-official/Movicool-L-125.png",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (Symphony manufacturer website)"
+   ],
+   "licensing": "manufacturer image; reseller permission not confirmed",
+   "visuallyReviewed": true,
+   "action": "HELD_LICENSING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/125l-movicool/c91502f2-3623-4ed5-9ab2-e3ba2e2d5e34.webp"
+   ],
+   "key": "products/125l-movicool/c91502f2-3623-4ed5-9ab2-e3ba2e2d5e34.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/125l-movicool/c91502f2-3623-4ed5-9ab2-e3ba2e2d5e34.webp",
+   "source": {
+    "width": 362,
+    "height": 487,
+    "bytes": 65937,
+    "kind": "png",
+    "sha256": "1debe934e3ac15d3223eb6c2ab7f9672ae2183b59de20ce739b8d23b8d956350",
+    "cacheFile": "work/product-image-pipeline/cache/1debe934e3ac15d3223eb6c2ab7f9672ae2183b59de20ce739b8d23b8d956350.png"
+   },
+   "optimised": {
+    "width": 362,
+    "height": 487,
+    "bytes": 17062,
+    "contentType": "image/webp",
+    "sha256": "c78648f59c1408ebf12f4786103f4e1742026d46fd97a687e5e148a27cfb12ec"
+   }
+  },
+  {
+   "id": "symphony-i200l-movicool",
+   "brand": "Symphony",
+   "model": "i200L-MOVICOOL",
+   "sourcePage": "Symphony-2026-Rev(F).pdf (thumbnail, rejected)",
+   "sourceImage": "work/catalogue-images/symphony-official/Movicool-L200i.png",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (Symphony manufacturer website)"
+   ],
+   "licensing": "manufacturer image; reseller permission not confirmed",
+   "visuallyReviewed": true,
+   "action": "HELD_LICENSING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i200l-movicool/daeba9a6-e498-4b59-967a-5b6ec3d19211.webp"
+   ],
+   "key": "products/i200l-movicool/daeba9a6-e498-4b59-967a-5b6ec3d19211.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i200l-movicool/daeba9a6-e498-4b59-967a-5b6ec3d19211.webp",
+   "source": {
+    "width": 362,
+    "height": 582,
+    "bytes": 75086,
+    "kind": "png",
+    "sha256": "e7163be76f79a755edfe30ff7740f0d0ad0250736e86fe844e6b44f5ee07c869",
+    "cacheFile": "work/product-image-pipeline/cache/e7163be76f79a755edfe30ff7740f0d0ad0250736e86fe844e6b44f5ee07c869.png"
+   },
+   "optimised": {
+    "width": 362,
+    "height": 582,
+    "bytes": 16130,
+    "contentType": "image/webp",
+    "sha256": "804b5656082ab39fd2b753608c74af1fa15d7e96638933bedaa3b5828a7d481c"
+   }
+  },
+  {
+   "id": "symphony-i200xl-movicool",
+   "brand": "Symphony",
+   "model": "i200XL-MOVICOOL",
+   "sourcePage": "Symphony-2026-Rev(F).pdf (thumbnail, rejected)",
+   "sourceImage": "work/catalogue-images/symphony-official/Movicool-XL-200i.png",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (Symphony manufacturer website)"
+   ],
+   "licensing": "manufacturer image; reseller permission not confirmed",
+   "visuallyReviewed": true,
+   "action": "HELD_LICENSING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i200xl-movicool/d7169080-2269-476e-bfae-e7a80a88fdda.webp"
+   ],
+   "key": "products/i200xl-movicool/d7169080-2269-476e-bfae-e7a80a88fdda.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/i200xl-movicool/d7169080-2269-476e-bfae-e7a80a88fdda.webp",
+   "source": {
+    "width": 362,
+    "height": 513,
+    "bytes": 64007,
+    "kind": "png",
+    "sha256": "e73c5492bcbe8c6411f036a7ef76a24b5ee4ba405897471b28be312f4122f125",
+    "cacheFile": "work/product-image-pipeline/cache/e73c5492bcbe8c6411f036a7ef76a24b5ee4ba405897471b28be312f4122f125.png"
+   },
+   "optimised": {
+    "width": 362,
+    "height": 513,
+    "bytes": 17702,
+    "contentType": "image/webp",
+    "sha256": "c57e9aef3f8480ccaee6614ebab3becd38a87515b0b2e9ecc5e8b077177693d4"
+   }
+  },
+  {
+   "id": "symphony-xl-70storm",
+   "brand": "Symphony",
+   "model": "XL-70STORM",
+   "sourcePage": "Symphony-2026-Rev(F).pdf (thumbnail, rejected)",
+   "sourceImage": "work/catalogue-images/symphony-official/storm-70-xl-gallery4.png",
+   "matchEvidence": "manual review: VERIFIED",
+   "reasons": [
+    "approved in earlier manual review (Symphony manufacturer website)"
+   ],
+   "licensing": "manufacturer image; reseller permission not confirmed",
+   "visuallyReviewed": true,
+   "action": "HELD_LICENSING",
+   "status": "draft",
+   "updatedAt": "2026-10-10T12:24:03.793Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/xl-70storm/d9bf70ab-76c4-4f79-bc40-19bb14d5d04b.webp"
+   ],
+   "key": "products/xl-70storm/d9bf70ab-76c4-4f79-bc40-19bb14d5d04b.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/xl-70storm/d9bf70ab-76c4-4f79-bc40-19bb14d5d04b.webp",
+   "source": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 326704,
+    "kind": "png",
+    "sha256": "8c5c73f15051b52951cddde18c94850d438343613032e2edea008389d2e97d6f",
+    "cacheFile": "work/product-image-pipeline/cache/8c5c73f15051b52951cddde18c94850d438343613032e2edea008389d2e97d6f.png"
+   },
+   "optimised": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 31642,
+    "contentType": "image/webp",
+    "sha256": "4aaf87d24cce1b3ae6ebca721003e70d1692b9e6844dc45a0600713f5b1cffaa"
+   }
+  },
+  {
+   "id": "super-general-sgw-1056n",
+   "brand": "Super General",
+   "model": "SGW 1056N",
+   "sourcePage": "https://www.supergeneral.com/product/10kg-twin-tub-washing-machine-sgw1056n",
+   "sourceImage": "https://www.supergeneral.com/media/products/392/1668066971-sgw1056n-1.webp",
+   "matchEvidence": "exact model in product URL and page title \"Buy Super General 10Kg Twin Tub Washing Machine\"",
+   "reasons": [
+    "official supergeneral.com: exact model in product URL and page title \"Buy Super General 10Kg Twin Tub Washing Machine\"",
+    "served as image/webp, bytes are png"
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-13T10:54:08.198Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgw1056n/0ad57cd4-2083-4814-9699-e26000a785a8.webp"
+   ],
+   "key": "products/sgw1056n/0ad57cd4-2083-4814-9699-e26000a785a8.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgw1056n/0ad57cd4-2083-4814-9699-e26000a785a8.webp",
+   "source": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 871641,
+    "kind": "png",
+    "sha256": "2d56862f7bd93a01d45163bb1847d446f50309945d60f151dfbb7347278898f7",
+    "cacheFile": "work/product-image-pipeline/cache/2d56862f7bd93a01d45163bb1847d446f50309945d60f151dfbb7347278898f7.png"
+   },
+   "optimised": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 26548,
+    "contentType": "image/webp",
+    "sha256": "a2d320922b15fe11828c0850ea9ba7cde23cb7c118293b2305478bd30fe94d0b"
+   }
+  },
+  {
+   "id": "super-general-sg-aa-110t5",
+   "brand": "Super General",
+   "model": "SG AA 110T5",
+   "sourcePage": "https://www.supergeneral.com/product/5-tap-water-cooler-sgaa110t5",
+   "sourceImage": "https://www.supergeneral.com/media/products/409/1668070496-sgaa110t5-1.webp",
+   "matchEvidence": "exact model in product URL and page title \"5 Tap Water Cooler with Built-in Purifier - Super General\"",
+   "reasons": [
+    "official supergeneral.com: exact model in product URL and page title \"5 Tap Water Cooler with Built-in Purifier - Super General\"",
+    "served as image/webp, bytes are png"
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-13T10:54:08.198Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgaa110t5/7e732e5b-e0eb-43d7-ad6f-8651d96a9512.webp"
+   ],
+   "key": "products/sgaa110t5/7e732e5b-e0eb-43d7-ad6f-8651d96a9512.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgaa110t5/7e732e5b-e0eb-43d7-ad6f-8651d96a9512.webp",
+   "source": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 1050857,
+    "kind": "png",
+    "sha256": "a33ffcf149ec2e5801efbd4e5827bcd2a3896eb8dccbb80e974316e630d3eeac",
+    "cacheFile": "work/product-image-pipeline/cache/a33ffcf149ec2e5801efbd4e5827bcd2a3896eb8dccbb80e974316e630d3eeac.png"
+   },
+   "optimised": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 59878,
+    "contentType": "image/webp",
+    "sha256": "f88b052e87b86ce5e861110c84e6a85e575fd05f11b363448fd7da180b79b7b2"
+   }
+  },
+  {
+   "id": "super-general-sgl-1171",
+   "brand": "Super General",
+   "model": "SGL 1171",
+   "sourcePage": "https://www.supergeneral.com/product/free-standing-with-cabinet-sgl1171",
+   "sourceImage": "https://www.supergeneral.com/media/products/468/1668071037-sgl1171-1.webp",
+   "matchEvidence": "exact model in product URL and page title \"Buy Super General Free Standing With Cabinet\"",
+   "reasons": [
+    "official supergeneral.com: exact model in product URL and page title \"Buy Super General Free Standing With Cabinet\"",
+    "served as image/webp, bytes are png"
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-13T10:54:08.198Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgl1171/ef1a71de-4f18-4d2e-b720-20ec482d1716.webp"
+   ],
+   "key": "products/sgl1171/ef1a71de-4f18-4d2e-b720-20ec482d1716.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgl1171/ef1a71de-4f18-4d2e-b720-20ec482d1716.webp",
+   "source": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 438635,
+    "kind": "png",
+    "sha256": "5db22394ffc94fc8d69b5d9745fc5d94bd44f97498e60a2edcff573b0f070496",
+    "cacheFile": "work/product-image-pipeline/cache/5db22394ffc94fc8d69b5d9745fc5d94bd44f97498e60a2edcff573b0f070496.png"
+   },
+   "optimised": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 22698,
+    "contentType": "image/webp",
+    "sha256": "62f00fa7a63e12b41a6b2e425357d8b8433083edd773331994601635f6a6ada8"
+   }
+  },
+  {
+   "id": "super-general-sg-cl-50t3",
+   "brand": "Super General",
+   "model": "SG CL 50T3",
+   "sourcePage": "https://www.supergeneral.com/product/3-tap-water-cooler-sgcl50t3",
+   "sourceImage": "https://www.supergeneral.com/media/products/404/1668070715-sgcl80t3-1-1.webp",
+   "matchEvidence": "exact model in product URL and page title \"Buy Super General 3 Tap Water Cooler\"",
+   "reasons": [
+    "official supergeneral.com: exact model in product URL and page title \"Buy Super General 3 Tap Water Cooler\"",
+    "served as image/webp, bytes are png"
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-13T10:54:08.198Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgcl50t3/28bf17c9-50bd-40d7-8931-479d8cf78018.webp"
+   ],
+   "key": "products/sgcl50t3/28bf17c9-50bd-40d7-8931-479d8cf78018.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgcl50t3/28bf17c9-50bd-40d7-8931-479d8cf78018.webp",
+   "source": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 1242755,
+    "kind": "png",
+    "sha256": "755ad4b23778027302e28c32c97097e6c61b2f64e0049177c44851670d8554b9",
+    "cacheFile": "work/product-image-pipeline/cache/755ad4b23778027302e28c32c97097e6c61b2f64e0049177c44851670d8554b9.png"
+   },
+   "optimised": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 58630,
+    "contentType": "image/webp",
+    "sha256": "6e477ce0e74939011019d2b618850b402fcbb1b37457c8aba4a9dc5c2ebcdcb5"
+   }
+  },
+  {
+   "id": "super-general-sgw7250nled",
+   "brand": "Super General",
+   "model": "SGW7250NLED",
+   "sourcePage": "https://www.supergeneral.com/product/7kg-front-load-washing-machine-sgw7250nled",
+   "sourceImage": "https://www.supergeneral.com/media/products/656/1705494901-1000x1200.webp",
+   "matchEvidence": "exact model in product URL and page title \"7 kg Front Load Washing Machine | Super General UAE\"",
+   "reasons": [
+    "official supergeneral.com: exact model in product URL and page title \"7 kg Front Load Washing Machine | Super General UAE\"",
+    "served as image/webp, bytes are png"
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-13T10:54:08.198Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgw7250nled/111f824a-43fe-4731-8c5f-7b82c484b4e0.webp"
+   ],
+   "key": "products/sgw7250nled/111f824a-43fe-4731-8c5f-7b82c484b4e0.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/sgw7250nled/111f824a-43fe-4731-8c5f-7b82c484b4e0.webp",
+   "source": {
+    "width": 1500,
+    "height": 1800,
+    "bytes": 1618125,
+    "kind": "png",
+    "sha256": "f5b0da5c9d73901214d41a65d9ffdff501714913672f10d6767bb27cb09ec57d",
+    "cacheFile": "work/product-image-pipeline/cache/f5b0da5c9d73901214d41a65d9ffdff501714913672f10d6767bb27cb09ec57d.png"
+   },
+   "optimised": {
+    "width": 1000,
+    "height": 1200,
+    "bytes": 32600,
+    "contentType": "image/webp",
+    "sha256": "16f435ec0d8506e3aeaf2c49e2c6062b922d7fb562c003858399f429f1f45cd6"
+   }
+  },
+  {
+   "id": "geepas-2-ton-split-air-conditioner-24000-btu-gacs2426pcue",
+   "brand": "Geepas",
+   "model": "GACS2426PCUE",
+   "sourcePage": "https://geepas.com/products/geepas-2-0-ton-split-ac-gacs2426pcue-24000-btu-piston-compressor",
+   "sourceImage": "https://cdn.shopify.com/s/files/1/0720/0879/4350/files/Artboard1_93ecb613-f240-4ac2-8d3f-0a7d9f4077c3.jpg?v=1779357139",
+   "matchEvidence": "exact model in source SKU \"GACS2426PCUE\"",
+   "reasons": [
+    "official geepas.com: exact model in source SKU \"GACS2426PCUE\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-15T05:30:05.258Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacs2426pcue/65d97c6f-872d-4113-9b59-d81139f77476.webp"
+   ],
+   "key": "products/ht-gp-gacs2426pcue/65d97c6f-872d-4113-9b59-d81139f77476.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacs2426pcue/65d97c6f-872d-4113-9b59-d81139f77476.webp",
+   "source": {
+    "width": 1080,
+    "height": 1080,
+    "bytes": 13696,
+    "kind": "webp",
+    "sha256": "3847fcd44642d2ed5fefb176404135761885b363e19bfd618feb16ddc0e95e96",
+    "cacheFile": "work/product-image-pipeline/cache/3847fcd44642d2ed5fefb176404135761885b363e19bfd618feb16ddc0e95e96.webp"
+   },
+   "optimised": {
+    "width": 1080,
+    "height": 1080,
+    "bytes": 10942,
+    "contentType": "image/webp",
+    "sha256": "675936dc9721711d8bf41b6e91e39afdda153f173790588ca0babcf7b72f24c5"
+   }
+  },
+  {
+   "id": "geepas-digital-air-cooler-45l-gac9433",
+   "brand": "Geepas",
+   "model": "GAC9433",
+   "sourcePage": "https://geepas.com/products/geepas-gac9433-digital-air-cooler-45l-large-water-tank-150w",
+   "sourceImage": "https://cdn.shopify.com/s/files/1/0720/0879/4350/files/Artboard1_52f4730f-4d11-4262-88b6-62e35b27faf7.jpg?v=1775622532",
+   "matchEvidence": "exact model in source SKU \"GAC9433\"",
+   "reasons": [
+    "official geepas.com: exact model in source SKU \"GAC9433\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-15T05:30:05.258Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gac9433/02fe2865-9ed8-440d-8611-209fc10e7ece.webp"
+   ],
+   "key": "products/ht-gp-gac9433/02fe2865-9ed8-440d-8611-209fc10e7ece.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gac9433/02fe2865-9ed8-440d-8611-209fc10e7ece.webp",
+   "source": {
+    "width": 1080,
+    "height": 1080,
+    "bytes": 43660,
+    "kind": "webp",
+    "sha256": "f38a7aa28c05fd33f29efac9d75d0a2de7f548ca5b559ad3bb6764b319b4d17f",
+    "cacheFile": "work/product-image-pipeline/cache/f38a7aa28c05fd33f29efac9d75d0a2de7f548ca5b559ad3bb6764b319b4d17f.webp"
+   },
+   "optimised": {
+    "width": 1080,
+    "height": 1080,
+    "bytes": 37062,
+    "contentType": "image/webp",
+    "sha256": "3981e908793b808506da7bf6c7c73e23b2d4278e60b37b654fb872307c73df4a"
+   }
+  },
+  {
+   "id": "geepas-1-5-ton-window-air-conditioner-gacw18015su",
+   "brand": "Geepas",
+   "model": "GACW18015SU",
+   "sourcePage": "https://geepas.com/products/geepas-gacw18015su-window-air-conditioner-18000-btu",
+   "sourceImage": "https://cdn.shopify.com/s/files/1/0720/0879/4350/files/WhatsApp_Image_2026-07-01_at_2.57.13_PM.jpg?v=1782898070",
+   "matchEvidence": "exact model in source SKU \"GACW18015SU\"",
+   "reasons": [
+    "official geepas.com: exact model in source SKU \"GACW18015SU\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-15T05:30:05.258Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacw18015su/03312b63-f25f-447e-ba65-c1002f3688ba.webp"
+   ],
+   "key": "products/ht-gp-gacw18015su/03312b63-f25f-447e-ba65-c1002f3688ba.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacw18015su/03312b63-f25f-447e-ba65-c1002f3688ba.webp",
+   "source": {
+    "width": 1600,
+    "height": 1600,
+    "bytes": 104592,
+    "kind": "webp",
+    "sha256": "8d9a74f5a9a2c2cac8986a5d0fd7a3d4156c7bbe8bfcd0205e2404a5be902d94",
+    "cacheFile": "work/product-image-pipeline/cache/8d9a74f5a9a2c2cac8986a5d0fd7a3d4156c7bbe8bfcd0205e2404a5be902d94.webp"
+   },
+   "optimised": {
+    "width": 1200,
+    "height": 1200,
+    "bytes": 49894,
+    "contentType": "image/webp",
+    "sha256": "0602a893fb58df9f6109fd01e128a861c6a126755e26da9d038550f184879665"
+   }
+  },
+  {
+   "id": "geepas-1-5-ton-window-air-conditioner-gacw1878cu",
+   "brand": "Geepas",
+   "model": "GACW1878CU",
+   "sourcePage": "https://geepas.com/products/geepas-gacw1878cu-window-air-conditioner-17570-btu",
+   "sourceImage": "https://cdn.shopify.com/s/files/1/0720/0879/4350/files/GACW1878CU.jpg?v=1771912180",
+   "matchEvidence": "exact model in source SKU \"GACW1878CU\"",
+   "reasons": [
+    "official geepas.com: exact model in source SKU \"GACW1878CU\""
+   ],
+   "licensing": "official brand website image; reseller reuse not confirmed in writing",
+   "visuallyReviewed": true,
+   "action": "UPLOAD_AND_SET",
+   "status": "draft",
+   "updatedAt": "2026-10-15T05:30:05.258Z",
+   "before": [],
+   "after": [
+    "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacw1878cu/326f66e5-7b70-44a3-b1fc-9c17abd9a0bb.webp"
+   ],
+   "key": "products/ht-gp-gacw1878cu/326f66e5-7b70-44a3-b1fc-9c17abd9a0bb.webp",
+   "url": "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/ht-gp-gacw1878cu/326f66e5-7b70-44a3-b1fc-9c17abd9a0bb.webp",
+   "source": {
+    "width": 4359,
+    "height": 4359,
+    "bytes": 527422,
+    "kind": "webp",
+    "sha256": "47c6ddec138cc0c8e3928f34d20139a9773994128189c94c855cf562235a4d6d",
+    "cacheFile": "work/product-image-pipeline/cache/47c6ddec138cc0c8e3928f34d20139a9773994128189c94c855cf562235a4d6d.webp"
+   },
+   "optimised": {
+    "width": 1200,
+    "height": 1200,
+    "bytes": 53958,
+    "contentType": "image/webp",
+    "sha256": "d224fce07d64e6346398d6d5197f267668f0d5675fcadc10924d17429374b8b3"
+   }
+  }
+ ]
+}

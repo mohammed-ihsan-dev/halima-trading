@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:31.983Z",
+ "document": {
+  "_id": "6ad07f2a0880c5d00064916d",
+  "id": "panasonic-na-fd13x3brn",
+  "slug": "13kg-top-load-fully-automatic-washing-machine-na-fd13x3brn",
+  "sku": "NAFD13X3BRN",
+  "name": "13kg Top Load Fully Automatic Washing Machine",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-FD13X3BRN",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Fully automatic top-load washing machine with 13kg capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S500938791_1?1791822076"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:22:18.681Z",
+  "updatedAt": "2026-10-20T19:16:57.712Z"
+ }
+}

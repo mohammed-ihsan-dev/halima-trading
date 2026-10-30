@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:05.557Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d58c",
+  "id": "panasonic-na-22cer1bae",
+  "slug": "11kg-front-load-washing-machine-na-22cer1bae",
+  "sku": "NA22CER1BAE",
+  "name": "11kg Front Load Washing Machine",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-22CER1BAE",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "11kg front-load washing machine in silver.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://bf1af2.akinoncloudcdn.com/products/2025/12/06/627416/11bcb0dc-bc5c-40b2-a887-4ac422024d75.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.674Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:01.954Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d58b",
+  "id": "panasonic-na-18mg1wae",
+  "slug": "9kg-front-load-washing-machine-na-18mg1wae",
+  "sku": "NA18MG1WAE",
+  "name": "9kg Front Load Washing Machine",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-18MG1WAE",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "9kg front-load washing machine in white.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://bf1af2.akinoncloudcdn.com/products/2024/12/17/322586/93cfbca4-5b0d-4721-8955-7542841780a9_size1920x1920.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.635Z"
+ }
+}

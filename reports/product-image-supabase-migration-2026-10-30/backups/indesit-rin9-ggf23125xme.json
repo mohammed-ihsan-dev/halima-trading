@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:10.678Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d8c",
+  "id": "indesit-rin9-ggf23125xme",
+  "slug": "90x60-indesit-90-60-gas-cooker-cast-iron-fan-s-s-rin9-ggf23125xme",
+  "sku": "RIN9-GGF23125XME",
+  "name": "Indesit RIN9-GGF23125XME – INDESIT 90/60 GAS COOKER CAST-IRON FAN S.S",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "RIN9-GGF23125XME",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "INDESIT 90/60 GAS COOKER CAST-IRON FAN S.S; Size: 90x60; Origin: EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S500946785_1?1790345166"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.348Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

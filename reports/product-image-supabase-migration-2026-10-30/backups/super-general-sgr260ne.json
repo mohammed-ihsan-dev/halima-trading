@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:58.935Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006cf",
+  "id": "super-general-sgr260ne",
+  "slug": "super-general-sgr260ne",
+  "sku": "SGR260NE",
+  "name": "S.G. REFRIGERATOR",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGR260NE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "S.G. REFRIGERATOR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://f.nooncdn.com/p/pzsku/Z7FB736C3F926C099A394Z/45/_/1779704634/dbd1edb0-bd01-403a-bfbb-56c450063e12.jpg?width=original"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.141Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

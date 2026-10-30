@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:00.286Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d89",
+  "id": "indesit-dfg-1581-kuk",
+  "slug": "13pl-5prg-ind-dish-washer-5-prg-13pl-black-color-dfg-1581-kuk",
+  "sku": "DFG-1581-KUK",
+  "name": "Indesit DFG-1581-KUK – IND DISH WASHER 5 PRG, 13PL, BLACK Color",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "DFG-1581-KUK",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "General",
+  "description": "IND DISH WASHER 5 PRG, 13PL, BLACK Color; Size: 13PL 5PRG; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.appliancesdirect.co.uk/Images/A2DFG15B1K_1_Supersize.jpg?v=18"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.344Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

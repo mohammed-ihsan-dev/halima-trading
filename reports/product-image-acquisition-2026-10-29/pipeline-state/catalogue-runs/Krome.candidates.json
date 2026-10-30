@@ -1,0 +1,553 @@
+{
+ "generatedAt": "2026-10-29T14:11:58.508Z",
+ "pdf": "KROME CATALOG 25-26.pdf",
+ "pdfSha256": "9d7b6bb209cbf139cdc15c15a35eaaf7d2972415b00087ee83319c220d9a1b5b",
+ "brand": "Krome",
+ "pages": 136,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": "Krome (supplier catalogue)",
+  "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission.",
+  "evidence": [
+   {
+    "url": "catalogues-source/KROME CATALOG 25-26.pdf",
+    "finding": "Full-text scan for copyright / rights reserved / reproduction / permission / licence / usage statements: none found (scan 2026-10-15)."
+   }
+  ]
+ },
+ "products": {
+  "krome-kr-sap18ezt3": [
+   {
+    "productId": "krome-kr-sap18ezt3",
+    "model": "KR-SAP18EZT3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 7,
+    "evidence": {
+     "page": 7,
+     "text": "KR-SAP18EZT3",
+     "box": [
+      114.28,
+      230.72,
+      187.98,
+      242.62
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-SAP18EZT3"
+    ],
+    "regionId": "p7r1",
+    "regionImages": [
+     {
+      "xref": 29,
+      "box": [
+       383.21,
+       257.77,
+       568.17,
+       396.12
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     386.38,
+     257.67,
+     571.24,
+     396.94
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 247,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "low resolution: about 247 px on the longest side (minimum 400)"
+    ],
+    "identity": "EXACT_UNAMBIGUOUS",
+    "quality": "LOW_RESOLUTION",
+    "status": "EXACT_LOW_RESOLUTION",
+    "eligible": false,
+    "cropId": "304779bf2e1069026d3b",
+    "pageRender": "catalogue/krome/crops/304779bf2e1069026d3b.png",
+    "sourceSha256": "e525e73b8ec3343d980042361c1ba3fad8c56fc6512dc39f3da282bf6ebdbefd",
+    "extracted": "catalogue/krome/previews/e525e73b8ec3343d98004236.source.png",
+    "preview": "catalogue/krome/previews/652507a6f8e8aecdcc0c57bc.webp",
+    "previewSha256": "652507a6f8e8aecdcc0c57bc1a89ae8f54cdf17adafbf3313277a5730ddecfab",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     247,
+     187
+    ],
+    "highlight": "catalogue/krome/highlights/2a770b92bc2f5c97b014.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   }
+  ],
+  "krome-kr-ar24mt3": [
+   {
+    "productId": "krome-kr-ar24mt3",
+    "model": "KR-AR24MT3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 9,
+    "evidence": {
+     "page": 9,
+     "text": "KR-AR24MT3",
+     "box": [
+      284.89,
+      547.06,
+      357.45,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AR24MT3"
+    ],
+    "regionId": "p9r1",
+    "regionImages": [
+     {
+      "xref": 486,
+      "box": [
+       210.62,
+       337.03,
+       431.61,
+       501.56
+      ],
+      "asset": "assets/83ac1b9b30b0a21c3264bd9c.png",
+      "assetSha256": "83ac1b9b30b0a21c3264bd9c814e347602ea2dcf802eabb747e1b2926f8d81fd"
+     }
+    ],
+    "cropBox": [
+     203.99,
+     332.09,
+     438.24,
+     506.5
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 313,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 313 px on the longest side (minimum 400)",
+     "same image used for KR-AR18MT3, KR-AR30MT3"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "bcdebcc707c94c428338",
+    "pageRender": "catalogue/krome/crops/bcdebcc707c94c428338.png",
+    "sourceSha256": "352caf69ea62d09527efddc5fcf9302a287283ff6c9dddb6e18dc3d1f33b16db",
+    "extracted": "catalogue/krome/previews/352caf69ea62d09527efddc5.source.png",
+    "preview": "catalogue/krome/previews/fb19d06186f3434031489ebf.webp",
+    "previewSha256": "fb19d06186f3434031489ebf99839209dcc95a0f6fdf05040c682f953e3264ef",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     314,
+     234
+    ],
+    "highlight": "catalogue/krome/highlights/46f272add5e77bd217b1.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   },
+   {
+    "productId": "krome-kr-ar24mt3",
+    "model": "KR-AR24MT3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 9,
+    "evidence": {
+     "page": 9,
+     "text": "KR-AR24MT3",
+     "box": [
+      284.89,
+      547.06,
+      357.45,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AR24MT3"
+    ],
+    "regionId": "p9r2",
+    "regionImages": [
+     {
+      "xref": 487,
+      "box": [
+       115.59,
+       171.86,
+       528.12,
+       306.98
+      ],
+      "asset": "assets/3d9c1b50dc77cabd72d1f554.png",
+      "assetSha256": "3d9c1b50dc77cabd72d1f5545a37774fda82eceff25fba24069f82e9ad9db41b"
+     }
+    ],
+    "cropBox": [
+     103.21,
+     167.81,
+     540.5,
+     311.03
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 584,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "same image used for KR-AR18MT3, KR-AR30MT3"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "647789063437cb79115a",
+    "pageRender": "catalogue/krome/crops/647789063437cb79115a.png",
+    "sourceSha256": "dbc82f05ae848254ab0628a366211ffbcded4a618a8e4b502693bc9a8c31b268",
+    "extracted": "catalogue/krome/previews/dbc82f05ae848254ab0628a3.source.png",
+    "preview": "catalogue/krome/previews/a145f365b98f0bd9c3b257d7.webp",
+    "previewSha256": "a145f365b98f0bd9c3b257d72145b6edd62e87bafeee1781826614b6a0fd1ef2",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     584,
+     192
+    ],
+    "highlight": "catalogue/krome/highlights/ca7c7825830b627731b1.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   }
+  ],
+  "krome-kr-ar30mt3": [
+   {
+    "productId": "krome-kr-ar30mt3",
+    "model": "KR-AR30MT3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 10,
+    "evidence": {
+     "page": 10,
+     "text": "KR-AR30MT3",
+     "box": [
+      284.72,
+      547.06,
+      357.61,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AR30MT3"
+    ],
+    "regionId": "p10r1",
+    "regionImages": [
+     {
+      "xref": 486,
+      "box": [
+       210.62,
+       337.03,
+       431.61,
+       501.56
+      ],
+      "asset": "assets/83ac1b9b30b0a21c3264bd9c.png",
+      "assetSha256": "83ac1b9b30b0a21c3264bd9c814e347602ea2dcf802eabb747e1b2926f8d81fd"
+     }
+    ],
+    "cropBox": [
+     203.99,
+     332.09,
+     438.24,
+     506.5
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 313,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 313 px on the longest side (minimum 400)",
+     "same image used for KR-AR18MT3, KR-AR24MT3"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "ee0d1a65cdcb8913682e",
+    "pageRender": "catalogue/krome/crops/ee0d1a65cdcb8913682e.png",
+    "sourceSha256": "352caf69ea62d09527efddc5fcf9302a287283ff6c9dddb6e18dc3d1f33b16db",
+    "extracted": "catalogue/krome/previews/352caf69ea62d09527efddc5.source.png",
+    "preview": "catalogue/krome/previews/fb19d06186f3434031489ebf.webp",
+    "previewSha256": "fb19d06186f3434031489ebf99839209dcc95a0f6fdf05040c682f953e3264ef",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     314,
+     234
+    ],
+    "highlight": "catalogue/krome/highlights/252a2c87846a39d81044.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   },
+   {
+    "productId": "krome-kr-ar30mt3",
+    "model": "KR-AR30MT3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 10,
+    "evidence": {
+     "page": 10,
+     "text": "KR-AR30MT3",
+     "box": [
+      284.72,
+      547.06,
+      357.61,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AR30MT3"
+    ],
+    "regionId": "p10r2",
+    "regionImages": [
+     {
+      "xref": 487,
+      "box": [
+       114.88,
+       171.86,
+       527.41,
+       306.98
+      ],
+      "asset": "assets/3d9c1b50dc77cabd72d1f554.png",
+      "assetSha256": "3d9c1b50dc77cabd72d1f5545a37774fda82eceff25fba24069f82e9ad9db41b"
+     }
+    ],
+    "cropBox": [
+     102.5,
+     167.81,
+     539.79,
+     311.03
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 584,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "same image used for KR-AR18MT3, KR-AR24MT3"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "51425e4adfbd849e2206",
+    "pageRender": "catalogue/krome/crops/51425e4adfbd849e2206.png",
+    "sourceSha256": "dbc82f05ae848254ab0628a366211ffbcded4a618a8e4b502693bc9a8c31b268",
+    "extracted": "catalogue/krome/previews/dbc82f05ae848254ab0628a3.source.png",
+    "preview": "catalogue/krome/previews/a145f365b98f0bd9c3b257d7.webp",
+    "previewSha256": "a145f365b98f0bd9c3b257d72145b6edd62e87bafeee1781826614b6a0fd1ef2",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     584,
+     192
+    ],
+    "highlight": "catalogue/krome/highlights/ca1390b3f776940cfc34.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   }
+  ],
+  "krome-kr-awp18et3": [
+   {
+    "productId": "krome-kr-awp18et3",
+    "model": "KR-AWP18ET3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 18,
+    "evidence": {
+     "page": 18,
+     "text": "KR-AWP18ET3",
+     "box": [
+      282.49,
+      547.06,
+      359.85,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AWP18ET3"
+    ],
+    "regionId": "p18r1",
+    "regionImages": [
+     {
+      "xref": 60,
+      "box": [
+       125.15,
+       206.61,
+       517.39,
+       453.09
+      ],
+      "asset": "assets/3743a6bb7bcc43207e353156.png",
+      "assetSha256": "3743a6bb7bcc43207e35315627e9984b2070bc2218a9963e17be0257ea3ec7d7"
+     }
+    ],
+    "cropBox": [
+     113.38,
+     199.22,
+     529.16,
+     460.48
+    ],
+    "renderDpi": 96,
+    "nativeLongestPx": 555,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "OK",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "c6a5960435cf99485363",
+    "pageRender": "catalogue/krome/crops/c6a5960435cf99485363.png",
+    "sourceSha256": "2f96e0623f9fe628faff13dc0e3e3fa19562ef3f9167b0724a5e3b3f51c35565",
+    "extracted": "catalogue/krome/previews/2f96e0623f9fe628faff13dc.source.png",
+    "preview": "catalogue/krome/previews/e6bda1d5d3360c4430dcd676.webp",
+    "previewSha256": "e6bda1d5d3360c4430dcd676f3d79d08be329e7e3654e760fe708ca666258e35",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     555,
+     349
+    ],
+    "highlight": "catalogue/krome/highlights/76920abca7ce3a9fa94a.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   },
+   {
+    "productId": "krome-kr-awp18et3",
+    "model": "KR-AWP18ET3",
+    "pdf": "KROME CATALOG 25-26.pdf",
+    "page": 18,
+    "evidence": {
+     "page": 18,
+     "text": "KR-AWP18ET3",
+     "box": [
+      282.49,
+      547.06,
+      359.85,
+      558.99
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "KR-AWP18ET3"
+    ],
+    "regionId": "p18r2",
+    "regionImages": [
+     {
+      "xref": 58,
+      "box": [
+       617.75,
+       14.26,
+       628.44,
+       874.36
+      ],
+      "asset": "assets/af11c32252bd534251640be9.png",
+      "assetSha256": "af11c32252bd534251640be9a83a14f54fed5860af6ad222f80cf3882bb3efbd"
+     }
+    ],
+    "cropBox": [
+     617.43,
+     0,
+     628.76,
+     888.9
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 1247,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "OK",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "2997561571cda8ba6c14",
+    "pageRender": "catalogue/krome/crops/2997561571cda8ba6c14.png",
+    "sourceSha256": "f41eb5a21910d69f9100e9c5624538047a1616142e6f780ed9bd88075d1cf287",
+    "extracted": "catalogue/krome/previews/f41eb5a21910d69f9100e9c5.source.png",
+    "preview": "catalogue/krome/previews/d13bc5611f8ee48cbb527666.webp",
+    "previewSha256": "d13bc5611f8ee48cbb5276661f9110aa655dab95e8e6e98845a2b55cf4daf8a3",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     11,
+     800
+    ],
+    "highlight": "catalogue/krome/highlights/ffe1ddb2426bc3bad2b7.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": "Krome (supplier catalogue)",
+     "reason": "Krome catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission."
+    }
+   }
+  ]
+ }
+}

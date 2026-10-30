@@ -1,0 +1,144 @@
+{
+ "createdAt": "2026-10-18T20:35:16.015Z",
+ "auditedAt": "2026-10-18T20:35:08.950Z",
+ "size": 15,
+ "ids": [
+  "gree-gr-f4-matic-18c3-ind-gree",
+  "mazaya-gl-1200ddswdlx",
+  "super-general-sga121ae",
+  "daewoo-dw-dcc-s664hf",
+  "pro-general-prg18sac",
+  "p-1791539276164",
+  "p-1791607856183",
+  "phoenix-ph1019",
+  "p-1791532040999",
+  "indesit-ib-65b60ne",
+  "gree-gr-i-airy32-12c3-ind-gree",
+  "mazaya-gl-24wtc",
+  "super-general-sga18ae",
+  "daewoo-dw-dcd-8s15p",
+  "pro-general-prg18wac"
+ ],
+ "products": [
+  {
+   "id": "gree-gr-f4-matic-18c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-F4 MATIC-18C3-IND",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "mazaya-gl-1200ddswdlx",
+   "brand": "Mazaya",
+   "model": "GL-1200DDSWDLX",
+   "category": "Refrigeration",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "super-general-sga121ae",
+   "brand": "Super General",
+   "model": "SGA121AE",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "daewoo-dw-dcc-s664hf",
+   "brand": "Daewoo",
+   "model": "DW-DCC-S664HF",
+   "category": "Kitchen Appliances",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "pro-general-prg18sac",
+   "brand": "Pro General",
+   "model": "PRG18SAC",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "p-1791539276164",
+   "brand": "Toshiba",
+   "model": "TD-T25BS110HWM(MG)",
+   "category": "Laundry Appliances",
+   "status": "active",
+   "imageClass": "PLACEHOLDER"
+  },
+  {
+   "id": "p-1791607856183",
+   "brand": "Haier",
+   "model": "HSU-18LPA03/T2(T3&T4)",
+   "category": "Air Conditioning",
+   "status": "active",
+   "imageClass": "PLACEHOLDER"
+  },
+  {
+   "id": "phoenix-ph1019",
+   "brand": "Phoenix",
+   "model": "PH1019",
+   "category": "Kitchen Appliances",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "p-1791532040999",
+   "brand": "AKAI",
+   "model": "ACMA-A24FSN",
+   "category": "Air Conditioning",
+   "status": "active",
+   "imageClass": "PLACEHOLDER"
+  },
+  {
+   "id": "indesit-ib-65b60ne",
+   "brand": "Indesit",
+   "model": "IB-65B60NE",
+   "category": "Cooking Appliances",
+   "status": "draft",
+   "imageClass": "BROKEN"
+  },
+  {
+   "id": "gree-gr-i-airy32-12c3-ind-gree",
+   "brand": "Gree",
+   "model": "GR-I Airy32-12C3-IND",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "mazaya-gl-24wtc",
+   "brand": "Mazaya",
+   "model": "GL-24WTC",
+   "category": "Commercial Cooling",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "super-general-sga18ae",
+   "brand": "Super General",
+   "model": "SGA18AE",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "daewoo-dw-dcd-8s15p",
+   "brand": "Daewoo",
+   "model": "DW-DCD-8S15P",
+   "category": "Kitchen Appliances",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  },
+  {
+   "id": "pro-general-prg18wac",
+   "brand": "Pro General",
+   "model": "PRG18WAC",
+   "category": "Air Conditioning",
+   "status": "draft",
+   "imageClass": "NO_IMAGE"
+  }
+ ]
+}

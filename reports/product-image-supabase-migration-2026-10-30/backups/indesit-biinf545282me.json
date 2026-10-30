@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:13.872Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d8f",
+  "id": "indesit-biinf545282me",
+  "slug": "combi-indesit-bi-combi-340l-total-n-f-wht-romania-biinf545282me",
+  "sku": "BIINF545282ME",
+  "name": "Indesit BIINF545282ME – INDESIT BI COMBI 340L TOTAL N F WHT",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "BIINF545282ME",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT BI COMBI 340L TOTAL N F WHT; Size: COMBI; Origin: ROMANIA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/31WeyTIifJL._AC_UF894,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.058Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

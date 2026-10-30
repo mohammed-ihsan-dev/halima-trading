@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:04.893Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e15",
+  "id": "lg-t1785neht",
+  "slug": "12-kg-white-color-thailand-t1785neht",
+  "sku": "T1785NEHT",
+  "name": "LG Top Load Washer T1785NEHT – 12 KG - White color-THAILAND",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "T1785NEHT",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "12 KG - White color-THAILAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/washing-machines/md07572131/gallery/MZ1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:52.638Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

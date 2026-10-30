@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Check, Eye, ShoppingBag, Snowflake, Zap } from "lucide-react";
 import type { Product } from "@/data/products";
 import { displayPrice, hasSellingPrice, isInStock } from "@/lib/pricing";
-import WhatsAppQuoteButton from "@/components/WhatsAppQuoteButton";
+import PriceEnquiryButtons from "@/components/PriceEnquiryButtons";
 import { useCart } from "@/context/CartContext";
 import { withReturnPath } from "@/lib/catalogue-query";
 import { customerModel, displayModel } from "@/lib/product-model";
@@ -23,9 +23,10 @@ interface ProductCardProps {
 export default function ProductCard({ product, featuredStyle = false, returnTo, eagerImage = false }: ProductCardProps) {
   const { add, isInCart } = useCart();
   const inCart = isInCart(product.id);
-  // No selling price ("Contact for Price"): offer a WhatsApp price request instead of cart / Buy Now.
+  // No selling price ("Contact for Price"): WhatsApp / Email price requests replace cart, Buy Now and Details
+  // (the image and title still link to the product page).
   const quoteOnly = !hasSellingPrice(product);
-  const quoteItem = [{ name: product.name, brand: product.brand, model: customerModel(product) ?? undefined, sku: product.sku, slug: product.slug, id: product.id }];
+  const quoteItem = { name: product.name, brand: product.brand, model: customerModel(product) ?? undefined, sku: product.sku, slug: product.slug, id: product.id };
 
   const detailHref = withReturnPath(`/shop/${product.slug || product.id}`, returnTo, "/shop");
   const imgLoading = eagerImage ? "eager" : "lazy";
@@ -64,15 +65,10 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
             <span>▣ {product.subcategory || product.category}</span>
           </div>
           <div className={`feature-price${quoteOnly ? " is-quote" : ""}`}>{displayPrice(product)}</div>
+          {quoteOnly ? (
+            <PriceEnquiryButtons product={quoteItem} />
+          ) : (
           <div className="feature-actions flex flex-wrap items-center gap-2 mt-4">
-            {quoteOnly ? (
-              <WhatsAppQuoteButton
-                items={quoteItem}
-                label="WhatsApp for Price"
-                className="quote-action flex-1 min-h-[40px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
-              />
-            ) : (
-            <>
             {/* Red Button: Add to Cart */}
             <button
               className={`flex-1 min-h-[40px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-white border-0 cursor-pointer ${
@@ -102,8 +98,6 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
               <Zap size={15} />
               <span>Buy Now</span>
             </Link>
-            </>
-            )}
 
             {/* White/Outlined Button: View Details */}
             <Link
@@ -115,6 +109,7 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
               <span className="hidden sm:inline">Details</span>
             </Link>
           </div>
+          )}
         </div>
       </article>
     );
@@ -145,15 +140,10 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
         <p className="model">Model: {displayModel(product)}</p>
         <p>{(product.features || []).slice(0, 2).join(" · ")}</p>
         <div className={`price${quoteOnly ? " is-quote" : ""}`}>{displayPrice(product)}</div>
+        {quoteOnly ? (
+          <PriceEnquiryButtons product={quoteItem} />
+        ) : (
         <div className="product-actions flex flex-wrap items-center gap-2 mt-3">
-          {quoteOnly ? (
-            <WhatsAppQuoteButton
-              items={quoteItem}
-              label="WhatsApp for Price"
-              className="quote-action flex-1 min-h-[38px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline border-0"
-            />
-          ) : (
-          <>
           {/* Red Button: Add to Cart */}
           <button
             className={`flex-1 min-h-[38px] px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all text-white border-0 cursor-pointer ${
@@ -184,8 +174,6 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
             <Zap size={14} />
             <span>Buy Now</span>
           </Link>
-          </>
-          )}
 
           {/* White/Outlined Button: View Details */}
           <Link
@@ -197,6 +185,7 @@ export default function ProductCard({ product, featuredStyle = false, returnTo, 
             <Eye size={14} />
           </Link>
         </div>
+        )}
       </div>
     </article>
   );

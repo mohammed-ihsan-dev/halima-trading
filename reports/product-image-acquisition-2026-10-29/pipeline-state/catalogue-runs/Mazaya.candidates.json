@@ -1,0 +1,2810 @@
+{
+ "generatedAt": "2026-10-29T14:11:06.294Z",
+ "pdf": "MAZAYA CATALOGUE 2025.pdf",
+ "pdfSha256": "16ff5fb5248d726b8f79aa12cd6752a2d0de55d671217d786a355ccab59f0324",
+ "brand": "Mazaya",
+ "pages": 24,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {
+  "mazaya-gl-24wtc": [
+   {
+    "productId": "mazaya-gl-24wtc",
+    "model": "GL-24WTC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 3,
+    "evidence": {
+     "page": 3,
+     "text": "GL-24WTC",
+     "box": [
+      317.65,
+      580.88,
+      356.67,
+      592.61
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-24WTC",
+     "GL-36WTC",
+     "GL-60WTC"
+    ],
+    "regionId": "p3r1",
+    "regionImages": [
+     {
+      "xref": 342,
+      "box": [
+       272.07,
+       118.91,
+       570.36,
+       467.67
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 367,
+      "box": [
+       276.41,
+       122.44,
+       555.79,
+       453.18
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 362,
+      "box": [
+       204.87,
+       293.17,
+       352.79,
+       477.02
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 383,
+      "box": [
+       189.41,
+       282.29,
+       359.81,
+       477
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     196.93,
+     112.46,
+     575.81,
+     482.21
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 528,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-24WTC, GL-36WTC, GL-60WTC",
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "f4a4b28930937362cdd7",
+    "pageRender": "catalogue/mazaya/crops/f4a4b28930937362cdd7.png",
+    "sourceSha256": "19ceab18abf662f861f452317e938393c40a06d723babf94e122943ceeb16f70",
+    "extracted": "catalogue/mazaya/previews/19ceab18abf662f861f45231.source.png",
+    "preview": "catalogue/mazaya/previews/e1b45efaa54dcd4f13eb40a0.webp",
+    "previewSha256": "e1b45efaa54dcd4f13eb40a07f9631114682a61dd799bff3dd3e5946e9e71d5c",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     527,
+     514
+    ],
+    "highlight": "catalogue/mazaya/highlights/610e4c06dbd18308e2f6.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-24wtc",
+    "model": "GL-24WTC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 3,
+    "evidence": {
+     "page": 3,
+     "text": "GL-24WTC",
+     "box": [
+      317.65,
+      580.88,
+      356.67,
+      592.61
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-24WTC",
+     "GL-36WTC",
+     "GL-60WTC"
+    ],
+    "regionId": "p3r2",
+    "regionImages": [
+     {
+      "xref": 369,
+      "box": [
+       0.7,
+       14.17,
+       258.9,
+       382.16
+      ],
+      "asset": "assets/b146f5f6cab8ad890b3b6ea4.png",
+      "assetSha256": "b146f5f6cab8ad890b3b6ea4442d08e2dc3dad32b980322f085a75436d1ff6ee"
+     },
+     {
+      "xref": 352,
+      "box": [
+       75.66,
+       212.19,
+       276.99,
+       465.7
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 381,
+      "box": [
+       53.34,
+       195.38,
+       293.67,
+       470.01
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     0,
+     0.78,
+     280.33,
+     473.82
+    ],
+    "renderDpi": 131,
+    "nativeLongestPx": 857,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-24WTC, GL-36WTC, GL-60WTC",
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "de5f907b72855105fdc8",
+    "pageRender": "catalogue/mazaya/crops/de5f907b72855105fdc8.png",
+    "sourceSha256": "e035b662dc503f3812aece07aa898597d9a2736db3898152bbffbb1740cf8fb4",
+    "extracted": "catalogue/mazaya/previews/e035b662dc503f3812aece07.source.png",
+    "preview": "catalogue/mazaya/previews/35f6d572ac23f23d08003367.webp",
+    "previewSha256": "35f6d572ac23f23d0800336712cca83674af22757f28b60622b02074dc0ea50b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     474,
+     800
+    ],
+    "highlight": "catalogue/mazaya/highlights/71e697836effae367c10.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-36wtc": [
+   {
+    "productId": "mazaya-gl-36wtc",
+    "model": "GL-36WTC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 3,
+    "evidence": {
+     "page": 3,
+     "text": "GL-36WTC",
+     "box": [
+      382.99,
+      580.88,
+      422.01,
+      592.61
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-24WTC",
+     "GL-36WTC",
+     "GL-60WTC"
+    ],
+    "regionId": "p3r1",
+    "regionImages": [
+     {
+      "xref": 342,
+      "box": [
+       272.07,
+       118.91,
+       570.36,
+       467.67
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 367,
+      "box": [
+       276.41,
+       122.44,
+       555.79,
+       453.18
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 362,
+      "box": [
+       204.87,
+       293.17,
+       352.79,
+       477.02
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 383,
+      "box": [
+       189.41,
+       282.29,
+       359.81,
+       477
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     196.93,
+     112.46,
+     575.81,
+     482.21
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 528,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-24WTC, GL-36WTC, GL-60WTC",
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "f4a4b28930937362cdd7",
+    "pageRender": "catalogue/mazaya/crops/f4a4b28930937362cdd7.png",
+    "sourceSha256": "19ceab18abf662f861f452317e938393c40a06d723babf94e122943ceeb16f70",
+    "extracted": "catalogue/mazaya/previews/19ceab18abf662f861f45231.source.png",
+    "preview": "catalogue/mazaya/previews/e1b45efaa54dcd4f13eb40a0.webp",
+    "previewSha256": "e1b45efaa54dcd4f13eb40a07f9631114682a61dd799bff3dd3e5946e9e71d5c",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     527,
+     514
+    ],
+    "highlight": "catalogue/mazaya/highlights/fc3f212876a9569e311e.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-36wtc",
+    "model": "GL-36WTC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 3,
+    "evidence": {
+     "page": 3,
+     "text": "GL-36WTC",
+     "box": [
+      382.99,
+      580.88,
+      422.01,
+      592.61
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-24WTC",
+     "GL-36WTC",
+     "GL-60WTC"
+    ],
+    "regionId": "p3r2",
+    "regionImages": [
+     {
+      "xref": 369,
+      "box": [
+       0.7,
+       14.17,
+       258.9,
+       382.16
+      ],
+      "asset": "assets/b146f5f6cab8ad890b3b6ea4.png",
+      "assetSha256": "b146f5f6cab8ad890b3b6ea4442d08e2dc3dad32b980322f085a75436d1ff6ee"
+     },
+     {
+      "xref": 352,
+      "box": [
+       75.66,
+       212.19,
+       276.99,
+       465.7
+      ],
+      "asset": null,
+      "assetSha256": null
+     },
+     {
+      "xref": 381,
+      "box": [
+       53.34,
+       195.38,
+       293.67,
+       470.01
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     0,
+     0.78,
+     280.33,
+     473.82
+    ],
+    "renderDpi": 131,
+    "nativeLongestPx": 857,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-24WTC, GL-36WTC, GL-60WTC",
+     "2 photos in this block — confirm which shows the product"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "de5f907b72855105fdc8",
+    "pageRender": "catalogue/mazaya/crops/de5f907b72855105fdc8.png",
+    "sourceSha256": "e035b662dc503f3812aece07aa898597d9a2736db3898152bbffbb1740cf8fb4",
+    "extracted": "catalogue/mazaya/previews/e035b662dc503f3812aece07.source.png",
+    "preview": "catalogue/mazaya/previews/35f6d572ac23f23d08003367.webp",
+    "previewSha256": "35f6d572ac23f23d0800336712cca83674af22757f28b60622b02074dc0ea50b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     474,
+     800
+    ],
+    "highlight": "catalogue/mazaya/highlights/ac2058440ada264250c5.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-25t2": [
+   {
+    "productId": "mazaya-me-25t2",
+    "model": "ME-25T2",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 5,
+    "evidence": {
+     "page": 5,
+     "text": "ME-25T2",
+     "box": [
+      51.64,
+      310.02,
+      98.42,
+      325.26
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-25T2"
+    ],
+    "regionId": "p5r1",
+    "regionImages": [
+     {
+      "xref": 515,
+      "box": [
+       114.64,
+       113.05,
+       232.08,
+       323.26
+      ],
+      "asset": "assets/25e473e007064c379fade768.png",
+      "assetSha256": "25e473e007064c379fade768979baf15c376ab7f558fa8434d6ede53d7316e80"
+     }
+    ],
+    "cropBox": [
+     117.15,
+     113.55,
+     231.01,
+     324.92
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 295,
+    "cropSource": "embedded-asset",
+    "asset": "assets/25e473e007064c379fade768.png",
+    "assetSha256": "25e473e007064c379fade768979baf15c376ab7f558fa8434d6ede53d7316e80",
+    "issues": [
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 295 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "0a834f7aa5aa9d1139f0",
+    "pageRender": "catalogue/mazaya/crops/0a834f7aa5aa9d1139f0.png",
+    "sourceSha256": "01b300118bb350c50c699ebcc918d9c277f05f4f862f1b1ae67f0bc3f1c9f8c6",
+    "extracted": "catalogue/mazaya/previews/01b300118bb350c50c699ebc.source.png",
+    "preview": "catalogue/mazaya/previews/1359d2db5d2f68f107962daa.webp",
+    "previewSha256": "1359d2db5d2f68f107962daa7be58b40dc571bc98840d91e010438a2e28a183f",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     150,
+     278
+    ],
+    "highlight": "catalogue/mazaya/highlights/82d64e41892cbffb1ef2.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-25t2",
+    "model": "ME-25T2",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 5,
+    "evidence": {
+     "page": 5,
+     "text": "ME-25T2",
+     "box": [
+      51.64,
+      310.02,
+      98.42,
+      325.26
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-25T2"
+    ],
+    "regionId": "p5r2",
+    "regionImages": [
+     {
+      "xref": 519,
+      "box": [
+       374.07,
+       146.6,
+       495.36,
+       360.96
+      ],
+      "asset": "assets/537f6bb664f5a0d757386bf5.png",
+      "assetSha256": "537f6bb664f5a0d757386bf574e88a4c2782dd0f8fe2dc2be1857e70da63a874"
+     }
+    ],
+    "cropBox": [
+     373.5,
+     145.49,
+     495.21,
+     362.79
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 303,
+    "cropSource": "embedded-asset",
+    "asset": "assets/537f6bb664f5a0d757386bf5.png",
+    "assetSha256": "537f6bb664f5a0d757386bf574e88a4c2782dd0f8fe2dc2be1857e70da63a874",
+    "issues": [
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 303 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "d837c51954fb1356c79e",
+    "pageRender": "catalogue/mazaya/crops/d837c51954fb1356c79e.png",
+    "sourceSha256": "08cef4203af1f029248c32d62a7a08094a7118552e25ce2119a17e5cb0ab39ee",
+    "extracted": "catalogue/mazaya/previews/08cef4203af1f029248c32d6.source.png",
+    "preview": "catalogue/mazaya/previews/997b61d03e350b950caf0b62.webp",
+    "previewSha256": "997b61d03e350b950caf0b62926d0545cb3282076fb7db88dfe2a131a29a75ba",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     160,
+     286
+    ],
+    "highlight": "catalogue/mazaya/highlights/8336db67633d3c06acd0.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-25t2",
+    "model": "ME-25T2",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 5,
+    "evidence": {
+     "page": 5,
+     "text": "ME-25T2",
+     "box": [
+      51.64,
+      310.02,
+      98.42,
+      325.26
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-25T2"
+    ],
+    "regionId": "p5r5",
+    "regionImages": [
+     {
+      "xref": 3352,
+      "box": [
+       413.86,
+       63.17,
+       547.54,
+       130.6
+      ],
+      "asset": "assets/49d1c0bb250aec09dae166a8.png",
+      "assetSha256": "49d1c0bb250aec09dae166a8c5d3d0257bbe95592c328f9702d923e66a9981e6"
+     }
+    ],
+    "cropBox": [
+     412.06,
+     64.84,
+     551.49,
+     132.52
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 194,
+    "cropSource": "embedded-asset",
+    "asset": "assets/49d1c0bb250aec09dae166a8.png",
+    "assetSha256": "49d1c0bb250aec09dae166a8c5d3d0257bbe95592c328f9702d923e66a9981e6",
+    "issues": [
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 194 px on the longest side (minimum 400)",
+     "same image used for ME-85T4, ME-150T5"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "a0a25d09a382976137a1",
+    "pageRender": "catalogue/mazaya/crops/a0a25d09a382976137a1.png",
+    "sourceSha256": "7502488fa47ff6ec532a8c312e655907d931cf0630f77db8fc23855ed6939d7d",
+    "extracted": "catalogue/mazaya/previews/7502488fa47ff6ec532a8c31.source.png",
+    "preview": "catalogue/mazaya/previews/3f80998b7b2fcfedd7401b9b.webp",
+    "previewSha256": "3f80998b7b2fcfedd7401b9ba28a5bb4cf4384d9e9d21680d0ecab0747e2795d",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     186,
+     93
+    ],
+    "highlight": "catalogue/mazaya/highlights/46925efc45390757ae5f.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-45t3": [
+   {
+    "productId": "mazaya-me-45t3",
+    "model": "ME-45T3",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 5,
+    "evidence": {
+     "page": 5,
+     "text": "ME-45T3",
+     "box": [
+      44.51,
+      626.45,
+      92.17,
+      641.7
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-45T3"
+    ],
+    "regionId": "p5r3",
+    "regionImages": [
+     {
+      "xref": 523,
+      "box": [
+       355.02,
+       485.55,
+       507.06,
+       698.53
+      ],
+      "asset": "assets/4e69988ad6756d2fcc07dd99.png",
+      "assetSha256": "4e69988ad6756d2fcc07dd995cb921b3832538d885477ddb529840898316ffd1"
+     }
+    ],
+    "cropBox": [
+     359.46,
+     483.74,
+     506.93,
+     700.34
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 302,
+    "cropSource": "embedded-asset",
+    "asset": "assets/4e69988ad6756d2fcc07dd99.png",
+    "assetSha256": "4e69988ad6756d2fcc07dd995cb921b3832538d885477ddb529840898316ffd1",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "crop contains layout text: ME-65T3",
+     "low resolution: about 302 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "7b99a77f8a48f13ac494",
+    "pageRender": "catalogue/mazaya/crops/7b99a77f8a48f13ac494.png",
+    "sourceSha256": "55ba827fc50bd3a5f2312b96961a0375fad6ef1286f2ccc3800c2ac07d118437",
+    "extracted": "catalogue/mazaya/previews/55ba827fc50bd3a5f2312b96.source.png",
+    "preview": "catalogue/mazaya/previews/76c5628b8e708b033f387683.webp",
+    "previewSha256": "76c5628b8e708b033f3876836bc0d2f677eee8a3aa9c77b54e7f5a97551feb86",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     194,
+     286
+    ],
+    "highlight": "catalogue/mazaya/highlights/76f9a51eb0521cbd4b5b.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-45t3",
+    "model": "ME-45T3",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 5,
+    "evidence": {
+     "page": 5,
+     "text": "ME-45T3",
+     "box": [
+      44.51,
+      626.45,
+      92.17,
+      641.7
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-45T3"
+    ],
+    "regionId": "p5r4",
+    "regionImages": [
+     {
+      "xref": 527,
+      "box": [
+       107.91,
+       427.43,
+       248.03,
+       641.78
+      ],
+      "asset": "assets/04234f390788fa3f4908ac7d.png",
+      "assetSha256": "04234f390788fa3f4908ac7d956c405b8b26822e525033546a6a462b928e8239"
+     }
+    ],
+    "cropBox": [
+     113.46,
+     426.29,
+     247.51,
+     644.36
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 303,
+    "cropSource": "embedded-asset",
+    "asset": "assets/04234f390788fa3f4908ac7d.png",
+    "assetSha256": "04234f390788fa3f4908ac7d956c405b8b26822e525033546a6a462b928e8239",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 303 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "149b44c7f45c1a6e8f3f",
+    "pageRender": "catalogue/mazaya/crops/149b44c7f45c1a6e8f3f.png",
+    "sourceSha256": "590f6e218f790fbf7ccf8a3519cbdef0ad6b2120bc01f6c227bc58d47fe4590e",
+    "extracted": "catalogue/mazaya/previews/590f6e218f790fbf7ccf8a35.source.png",
+    "preview": "catalogue/mazaya/previews/140daa7f1f3412909b0097d8.webp",
+    "previewSha256": "140daa7f1f3412909b0097d830977f71d45cea2420fa1d8d2770757bf90e9a52",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     178,
+     286
+    ],
+    "highlight": "catalogue/mazaya/highlights/f5a5363bde11730bef39.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-100t5": [
+   {
+    "productId": "mazaya-me-100t5",
+    "model": "ME-100T5",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 6,
+    "evidence": {
+     "page": 6,
+     "text": "ME-100T5",
+     "box": [
+      305.89,
+      526.01,
+      358.78,
+      541.25
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-100T5"
+    ],
+    "regionId": "p6r2",
+    "regionImages": [
+     {
+      "xref": 607,
+      "box": [
+       41.49,
+       492.2,
+       261,
+       724.72
+      ],
+      "asset": "assets/220c6d9c6efb41aef0fb377e.png",
+      "assetSha256": "220c6d9c6efb41aef0fb377e0cb8eb77e810a584317cc53c5b5db4364ee6f3ad"
+     }
+    ],
+    "cropBox": [
+     46.53,
+     503.42,
+     250.21,
+     717.09
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 297,
+    "cropSource": "embedded-asset",
+    "asset": "assets/220c6d9c6efb41aef0fb377e.png",
+    "assetSha256": "220c6d9c6efb41aef0fb377e0cb8eb77e810a584317cc53c5b5db4364ee6f3ad",
+    "issues": [
+     "crop contains layout text: ME-125T5",
+     "low resolution: about 297 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "5704dab9f63fc0b5a971",
+    "pageRender": "catalogue/mazaya/crops/5704dab9f63fc0b5a971.png",
+    "sourceSha256": "88b63ae650edf5b398476c62306b2bcf6f4e41c9b9f962b3aeac177e65b23424",
+    "extracted": "catalogue/mazaya/previews/88b63ae650edf5b398476c62.source.png",
+    "preview": "catalogue/mazaya/previews/b3de05ee404cd46a860d22d9.webp",
+    "previewSha256": "b3de05ee404cd46a860d22d9e4284dad142d57e1a8f19c030a2b2b20d747bc42",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     268,
+     280
+    ],
+    "highlight": "catalogue/mazaya/highlights/552d0cf16e6c7215efe9.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-85t4": [
+   {
+    "productId": "mazaya-me-85t4",
+    "model": "ME-85T4",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 6,
+    "evidence": {
+     "page": 6,
+     "text": "ME-85T4",
+     "box": [
+      53.69,
+      381.1,
+      100.9,
+      396.34
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-85T4"
+    ],
+    "regionId": "p6r1",
+    "regionImages": [
+     {
+      "xref": 595,
+      "box": [
+       70.39,
+       -1.04,
+       595.78,
+       339.39
+      ],
+      "asset": "assets/f46c885af8932c5076fc3cb2.png",
+      "assetSha256": "f46c885af8932c5076fc3cb2da19077af2f4a9f65b942652072443d104467cc3"
+     },
+     {
+      "xref": 595,
+      "box": [
+       70.39,
+       -1.04,
+       595.78,
+       339.39
+      ],
+      "asset": "assets/f46c885af8932c5076fc3cb2.png",
+      "assetSha256": "f46c885af8932c5076fc3cb2da19077af2f4a9f65b942652072443d104467cc3"
+     },
+     {
+      "xref": 599,
+      "box": [
+       289.53,
+       96.38,
+       574.02,
+       338.48
+      ],
+      "asset": "assets/f0aa0a1ca0178e7d3303c0e7.png",
+      "assetSha256": "f0aa0a1ca0178e7d3303c0e7e09f37b57e69c89caa3955e8e910458d85c466c9"
+     },
+     {
+      "xref": 611,
+      "box": [
+       106.67,
+       187.91,
+       280.17,
+       389.68
+      ],
+      "asset": "assets/6c2bf97d8af8feed5f1efd3f.png",
+      "assetSha256": "6c2bf97d8af8feed5f1efd3fabe5d22e3feb233a15ddce570d164559810b9c95"
+     },
+     {
+      "xref": 3352,
+      "box": [
+       28.44,
+       104.88,
+       162.12,
+       172.31
+      ],
+      "asset": "assets/49d1c0bb250aec09dae166a8.png",
+      "assetSha256": "49d1c0bb250aec09dae166a8c5d3d0257bbe95592c328f9702d923e66a9981e6"
+     },
+     {
+      "xref": 603,
+      "box": [
+       333.96,
+       309.65,
+       526.73,
+       541.11
+      ],
+      "asset": "assets/5d28b53213113aa28b973228.png",
+      "assetSha256": "5d28b53213113aa28b9732289de12796069e6d38f39f527fb9837b52464b8236"
+     }
+    ],
+    "cropBox": [
+     13.66,
+     0,
+     595.28,
+     379.1
+    ],
+    "renderDpi": 134,
+    "nativeLongestPx": 1085,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "same image used for ME-25T2, ME-150T5"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "5d8dc77080300de811cd",
+    "pageRender": "catalogue/mazaya/crops/5d8dc77080300de811cd.png",
+    "sourceSha256": "b33aab67419cb5e231953c4bb21d0171f6442e0e124ded3604e66e2ba686f9e9",
+    "extracted": "catalogue/mazaya/previews/b33aab67419cb5e231953c4b.source.png",
+    "preview": "catalogue/mazaya/previews/1923d3c006af902b8a43e8e6.webp",
+    "previewSha256": "1923d3c006af902b8a43e8e6c2cee13c4f6be559409d22c3a4315bfda3649a82",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     800,
+     522
+    ],
+    "highlight": "catalogue/mazaya/highlights/dffee7f9ebf6e60abb41.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-150t5": [
+   {
+    "productId": "mazaya-me-150t5",
+    "model": "ME-150T5",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 7,
+    "evidence": {
+     "page": 7,
+     "text": "ME-150T5",
+     "box": [
+      274.89,
+      260.78,
+      326.24,
+      276.03
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-150T5"
+    ],
+    "regionId": "p7r2",
+    "regionImages": [
+     {
+      "xref": 688,
+      "box": [
+       35.45,
+       176.13,
+       263.88,
+       453.37
+      ],
+      "asset": "assets/c3b549ec7704f29514362312.png",
+      "assetSha256": "c3b549ec7704f29514362312d4d22c0268f4db567ec4984740bd09281fdc9209"
+     }
+    ],
+    "cropBox": [
+     39.13,
+     170.26,
+     264.51,
+     453.49
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 394,
+    "cropSource": "embedded-asset",
+    "asset": "assets/c3b549ec7704f29514362312.png",
+    "assetSha256": "c3b549ec7704f29514362312d4d22c0268f4db567ec4984740bd09281fdc9209",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 394 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "8ad9e0eb82b457c06f1b",
+    "pageRender": "catalogue/mazaya/crops/8ad9e0eb82b457c06f1b.png",
+    "sourceSha256": "396ad281a5db5c9eb3386e939bcf2e3ed2176ca7e17e5a20eaa7c943a0c22419",
+    "extracted": "catalogue/mazaya/previews/396ad281a5db5c9eb3386e93.source.png",
+    "preview": "catalogue/mazaya/previews/1b034d825f5f004c700481bb.webp",
+    "previewSha256": "1b034d825f5f004c700481bb9617c417f162666afe69f2ecb5408609ee6b76c5",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     296,
+     372
+    ],
+    "highlight": "catalogue/mazaya/highlights/e8ddf5d0bd4bfbebede7.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-150t5",
+    "model": "ME-150T5",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 7,
+    "evidence": {
+     "page": 7,
+     "text": "ME-150T5",
+     "box": [
+      274.89,
+      260.78,
+      326.24,
+      276.03
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-150T5"
+    ],
+    "regionId": "p7r3",
+    "regionImages": [
+     {
+      "xref": 3352,
+      "box": [
+       418.11,
+       80.91,
+       551.79,
+       148.34
+      ],
+      "asset": "assets/49d1c0bb250aec09dae166a8.png",
+      "assetSha256": "49d1c0bb250aec09dae166a8c5d3d0257bbe95592c328f9702d923e66a9981e6"
+     }
+    ],
+    "cropBox": [
+     416.32,
+     82.58,
+     555.74,
+     150.26
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 194,
+    "cropSource": "embedded-asset",
+    "asset": "assets/49d1c0bb250aec09dae166a8.png",
+    "assetSha256": "49d1c0bb250aec09dae166a8c5d3d0257bbe95592c328f9702d923e66a9981e6",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 194 px on the longest side (minimum 400)",
+     "same image used for ME-25T2, ME-85T4"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "f27e17a77c220d19c8d7",
+    "pageRender": "catalogue/mazaya/crops/f27e17a77c220d19c8d7.png",
+    "sourceSha256": "7502488fa47ff6ec532a8c312e655907d931cf0630f77db8fc23855ed6939d7d",
+    "extracted": "catalogue/mazaya/previews/7502488fa47ff6ec532a8c31.source.png",
+    "preview": "catalogue/mazaya/previews/3f80998b7b2fcfedd7401b9b.webp",
+    "previewSha256": "3f80998b7b2fcfedd7401b9ba28a5bb4cf4384d9e9d21680d0ecab0747e2795d",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     186,
+     93
+    ],
+    "highlight": "catalogue/mazaya/highlights/64b2a7f4d1abdb35b68c.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-1100dddlxw": [
+   {
+    "productId": "mazaya-gl-1100dddlxw",
+    "model": "GL-1100DDDLXW",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 11,
+    "evidence": {
+     "page": 11,
+     "text": "GL-1100DDDLXW",
+     "box": [
+      194.91,
+      542.04,
+      285.98,
+      557.29
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-1100DDDLXW"
+    ],
+    "regionId": "p11r1",
+    "regionImages": [
+     {
+      "xref": 943,
+      "box": [
+       393.84,
+       472.4,
+       562.27,
+       762.65
+      ],
+      "asset": "assets/ac1217a7e174385549d70a08.png",
+      "assetSha256": "ac1217a7e174385549d70a08714170b797c2f27e33e971b78bf156c6228b83b8"
+     }
+    ],
+    "cropBox": [
+     396.42,
+     463.97,
+     559.69,
+     761.74
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 414,
+    "cropSource": "embedded-asset",
+    "asset": "assets/ac1217a7e174385549d70a08.png",
+    "assetSha256": "ac1217a7e174385549d70a08714170b797c2f27e33e971b78bf156c6228b83b8",
+    "issues": [
+     "3 photos in this block — confirm which shows the product"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "OK",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "6dbabf399f0b6d1951a9",
+    "pageRender": "catalogue/mazaya/crops/6dbabf399f0b6d1951a9.png",
+    "sourceSha256": "6ceb51b0d5df0fa02e0591d2eed21ce3865439753a47e20a0c9dc2f65239997a",
+    "extracted": "catalogue/mazaya/previews/6ceb51b0d5df0fa02e0591d2.source.png",
+    "preview": "catalogue/mazaya/previews/35277aa205c46a7283bf4a1a.webp",
+    "previewSha256": "35277aa205c46a7283bf4a1a62047742a953b433ebd16ab4c52dc5a27214b1e3",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     214,
+     391
+    ],
+    "highlight": "catalogue/mazaya/highlights/99558b8beab884c5983b.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-1100dddlxw",
+    "model": "GL-1100DDDLXW",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 11,
+    "evidence": {
+     "page": 11,
+     "text": "GL-1100DDDLXW",
+     "box": [
+      194.91,
+      542.04,
+      285.98,
+      557.29
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-1100DDDLXW"
+    ],
+    "regionId": "p11r2",
+    "regionImages": [
+     {
+      "xref": 947,
+      "box": [
+       24.03,
+       466.9,
+       185.77,
+       753.71
+      ],
+      "asset": "assets/0167862b1e9de843702c2442.png",
+      "assetSha256": "0167862b1e9de843702c2442b9e00ea3bc31106fb71c3547af0b875383c70833"
+     }
+    ],
+    "cropBox": [
+     23.75,
+     464.22,
+     186.04,
+     762.14
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 414,
+    "cropSource": "embedded-asset",
+    "asset": "assets/0167862b1e9de843702c2442.png",
+    "assetSha256": "0167862b1e9de843702c2442b9e00ea3bc31106fb71c3547af0b875383c70833",
+    "issues": [
+     "3 photos in this block — confirm which shows the product"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "OK",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "91bae03001ece254bc69",
+    "pageRender": "catalogue/mazaya/crops/91bae03001ece254bc69.png",
+    "sourceSha256": "54ddee42647518908160c2a51c3e2a736267fbde21e927c6dd50ffc88d169c50",
+    "extracted": "catalogue/mazaya/previews/54ddee42647518908160c2a5.source.png",
+    "preview": "catalogue/mazaya/previews/093de8cff7998596733182a4.webp",
+    "previewSha256": "093de8cff7998596733182a41a19f048322964ecf421467e9c7464e89ae174b6",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     214,
+     390
+    ],
+    "highlight": "catalogue/mazaya/highlights/4ecc9e1e18eb6cf65fcb.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-1100dddlxw",
+    "model": "GL-1100DDDLXW",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 11,
+    "evidence": {
+     "page": 11,
+     "text": "GL-1100DDDLXW",
+     "box": [
+      194.91,
+      542.04,
+      285.98,
+      557.29
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-1100DDDLXW"
+    ],
+    "regionId": "p11r5",
+    "regionImages": [
+     {
+      "xref": 956,
+      "box": [
+       205.13,
+       421.97,
+       374.44,
+       506.66
+      ],
+      "asset": "assets/657f5a02e2ed4f15b2d5d0ca.png",
+      "assetSha256": "657f5a02e2ed4f15b2d5d0caa7123f72a902df11aa01e35ac80ad4df4d67bcd1"
+     }
+    ],
+    "cropBox": [
+     200.05,
+     419.43,
+     379.52,
+     509.2
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 250,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 250 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "4a20f14d86c3d5def100",
+    "pageRender": "catalogue/mazaya/crops/4a20f14d86c3d5def100.png",
+    "sourceSha256": "1cadcd1ed910ef3e5ae807c08c0846d10a405210072fea469557e4cc9536abb5",
+    "extracted": "catalogue/mazaya/previews/1cadcd1ed910ef3e5ae807c0.source.png",
+    "preview": "catalogue/mazaya/previews/8ae7346222267b8239b0b971.webp",
+    "previewSha256": "8ae7346222267b8239b0b971906f1b1c23162503d9e3adf29fab7517e2eb844b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     251,
+     126
+    ],
+    "highlight": "catalogue/mazaya/highlights/4d94c347df04b2aa164d.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-in681nfr": [
+   {
+    "productId": "mazaya-gl-in681nfr",
+    "model": "GL-IN681NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN681NFR",
+     "box": [
+      378.24,
+      375.18,
+      450.68,
+      390.43
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r1",
+    "regionImages": [
+     {
+      "xref": 1125,
+      "box": [
+       317.51,
+       101.24,
+       458.21,
+       351.75
+      ],
+      "asset": "assets/a2bb0516db9301878c05d155.png",
+      "assetSha256": "a2bb0516db9301878c05d1554bad71e3d049d2bc33027e53790ac4a1aed3cfd5"
+     }
+    ],
+    "cropBox": [
+     319.57,
+     107.82,
+     449.68,
+     358.85
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 350,
+    "cropSource": "embedded-asset",
+    "asset": "assets/a2bb0516db9301878c05d155.png",
+    "assetSha256": "a2bb0516db9301878c05d1554bad71e3d049d2bc33027e53790ac4a1aed3cfd5",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 350 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "95c2d0fbdb4666fd3cd5",
+    "pageRender": "catalogue/mazaya/crops/95c2d0fbdb4666fd3cd5.png",
+    "sourceSha256": "0edd5e4ec0507b8a025eba2e546ff469eb603dc8c1060d1a15b4661468b00b80",
+    "extracted": "catalogue/mazaya/previews/0edd5e4ec0507b8a025eba2e.source.png",
+    "preview": "catalogue/mazaya/previews/3cc7a9065bb73ef965faf5a8.webp",
+    "previewSha256": "3cc7a9065bb73ef965faf5a88a7a9c632f3a43a30b3ed26f3133775838d8786d",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     172,
+     329
+    ],
+    "highlight": "catalogue/mazaya/highlights/4780e2dcb69c2e9a2ce1.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in681nfr",
+    "model": "GL-IN681NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN681NFR",
+     "box": [
+      378.24,
+      375.18,
+      450.68,
+      390.43
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r2",
+    "regionImages": [
+     {
+      "xref": 1129,
+      "box": [
+       453.25,
+       112.1,
+       573.72,
+       368.23
+      ],
+      "asset": "assets/a181dc18cc345154e52de5a0.png",
+      "assetSha256": "a181dc18cc345154e52de5a05b6f0852a44cc377099fbb6a56b1daa3fa96a865"
+     }
+    ],
+    "cropBox": [
+     453.43,
+     110.1,
+     573.53,
+     358.72
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 347,
+    "cropSource": "embedded-asset",
+    "asset": "assets/a181dc18cc345154e52de5a0.png",
+    "assetSha256": "a181dc18cc345154e52de5a05b6f0852a44cc377099fbb6a56b1daa3fa96a865",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 347 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "3d94633423365c76f9df",
+    "pageRender": "catalogue/mazaya/crops/3d94633423365c76f9df.png",
+    "sourceSha256": "a4e7dc898dd816c4dc10c8403a53a65c9739d78381ae20f51517d64bcaa595be",
+    "extracted": "catalogue/mazaya/previews/a4e7dc898dd816c4dc10c840.source.png",
+    "preview": "catalogue/mazaya/previews/603ce166a192446101f0d5de.webp",
+    "previewSha256": "603ce166a192446101f0d5de7c2831a9f09673a177afec21be72765e72aabc55",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     159,
+     326
+    ],
+    "highlight": "catalogue/mazaya/highlights/087a52324e0b938ef511.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in681nfr",
+    "model": "GL-IN681NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN681NFR",
+     "box": [
+      378.24,
+      375.18,
+      450.68,
+      390.43
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r3",
+    "regionImages": [
+     {
+      "xref": 1133,
+      "box": [
+       33.86,
+       106.58,
+       192.44,
+       365
+      ],
+      "asset": "assets/cad5a679180a56b4dce3fcc7.png",
+      "assetSha256": "cad5a679180a56b4dce3fcc78cb5b2b9054ff59f37c20eb8fb8f6d6e8fe74504"
+     }
+    ],
+    "cropBox": [
+     31.04,
+     102.88,
+     181.63,
+     360.78
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 359,
+    "cropSource": "embedded-asset",
+    "asset": "assets/cad5a679180a56b4dce3fcc7.png",
+    "assetSha256": "cad5a679180a56b4dce3fcc78cb5b2b9054ff59f37c20eb8fb8f6d6e8fe74504",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 359 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "7846ff687bcdb55541b5",
+    "pageRender": "catalogue/mazaya/crops/7846ff687bcdb55541b5.png",
+    "sourceSha256": "3d9b9f7ed05d9697fa2b845bc74812f4d657704a35c8b685726a5a0a1ca7da9f",
+    "extracted": "catalogue/mazaya/previews/3d9b9f7ed05d9697fa2b845b.source.png",
+    "preview": "catalogue/mazaya/previews/1c7ba34a833bd13f4a41b030.webp",
+    "previewSha256": "1c7ba34a833bd13f4a41b0303d165148ba119abed07a174f77167001d8bac4cf",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     199,
+     338
+    ],
+    "highlight": "catalogue/mazaya/highlights/241c64402c68e2aa0146.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in681nfr",
+    "model": "GL-IN681NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN681NFR",
+     "box": [
+      378.24,
+      375.18,
+      450.68,
+      390.43
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r4",
+    "regionImages": [
+     {
+      "xref": 1137,
+      "box": [
+       186.74,
+       113.73,
+       297.02,
+       343.44
+      ],
+      "asset": "assets/40025d11963e0c7df72c772d.png",
+      "assetSha256": "40025d11963e0c7df72c772dc69586ba6e120288f40838c718bb6768cd137033"
+     }
+    ],
+    "cropBox": [
+     183.43,
+     106.84,
+     300.33,
+     350.33
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 340,
+    "cropSource": "embedded-asset",
+    "asset": "assets/40025d11963e0c7df72c772d.png",
+    "assetSha256": "40025d11963e0c7df72c772dc69586ba6e120288f40838c718bb6768cd137033",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 340 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "65518c88b3ad0bcb30d6",
+    "pageRender": "catalogue/mazaya/crops/65518c88b3ad0bcb30d6.png",
+    "sourceSha256": "e3f0617db6bac54d526f4d9286bcfaf5758721201eebcbd9a6fd9f758583309b",
+    "extracted": "catalogue/mazaya/previews/e3f0617db6bac54d526f4d92.source.png",
+    "preview": "catalogue/mazaya/previews/bab14481add924122b9525d8.webp",
+    "previewSha256": "bab14481add924122b9525d895f1c34c3b4e1e79060d03904386b4a38a67482b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     154,
+     320
+    ],
+    "highlight": "catalogue/mazaya/highlights/c7914eb310b8a4210ccd.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-in861nfr": [
+   {
+    "productId": "mazaya-gl-in861nfr",
+    "model": "GL-IN861NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN861NFR",
+     "box": [
+      70.57,
+      382.27,
+      143,
+      397.52
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r1",
+    "regionImages": [
+     {
+      "xref": 1125,
+      "box": [
+       317.51,
+       101.24,
+       458.21,
+       351.75
+      ],
+      "asset": "assets/a2bb0516db9301878c05d155.png",
+      "assetSha256": "a2bb0516db9301878c05d1554bad71e3d049d2bc33027e53790ac4a1aed3cfd5"
+     }
+    ],
+    "cropBox": [
+     319.57,
+     107.82,
+     449.68,
+     358.85
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 350,
+    "cropSource": "embedded-asset",
+    "asset": "assets/a2bb0516db9301878c05d155.png",
+    "assetSha256": "a2bb0516db9301878c05d1554bad71e3d049d2bc33027e53790ac4a1aed3cfd5",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 350 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "95c2d0fbdb4666fd3cd5",
+    "pageRender": "catalogue/mazaya/crops/95c2d0fbdb4666fd3cd5.png",
+    "sourceSha256": "0edd5e4ec0507b8a025eba2e546ff469eb603dc8c1060d1a15b4661468b00b80",
+    "extracted": "catalogue/mazaya/previews/0edd5e4ec0507b8a025eba2e.source.png",
+    "preview": "catalogue/mazaya/previews/3cc7a9065bb73ef965faf5a8.webp",
+    "previewSha256": "3cc7a9065bb73ef965faf5a88a7a9c632f3a43a30b3ed26f3133775838d8786d",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     172,
+     329
+    ],
+    "highlight": "catalogue/mazaya/highlights/4d8c1fc33de266ca37c8.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in861nfr",
+    "model": "GL-IN861NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN861NFR",
+     "box": [
+      70.57,
+      382.27,
+      143,
+      397.52
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r2",
+    "regionImages": [
+     {
+      "xref": 1129,
+      "box": [
+       453.25,
+       112.1,
+       573.72,
+       368.23
+      ],
+      "asset": "assets/a181dc18cc345154e52de5a0.png",
+      "assetSha256": "a181dc18cc345154e52de5a05b6f0852a44cc377099fbb6a56b1daa3fa96a865"
+     }
+    ],
+    "cropBox": [
+     453.43,
+     110.1,
+     573.53,
+     358.72
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 347,
+    "cropSource": "embedded-asset",
+    "asset": "assets/a181dc18cc345154e52de5a0.png",
+    "assetSha256": "a181dc18cc345154e52de5a05b6f0852a44cc377099fbb6a56b1daa3fa96a865",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 347 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "3d94633423365c76f9df",
+    "pageRender": "catalogue/mazaya/crops/3d94633423365c76f9df.png",
+    "sourceSha256": "a4e7dc898dd816c4dc10c8403a53a65c9739d78381ae20f51517d64bcaa595be",
+    "extracted": "catalogue/mazaya/previews/a4e7dc898dd816c4dc10c840.source.png",
+    "preview": "catalogue/mazaya/previews/603ce166a192446101f0d5de.webp",
+    "previewSha256": "603ce166a192446101f0d5de7c2831a9f09673a177afec21be72765e72aabc55",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     159,
+     326
+    ],
+    "highlight": "catalogue/mazaya/highlights/0a7f52b8df91fd8ab081.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in861nfr",
+    "model": "GL-IN861NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN861NFR",
+     "box": [
+      70.57,
+      382.27,
+      143,
+      397.52
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r3",
+    "regionImages": [
+     {
+      "xref": 1133,
+      "box": [
+       33.86,
+       106.58,
+       192.44,
+       365
+      ],
+      "asset": "assets/cad5a679180a56b4dce3fcc7.png",
+      "assetSha256": "cad5a679180a56b4dce3fcc78cb5b2b9054ff59f37c20eb8fb8f6d6e8fe74504"
+     }
+    ],
+    "cropBox": [
+     31.04,
+     102.88,
+     181.63,
+     360.78
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 359,
+    "cropSource": "embedded-asset",
+    "asset": "assets/cad5a679180a56b4dce3fcc7.png",
+    "assetSha256": "cad5a679180a56b4dce3fcc78cb5b2b9054ff59f37c20eb8fb8f6d6e8fe74504",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 359 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "7846ff687bcdb55541b5",
+    "pageRender": "catalogue/mazaya/crops/7846ff687bcdb55541b5.png",
+    "sourceSha256": "3d9b9f7ed05d9697fa2b845bc74812f4d657704a35c8b685726a5a0a1ca7da9f",
+    "extracted": "catalogue/mazaya/previews/3d9b9f7ed05d9697fa2b845b.source.png",
+    "preview": "catalogue/mazaya/previews/1c7ba34a833bd13f4a41b030.webp",
+    "previewSha256": "1c7ba34a833bd13f4a41b0303d165148ba119abed07a174f77167001d8bac4cf",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     199,
+     338
+    ],
+    "highlight": "catalogue/mazaya/highlights/c0121d3a3d4c077200a1.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-in861nfr",
+    "model": "GL-IN861NFR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-IN861NFR",
+     "box": [
+      70.57,
+      382.27,
+      143,
+      397.52
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-IN681NFR",
+     "GL-IN861NFR"
+    ],
+    "regionId": "p13r4",
+    "regionImages": [
+     {
+      "xref": 1137,
+      "box": [
+       186.74,
+       113.73,
+       297.02,
+       343.44
+      ],
+      "asset": "assets/40025d11963e0c7df72c772d.png",
+      "assetSha256": "40025d11963e0c7df72c772dc69586ba6e120288f40838c718bb6768cd137033"
+     }
+    ],
+    "cropBox": [
+     183.43,
+     106.84,
+     300.33,
+     350.33
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 340,
+    "cropSource": "embedded-asset",
+    "asset": "assets/40025d11963e0c7df72c772d.png",
+    "assetSha256": "40025d11963e0c7df72c772dc69586ba6e120288f40838c718bb6768cd137033",
+    "issues": [
+     "shared series photo: one photo for GL-IN681NFR, GL-IN861NFR",
+     "4 photos in this block — confirm which shows the product",
+     "low resolution: about 340 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "65518c88b3ad0bcb30d6",
+    "pageRender": "catalogue/mazaya/crops/65518c88b3ad0bcb30d6.png",
+    "sourceSha256": "e3f0617db6bac54d526f4d9286bcfaf5758721201eebcbd9a6fd9f758583309b",
+    "extracted": "catalogue/mazaya/previews/e3f0617db6bac54d526f4d92.source.png",
+    "preview": "catalogue/mazaya/previews/bab14481add924122b9525d8.webp",
+    "previewSha256": "bab14481add924122b9525d895f1c34c3b4e1e79060d03904386b4a38a67482b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     154,
+     320
+    ],
+    "highlight": "catalogue/mazaya/highlights/d8b3d5c6f7f55d83d2a2.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-inf520fr": [
+   {
+    "productId": "mazaya-gl-inf520fr",
+    "model": "GL-INF520FR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-INF520FR",
+     "box": [
+      361.24,
+      677.83,
+      430.91,
+      693.07
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-INF520FR"
+    ],
+    "regionId": "p13r5",
+    "regionImages": [
+     {
+      "xref": 1141,
+      "box": [
+       39.85,
+       546.63,
+       167.33,
+       790.87
+      ],
+      "asset": "assets/b8efabbe11b4c6913588c5b8.png",
+      "assetSha256": "b8efabbe11b4c6913588c5b82c2eefa0d1bbdabb10ac156a55a50d245ea56a62"
+     }
+    ],
+    "cropBox": [
+     36.03,
+     539.3,
+     171.15,
+     798.2
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 362,
+    "cropSource": "embedded-asset",
+    "asset": "assets/b8efabbe11b4c6913588c5b8.png",
+    "assetSha256": "b8efabbe11b4c6913588c5b82c2eefa0d1bbdabb10ac156a55a50d245ea56a62",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 362 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "96037c537b77961b33bc",
+    "pageRender": "catalogue/mazaya/crops/96037c537b77961b33bc.png",
+    "sourceSha256": "20e3a8f4bb501a2af22c1a15f9094557562768f1447e7e80c9aba3589510adcc",
+    "extracted": "catalogue/mazaya/previews/20e3a8f4bb501a2af22c1a15.source.png",
+    "preview": "catalogue/mazaya/previews/76a7cf99a22b7bf42e39699d.webp",
+    "previewSha256": "76a7cf99a22b7bf42e39699d2ecec251beaeefc5e84ad85ed4e593a946df3225",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     178,
+     340
+    ],
+    "highlight": "catalogue/mazaya/highlights/f4f9669d987f3d58b29b.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-inf520fr",
+    "model": "GL-INF520FR",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 13,
+    "evidence": {
+     "page": 13,
+     "text": "GL-INF520FR",
+     "box": [
+      361.24,
+      677.83,
+      430.91,
+      693.07
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-INF520FR"
+    ],
+    "regionId": "p13r6",
+    "regionImages": [
+     {
+      "xref": 1145,
+      "box": [
+       182.79,
+       554.17,
+       342.21,
+       779.53
+      ],
+      "asset": "assets/46f7c58f91276d0e13e397cf.png",
+      "assetSha256": "46f7c58f91276d0e13e397cf8387dc305a29bd6c97de798efd8ccc5d130e708a"
+     }
+    ],
+    "cropBox": [
+     178.01,
+     547.41,
+     346.99,
+     786.29
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 333,
+    "cropSource": "embedded-asset",
+    "asset": "assets/46f7c58f91276d0e13e397cf.png",
+    "assetSha256": "46f7c58f91276d0e13e397cf8387dc305a29bd6c97de798efd8ccc5d130e708a",
+    "issues": [
+     "2 photos in this block — confirm which shows the product",
+     "low resolution: about 333 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "46583c7e940572ed1f54",
+    "pageRender": "catalogue/mazaya/crops/46583c7e940572ed1f54.png",
+    "sourceSha256": "5b0c9a108c6c3cba8aad837c132d9ba21baab24ce07b43f9076675af6aa91bc3",
+    "extracted": "catalogue/mazaya/previews/5b0c9a108c6c3cba8aad837c.source.png",
+    "preview": "catalogue/mazaya/previews/e2b6bdccd3a6bbb4a502a0ea.webp",
+    "previewSha256": "e2b6bdccd3a6bbb4a502a0ea44812ec3ff22aaff1babc57218d46a529d07ba9c",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     222,
+     313
+    ],
+    "highlight": "catalogue/mazaya/highlights/c08238bcedb1c83cfc70.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-gl-gc9060ss": [
+   {
+    "productId": "mazaya-gl-gc9060ss",
+    "model": "GL-GC9060SS",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 15,
+    "evidence": {
+     "page": 15,
+     "text": "GL-GC9060SS",
+     "box": [
+      463.88,
+      435.2,
+      537.98,
+      448.48
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-GC6060SS",
+     "GL-GC9060SS"
+    ],
+    "regionId": "p15r1",
+    "regionImages": [
+     {
+      "xref": 1509,
+      "box": [
+       331.07,
+       211.25,
+       504.15,
+       465.6
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     332.47,
+     210.21,
+     503.22,
+     424.84
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 299,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-GC6060SS, GL-GC9060SS",
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 299 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "aab3513c3965372d8b68",
+    "pageRender": "catalogue/mazaya/crops/aab3513c3965372d8b68.png",
+    "sourceSha256": "c9c5aeef32b1dd9d5ff4aba101262061d96d1d708e5832db0cd9ad0dd931b11c",
+    "extracted": "catalogue/mazaya/previews/c9c5aeef32b1dd9d5ff4aba1.source.png",
+    "preview": "catalogue/mazaya/previews/b77f540c41e0c8e45ad0bd9b.webp",
+    "previewSha256": "b77f540c41e0c8e45ad0bd9b03dc7c17aea3afd15d64c7a57bba1a0a7aa0d661",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     238,
+     300
+    ],
+    "highlight": "catalogue/mazaya/highlights/18f7546f84b7aeef088e.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-gc9060ss",
+    "model": "GL-GC9060SS",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 15,
+    "evidence": {
+     "page": 15,
+     "text": "GL-GC9060SS",
+     "box": [
+      463.88,
+      435.2,
+      537.98,
+      448.48
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-GC6060SS",
+     "GL-GC9060SS"
+    ],
+    "regionId": "p15r2",
+    "regionImages": [
+     {
+      "xref": 1511,
+      "box": [
+       215.67,
+       468.03,
+       451.17,
+       799.41
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     219.49,
+     467.24,
+     444.8,
+     799.25
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 462,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-GC6060SS, GL-GC9060SS",
+     "3 photos in this block — confirm which shows the product",
+     "crop contains layout text: GL-GC9060FS"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "OK",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "309804db866f3c9d2d61",
+    "pageRender": "catalogue/mazaya/crops/309804db866f3c9d2d61.png",
+    "sourceSha256": "77a0756e1fcc439eaee0afd8d7cef847ab318873a22a78477f3a76543cae1298",
+    "extracted": "catalogue/mazaya/previews/77a0756e1fcc439eaee0afd8.source.png",
+    "preview": "catalogue/mazaya/previews/64b920c02af405819cfb580e.webp",
+    "previewSha256": "64b920c02af405819cfb580e9aacc3a9866746e4175836781570030e0b5ff6fd",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     314,
+     463
+    ],
+    "highlight": "catalogue/mazaya/highlights/b377372115682a924c36.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-gl-gc9060ss",
+    "model": "GL-GC9060SS",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 15,
+    "evidence": {
+     "page": 15,
+     "text": "GL-GC9060SS",
+     "box": [
+      463.88,
+      435.2,
+      537.98,
+      448.48
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "GL-GC6060SS",
+     "GL-GC9060SS"
+    ],
+    "regionId": "p15r3",
+    "regionImages": [
+     {
+      "xref": 1517,
+      "box": [
+       17.83,
+       235.57,
+       157.02,
+       469.46
+      ],
+      "asset": null,
+      "assetSha256": null
+     }
+    ],
+    "cropBox": [
+     24.37,
+     246.51,
+     149.52,
+     424.84
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 249,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "shared series photo: one photo for GL-GC6060SS, GL-GC9060SS",
+     "3 photos in this block — confirm which shows the product",
+     "low resolution: about 249 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "467e74d322653d3f09e4",
+    "pageRender": "catalogue/mazaya/crops/467e74d322653d3f09e4.png",
+    "sourceSha256": "92ff30acedbc157416e268ba33a2d0cdd8ffe71f1e34f5e285c7f3115249737a",
+    "extracted": "catalogue/mazaya/previews/92ff30acedbc157416e268ba.source.png",
+    "preview": "catalogue/mazaya/previews/b74ba8d949e49f0589ca117d.webp",
+    "previewSha256": "b74ba8d949e49f0589ca117df1c3030da3f443cc0aefc4e8774c66df2614de65",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     175,
+     249
+    ],
+    "highlight": "catalogue/mazaya/highlights/fbe1c6a7acd189d77f8c.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "mazaya-me-10000ac": [
+   {
+    "productId": "mazaya-me-10000ac",
+    "model": "ME-10000AC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 19,
+    "evidence": {
+     "page": 19,
+     "text": "ME-10000AC",
+     "box": [
+      212.58,
+      551.07,
+      280.75,
+      566.32
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-10000AC"
+    ],
+    "regionId": "p19r1",
+    "regionImages": [
+     {
+      "xref": 3453,
+      "box": [
+       367.53,
+       78.69,
+       579.21,
+       372.68
+      ],
+      "asset": "assets/e781b8a2f46280a63ab90f40.png",
+      "assetSha256": "e781b8a2f46280a63ab90f40c4fa95e656b41dd71b4b2b34ef5bf7d250160fca"
+     },
+     {
+      "xref": 3448,
+      "box": [
+       375.32,
+       89.79,
+       565.04,
+       363.4
+      ],
+      "asset": "assets/7c9c4d2ccf4fab78d0018030.png",
+      "assetSha256": "7c9c4d2ccf4fab78d00180300b666d907011e386d3be5ddd0a7d0fbbf0a6b15a"
+     },
+     {
+      "xref": 3447,
+      "box": [
+       381.22,
+       96.31,
+       547.6,
+       346.08
+      ],
+      "asset": "assets/5bcccf7c16a69b41a84ea03d.png",
+      "assetSha256": "5bcccf7c16a69b41a84ea03d31039141293becfa69cf65c8d21cbd18e8de19cd"
+     }
+    ],
+    "cropBox": [
+     375.89,
+     88.23,
+     564.1,
+     364.96
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 386,
+    "cropSource": "page-render",
+    "asset": null,
+    "assetSha256": null,
+    "issues": [
+     "5 photos in this block — confirm which shows the product",
+     "low resolution: about 386 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "1683659f35fc129b0221",
+    "pageRender": "catalogue/mazaya/crops/1683659f35fc129b0221.png",
+    "sourceSha256": "e59244bcb9455e6c650ff422439c2459c1a0bd41768bb25bbb55372abeb27771",
+    "extracted": "catalogue/mazaya/previews/e59244bcb9455e6c650ff422.source.png",
+    "preview": "catalogue/mazaya/previews/7d1e277e210788d008802830.webp",
+    "previewSha256": "7d1e277e210788d008802830c1746ad694607f484a3b2bb8e02a273919fabec4",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     262,
+     385
+    ],
+    "highlight": "catalogue/mazaya/highlights/c935b0cd0e629b8a9cab.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-10000ac",
+    "model": "ME-10000AC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 19,
+    "evidence": {
+     "page": 19,
+     "text": "ME-10000AC",
+     "box": [
+      212.58,
+      551.07,
+      280.75,
+      566.32
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-10000AC"
+    ],
+    "regionId": "p19r2",
+    "regionImages": [
+     {
+      "xref": 2327,
+      "box": [
+       45.35,
+       122.06,
+       156.42,
+       313.22
+      ],
+      "asset": "assets/67c9f37631bfa1cb13ae8e3a.png",
+      "assetSha256": "67c9f37631bfa1cb13ae8e3ab02d10e2567bd299a05e9aff0e60cef9c35dae1c"
+     }
+    ],
+    "cropBox": [
+     42.02,
+     116.33,
+     159.75,
+     318.95
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 283,
+    "cropSource": "embedded-asset",
+    "asset": "assets/67c9f37631bfa1cb13ae8e3a.png",
+    "assetSha256": "67c9f37631bfa1cb13ae8e3ab02d10e2567bd299a05e9aff0e60cef9c35dae1c",
+    "issues": [
+     "5 photos in this block — confirm which shows the product",
+     "low resolution: about 283 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "256c668d2463a241602b",
+    "pageRender": "catalogue/mazaya/crops/256c668d2463a241602b.png",
+    "sourceSha256": "ff7ce1e6002728aeba1c5993a98adf2907725694874e04b3609962e84d489740",
+    "extracted": "catalogue/mazaya/previews/ff7ce1e6002728aeba1c5993.source.png",
+    "preview": "catalogue/mazaya/previews/6909fe0943e05c9a41c8bbb2.webp",
+    "previewSha256": "6909fe0943e05c9a41c8bbb2515752891939b723ccbfa2d559c95299a7bd8087",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     155,
+     266
+    ],
+    "highlight": "catalogue/mazaya/highlights/910fd95ea6c1bdbbd5a5.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-10000ac",
+    "model": "ME-10000AC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 19,
+    "evidence": {
+     "page": 19,
+     "text": "ME-10000AC",
+     "box": [
+      212.58,
+      551.07,
+      280.75,
+      566.32
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-10000AC"
+    ],
+    "regionId": "p19r3",
+    "regionImages": [
+     {
+      "xref": 2331,
+      "box": [
+       381.06,
+       368.5,
+       555.59,
+       698.41
+      ],
+      "asset": "assets/074920fadc4990a91b57b0d2.png",
+      "assetSha256": "074920fadc4990a91b57b0d21380cd1dbfbd9a72393e8cb1b8633127623171e4"
+     }
+    ],
+    "cropBox": [
+     376.57,
+     359.34,
+     560.8,
+     708.29
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 486,
+    "cropSource": "embedded-asset",
+    "asset": "assets/074920fadc4990a91b57b0d2.png",
+    "assetSha256": "074920fadc4990a91b57b0d21380cd1dbfbd9a72393e8cb1b8633127623171e4",
+    "issues": [
+     "5 photos in this block — confirm which shows the product",
+     "crop contains layout text: ME-22000AC"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "OK",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "82f41ca855321e709f36",
+    "pageRender": "catalogue/mazaya/crops/82f41ca855321e709f36.png",
+    "sourceSha256": "a5c44a941ccf10ce18b95bfcc6f66f0a140322574780a233297354acfffff210",
+    "extracted": "catalogue/mazaya/previews/a5c44a941ccf10ce18b95bfc.source.png",
+    "preview": "catalogue/mazaya/previews/a4bae29551d77e982f9b6d66.webp",
+    "previewSha256": "a4bae29551d77e982f9b6d661f95ecd009268d0100959284536e37199c2cd716",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     243,
+     459
+    ],
+    "highlight": "catalogue/mazaya/highlights/2c99a21ef242d1ce83d2.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-10000ac",
+    "model": "ME-10000AC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 19,
+    "evidence": {
+     "page": 19,
+     "text": "ME-10000AC",
+     "box": [
+      212.58,
+      551.07,
+      280.75,
+      566.32
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-10000AC"
+    ],
+    "regionId": "p19r4",
+    "regionImages": [
+     {
+      "xref": 2335,
+      "box": [
+       34.02,
+       430.16,
+       189.92,
+       692.36
+      ],
+      "asset": "assets/a91f6ac682aba0f1883e06da.png",
+      "assetSha256": "a91f6ac682aba0f1883e06dadf6aa10966406065f45d2a49b4ccc95955f391db"
+     }
+    ],
+    "cropBox": [
+     29.34,
+     422.29,
+     194.6,
+     700.23
+    ],
+    "renderDpi": 100,
+    "nativeLongestPx": 387,
+    "cropSource": "embedded-asset",
+    "asset": "assets/a91f6ac682aba0f1883e06da.png",
+    "assetSha256": "a91f6ac682aba0f1883e06dadf6aa10966406065f45d2a49b4ccc95955f391db",
+    "issues": [
+     "5 photos in this block — confirm which shows the product",
+     "crop contains layout text: ME-20000AC",
+     "low resolution: about 387 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "bde74d43874363d1936f",
+    "pageRender": "catalogue/mazaya/crops/bde74d43874363d1936f.png",
+    "sourceSha256": "17792d62b1a4240c625996880c7c0e982604ad7f9de5ee5571d2d78e18abe4a7",
+    "extracted": "catalogue/mazaya/previews/17792d62b1a4240c62599688.source.png",
+    "preview": "catalogue/mazaya/previews/34d4f03e64180e0dcc9847eb.webp",
+    "previewSha256": "34d4f03e64180e0dcc9847eb217a8de046d34e917db355f1679bd84abf9e3935",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     217,
+     365
+    ],
+    "highlight": "catalogue/mazaya/highlights/06558489506ed14f794e.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   },
+   {
+    "productId": "mazaya-me-10000ac",
+    "model": "ME-10000AC",
+    "pdf": "MAZAYA CATALOGUE 2025.pdf",
+    "page": 19,
+    "evidence": {
+     "page": 19,
+     "text": "ME-10000AC",
+     "box": [
+      212.58,
+      551.07,
+      280.75,
+      566.32
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "ME-10000AC"
+    ],
+    "regionId": "p19r5",
+    "regionImages": [
+     {
+      "xref": 2339,
+      "box": [
+       228.24,
+       323.31,
+       352.08,
+       549.92
+      ],
+      "asset": "assets/46447d71c9356d4351616de9.png",
+      "assetSha256": "46447d71c9356d4351616de9ad8ac37bef605fc434aa9d7d03c3eded7a2a45ed"
+     }
+    ],
+    "cropBox": [
+     224.52,
+     317.25,
+     355.8,
+     549.07
+    ],
+    "renderDpi": 101,
+    "nativeLongestPx": 324,
+    "cropSource": "embedded-asset",
+    "asset": "assets/46447d71c9356d4351616de9.png",
+    "assetSha256": "46447d71c9356d4351616de9ad8ac37bef605fc434aa9d7d03c3eded7a2a45ed",
+    "issues": [
+     "5 photos in this block — confirm which shows the product",
+     "low resolution: about 324 px on the longest side (minimum 400)"
+    ],
+    "identity": "NEEDS_REVIEW",
+    "quality": "LOW_RESOLUTION",
+    "status": "NEEDS_REVIEW",
+    "eligible": false,
+    "cropId": "9a9896b2917fb90e3bcc",
+    "pageRender": "catalogue/mazaya/crops/9a9896b2917fb90e3bcc.png",
+    "sourceSha256": "88486e798a0138420d5b8bead81721ca151a69d18d7bfdfc51aac3ed4fd14465",
+    "extracted": "catalogue/mazaya/previews/88486e798a0138420d5b8bea.source.png",
+    "preview": "catalogue/mazaya/previews/62b4847d24421411ed6236d9.webp",
+    "previewSha256": "62b4847d24421411ed6236d929023ebb81bd1723ccb33d83f21cf3cc4b8e488b",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     173,
+     315
+    ],
+    "highlight": "catalogue/mazaya/highlights/94d919b96c23be3969e8.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ]
+ }
+}

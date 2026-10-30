@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:07.852Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e54",
+  "id": "samsung-rt75k6000s8",
+  "slug": "samsung-air-conditioner-rt75k6000s8-rt75k6000s8",
+  "sku": "RT75K6000S8",
+  "name": "Samsung Top Mounted Refrigerator RT75K6000S8",
+  "brand": "Samsung",
+  "brandSlug": "samsung",
+  "model": "RT75K6000S8",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "Top Mounted Refrigerator; Gross / Net Capacity: 750 L / 538 L; Finish: Inox; Twin Cooling Plus™; Digital Inverter Compressor; Bio Deodorizer; Ice Maker Tray; Tempered Glass Shelves; Easy Slide; Fresh Room; Product Dimension: 788 × 1860 × 725 (WHD) mm; Origin: Thailand",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/000000000001203992_1?1785229386"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:58.997Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

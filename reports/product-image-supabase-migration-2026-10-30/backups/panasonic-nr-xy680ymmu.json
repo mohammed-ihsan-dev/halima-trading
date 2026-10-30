@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:39.617Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d57e",
+  "id": "panasonic-nr-xy680ymmu",
+  "slug": "621l-multi-door-refrigerator-nr-xy680ymmu",
+  "sku": "NRXY680YMMU",
+  "name": "621L Multi Door Refrigerator",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NR-XY680YMMU",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Multi-door refrigerator with 621 litres net capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://toongheng.com/wp-content/uploads/2024/05/ast-2094456.png.pub_.thumb_.644.644.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-22T15:23:38.527Z"
+ }
+}

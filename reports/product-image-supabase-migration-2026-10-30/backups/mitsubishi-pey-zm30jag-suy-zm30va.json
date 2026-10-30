@@ -1,0 +1,38 @@
+{
+ "takenAt": "2026-10-30T11:52:07.747Z",
+ "document": {
+  "_id": "6ad07fd6f9be311bced6d55d",
+  "id": "mitsubishi-pey-zm30jag-suy-zm30va",
+  "slug": "2-5-ton-ducted-inverter-air-conditioner-pey-zm30jag-suy-zm30va",
+  "sku": "PEYZM30JAGSUYZM30VA",
+  "name": "2.5 Ton Ducted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "PEY-ZM30JAG / SUY-ZM30VA",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Ducted Air Conditioners",
+  "description": "Ducted inverter air conditioning system with approximately 2.5-ton cooling capacity.",
+  "features": [
+   "2.5 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "2.5 Ton",
+   "Type": "Ducted Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.acmartuae.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdrzm8qqqa%2Fimage%2Fupload%2Fv1789982834%2Fproducts%2Fbwfh0rracif9f42uuwbe.webp&w=3840&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:55.926Z"
+ }
+}

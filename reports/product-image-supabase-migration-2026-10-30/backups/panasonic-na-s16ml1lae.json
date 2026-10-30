@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:09.955Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d58d",
+  "id": "panasonic-na-s16ml1lae",
+  "slug": "12-8kg-front-load-washer-dryer-na-s16ml1lae",
+  "sku": "NAS16ML1LAE",
+  "name": "12/8kg Front Load Washer Dryer",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-S16ML1LAE",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washer Dryers",
+  "description": "Front-load washer-dryer with 12kg washing and 8kg drying capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://bf1af2.akinoncloudcdn.com/products/2025/12/06/627418/b089a81a-4f63-4a2d-8081-c9bc4395b820_size1920x1920_cropCenter.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.752Z"
+ }
+}

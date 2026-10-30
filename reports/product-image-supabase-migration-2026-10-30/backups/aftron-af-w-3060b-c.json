@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:24.462Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d47",
+  "id": "aftron-af-w-3060b-c",
+  "slug": "aftron-2-5-ton-piston-ac-r22-af-w-3060b-c",
+  "sku": "AF-W-3060BC",
+  "name": "AFTRON 2.5 TON PISTON AC, R22 (AF-W-3060B/C)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-3060B/C",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2.5 TON PISTON AC, R22",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.alrayanservices.com/uploads/images/202406/img_1920x_66802483e3d583-72456511-37806090.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:37.330Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:23.537Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dea",
+  "id": "lg-gn-c782hqcl",
+  "slug": "net-capacity-509-gn-c782hqcl",
+  "sku": "GN-C782HQCL",
+  "name": "LG Top Mount Refrigerator GN-C782HQCL – NET CAPACITY: 509",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GN-C782HQCL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 509",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/refrigerators/md07521251/D-01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.668Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

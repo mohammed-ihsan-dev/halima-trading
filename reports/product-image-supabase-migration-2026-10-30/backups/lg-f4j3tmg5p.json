@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:44.423Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e07",
+  "id": "lg-f4j3tmg5p",
+  "slug": "8-kg-wash-5-kg-dry-egypt-f4j3tmg5p",
+  "sku": "F4J3TMG5P",
+  "name": "LG Washer Dryer F4J3TMG5P – 8 KG WASH 5 KG DRY-EGYPT",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "F4J3TMG5P",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "8 KG WASH 5 KG DRY-EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/eastafrica/images/washing-machines/md07547144/gallery/medium01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.002Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

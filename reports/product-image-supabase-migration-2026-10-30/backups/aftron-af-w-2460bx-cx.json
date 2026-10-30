@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:10.207Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d42",
+  "id": "aftron-af-w-2460bx-cx",
+  "slug": "aftron-2-ton-piston-ac-r22-af-w-2460bx-cx",
+  "sku": "AF-W-2460BXCX",
+  "name": "AFTRON 2 TON PISTON AC, R22 (AF-W-2460BX/CX)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-2460BX/CX",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2 TON PISTON AC, R22",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://rattanelect.com/wp-content/uploads/2024/02/1-222.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.179Z",
+  "createdAt": "2026-10-10T12:24:03.792Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:02.932Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d3f",
+  "id": "aftron-af-w-1969b-c-inv",
+  "slug": "aftron-1-5-ton-split-ac-inverter-af-w-1969b-c-inv",
+  "sku": "AF-W-1969BC-INV",
+  "name": "AFTRON 1.5 TON SPLIT AC, INVERTER (AF-W-1969B/C-INV)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-1969B/C-INV",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 1.5 TON SPLIT AC, INVERTER",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://admin.safarimallonline.com/assets/img/items/shop/11/17897411134BW5AsHYei.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.053Z",
+  "createdAt": "2026-10-10T12:24:03.792Z"
+ }
+}

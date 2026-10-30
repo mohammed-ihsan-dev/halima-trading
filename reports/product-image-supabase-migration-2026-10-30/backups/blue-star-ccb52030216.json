@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:31.558Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d6c",
+  "id": "blue-star-ccb52030216",
+  "slug": "bwtc1-16s3r3b-ccb52030216",
+  "sku": "CCB52030216",
+  "name": "Blue Star Overhead Tank Water Chiller BWTC1 16S3R3B",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "BWTC1 16S3R3B",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "General",
+  "description": "",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://rattanelect.com/wp-content/uploads/2023/07/BWTC1-05Y1R3A-2.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.244Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

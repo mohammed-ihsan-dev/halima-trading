@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:06.386Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d5f",
+  "id": "blue-star-ccb52030329",
+  "slug": "hw18hqyfbn3-01-split-ac-1-5-tr-inverter-r410a-ccb52030329",
+  "sku": "CCB52030329",
+  "name": "Blue Star Split AC 1.5 TR Inverter R410A – HW18HQYFBN3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW18HQYFBN3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 1.5 TR Inverter R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.alrayanservices.com/uploads/images/202403/img_1920x_65ec6eba002358-79227310-33684425.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:37.173Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

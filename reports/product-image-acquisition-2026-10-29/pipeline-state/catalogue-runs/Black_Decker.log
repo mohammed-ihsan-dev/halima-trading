@@ -1,0 +1,26 @@
+page 1/7page 2/7page 3/7page 4/7page 5/7page 6/7page 7/7
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/black-decker/index.json", "pages": 7, "cached": false, "ocr": false}
+{
+ "pdf": "B+D_Heaters_Product_Details (002).pdf",
+ "pagesProcessed": 7,
+ "pagesWithNativeText": 6,
+ "pagesNeedingOcr": 1,
+ "catalogueModelsIdentified": 6,
+ "brandProducts": 6,
+ "targetProducts": 1,
+ "targetsWithExactModelMatch": 1,
+ "candidates": 0,
+ "exactUnambiguousIdentity": 0,
+ "lowResolution": 0,
+ "eligible": 0,
+ "sharedImage": 0,
+ "needsReview": 0,
+ "embeddedAssets": 0,
+ "pageRenders": 0,
+ "flags": 1,
+ "targetsNotInCatalogue": 0,
+ "catalogueModelsNotInDatabase": 0,
+ "authorization": "permission_pending",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

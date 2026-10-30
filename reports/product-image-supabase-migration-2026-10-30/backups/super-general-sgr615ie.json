@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:13.378Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006bb",
+  "id": "super-general-sgr615ie",
+  "slug": "super-general-sgr615ie",
+  "sku": "SGR615IE",
+  "name": "S.G. REFRIGERATOR",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGR615IE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "S.G. REFRIGERATOR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/103/1732004295-sgr615i_.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.299Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

@@ -1,0 +1,41 @@
+sourceType,source,products,evidence,status,requiredAction
+official manufacturer website,haier.com/ae,15,legal page not reachable this run,rights unresolved,written image-use permission from Haier UAE / authorised distributor
+official manufacturer website,lg.com/ae,13,lg.com/ae/terms-of-use returned 404 — terms not located,rights unresolved,written image-use permission from LG UAE / authorised distributor
+official manufacturer website,samsung.com/ae,4,legal page: 'grants you no license…'; 'unauthorized use or reproduction … strictly prohibited',rights unresolved,written image-use permission from Samsung UAE / authorised distributor
+brand catalogue PDF,KROME CATALOG 25-26.pdf,1,catalogue contains no reuse terms; supplier-provided ≠ licence (pipeline register),rights unresolved,supplier confirmation that catalogue images may be used online
+brand catalogue PDF,MAZAYA CATALOGUE 2025.pdf,0,catalogue contains no reuse terms; supplier-provided ≠ licence (pipeline register),rights unresolved,supplier confirmation that catalogue images may be used online
+brand catalogue PDF,TCL-UAE_AC Catalogue-2025.pdf,0,catalogue contains no reuse terms; supplier-provided ≠ licence (pipeline register),rights unresolved,supplier confirmation that catalogue images may be used online
+brand catalogue PDF,superGeneral.pdf,3,catalogue contains no reuse terms; supplier-provided ≠ licence (pipeline register),rights unresolved,supplier confirmation that catalogue images may be used online
+supplied local files (catalogues-source/),catalogues-source/*,17,no provenance recorded,rights unresolved,record who supplied each file
+already imported to Supabase (product_image_imports),m.media-amazon.com,60,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),encrypted-tbn0.gstatic.com,56,Google search thumbnail / logo site — origin unknown,replace,replace with a licensed manufacturer image
+already imported to Supabase (product_image_imports),www.midea.com,8,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),gecouae.com,7,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),bf1af2.akinoncloudcdn.com,7,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.icecubeuae.com,7,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),barajeelac.com,6,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.ogeneralac.com,6,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),web-res.midea.com,5,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),uae.geepas.com,4,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.kitchenking.ae,4,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.nidadanish.com,3,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.generalcool.ae,3,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),images.seeklogo.com,2,Google search thumbnail / logo site — origin unknown,replace,replace with a licensed manufacturer image
+already imported to Supabase (product_image_imports),rukminim3.flixcart.com,2,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.bzaaarz.com,2,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),shop.supercooluae.com,2,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),microless.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),jomla-erp.b-cdn.net,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.taqsac.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),applinz.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),mannaihome.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),gecooman.com,1,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),coolersonline.ae,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),tafani.ae,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),cdn.dsmcdn.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),haierlebanon.com,1,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),cartlow.gumlet.io,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),www.o-general.com,1,manufacturer or distributor site,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),mycoolcare.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),d91ztqmtx7u1k.cloudfront.net,1,retailer / marketplace image,rights unresolved,confirm permission or replace
+already imported to Supabase (product_image_imports),i0.wp.com,1,retailer / marketplace image,rights unresolved,confirm permission or replace

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:38.652Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dff",
+  "id": "lg-gr-x29ftqel",
+  "slug": "net-capacity-423-ltr-gr-x29ftqel",
+  "sku": "GR-X29FTQEL",
+  "name": "LG 4-Door Refrigerator GR-X29FTQEL – NET CAPACITY: 423 LTR",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GR-X29FTQEL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 423 LTR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/refrigerators/md07539811/D-01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.519Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

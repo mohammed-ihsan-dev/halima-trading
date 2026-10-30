@@ -1,0 +1,174 @@
+{
+ "generatedAt": "2026-10-29T14:10:59.841Z",
+ "pdf": "TCL-UAE_AC Catalogue-2025.pdf",
+ "pdfSha256": "cf30d657c295073536d87c8ca7a648a8f03416599d9f4403ecf1861b5a70e83a",
+ "brand": "TCL",
+ "pages": 36,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {
+  "tcl-tac-36chfa-fh": [
+   {
+    "productId": "tcl-tac-36chfa-fh",
+    "model": "TAC-36CHFA/FH",
+    "pdf": "TCL-UAE_AC Catalogue-2025.pdf",
+    "page": 28,
+    "evidence": {
+     "page": 28,
+     "text": "TAC-36CHFA/FH",
+     "box": [
+      330.62,
+      113.5,
+      377.7,
+      122.09
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "TAC-30CHFA/FH",
+     "TAC-36CHFA/FH",
+     "TAC-48CHFA/FH"
+    ],
+    "regionId": "p28r2",
+    "regionImages": [
+     {
+      "xref": 914,
+      "box": [
+       857.83,
+       77.82,
+       969.79,
+       216.88
+      ],
+      "asset": "assets/3972a8cf0a658b770c0e4d30.png",
+      "assetSha256": "3972a8cf0a658b770c0e4d30c59bcc56126b04fc2d91761b563754d30e97d789"
+     }
+    ],
+    "cropBox": [
+     854.7,
+     73.65,
+     965.23,
+     221.05
+    ],
+    "renderDpi": 150,
+    "nativeLongestPx": 307,
+    "cropSource": "embedded-asset",
+    "asset": "assets/3972a8cf0a658b770c0e4d30.png",
+    "assetSha256": "3972a8cf0a658b770c0e4d30c59bcc56126b04fc2d91761b563754d30e97d789",
+    "issues": [
+     "shared series photo: one photo for TAC-30CHFA/FH, TAC-36CHFA/FH, TAC-48CHFA/FH",
+     "low resolution: about 307 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "e38626547c7a29baf91f",
+    "pageRender": "catalogue/tcl/crops/e38626547c7a29baf91f.png",
+    "sourceSha256": "7b1c62c6f3fd3de55965fe624caf8e266054418899070c9ac14c3f441348ad42",
+    "extracted": "catalogue/tcl/previews/7b1c62c6f3fd3de55965fe62.source.png",
+    "preview": "catalogue/tcl/previews/d6798a27c008fa3fd2256c51.webp",
+    "previewSha256": "d6798a27c008fa3fd2256c5199de16d6320582a1a3d9800238604bada4d58f0a",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     217,
+     290
+    ],
+    "highlight": "catalogue/tcl/highlights/f20542837f30e4e52b91.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ],
+  "tcl-tac-48chfa-fh": [
+   {
+    "productId": "tcl-tac-48chfa-fh",
+    "model": "TAC-48CHFA/FH",
+    "pdf": "TCL-UAE_AC Catalogue-2025.pdf",
+    "page": 28,
+    "evidence": {
+     "page": 28,
+     "text": "TAC-48CHFA/FH",
+     "box": [
+      406.83,
+      113.5,
+      453.91,
+      122.09
+     ],
+     "source": "native",
+     "ocrConfidence": 1,
+     "level": "IDENTICAL"
+    },
+    "rowModels": [
+     "TAC-30CHFA/FH",
+     "TAC-36CHFA/FH",
+     "TAC-48CHFA/FH"
+    ],
+    "regionId": "p28r2",
+    "regionImages": [
+     {
+      "xref": 914,
+      "box": [
+       857.83,
+       77.82,
+       969.79,
+       216.88
+      ],
+      "asset": "assets/3972a8cf0a658b770c0e4d30.png",
+      "assetSha256": "3972a8cf0a658b770c0e4d30c59bcc56126b04fc2d91761b563754d30e97d789"
+     }
+    ],
+    "cropBox": [
+     854.7,
+     73.65,
+     965.23,
+     221.05
+    ],
+    "renderDpi": 150,
+    "nativeLongestPx": 307,
+    "cropSource": "embedded-asset",
+    "asset": "assets/3972a8cf0a658b770c0e4d30.png",
+    "assetSha256": "3972a8cf0a658b770c0e4d30c59bcc56126b04fc2d91761b563754d30e97d789",
+    "issues": [
+     "shared series photo: one photo for TAC-30CHFA/FH, TAC-36CHFA/FH, TAC-48CHFA/FH",
+     "low resolution: about 307 px on the longest side (minimum 400)"
+    ],
+    "identity": "SHARED_IMAGE",
+    "quality": "LOW_RESOLUTION",
+    "status": "SHARED_IMAGE",
+    "eligible": false,
+    "cropId": "e38626547c7a29baf91f",
+    "pageRender": "catalogue/tcl/crops/e38626547c7a29baf91f.png",
+    "sourceSha256": "7b1c62c6f3fd3de55965fe624caf8e266054418899070c9ac14c3f441348ad42",
+    "extracted": "catalogue/tcl/previews/7b1c62c6f3fd3de55965fe62.source.png",
+    "preview": "catalogue/tcl/previews/d6798a27c008fa3fd2256c51.webp",
+    "previewSha256": "d6798a27c008fa3fd2256c5199de16d6320582a1a3d9800238604bada4d58f0a",
+    "previewSize": [
+     800,
+     800
+    ],
+    "fittedSize": [
+     217,
+     290
+    ],
+    "highlight": "catalogue/tcl/highlights/bafd6e442afd12980e96.jpg",
+    "permission": {
+     "status": "permission_pending",
+     "holder": null,
+     "reason": "no permission record for this source"
+    }
+   }
+  ]
+ }
+}

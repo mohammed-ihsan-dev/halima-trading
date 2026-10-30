@@ -1,0 +1,15 @@
+{
+ "generatedAt": "2026-10-29T14:12:57.398Z",
+ "pdf": "B+D_Heaters_Product_Details (002).pdf",
+ "pdfSha256": "1c3982127989d68dfeef911281f7996ebbfb5eef3dd02dcf6ca2ce3caa87586b",
+ "brand": "Black+Decker",
+ "pages": 7,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": null,
+  "reason": "no permission record for this source",
+  "evidence": []
+ },
+ "products": {}
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:14.302Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e5e",
+  "id": "symphony-100xl-movicool",
+  "slug": "symphony-air-cooler-100xl-movicool-100xl-movicool",
+  "sku": "100XL-MOVICOOL",
+  "name": "Symphony Outdoor Commercial Air Cooler 100XL-MOVICOOL",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "100XL-MOVICOOL",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 100 L; Power: 625 W; Capacity: 18,000 m³/hr; Max Air Throw: 30 m; 3 Fan Speeds; 3-Sided Honey Comb; 3-Sided Dust Filter; Engineered Plastic Body with UV Coating; Made in India; Dimensions: 1125 W × 725 D × 1560 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2024/08/Winter-100XL.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.101Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:35.330Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e64",
+  "id": "symphony-i-30d3-diet",
+  "slug": "symphony-air-cooler-i-30d3-diet-i-30d3-diet",
+  "sku": "I-30D3-DIET",
+  "name": "Symphony Indoor Residential Air Cooler i-30D3 DIET",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "i-30D3 DIET",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 30 L; Power: 110 W; Room Size: 14 sq. m; 3 Blower Speeds; 3-Sided Honey Comb; Automatic Pop-Up Touch Screen; Magnetic Remote; Plastic Body; Made in India; Dimensions: 380 W × 350 D × 950 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2023/05/Diet-3D-30i-1.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.340Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

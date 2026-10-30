@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:58.226Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e10",
+  "id": "lg-fh2j3hdyl02",
+  "slug": "7-kg-white-color-india-fh2j3hdyl02",
+  "sku": "FH2J3HDYL02",
+  "name": "LG Front Load Washer FH2J3HDYL02 – 7-KG WHITE COLOR-INDIA",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "FH2J3HDYL02",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "7-KG WHITE COLOR-INDIA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/washing-machines/md07576901/gallery/D-001.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.439Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

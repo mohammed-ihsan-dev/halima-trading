@@ -28,7 +28,6 @@ export default function Header() {
     <>
       <div className="announcement">
         <span>Premium Electronics & Home Appliances Across the UAE</span>
-        <a href={`tel:${companyContact.phoneRaw}`}>Call: {companyContact.phone}</a>
         <a href={`tel:${companyContact.landlineRaw}`} className="announce-landline">Tel: {companyContact.landline}</a>
         <span className="announce-alt">Bulk Orders, Corporate Supply & Hospitality Solutions Available</span>
       </div>

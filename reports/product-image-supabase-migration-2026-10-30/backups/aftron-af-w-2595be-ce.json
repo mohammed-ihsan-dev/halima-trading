@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:17.544Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d44",
+  "id": "aftron-af-w-2595be-ce",
+  "slug": "aftron-2-ton-split-ac-rotary-r410-af-w-2595be-ce",
+  "sku": "AF-W-2595BECE",
+  "name": "AFTRON 2 TON SPLIT AC, ROTARY, R410 (AF-W-2595BE/CE)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-2595BE/CE",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2 TON SPLIT AC, ROTARY, R410",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://rattanelect.com/wp-content/uploads/2024/01/1-29.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.258Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

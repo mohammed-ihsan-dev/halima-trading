@@ -1,0 +1,51 @@
+{
+ "takenAt": "2026-10-30T11:35:21.330Z",
+ "document": {
+  "_id": "6ac8bcf4d467feb0e4adfa6a",
+  "slug": "toshiba-624l-double-door-refrigerator",
+  "brand": "Toshiba",
+  "brandSlug": "toshiba",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "createdAt": "2026-10-09T10:07:47.161Z",
+  "currency": "AED",
+  "deliveryRate": 0,
+  "description": "Double door refrigerator in Satin/Morandi Grey color with a total capacity of 409L, featuring a 101L freezer and a 308L refrigerator compartment. It is equipped with an Inverter Compressor, Air Fall Cooling, Humidity Control, and Pure Bio technology. Dimensions are width 700 mm, depth 680 mm, and height 1880 mm.",
+  "featured": false,
+  "features": [
+   "Inverter compressor",
+   "Air fall cooling",
+   "Humidity control",
+   "Pure BIO technology",
+   "Satin / Morandi grey finish"
+  ],
+  "id": "p-1791540467161",
+  "images": [
+   "https://m.media-amazon.com/images/I/618lafj73JL.jpg"
+  ],
+  "inStock": true,
+  "model": "GRRT624WE-PM",
+  "name": "Toshiba 624L Double Door Refrigerator",
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "sku": "HT-RE-472",
+  "specifications": {
+   "Advertised Capacity": "624L",
+   "Total Capacity": "409L",
+   "Freezer Capacity": "101L",
+   "Refrigerator Capacity": "308L",
+   "Type": "Double Door Refrigerator",
+   "Compressor": "Inverter Compressor",
+   "Cooling System": "Air Fall Cooling",
+   "Color": "Satin / Morandi Grey",
+   "Country of Origin": "China",
+   "Barcode": "6954903810539",
+   "Item Code": "1810078",
+   "Dimensions": "700 × 680 × 1880mm"
+  },
+  "status": "active",
+  "stockCount": 1,
+  "subcategory": "Refrigerators",
+  "updatedAt": "2026-10-16T10:09:06.154Z"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-30T11:51:09.278Z",
+ "document": {
+  "_id": "6ace0ae7c20e09f0d82e7737",
+  "id": "kenwood-zjm10-000ss",
+  "slug": "kenwood-zjm10-000ss",
+  "sku": "ZJM10000SS",
+  "name": "KENWOOD Metal Kettle",
+  "brand": "Kenwood",
+  "brandSlug": "kenwood",
+  "model": "ZJM10.000SS",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "Kettles",
+  "description": "Kenwood metal kettle, model ZJM10.000SS.",
+  "features": [
+   "Metal kettle"
+  ],
+  "specifications": {
+   "Material": "Metal",
+   "Model Number": "ZJM10.000SS"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn.sheeel.com/catalog/product/cache/074f467fdf747a38ab5e8f88243fd86f/z/j/zjm10000ss_3.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.756Z",
+  "createdAt": "2026-10-13T10:41:43.020Z"
+ }
+}

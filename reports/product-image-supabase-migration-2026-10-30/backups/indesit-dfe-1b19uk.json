@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:56.665Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d87",
+  "id": "indesit-dfe-1b19uk",
+  "slug": "13pl-5prg-ind-fs-dishwasher-13pl-12l-inox-f158945-dfe-1b19uk",
+  "sku": "DFE-1B19UK",
+  "name": "Indesit DFE-1B19UK – IND FS DISHWASHER 13PL 12L INOX F158945 (NEW)",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "DFE-1B19UK",
+  "category": "Kitchen Appliances",
+  "categorySlug": "kitchen-appliances",
+  "subcategory": "General",
+  "description": "IND FS DISHWASHER 13PL 12L INOX F158945 (NEW); Size: 13PL 5PRG; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://digitalassets-cdn.thron.com/delivery/public/thumbnail/digitalassets/pi-38c96617-e886-4820-b413-c70b345f4ed9/oolnjd/std/600x600/dfe-1b19-x-uk-dishwashers.webp?fill=zoom&fillcolor=rgba:255,255,255"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.267Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

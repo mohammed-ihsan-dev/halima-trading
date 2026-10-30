@@ -1,0 +1,3055 @@
+{
+ "generatedAt": "2026-10-18T21:40:31.396Z",
+ "products": 94,
+ "byState": {
+  "needs_manual_source": 87,
+  "pending_review": 7
+ },
+ "records": [
+  {
+   "productId": "p-1791532040999",
+   "product": {
+    "name": "APA Gold Floor Standing Air Conditioner",
+    "brand": "AKAI",
+    "model": "ACMA-A24FSN",
+    "sku": "HT-AI-929",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for AKAI"
+    }
+   ],
+   "reviewId": "p-1791532040999:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for AKAI"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791532324809",
+   "product": {
+    "name": "Split Air Conditioner",
+    "brand": "AKAI",
+    "model": "ACMA-M12T3R4 / ACMA-M18T3R4",
+    "sku": "HT-AI-412",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    }
+   ],
+   "reviewId": "p-1791532324809:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791539276164",
+   "product": {
+    "name": "Toshiba 10kg T25 Heat Pump Dryer",
+    "brand": "Toshiba",
+    "model": "TD-T25BS110HWM(MG)",
+    "sku": "HT-LA-238",
+    "category": "Laundry Appliances",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    }
+   ],
+   "reviewId": "p-1791539276164:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791539983521",
+   "product": {
+    "name": "Toshiba 34L M Series Grill Microwave Oven",
+    "brand": "Toshiba",
+    "model": "MM-EG34P(BK)",
+    "sku": "HT-KI-409",
+    "category": "Kitchen Appliances",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; invalid or unknown GTIN; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    }
+   ],
+   "reviewId": "p-1791539983521:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; invalid or unknown GTIN; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791540971000",
+   "product": {
+    "name": "Toshiba 750L Double Door Refrigerator",
+    "brand": "Toshiba",
+    "model": "GRA820U-X(BS)",
+    "sku": "HT-RE-199",
+    "category": "Refrigeration",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; invalid or unknown GTIN; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    }
+   ],
+   "reviewId": "p-1791540971000:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; invalid or unknown GTIN; no automated official source for Toshiba — toshiba-lifestyle.com/ae returns 404"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791607856183",
+   "product": {
+    "name": "Haier 18,000 BTU LPA03 Series Split Air Conditioner",
+    "brand": "Haier",
+    "model": "HSU-18LPA03/T2(T3&T4)",
+    "sku": "HT-AI-532",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Haier — haier.com/ae timed out"
+    }
+   ],
+   "reviewId": "p-1791607856183:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Haier — haier.com/ae timed out"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791607987897",
+   "product": {
+    "name": "Haier 18,000 BTU LPB03 Series Split Air Conditioner",
+    "brand": "Haier",
+    "model": "HSU-18LPB03/R2(T3&T4)",
+    "sku": "HT-AI-488",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Haier — haier.com/ae timed out"
+    }
+   ],
+   "reviewId": "p-1791607987897:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Haier — haier.com/ae timed out"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791608233015",
+   "product": {
+    "name": "Haier LPA Series Split Air Conditioners",
+    "brand": "Haier",
+    "model": "HSU-18/24LPA03",
+    "sku": "HT-AI-804",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    }
+   ],
+   "reviewId": "p-1791608233015:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    ]
+   }
+  },
+  {
+   "productId": "p-1791608314749",
+   "product": {
+    "name": "LPB Series Split Air Conditioners",
+    "brand": "Haier",
+    "model": "HSU-18/24LPB03",
+    "sku": "HT-AI-253",
+    "category": "Air Conditioning",
+    "status": "active",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    }
+   ],
+   "reviewId": "p-1791608314749:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit); record combines several models — no single model to search for (see UI audit)"
+    ]
+   }
+  },
+  {
+   "productId": "gree-t4-matic-i60c3",
+   "product": {
+    "name": "Gree Floor Standing AC T4 MATIC-i60C3 – 5.0 Ton — Freestanding — Inverter — R410a — 240/1/50",
+    "brand": "Gree",
+    "model": "T4 MATIC-i60C3",
+    "sku": "T4-MATIC-I60C3",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree"
+    }
+   ],
+   "reviewId": "gree-t4-matic-i60c3:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree"
+    ]
+   }
+  },
+  {
+   "productId": "gree-t4-matic-t36c3",
+   "product": {
+    "name": "Gree Floor Standing AC T4 MATIC-T36C3 – 3.0 Ton — Freestanding — Inverter — R410a — 240/1/50",
+    "brand": "Gree",
+    "model": "T4 MATIC-T36C3",
+    "sku": "T4-MATIC-T36C3",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree"
+    }
+   ],
+   "reviewId": "gree-t4-matic-t36c3:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree"
+    ]
+   }
+  },
+  {
+   "productId": "gree-t4-matic-t48c3",
+   "product": {
+    "name": "Gree Floor Standing AC T4 MATIC-T48C3 – 4.0 Ton — Freestanding — Inverter — R410a — 240/1/50",
+    "brand": "Gree",
+    "model": "T4 MATIC-T48C3",
+    "sku": "T4-MATIC-T48C3",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree"
+    }
+   ],
+   "reviewId": "gree-t4-matic-t48c3:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree"
+    ]
+   }
+  },
+  {
+   "productId": "indesit-ib-65b60ne",
+   "product": {
+    "name": "Indesit IB-65B60NE – IND BUILT IN 60CM INDUCTION HOB F158311",
+    "brand": "Indesit",
+    "model": "IB-65B60NE",
+    "sku": "IB-65B60NE",
+    "category": "Cooking Appliances",
+    "status": "draft",
+    "images": [
+     "https://indesituk.vtexassets.com/arquivos/ids/158882/pi-b92ca499-20fd-4420-97e5-ac722a24d24f.jpg?v=638624498879730000"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "no source searched yet"
+    }
+   ],
+   "reviewId": "indesit-ib-65b60ne:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "no source searched yet"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-f4-matic-18c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-F4 MATIC-18C3-IND – High Wall, 1.5 Ton, Rotary",
+    "brand": "Gree",
+    "model": "GR-F4 MATIC-18C3-IND",
+    "sku": "GR-F4-MATIC-18C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree"
+    }
+   ],
+   "reviewId": "gree-gr-f4-matic-18c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i-airy32-12c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I Airy32-12C3-IND – High Wall, 1.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I Airy32-12C3-IND",
+    "sku": "GR-I-AIRY32-12C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i-airy32-12c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i-airy32-18c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I Airy32-18C3-IND – High Wall, 1.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I Airy32-18C3-IND",
+    "sku": "GR-I-AIRY32-18C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i-airy32-18c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i-airy32-24c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I Airy32-24C3-IND – High Wall, 2.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I Airy32-24C3-IND",
+    "sku": "GR-I-AIRY32-24C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i-airy32-24c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i-airy32-30c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I Airy32-30C3-IND – High Wall, 2.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I Airy32-30C3-IND",
+    "sku": "GR-I-AIRY32-30C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i-airy32-30c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i2-pro-12c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I2 Pro-12C3-IND – High Wall, 1.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I2 Pro-12C3-IND",
+    "sku": "GR-I2-PRO-12C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i2-pro-12c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i2-pro-18c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I2 Pro-18C3-IND – High Wall, 1.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I2 Pro-18C3-IND",
+    "sku": "GR-I2-PRO-18C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i2-pro-18c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i2-pro-24c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I2 Pro-24C3-IND – High Wall, 2.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I2 Pro-24C3-IND",
+    "sku": "GR-I2-PRO-24C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i2-pro-24c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i2-pro-30c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I2 Pro-30C3-IND – High Wall, 2.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I2 Pro-30C3-IND",
+    "sku": "GR-I2-PRO-30C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i2-pro-30c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i2-pro-36c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I2 Pro-36C3-IND – High Wall, 3.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I2 Pro-36C3-IND",
+    "sku": "GR-I2-PRO-36C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i2-pro-36c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i4-pro-12c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I4 Pro-12C3-IND – High Wall, 1.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I4 Pro-12C3-IND",
+    "sku": "GR-I4-PRO-12C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i4-pro-12c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i4-pro-18c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I4 Pro-18C3-IND – High Wall, 1.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I4 Pro-18C3-IND",
+    "sku": "GR-I4-PRO-18C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i4-pro-18c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i4-pro-24c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I4 Pro-24C3-IND – High Wall, 2.0 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I4 Pro-24C3-IND",
+    "sku": "GR-I4-PRO-24C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i4-pro-24c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i4-pro-30c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I4 Pro-30C3-IND – High Wall, 2.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-I4 Pro-30C3-IND",
+    "sku": "GR-I4-PRO-30C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i4-pro-30c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-i4-pro-36c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-I4 Pro-36C3-IND – High Wall, 3.0 Ton",
+    "brand": "Gree",
+    "model": "GR-I4 Pro-36C3-IND",
+    "sku": "GR-I4-PRO-36C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-i4-pro-36c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-isave-plus-p30h3-indgree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-ISAVE PLUS-P30H3-IND – High Wall, 2.5 Ton, Inverter",
+    "brand": "Gree",
+    "model": "GR-ISAVE PLUS-P30H3-IND",
+    "sku": "GR-ISAVE-PLUS-P30H3-INDGREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree"
+    }
+   ],
+   "reviewId": "gree-gr-isave-plus-p30h3-indgree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-p4-matic-18c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-P4 MATIC-18C3-IND – High Wall, 1.5 Ton, Rotary",
+    "brand": "Gree",
+    "model": "GR-P4 MATIC-18C3-IND",
+    "sku": "GR-P4-MATIC-18C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-p4-matic-18c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-p4-matic-24c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-P4 MATIC-24C3-IND – High Wall, 2.0 Ton, Rotary",
+    "brand": "Gree",
+    "model": "GR-P4 MATIC-24C3-IND",
+    "sku": "GR-P4-MATIC-24C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-p4-matic-24c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-p4-matic-30c3-ind-gree",
+   "product": {
+    "name": "Gree High Wall Split AC GR-P4 MATIC-30C3-IND – High Wall, 2.5 Ton, Rotary",
+    "brand": "Gree",
+    "model": "GR-P4 MATIC-30C3-IND",
+    "sku": "GR-P4-MATIC-30C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-p4-matic-30c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-t4-matic-i36c3-ind-gree",
+   "product": {
+    "name": "Gree Floor Standing AC GR-T4'matic-I36C3-IND – Freestanding, 3.0 Ton",
+    "brand": "Gree",
+    "model": "GR-T4'matic-I36C3-IND",
+    "sku": "GR-T4MATIC-I36C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-t4-matic-i36c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-t4-matic-i48c3-ind-gree",
+   "product": {
+    "name": "Gree Floor Standing AC GR-T4'matic-I48C3-IND – Freestanding, 4.0 Ton",
+    "brand": "Gree",
+    "model": "GR-T4'matic-I48C3-IND",
+    "sku": "GR-T4MATIC-I48C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-t4-matic-i48c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "gree-gr-t4-matic-n60c3-ind-gree",
+   "product": {
+    "name": "Gree Floor Standing AC GR-T4'matic-N60C3-IND – Freestanding, 5.0 Ton",
+    "brand": "Gree",
+    "model": "GR-T4'matic-N60C3-IND",
+    "sku": "GR-T4MATIC-N60C3-IND-GREE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "gree-gr-t4-matic-n60c3-ind-gree:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Gree; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-1200ddswdlx",
+   "product": {
+    "name": "Mazaya No Frost Glass Door Refrigerator GL-1200DDSWDLX – 5 shelves",
+    "brand": "Mazaya",
+    "model": "GL-1200DDSWDLX",
+    "sku": "GL-1200DDSWDLX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-1200ddswdlx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-1400ddswdlx",
+   "product": {
+    "name": "Mazaya No Frost Glass Door Refrigerator GL-1400DDSWDLX – 5 shelves",
+    "brand": "Mazaya",
+    "model": "GL-1400DDSWDLX",
+    "sku": "GL-1400DDSWDLX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-1400ddswdlx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf350cgq",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF350CGQ – 1030 × 680 × 850 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF350CGQ",
+    "sku": "GL-ICF350CGQ",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf350cgq:689262df9fe73f4aae1fdb1d",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350CGQ.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf350cgq/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF350CGQ\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/e5e69b6b06eb419ceb95f5b03316c8c25a2b144a8fc5cb698264e2a6be75b74f.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF350CGQ\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf350fdc",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF350FDC – 1034 × 653 × 900 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF350FDC",
+    "sku": "GL-ICF350FDC",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf350fdc:60d4bb325ce4967614783d58",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350FDC.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf350fdc/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF350FDC\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/0ce8ca748208730d57734fff071cc1a8f8158fc75a3df822700927af534f81cd.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF350FDC\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf350sdc",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF350SDC – 1034 × 653 × 900 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF350SDC",
+    "sku": "GL-ICF350SDC",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf350sdc:e039259f7255b1b33c8987b8",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF350SDC.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf350sdc/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF350SDC\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/5c120e5b2c56a50de693da3956e91defc44634906bf6dc3b4b1ce4fc5ea0a953.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF350SDC\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf360cgx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF360CGX – 990 × 715 × 875 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF360CGX",
+    "sku": "GL-ICF360CGX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf360cgx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf380fdx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF380FDX – 1165 × 605 × 784 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF380FDX",
+    "sku": "GL-ICF380FDX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf380fdx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf400cgx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF400CGX – 1205 × 606 × 842 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF400CGX",
+    "sku": "GL-ICF400CGX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf400cgx:744f1d2d472cfb0243911cbc",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF400CGX.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf400cgx/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF400CGX\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/e72ca4c5c282e0bd0d8682ca17f22c90de1c99511334d3ba3bd5a357e698c8ba.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF400CGX\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf450cgq",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF450CGQ – 1270 × 680 × 850 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF450CGQ",
+    "sku": "GL-ICF450CGQ",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf450cgq:55831e6364e38392b1ed7ad5",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450CGQ.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf450cgq/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF450CGQ\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/2289d9d85400418598fc323de0b0f634d7b069558c255b3c7d1d77c5e43297a1.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF450CGQ\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf450cgx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF450CGX – 1425 × 606 × 842 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF450CGX",
+    "sku": "GL-ICF450CGX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf450cgx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf450sdc",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF450SDC – 1434 × 653 × 900 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF450SDC",
+    "sku": "GL-ICF450SDC",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf450sdc:e903c29054518e63509d7fae",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF450SDC.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf450sdc/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF450SDC\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/bc7834967aa40655ada9440a275893b9cd28470ec9f199541004cf805a76449a.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF450SDC\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf460cgx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF460CGX – 1260 × 715 × 875 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF460CGX",
+    "sku": "GL-ICF460CGX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf460cgx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf500fdc",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF500FDC – 1434 × 653 × 900 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF500FDC",
+    "sku": "GL-ICF500FDC",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "pending_review",
+     "note": "HIGH"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf500fdc:20478e281c3f0facef9377f8",
+   "state": "pending_review",
+   "rank": 0,
+   "candidate": {
+    "url": "https://mazayauae.com/wp-content/uploads/2025/03/GL-ICF500FDC.jpg",
+    "sourcePage": "https://mazayauae.com/product/gl-icf500fdc/",
+    "sourceType": "manufacturer",
+    "discoveredAt": "2026-10-18T21:40:29.328Z",
+    "width": 1181,
+    "height": 1181,
+    "format": "jpeg",
+    "sha256": "641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b",
+    "technicallyValid": true,
+    "technicalIssue": null,
+    "modelEvidence": "exact model in source title \"GL-ICF500FDC\"",
+    "aiAssessment": null,
+    "permissionStatus": "permission_pending",
+    "permissionReason": "No terms of use, image policy or media licence published; site shows a copyright notice only. Default copyright applies — no reuse licence granted.",
+    "licenceEvidence": [
+     {
+      "url": "https://mazayauae.com/",
+      "finding": "Footer copyright notice; footer links only to About Us and Contact Us."
+     },
+     {
+      "url": "https://mazayauae.com/page-sitemap.xml",
+      "finding": "Site pages: home, cart, my-account, about-us, contact-us, our-products, category pages, thank-you — no terms, licence or media page."
+     },
+     {
+      "url": "https://mazayauae.com/robots.txt",
+      "finding": "Allows the product pages and Store API used for lookup (robots is not a reuse licence)."
+     }
+    ],
+    "cacheFile": "work/product-image-pipeline/cache/641861b38cb99467244fc0057ebbd207a3990a66d15859c44a635936416cd67b.jpeg",
+    "checks": [
+     "official mazayauae.com: exact model in source title \"GL-ICF500FDC\""
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-icf560fdx",
+   "product": {
+    "name": "Mazaya Commercial Ice Cream Freezer GL-ICF560FDX – 1425 × 606 × 842 mm",
+    "brand": "Mazaya",
+    "model": "GL-ICF560FDX",
+    "sku": "GL-ICF560FDX",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-icf560fdx:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 2 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-24wtc",
+   "product": {
+    "name": "Mazaya Domestic Water Tank Chiller GL-24WTC – Tank capacity to be cooled: 800–1000 Gallon",
+    "brand": "Mazaya",
+    "model": "GL-24WTC",
+    "sku": "GL-24WTC",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-24wtc:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-36wtc",
+   "product": {
+    "name": "Mazaya Domestic Water Tank Chiller GL-36WTC – Tank capacity to be cooled: 1200–1500 Gallon",
+    "brand": "Mazaya",
+    "model": "GL-36WTC",
+    "sku": "GL-36WTC",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-36wtc:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "mazaya-gl-60wtc",
+   "product": {
+    "name": "Mazaya Domestic Water Tank Chiller GL-60WTC – Tank capacity to be cooled: 2000–3000 Gallon",
+    "brand": "Mazaya",
+    "model": "GL-60WTC",
+    "sku": "GL-60WTC",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "mazaya-gl-60wtc:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "phoenix-ph1019",
+   "product": {
+    "name": "Phoenix Electric Catering Tea Urn 10L",
+    "brand": "Phoenix",
+    "model": "PH1019",
+    "sku": "PH1019",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+    }
+   ],
+   "reviewId": "phoenix-ph1019:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+    ]
+   }
+  },
+  {
+   "productId": "phoenix-ph2019",
+   "product": {
+    "name": "Phoenix Electric Catering Tea Urn 20L",
+    "brand": "Phoenix",
+    "model": "PH2019",
+    "sku": "PH2019",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+    }
+   ],
+   "reviewId": "phoenix-ph2019:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Phoenix — phoenix-uae.com returns HTTP 403"
+    ]
+   }
+  },
+  {
+   "productId": "pro-general-prg18wac",
+   "product": {
+    "name": "1.5 Ton Window Air Conditioner",
+    "brand": "Pro General",
+    "model": "PRG18WAC",
+    "sku": "PRG18WAC",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Pro General"
+    }
+   ],
+   "reviewId": "pro-general-prg18wac:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Pro General"
+    ]
+   }
+  },
+  {
+   "productId": "pro-general-prg24wac",
+   "product": {
+    "name": "2 Ton Window Air Conditioner",
+    "brand": "Pro General",
+    "model": "PRG24WAC",
+    "sku": "PRG24WAC",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Pro General"
+    }
+   ],
+   "reviewId": "pro-general-prg24wac:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Pro General"
+    ]
+   }
+  },
+  {
+   "productId": "pro-general-prg18sac",
+   "product": {
+    "name": "1.5 Ton Split Air Conditioner",
+    "brand": "Pro General",
+    "model": "PRG18SAC",
+    "sku": "PRG18SAC",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Pro General"
+    }
+   ],
+   "reviewId": "pro-general-prg18sac:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Pro General"
+    ]
+   }
+  },
+  {
+   "productId": "pro-general-prg24sac",
+   "product": {
+    "name": "2 Ton Split Air Conditioner",
+    "brand": "Pro General",
+    "model": "PRG24SAC",
+    "sku": "PRG24SAC",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Pro General"
+    }
+   ],
+   "reviewId": "pro-general-prg24sac:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Pro General"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dgc-665bsf",
+   "product": {
+    "name": "Dishwasher",
+    "brand": "Daewoo",
+    "model": "DW-DGC-665BSF",
+    "sku": "DWDGC665BSF",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dgc-665bsf:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dgc-s965hdfp",
+   "product": {
+    "name": "Dishwasher",
+    "brand": "Daewoo",
+    "model": "DW-DGC-S965HDFP",
+    "sku": "DWDGCS965HDFP",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dgc-s965hdfp:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dcc-s664hf",
+   "product": {
+    "name": "Dishwasher",
+    "brand": "Daewoo",
+    "model": "DW-DCC-S664HF",
+    "sku": "DWDCCS664HF",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dcc-s664hf:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dcd-8s15p",
+   "product": {
+    "name": "Dishwasher",
+    "brand": "Daewoo",
+    "model": "DW-DCD-8S15P",
+    "sku": "DWDCD8S15P",
+    "category": "Kitchen Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dcd-8s15p:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dcf-151d",
+   "product": {
+    "name": "Chest Freezer",
+    "brand": "Daewoo",
+    "model": "DW-DCF-151D",
+    "sku": "DWDCF151D",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dcf-151d:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dcf-221d",
+   "product": {
+    "name": "Chest Freezer",
+    "brand": "Daewoo",
+    "model": "DW-DCF-221D",
+    "sku": "DWDCF221D",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dcf-221d:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dw-t131wd",
+   "product": {
+    "name": "Washing Machine",
+    "brand": "Daewoo",
+    "model": "DW-DW-T131WD",
+    "sku": "DWDWT131WD",
+    "category": "Laundry Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dw-t131wd:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-dw-t201wd",
+   "product": {
+    "name": "Washing Machine",
+    "brand": "Daewoo",
+    "model": "DW-DW-T201WD",
+    "sku": "DWDWT201WD",
+    "category": "Laundry Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-dw-t201wd:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-250vsn",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-250VSN",
+    "sku": "DWFR250VSN",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-250vsn:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-343s",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-343S",
+    "sku": "DWFR343S",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-343s:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-380vsn",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-380VSN",
+    "sku": "DWFR380VSN",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-380vsn:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-559vsin",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-559VSIN",
+    "sku": "DWFR559VSIN",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-559vsin:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-624vsin",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-624VSIN",
+    "sku": "DWFR624VSIN",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-624vsin:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "daewoo-dw-fr-902vsin",
+   "product": {
+    "name": "Refrigerator",
+    "brand": "Daewoo",
+    "model": "DW-FR-902VSIN",
+    "sku": "DWFR902VSIN",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": [
+     "/featured/hisense-window-ac.png"
+    ]
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    }
+   ],
+   "reviewId": "daewoo-dw-fr-902vsin:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; no automated official source for Daewoo — daewooelectronics.com sells a different (UK) range; DW-… models not listed"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sga18ae",
+   "product": {
+    "name": "Super General 17,500 BTU Window Air Conditioner",
+    "brand": "Super General",
+    "model": "SGA18AE",
+    "sku": "SGA18AE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sga18ae:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sga24ae",
+   "product": {
+    "name": "Super General 24,000 BTU Window Air Conditioner",
+    "brand": "Super General",
+    "model": "SGA24AE",
+    "sku": "SGA24AE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sga24ae:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sga121ae",
+   "product": {
+    "name": "Super General Split Air Conditioner SGA121AE",
+    "brand": "Super General",
+    "model": "SGA121AE",
+    "sku": "SGA121AE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sga121ae:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs195fe",
+   "product": {
+    "name": "Super General Split Air Conditioner SGS195FE",
+    "brand": "Super General",
+    "model": "SGS195FE",
+    "sku": "SGS195FE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgs195fe:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs245fe",
+   "product": {
+    "name": "Super General Split Air Conditioner SGS245FE",
+    "brand": "Super General",
+    "model": "SGS245FE",
+    "sku": "SGS245FE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgs245fe:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs366ae",
+   "product": {
+    "name": "Super General Split Air Conditioner SGS366AE",
+    "brand": "Super General",
+    "model": "SGS366AE",
+    "sku": "SGS366AE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgs366ae:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs191cn",
+   "product": {
+    "name": "Super General Piston Split Air Conditioner SGS191CN",
+    "brand": "Super General",
+    "model": "SGS191CN",
+    "sku": "SGS191CN",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgs191cn:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs260cn",
+   "product": {
+    "name": "Super General Piston Split Air Conditioner SGS260CN",
+    "brand": "Super General",
+    "model": "SGS260CN",
+    "sku": "SGS260CN",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgs260cn:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgs370cn",
+   "product": {
+    "name": "Super General Piston Split Air Conditioner SGS370CN",
+    "brand": "Super General",
+    "model": "SGS370CN",
+    "sku": "SGS370CN",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgs370cn:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgp124t3",
+   "product": {
+    "name": "Super General 1 Ton Portable Air Conditioner",
+    "brand": "Super General",
+    "model": "SGP124T3",
+    "sku": "SGP124T3",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgp124t3:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgp184t3",
+   "product": {
+    "name": "Super General 1.5 Ton Portable Air Conditioner",
+    "brand": "Super General",
+    "model": "SGP184T3",
+    "sku": "SGP184T3",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgp184t3:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found; 1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgr365ie",
+   "product": {
+    "name": "Super General 360 L Double Door Refrigerator",
+    "brand": "Super General",
+    "model": "SGR365IE",
+    "sku": "SGR365IE",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgr365ie:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgr515ie",
+   "product": {
+    "name": "Super General 510 L Double Door Refrigerator",
+    "brand": "Super General",
+    "model": "SGR515IE",
+    "sku": "SGR515IE",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgr515ie:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgf644he",
+   "product": {
+    "name": "Super General 600 Litre Chest Freezer",
+    "brand": "Super General",
+    "model": "SGF644HE",
+    "sku": "SGF644HE",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgf644he:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgf444he",
+   "product": {
+    "name": "Super General 450 L Chest Freezer",
+    "brand": "Super General",
+    "model": "SGF444HE",
+    "sku": "SGF444HE",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgf444he:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgf444hmei",
+   "product": {
+    "name": "Super General 425 L Inverter Chest Freezer",
+    "brand": "Super General",
+    "model": "SGF444HMEI",
+    "sku": "SGF444HMEI",
+    "category": "Refrigeration",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    }
+   ],
+   "reviewId": "super-general-sgf444hmei:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "icecat: not in the Icecat database; supergeneral.com: exact model not found"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgb-02-ss",
+   "product": {
+    "name": "Super General SGB 02 SS Gas Cooker",
+    "brand": "Super General",
+    "model": "SGB 02 SS",
+    "sku": "SGB02SS",
+    "category": "Cooking Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "no source searched yet"
+    }
+   ],
+   "reviewId": "super-general-sgb-02-ss:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "no source searched yet"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgsc137",
+   "product": {
+    "name": "Super General SGSC137 Showcase Chiller",
+    "brand": "Super General",
+    "model": "SGSC137",
+    "sku": "SGSC137",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgsc137:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgmm921nhw",
+   "product": {
+    "name": "Super General SGMM921NHW Microwave Oven",
+    "brand": "Super General",
+    "model": "SGMM921NHW",
+    "sku": "SGMM921NHW",
+    "category": "Cooking Appliances",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgmm921nhw:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgsc74",
+   "product": {
+    "name": "Super General SGSC74 Showcase Chiller",
+    "brand": "Super General",
+    "model": "SGSC74",
+    "sku": "SGSC74",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgsc74:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgfs36ae",
+   "product": {
+    "name": "Super General SGFS36AE Floor Standing Air Conditioner",
+    "brand": "Super General",
+    "model": "SGFS36AE",
+    "sku": "SGFS36AE",
+    "category": "Air Conditioning",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "1 candidate(s) rejected in verification"
+    }
+   ],
+   "reviewId": "super-general-sgfs36ae:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "1 candidate(s) rejected in verification"
+    ]
+   }
+  },
+  {
+   "productId": "super-general-sgsc717cg",
+   "product": {
+    "name": "Super General SGSC717CG Showcase Chiller",
+    "brand": "Super General",
+    "model": "SGSC717CG",
+    "sku": "SGSC717CG",
+    "category": "Commercial Cooling",
+    "status": "draft",
+    "images": []
+   },
+   "version": 1,
+   "history": [
+    {
+     "at": "2026-10-18T21:40:31.393Z",
+     "by": "pipeline",
+     "from": "discovered",
+     "to": "needs_manual_source",
+     "note": "no source searched yet"
+    }
+   ],
+   "reviewId": "super-general-sgsc717cg:source",
+   "state": "needs_manual_source",
+   "rank": 0,
+   "candidate": {
+    "checks": [
+     "no source searched yet"
+    ]
+   }
+  }
+ ]
+}

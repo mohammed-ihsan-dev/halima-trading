@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:18.917Z",
+ "document": {
+  "_id": "6ad07fd8f9be311bced6d591",
+  "id": "panasonic-sdm-wd5531bg",
+  "slug": "dual-touchless-bottom-loading-water-dispenser-sdm-wd5531bg",
+  "sku": "SDMWD5531BG",
+  "name": "Dual Touchless Bottom Loading Water Dispenser",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "SDM-WD5531BG",
+  "category": "Home & Small Appliances",
+  "categorySlug": "home-small-appliances",
+  "subcategory": "Water Dispensers",
+  "description": "Bottom-loading water dispenser with dual touchless functionality.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://tamigstore.com/cdn/shop/files/pn8-1__73981_1.webp?v=1748167449"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:58.636Z"
+ }
+}

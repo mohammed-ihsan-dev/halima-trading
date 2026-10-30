@@ -1,0 +1,36 @@
+{
+ "takenAt": "2026-10-30T11:51:49.172Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d555",
+  "id": "mitsubishi-ms-gs36-mu-gs36",
+  "slug": "3-ton-wall-mounted-air-conditioner-ms-gs36-mu-gs36",
+  "sku": "MSGS36MUGS36",
+  "name": "3 Ton Wall Mounted Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "MS-GS36/MU-GS36",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "Wall-mounted air conditioner with 3-ton cooling capacity.",
+  "features": [
+   "3 ton cooling capacity"
+  ],
+  "specifications": {
+   "Capacity": "3 Ton"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.unitco.ae/wp-content/uploads/2022/04/MS-gs-30.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-22T15:23:38.018Z"
+ }
+}

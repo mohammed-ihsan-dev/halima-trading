@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-30T11:51:19.222Z",
+ "document": {
+  "_id": "6ace0ae7c20e09f0d82e773d",
+  "id": "skill-tech-sh-ms05fs",
+  "slug": "skill-tech-sh-ms05fs",
+  "sku": "SHMS05FS",
+  "name": "Skill Tech Heavy-Duty Adjustable Base",
+  "brand": "Skill Tech",
+  "brandSlug": "skill-tech",
+  "model": "SH MS05FS",
+  "category": "Home & Small Appliances",
+  "categorySlug": "home-small-appliances",
+  "subcategory": "Appliance Accessories",
+  "description": "Skill Tech heavy-duty adjustable base with non-locking casters for dryer, washing machine and refrigerator. Maximum load capacity 250 kg.",
+  "features": [
+   "Heavy-duty adjustable base",
+   "Non-locking casters",
+   "Suitable for dryers, washing machines and refrigerators",
+   "Maximum load capacity 250 kg"
+  ],
+  "specifications": {
+   "Maximum Load Capacity": "250 kg",
+   "Caster Type": "Non-locking",
+   "Model Number": "SH MS05FS"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://skilltechonline.com/_next/image?url=https%3A%2F%2Fapp.skilltechonline.com%2Fmedia%2Fassets%2Fimages%2Fuploads%2Fproducts%2Fgallery%2FFloor%2520Stand40f4bae7fa888ce4770c2e293f2cc0a8.jpg&w=3840&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:59.165Z",
+  "createdAt": "2026-10-13T10:41:43.020Z"
+ }
+}

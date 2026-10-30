@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-29T14:37:29.310Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd4",
+  "id": "haier-hw110-bd14387su1",
+  "slug": "haier-hw110-bd14387su1",
+  "sku": "HW110-BD14387SU1",
+  "name": "Haier 11.5kg Front Load Washing Machine with Direct Motion Motor, Grey HW110-BD14387SU1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HW110-BD14387SU1",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier 11.5kg Front Load Washing Machine with Direct Motion Motor, Grey, model HW110-BD14387SU1.",
+  "features": [
+   "Capacity: 11.5 kg",
+   "Motor: Direct Motion (DD)"
+  ],
+  "specifications": {
+   "Model": "HW110-BD14387SU1",
+   "Type": "Front load washing machine",
+   "Capacity": "11.5 kg",
+   "Motor": "Direct Motion (DD)"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

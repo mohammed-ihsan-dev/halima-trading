@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:19.825Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d68",
+  "id": "blue-star-ccb52010105",
+  "slug": "bswc-70-4t-ccb52010105",
+  "sku": "CCB52010105",
+  "name": "Blue Star Water Cooler BSWC 70 4T",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "BSWC 70 4T",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "General",
+  "description": "",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/61Sz7KiPX8L.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.086Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

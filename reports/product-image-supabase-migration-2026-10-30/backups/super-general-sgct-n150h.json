@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:49.819Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006cb",
+  "id": "super-general-sgct-n150h",
+  "slug": "super-general-sgct-n150h",
+  "sku": "SGCTN150H",
+  "name": "S.G. AIR CURTAIN",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGCT N150H",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "Air Curtains",
+  "description": "S.G. AIR CURTAIN",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn.prod.website-files.com/6045fb25a7a5d32cb1e75f1a/61e285872cf07968f0707144_60d5560f052d0f301e992ce5_other.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:59.571Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

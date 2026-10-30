@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:07.357Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dd2",
+  "id": "lg-t18zca-uuae1",
+  "slug": "1-5-ton-on-off-model-t18zca-uuae1",
+  "sku": "T18ZCAUUAE1",
+  "name": "LG Split AC T18ZCA.UUAE1 – 1.5 TON - on/off model",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "T18ZCA.UUAE1",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "1.5 TON - on/off model",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn.media.amplience.net/i/lmg/168667935-168667935-HC29082025_01-2100.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:52.835Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

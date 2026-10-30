@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:59.978Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dcb",
+  "id": "lg-i27tcp-uuae2",
+  "slug": "2-0-ton-dual-inverter-i27tcp-uuae2",
+  "sku": "I27TCPUUAE2",
+  "name": "LG Split AC I27TCP.UUAE2 – 2.0 TON - Dual Inverter",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "I27TCP.UUAE2",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "2.0 TON - Dual Inverter",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/tropical-split-air-conditioners/md07597687/gallery/Z05.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.761Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

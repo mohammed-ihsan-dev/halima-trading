@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:10.633Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e5c",
+  "id": "samsung-mg402madxbb-sg",
+  "slug": "samsung-refrigerators-freezer-mg402madxbb-sg-mg402madxbb-sg",
+  "sku": "MG402MADXBB--SG",
+  "name": "Samsung 40L Grill Microwave Ceramic MG402MADXBB / SG",
+  "brand": "Samsung",
+  "brandSlug": "samsung",
+  "model": "MG402MADXBB / SG",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "40L Grill Microwave Ceramic; Capacity: 40 Liters; Power Consumption: 1550 W; CMO Installation; Ceramic Enamel; LED Display; Button Door Type; Cavity: 375 x 262 x 392 mm (WxHxD); Outside: 555 x 513 x 492 mm (WxHxD); Weight (Net): 19.0 Kg Technical/Other Basic Feature; 10 Microwave Power Levels; 30 sec. Plus; Max. Cook Time; Child Safety Lock; Microwave Output: 950 W; Reminder and signal; Cooking stages; Auto Cook; Membrane Control",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://images.samsung.com/is/image/samsung/mx-microwave-oven-solo-ms402madxbb-ms402madxbb-ax-001-front-gray?$624_624_PNG$"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:58.919Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:01.629Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e11",
+  "id": "lg-fh2j3odngop",
+  "slug": "7-kg-white-color-egypt-fh2j3odngop",
+  "sku": "FH2J3ODNGOP",
+  "name": "LG Front Load Washer FH2J3ODNGOP – 7-KG WHITE COLOR-EGYPT",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "FH2J3ODNGOP",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "7-KG WHITE COLOR-EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/eastafrica/images/washing-machines/md07591031/gallery/1044_1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.479Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

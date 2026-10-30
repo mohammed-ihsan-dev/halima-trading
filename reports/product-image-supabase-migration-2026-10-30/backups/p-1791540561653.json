@@ -1,0 +1,52 @@
+{
+ "takenAt": "2026-10-30T11:35:24.511Z",
+ "document": {
+  "_id": "6ac8bd52d467feb0e4adfa73",
+  "slug": "7kg-top-load-washing-machine",
+  "brand": "Toshiba",
+  "brandSlug": "toshiba",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "createdAt": "2026-10-09T10:09:21.653Z",
+  "currency": "AED",
+  "deliveryRate": 0,
+  "description": "Top load washing machine in a white finish with a 7 kg capacity, featuring The Great Waves technology, 15 Quick Wash, Recycle Water Fall, Tub Clean, 24-hour delay start, child lock, and a big toughened glass cover. Dimensions are width 515 mm, depth 525 mm, and height 915 mm",
+  "featured": false,
+  "features": [
+   "7kg capacity",
+   "Great Waves technology",
+   "15 quick wash options",
+   "Recycle Water Fall",
+   "Tub clean",
+   "24-hour delay start",
+   "Child lock",
+   "Toughened glass cover"
+  ],
+  "id": "p-1791540561653",
+  "images": [
+   "https://rukminim2.flixcart.com/image/480/640/xif0q/washing-machine-new/l/l/e/-original-imahqye9gbppv3mp.jpeg?q=80"
+  ],
+  "inStock": true,
+  "model": "AW-J800DUPA",
+  "name": "Toshiba 7kg Top Load Washing Machine",
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "sku": "HT-LA-433",
+  "specifications": {
+   "Capacity": "7kg",
+   "Type": "Top Load Washing Machine",
+   "Washing Technology": "Great Waves",
+   "Quick Wash": "15 programs",
+   "Delay Start": "24 hours",
+   "Color": "White",
+   "Country of Origin": "Thailand",
+   "Barcode": "8858730310553",
+   "Item Code": "1796066",
+   "Dimensions": "515 × 525 × 915mm"
+  },
+  "status": "active",
+  "stockCount": 1,
+  "subcategory": "Washing Machines",
+  "updatedAt": "2026-10-16T10:07:59.346Z"
+ }
+}

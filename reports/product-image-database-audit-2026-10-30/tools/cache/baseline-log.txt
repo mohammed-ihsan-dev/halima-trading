@@ -1,0 +1,108 @@
+URL checks: 828 unique http(s) refs, 828 to check
+{
+ "products": {
+  "withValidImage": {
+   "count": 687,
+   "pct": 77.6
+  },
+  "accessibleButQuestionable": {
+   "count": 182,
+   "pct": 20.6,
+   "meaning": "image loads but every accessible image is a Google search thumbnail, logo/stock-site image or under 300 px"
+  },
+  "noImageReference": {
+   "count": 10,
+   "pct": 1.1
+  },
+  "brokenImage": {
+   "count": 6,
+   "pct": 0.7
+  },
+  "unverified": {
+   "count": 0,
+   "pct": 0
+  },
+  "invalidFormat": {
+   "count": 0,
+   "pct": 0
+  },
+  "needingManualReview": {
+   "count": 187,
+   "pct": 21.1
+  },
+  "withMultipleImages": {
+   "count": 17,
+   "pct": 1.9
+  },
+  "withDuplicateImageReferences": {
+   "count": 206,
+   "pct": 23.3
+  },
+  "withoutValidImage": {
+   "count": 198,
+   "pct": 22.4
+  },
+  "byStatusActive": {
+   "valid-image": 676,
+   "accessible-but-questionable": 182,
+   "no-image-reference": 9,
+   "broken-image": 6,
+   "unverified-needs-review": 0,
+   "invalid-format": 0
+  },
+  "byStorageType": {
+   "supabase": 527,
+   "external-url": 345,
+   "mongodb-base64": 12,
+   "relative-public-path": 0,
+   "local-project-path": 0,
+   "other-r2": 0,
+   "other": 0,
+   "unknown-invalid": 0
+  }
+ },
+ "refs": {
+  "accessible": 886,
+  "http-403": 6
+ },
+ "matchability": {
+  "productsWithoutValidImage": 198,
+  "withHighConfidenceLocalOrCatalogueCandidate": 16,
+  "withMediumOrBetterCandidate": 44,
+  "withAnyCandidate": 129,
+  "likelyNeedingExternalSourcing": 154,
+  "note": "Candidates are leads only: none were assigned; each needs visual confirmation and documented usage rights."
+ },
+ "assets": {
+  "total": 1639,
+  "byKind": {
+   "logo": 17,
+   "website-ui": 47,
+   "product-image-candidate": 256,
+   "unclassified": 8,
+   "pipeline-working-file": 1311
+  },
+  "byArea": {
+   "public/brands": 6,
+   "public": 17,
+   "public/featured": 12,
+   "public/icons": 1,
+   "public/images/categories": 16,
+   "public/images/hero": 10,
+   "public/product-images": 1,
+   "public/products": 4,
+   "catalogues-source": 81,
+   "work/catalogue-images": 463,
+   "work/image-pilot": 3,
+   "work/product-image-pipeline": 1025
+  },
+  "identicalFileGroups": 115,
+  "alreadyUploadedCopies": 220
+ },
+ "catalogues": {
+  "pdfs": 25,
+  "productCatalogues": 19,
+  "totalPages": 970,
+  "unreadable": 0
+ }
+}

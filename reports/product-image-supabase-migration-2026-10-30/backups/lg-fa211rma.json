@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:16.468Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dda",
+  "id": "lg-fa211rma",
+  "slug": "gas-cooker-60-x-60-china-fa211rma",
+  "sku": "FA211RMA",
+  "name": "LG Gas Cooker FA211RMA – Gas cooker - 60 x 60-CHINA",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "FA211RMA",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "Gas cooker - 60 x 60-CHINA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/71eWNhoNKPL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.360Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

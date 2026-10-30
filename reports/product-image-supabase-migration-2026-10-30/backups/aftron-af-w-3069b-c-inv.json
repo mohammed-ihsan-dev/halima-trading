@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:27.634Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d48",
+  "id": "aftron-af-w-3069b-c-inv",
+  "slug": "aftron-2-5-ton-split-ac-inverter-af-w-3069b-c-inv",
+  "sku": "AF-W-3069BC-INV",
+  "name": "AFTRON 2.5 TON SPLIT AC, INVERTER (AF-W-3069B/C-INV)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-3069B/C-INV",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2.5 TON SPLIT AC, INVERTER",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51tB1cfq-jL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.378Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

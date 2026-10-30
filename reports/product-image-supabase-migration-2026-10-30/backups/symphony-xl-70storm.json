@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:54.399Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e6c",
+  "id": "symphony-xl-70storm",
+  "slug": "symphony-air-cooler-xl-70storm-xl-70storm",
+  "sku": "XL-70STORM",
+  "name": "Symphony Outdoor Residential Air Cooler XL-70STORM",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "XL-70STORM",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 70 L; Power: 210 W; Max Air Throw: 4,200 m³/hr; Room Size: 37 sq. m; 3 Fan Speeds; 3-Sided Honey Comb; Engineered Plastic Body; Made in India; Dimensions: 635 W × 500 D × 1125 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/71BBzFf17sL._AC_UF894,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.661Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

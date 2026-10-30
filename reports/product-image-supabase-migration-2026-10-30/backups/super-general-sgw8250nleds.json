@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:23.777Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c0",
+  "id": "super-general-sgw8250nleds",
+  "slug": "super-general-sgw8250nleds",
+  "sku": "SGW8250NLEDS",
+  "name": "SG FRONT LOAD W.MACHINE 8kg",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGW8250NLEDS",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "SG FRONT LOAD W.MACHINE",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/677/1728458847-sgw8250nleds-1.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.022Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

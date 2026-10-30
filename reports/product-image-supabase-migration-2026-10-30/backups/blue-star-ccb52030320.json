@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:02.651Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d5d",
+  "id": "blue-star-ccb52030320",
+  "slug": "hw36cxyfb3-01-split-ac-3-0-tr-rotary-r410a-ccb52030320",
+  "sku": "CCB52030320",
+  "name": "Blue Star Split AC 3.0 TR Rotary R410A – HW36CXYFB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW36CXYFB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 3.0 TR Rotary R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://anbisolutions.com/images/product/1773209963gqKlga8zjnXOHVyKuLqmqQt93DCfgEMWsAS8TOVt.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:36.927Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

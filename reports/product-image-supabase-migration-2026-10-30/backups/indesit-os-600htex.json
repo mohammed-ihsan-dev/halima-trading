@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:24.856Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d95",
+  "id": "indesit-os-600htex",
+  "slug": "916-x-1405-x-698-indesit-chest-freezer-600-ltrs-italy-os-600htex",
+  "sku": "OS-600HTEX",
+  "name": "Indesit OS-600HTEX – INDESIT CHEST FREEZER 600 LTRS, ITALY",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "OS-600HTEX",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT CHEST FREEZER 600 LTRS, ITALY; Size: 916 x 1405 x 698; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/41uJWO-A+EL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.216Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

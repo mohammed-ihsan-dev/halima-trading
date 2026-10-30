@@ -1,0 +1,39 @@
+{
+ "takenAt": "2026-10-29T14:36:48.215Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd8",
+  "id": "haier-hwd110-bd14397su1",
+  "slug": "haier-hwd110-bd14397su1",
+  "sku": "HWD110-BD14397SU1",
+  "name": "Haier 11.5kg/8kg Front Load Washer Dryer with DD Motor HWD110-BD14397SU1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HWD110-BD14397SU1",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washer Dryers",
+  "description": "Haier 11.5kg/8kg Front Load Washer Dryer with DD Motor, model HWD110-BD14397SU1.",
+  "features": [
+   "Wash Capacity: 11.5 kg",
+   "Dry Capacity: 8 kg",
+   "Motor: Direct drive (DD)"
+  ],
+  "specifications": {
+   "Model": "HWD110-BD14397SU1",
+   "Type": "Washer dryer",
+   "Wash Capacity": "11.5 kg",
+   "Dry Capacity": "8 kg",
+   "Motor": "Direct drive (DD)"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

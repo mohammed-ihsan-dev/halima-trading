@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:53:16.198Z",
+ "document": {
+  "_id": "6ad07fd8f9be311bced6d590",
+  "id": "panasonic-na-w18xg1brn",
+  "slug": "18kg-twin-tub-washing-machine-na-w18xg1brn",
+  "sku": "NAW18XG1BRN",
+  "name": "18kg Twin Tub Washing Machine",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-W18XG1BRN",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Twin-tub washing machine with 18kg capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S100551395_1?1791822288"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.921Z"
+ }
+}

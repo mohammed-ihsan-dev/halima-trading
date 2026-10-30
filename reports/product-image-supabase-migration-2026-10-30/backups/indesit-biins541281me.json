@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:38:17.296Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d91",
+  "id": "indesit-biins541281me",
+  "slug": "combi-indesit-bi-combi-360l-direct-cool-wht-biins541281me",
+  "sku": "BIINS541281ME",
+  "name": "Indesit BIINS541281ME – INDESIT BI COMBI 360L DIRECT COOL WHT",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "BIINS541281ME",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT BI COMBI 360L DIRECT COOL WHT; Size: COMBI; Origin: ROMANIA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://urbancucine.com/cdn/shop/files/Indesit_Built_in_Double_door_Fridge_-_Freezer_bottom_271_L_White_BIINS54_1281_ME.jpg?v=1773751430&width=1445"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.136Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

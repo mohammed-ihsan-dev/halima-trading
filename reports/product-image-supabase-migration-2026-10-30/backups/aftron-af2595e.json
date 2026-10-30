@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:32.239Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d4d",
+  "id": "aftron-af2595e",
+  "slug": "aftron-2-ton-window-ac-rotary-r410-gas-af2595e",
+  "sku": "AF2595E",
+  "name": "AFTRON 2 TON WINDOW AC, ROTARY, R410 GAS (AF2595E)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF2595E",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2 TON WINDOW AC, ROTARY, R410 GAS",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://rattanelect.com/wp-content/uploads/2024/01/1-29.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.533Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

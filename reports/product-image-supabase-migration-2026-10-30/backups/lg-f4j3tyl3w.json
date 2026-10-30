@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:52.024Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e0c",
+  "id": "lg-f4j3tyl3w",
+  "slug": "8-kg-white-color-egypt-f4j3tyl3w",
+  "sku": "F4J3TYL3W",
+  "name": "LG Front Load Washer F4J3TYL3W – 8-KG WHITE COLOR-EGYPT",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "F4J3TYL3W",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "8-KG WHITE COLOR-EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/washing-machines/md07579795/gallery/d1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.081Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:49.569Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d57",
+  "id": "blue-star-ccb52030307",
+  "slug": "hw30cxyfb3-01-split-ac-2-5-tr-rotary-r410a-ccb52030307",
+  "sku": "CCB52030307",
+  "name": "Blue Star Split AC 2.5 TR Rotary R410A – HW30CXYFB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW30CXYFB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 2.5 TR Rotary R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://images-eu.ssl-images-amazon.com/images/I/51+6farW4RL._AC_UL495_SR435,495_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.441Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

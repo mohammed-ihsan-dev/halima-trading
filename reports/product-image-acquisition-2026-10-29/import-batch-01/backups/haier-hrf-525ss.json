@@ -1,0 +1,34 @@
+{
+ "takenAt": "2026-10-29T14:37:24.890Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dc1",
+  "id": "haier-hrf-525ss",
+  "slug": "haier-hrf-525ss",
+  "sku": "HRF-525SS",
+  "name": "Haier 433L T-Door Refrigerator, No Frost HRF-525SS",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HRF-525SS",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Haier 433L T-Door Refrigerator, No Frost, model HRF-525SS.",
+  "features": [],
+  "specifications": {
+   "Model": "HRF-525SS",
+   "Type": "T-door refrigerator"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/hrf-525ss/fe93b152-973b-4a8a-8de7-4f7d3cb4f69b.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 10,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-29T09:46:49.978Z"
+ }
+}

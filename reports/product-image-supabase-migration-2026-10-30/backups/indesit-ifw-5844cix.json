@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:41.223Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d78",
+  "id": "indesit-ifw-5844cix",
+  "slug": "60cm-ind-b-in-e-oven-71-l-mp-8-prg-self-cleaning-digital-ifw-5844cix",
+  "sku": "IFW-5844CIX",
+  "name": "Indesit IFW-5844CIX – IND B-IN E/OVEN 71 L, MP 8 PRG, Self Cleaning, Digital Steel",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "IFW-5844CIX",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "IND B-IN E/OVEN 71 L, MP 8 PRG, Self Cleaning, Digital Steel; Size: 60cm; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/000000000001156523_1?1759942729"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.625Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

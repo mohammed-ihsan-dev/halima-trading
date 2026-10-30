@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:35.594Z",
+ "document": {
+  "_id": "6ad07f2b0880c5d000649170",
+  "id": "panasonic-sdm-wd4534bg",
+  "slug": "bottom-loading-ice-making-water-dispenser-sdm-wd4534bg",
+  "sku": "SDMWD4534BG",
+  "name": "Bottom Loading Ice Making Water Dispenser",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "SDM-WD4534BG",
+  "category": "Home & Small Appliances",
+  "categorySlug": "home-small-appliances",
+  "subcategory": "Water Dispensers",
+  "description": "Bottom-loading water dispenser with ice-making functionality.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.bzaaarz.com/_next/image?url=https%3A%2F%2Fbazzargate.s3.eu-central-1.amazonaws.com%2Fimages%2F0071f526-feb7-4ab2-87d0-38d9afb54b41.webp&w=2048&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:22:18.681Z",
+  "updatedAt": "2026-10-20T19:16:58.597Z"
+ }
+}

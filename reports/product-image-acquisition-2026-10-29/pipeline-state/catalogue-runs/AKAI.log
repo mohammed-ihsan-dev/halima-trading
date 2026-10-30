@@ -1,0 +1,26 @@
+page 1/1
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/akai/index.json", "pages": 1, "cached": false, "ocr": false}
+{
+ "pdf": "AKAI-ACMA-M12T3R4,M18T3R4.pdf",
+ "pagesProcessed": 1,
+ "pagesWithNativeText": 0,
+ "pagesNeedingOcr": 1,
+ "catalogueModelsIdentified": 0,
+ "brandProducts": 2,
+ "targetProducts": 1,
+ "targetsWithExactModelMatch": 0,
+ "candidates": 0,
+ "exactUnambiguousIdentity": 0,
+ "lowResolution": 0,
+ "eligible": 0,
+ "sharedImage": 0,
+ "needsReview": 0,
+ "embeddedAssets": 0,
+ "pageRenders": 0,
+ "flags": 0,
+ "targetsNotInCatalogue": 1,
+ "catalogueModelsNotInDatabase": 0,
+ "authorization": "permission_pending",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

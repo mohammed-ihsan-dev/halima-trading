@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:42.755Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd0",
+  "id": "haier-hw70-bp12929a",
+  "slug": "haier-hw70-bp12929a",
+  "sku": "HW70-BP12929A",
+  "name": "Haier Front Load Washing Machine HW70-BP12929A",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HW70-BP12929A",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier Front Load Washing Machine, model HW70-BP12929A.",
+  "features": [],
+  "specifications": {
+   "Model": "HW70-BP12929A",
+   "Type": "Front load washing machine"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "draft",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

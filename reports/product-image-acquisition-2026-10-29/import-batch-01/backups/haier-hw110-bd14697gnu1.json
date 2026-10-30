@@ -1,0 +1,35 @@
+{
+ "takenAt": "2026-10-29T14:37:33.852Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd5",
+  "id": "haier-hw110-bd14697gnu1",
+  "slug": "haier-hw110-bd14697gnu1",
+  "sku": "HW110-BD14697GNU1",
+  "name": "Haier 11kg 3-Drum Front Load Washing Machine with Direct Motion Motor HW110-BD14697GNU1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HW110-BD14697GNU1",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier 11kg 3-Drum Front Load Washing Machine with Direct Motion Motor, model HW110-BD14697GNU1.",
+  "features": [
+   "Motor: Direct Motion (DD)"
+  ],
+  "specifications": {
+   "Model": "HW110-BD14697GNU1",
+   "Type": "3-drum front load washing machine",
+   "Motor": "Direct Motion (DD)"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": true,
+  "stockCount": 10,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

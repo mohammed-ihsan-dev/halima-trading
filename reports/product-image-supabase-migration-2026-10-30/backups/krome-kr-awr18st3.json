@@ -1,0 +1,36 @@
+{
+ "takenAt": "2026-10-30T11:51:44.895Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d54a",
+  "id": "krome-kr-awr18st3",
+  "slug": "18-000-btu-rotary-window-air-conditioner-kr-awr18st3",
+  "sku": "KRAWR18ST3",
+  "name": "18,000 BTU Rotary Window Air Conditioner",
+  "brand": "Krome",
+  "brandSlug": "krome",
+  "model": "KR-AWR18ST3",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Window Air Conditioners",
+  "description": "Window air conditioner with rotary compressor and approximately 1.5-ton cooling capacity.",
+  "features": [
+   "Rotary compressor"
+  ],
+  "specifications": {
+   "Type": "Window Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S500930257_1?1774337290"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:49.000Z"
+ }
+}

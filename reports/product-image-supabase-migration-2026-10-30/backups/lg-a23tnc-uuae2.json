@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:46.027Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3da1",
+  "id": "lg-a23tnc-uuae2",
+  "slug": "1-5-ton-art-cool-a23tnc-uuae2",
+  "sku": "A23TNCUUAE2",
+  "name": "LG Split AC A23TNC.UUAE2 – 1.5 TON - Art Cool",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "A23TNC.UUAE2",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "1.5 TON - Art Cool",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn-tp1.euw1.kibocommerce.com/101180-102063/cms/102063/files/a77002c6-dbc5-460d-954a-5c1ebf17cbb8?quality=75&max=900&w=640&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:49.356Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

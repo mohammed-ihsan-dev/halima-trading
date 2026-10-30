@@ -1,0 +1,39 @@
+{
+ "takenAt": "2026-10-29T14:37:05.513Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dcd",
+  "id": "haier-hcr6060et1",
+  "slug": "haier-hcr6060et1",
+  "sku": "HCR6060ET1",
+  "name": "Haier 60cm 4-Zone Ceramic Electric Cooker with Air Fry HCR6060ET1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HCR6060ET1",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "Cookers",
+  "description": "Haier 60cm 4-Zone Ceramic Electric Cooker with Air Fry, model HCR6060ET1.",
+  "features": [
+   "Zones: 4",
+   "Origin: China"
+  ],
+  "specifications": {
+   "Model": "HCR6060ET1",
+   "Type": "Freestanding ceramic electric cooker",
+   "Zones": "4",
+   "Origin": "China"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/hcr6060et1/072016d9-1d13-4b15-8fc1-97d4eb63b97d.jpg"
+  ],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-29T09:58:01.531Z"
+ }
+}

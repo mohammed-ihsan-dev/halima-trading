@@ -1,0 +1,38 @@
+{
+ "takenAt": "2026-10-30T11:52:04.368Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d55b",
+  "id": "mitsubishi-pey-zm18jag-suy-zm18va",
+  "slug": "1-5-ton-ducted-inverter-air-conditioner-pey-zm18jag-suy-zm18va",
+  "sku": "PEYZM18JAGSUYZM18VA",
+  "name": "1.5 Ton Ducted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "PEY-ZM18JAG / SUY-ZM18VA",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Ducted Air Conditioners",
+  "description": "Ducted inverter air conditioning system with approximately 1.5-ton cooling capacity.",
+  "features": [
+   "1.5 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "1.5 Ton",
+   "Type": "Ducted Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.fajtradingllc.com/cdn/shop/files/1_9676a2f3-1c26-415b-b91b-158c34c37d1a.jpg?v=1777634854&width=1000"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:55.848Z"
+ }
+}

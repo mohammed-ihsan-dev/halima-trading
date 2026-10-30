@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:28.871Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3df9",
+  "id": "lg-gr-c629hqcl",
+  "slug": "net-capacity-438-gr-c629hqcl",
+  "sku": "GR-C629HQCL",
+  "name": "LG Top Mount Refrigerator GR-C629HQCL – NET CAPACITY: 438",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GR-C629HQCL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 438",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljdppZ1BY5iwDS36h9R3eiuAFPJWlKcuqnkmcA6g6x87TIw7CR2wScOGH&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.263Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

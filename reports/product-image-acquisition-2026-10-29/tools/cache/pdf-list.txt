@@ -1,0 +1,25 @@
+./catalogues-source/19147 midea-catalogue-2026-R3.pdf
+./catalogues-source/AKAI-ACMA-M12T3R4,M18T3R4.pdf
+./catalogues-source/B+D_Heaters_Product_Details (002).pdf
+./catalogues-source/Gree-Catalogue-2025-IR.pdf
+./catalogues-source/HKL060070M.pdf
+./catalogues-source/HKQ38A150M.pdf
+./catalogues-source/Hisense_HA catalogue_2026_Lowres.pdf
+./catalogues-source/KGN36NL30M (1).pdf
+./catalogues-source/KROME CATALOG 25-26.pdf
+./catalogues-source/LG HA & RAC (PS)PPT.pdf
+./catalogues-source/MAZAYA CATALOGUE 2025.pdf
+./catalogues-source/Nikai Cataloge 2025 26-03-25.pdf
+./catalogues-source/SAMSUNG.pdf
+./catalogues-source/SMS26AI00M (2).pdf
+./catalogues-source/SMS26AW00M (1).pdf
+./catalogues-source/SMS4ECI26M.pdf
+./catalogues-source/SMS4HMC25M.pdf
+./catalogues-source/SMS4HMI25M.pdf
+./catalogues-source/SMS6EMI38M.pdf
+./catalogues-source/Symphony-2026-Rev(F).pdf
+./catalogues-source/TCL-UAE_AC Catalogue-2025.pdf
+./catalogues-source/superGeneral.pdf
+./catalogues-source/symphony.pdf
+./public/brochres/HALIMA_TRADING_UPDATED_.pdf
+./work/product-database-report-2026-10-22/HALIMA-TRADING-COMPLETE-PRODUCT-CATALOGUE.pdf

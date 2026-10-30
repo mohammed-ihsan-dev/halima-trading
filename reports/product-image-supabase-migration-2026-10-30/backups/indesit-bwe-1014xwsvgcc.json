@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:42.383Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d9f",
+  "id": "indesit-bwe-1014xwsvgcc",
+  "slug": "10-kg-indesit-washer-10kg-1400rpm-digital-bwe-1014xwsvgcc",
+  "sku": "BWE-1014XWSVGCC",
+  "name": "Indesit BWE-1014XWSVGCC – INDESIT WASHER 10KG, 1400RPM, DIGITAL INVERTOR WHT",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "BWE-1014XWSVGCC",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "INDESIT WASHER 10KG, 1400RPM, DIGITAL INVERTOR WHT; Size: 10 kg; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://images-eu.ssl-images-amazon.com/images/I/41Un-snwAhL._AC_UL495_SR435,495_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.214Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

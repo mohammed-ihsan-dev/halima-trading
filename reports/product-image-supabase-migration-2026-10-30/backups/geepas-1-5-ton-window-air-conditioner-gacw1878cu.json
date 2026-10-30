@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:22.576Z",
+ "document": {
+  "_id": "6ad064ddd12826b12170f418",
+  "id": "geepas-1-5-ton-window-air-conditioner-gacw1878cu",
+  "slug": "geepas-1-5-ton-window-air-conditioner-gacw1878cu",
+  "sku": "HT-GP-GACW1878CU",
+  "name": "1.5 Ton Window Air Conditioner",
+  "brand": "Geepas",
+  "brandSlug": "geepas",
+  "model": "GACW1878CU",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Window Air Conditioners",
+  "description": "1.5-ton window air conditioner with 17570 BTU/h cooling capacity, fast cooling, and Golden Fin. Technical details shown include net/gross weight 49/54 kg, packing dimensions 740 × 486 × 794 mm, and AC 220–240 V / 50 Hz.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://catalogue.geepas.com/assets/images/products/orginal/GACW1878TCU1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.957Z",
+  "createdAt": "2026-10-15T05:30:05.258Z"
+ }
+}

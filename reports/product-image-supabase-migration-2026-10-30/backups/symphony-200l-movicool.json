@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:23.742Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e61",
+  "id": "symphony-200l-movicool",
+  "slug": "symphony-air-cooler-200l-movicool-200l-movicool",
+  "sku": "200L-MOVICOOL",
+  "name": "Symphony Outdoor Commercial Air Cooler 200L-MOVICOOL",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "200L-MOVICOOL",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 200 L; Power: 245 W; Capacity: 8,500 m³/hr; Max Air Throw: 25 m; 3 Fan Speeds; 3-Sided Honey Comb; 3-Sided Dust Filter; Engineered Plastic Body with UV Coating; Made in India; Dimensions: 870 W × 440 D × 1700 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2022/01/Movicool-L-200i-LH-G-1.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.221Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

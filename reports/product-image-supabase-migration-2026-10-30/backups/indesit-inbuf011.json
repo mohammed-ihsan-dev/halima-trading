@@ -1,0 +1,33 @@
+{
+ "takenAt": "2026-10-30T11:38:20.712Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d92",
+  "id": "indesit-inbuf011",
+  "slug": "one-door-indesit-built-in-under-cabinet-fridge-82cm-inbuf011",
+  "sku": "INBUF011",
+  "name": "Indesit INBUF011 – INDESIT Built-In UNDER CABINET FRIDGE 82CM",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "INBUF011",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT Built-In UNDER CABINET FRIDGE 82CM; Size: ONE DOOR; Origin: ROMANIA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://digitalassets-cdn.thron.com/delivery/public/thumbnail/digitalassets/pi-fb492912-bcb3-4428-a3e8-51d10065d559/oolnjd/std/1000x1000/inbuf011-fridges-3.webp?fill=zoom&fillcolor=rgba:255,255,255",
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-SmQ3n9qkwUBIW0BrRFXbjQCCZaUbqh_EvbRw2EKElC8zbvu4x8NDw&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.783Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

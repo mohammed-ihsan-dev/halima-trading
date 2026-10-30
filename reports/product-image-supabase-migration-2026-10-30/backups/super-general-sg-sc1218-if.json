@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:55.233Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006ce",
+  "id": "super-general-sg-sc1218-if",
+  "slug": "super-general-sg-sc1218-if",
+  "sku": "SGSC1218IF",
+  "name": "S.G. CHILLER",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SG SC1218 IF",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "Chillers",
+  "description": "S.G. CHILLER",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://z.nooncdn.com/products/tr:n-t_400/pzsku/Z60B2918711F7785C68C0Z/45/_/1779705094/e190f4f8-faa6-4d5c-a1fd-bd49d4c16e28.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:59.282Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

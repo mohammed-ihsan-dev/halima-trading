@@ -1,0 +1,26 @@
+page 1/136page 2/136page 3/136page 4/136page 5/136page 6/136page 7/136page 8/136page 9/136page 10/136page 11/136page 12/136page 13/136page 14/136page 15/136page 16/136page 17/136page 18/136page 19/136page 20/136page 21/136page 22/136page 23/136page 24/136page 25/136page 26/136page 27/136page 28/136page 29/136page 30/136page 31/136page 32/136page 33/136page 34/136page 35/136page 36/136page 37/136page 38/136page 39/136page 40/136page 41/136page 42/136page 43/136page 44/136page 45/136page 46/136page 47/136page 48/136page 49/136page 50/136page 51/136page 52/136page 53/136page 54/136page 55/136page 56/136page 57/136page 58/136page 59/136page 60/136page 61/136page 62/136page 63/136page 64/136page 65/136page 66/136page 67/136page 68/136page 69/136page 70/136page 71/136page 72/136page 73/136page 74/136page 75/136page 76/136page 77/136page 78/136page 79/136page 80/136page 81/136page 82/136page 83/136page 84/136page 85/136page 86/136page 87/136page 88/136page 89/136page 90/136page 91/136page 92/136page 93/136page 94/136page 95/136page 96/136page 97/136page 98/136page 99/136page 100/136page 101/136page 102/136page 103/136page 104/136page 105/136page 106/136page 107/136page 108/136page 109/136page 110/136page 111/136page 112/136page 113/136page 114/136page 115/136page 116/136page 117/136page 118/136page 119/136page 120/136page 121/136page 122/136page 123/136page 124/136page 125/136page 126/136page 127/136page 128/136page 129/136page 130/136page 131/136page 132/136page 133/136page 134/136page 135/136page 136/136
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/krome/index.json", "pages": 136, "cached": false, "ocr": false}
+{
+ "pdf": "KROME CATALOG 25-26.pdf",
+ "pagesProcessed": 136,
+ "pagesWithNativeText": 102,
+ "pagesNeedingOcr": 34,
+ "catalogueModelsIdentified": 109,
+ "brandProducts": 14,
+ "targetProducts": 4,
+ "targetsWithExactModelMatch": 4,
+ "candidates": 7,
+ "exactUnambiguousIdentity": 1,
+ "lowResolution": 3,
+ "eligible": 0,
+ "sharedImage": 4,
+ "needsReview": 2,
+ "embeddedAssets": 0,
+ "pageRenders": 7,
+ "flags": 0,
+ "targetsNotInCatalogue": 0,
+ "catalogueModelsNotInDatabase": 99,
+ "authorization": "permission_pending (Krome (supplier catalogue))",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

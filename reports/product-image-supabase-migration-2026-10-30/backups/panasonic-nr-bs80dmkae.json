@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:29.970Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d578",
+  "id": "panasonic-nr-bs80dmkae",
+  "slug": "527l-side-by-side-refrigerator-nr-bs80dmkae",
+  "sku": "NRBS80DMKAE",
+  "name": "527L Side-by-Side Refrigerator",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NR-BS80DMKAE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Side-by-side refrigerator with 527 litres net capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://panasonic.scene7.com/is/image/Panasonic/ast-2898558-2?fmt=png-alpha&wid=644&hei=644"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:58.357Z"
+ }
+}

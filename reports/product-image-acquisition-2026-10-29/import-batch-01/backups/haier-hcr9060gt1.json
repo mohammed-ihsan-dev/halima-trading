@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-29T14:36:58.318Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dcb",
+  "id": "haier-hcr9060gt1",
+  "slug": "haier-hcr9060gt1",
+  "sku": "HCR9060GT1",
+  "name": "Haier 90x60cm 5-Burner Gas Cooker with Convection Fan, Inox HCR9060GT1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HCR9060GT1",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "Cookers",
+  "description": "Haier 90x60cm 5-Burner Gas Cooker with Convection Fan, Inox, model HCR9060GT1.",
+  "features": [
+   "Size: 90 x 60 cm",
+   "Oven Fan: Yes",
+   "Origin: Turkey"
+  ],
+  "specifications": {
+   "Model": "HCR9060GT1",
+   "Type": "Freestanding gas cooker",
+   "Size": "90 x 60 cm",
+   "Oven Fan": "Yes",
+   "Origin": "Turkey"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/hcr9060gt1/9de664c0-de15-4765-b610-a5d0c348e0af.jpg"
+  ],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-29T10:00:09.197Z"
+ }
+}

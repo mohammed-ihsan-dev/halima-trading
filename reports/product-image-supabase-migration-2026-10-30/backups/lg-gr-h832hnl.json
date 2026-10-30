@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:31.012Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dfc",
+  "id": "lg-gr-h832hnl",
+  "slug": "net-capacity-592-gr-h832hnl",
+  "sku": "GR-H832HNL",
+  "name": "LG Top Mount Refrigerator GR-H832HNL – NET CAPACITY: 592",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GR-H832HNL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 592",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/content/dam/channel/wcms/in/images/refrigerators/gr-h812hlhm_apzqebn_eail_in_c/gallery/new/450x450-1.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.382Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

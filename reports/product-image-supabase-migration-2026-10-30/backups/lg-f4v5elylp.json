@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:55.069Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e0f",
+  "id": "lg-f4v5elylp",
+  "slug": "11-kg-silver-colour-india-f4v5elylp",
+  "sku": "F4V5ELYLP",
+  "name": "LG Front Load Washer F4V5ELYLP – 11-KG SILVER COLOUR-INDIA",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "F4V5ELYLP",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "11-KG SILVER COLOUR-INDIA",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://electronicparadise.in/cdn/shop/files/4_1930ac96-7c67-426e-abf5-2e0093aa20f6.png?v=1702283411&width=1406"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.244Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

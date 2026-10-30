@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:51.341Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d587",
+  "id": "panasonic-na-14mg1lae",
+  "slug": "7kg-front-load-washing-machine-na-14mg1lae",
+  "sku": "NA14MG1LAE",
+  "name": "7kg Front Load Washing Machine",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NA-14MG1LAE",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "7kg front-load washing machine in silver.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://panasonic.scene7.com/is/image/Panasonic/ast-2552084-3?fmt=png-alpha&wid=644&hei=644"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.435Z"
+ }
+}

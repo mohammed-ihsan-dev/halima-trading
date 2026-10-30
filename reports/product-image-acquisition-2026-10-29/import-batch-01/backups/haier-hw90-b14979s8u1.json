@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:51.298Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd6",
+  "id": "haier-hw90-b14979s8u1",
+  "slug": "haier-hw90-b14979s8u1",
+  "sku": "HW90-B14979S8U1",
+  "name": "Haier Front Load Washing Machine HW90-B14979S8U1",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HW90-B14979S8U1",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "Haier Front Load Washing Machine, model HW90-B14979S8U1.",
+  "features": [],
+  "specifications": {
+   "Model": "HW90-B14979S8U1",
+   "Type": "Front load washing machine"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "draft",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

@@ -1,4 +1,4 @@
-import { brands } from "@/data/brands";
+import { brandShowcase } from "@/data/brand-showcase";
 import { companyContact } from "@/lib/company-config";
 
 export const revalidate = 3600; // 1 hour ISR
@@ -20,11 +20,17 @@ export default function Brands() {
         <p>Explore a broad selection from established international manufacturers.</p>
       </section>
       <section className="section">
-        <div className="brand-wall">
-          {brands.map((x) => (
-            <div key={x}>{x}</div>
+        <ul className="brand-wall" aria-label={`${brandShowcase.length} brands`}>
+          {brandShowcase.map((brand) => (
+            <li key={brand.slug} className={brand.logo ? "brand-card" : "brand-card is-name"}>
+              {brand.logo ? (
+                <img src={brand.logo} alt={`${brand.name} logo`} loading="lazy" decoding="async" />
+              ) : (
+                <span>{brand.name}</span>
+              )}
+            </li>
           ))}
-        </div>
+        </ul>
         <p className="disclaimer">
           Brand availability varies by model and project. Halima Trading does not claim authorised distributor status unless separately confirmed in writing.
         </p>

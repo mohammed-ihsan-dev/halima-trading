@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:44.397Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d7b",
+  "id": "indesit-ihgc-6-4amx",
+  "slug": "60cm-indesit-built-in-chimney-glass-60cm-poland-ihgc-6-4amx",
+  "sku": "IHGC-64AMX",
+  "name": "Indesit IHGC-6.4AMX – INDESIT Built in CHIMNEY GLASS 60CM",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "IHGC-6.4AMX",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "INDESIT Built in CHIMNEY GLASS 60CM; Size: 60cm; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/61HwTmdLzhL._AC_UF1000,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.743Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

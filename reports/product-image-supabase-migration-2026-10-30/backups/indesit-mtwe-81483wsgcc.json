@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:50.931Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d82",
+  "id": "indesit-mtwe-81483wsgcc",
+  "slug": "8-kg-ind-mytime-8kg-fl-1400-rpm-wht-f159721-mtwe-81483wsgcc",
+  "sku": "MTWE-81483WSGCC",
+  "name": "Indesit MTWE-81483WSGCC – IND MYTIME 8KG FL 1400 RPM WHT F159721",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "MTWE-81483WSGCC",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "IND MYTIME 8KG FL 1400 RPM WHT F159721; Size: 8 kg; Origin: POLAND",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51ByeJ2PEmL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.060Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "takenAt": "2026-10-30T11:51:11.837Z",
+ "document": {
+  "_id": "6ace0ae7c20e09f0d82e7739",
+  "id": "fagor-90cm-wall-mounting-hood",
+  "slug": "fagor-90cm-wall-mounting-hood",
+  "sku": "9CFV92XA",
+  "name": "Fagor 90cm Wall Mounting Hood",
+  "brand": "Fagor",
+  "brandSlug": "fagor",
+  "model": "9CFV92XA",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "Range Hoods",
+  "description": "Fagor 90cm wall-mounting kitchen hood, model 9CFV92XA.",
+  "features": [
+   "90cm width",
+   "Wall-mounted hood"
+  ],
+  "specifications": {
+   "Width": "90cm",
+   "Installation Type": "Wall Mounted",
+   "Model Number": "9CFV92XA"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/61OO6zrGRwL._AC_UF1000,1000_QL80_.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.878Z",
+  "createdAt": "2026-10-13T10:41:43.020Z"
+ }
+}

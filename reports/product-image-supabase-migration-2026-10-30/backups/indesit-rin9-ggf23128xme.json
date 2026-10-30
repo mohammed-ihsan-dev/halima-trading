@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:53.396Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d85",
+  "id": "indesit-rin9-ggf23128xme",
+  "slug": "90x60-indesit-90-60-gas-cooker-cast-iron-rin9-ggf23128xme",
+  "sku": "RIN9-GGF23128XME",
+  "name": "Indesit RIN9-GGF23128XME – INDESIT 90/60 GAS COOKER CAST-IRON SELF-CLEAN FAN S.S",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "RIN9-GGF23128XME",
+  "category": "Cooking Appliances",
+  "categorySlug": "cooking-appliances",
+  "subcategory": "General",
+  "description": "INDESIT 90/60 GAS COOKER CAST-IRON SELF-CLEAN FAN S.S; Size: 90x60; Origin: EGYPT",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad,format=webp,quality=70/images/S500946783_1?1791554901"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.387Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

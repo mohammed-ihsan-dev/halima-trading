@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-29T14:37:18.874Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dc2",
+  "id": "haier-hrf-700ts",
+  "slug": "haier-hrf-700ts",
+  "sku": "HRF-700TS",
+  "name": "Haier 585L French Door (T-Door) Refrigerator, Silver HRF-700TS",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HRF-700TS",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Haier 585L French Door (T-Door) Refrigerator, Silver, model HRF-700TS.",
+  "features": [
+   "Size: 22 cu ft",
+   "Color: Silver",
+   "Alternate Model: HRF-820TS"
+  ],
+  "specifications": {
+   "Model": "HRF-700TS",
+   "Type": "French door / T-door refrigerator",
+   "Size": "22 cu ft",
+   "Color": "Silver",
+   "Alternate Model": "HRF-820TS"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://xaujatpichfxrzwyyksj.supabase.co/storage/v1/object/public/product-images/products/hrf-700ts/2936cb85-84f1-4f33-b1ba-f02149334769.jpg"
+  ],
+  "inStock": false,
+  "stockCount": 0,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-29T09:45:54.668Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:16.544Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d67",
+  "id": "blue-star-ccb52010104",
+  "slug": "bswc-65-3t-ccb52010104",
+  "sku": "CCB52010104",
+  "name": "Blue Star Water Cooler BSWC 65 3T",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "BSWC 65 3T",
+  "category": "Commercial Cooling",
+  "categorySlug": "commercial-cooling",
+  "subcategory": "General",
+  "description": "",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/616kFN0vA-L.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.046Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

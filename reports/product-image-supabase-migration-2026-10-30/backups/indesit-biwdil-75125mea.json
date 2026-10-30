@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:38.704Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d9c",
+  "id": "indesit-biwdil-75125mea",
+  "slug": "new-model-indesit-built-in-f-l-washer-dryer-7kg-biwdil-75125mea",
+  "sku": "BIWDIL-75125MEA",
+  "name": "Indesit BIWDIL-75125MEA – INDESIT Built-In F/L WASHER DRYER 7KG F156747",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "BIWDIL-75125MEA",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "General",
+  "description": "INDESIT Built-In F/L WASHER DRYER 7KG F156747; Size: NEW MODEL; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://digitalassets-cdn.thron.com/delivery/public/thumbnail/digitalassets/pi-75a0e486-0237-4b6a-84f8-9ed85993cd99/oolnjd/std/600x600/bi-wdil-75125-uk-n-washer-dryers.webp?fill=zoom&fillcolor=rgba:255,255,255"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:47.174Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

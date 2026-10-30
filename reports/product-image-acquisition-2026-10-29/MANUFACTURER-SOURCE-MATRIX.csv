@@ -1,0 +1,40 @@
+brand,productsNeedingImage,official,status,evidence,access,terms,rights
+AFRA,1,not researched (no products need images),,,,,
+AKAI,1,not researched (no products need images),,,,,
+Aftron,4,aftron.com,not researched this run,4 products need images,,,ask supplier
+BOSCH,0,not researched (no products need images),,,,,
+Black+Decker,1,not researched (no products need images),,,,,
+Blue Star,9,bluestarindia.com (India range),no matching models,search: HW18CYRFA3 not found; Indian site uses different codes,n/a,n/a,ask supplier
+Bosch,0,not researched (no products need images),,,,,
+Clivet,21,clivet.com (EU) / Clivet UAE PDF (info@clivet.ae),no exact models,products in our DB have no manufacturer model numbers (e.g. '3-ton-rt-duct-ac'); UAE PDF lists no model codes,n/a,n/a,request images + model codes from Clivet UAE
+Daewoo,13,daewooelectronics.com (UK range),no source,search: DW-DGC-665BSF not found anywhere,n/a,n/a,ask supplier for images
+Fagor,0,not researched (no products need images),,,,,
+Geepas,8,geepas.com,excluded,terms prohibit automated access (scripts/crawlers) — earlier pipeline check,prohibited,terms quoted in pipeline,do not automate; ask Geepas
+General Line,10,genralline.com,blocked / logo only,current links are a logo that now returns HTTP 403,HTTP 403,n/a,ask supplier
+Gree,11,gree.com / NIA Gree catalogue PDF,catalogue only; -IND suffix never printed,catalogue: 0 matches (model suffix),n/a,n/a,unresolved
+Haier,22,haier.com/ae,usable — exact model pages,probe: 15 exact model pages with og:image (e.g. /ae/washing-machines/hwd110-bd14397su1.shtml); sitemap 711 URLs,allowed by robots.txt (/ae/); local DNS needed public resolver,legal page not reachable this run,unresolved — no licence found; needs distributor permission
+Indesit,17,indesit.com (search HTTP 500; indesit.ae sitemap HTML),no addressable UAE models,search: IGGSM-533G3 only at Sharaf DG/B.TECH,n/a,n/a,retailer images only
+Kenwood,2,kenwoodworld.com,not researched this run,2 products need images,,,ask supplier
+Krome,4,none found,catalogue only,catalogue: 1 exact-unambiguous crop (low-res) of 7,n/a,register: permission_pending,unresolved
+LG,15,lg.com/ae,usable — model pages (regional suffix differs),"probe: 9 exact + 4 base-model pages; sitemap 3,349 URLs; og:image on page",allowed (robots disallows only search URLs),lg.com/ae/terms-of-use returned 404 — terms not located,unresolved — no licence found; needs LG Gulf permission
+Mazaya,18,mazayauae.com (pipeline adapter exists),adapter exists; catalogue crops are series photos,"catalogue: 34 crops, 0 exact-unambiguous",allowed (earlier pipeline check),register: permission_pending,unresolved
+Midea,91,"midea.com/ae (sitemap returns HTML, no product locs)",no model pages found,"search: Sharaf DG, Carrefour, Jumbo list WQP83802FS; no official UAE page found; local catalogue is small appliances (0/64 matched)",n/a,n/a,retailer images only — not licensed
+Mitsubishi Electric,9,mitsubishielectric.com/ae (sitemap 404),no machine-readable source,search: MS-GS18 at Carrefour/Sharaf DG/FAJ Trading only,n/a,n/a,retailer images only
+Nest,0,not researched (no products need images),,,,,
+Nikai,2,nikai.com,no product search; catalogue,catalogue: 0 matches for the 2 targets,n/a,register: permission_pending,unresolved
+O GENERAL,0,not researched (no products need images),,,,,
+O General,8,ogeneralac.com,site reachable; models not in sitemap,"probe: 164 product URLs, none contain our 8 target models",allowed,not checked,ask distributor
+Ogera,0,not researched (no products need images),,,,,
+Panasonic,13,panasonic.com/mea,blocked,HTTP 403 to automated requests (not bypassed); search: retailers only,blocked,n/a,unresolved
+Phoenix,2,phoenix-uae.com,blocked,HTTP 403 (earlier pipeline check),blocked,,ask supplier
+Pro General,0,not researched (no products need images),,,,,
+Samsung,6,samsung.com/ae,usable — model pages,"probe: 4 exact model pages; b2c sitemap 4,783 URLs",allowed for product pages,legal page: 'grants you no license…'; 'unauthorized use or reproduction … strictly prohibited',unresolved — explicit: no licence granted; needs Samsung Gulf permission
+Simfer,4,simfer.com.tr,site reachable; models not in sitemap,"probe: 289 product URLs, none contain our SMF… codes (Turkish range)",allowed,not checked,ask Simfer UAE distributor
+Skill Tech,0,not researched (no products need images),,,,,
+Super General,6,supergeneral.com (pipeline adapter exists),adapter + catalogue,"catalogue: 3 exact-unambiguous crops, all < 400 px",allowed,register: permission_pending,unresolved
+Symphony,0,symphonylimited.com,excluded,terms prohibit crawling (earlier pipeline check); 0 products need images,prohibited,register: permission_denied,denied
+TCL,20,tcl.com/ae (sitemap 404),no machine-readable source,"search: Sharaf DG, Lulu list TAC-24CSD/ZGI; catalogue covers 2 of 20",n/a,n/a,retailer images only — not licensed
+Toshiba,6,toshiba-lifestyle.com/ae,unavailable,returns 404 (earlier pipeline check),n/a,n/a,ask supplier
+Westpoint,39,none (westpointuae.com is an unrelated software company),no official source,search: WST-30122.LTYH only on Desertcart/Carrefour/Sharaf DG; model strings vary,n/a,n/a,retailer images only — not licensed
+Whirlpool,3,whirlpool.ae,blocked,sitemap HTTP 403,blocked,,unresolved
+Yorker,0,not researched (no products need images),,,,,

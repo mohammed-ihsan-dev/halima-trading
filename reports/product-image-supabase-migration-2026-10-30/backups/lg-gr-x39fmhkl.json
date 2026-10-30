@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:41.884Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e00",
+  "id": "lg-gr-x39fmhkl",
+  "slug": "net-capacity-716-ltr-gr-x39fmhkl",
+  "sku": "GR-X39FMHKL",
+  "name": "LG 4-Door Refrigerator GR-X39FMHKL – NET CAPACITY: 716 LTR",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GR-X39FMHKL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 716 LTR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/refrigerators/md07533438/gallery/GR-X39FMKHL_MZ01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.560Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

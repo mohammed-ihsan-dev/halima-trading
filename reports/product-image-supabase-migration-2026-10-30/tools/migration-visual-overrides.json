@@ -1,0 +1,33 @@
+{
+ "_about": "Visual decisions made while reviewing the exact bytes the migration would upload (review-sheets/plan-*.png). They override the 2026-10-30 audit for these URLs.",
+ "https://gkvjw0ooc9bgy90a.public.blob.vercel-storage.com/tenants/supplyvan/products/wm/4g140zyqroeh/6171bc6f41-supergeneral_sgp204t3_02.jpg.webp": {
+  "model": "Super General SGP204T3",
+  "decision": "skipped-unsuitable",
+  "reason": "retailer watermark \"SupplyVan\" (zoomed 2026-10-30)"
+ },
+ "https://m.media-amazon.com/images/I/512wdbX-mOL.jpg": {
+  "model": "Ogera OG3010GC",
+  "decision": "skipped-unsuitable",
+  "reason": "promotional graphic with marketing text (zoomed 2026-10-30)"
+ },
+ "https://5.imimg.com/data5/NC/DN/UR/SELLER-58622693/split-inverter-air-conditioner.jpg": {
+  "model": "Krome KR-SAC24IM",
+  "decision": "skipped-wrong-brand",
+  "reason": "wrong brand: \"electro\" multi-split units (zoomed 2026-10-30)"
+ },
+ "https://m.media-amazon.com/images/I/31IFUWJ8c1S._AC_UF1000,1000_QL80_.jpg": {
+  "model": "Krome KR-SAP24EZT3",
+  "decision": "manual-review",
+  "reason": "unbranded outdoor unit; cannot be tied to Krome (zoomed 2026-10-30)"
+ },
+ "https://m.media-amazon.com/images/I/61OaUbhXf7L.jpg": {
+  "model": "Krome KR-AWP24EZTT3",
+  "decision": "skipped-wrong-brand",
+  "reason": "wrong brand: Westpoint window AC (zoomed 2026-10-30)"
+ },
+ "https://5.imimg.com/data5/SELLER/Default/2026/1/574583072/QD/OV/YU/21170595/floor-standing-tower-air-conditioner.jpg": {
+  "model": "Krome KR-FAC603PR-IN+OD",
+  "decision": "skipped-wrong-brand",
+  "reason": "wrong brand: Cruise floor-standing unit (zoomed 2026-10-30)"
+ }
+}

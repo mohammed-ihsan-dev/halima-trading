@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:30.568Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c3",
+  "id": "super-general-sgl-1171",
+  "slug": "super-general-sgl-1171",
+  "sku": "SGL1171",
+  "name": "WATER DISPENSER",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGL 1171",
+  "category": "Home & Small Appliances",
+  "categorySlug": "home-small-appliances",
+  "subcategory": "Water Dispensers",
+  "description": "WATER DISPENSER",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn.prod.website-files.com/6045fb25a7a5d32cb1e75f1a/61e593e8e2917d12befd6106_60d5560f052d0f301e992ce5_other.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:59.813Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

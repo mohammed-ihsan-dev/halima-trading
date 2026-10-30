@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:49:59.339Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e6d",
+  "id": "symphony-xl-80winter",
+  "slug": "symphony-air-cooler-xl-80winter-xl-80winter",
+  "sku": "XL-80WINTER",
+  "name": "Symphony Outdoor Residential Air Cooler XL-80WINTER",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "XL-80WINTER",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Water Tank Capacity: 80 L; Power: 190 W; Room Size: 40 sq. m; 3 Fan Speeds; 4-Sided Honey Comb; Plastic Body; Made in India; Dimensions: 630 W × 445 D × 1270 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2023/06/Winter-80XLi-LH-1.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.701Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

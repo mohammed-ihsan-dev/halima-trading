@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:33.452Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d579",
+  "id": "panasonic-nr-bs780msae",
+  "slug": "588l-side-by-side-refrigerator-nr-bs780msae",
+  "sku": "NRBS780MSAE",
+  "name": "588L Side-by-Side Refrigerator",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NR-BS780MSAE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Side-by-side refrigerator with 588 litres net capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://bf1af2.akinoncloudcdn.com/products/2025/12/06/627414/eb0108d5-bcdc-4c82-bc79-d0cfca07e5bc.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:58.317Z"
+ }
+}

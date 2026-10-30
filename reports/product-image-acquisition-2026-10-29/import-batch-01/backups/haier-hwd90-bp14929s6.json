@@ -1,0 +1,41 @@
+{
+ "takenAt": "2026-10-29T14:37:21.328Z",
+ "document": {
+  "_id": "6adb4feb12e90be677835dd7",
+  "id": "haier-hwd90-bp14929s6",
+  "slug": "haier-hwd90-bp14929s6",
+  "sku": "HWD90-BP14929S6",
+  "name": "Haier 9kg/6kg Front Load Washer Dryer, Silver HWD90-BP14929S6",
+  "brand": "Haier",
+  "brandSlug": "haier",
+  "model": "HWD90-BP14929S6",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washer Dryers",
+  "description": "Haier 9kg/6kg Front Load Washer Dryer, Silver, model HWD90-BP14929S6.",
+  "features": [
+   "Wash Capacity: 9 kg",
+   "Dry Capacity: 6 kg",
+   "Max Spin Speed: 1400 RPM",
+   "Color: Silver"
+  ],
+  "specifications": {
+   "Model": "HWD90-BP14929S6",
+   "Type": "Washer dryer",
+   "Wash Capacity": "9 kg",
+   "Dry Capacity": "6 kg",
+   "Max Spin Speed": "1400 RPM",
+   "Color": "Silver"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [],
+  "inStock": true,
+  "stockCount": 10,
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-10-23T12:15:38.141Z",
+  "updatedAt": "2026-10-23T12:15:38.141Z"
+ }
+}

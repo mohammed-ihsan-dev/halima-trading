@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:37.558Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c7",
+  "id": "super-general-sgw7250nled",
+  "slug": "super-general-sgw7250nled",
+  "sku": "SGW7250NLED",
+  "name": "SG WASHING MACHINE",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGW7250NLED",
+  "category": "Laundry Appliances",
+  "categorySlug": "laundry-appliances",
+  "subcategory": "Washing Machines",
+  "description": "SG WASHING MACHINE",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.supergeneral.com/media/products/656/1705494901-1000x1200.webp"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.926Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

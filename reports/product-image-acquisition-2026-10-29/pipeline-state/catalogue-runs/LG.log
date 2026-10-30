@@ -1,0 +1,26 @@
+page 1/72page 2/72page 3/72page 4/72page 5/72page 6/72page 7/72page 8/72page 9/72page 10/72page 11/72page 12/72page 13/72page 14/72page 15/72page 16/72page 17/72page 18/72page 19/72page 20/72page 21/72page 22/72page 23/72page 24/72page 25/72page 26/72page 27/72page 28/72page 29/72page 30/72page 31/72page 32/72page 33/72page 34/72page 35/72page 36/72page 37/72page 38/72page 39/72page 40/72page 41/72page 42/72page 43/72page 44/72page 45/72page 46/72page 47/72page 48/72page 49/72page 50/72page 51/72page 52/72page 53/72page 54/72page 55/72page 56/72page 57/72page 58/72page 59/72page 60/72page 61/72page 62/72page 63/72page 64/72page 65/72page 66/72page 67/72page 68/72page 69/72page 70/72page 71/72page 72/72
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/lg/index.json", "pages": 72, "cached": false, "ocr": false}
+{
+ "pdf": "LG HA & RAC (PS)PPT.pdf",
+ "pagesProcessed": 72,
+ "pagesWithNativeText": 54,
+ "pagesNeedingOcr": 18,
+ "catalogueModelsIdentified": 71,
+ "brandProducts": 97,
+ "targetProducts": 15,
+ "targetsWithExactModelMatch": 0,
+ "candidates": 0,
+ "exactUnambiguousIdentity": 0,
+ "lowResolution": 0,
+ "eligible": 0,
+ "sharedImage": 0,
+ "needsReview": 0,
+ "embeddedAssets": 0,
+ "pageRenders": 0,
+ "flags": 0,
+ "targetsNotInCatalogue": 15,
+ "catalogueModelsNotInDatabase": 13,
+ "authorization": "permission_pending",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

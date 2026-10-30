@@ -1,0 +1,506 @@
+{
+ "generatedAt": "2026-10-30T09:50:00.043Z",
+ "root": "(project root)",
+ "gitHead": "ref: refs/heads/main",
+ "stack": {
+  "next": "16.2.6 (App Router)",
+  "react": "19.2.6",
+  "node": "engines >=22.13.0 (audit ran on v22.18.0)",
+  "mongodbDriver": "mongodb ^7.6.0",
+  "supabase": "@supabase/supabase-js ^2.117.3",
+  "s3": "@aws-sdk/client-s3 (Cloudflare R2, legacy/alternative provider)",
+  "hosting": "Vercel (vercel.json)",
+  "imageLibs": "image-size, sharp (present in node_modules)",
+  "pdfTooling": "none in package.json; PyMuPDF 1.26.5 available in local Python (used by scripts/product-images/catalogue_extract.py and this audit)"
+ },
+ "envVarNames": {
+  "mongodb": [
+   "MONGODB_URI",
+   "MONGODB_DB"
+  ],
+  "supabase": [
+   "NEXT_PUBLIC_SUPABASE_URL",
+   "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+   "SUPABASE_SECRET_KEY",
+   "SUPABASE_STORAGE_BUCKET (default product-images)"
+  ],
+  "r2": [
+   "R2_ACCOUNT_ID",
+   "R2_ACCESS_KEY_ID",
+   "R2_SECRET_ACCESS_KEY",
+   "R2_BUCKET",
+   "R2_PUBLIC_BASE_URL"
+  ],
+  "imagePipeline": [
+   "IMAGE_SEARCH_PROVIDER",
+   "SERPAPI_API_KEY",
+   "SERPAPI_REQUEST_LIMIT",
+   "IMAGE_VISION_PROVIDER",
+   "ANTHROPIC_API_KEY",
+   "ICECAT_API_TOKEN",
+   "ICECAT_CONTENT_TOKEN",
+   "IMAGE_* tuning"
+  ]
+ },
+ "directories": [
+  {
+   "path": "app",
+   "type": "directory",
+   "files": 74,
+   "bytes": 581063,
+   "sizeMB": 0.6,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Next.js App Router pages and API routes (app/api/products, app/api/admin/products/images, uploads/presign|complete|discard, product-image-reviews)"
+  },
+  {
+   "path": "components",
+   "type": "directory",
+   "files": 42,
+   "bytes": 151069,
+   "sizeMB": 0.1,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "React UI components (product cards, gallery, admin forms)"
+  },
+  {
+   "path": "lib",
+   "type": "directory",
+   "files": 43,
+   "bytes": 279647,
+   "sizeMB": 0.3,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Server/shared logic: MongoDB client, product repository, image storage (Supabase/R2), image rules, bulk image matching, review workflow"
+  },
+  {
+   "path": "lib/repositories",
+   "type": "directory",
+   "files": 9,
+   "bytes": 76790,
+   "sizeMB": 0.1,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "MongoDB repositories (products, categories, brands, orders, product-image-reviews, …)"
+  },
+  {
+   "path": "data",
+   "type": "directory",
+   "files": 7,
+   "bytes": 24865,
+   "sizeMB": 0,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Static seed data (categories, brands, legacy products-store.json)"
+  },
+  {
+   "path": "scripts",
+   "type": "directory",
+   "files": 24,
+   "bytes": 248195,
+   "sizeMB": 0.2,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Maintenance scripts (catalogue import, image restore, storage orphan finder)"
+  },
+  {
+   "path": "scripts/product-images",
+   "type": "directory",
+   "files": 14,
+   "bytes": 201008,
+   "sizeMB": 0.2,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Existing image pipeline: audit → targets → discover (catalogue/SerpAPI) → verify → review-import → upload/apply, with rollback"
+  },
+  {
+   "path": "public",
+   "type": "directory",
+   "files": 73,
+   "bytes": 37988513,
+   "sizeMB": 36.2,
+   "pdfs": 1,
+   "imageFiles": 67,
+   "purpose": "Static website assets served at / (UI images, category/hero images, brand logos, a few product images, brochure PDF)"
+  },
+  {
+   "path": "public/brands",
+   "type": "directory",
+   "files": 6,
+   "bytes": 1017466,
+   "sizeMB": 1,
+   "pdfs": 0,
+   "imageFiles": 6,
+   "purpose": ""
+  },
+  {
+   "path": "public/brochres",
+   "type": "directory",
+   "files": 1,
+   "bytes": 3439412,
+   "sizeMB": 3.3,
+   "pdfs": 1,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "public/catalogues-source",
+   "type": "directory",
+   "files": 1,
+   "bytes": 6148,
+   "sizeMB": 0,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "public/featured",
+   "type": "directory",
+   "files": 12,
+   "bytes": 856982,
+   "sizeMB": 0.8,
+   "pdfs": 0,
+   "imageFiles": 12,
+   "purpose": ""
+  },
+  {
+   "path": "public/icons",
+   "type": "directory",
+   "files": 1,
+   "bytes": 324161,
+   "sizeMB": 0.3,
+   "pdfs": 0,
+   "imageFiles": 1,
+   "purpose": ""
+  },
+  {
+   "path": "public/images",
+   "type": "directory",
+   "files": 26,
+   "bytes": 10496911,
+   "sizeMB": 10,
+   "pdfs": 0,
+   "imageFiles": 26,
+   "purpose": ""
+  },
+  {
+   "path": "public/product-images",
+   "type": "directory",
+   "files": 1,
+   "bytes": 6661,
+   "sizeMB": 0,
+   "pdfs": 0,
+   "imageFiles": 1,
+   "purpose": ""
+  },
+  {
+   "path": "public/products",
+   "type": "directory",
+   "files": 4,
+   "bytes": 430462,
+   "sizeMB": 0.4,
+   "pdfs": 0,
+   "imageFiles": 4,
+   "purpose": ""
+  },
+  {
+   "path": "public/videos",
+   "type": "directory",
+   "files": 3,
+   "bytes": 13114075,
+   "sizeMB": 12.5,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "catalogues-source",
+   "type": "directory",
+   "files": 106,
+   "bytes": 608718656,
+   "sizeMB": 580.5,
+   "pdfs": 23,
+   "imageFiles": 77,
+   "purpose": "Supplier catalogues (PDF) and loose product photos supplied for matching — primary local image source"
+  },
+  {
+   "path": "work",
+   "type": "directory",
+   "files": 1896,
+   "bytes": 268322044,
+   "sizeMB": 255.9,
+   "pdfs": 1,
+   "imageFiles": 1491,
+   "purpose": "Working files from earlier imports, image batches, audits and pipeline runs (extracted/prepared images, manifests, backups)"
+  },
+  {
+   "path": "work/catalogue-images",
+   "type": "directory",
+   "files": 659,
+   "bytes": 108094188,
+   "sizeMB": 103.1,
+   "pdfs": 0,
+   "imageFiles": 463,
+   "purpose": "Extracted & prepared catalogue images from earlier batches (Gree, LG, Mazaya, Symphony, Bosch, B+D) with manifests and upload logs"
+  },
+  {
+   "path": "work/catalogue-imports",
+   "type": "directory",
+   "files": 79,
+   "bytes": 1305243,
+   "sizeMB": 1.2,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Product import batches (JSON + import scripts + results)"
+  },
+  {
+   "path": "work/image-pilot",
+   "type": "directory",
+   "files": 7,
+   "bytes": 251378,
+   "sizeMB": 0.2,
+   "pdfs": 0,
+   "imageFiles": 3,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-database-report-2026-10-22",
+   "type": "directory",
+   "files": 11,
+   "bytes": 2972513,
+   "sizeMB": 2.8,
+   "pdfs": 1,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-image-audit-2026-10-19",
+   "type": "directory",
+   "files": 18,
+   "bytes": 1583299,
+   "sizeMB": 1.5,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-image-batch-2026-10-20",
+   "type": "directory",
+   "files": 11,
+   "bytes": 35012,
+   "sizeMB": 0,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-image-matching-2026-10-20",
+   "type": "directory",
+   "files": 13,
+   "bytes": 144424,
+   "sizeMB": 0.1,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-image-pipeline",
+   "type": "directory",
+   "files": 1060,
+   "bytes": 152978795,
+   "sizeMB": 145.9,
+   "pdfs": 0,
+   "imageFiles": 1025,
+   "purpose": ""
+  },
+  {
+   "path": "work/product-updates",
+   "type": "directory",
+   "files": 22,
+   "bytes": 234375,
+   "sizeMB": 0.2,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "work/production-readiness-2026-10-20",
+   "type": "directory",
+   "files": 14,
+   "bytes": 668194,
+   "sizeMB": 0.6,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": ""
+  },
+  {
+   "path": "tests",
+   "type": "directory",
+   "files": 44,
+   "bytes": 359148,
+   "sizeMB": 0.3,
+   "pdfs": 0,
+   "imageFiles": 0,
+   "purpose": "Unit / DB / HTTP tests incl. image pipeline and storage tests"
+  }
+ ],
+ "excludedFromScan": [
+  "node_modules",
+  ".next",
+  ".git",
+  ".pnpm-store",
+  "reports"
+ ],
+ "codePaths": {
+  "mongoClient": "lib/mongodb.ts",
+  "productRepository": "lib/repositories/products.ts",
+  "productApiPublic": "app/api/products/route.ts",
+  "productApiAdmin": "app/api/admin/products/route.ts",
+  "productImagesApi": "app/api/admin/products/images/route.ts",
+  "uploads": [
+   "app/api/admin/uploads/presign/route.ts",
+   "app/api/admin/uploads/complete/route.ts",
+   "app/api/admin/uploads/discard/route.ts",
+   "app/api/admin/uploads/config/route.ts"
+  ],
+  "imageReviewApi": [
+   "app/api/admin/product-image-reviews/route.ts",
+   "app/api/admin/product-image-reviews/preview/route.ts"
+  ],
+  "storage": [
+   "lib/image-storage.ts",
+   "lib/supabase-storage.ts",
+   "lib/r2.ts",
+   "lib/image-storage-cleanup.ts"
+  ],
+  "imageRules": [
+   "lib/product-images.ts",
+   "lib/admin-gallery.ts",
+   "lib/product-image-display.ts",
+   "lib/admin-image-upload.ts",
+   "lib/safe-image-fetch.ts"
+  ],
+  "bulkMatch": "lib/bulk-image-match.ts",
+  "reviewWorkflow": [
+   "lib/product-image-review.ts",
+   "lib/repositories/product-image-reviews.ts"
+  ],
+  "pipeline": "scripts/product-images/ (pipeline.mjs, catalogue-match.mjs, catalogue_extract.py, search.mjs, vision.mjs, policy.mjs)",
+  "otherImageScripts": [
+   "scripts/restore-product-images.mjs",
+   "scripts/find-storage-orphans.mjs",
+   "scripts/build-hero-assets.mjs"
+  ]
+ },
+ "productSchema": {
+  "collection": "products",
+  "imageField": "images: string[] (first = primary); generic placeholder /featured/hisense-window-ac.png is display-only",
+  "observedFields": {
+   "_id": 885,
+   "slug": 885,
+   "brand": 885,
+   "brandSlug": 885,
+   "category": 885,
+   "categorySlug": 885,
+   "createdAt": 885,
+   "currency": 885,
+   "description": 885,
+   "featured": 885,
+   "features": 885,
+   "id": 885,
+   "images": 885,
+   "inStock": 885,
+   "model": 885,
+   "name": 885,
+   "price": 885,
+   "priceLabel": 885,
+   "sku": 885,
+   "specifications": 885,
+   "status": 885,
+   "stockCount": 885,
+   "subcategory": 885,
+   "updatedAt": 885,
+   "deliveryRate": 518
+  },
+  "imageRelatedFieldsFound": [
+   "images"
+  ]
+ },
+ "catalogueLocations": [
+  "catalogues-source/19147 midea-catalogue-2026-R3.pdf",
+  "catalogues-source/AKAI-ACMA-M12T3R4,M18T3R4.pdf",
+  "catalogues-source/B+D_Heaters_Product_Details (002).pdf",
+  "catalogues-source/Gree-Catalogue-2025-IR.pdf",
+  "catalogues-source/HKL060070M.pdf",
+  "catalogues-source/HKQ38A150M.pdf",
+  "catalogues-source/Hisense_HA catalogue_2026_Lowres.pdf",
+  "catalogues-source/KGN36NL30M (1).pdf",
+  "catalogues-source/KROME CATALOG 25-26.pdf",
+  "catalogues-source/LG HA & RAC (PS)PPT.pdf",
+  "catalogues-source/MAZAYA CATALOGUE 2025.pdf",
+  "catalogues-source/Nikai Cataloge 2025 26-03-25.pdf",
+  "catalogues-source/SAMSUNG.pdf",
+  "catalogues-source/SMS26AI00M (2).pdf",
+  "catalogues-source/SMS26AW00M (1).pdf",
+  "catalogues-source/SMS4ECI26M.pdf",
+  "catalogues-source/SMS4HMC25M.pdf",
+  "catalogues-source/SMS4HMI25M.pdf",
+  "catalogues-source/SMS6EMI38M.pdf",
+  "catalogues-source/Symphony-2026-Rev(F).pdf",
+  "catalogues-source/TCL-UAE_AC Catalogue-2025.pdf",
+  "catalogues-source/superGeneral.pdf",
+  "catalogues-source/symphony.pdf",
+  "public/brochres/HALIMA_TRADING_UPDATED_.pdf",
+  "work/product-database-report-2026-10-22/HALIMA-TRADING-COMPLETE-PRODUCT-CATALOGUE.pdf"
+ ],
+ "imageAssetLocations": [
+  {
+   "area": "public/brands",
+   "files": 6
+  },
+  {
+   "area": "public",
+   "files": 17
+  },
+  {
+   "area": "public/featured",
+   "files": 12
+  },
+  {
+   "area": "public/icons",
+   "files": 1
+  },
+  {
+   "area": "public/images/categories",
+   "files": 16
+  },
+  {
+   "area": "public/images/hero",
+   "files": 10
+  },
+  {
+   "area": "public/product-images",
+   "files": 1
+  },
+  {
+   "area": "public/products",
+   "files": 4
+  },
+  {
+   "area": "catalogues-source",
+   "files": 81
+  },
+  {
+   "area": "work/catalogue-images",
+   "files": 463
+  },
+  {
+   "area": "work/image-pilot",
+   "files": 3
+  },
+  {
+   "area": "work/product-image-pipeline",
+   "files": 1025
+  }
+ ]
+}

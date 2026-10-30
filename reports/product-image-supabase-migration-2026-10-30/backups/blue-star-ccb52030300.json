@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:43.410Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d55",
+  "id": "blue-star-ccb52030300",
+  "slug": "hw24cxyfb3-01-split-ac-2-0-tr-rotary-r410a-ccb52030300",
+  "sku": "CCB52030300",
+  "name": "Blue Star Split AC 2.0 TR Rotary R410A – HW24CXYFB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW24CXYFB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 2.0 TR Rotary R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.alrayanservices.com/uploads/images/202402/img_1920x_65d5c8a90ae204-78906950-49250626.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-22T15:23:36.886Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,26 @@
+page 1/116page 2/116page 3/116page 4/116page 5/116page 6/116page 7/116page 8/116page 9/116page 10/116page 11/116page 12/116page 13/116page 14/116page 15/116page 16/116page 17/116page 18/116page 19/116page 20/116page 21/116page 22/116page 23/116page 24/116page 25/116page 26/116page 27/116page 28/116page 29/116page 30/116page 31/116page 32/116page 33/116page 34/116page 35/116page 36/116page 37/116page 38/116page 39/116page 40/116page 41/116page 42/116page 43/116page 44/116page 45/116page 46/116page 47/116page 48/116page 49/116page 50/116page 51/116page 52/116page 53/116page 54/116page 55/116page 56/116page 57/116page 58/116page 59/116page 60/116page 61/116page 62/116page 63/116page 64/116page 65/116page 66/116page 67/116page 68/116page 69/116page 70/116page 71/116page 72/116page 73/116page 74/116page 75/116page 76/116page 77/116page 78/116page 79/116page 80/116page 81/116page 82/116page 83/116page 84/116page 85/116page 86/116page 87/116page 88/116page 89/116page 90/116page 91/116page 92/116page 93/116page 94/116page 95/116page 96/116page 97/116page 98/116page 99/116page 100/116page 101/116page 102/116page 103/116page 104/116page 105/116page 106/116page 107/116page 108/116page 109/116page 110/116page 111/116page 112/116page 113/116page 114/116page 115/116page 116/116
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/super-general/index.json", "pages": 116, "cached": false, "ocr": false}
+{
+ "pdf": "superGeneral.pdf",
+ "pagesProcessed": 116,
+ "pagesWithNativeText": 26,
+ "pagesNeedingOcr": 90,
+ "catalogueModelsIdentified": 82,
+ "brandProducts": 48,
+ "targetProducts": 6,
+ "targetsWithExactModelMatch": 3,
+ "candidates": 3,
+ "exactUnambiguousIdentity": 3,
+ "lowResolution": 3,
+ "eligible": 0,
+ "sharedImage": 0,
+ "needsReview": 0,
+ "embeddedAssets": 2,
+ "pageRenders": 1,
+ "flags": 0,
+ "targetsNotInCatalogue": 3,
+ "catalogueModelsNotInDatabase": 75,
+ "authorization": "permission_pending (Super General)",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

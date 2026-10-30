@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:42:50.211Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3e6b",
+  "id": "symphony-u25vc-venticool",
+  "slug": "symphony-air-cooler-u25vc-venticool-u25vc-venticool",
+  "sku": "U25VC-VENTICOOL",
+  "name": "Symphony Industrial Air Cooler U25VC-VENTICOOL",
+  "brand": "Symphony",
+  "brandSlug": "symphony",
+  "model": "U25VC-VENTICOOL",
+  "category": "Air Coolers & Fans",
+  "categorySlug": "air-coolers-fans",
+  "subcategory": "General",
+  "description": "Symphony Industrial Air Cooler; Water Tank Capacity: 70 L; Capacity: 25,000 m³/hr; Power: 1.2 kW; Room Size: 232 sq. m; Max Air Throw: 30 m; Fan; 4-Sided Honey Comb; 3-Sided Dust Filter; Engineered Plastic Body with UV Coating; Made in India; Dimensions: 1140 W × 1140 D × 1130 H mm",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://symphonylimited.com/wp-content/uploads/2022/01/Movicool-XXL.png"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:01.622Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

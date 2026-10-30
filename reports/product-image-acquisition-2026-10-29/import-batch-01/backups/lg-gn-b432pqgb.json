@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-29T14:36:12.282Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3de7",
+  "id": "lg-gn-b432pqgb",
+  "slug": "net-capacity-315-gn-b432pqgb",
+  "sku": "GN-B432PQGB",
+  "name": "LG Top Mount Refrigerator GN-B432PQGB – NET CAPACITY: 315",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GN-B432PQGB",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 315",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxCsh7q-oFxYQ0wjRAcMupdHnWqHZ-b_SG8-F0FarPBuJMq0UJ9BmgCY&s=10"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:50.533Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:37:05.276Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d5e",
+  "id": "blue-star-ccb52030328",
+  "slug": "hw30hqyfbn3-01-split-ac-2-5-tr-inverter-r410a-ccb52030328",
+  "sku": "CCB52030328",
+  "name": "Blue Star Split AC 2.5 TR Inverter R410A – HW30HQYFBN3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "HW30HQYFBN3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Split AC 2.5 TR Inverter R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://media-ik.croma.com/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/311113_0_ipxbjo.png?tr=w-600"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.719Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

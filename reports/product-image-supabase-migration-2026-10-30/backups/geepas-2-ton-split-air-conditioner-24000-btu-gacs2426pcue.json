@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:51:28.837Z",
+ "document": {
+  "_id": "6ad064ddd12826b12170f41a",
+  "id": "geepas-2-ton-split-air-conditioner-24000-btu-gacs2426pcue",
+  "slug": "geepas-2-ton-split-air-conditioner-24000-btu-gacs2426pcue",
+  "sku": "HT-GP-GACS2426PCUE",
+  "name": "2 Ton Split Air Conditioner 24000 BTU",
+  "brand": "Geepas",
+  "brandSlug": "geepas",
+  "model": "GACS2426PCUE",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "2-ton piston split air conditioner with 24000 BTU capacity. Features self-cleaning, Golden Fin, 4D air flow, a 5-year compressor warranty, piston compressor, strong air flow, auto restart, and auto diagnosis. Uses R410A refrigerant (1.55 kg). Current 8.78 A; maximum current 18.5 A; power input 1980 W; maximum power input 3450 W; indoor air volume 1300 m³/h; annual energy consumption 4560 kWh/year; power factor 0.98; indoor noise 50 dB(A), outdoor noise 61 dB(A). Indoor net/gross weight 14/17 kg; outdoor net/gross weight 61/65.5 kg. Indoor dimensions 1253 × 330 × 409 mm; outdoor dimensions 987 × 789 × 445 mm. Power supply: 220–240 V / 50 Hz.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://uae.geepas.com/cdn/shop/files/Artboard1_93ecb613-f240-4ac2-8d3f-0a7d9f4077c3.jpg?v=1779357139&width=400"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:46.041Z",
+  "createdAt": "2026-10-15T05:30:05.258Z"
+ }
+}

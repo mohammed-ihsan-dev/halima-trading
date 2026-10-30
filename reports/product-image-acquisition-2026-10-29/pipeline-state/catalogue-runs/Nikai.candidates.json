@@ -1,0 +1,20 @@
+{
+ "generatedAt": "2026-10-29T14:12:23.478Z",
+ "pdf": "Nikai Cataloge 2025 26-03-25.pdf",
+ "pdfSha256": "bedc4bc6e8e84df6c9b3fa647bcd5de8b34c203a9b7834471a30ad2e6c244f64",
+ "brand": "Nikai",
+ "pages": 268,
+ "ocr": null,
+ "permission": {
+  "status": "permission_pending",
+  "holder": "Nikai (supplier catalogue)",
+  "reason": "Nikai catalogue PDF on file in catalogues-source/ contains no usage, licence or copyright terms; being supplier-provided does not document commercial reuse permission.",
+  "evidence": [
+   {
+    "url": "catalogues-source/Nikai Cataloge 2025 26-03-25.pdf",
+    "finding": "Full-text scan for copyright / rights reserved / reproduction / permission / licence / usage statements: none found (scan 2026-10-15)."
+   }
+  ]
+ },
+ "products": {}
+}

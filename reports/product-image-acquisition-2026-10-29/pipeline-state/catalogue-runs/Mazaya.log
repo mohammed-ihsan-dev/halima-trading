@@ -1,0 +1,26 @@
+page 1/24page 2/24page 3/24page 4/24page 5/24page 6/24page 7/24page 8/24page 9/24page 10/24page 11/24page 12/24page 13/24page 14/24page 15/24page 16/24page 17/24page 18/24page 19/24page 20/24page 21/24page 22/24page 23/24page 24/24
+{"index": "/Users/ihsan/Desktop/zorx/halima-new/HALIMA-TRADING-L.L.C./reports/product-image-acquisition-2026-10-29/pipeline-state/catalogue/mazaya/index.json", "pages": 24, "cached": false, "ocr": false}
+{
+ "pdf": "MAZAYA CATALOGUE 2025.pdf",
+ "pagesProcessed": 24,
+ "pagesWithNativeText": 18,
+ "pagesNeedingOcr": 6,
+ "catalogueModelsIdentified": 46,
+ "brandProducts": 55,
+ "targetProducts": 18,
+ "targetsWithExactModelMatch": 17,
+ "candidates": 34,
+ "exactUnambiguousIdentity": 0,
+ "lowResolution": 25,
+ "eligible": 0,
+ "sharedImage": 18,
+ "needsReview": 16,
+ "embeddedAssets": 24,
+ "pageRenders": 10,
+ "flags": 5,
+ "targetsNotInCatalogue": 1,
+ "catalogueModelsNotInDatabase": 3,
+ "authorization": "permission_pending",
+ "databaseWrites": 0,
+ "storageWrites": 0
+}

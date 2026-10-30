@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:50:33.440Z",
+ "document": {
+  "_id": "6acdf1597a4c8a2cb51006c4",
+  "id": "super-general-sgr255e",
+  "slug": "super-general-sgr255e",
+  "sku": "SGR255E",
+  "name": "S.G. REFRIGERATOR",
+  "brand": "Super General",
+  "brandSlug": "super-general",
+  "model": "SGR255E",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "S.G. REFRIGERATOR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://tiimg.tistatic.com/fp/1/007/877/5-star-gray-hef-25tgs-258-ltr-greater-cooling-haier-double-door-refrigerator-019.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:17:00.102Z",
+  "createdAt": "2026-10-13T08:52:40.734Z"
+ }
+}

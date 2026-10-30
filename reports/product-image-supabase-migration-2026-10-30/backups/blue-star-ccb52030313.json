@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:52.678Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d59",
+  "id": "blue-star-ccb52030313",
+  "slug": "wm18clyfb3-01-window-ac-1-5-tr-rotary-r410a-ccb52030313",
+  "sku": "CCB52030313",
+  "name": "Blue Star Window AC 1.5 TR Rotary R410A – WM18CLYFB3-01",
+  "brand": "Blue Star",
+  "brandSlug": "blue-star",
+  "model": "WM18CLYFB3-01",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "Window AC 1.5 TR Rotary R410A",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://5.imimg.com/data5/SELLER/Default/2024/9/449690738/EA/RL/EM/204638125/blue-star-1-5-ton-5-star-window-ac-500x500.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:45.520Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

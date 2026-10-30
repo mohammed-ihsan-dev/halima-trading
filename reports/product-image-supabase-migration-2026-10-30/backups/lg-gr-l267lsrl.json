@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:35.009Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dfe",
+  "id": "lg-gr-l267lsrl",
+  "slug": "net-capacity-617-gr-l267lsrl",
+  "sku": "GR-L267LSRL",
+  "name": "LG Side-by-Side Refrigerator GR-L267LSRL – NET CAPACITY: 617",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "GR-L267LSRL",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "NET CAPACITY: 617",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/refrigerators/md07548625/gallery/medium01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.463Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

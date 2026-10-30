@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-30T11:51:52.911Z",
+ "document": {
+  "_id": "6ad07fd5f9be311bced6d556",
+  "id": "mitsubishi-msy-gt13vf-muy-gt13vf",
+  "slug": "1-5-ton-wall-mounted-inverter-air-conditioner-msy-gt13vf-muy-gt13vf",
+  "sku": "MSYGT13VFMUYGT13VF",
+  "name": "1.5 Ton Wall Mounted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "MSY-GT13VF/MUY-GT13VF",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "Wall-mounted inverter air conditioner with 1.5-ton cooling capacity.",
+  "features": [
+   "1.5 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "1.5 Ton"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://dasintergroup.com/wp-content/uploads/2021/01/Mitsubishi-Mr.Slim-GT-Series-01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:55.570Z"
+ }
+}

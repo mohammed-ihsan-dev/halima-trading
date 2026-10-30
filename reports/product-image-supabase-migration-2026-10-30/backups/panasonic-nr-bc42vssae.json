@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:52:43.281Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d580",
+  "id": "panasonic-nr-bc42vssae",
+  "slug": "384l-double-door-refrigerator-nr-bc42vssae",
+  "sku": "NRBC42VSSAE",
+  "name": "384L Double Door Refriagerator",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "NR-BC42VSSAE",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "Refrigerators",
+  "description": "Double-door refrigerator with 384 litres net capacity.",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/61GYAUOZhTL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:58.119Z"
+ }
+}

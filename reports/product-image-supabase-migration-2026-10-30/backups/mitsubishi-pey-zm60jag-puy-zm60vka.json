@@ -1,0 +1,38 @@
+{
+ "takenAt": "2026-10-30T11:52:14.067Z",
+ "document": {
+  "_id": "6ad07fd6f9be311bced6d560",
+  "id": "mitsubishi-pey-zm60jag-puy-zm60vka",
+  "slug": "5-ton-ducted-inverter-air-conditioner-pey-zm60jag-puy-zm60vka",
+  "sku": "PEYZM60JAGPUYZM60VKA",
+  "name": "5 Ton Ducted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "PEY-ZM60JAG / PUY-ZM60VKA",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Ducted Air Conditioners",
+  "description": "Ducted inverter air conditioning system with approximately 5-ton cooling capacity.",
+  "features": [
+   "5 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "5 Ton",
+   "Type": "Ducted Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.fajtradingllc.com/cdn/shop/files/1_b2e03d11-75e2-437e-bf81-5397de7d033d.jpg?v=1777628730"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:56.044Z"
+ }
+}

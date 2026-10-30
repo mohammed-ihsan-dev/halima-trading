@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:41:02.644Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3dcd",
+  "id": "lg-i34tcf-uuae",
+  "slug": "2-5-ton-dual-inverter-i34tcf-uuae",
+  "sku": "I34TCFUUAE",
+  "name": "LG Split AC I34TCF.UUAE – 2.5 TON - Dual Inverter",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "model": "I34TCF.UUAE",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "2.5 TON - Dual Inverter",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.lg.com/ae/images/split-air-conditioners/md06078316/gallery/medium01.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:51.840Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}

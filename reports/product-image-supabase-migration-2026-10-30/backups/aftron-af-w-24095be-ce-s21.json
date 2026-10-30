@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:36:08.837Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d41",
+  "id": "aftron-af-w-24095be-ce-s21",
+  "slug": "aftron-2-ton-split-ac-rotary-r410-2-star-af-w-24095be-ce-s21",
+  "sku": "AF-W-24095BECE-S21",
+  "name": "AFTRON 2 TON SPLIT AC, ROTARY, R410, 2 STAR (AF-W-24095BE/CE-S21)",
+  "brand": "Aftron",
+  "brandSlug": "aftron",
+  "model": "AF-W-24095BE/CE-S21",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "General",
+  "description": "AFTRON 2 TON SPLIT AC, ROTARY, R410, 2 STAR",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51uhUasH7uL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:44.136Z",
+  "createdAt": "2026-10-10T12:24:03.792Z"
+ }
+}

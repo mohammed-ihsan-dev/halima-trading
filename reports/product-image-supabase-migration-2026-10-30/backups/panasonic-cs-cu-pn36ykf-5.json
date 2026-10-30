@@ -1,0 +1,37 @@
+{
+ "takenAt": "2026-10-30T11:52:26.662Z",
+ "document": {
+  "_id": "6ad07fd7f9be311bced6d577",
+  "id": "panasonic-cs-cu-pn36ykf-5",
+  "slug": "3-ton-nanoe-x-split-air-conditioner-cs-cu-pn36ykf-5",
+  "sku": "CSCUPN36YKF5",
+  "name": "3 Ton Nanoe-X Split Air Conditioner",
+  "brand": "Panasonic",
+  "brandSlug": "panasonic",
+  "model": "CS/CU-PN36YKF-5",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Split Air Conditioners",
+  "description": "3-ton rotary split AC with Nanoe-X, Jet Stream, Aerowings, four-way swing, Blue Fin, and cooling for ambient temperatures up to 55°C. Uses R32 refrigerant. Made in Malaysia; 1-star rating.",
+  "features": [
+   "3 ton cooling capacity"
+  ],
+  "specifications": {
+   "Capacity": "3 Ton",
+   "Type": "Split Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://m.media-amazon.com/images/I/51vTRH3wjnL.jpg"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:57.395Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "takenAt": "2026-10-30T11:52:11.177Z",
+ "document": {
+  "_id": "6ad07fd6f9be311bced6d55f",
+  "id": "mitsubishi-pey-zm45jag-puy-zm45vka",
+  "slug": "3-75-ton-ducted-inverter-air-conditioner-pey-zm45jag-puy-zm45vka",
+  "sku": "PEYZM45JAGPUYZM45VKA",
+  "name": "3.75 Ton Ducted Inverter Air Conditioner",
+  "brand": "Mitsubishi Electric",
+  "brandSlug": "mitsubishi-electric",
+  "model": "PEY-ZM45JAG / PUY-ZM45VKA",
+  "category": "Air Conditioning",
+  "categorySlug": "air-conditioning",
+  "subcategory": "Ducted Air Conditioners",
+  "description": "Ducted inverter air conditioning system with approximately 3.75-ton cooling capacity.",
+  "features": [
+   "3.75 ton cooling capacity",
+   "Inverter technology"
+  ],
+  "specifications": {
+   "Capacity": "3.75 Ton",
+   "Type": "Ducted Air Conditioner"
+  },
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://www.fajtradingllc.com/cdn/shop/files/2_e1fc7df0-5341-4730-a984-a70de59e8829.jpg?v=1777632793"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 0,
+  "status": "active",
+  "createdAt": "2026-10-15T07:25:07.990Z",
+  "updatedAt": "2026-10-20T19:16:56.004Z"
+ }
+}

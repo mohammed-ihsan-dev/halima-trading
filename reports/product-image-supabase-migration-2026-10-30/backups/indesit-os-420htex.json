@@ -1,0 +1,32 @@
+{
+ "takenAt": "2026-10-30T11:40:21.807Z",
+ "document": {
+  "_id": "6aca2e64df911910339b3d94",
+  "id": "indesit-os-420htex",
+  "slug": "916-x-1180-x-698-indesit-chest-freezer-420-ltrs-italy-os-420htex",
+  "sku": "OS-420HTEX",
+  "name": "Indesit OS-420HTEX – INDESIT CHEST FREEZER 420 LTRS, ITALY",
+  "brand": "Indesit",
+  "brandSlug": "indesit",
+  "model": "OS-420HTEX",
+  "category": "Refrigeration",
+  "categorySlug": "refrigeration",
+  "subcategory": "General",
+  "description": "INDESIT CHEST FREEZER 420 LTRS, ITALY; Size: 916 x 1180 x 698; Origin: ITALY",
+  "features": [],
+  "specifications": {},
+  "price": 0,
+  "priceLabel": "Contact for Price",
+  "currency": "AED",
+  "images": [
+   "https://cdn-tp1.euw1.kibocommerce.com/101180-102063/cms/102063/files/1c4d2fb2-308d-4e2b-a36e-7e5725c45db9?quality=75&max=900&w=640&q=75"
+  ],
+  "inStock": true,
+  "stockCount": 1,
+  "featured": false,
+  "deliveryRate": 75,
+  "status": "active",
+  "updatedAt": "2026-10-20T19:16:48.177Z",
+  "createdAt": "2026-10-10T12:24:03.793Z"
+ }
+}
