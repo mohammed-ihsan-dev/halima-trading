@@ -9,8 +9,15 @@ export const DEFAULT_PAGE_SIZE = 12;
 export const MAX_PAGE_SIZE = 48;
 export const MAX_SEARCH_LENGTH = 100;
 
-export const CATALOGUE_SORTS = ["newest", "low", "az"] as const;
+/**
+ * "featured": the shop's default view — air conditioners first, then everything else A–Z. It applies only to the
+ * unfiltered "All Products" view; with a search or filter it falls back to "newest" (see queryMongoProducts).
+ */
+export const CATALOGUE_SORTS = ["featured", "newest", "low", "az"] as const;
 export type CatalogueSort = (typeof CATALOGUE_SORTS)[number];
+
+/** The sort a listing uses when the URL names none: "featured" for the public shop, "newest" elsewhere (admin, API). */
+export const defaultSortFor = (basePath: string): CatalogueSort => (basePath === "/shop" ? "featured" : "newest");
 
 /** "in-stock": can be bought now (the checkout rule); "on-request": everything else. */
 export const AVAILABILITY_FILTERS = ["in-stock", "on-request"] as const;
@@ -49,7 +56,7 @@ function read(params: ParamSource, key: string): string {
 }
 
 /** Lenient parser: anything invalid falls back to its default instead of failing the page. */
-export function parseCatalogueParams(params: ParamSource): CatalogueState {
+export function parseCatalogueParams(params: ParamSource, defaultSort: CatalogueSort = "newest"): CatalogueState {
   const pageRaw = read(params, "page");
   const page = /^\d{1,6}$/.test(pageRaw) && Number(pageRaw) >= 1 ? Number(pageRaw) : 1;
   const limitRaw = Number(read(params, "limit"));
@@ -58,7 +65,7 @@ export function parseCatalogueParams(params: ParamSource): CatalogueState {
   const categoryRaw = read(params, "category").slice(0, 100);
   const category = categoryRaw.toLowerCase() === "all" ? "" : categoryRaw;
   const sortRaw = read(params, "sort");
-  const sort = (CATALOGUE_SORTS as readonly string[]).includes(sortRaw) ? (sortRaw as CatalogueSort) : "newest";
+  const sort = (CATALOGUE_SORTS as readonly string[]).includes(sortRaw) ? (sortRaw as CatalogueSort) : defaultSort;
   const availabilityRaw = read(params, "availability");
   const availability = (AVAILABILITY_FILTERS as readonly string[]).includes(availabilityRaw) ? (availabilityRaw as AvailabilityFilter) : "";
   const priceRaw = read(params, "price");
@@ -67,21 +74,22 @@ export function parseCatalogueParams(params: ParamSource): CatalogueState {
 }
 
 /** Canonical query string: fixed parameter order, defaults omitted, each key at most once. */
-export function catalogueQueryString(state: Partial<CatalogueState>): string {
+export function catalogueQueryString(state: Partial<CatalogueState>, defaultSort: CatalogueSort = "newest"): string {
   const s = { ...DEFAULT_CATALOGUE_STATE, ...state };
   const params = new URLSearchParams();
   if (s.q) params.set("q", s.q);
   if (s.category) params.set("category", s.category);
   if (s.availability) params.set("availability", s.availability);
   if (s.price) params.set("price", s.price);
-  if (s.sort !== "newest") params.set("sort", s.sort);
+  if (s.sort !== defaultSort) params.set("sort", s.sort);
   if (s.pageSize !== DEFAULT_PAGE_SIZE) params.set("limit", String(s.pageSize));
   if (s.page > 1) params.set("page", String(s.page));
   const qs = params.toString();
   return qs ? `?${qs}` : "";
 }
 
-export const catalogueHref = (basePath: string, state: Partial<CatalogueState>) => `${basePath}${catalogueQueryString(state)}`;
+export const catalogueHref = (basePath: string, state: Partial<CatalogueState>) =>
+  `${basePath}${catalogueQueryString({ sort: defaultSortFor(basePath), ...state }, defaultSortFor(basePath))}`;
 
 /**
  * Validates a "return to the catalogue" path taken from a URL. Only the given internal listing
@@ -98,7 +106,7 @@ export function safeCatalogueReturnPath(value: unknown, basePath: string): strin
     return null;
   }
   if (url.origin !== "http://internal.invalid" || url.pathname !== basePath) return null;
-  return catalogueHref(basePath, parseCatalogueParams(url.searchParams));
+  return catalogueHref(basePath, parseCatalogueParams(url.searchParams, defaultSortFor(basePath)));
 }
 
 /** Link to a product/edit page that remembers where the user came from (only when it is not the default view). */

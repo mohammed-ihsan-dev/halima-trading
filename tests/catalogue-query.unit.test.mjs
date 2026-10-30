@@ -27,7 +27,8 @@ test("query strings are canonical: fixed order, defaults omitted, no duplicates"
     q.catalogueHref("/shop", { page: 7, pageSize: 24, q: "split ac", category: "Air Conditioning", sort: "az" }),
     "/shop?q=split+ac&category=Air+Conditioning&sort=az&limit=24&page=7"
   );
-  const state = q.parseCatalogueParams(new URLSearchParams("page=7&page=8&category=Refrigeration&utm=x"));
+  // Parsed the way the shop parses it (its default sort is "featured").
+  const state = q.parseCatalogueParams(new URLSearchParams("page=7&page=8&category=Refrigeration&utm=x"), q.defaultSortFor("/shop"));
   assert.equal(q.catalogueHref("/shop", state), "/shop?category=Refrigeration&page=7");
 });
 
@@ -132,4 +133,21 @@ test("search patterns are bounded and ignore punctuation-only words", () => {
   assert.equal(q.searchRankPattern("ac"), null);
   assert.ok(new RegExp(`^${q.searchRankPattern("hw80bp12929")}$`, "i").test("HW80-BP12929"));
   assert.ok(!new RegExp(`^${q.searchRankPattern("hw80bp12929")}$`, "i").test("HW80-BP12929S6"));
+});
+
+test("shop default sort is 'featured' (AC first, then A–Z); other listings keep 'newest'", () => {
+  assert.equal(q.defaultSortFor("/shop"), "featured");
+  assert.equal(q.defaultSortFor("/admin/products"), "newest");
+  // The shop parses with its own default; an explicit choice (including "newest") is kept in the URL.
+  assert.equal(q.parseCatalogueParams(new URLSearchParams(""), "featured").sort, "featured");
+  assert.equal(q.parseCatalogueParams(new URLSearchParams("sort=newest"), "featured").sort, "newest");
+  assert.equal(q.parseCatalogueParams(new URLSearchParams("sort=bogus"), "featured").sort, "featured");
+  assert.equal(q.catalogueHref("/shop", { sort: "featured" }), "/shop");
+  assert.equal(q.catalogueHref("/shop", {}), "/shop");
+  assert.equal(q.catalogueHref("/shop", { sort: "newest" }), "/shop?sort=newest");
+  assert.equal(q.catalogueHref("/shop", { sort: "featured", category: "Refrigeration", page: 2 }), "/shop?category=Refrigeration&page=2");
+  // Admin URLs are unchanged: "newest" is still their default and stays out of the URL.
+  assert.equal(q.catalogueHref("/admin/products", { sort: "newest", page: 2 }), "/admin/products?page=2");
+  assert.equal(q.safeCatalogueReturnPath("/shop?sort=newest&page=3", "/shop"), "/shop?sort=newest&page=3");
+  assert.equal(q.safeCatalogueReturnPath("/shop?page=3", "/shop"), "/shop?page=3");
 });

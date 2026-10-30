@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { brandShowcase } from "@/data/brand-showcase";
 import { companyContact } from "@/lib/company-config";
 
@@ -24,7 +25,13 @@ export default function Brands() {
           {brandShowcase.map((brand) => (
             <li key={brand.slug} className={brand.logo ? "brand-card" : "brand-card is-name"}>
               {brand.logo ? (
-                <img src={brand.logo} alt={`${brand.name} logo`} loading="lazy" decoding="async" />
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  loading="lazy"
+                  decoding="async"
+                  style={{ "--logo-w": `${brand.logoWidth ?? 160}px` } as CSSProperties}
+                />
               ) : (
                 <span>{brand.name}</span>
               )}

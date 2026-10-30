@@ -1877,12 +1877,14 @@ footer {
   box-shadow: 0 6px 18px rgba(22, 22, 22, .06)
 }
 
+/* Each logo's width (--logo-w, from data/brand-showcase.ts) gives every logo about the same visual area; the height
+   follows from the file's own aspect ratio, so nothing is stretched or cropped. */
 .brand-card img {
   display: block;
+  width: min(100%, calc(var(--logo-w, 160px) * var(--logo-scale, 1)));
   max-width: 100%;
-  max-height: 64px;
-  width: auto;
   height: auto;
+  max-height: 100%;
   object-fit: contain
 }
 
@@ -1915,7 +1917,7 @@ footer {
   }
 
   .brand-card img {
-    max-height: 46px
+    --logo-scale: .72
   }
 
   .brand-card.is-name span {

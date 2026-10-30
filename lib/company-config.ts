@@ -20,11 +20,16 @@ export const companyContact = {
   street: "Al Danah - Zone 1",
   city: "Abu Dhabi",
   country: "United Arab Emirates",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Zayed+2nd+Street+Electra+Road+Al+Danah+Zone+1+Abu+Dhabi",
+  // The client's Google Maps link for the business listing "Halima Trading L.L.C" (owner-claimed; place ID
+  // ChIJS3gZI11mXj4RDYLfJS7E61s, 24.4910567, 54.3710563, plus code 7HPPF9RC+CC). Opens the exact pin, not a street search.
+  googleMapsUrl: "https://maps.app.goo.gl/6PQ37q3qV2xp7e7g6",
 
   // Communication Details
   phone: "+971 56 568 5090",
   phoneRaw: "+971565685090",
+  // Telephone section of the Contact page only. Independent of the WhatsApp number below.
+  telephoneMobile: "050 671 1602",
+  telephoneMobileRaw: "+971506711602",
   landline: "026725299", // shown as written locally; landlineRaw keeps the dialable international form
   landlineRaw: "+97126725299",
   whatsapp: "+971 56 568 5090",

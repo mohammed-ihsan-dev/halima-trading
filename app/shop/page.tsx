@@ -15,7 +15,7 @@ const getShopPage = unstable_cache(
     const [page, categories] = await Promise.all([queryMongoProducts(state), getPublicProductCategories()]);
     return { page, categories };
   },
-  ["shop-catalogue-page-v1"],
+  ["shop-catalogue-page-v2"],
   { revalidate: 60 }
 );
 
@@ -38,7 +38,8 @@ export const metadata: Metadata = {
 };
 
 export default async function ShopPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  const state = parseCatalogueParams(await searchParams);
+  // The shop's default order is "featured" (air conditioners first, then A–Z); filters keep their own order.
+  const state = parseCatalogueParams(await searchParams, "featured");
   let result: { page: ProductPage; categories: string[] };
   try {
     result = await getShopPage(state);

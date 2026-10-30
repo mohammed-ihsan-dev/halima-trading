@@ -110,7 +110,7 @@ export default function Contact() {
             <Phone />
             <span>
               <b>Telephone</b>
-              <a href={`tel:${companyContact.phoneRaw}`}>Mobile: {companyContact.phone}</a>
+              <a href={`tel:${companyContact.telephoneMobileRaw}`}>Mobile: {companyContact.telephoneMobile}</a>
               <a href={`tel:${companyContact.landlineRaw}`}>Landline: {companyContact.landline}</a>
             </span>
           </div>

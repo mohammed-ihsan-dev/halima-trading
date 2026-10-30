@@ -1,0 +1,145 @@
+{
+  "_about": "Where each Brands-page logo comes from (verified 2026-10-31). Priority: the brand's own website or the company that owns the brand, then Wikimedia Commons files attributed to the brand owner, then a logo repository only where no official coloured file exists. Each file was viewed and compared with the brand's logo in the company brochure (public/brochures/HALIMA_TRADING_UPDATED_.pdf, page 4). Processed into public/brands/logos/ by build-brand-logos.mjs (whitespace trimmed; nothing redrawn or recoloured).",
+  "logos": {
+    "o-general": {
+      "file": "https://www.generalww.com/assets/images/common/logo-general-512x128.png",
+      "source": "Official site: generalww.com (Fujitsu General, global GENERAL brand)"
+    },
+    "mitsubishi-electric": {
+      "file": "https://www.mitsubishielectric.com/global/common/img/logo.svg",
+      "source": "Official site: mitsubishielectric.com"
+    },
+    "carrier": {
+      "file": "https://brandportal.carrier.com/m/99b434eac013f6f/webimage-carrier_logo_rgb.png",
+      "source": "Official Carrier brand portal (linked from carrier.com)"
+    },
+    "midea": {
+      "file": "https://commons.wikimedia.org/wiki/File:Midea.svg",
+      "source": "Wikimedia Commons, author Midea Group, source global.midea.com. midea.com only shows a white-on-blue version."
+    },
+    "gree": {
+      "file": "https://commons.wikimedia.org/wiki/File:Gree_electric_appliances_logo.svg",
+      "source": "Wikimedia Commons, author Gree Electric Appliances Inc., source gree.com. Brand colours; global.gree.com shows a black version."
+    },
+    "lg": {
+      "file": "https://commons.wikimedia.org/wiki/File:LG_logo_(2014).svg",
+      "source": "Wikimedia Commons: current LG Electronics logo. lg.com only serves a small 196 px JPG."
+    },
+    "samsung": {
+      "file": "https://commons.wikimedia.org/wiki/File:Samsung_wordmark.svg",
+      "source": "Wikimedia Commons, author Samsung, source samsung.com brand-identity page. samsung.com's og:image is a square letter mark, not the wordmark."
+    },
+    "panasonic": {
+      "file": "https://holdings.panasonic/content/dam/holdings/global/en/corporate/brand/group-brands/Panasonic-logo.png",
+      "source": "Official site: holdings.panasonic (group brands page)"
+    },
+    "aftron": {
+      "file": "https://www.alfuttaim.com/wp-content/uploads/sites/22/2025/03/brand_aftron_logo.svg",
+      "source": "Brand owner: Al-Futtaim (alfuttaim.com, Aftron brand page). aftron.com does not respond."
+    },
+    "clivet": {
+      "file": "https://cdn.worldvectorlogo.com/logos/clivet.svg",
+      "source": "Logo repository (worldvectorlogo). clivet.com only publishes the symbol and a white version; the repository file's symbol and wordmark were checked against clivet.com's official logo-white.svg. The older 'feeling cool' tagline is hidden with a clip path (logo shapes untouched), as in Clivet's current logo.",
+      "hideRect": [
+        43.5,
+        103.6,
+        149.3,
+        89.2
+      ]
+    },
+    "super-general": {
+      "file": "https://www.supergeneral.com/public/images/logo.jpg",
+      "source": "Official site: supergeneral.com"
+    },
+    "westpoint": {
+      "file": "https://commons.wikimedia.org/wiki/File:Westpoint_logo.png",
+      "source": "Wikimedia Commons: 'official Westpoint logo, provided by CFEE' (CFEE is the owner of the WESTPOINT trademark). No official website found."
+    },
+    "haier": {
+      "file": "https://commons.wikimedia.org/wiki/File:Haier_logo.svg",
+      "source": "Wikimedia Commons: Haier logo. haier.com/ae only serves white or 93 px versions."
+    },
+    "blue-star": {
+      "file": "https://resources.bluestarindia.com/Blue_Star_Built_on_Trust_Normal_1_fbb4a9bbbc.png",
+      "source": "Official site: bluestarindia.com"
+    },
+    "krome": {
+      "file": "https://www.eros.ae/media/wysiwyg/megamenu/brands/Krome.webp",
+      "source": "Brand owner: EROS Group (eros.ae). Krome is EROS's in-house brand. The only available file is small (154 x 54 px)."
+    },
+    "toshiba": {
+      "file": "https://commons.wikimedia.org/wiki/File:Toshiba_logo.svg",
+      "source": "Wikimedia Commons: Toshiba logo. global.toshiba only serves a 161 px GIF."
+    },
+    "hisense": {
+      "file": "https://www.hisense-india.com/assets/images/logo.svg",
+      "source": "Official site: Hisense (hisense-india.com; global.hisense.com redirects there)"
+    },
+    "daewoo": {
+      "file": "https://commons.wikimedia.org/wiki/File:Logo_wordmark_DAEWOO_Electronics_(now_Winia_Electronics).svg",
+      "source": "Wikimedia Commons, author Daewoo Electronics, source daewoolatam.com"
+    },
+    "tcl": {
+      "file": "https://www.tcl.com/content/dam/brandsite/it-resources/common/navigation/tcl-logo.svg",
+      "source": "Official site: tcl.com"
+    },
+    "hitachi": {
+      "file": "https://www.hitachi.com/content/dam/hitachi/common/image/hitachi-logo.png",
+      "source": "Official site: hitachi.com"
+    },
+    "akai": {
+      "file": "https://www.akai.com/img/akai_logo.jpg",
+      "source": "Official site: akai.com (AKAI consumer electronics, founded 1929, Tokyo; not Akai Professional). Small file (320 x 63 px)."
+    },
+    "kenwood": {
+      "file": "https://commons.wikimedia.org/wiki/File:Kenwood_Ltd_Logo.svg",
+      "source": "Wikimedia Commons, author Kenwood Limited (the kitchen-appliance company, not JVC Kenwood)"
+    },
+    "nikai": {
+      "file": "https://www.nikai.com/wp-content/uploads/nikai-logo-1.svg",
+      "source": "Official site: nikai.com"
+    },
+    "khind": {
+      "file": "https://khind.com.my/cdn/shop/files/KHIND_65.png",
+      "source": "Official site: khind.com.my. The separate '65th anniversary' badge is trimmed off; the KHIND mark is unchanged.",
+      "keepLeftUntilGap": 0.06
+    },
+    "afra": {
+      "file": "https://afra.co/afra-logo-transparent.png",
+      "source": "Official site: afra.co (AFRA Store, Afra Electronics, Dubai). This is the brand's current logo; the brochure shows an older design."
+    },
+    "simfer": {
+      "file": "https://www.simferglobal.com/wp-content/uploads/2023/07/simferlogo.svg",
+      "source": "Official site: simferglobal.com"
+    },
+    "ferroli": {
+      "file": "https://www.ferroli.com/_next/static/media/logo-black.1kzbwoeqjy1m3.svg",
+      "source": "Official site: ferroli.com (current identity)"
+    },
+    "prestige": {
+      "file": "https://shop.ttkprestige.com/media/logo/stores/1/Prestige-Logo-PNG-HD.png",
+      "source": "Official TTK Prestige shop (shop.ttkprestige.com)"
+    },
+    "symphony": {
+      "file": "https://symphonylimited.com/wp-content/uploads/2022/12/Symphony-ToT-Logo-e1671795456474.png",
+      "source": "Official site: symphonylimited.com"
+    },
+    "celsius": {
+      "file": "Supplied by the client (2026-10-31), screenshot of the brochure logo card",
+      "source": "Client-supplied artwork. Cropped to the logo (card border and shadow removed); not redrawn. Only 316 x 144 px was supplied, so a larger original would look sharper."
+    },
+    "yorker": {
+      "file": "Supplied by the client (2026-10-31), 276 x 150 px image",
+      "source": "Client-supplied artwork. Cropped to the logo; not redrawn. A larger original would look sharper."
+    },
+    "general-line": {
+      "file": "Supplied by the client (2026-10-31), 266 x 140 px image",
+      "source": "Client-supplied artwork. Cropped to the logo; not redrawn. A larger original would look sharper."
+    },
+    "jetacool": {
+      "file": "Supplied by the client (2026-10-31), 264 x 112 px image",
+      "source": "Client-supplied artwork. Cropped to the logo; not redrawn. A larger original would look sharper."
+    }
+  },
+  "notSourced": {}
+}

@@ -152,6 +152,7 @@ export default function ShopClientView({ page, state, categoryOptions }: ShopCli
             <Grid3X3 size={18} />
             <List size={18} />
             <select value={state.sort} onChange={(e) => go({ sort: e.target.value as CatalogueState["sort"], page: 1 })}>
+              <option value="featured">Sort: Featured</option>
               <option value="newest">Sort: Newest</option>
               <option value="low">Price: Low to high</option>
               <option value="az">Alphabetical</option>

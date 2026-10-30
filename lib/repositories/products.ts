@@ -325,6 +325,36 @@ export interface ProductPage {
  * returns the last page (currentPage says which). Public by default — pass includeUnpublished
  * only from authenticated admin code.
  */
+/**
+ * Complete air conditioners, for the shop's default "featured" order. A product is an AC when it is in the Air
+ * Conditioning category and either its subcategory is an AC type, or its subcategory is "General" (or empty) and its
+ * name says it is an air conditioner. Air curtains, thermostats and any other accessory subcategory in that category
+ * are not ACs. Category data only — product names alone never make something an AC.
+ */
+export const AC_SUBCATEGORIES = [
+  "split air conditioners", "window air conditioners", "cassette air conditioners", "ducted air conditioners",
+  "floor standing air conditioners", "package air conditioners", "portable air conditioners",
+] as const;
+export const AC_GENERAL_NAME_PATTERN =
+  "air[\\s-]*condition|(^|[^a-z0-9])ac([^a-z0-9]|$)|split|window|cassette|duct|package|floor[\\s-]*stand|free[\\s-]*stand|\\bton\\b|btu|inverter|vrf|concealed";
+const lowerOf = (field: string) => ({ $toLower: { $trim: { input: { $toString: { $ifNull: [`$${field}`, ""] } } } } });
+const IS_AC_PRODUCT = {
+  $and: [
+    { $or: [{ $eq: [lowerOf("categorySlug"), "air-conditioning"] }, { $eq: [lowerOf("category"), "air conditioning"] }] },
+    {
+      $or: [
+        { $in: [lowerOf("subcategory"), [...AC_SUBCATEGORIES]] },
+        {
+          $and: [
+            { $in: [lowerOf("subcategory"), ["", "general"]] },
+            { $regexMatch: { input: { $toString: { $ifNull: ["$name", ""] } }, regex: AC_GENERAL_NAME_PATTERN, options: "i" } },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export async function queryMongoProducts(
   state: CatalogueState,
   options: { includeUnpublished?: boolean } = {}
@@ -367,8 +397,13 @@ export async function queryMongoProducts(
   }
   const filter = { $and: and };
 
+  // "featured" (the shop's default) is for the unfiltered All Products view only: with a search or any filter the
+  // listing keeps its previous default order, "newest".
+  const filtered = Boolean(state.q.trim() || state.category || state.availability || state.price);
+  const sortMode = state.sort === "featured" && filtered ? "newest" : state.sort;
+
   // A search in the default order lists exact model/SKU matches first, then models starting with the query.
-  const rankPattern = state.sort === "newest" ? searchRankPattern(state.q) : null;
+  const rankPattern = sortMode === "newest" ? searchRankPattern(state.q) : null;
   const matches = (field: string, regex: string) => ({ $regexMatch: { input: { $toString: { $ifNull: [`$${field}`, ""] } }, regex, options: "i" } });
 
   const fetchPage = (page: number) => {
@@ -397,7 +432,24 @@ export async function queryMongoProducts(
         ])
         .toArray();
     }
-    if (state.sort === "low") {
+    if (sortMode === "featured") {
+      // Air conditioners first, then everything else; A–Z (case-insensitive, same collation as "az") within each
+      // group, _id as tie-breaker so the order is stable. Sorted in the database, before pagination.
+      return products
+        .aggregate(
+          [
+            { $match: filter },
+            { $addFields: { _ac: { $cond: [IS_AC_PRODUCT, 1, 0] } } },
+            { $sort: { _ac: -1, name: 1, _id: 1 } },
+            { $skip: skip },
+            { $limit: state.pageSize },
+            { $project: { ...LISTING_PROJECTION, images: { $slice: [{ $cond: [{ $isArray: "$images" }, "$images", []] }, 1] } } },
+          ],
+          { collation: { locale: "en", strength: 2 } }
+        )
+        .toArray();
+    }
+    if (sortMode === "low") {
       // Priced products first, cheapest first; "Contact for Price" (0 or no price) after them.
       return products
         .aggregate([
@@ -411,9 +463,9 @@ export async function queryMongoProducts(
         ])
         .toArray();
     }
-    const sort: Record<string, 1 | -1> = state.sort === "az" ? { name: 1, _id: 1 } : { createdAt: -1, _id: -1 };
+    const sort: Record<string, 1 | -1> = sortMode === "az" ? { name: 1, _id: 1 } : { createdAt: -1, _id: -1 };
     return products
-      .find(filter, { projection: LISTING_PROJECTION, collation: state.sort === "az" ? { locale: "en", strength: 2 } : undefined })
+      .find(filter, { projection: LISTING_PROJECTION, collation: sortMode === "az" ? { locale: "en", strength: 2 } : undefined })
       .sort(sort)
       .skip(skip)
       .limit(state.pageSize)
